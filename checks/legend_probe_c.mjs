@@ -352,8 +352,8 @@ if (only !== 'article') {
     await clickSel('#population-display-toggle [data-mode="map"]'); await settle();
 }
 
-if (only !== 'app') {
-    // Article: each map state, the year buttons of the share state.
+if (only !== 'app' && fs.existsSync(path.join(SITE, 'scrollytelling/classic.html'))) {
+    // Article (not in the Ember Labs copy): each map state, the year buttons of the share state.
     await page.goto(`${base}/scrollytelling/classic.html`);   // the previous article (T087); the v3 article has its own probe (scripts/article/tools/story-probe.mjs)
     await page.waitForTimeout(4000);
     const env = await page.evaluate(() => ({ land: getComputedStyle(document.documentElement).getPropertyValue('--map-land').trim(), ocean: getComputedStyle(document.getElementById('map')).backgroundColor }));

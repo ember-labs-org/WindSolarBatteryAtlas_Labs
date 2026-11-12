@@ -8,10 +8,9 @@ Published on Ember Labs. Developed by the Ember Futures team. It extends the [So
 
 | Path | What it is |
 | --- | --- |
-| `deployment/` | The app: HTML, CSS, JavaScript and the data it loads (about 90 MB). This is what gets published. |
-| `deployment/scrollytelling/` | The article "Harnessing the Winds". Not linked from the Ember Labs version. |
+| `deployment/` | The app: HTML, CSS, JavaScript and the data it loads (about 80 MB). This is what gets published. |
 | `pipeline/` | A partial copy of the data pipeline (simulation and wind siting), kept for documentation. See `pipeline/README.md`. |
-| `scripts/` | Builders for the wind costs (`wind_costs/`) and the offshore wind potential (`wind_potential/`), and the article's analysis and tools (`article/`). |
+| `scripts/` | Builders for the wind costs (`wind_costs/`) and the offshore wind potential (`wind_potential/`) |
 | `checks/` | Automated checks of the app's calculations. |
 | `DEPLOYMENT.md` | How the app is structured and deployed. |
 | `README-upstream.md` | The README of the Ember Futures repository this copy was taken from. |
@@ -33,4 +32,4 @@ The **Info** panel in the app lists the data sources and explains the method. `R
 
 ## About this copy
 
-This is a snapshot of the Ember Futures repository (`Ember-Futures/WindSolarBatteryAtlas`, commit `0a74c19`, 11 November 2026) without its internal project files and history. The Ember Labs changes so far: the Article button and its mention in the tour are removed.
+This is a snapshot of the Ember Futures repository (`Ember-Futures/WindSolarBatteryAtlas`, commit `0a74c19`, 11 November 2026) without its internal project files and history. The Ember Labs copy is the tool only: the article "Harnessing the Winds" (`deployment/scrollytelling/`, `scripts/article/`), its Article button and tour mention, and the data file only the article used (`daily_cf_2024.parquet`) are removed.

@@ -240,14 +240,6 @@ Includes analytical charts showing metrics by:
 - Latitude bands
 - Geographic distribution
 
-## The Article: Harnessing the Winds
-
-`scrollytelling/index.html` is a scrolling article that uses the atlas's map and data to ask where wind beats or complements solar and batteries. It sits beside the atlas (the "Article" button in the header) and loads no hourly sample files. It is a scrollytelling page (T087): each section opens with a map scrolly whose map can turn into its chart, and everything it loads is served from this site (GSAP, ScrollTrigger and d3 in `scrollytelling/vendor/`, Poppins in `scrollytelling/fonts/`). It is built by `scripts/article/tools/story-build.py`; the previous article is kept, unlinked, as `scrollytelling/classic.html`, and `scrollytelling/story.html` forwards to the article.
-
-- **Numbers.** The page runs no model. It loads `scrollytelling/data/article-summary.json` (464 KB), which `scripts/article/tools/build-summary.mjs` builds from the atlas's own model (the main app's `js/workers/lcoe-worker.js` at its default parameters, base year 2026). `js/summary.js` decodes it.
-- **Page code.** `js/article.js` (binds the numbers, draws the charts and drives the map as each take scrolls into view), `js/map.js`, `js/basemap.js` and `js/voronoi-canvas.js` (the sticky map), `js/charts.js` (the charts) and `css/article.css`.
-- **Build and check.** The tools sit outside the published folder, in `scripts/article/tools/`. `build-summary.mjs` regenerates `article-summary.json` from the live model, and `verify-article.mjs` re-runs the model and fails on any difference between it and the committed summary or the page (numbers, map colours and tooltips, unbound numbers, number words, em dashes, layout at 1440 and 390 px). See `scripts/article/tools/README.md`. The analysis behind the figures is in `scripts/article/`.
-
 ## Data Processing Pipeline
 
 ### Offline Simulation (Pre-computation)
@@ -292,8 +284,6 @@ deployment/
 │   ├── workers/lcoe-worker.js          # LCOE search off the main thread
 │   ├── parquet_wasm.js                 # Parquet reader (WebAssembly)
 │   └── apache-arrow.js                 # Arrow data format support
-├── scrollytelling/
-│   └── index.html                      # The article (code in js/, css/)
 └── data/
     ├── configs.json                         # Every simulated configuration
     ├── summary_w0.parquet                   # Pre-computed CF results, no wind
@@ -309,7 +299,6 @@ deployment/
     ├── voronoi_fossil_capacity.csv          # Fossil capacity by cell
     ├── fossil_plants.csv                    # Individual plant data
     ├── complementarity.csv                  # Droughts and complementarity per region, 2015–2024
-    └── daily_cf_2024.parquet                # Daily CF per region, 2024 (read by an article tool)
 ```
 
 ## Technical Implementation

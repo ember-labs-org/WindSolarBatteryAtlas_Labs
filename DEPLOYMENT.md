@@ -1,8 +1,7 @@
 # Deployment & performance notes
 
 This app is a fully static site with no backend and no build step. The folder
-`deployment/` is served as is: `deployment/index.html` is the atlas,
-`deployment/scrollytelling/index.html` is the article (T087: the scrollytelling version, built by `scripts/article/tools/story-build.py` from `team/reports/T087-article-v2.md`; the previous article is kept, unlinked, as `scrollytelling/classic.html`, and `story.html` forwards to `index.html`). The JS is plain ES modules
+`deployment/` is served as is: `deployment/index.html` is the atlas (the Ember Labs copy has no article). The JS is plain ES modules
 (unminified, no bundler), and `css/tailwind.css` is a pre-built file committed to
 the repo. This repo has no `package.json`, no build script, no `netlify.toml`
 and no other build config, so there is nothing to install or run before
@@ -35,25 +34,19 @@ Because the JS ships unminified, host-side Brotli is the main load-time saving.
 
 ## The data (no separate hosting)
 
-Everything the atlas and the article read is committed under `deployment/` (`deployment/data` is about
+Everything the atlas reads is committed under `deployment/` (`deployment/data` is about
 70 MB: the 15 `summary_*.parquet` cost-grid files, the voronoi CSVs,
-`world.geojson`, `complementarity.csv`, `daily_cf_2024.parquet`) and ships with the app. The article
-loads `scrollytelling/data/article-summary.json` and, from outside its own folder,
-only `data/world.geojson` and `js/constants.js`.
+`world.geojson`, `complementarity.csv`) and ships with the app.
 
 The Complementarity tab reads `data/complementarity.csv` (0.3 MB): per region, the share of weeks and
 months in drought (solar, onshore wind, both) and the complementarity score by day, week and month,
 2015–2024, built by `pipeline/scripts/pipeline/t093/build.py` from T088's daily series. It is fetched
 only when the tab is first opened. No object storage or base-URL setting is needed.
 
-`data/daily_cf_2024.parquet` (7.7 MB; daily CF per region for 2024) no longer backs a tab since
-T093 replaced Sample Days, but `scripts/article/tools/winter_share.py` still reads it, so it stays.
-
 The old hourly sample files (`deployment/data/samples/`, about 2.3 GB, listed in
 `.gitignore`) are no longer read by any page; Sample Days (since replaced by
 Complementarity, T093) replaced the Sample Weeks tab that needed them. `samples_light/` (15 MB) and
-`simulation_results_summary.parquet` (3.7 MB), which no page reads, sit in
-`data-archive/` (in git, not deployed; see its README).
+`simulation_results_summary.parquet` (3.7 MB), which no page reads, are not in this copy.
 
 Chart.js is the one library loaded on demand rather than with the page, on first
 use of the population charts: `chart.js@4.4.1` from
@@ -61,10 +54,6 @@ jsDelivr, pinned to that version with an integrity hash (`CHART_JS_URL` and
 `CHART_JS_SRI` in `js/constants.js`, loaded by `loadChartJs()` in `js/utils.js`).
 If it cannot be fetched, those charts say so and the rest of the atlas works.
 
-The article (`scrollytelling/index.html`) loads no daily or sample files, and it
-runs no model: it loads the pre-computed
-`scrollytelling/data/article-summary.json`. `build-summary.mjs` and `verify-article.mjs`
-live outside the published folder, in `scripts/article/tools/` (see the README there).
 
 ---
 

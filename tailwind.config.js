@@ -15,12 +15,10 @@ module.exports = {
     content: [
         './index.html',
         './deployment/index.html',
-        './deployment/scrollytelling/index.html',
         // JS is included because popup/tooltip HTML templates carry literal
         // class="..." strings; the scanner extracts string tokens from any
         // file, and false positives only add unused (inert) rules.
         './deployment/js/**/*.js',
-        './deployment/scrollytelling/js/**/*.js',
     ],
     theme: {
         // Ember Labs Design System (Rey Dizon, 2 Sep 2026): sharp corners

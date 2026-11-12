@@ -15,12 +15,6 @@
 # HTML entry points: always revalidate so a new deploy shows up immediately.
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
-/scrollytelling/index.html
-  Cache-Control: public, max-age=0, must-revalidate
-/scrollytelling/classic.html
-  Cache-Control: public, max-age=0, must-revalidate
-/scrollytelling/story.html
-  Cache-Control: public, max-age=0, must-revalidate
 
 # Data (summary parquet slices, the Complementarity CSV, voronoi CSVs, world.geojson): stable,
 # day-long cache. Versioned CSVs already add their own ?v= busting.
