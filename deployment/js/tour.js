@@ -1,4 +1,4 @@
-// tour.js: Guided "Take a Tour" walkthrough for the Solar + Wind + Battery Atlas.
+// tour.js: Guided "Take a Tour" walkthrough for the Wind + Solar + Battery Atlas.
 //
 // Hand-rolled (no external library) to match the vanilla-JS / ES-module
 // architecture of the rest of the app. The engine renders a callout box and a
@@ -40,7 +40,7 @@ function buildSteps(ctx) {
     const tour = [
         {
             target: null,
-            title: 'Welcome to the Solar + Wind + Battery Atlas',
+            title: 'Welcome to the Wind + Solar + Battery Atlas',
             body: 'This tool maps where solar, wind and batteries alone can deliver round-the-clock baseload power, and what it costs. This tour walks through every view and its controls in about 3 minutes, switching views for you as it goes. Use <b>Next</b> and <b>Back</b>, the arrow keys, or press <b>Esc</b> to leave. You’ll return to where you started at the end.',
             before: toMode('capacity'),
         },

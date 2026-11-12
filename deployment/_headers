@@ -1,4 +1,4 @@
-# Cache headers for the Solar + Wind + Battery Atlas, in Cloudflare Pages format.
+# Cache headers for the Wind + Solar + Battery Atlas, in Cloudflare Pages format.
 # The site is served as static files straight from deployment/ (the Pages output
 # directory, with no build step), so this file already sits at the publish root.
 #

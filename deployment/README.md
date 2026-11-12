@@ -1,10 +1,10 @@
-# Solar + Wind + Battery Atlas
+# Wind + Solar + Battery Atlas
 
 An interactive web-based tool that simulates and visualizes the feasibility of achieving 24/7 baseload power supply using solar photovoltaics, onshore or offshore wind, and battery storage across thousands of locations worldwide.
 
 ## Overview
 
-The Solar + Wind + Battery Atlas answers a fundamental question: **Can solar, wind and battery storage alone provide constant "baseload" power 24/7/365?**
+The Wind + Solar + Battery Atlas answers a fundamental question: **Can solar, wind and battery storage alone provide constant "baseload" power 24/7/365?**
 
 This tool simulates a 1 GW constant load at thousands of locations worldwide, calculating:
 - How much solar capacity (GW_DC), wind capacity (GW, onshore or offshore) and battery storage (GWh) is needed to meet that load
