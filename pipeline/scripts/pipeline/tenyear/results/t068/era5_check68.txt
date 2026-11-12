@@ -1,0 +1,50 @@
+2015 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.491 (old 5.491)
+2015 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.774 (old 5.773)
+2015 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.896 (old 5.896)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2016 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.427 (old 5.427)
+2016 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.707 (old 5.706)
+2016 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.823 (old 5.823)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2017 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.487 (old 5.487)
+2017 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.768 (old 5.767)
+2017 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.885 (old 5.886)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2018 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.482 (old 5.482)
+2018 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.763 (old 5.762)
+2018 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.883 (old 5.884)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2019 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.451 (old 5.451)
+2019 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.725 (old 5.724)
+2019 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.850 (old 5.850)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2020 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.519 (old 5.519)
+2020 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.795 (old 5.794)
+2020 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.918 (old 5.919)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2021 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.490 (old 5.490)
+2021 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.770 (old 5.769)
+2021 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.887 (old 5.887)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2022 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.494 (old 5.494)
+2022 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.772 (old 5.772)
+2022 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.887 (old 5.888)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2023 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.435 (old 5.435)
+2023 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.709 (old 5.708)
+2023 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.831 (old 5.832)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS
+2024 centre: 4998 unmoved points bit-identical 4998/4998, moved 0, all finite True, mean speed 5.485 (old 5.485)
+2024 on: 4965 unmoved points bit-identical 4965/4965, moved 33, all finite True, mean speed 5.764 (old 5.763)
+2024 off: 4935 unmoved points bit-identical 4935/4935, moved 63, all finite True, mean speed 5.888 (old 5.889)
+moved_sites.csv rows 96; columns ['location_id', 'technology', 'old_lat', 'old_lon', 'new_lat', 'new_lon']
+ERA5 CHECK PASS

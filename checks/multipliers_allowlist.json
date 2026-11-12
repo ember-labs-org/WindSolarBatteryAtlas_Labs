@@ -1,0 +1,209 @@
+{
+ "_doc": "Allow-list for checks/multipliers.mjs (T084, D-147, D-155). Each entry: file (glob), pattern (regex on the code line), source (public source with year, or why it is not a model value), decision (DECISIONS.md ID). status 'needs-source' marks values with no named public source yet: the check passes them with a WARN line so they stay visible; the human decides. Add entries rather than widening patterns.",
+ "entries": [
+  {
+   "file": "pipeline/scripts/pipeline/wind/t061/eligibility.py",
+   "pattern": "^ON_FACTOR_EUROPE = 0\\.879$",
+   "source": "Empirical calibration to IRENA, Renewable Power Generation Costs in 2025 (2026), fig. 2.8: new-build onshore CF, projects commissioned 2023-2025, 12 European countries (DEU ESP FRA SWE GBR POL ITA FIN GRC AUT BEL LTU); refit 0.8793 in T081 (report_t081.md). Stands in for unmodelled losses; physical loss model planned",
+   "decision": "D-134, D-135, D-155"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/wind/t061/eligibility.py",
+   "pattern": "^OFF_FACTOR = 0\\.777$",
+   "source": "Empirical calibration to IRENA, Renewable Power Generation Costs in 2025 (2026), fig. 4.7: new-build offshore CF, projects commissioned 2024-2025 in China, Germany, France and the UK. Stands in for unmodelled losses; physical loss model planned",
+   "decision": "D-134, D-155"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/**",
+   "pattern": "^(DEFAULT_)?LOSSES(, RHO0)? = 0\\.12",
+   "source": "NONE NAMED: flat 12% wind losses (wake, availability, electrical) applied to Global Wind Atlas gross CF, a legacy convention with no public source in the repo; to be replaced by losses by technology (NEXT-WORK section 4: DEA, NREL ATB, Nygaard 2020, Akhtar 2021)",
+   "decision": "D-155 (loss model planned)",
+   "status": "needs-source"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/wind/build_wind_profiles.py",
+   "pattern": "^K_MIN, K_MAX = 0\\.6, 1\\.8$",
+   "source": "Bounds on the ERA5 speed scaling; where k would exceed 1.8, T081 quantile-maps ERA5 onto the GWA 4 Weibull distribution instead (Staffell and Pfenninger 2016, Energy, method)",
+   "decision": "A-T081-1, A-T081-2"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/wind/t054_sensitivity/k_headroom.py",
+   "pattern": "K_MAX, K_MIN, KEEP = 1\\.225, 1\\.8, 0\\.6",
+   "source": "T054 sensitivity script (not shipped): the same k bounds as build_wind_profiles.py",
+   "decision": "A-T081-1"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/tenyear/build_solar_t066.py",
+   "pattern": "^KCAP = 1\\.10$",
+   "source": "Cap on the solar calibration factor to the Global Solar Atlas (World Bank Group / Solargis) annual yield; disclosed limit",
+   "decision": "D-145, D-148"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/tenyear/pvmodel.py",
+   "pattern": "^LOSS_(DC = 0\\.05|AC = 0\\.015)$",
+   "source": "PVWatts-style DC (5%) and AC (1.5%) losses (Dobos 2014, NREL PVWatts v5 manual, model form); the level is then calibrated to the Global Solar Atlas, so these change only clipping (T066 contract section 1)",
+   "decision": "D-143, D-145"
+  },
+  {
+   "file": "scripts/wind_costs/build_wind_costs.py",
+   "pattern": "^OFFSHORE_FLOOR_X_ONSHORE = 1\\.5$",
+   "source": "Conservative guard: IRENA, Renewable Power Generation Costs in 2025, global offshore cost about 2.7x onshore; not applied where a regulator's capex is used (METI 2020, MOEA 2023)",
+   "decision": "D-146, D-153"
+  },
+  {
+   "file": "scripts/wind_costs/build_wind_costs.py",
+   "pattern": "^D146_PROXY_(ISO|FROM) = ",
+   "source": "Gulf and Central Asia capex proxy: mean of IRENA 2025 values for Egypt, Uzbekistan and Kazakhstan (RPGC 2025 fig. 2.4), among the largest buyers of Chinese wind turbines in 2024 (Chinese Wind Energy Association, 2025)",
+   "decision": "D-146, D-147, T084"
+  },
+  {
+   "file": "scripts/wind_costs/build_wind_costs.py",
+   "pattern": "^(TSO_EXPORT_LIFE = 40|WIND_OFF_LIFE = 30)",
+   "source": "CRF(w,40)/CRF(w,30) for TSO-owned export links: 40-year regulated life (TenneT Net op zee; BNetzA section 17d EnWG); wind life 30 years (NREL ATB 2024; DEA Technology Catalogue)",
+   "decision": "T082, D-146"
+  },
+  {
+   "file": "scripts/wind_costs/t082_unit_lcoe.py",
+   "pattern": "^LIFE = 30$",
+   "source": "Wind life 30 years (NREL ATB 2024; DEA Technology Catalogue), as app.js",
+   "decision": "D-146"
+  },
+  {
+   "file": "scripts/wind_costs/fix_local_capex.py",
+   "pattern": "^GCC_PROXY = ",
+   "source": "Solar and battery local capex: Saudi Arabia's IRENA 2024 installed cost (Renewable Power Generation Costs in 2025) used for the other Gulf states, as the app's methods state",
+   "decision": "NONE LOGGED",
+   "status": "needs-source"
+  },
+  {
+   "file": "deployment/js/app.js",
+   "pattern": "^const WIND_WACC_PREMIUM_DEFAULT = \\{ on: 0\\.0, off: 0\\.0092 \\};$",
+   "source": "Hatton et al. (2025), Scientific Data 12, 1912 (v3): median offshore minus onshore wind cost of capital, +0.92 points",
+   "decision": "D-054, D-066"
+  },
+  {
+   "file": [
+    "deployment/js/app.js",
+    "scripts/article/tools/model.js"
+   ],
+   "pattern": "^wind(Off)?DegradationPct: 0\\.002,$",
+   "source": "Hamilton, Millstein, Bolinger, Wiser and Jeong (2020), Joule 4: 0.17%/yr for newer US wind plants",
+   "decision": "D-065"
+  },
+  {
+   "file": [
+    "deployment/js/app.js",
+    "scripts/article/tools/model.js"
+   ],
+   "pattern": "^(wind|windOff)Life: 30,$",
+   "source": "Wind life 30 years (NREL ATB 2024; DEA Technology Catalogue); IRENA's 25 years disclosed as a sensitivity",
+   "decision": "D-146, D-148"
+  },
+  {
+   "file": [
+    "deployment/js/app.js",
+    "scripts/article/tools/model.js"
+   ],
+   "pattern": "^solarDegradationPct: 0\\.005,$",
+   "source": "NONE NAMED in the repo: 0.5%/yr PV degradation (app default since before T024)",
+   "decision": "NONE LOGGED",
+   "status": "needs-source"
+  },
+  {
+   "file": [
+    "deployment/js/app.js",
+    "scripts/article/tools/model.js"
+   ],
+   "pattern": "^(solar|battery)Life: (30|20),$",
+   "source": "NONE NAMED in the repo: solar 30 and battery 20 years (app defaults, stated in the methods)",
+   "decision": "NONE LOGGED",
+   "status": "needs-source"
+  },
+  {
+   "file": [
+    "deployment/js/app.js",
+    "scripts/article/tools/model.js"
+   ],
+   "pattern": "^(diesel|gas)Life: (20|25),",
+   "source": "NONE NAMED in the repo: backup generator lives (diesel 20, OCGT 25 years); backup is off by default",
+   "decision": "NONE LOGGED",
+   "status": "needs-source"
+  },
+  {
+   "file": "deployment/js/app.js",
+   "pattern": "^let lcoeCostMultipliers = \\{ solar: 1, battery: 1, wind: 1, windOff: 1 \\};$",
+   "source": "Not a model value: the user's cost-sensitivity controls, default 1 (no scaling)",
+   "decision": "n/a"
+  },
+  {
+   "file": "deployment/js/app.js",
+   "pattern": "demandSuggestedMax = demandPeak > 0 \\? demandPeak \\* 1\\.3",
+   "source": "Not a model value: chart y-axis headroom",
+   "decision": "n/a"
+  },
+  {
+   "file": "deployment/js/**.js",
+   "pattern": "DIESEL_PRICE_FLOOR_USD_PER_LITER = 0\\.80;$",
+   "source": "NONE NAMED in the repo: unsubsidised diesel price floor ($0.80/l) for the optional backup; off by default",
+   "decision": "NONE LOGGED",
+   "status": "needs-source"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/addon/common.py",
+   "pattern": "^DIESEL_FLOOR = 0\\.80$",
+   "source": "Mirror of the app's diesel price floor (constants.js); backup off by default",
+   "decision": "NONE LOGGED",
+   "status": "needs-source"
+  },
+  {
+   "file": "deployment/js/constants.js",
+   "pattern": "^export const TX_LIFE = 50;$",
+   "source": "NONE NAMED in the repo: transmission line life (50 years) for the LCOE view's transmission-cost reference mode",
+   "decision": "NONE LOGGED",
+   "status": "needs-source"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/wind/t061/nl_lcoe.py",
+   "pattern": "^YEAR, LIFE, DEG = 2026, 25, 0\\.002$",
+   "source": "T061 check script (not shipped) against PBL Eindadvies basisbedragen SDE++ 2025: 25-year life (PBL), 0.2%/yr degradation (Hamilton et al. 2020)",
+   "decision": "D-136, D-065"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/wind/t067/unit_lcoe.py",
+   "pattern": "sc / 1\\.3 \\* \\(crf\\(r, 30\\) \\+ 0\\.015\\)",
+   "source": "T067 check script (not shipped): mirrors the app's solar defaults (ILR 1.3, opex 1.5%, life 30, degradation 0.5%/yr)",
+   "decision": "D-146"
+  },
+  {
+   "file": "pipeline/scripts/pipeline/addon/common.py",
+   "pattern": "self\\.(b|on|off)_ann = self\\.(battery|wind_on|wind_off)_capex \\* crf\\(\\w+, \\d+\\) \\+ self\\.\\w+_capex \\* 0\\.0(2|25|35)$",
+   "source": "Mirror of app.js O&M defaults as a share of capex (battery 2%, onshore wind 2.5%, offshore 3.5%) for the add-on oracle; no public source named in the repo for these shares",
+   "decision": "NONE LOGGED",
+   "status": "needs-source"
+  },
+  {
+   "file": "scripts/article/tools/model.js",
+   "pattern": "^wind(Off)?WaccPremium: 0\\.(0|0092),$",
+   "source": "Copy of app.js WIND_WACC_PREMIUM_DEFAULT: Hatton et al. (2025), Scientific Data 12, 1912 (v3), median offshore minus onshore wind cost of capital +0.92 points; onshore +0",
+   "decision": "D-054, D-066"
+  },
+  {
+   "file": "scripts/article/engine.py",
+   "pattern": "10000 \\+ 2\\.0 \\* j\\[",
+   "source": "Not a model value: a sort key that orders search results",
+   "decision": "n/a"
+  },
+  {
+   "file": "scripts/article/tools/model.js",
+   "pattern": "'win\\.eu\\.above': share\\(.*x > 1 / 3",
+   "source": "Not a scaling: the even-spread threshold, a third of a year's output in four of twelve months (a definition, T077)",
+   "decision": "n/a"
+  },
+  {
+   "file": "scripts/article/analysis/t091/build_cartogram.py",
+   "pattern": "^FLOOR = 0\\.05\\b",
+   "source": "Not a model value: the population cartogram's drawing floor (minimum density, 5% of the mean) so near-empty land stays drawable; it changes no number in the article. The human accepted the map at 5% (5 Nov 2026).",
+   "decision": "D-164"
+  }
+ ]
+}

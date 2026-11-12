@@ -1,0 +1,154 @@
+{
+ "label": "app",
+ "site": "/private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287b19fe1/scratchpad/T058/wt-app/deployment",
+ "steps": [
+  {
+   "step": "first map (capacity)",
+   "bytesMb": 15.3,
+   "files": {
+    "/index.html": 118426,
+    "/js/parquet_wasm_bg.wasm": 6626292,
+    "/css/style.css": 46363,
+    "/data/world.geojson": 725557,
+    "/js/app.js": 313544,
+    "/js/data.js": 74990,
+    "/css/tailwind.css": 26936,
+    "/js/addon.js": 38106,
+    "/js/map.js": 134571,
+    "/js/samples.js": 30253,
+    "/js/utils.js": 4533,
+    "/js/constants.js": 5513,
+    "/js/tooltip.js": 11772,
+    "/js/tour.js": 28383,
+    "/js/parquet_wasm.js": 201542,
+    "/js/apache-arrow.js": 418700,
+    "/js/voronoi-canvas.js": 54436,
+    "/js/basemap.js": 10997,
+    "/js/workers/lcoe-worker.js": 50278,
+    "/data/configs.json": 394024,
+    "/data/voronoi_wind_resource.csv": 1380636,
+    "/data/voronoi_overlapping_countries.csv": 252202,
+    "/data/addon.json": 96350,
+    "/data/summary_w0.parquet": 4259915
+   },
+   "main": {
+    "usedMb": 23.7,
+    "backingMb": 37.7,
+    "embedderMb": 2.3
+   },
+   "workers": [],
+   "renderer": {
+    "rssMb": 242,
+    "footprintMb": 190
+   }
+  },
+  {
+   "step": "cost view (LCOE, full grid)",
+   "bytesMb": 68.03,
+   "files": {
+    "/js/workers/lcoe-worker.js": 100556,
+    "/data/voronoi_diesel_prices.csv": 1086627,
+    "/js/addon.js": 38106,
+    "/data/voronoi_gas_prices.csv": 329782,
+    "/js/data.js": 37495,
+    "/data/summary_w0.parquet": 4259915,
+    "/js/parquet_wasm.js": 100771,
+    "/js/parquet_wasm_bg.wasm": 6626292,
+    "/js/apache-arrow.js": 209350,
+    "/data/summary_w1.parquet": 3056965,
+    "/data/summary_w2.parquet": 3571316,
+    "/data/summary_w3.parquet": 3573172,
+    "/data/summary_w4.parquet": 3571909,
+    "/data/summary_w5.parquet": 3558780,
+    "/data/summary_w6.parquet": 3572638,
+    "/data/summary_w8.parquet": 3578498,
+    "/data/summary_wo1.parquet": 2812345,
+    "/data/summary_wo2.parquet": 3098856,
+    "/data/summary_wo3.parquet": 3119466,
+    "/data/summary_wo4.parquet": 3120188,
+    "/data/summary_wo5.parquet": 3117965,
+    "/data/summary_wo6.parquet": 3158891,
+    "/data/summary_wo8.parquet": 3171479,
+    "/data/addon_wind_mix.parquet": 7547459,
+    "/data/addon_large.parquet": 1609802
+   },
+   "main": {
+    "usedMb": 38.4,
+    "backingMb": 37.7,
+    "embedderMb": 3.1
+   },
+   "workers": [
+    {
+     "url": "/js/workers/lcoe-worker.js",
+     "usedMb": 2.1,
+     "backingMb": 87.3,
+     "embedderMb": 0
+    }
+   ],
+   "renderer": {
+    "rssMb": 422,
+    "footprintMb": 322
+   }
+  },
+  {
+   "step": "capacity, onshore 2 + offshore 1 (offshore levels 7)",
+   "bytesMb": 20.47,
+   "files": {
+    "/js/parquet_wasm_bg.wasm": 13252584,
+    "/js/workers/lcoe-worker.js": 100556,
+    "/js/addon.js": 38106,
+    "/js/data.js": 74990,
+    "/data/summary_w2.parquet": 3571316,
+    "/js/parquet_wasm.js": 201542,
+    "/js/apache-arrow.js": 418700,
+    "/data/summary_wo1.parquet": 2812345
+   },
+   "main": {
+    "usedMb": 37.6,
+    "backingMb": 31.6,
+    "embedderMb": 2.8
+   },
+   "workers": [
+    {
+     "url": "/js/workers/lcoe-worker.js",
+     "usedMb": 2.2,
+     "backingMb": 87.3,
+     "embedderMb": 0.8
+    }
+   ],
+   "renderer": {
+    "rssMb": 553,
+    "footprintMb": 355
+   }
+  },
+  {
+   "step": "Sample Days",
+   "bytesMb": 14.92,
+   "files": {
+    "/js/workers/daily-loader.js": 3827,
+    "/js/parquet_wasm_bg.wasm": 6626292,
+    "/data/daily_cf_2024.parquet": 7981016,
+    "/js/parquet_wasm.js": 100771,
+    "/js/apache-arrow.js": 209350
+   },
+   "main": {
+    "usedMb": 65.8,
+    "backingMb": 51.7,
+    "embedderMb": 3
+   },
+   "workers": [
+    {
+     "url": "/js/workers/lcoe-worker.js",
+     "usedMb": 2.2,
+     "backingMb": 87.3,
+     "embedderMb": 0.8
+    }
+   ],
+   "renderer": {
+    "rssMb": 563,
+    "footprintMb": 362
+   }
+  }
+ ],
+ "errors": []
+}

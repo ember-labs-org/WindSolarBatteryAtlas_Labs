@@ -1,0 +1,12 @@
+proof A: ESMAP masks + ETOPO land reproduce shipped pre-T061 onshore raster: 0 pixels differ
+proof B: T061 formula on the old rasters reproduces ws_D on/off: (0, 0) pixels differ
+flip to land: 120,293 px; lake px that were ETOPO sea: 28,813; Caspian px: 108,542
+Caspian offshore px old 47,984 -> new 44,931; floating old 56,207 -> new 45,170
+setback: 16696 T061 blocks; 88 new blocks with new eligible land
+PA strips: 3 1-deg strips with new eligible pixels not covered by T061 ([83, 82, 81] N top edges)
+  PA strip 83-82 N computed now: 5 WDPA polygons
+  PA strip 82-81 N computed now: 8 WDPA polygons
+  PA strip 81-80 N computed now: 9 WDPA polygons
+final onshore px changed vs T061: 105,045; offshore px changed: 87,879; floating px changed: 24,219
+done in 109s; setback blocks computed now: 88
+      109.54 real        67.94 user        23.73 sys

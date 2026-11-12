@@ -1,0 +1,26 @@
+write targets checked: none under OneDrive (7)
+free disk 14.7 GB (need >= 10.0)
+===== site =====
+       98.60 real        87.90 user        12.37 sys
+          3470213120  maximum resident set size
+         11116159232  peak memory footprint
+===== site: exit 0, 99 s
+workspace files changed during the run: none
+write targets checked: none under OneDrive (7)
+free disk 13.5 GB (need >= 10.0)
+===== profiles =====
+       77.89 real        76.67 user         0.87 sys
+           829620224  maximum resident set size
+           641928192  peak memory footprint
+===== profiles: exit 0, 78 s
+===== run3d =====
+      311.04 real      2161.79 user         6.78 sys
+          1924841472  maximum resident set size
+          1541640960  peak memory footprint
+===== run3d: exit 0, 311 s
+===== daily =====
+       20.06 real        15.35 user         1.74 sys
+          2945384448  maximum resident set size
+          2856377600  peak memory footprint
+===== daily: exit 0, 20 s
+workspace files changed during the run: none

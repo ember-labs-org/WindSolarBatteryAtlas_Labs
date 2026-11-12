@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harnessing the Winds | Solar + Wind + Battery Atlas</title>
+    <!-- The headline claim (meta, standfirst, key finding 1, take 1, conclusion) and the weak-wind paragraph
+         are chosen in scripts/article/tools/headline.mjs: edit there, then run it with --apply. -->
+    <!-- slot:meta --><meta name="description"
+        content="Adding wind lowers the cost of round-the-clock clean power for places that use more than two-thirds of the world's electricity. An interactive Ember analysis."><!-- /slot:meta -->
+
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://d3js.org">
+
+    <!-- The module graph and the article's data, fetched in parallel. The numbers and
+         map data come from one small file made with the atlas's own model
+         (data/article-summary.json, see scripts/article/tools/README.md). -->
+    <link rel="modulepreload" href="js/article.js">
+    <link rel="modulepreload" href="js/summary.js">
+    <link rel="modulepreload" href="js/layers.js">
+    <link rel="modulepreload" href="js/format.js">
+    <link rel="modulepreload" href="js/charts.js">
+    <link rel="modulepreload" href="js/map.js">
+    <link rel="modulepreload" href="js/voronoi-canvas.js">
+    <link rel="modulepreload" href="js/basemap.js">
+    <link rel="modulepreload" href="../js/constants.js">
+    <link rel="preload" href="data/article-summary.json" as="fetch" crossorigin>
+    <link rel="preload" href="../data/world.geojson" as="fetch" crossorigin>
+
+    <!-- Ember brand typeface, Poppins 400 and 600, as the atlas (../index.html). -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="color-scheme" content="dark light">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="css/article.css">
+</head>
+
+<body>
+    <div class="layout">
+
+        <!-- Sticky map: each take sets its state as it scrolls into view -->
+        <aside class="visual" id="visual" aria-label="Map">
+            <div id="map" class="map"></div>
+            <div class="map-caption" id="map-caption" aria-live="polite">
+                <div class="map-caption-title" id="map-title">Onshore wind capacity factor</div>
+                <div class="map-caption-sub" id="map-sub"></div>
+                <div class="map-controls" id="map-controls" hidden>
+                    <button type="button" data-map-play aria-pressed="false">Play</button>
+                    <input type="range" id="map-year" min="2026" max="2050" step="1" value="2026" aria-label="Cost year, 2026 to 2050">
+                    <span class="map-year-label" id="map-year-label">2026</span>
+                </div>
+            </div>
+            <div class="map-legend" id="map-legend"></div>
+            <div class="map-status" id="map-status" hidden></div>
+            <div class="map-tooltip" id="map-tooltip" hidden></div>
+        </aside>
+
+        <article class="article" id="article">
+
+            <header class="hero" data-map="windcf">
+                <div class="kicker">The Electrotech Revolution</div>
+                <h1>Harnessing the Winds</h1>
+                <p class="standfirst"><!-- slot:standfirst -->Adding wind lowers the cost of round-the-clock clean power for places that use <span data-n="hw.lower.demand.90" data-f="pct">75%</span> of the world's electricity<!-- /slot:standfirst --></p>
+                <p class="byline">By Daan Walter, Sam Butler-Sloss, Antoine Issac and Kingsmill Bond · October 2026</p>
+            </header>
+
+            <section class="highlights" data-map="windcf" aria-labelledby="highlights-title">
+                <h2 id="highlights-title" class="label">Key findings</h2>
+                <ul>
+                    <li><!-- slot:finding --><strong>At 90% uptime, adding wind lowers the cost of round-the-clock clean power for places that use <span data-n="hw.lower.demand.90" data-f="pct">75%</span> of the world's electricity – and by more than $15/MWh for <span data-n="hw.lower15.demand.90" data-f="pct">47%</span>.</strong> Weighted by people, the gain reaches <span data-n="hw.lower.people.90" data-f="pct">42%</span> of the world's people, and <span data-n="hw.lower15.people.90" data-f="pct">20%</span> by more than $15/MWh.<!-- /slot:finding --></li>
+                    <li><strong>The resource is vast.</strong> The world's technical wind potential is at least
+                        <span data-n="t2.multCons" data-f="floor">19</span> times its electricity demand on conservative
+                        assumptions, and up to <span data-n="t2.multTech" data-f="int">35</span> times on technical ones.</li>
+                    <li><strong>In Europe, wind blows when the sun is weak.</strong> In Germany, wind delivers
+                        <span data-n="t3.DE.windNF" data-f="pct">44%</span> of its annual output from November to
+                        February; solar <span data-n="t3.DE.solarNF" data-f="pct">12%</span>.</li>
+                    <li><strong>The north needs wind to keep costs down.</strong> North of 50°N, the standard solar
+                        and battery builds reach 90% uptime for
+                        <span data-n="t4.sbStd.n50p.90" data-f="pct">84%</span> of people. But solar and batteries
+                        alone cost a median <span data-n="t4.sbBoth.n50p.90" data-f="usd">$176</span>/MWh there.
+                        With wind, the median is
+                        <span data-n="t4.medWind.n50p.90" data-f="usd">$97</span>/MWh – less than three-fifths of that.</li>
+                    <li><strong>Round-the-clock clean power keeps getting cheaper.</strong> Onshore wind's installed cost falls
+                        <span data-n="ext.lr.onshore_wind.Global" data-f="pct">25%</span> with each doubling of
+                        capacity. On the atlas's local cost paths, the cost of 99% uptime halves by 2050, and wind
+                        stays in the cheapest build for 90% uptime for most demand.</li>
+                </ul>
+            </section>
+
+            <section class="take" id="intro" data-map="windcf">
+                <h2>Introduction</h2>
+                <p class="lead">Solar and batteries cover the daily cycle. Our earlier analysis, Harnessing the Sun, found
+                    they can already serve a flat load for most hours of the year in most places: with the atlas's
+                    standard builds, they reach 80% uptime for <span data-n="t1.sbStd.people.80" data-f="pct1">99.9%</span> of people. What
+                    they struggle with is the rest of the year, above all the dark winters of the high latitudes.
+                    That is where wind comes in.</p>
+                <p>We added wind to the Solar + Wind + Battery Atlas. The model divides the world, without Antarctica and Greenland, into
+                    <span data-n="n.cells" data-f="int">4,465</span> regions and asks, in each, what it takes to
+                    serve a flat 1 GW load from local resources alone: up to 20 GW of solar, up to 8 GW of
+                    onshore or offshore wind and up to 36 GWh of batteries per GW of load, run through every hour of
+                    ten weather years, 2015–2024. For each target uptime – the share of the load's energy the
+                    build delivers, averaged over the ten years – the model finds the cheapest build that gets there.</p>
+                <p>It is a sceptic's test: no grid imports, no demand flexibility, no hydro and no backup. Costs are
+                    the atlas's local costs at 2026 prices: each country's own capital costs for solar, batteries
+                    and wind, and its own cost of capital, a median of <span data-n="lcap.wacc" data-f="pct1">7.5%</span> weighted by
+                    demand. Finance counts as much as physics: the same build costs more where money costs more.</p>
+                <p>The comparison is like for like. Wind counts as the cheaper route only where solar and batteries
+                    can also reach the target and the build with wind costs less. Where the standard builds fall
+                    short, the model also tries much larger solar and battery builds – up to 200 GW of solar and
+                    4,608 GWh of batteries per GW of load – with the ten-year record repeating end to end, so a battery starts
+                    the record with what it held at its end. Builds this oversized are a thought experiment: the
+                    comparison is about cost, not feasibility.</p>
+                <p class="map-hint">The map shows the capacity factor each region's onshore wind simulates, set by the
+                    windiest fifth of its eligible land. Grey regions have no eligible land for a wind farm.</p>
+            </section>
+
+            <section class="take" id="take-1" data-map="saving">
+                <div class="take-number">1</div>
+                <h2><!-- slot:take1h2 -->Adding wind lowers the cost for places that use <span data-n="hw.lower.demand.90" data-f="pct">75%</span> of the world's electricity<!-- /slot:take1h2 --></h2>
+                <p><!-- slot:take1p1 -->At 90% uptime, adding wind lowers the cost of round-the-clock clean power for places that use <span data-n="t1.cheaper.demand.90" data-f="pct">75%</span> of the world's electricity, and by more than $15/MWh for <span data-n="hw.lower15.demand.90" data-f="pct">47%</span>.<sup><a href="#note-demand" id="ref-demand">1</a></sup> Weighted by people, the share is smaller: <span data-n="hw.lower.people.90" data-f="pct">42%</span> of the world's people gain, <span data-n="hw.lower15.people.90" data-f="pct">20%</span> by more than $15/MWh, with a median saving of <span data-n="hw.medSaving.people.90" data-f="usd">$14</span>/MWh where wind helps. The gap lies mostly in the tropics, home to many people who use little electricity today.<!-- /slot:take1p1 --></p>
+                <p>Solar and batteries alone can reach 90% uptime everywhere once the model allows oversized builds,
+                    so this is a comparison of cost, not of feasibility.</p>
+                <p>Where both can reach 90%, wind cuts the demand-weighted median cost from
+                    <span data-n="t1.sbBoth.demand.90" data-f="usd">$105</span> to
+                    <span data-n="t1.windBoth.demand.90" data-f="usd">$86</span>/MWh, or
+                    <span data-n="t1.cut.demand.90" data-f="pct">18%</span>. The cut is <span data-n="t1.cut.demand.50" data-f="pct">22%</span> at 50% uptime,
+                    falls to about a sixth between 70% and 90% and rises to <span data-n="t1.cut.demand.99" data-f="pct">28%</span> at
+                    99% uptime, where solar and batteries alone need ever more storage.</p>
+                <p>Latitude matters more. Between 0° and 15°, wind changes almost nothing. North of 55°, it
+                    cuts the cost of 90% uptime by <span data-n="lb.cut.a55p.90.2026" data-f="pct">65%</span>, from
+                    <span data-n="lb.sb.a55p.90.2026" data-f="usd">$280</span> to <span data-n="lb.wind.a55p.90.2026" data-f="usd">$99</span>/MWh. At 99% uptime,
+                    solar and batteries alone cost <span data-n="lb.sb.a55p.99.2026" data-f="usd">$586</span>/MWh there; with wind,
+                    <span data-n="lb.wind.a55p.99.2026" data-f="usd">$179</span>.</p>
+
+                <figure class="chart" id="chart-1">
+                    <h3 class="chart-title">Adding wind saves most at high latitude and high uptime</h3>
+                    <p class="chart-sub">Median saving from adding wind to solar and batteries, by latitude band (both hemispheres) and for the world, as uptime rises from 50% to 99%, weighted by electricity demand ($/MWh), 2026 local costs</p>
+                    <div class="chart-svg" data-chart="t1"></div>
+                    <p class="chart-source">Source: Ember, Solar + Wind + Battery Atlas (2026 local capital costs and cost of capital); Chen et al. (2022); Ember analysis</p>
+                </figure>
+
+                <p><!-- slot:weak -->For <span data-n="t1.noGain.people.90" data-f="pct">58%</span> of the world's people, solar and batteries alone are the cheapest route to 90% uptime. About a third of them – one in five people (<span data-n="t1.noViable.people" data-f="pct">22%</span>) – live where even the windiest fifth of the land would run a turbine at under 15% of its capacity: the Indo-Gangetic plain from Pakistan to Bangladesh, Indonesia, the Sichuan basin, southern Nigeria, Uganda and the Congo basin. These are low-wind places, not gaps in the data. India's <span data-n="nv.India.cells" data-f="int">29</span> such regions have a median wind speed of <span data-n="nv.India.speed" data-f="d1">4.7</span> m/s at 100 m, and their median patch of eligible land would run at <span data-n="nv.India.cf" data-f="pct">10%</span> of its capacity.<!-- /slot:weak --></p>
+                <p>Weighted by people, the like-for-like cut at 90% uptime is
+                    <span data-n="t1.cut.people.90" data-f="pct">6%</span>.</p>
+                <p>Onshore wind does nearly all of the work. Without offshore wind, wind is still the cheaper route
+                    for <span data-n="t1on.cheaper.demand.90" data-f="pct">75%</span> of demand against solar and batteries
+                    of any size.</p>
+                <p class="map-hint">On the map, dark green marks regions where wind saves little or nothing at 90%
+                    uptime, and lighter shades larger savings.</p>
+            </section>
+
+            <section class="take" id="take-2" data-map="potential">
+                <div class="take-number">2</div>
+                <h2>The wind resource is vast</h2>
+                <p>On conservative assumptions – capacity factors scaled to those of new wind farms, 3 MW per km²
+                    of eligible land and only land that still reaches a 20% capacity factor – the world's technical
+                    wind potential is at least <span data-n="t2.multCons" data-f="floor">19</span> times its electricity
+                    demand in 2025 (<span data-n="ext.demand2025" data-f="int">31,820</span> TWh): about
+                    <span data-n="t2.cons.total.pwh" data-f="r10">620</span> PWh a year, of which
+                    <span data-n="t2.cons.on.twh" data-f="pwh">554</span> PWh is onshore and
+                    <span data-n="t2.cons.offFixed.twh" data-f="pwh">64</span> PWh fixed-bottom offshore, on the World
+                    Bank/ESMAP definition. On technical assumptions – 5 MW per km² on land that reaches 15%, each 2 km pixel at its own
+                    capacity factor, and the IEA's wider offshore definition – it is up to <span data-n="t2.multTech" data-f="int">35</span> times: about
+                    <span data-n="t2.tech.total.pwh" data-f="r10">1,110</span> PWh a year, of which
+                    <span data-n="t2.tech.on.twh" data-f="pwh">1,025</span> PWh is onshore and
+                    <span data-n="t2.iea.offFixed.twh" data-f="pwh">88</span> PWh offshore. Floating offshore wind would add
+                    <span data-n="t2.cons.offFloat.twh" data-f="pwh">158</span> to
+                    <span data-n="t2.iea.offFloat.twh" data-f="pwh">299</span> PWh a year.</p>
+                <p>The resource is widely spread. North of 45°N, wind potential exceeds local demand in regions
+                    home to <span data-n="t2.coverTech.n45p" data-f="pct">97%</span> of people on the technical assumptions;
+                    in the tropics, between <span data-n="t2.coverTech.s15_0" data-f="pct">72%</span> and
+                    <span data-n="t2.coverTech.n0_15" data-f="pct">85%</span>. Worldwide the share is
+                    <span data-n="t2.coverCons.world" data-f="pct">65%</span> on the conservative assumptions and
+                    <span data-n="t2.coverTech.world" data-f="pct">82%</span> on the technical ones.</p>
+
+                <figure class="chart" id="chart-2">
+                    <h3 class="chart-title">The world's wind could supply its electricity at least <span data-n="t2.multCons" data-f="floor">19</span> times over</h3>
+                    <p class="chart-sub">Technical wind potential and world electricity demand, PWh a year; conservative
+                        case in a lighter shade</p>
+                    <div class="chart-svg" data-chart="t2"></div>
+                    <p class="chart-source">Source: Ember, Solar + Wind + Battery Atlas; World Bank/ESMAP (2021); IEA (2019);
+                        Ember Yearly Electricity Data (2026); Ember analysis</p>
+                </figure>
+
+                <p>Sunlight is more abundant still: the atlas's technical solar potential is
+                    <span data-n="t2.solar.def.twh" data-f="pwh">4,801</span> PWh a year, and
+                    <span data-n="t2.solar.low.twh" data-f="pwh">2,647</span> to
+                    <span data-n="t2.solar.high.twh" data-f="pwh">5,754</span> PWh across its cautious and high cases.
+                    Wind's case is not size. It is timing and latitude.</p>
+                <p>Technical potential is what could physically fit, not what will be built. The atlas's eligible
+                    land excludes no forest or farmland, and its offshore area excludes no shipping lanes, fishing
+                    grounds or sea ice.</p>
+                <p class="map-hint">The map shows each region's wind potential as a multiple of its own electricity
+                    demand. Grey marks the regions where it falls short.</p>
+            </section>
+
+            <section class="take" id="take-3" data-map="winter">
+                <div class="take-number">3</div>
+                <h2>In Europe, wind fills solar's winter gap</h2>
+                <p>The atlas's published results are annual, so they cannot show the seasons. Observed output can.
+                    Ember's monthly data for national power fleets show solar and wind peaking in opposite halves of
+                    the year.</p>
+                <p>In Germany, solar delivered <span data-n="t3.DE.solarNF" data-f="pct">12%</span> of its annual
+                    output in the four months from November to February, and wind
+                    <span data-n="t3.DE.windNF" data-f="pct">44%</span> (2023–2025 average). An even spread would put a
+                    third in those months. Across nine European countries, from Sweden to Spain, wind delivered
+                    <span data-n="t3m.windNFMin" data-f="pctnum">39</span>–<span data-n="t3m.windNFMax" data-f="pct">44%</span> of its output in those four months and
+                    solar <span data-n="t3m.solarNFMin" data-f="pctnum">7</span>–<span data-n="t3m.solarNFMax" data-f="pct">19%</span>. Month by month, Germany's solar
+                    and wind shares have a correlation of <span data-n="t3.DE.corr" data-f="corr">−0.95</span>.</p>
+
+                <figure class="chart" id="chart-3">
+                    <h3 class="chart-title">Across Europe, wind delivers most when the sun delivers least</h3>
+                    <p class="chart-sub">Share of each source's annual output generated in each month, national fleets, 2023–2025 average (%), north to south</p>
+                    <div class="chart-svg" data-chart="t3"></div>
+                    <p class="chart-source">Source: Ember Monthly Electricity Data (2026); Ember analysis. Observed national output, not the atlas's model</p>
+                </figure>
+
+                <p>The pattern is common, not universal. Of the <span data-n="t3.nBoth" data-f="int">62</span>
+                    countries with complete monthly data for both sources, <span data-n="t3.nNeg" data-f="int">47</span>
+                    show them moving in opposite directions. But the sample leans on Europe
+                    (<span data-n="t3.nEurope" data-f="int">34</span> of the
+                    <span data-n="t3.nBoth" data-f="int">62</span>) and says little about the tropics. In India, wind
+                    is strongest in the wet season, when solar dips: the complement follows the monsoon, not the
+                    winter.</p>
+                <p>These are national fleets, and capacity added during a year tilts its shares towards later
+                    months. They point to why wind keeps costs down in the north.</p>
+                <p>The atlas's own wind sites tell the same story. Across Europe, the demand-weighted median region's
+                    onshore wind farm delivered <span data-n="win.eu.median" data-f="pct">42%</span> of its 2024 output in November–February,
+                    and regions that use <span data-n="win.eu.above" data-f="pct">92%</span> of the electricity in the map's view get more
+                    than a third.</p>
+                <p class="map-hint">The map shows the share of each region's simulated onshore wind output in
+                    November–February 2024, the only year with daily data in the atlas. Green marks more than a
+                    third; grey, less.</p>
+            </section>
+
+            <section class="take" id="take-4" data-map="saving-europe">
+                <div class="take-number">4</div>
+                <h2>The north needs wind to keep costs down</h2>
+                <p>North of 50°N, the standard solar and battery builds – up to 20 GW of solar and 36 GWh of
+                    batteries per GW of load – reach 90% uptime for
+                    <span data-n="t4.sbStd.n50p.90" data-f="pct">84%</span> of people. The share falls to
+                    <span data-n="t4.sbStd.n55p.90" data-f="pct">52%</span> north of 55°N and to
+                    <span data-n="t4.sbStd.n65_90.90" data-f="pct">0%</span> north of 65°N. Where the standard builds
+                    fall short, solar and batteries alone get there by oversizing solar and batteries far beyond the atlas's sliders. In
+                    <span data-n="t4.lgWins.n50p.90" data-f="int">574</span> of its
+                    <span data-n="t4.lgRegions.n50p.90" data-f="int">1,043</span> regions, the cheapest solar and
+                    battery build that gets there lies beyond the sliders; the median such build has
+                    <span data-n="t4.lgSolar.n50p.90" data-f="int">60</span> MW of solar and
+                    <span data-n="t4.lgBatt.n50p.90" data-f="int">145</span> MWh of batteries per MW of load. Across
+                    the band, solar and batteries alone cost a median <span data-n="t4.sbBoth.n50p.90" data-f="usd">$176</span>/MWh –
+                    about three-quarters more than the cost with wind (<span data-n="t4.windBoth.n50p.90" data-f="usd">$97</span>). The
+                    builds beyond the sliders also lean on a weather record that repeats.</p>
+                <p>Add wind and 90% uptime is within reach for
+                    everyone there, at a median
+                    <span data-n="t4.medWind.n50p.90" data-f="usd">$97</span>/MWh. That is above the world median with
+                    wind, weighted the same way by people (<span data-n="t4.medWind.world.90" data-f="usd">$70</span>).</p>
+                <p>At 80% uptime north of 45°N, wind cuts the median cost by
+                    <span data-n="t4.cut.n45p.80" data-f="pct">29%</span>, from
+                    <span data-n="t4.sbBoth.n45p.80" data-f="usd">$119</span> to
+                    <span data-n="t4.windBoth.n45p.80" data-f="usd">$85</span>/MWh. The chart names a city from the atlas in each band, from
+                    Tromsø to Buenos Aires.</p>
+
+                <figure class="chart" id="chart-4">
+                    <h3 class="chart-title">Wind cuts the cost of high uptime by more than a quarter north of 45°N</h3>
+                    <p class="chart-sub">Median cost of serving a 1 GW load 80% of the time, by latitude, with an example city in each band, weighted by people ($/MWh), 2026 local costs</p>
+                    <div class="chart-svg" data-chart="t4"></div>
+                    <p class="chart-source">Source: Ember, Solar + Wind + Battery Atlas (2026 local costs); GPW v4; Ember analysis. Southernmost band (<span data-n="t4.people.s90_45" data-f="d1">1.3</span> million people) not shown</p>
+                </figure>
+
+                <p>In the United Kingdom, Germany, Poland, the Netherlands and Sweden, wind cuts the cost of 80% uptime by
+                    <span data-n="t4c.DE.cut.80" data-f="pctnum">30</span>–<span data-n="t4c.SE.cut.80" data-f="pct">47%</span>
+                    against solar and batteries alone. With wind, the median cost of 90% uptime is
+                    <span data-n="t4c.UK.medWind.90" data-f="usd">$93</span>/MWh in the United Kingdom,
+                    <span data-n="t4c.DE.medWind.90" data-f="usd">$105</span> in Germany and
+                    <span data-n="t4c.ES.medWind.90" data-f="usd">$78</span> in Spain, against
+                    <span data-n="t4c.US.medWind.90" data-f="usd">$95</span> in the United States. Onshore wind is enough: without
+                    offshore, the median cost with wind is unchanged in every latitude band.</p>
+                <p>Two cautions. On the atlas's global costs – the same capital costs and cost of capital
+                    everywhere – 90% uptime north of 50°N would cost a median
+                    <span data-n="glob.t4.medWind.n50p.90" data-f="usd">$75</span>/MWh with wind: much of the north's cost is finance and
+                    local prices, not weather. And ten weather years, 2015–2024, cannot test the longest
+                    winter wind droughts.</p>
+                <p class="map-hint">The map zooms to Europe: lighter shades mark larger savings from wind.</p>
+            </section>
+
+            <section class="take" id="take-5" data-map="windcost">
+                <div class="take-number">5</div>
+                <h2>Round-the-clock clean power keeps getting cheaper</h2>
+                <p>Wind turbines are manufactured, and their costs follow a learning curve. IRENA finds that onshore
+                    wind's installed cost falls <span data-n="ext.lr.onshore_wind.Global" data-f="pct">25%</span> for
+                    every doubling of global capacity:
+                    <span data-n="ext.lr.onshore_wind.Europe" data-f="pct">33%</span> in Europe,
+                    <span data-n="ext.lr.onshore_wind.United States" data-f="pct">31%</span> in the United States and
+                    <span data-n="ext.lr.onshore_wind.China" data-f="pct">13%</span> in China, which started from a
+                    low base. Solar's rate is higher still, at
+                    <span data-n="ext.lr.solar_pv.Global" data-f="pct">34%</span>.</p>
+                <p>The global average cost of onshore wind power fell
+                    <span data-n="ext.lcoeFall.onshore_wind" data-f="pct">71%</span> between 2010 and 2025, from
+                    <span data-n="ext.lcoe.onshore_wind.2010" data-f="usd">$114</span> to
+                    <span data-n="ext.lcoe.onshore_wind.2025" data-f="usd">$33</span>/MWh; offshore wind fell
+                    <span data-n="ext.lcoeFall.offshore_wind" data-f="pct">63%</span>. IRENA expects onshore installed
+                    costs to fall a further <span data-n="ext.tic.onshore_wind.2026-2035" data-f="pct">20%</span> by
+                    2035, though more slowly than before.</p>
+                <p>The atlas's local cost paths assume steeper falls still. Weighted by demand, the median onshore
+                    capital cost drops <span data-n="lcap.onFall2035" data-f="pct">27%</span> by 2035, from
+                    <span data-n="lcap.on.2026" data-f="usd">$1,616</span>/kW in 2026 to
+                    <span data-n="lcap.on.2035" data-f="usd">$1,173</span> in 2035 and
+                    <span data-n="lcap.on.2050" data-f="usd">$770</span> in 2050; solar's from
+                    <span data-n="lcap.solar.2026" data-f="usd">$779</span>/kW to <span data-n="lcap.solar.2050" data-f="usd">$370</span>, and batteries' from
+                    <span data-n="lcap.battery.2026" data-f="usd">$128</span>/kWh to <span data-n="lcap.battery.2050" data-f="usd">$65</span>. Each country keeps
+                    today's cost of capital.</p>
+                <p>As solar, batteries and wind get cheaper, so does power at high uptime. Weighted by demand, the cheapest build for
+                    99% uptime falls from <span data-n="lb.best.world.99.2026" data-f="usd">$126</span>/MWh in 2026 to
+                    <span data-n="lb.best.world.99.2050" data-f="usd">$65</span> in 2050, and for 90% uptime from
+                    <span data-n="t5.windBoth.demand.2026" data-f="usd">$86</span> to <span data-n="t5.windBoth.demand.2050" data-f="usd">$44</span>: the cost
+                    of 90% uptime with wind halves by 2050. North of 55°, round-the-clock power falls from
+                    <span data-n="lb.best.a55p.99.2026" data-f="usd">$179</span> to <span data-n="lb.best.a55p.99.2050" data-f="usd">$96</span>/MWh.</p>
+
+                <figure class="chart" id="chart-5">
+                    <h3 class="chart-title">Round-the-clock clean power gets about half as expensive by 2050 at every latitude</h3>
+                    <p class="chart-sub">Median cost of the cheapest solar, wind and battery build that serves a 1 GW load at each uptime, by latitude band, weighted by electricity demand ($/MWh), local costs, 2026–2050</p>
+                    <div class="chart-controls"><button type="button" data-play aria-pressed="false" aria-label="Play or pause the years">Play</button></div>
+                    <div class="chart-svg" data-chart="t5anim"></div>
+                    <p class="chart-source">Source: Ember, Solar + Wind + Battery Atlas (local capital-cost paths to 2050, cost of capital held at today's); Ember analysis</p>
+                </figure>
+
+                <figure class="chart" id="chart-5b">
+                    <h3 class="chart-title">North of 30°, adding wind keeps high uptime cheaper all the way to 2050</h3>
+                    <p class="chart-sub">Median cost of serving a 1 GW load 90% of the time, by latitude band, weighted by electricity demand ($/MWh), local costs, 2026–2050</p>
+                    <div class="chart-svg" data-chart="t5b"></div>
+                    <p class="chart-source">Source: Ember, Solar + Wind + Battery Atlas (local costs); Ember analysis</p>
+                </figure>
+
+                <p>Wind keeps its place, though not everywhere. North of 30°, solar, batteries and wind together cost less
+                    than solar and batteries alone in every year to 2050; between 15° and 30°, the median gain
+                    shrinks to nothing by 2050 as solar and batteries get cheaper. Worldwide and weighted by demand, wind cuts the median cost by <span data-n="t5.cutMin" data-f="pctnum">10</span>–<span data-n="t5.cutMax" data-f="pct">18%</span>
+                    depending on the year, where both can reach 90% uptime. Wind stays in the cheapest build for most demand to
+                    2050: as the cheaper route for <span data-n="t5.cheaperMin" data-f="pctnum">63</span>–<span data-n="t5.cheaperMax" data-f="pct">75%</span> of
+                    demand, against solar and batteries of any size. North of 55°, with wind, 90% uptime costs
+                    <span data-n="lb.wind.a55p.90.2050" data-f="usd">$53</span>/MWh in 2050, against <span data-n="lb.sb.a55p.90.2050" data-f="usd">$129</span>
+                    without.</p>
+                <p>That is not every grid. The low-wind tropics stay solar and battery systems in every year. And
+                    wind's advantage narrows to 2035, because the atlas's local solar and battery costs fall
+                    faster than wind's until then. The paths are the atlas's assumptions, not forecasts.</p>
+                <p>Wind power itself gets cheaper everywhere. At each region's simulated site, on local costs, the
+                    demand-weighted median onshore wind farm produces power at <span data-n="wl.median.2026" data-f="usd">$60</span>/MWh in
+                    2026 and <span data-n="wl.median.2050" data-f="usd">$36</span> in 2050.</p>
+                <p class="map-hint">The map shows the cost of power from an onshore wind farm in each region, on
+                    local costs: move the slider from 2026 to 2050, or press Play.</p>
+            </section>
+
+            <section class="take" id="conclusion" data-map="windcost">
+                <h2>Conclusion</h2>
+                <p><!-- slot:conclusion -->Solar and batteries cover the daily cycle. Wind adds what they lack at high latitudes. Together they make round-the-clock clean power cheaper at 90% uptime for places that use <span data-n="hw.lower.demand.90" data-f="pct">75%</span> of the world's electricity. In the north, wind does the job at less than three-fifths of the cost of solar and batteries alone.<!-- /slot:conclusion --></p>
+                <p>The low-wind tropics are the exception: there, solar and batteries do the job without help.</p>
+                <p>Elsewhere, planners who want clean power at high uptime should build wind beside solar and
+                    batteries, not instead of them. Wind is still getting cheaper.</p>
+                <a class="cta" href="../index.html">Explore the interactive atlas</a>
+            </section>
+
+            <section class="notes" id="notes">
+                <h2 class="label">Notes and method</h2>
+                <ol>
+                    <li id="note-demand">Demand weights use the atlas's gridded electricity demand (Chen et al. 2022),
+                        which reflects demand around 2019
+                        (<span data-n="n.demandTwh" data-f="int">20,676</span> TWh a year). World demand in 2025
+                        (<span data-n="ext.demand2025" data-f="int">31,820</span> TWh, Ember) is used only for scale.
+                        People are weighted by GPW v4 (2020). <a href="#ref-demand" aria-label="Back to text">↩</a></li>
+                    <li>All costs are the atlas's local costs (its Local setting for capital costs and for the cost of
+                        capital), pinned to 2026, with solar and wind lasting 30 years and batteries 20. Weighted by
+                        demand, the median region pays <span data-n="lcap.solar.2026" data-f="usd">$779</span>/kW for solar,
+                        <span data-n="lcap.battery.2026" data-f="usd">$128</span>/kWh for batteries, <span data-n="lcap.on.2026" data-f="usd">$1,616</span>/kW for onshore
+                        wind and <span data-n="lcap.off.2026" data-f="usd">$2,964</span>/kW for offshore wind, with a
+                        <span data-n="lcap.wacc" data-f="pct1">7.5%</span> cost of capital. A region without a local figure takes the atlas's
+                        global defaults: solar
+                        <span data-n="p.solarCapex" data-f="usd">$720</span>/kW, batteries
+                        <span data-n="p.batteryCapex" data-f="usd">$120</span>/kWh, onshore wind
+                        <span data-n="cap.on.2026" data-f="usd">$1,085</span>/kW and offshore wind
+                        <span data-n="cap.off.2026" data-f="usd">$2,931</span>/kW, with a
+                        <span data-n="p.wacc" data-f="pct">7%</span> cost of capital (offshore wind
+                        <span data-n="p.windOffWaccPremium" data-f="pts">0.92</span> points higher). Operating costs
+                        do not escalate. Output degrades by
+                        <span data-n="p.solarDegradationPct" data-f="pct1">0.5%</span> a year for solar and
+                        <span data-n="p.windDegradationPct" data-f="pct1">0.2%</span> for wind. On global costs and a 25-year wind life,
+                        IRENA's convention, wind lowers the cost for places that use 79% of the world's electricity and for
+                        49% of its people.</li>
+                    <li>Uptime is the share of the load's energy a build delivers, averaged over ten weather years
+                        (2015–2024); the atlas's tooltips also show the worst year. Solar output comes from a tilted-panel model, fixed
+                        tilt facing the equator, calibrated to the Global Solar Atlas's annual yield. The calibration factor
+                        is capped at 1.10. Above about 60°N, outside the Global Solar Atlas, a region takes the median factor
+                        of its nearest calibrated neighbours. Snow losses are not modelled. Each region has one
+                        simulated wind site and no grid or spur-line cost to that site. The
+                        site's level is the mean capacity factor of the windiest fifth of the region's eligible land or
+                        sea, at least 500 km², after excluding protected areas (WDPA) and settlements (GHSL). It is
+                        then scaled by ×0.879 onshore in Europe and ×0.777 offshore everywhere, an empirical calibration to
+                        the capacity factors IRENA observed for new wind farms: onshore, projects commissioned between 2023 and 2025 in
+                        Germany, Spain, France, Sweden, the United Kingdom, Poland, Italy, Finland, Greece, Austria, Belgium
+                        and Lithuania; offshore, between 2024 and 2025 in China, Germany, France and the United Kingdom. The factors stand
+                        in for losses the model does not represent, such as wakes and availability; a physical loss model is
+                        planned. Onshore, the simulated level runs a median of about a fifth above
+                        the region's median land, calibrated the same way. Wind potential counts only land that reaches 15% before this scaling. Land below sea level counts as land
+                        where the land and water datasets agree (polders, the Caspian Depression). Onshore capacity factors in Latin America
+                        are probably understated, a known limitation. The Global Wind Atlas has known biases. A model built on its
+                        version 4 reaches a mean capacity-factor error of 5.6% against wind-turbine measurements once wind speeds
+                        are corrected, but national capacity factors 23% above IEA statistics without that correction
+                        (Peña-Sánchez et al. 2026). Version 4's wind speeds at 10 m run high across much of continental Asia, northern
+                        Europe and Canada and low in eastern Australia, southern Europe and rainforest regions. The validation's wind measurements come mainly from the United States, Europe, South Africa and Iran,
+                        and its wind-farm data from the North Sea and Norway, so the Global Wind Atlas is
+                        little tested in most of Asia. Earlier versions overstated output in the United States, Brazil and New Zealand
+                        (Gruber et al. 2022).</li>
+                    <li>Offshore wind is costed at the depth and distance of designated zones where countries publish them,
+                        elsewhere of the windiest fifth of a region's eligible sea. Its costs include the export link; where the
+                        grid operator builds it (the Netherlands, Germany, Denmark, Belgium and France), the link is spread over
+                        its longer regulated life, and tender prices there, which leave it out, sit below the atlas. IRENA's
+                        offshore costs are used as published; IRENA notes that cost structures vary with who owns the export
+                        link, so in these countries they may leave out part of it. Auction prices in the United Kingdom and Ireland sit above the
+                        atlas partly because they carry network charges. The global wind cost is a China-weighted world average, below the
+                        cost of a typical European or North American project; the article uses it only where a region has no local figure.</li>
+                    <li id="note-potential">Wind potential is given as a range. Onshore, both cases are counted pixel by pixel on the atlas's 2 km grid with the
+                        same exclusions. The technical case is the atlas's default: 5 MW per km² on eligible land that reaches 15% before
+                        calibration, each pixel at its own capacity factor. The conservative case changes three things: capacity factors scaled to new wind farms (×0.879 onshore in Europe)
+                        before any cut-off, 3 MW per km² (the US whole-project average, Denholm et al. 2009) and a
+                        20% cut-off on the scaled capacity factor. Offshore follows two published definitions, both on the atlas's own sea
+                        (at least 10 km from shore, protected areas excluded) with capacity factors scaled to new wind farms (×0.777 offshore).
+                        The conservative case uses the World Bank/ESMAP definition (2021): its own capacity of 3–4 MW per km², fixed-bottom to
+                        50 m deep and floating to 1,000 m, within 200 km of shore, with the same 20% cut-off. The technical case uses the IEA's
+                        (<em>Offshore Wind Outlook 2019</em>): shallow water to 60 m and deep water to 2,000 m, within 300 km of shore, turbines
+                        8 rotor diameters apart; its buffers for shipping lanes, cables and fault lines are not applied. Floating wind takes the
+                        capacity factor of its own deep-water sites. Solar counts ground-mount at <span data-n="t2.solar.mwKm2" data-f="int">50</span> MW
+                        per km² (DC capacity) on the Level 1 land of World Bank/ESMAP and Solargis (2020), a central judgement
+                        between the whole area of large parks (about 26–44 MW per km²) and the array area of US plants built in 2019
+                        (medians of 59 MW per km² with tracking and 87 fixed-tilt; Bolinger and Bolinger 2022, LBNL), plus
+                        rooftops at 100 MW per km² of building footprint (Joshi et al.). Not every roof can take panels – shading,
+                        orientation and structure rule some out – so the rooftop figure is an upper estimate; car parks, floating
+                        solar and solar over farmland are not counted. Its range runs from
+                        <span data-n="t2.solar.low.twh" data-f="pwh">2,647</span> PWh (Level 2 land, 40 MW per km²)
+                        to <span data-n="t2.solar.high.twh" data-f="pwh">5,754</span> PWh (60 MW per km²). Published estimates sit within or around these ranges. Onshore wind:
+                        about 560 PWh a year (Eurek et al. 2017, NREL).
+                        Offshore: 71 TW of capacity, about 20 TW of it fixed-bottom (World Bank/ESMAP 2021), and
+                        about 420 PWh a year (IEA, <em>Offshore Wind Outlook 2019</em>), against the atlas's
+                        <span data-n="t2.cons.offFixed.twh" data-f="pwh">64</span> PWh fixed-bottom and
+                        <span data-n="t2.cons.offFloat.twh" data-f="pwh">158</span> PWh floating on ESMAP's definition and
+                        <span data-n="t2.iea.total.pwh" data-f="r10">390</span> PWh in all on the IEA's. ESMAP publishes capacity, not
+                        energy: at the Global Wind Atlas's own capacity factors net of losses, its capacity would give about 30% more than
+                        the atlas's figures, almost all of it from the scaling to new wind farms. Solar: 613 PWh
+                        (Korfiati et al. 2016) to 12,957 PWh (Chinese Academy of Sciences, 2026). As a sensitivity, excluding dense
+                        forest (tree cover of 50% or more) and cropland from eligible land, using Copernicus Global Land Cover 2019,
+                        lowers onshore wind potential by about a quarter – to
+                        <span data-n="ext.t086.cons.both.twh" data-f="pwh">416</span> PWh a year in the conservative case and
+                        <span data-n="ext.t086.tech.both.twh" data-f="pwh">744</span> PWh in the technical case. Onshore alone,
+                        that is still <span data-n="t2.lc.multCons" data-f="int">13</span>–<span data-n="t2.lc.multTech" data-f="int">23</span> times
+                        world electricity demand. Slope is not excluded.</li>
+                    <li>Local costs change the article's numbers. Until this version, they were the atlas's global
+                        defaults: the same capital costs everywhere and a <span data-n="p.wacc" data-f="pct">7%</span> cost of capital. On those,
+                        wind lowers the cost of 90% uptime for places that use <span data-n="glob.hw.lower.demand.90" data-f="pct">86%</span> of
+                        the world's electricity and for <span data-n="glob.hw.lower.people.90" data-f="pct">57%</span> of its people, and the
+                        like-for-like cut is <span data-n="glob.t1.cut.demand.90" data-f="pct">21%</span>. On local costs, the shares are
+                        <span data-n="hw.lower.demand.90" data-f="pct">75%</span> and <span data-n="hw.lower.people.90" data-f="pct">42%</span>: weighted by demand, the median
+                        local onshore wind cost, <span data-n="lcap.on.2026" data-f="usd">$1,616</span>/kW, is well above the
+                        global figure, <span data-n="cap.on.2026" data-f="usd">$1,085</span>/kW, a China-weighted world average. Countries' costs of capital come from Hatton et al. (2025),
+                        applied as published, not deflated. Local onshore costs
+                        come from IRENA (2026): its 2023–2025 country means, or its regional figures. The Gulf states,
+                        Turkmenistan, Kyrgyzstan and Tajikistan, which IRENA does not list, take the mean of its latest
+                        values for Egypt, Uzbekistan and Kazakhstan, among the largest buyers of Chinese wind turbines in 2024
+                        (Chinese Wind Energy Association). Local offshore costs are never
+                        below 1.5 times onshore; Japan and Taiwan take their regulators' figures (METI and MOEA).</li>
+                    <li>The atlas numbers and maps on this page come from the interactive atlas's own model with its
+                        Local cost settings, run with 2026 costs and the atlas's cost paths to 2050, and are checked
+                        against the atlas itself driven in the same mode. Latitude bands use absolute latitude, so
+                        each joins both hemispheres, and are weighted by electricity demand; the chart and text on the north
+                        are weighted by people.</li>
+                </ol>
+                <p class="model-status" id="model-status" hidden></p>
+            </section>
+
+            <footer class="sources">
+                <h2 class="label">Sources</h2>
+                <ul>
+                    <li>Ember, Solar + Wind + Battery Atlas (2026): solar from NASA POWER hourly weather, 2015–2024; wind from Global Wind Atlas
+                        4 (DTU Wind Energy and the World Bank, 2025) and ERA5 (Copernicus Climate Change Service).</li>
+                    <li>Peña-Sánchez, E. U., Dunkel, P., Winkler, C. et al. (2026), Towards high resolution, validated and
+                        open global wind power assessments, Nature Communications 17, 539; Gruber, K., Regner, P., Wehrle, S.,
+                        Zeyringer, M. and Schmidt, J. (2022), Towards global validation of wind power simulations, Energy 238,
+                        121520: validation and known biases of the Global Wind Atlas.</li>
+                    <li>World Bank / ESMAP (2021), Global Offshore Wind Technical Potential.</li>
+                    <li>IEA (2019), Offshore Wind Outlook 2019: offshore technical potential.</li>
+                    <li>Eurek, K. et al. (2017), An improved global wind resource estimate for integrated assessment
+                        models, Energy Economics 64; Denholm, P. et al. (2009), Land-Use Requirements of
+                        Modern Wind Power Plants in the United States, NREL: wind potential context.</li>
+                    <li>Korfiati, A. et al. (2016), Estimation of the global solar energy potential and photovoltaic
+                        cost with the use of open data; Chinese Academy of Sciences (2026): solar potential context.</li>
+                    <li>UNEP-WCMC and IUCN (2026), World Database on Protected Areas, October 2026: protected-area
+                        exclusions.</li>
+                    <li>Buchhorn, M. et al. (2020), Copernicus Global Land Service: Land Cover 100 m, epoch 2019, Zenodo,
+                        doi:10.5281/zenodo.3939050: forest and cropland sensitivity.</li>
+                    <li>European Commission, Joint Research Centre, Global Human Settlement Layer, GHS-BUILT-S
+                        (2020): settlement exclusions.</li>
+                    <li>IRENA (2026), Renewable Energy Statistics 2026: capacity factors of new wind farms, for the
+                        level calibration.</li>
+                    <li>Global Solar Atlas (World Bank Group / Solargis): annual solar yield for the calibration, and technical solar potential.</li>
+                    <li>World Bank / ESMAP and Solargis (2020), Global Photovoltaic Power Potential by Country: Level 1 and Level 2
+                        land for solar potential.</li>
+                    <li>Bolinger, M. and Bolinger, G. (2022), Land Requirements for Utility-Scale PV: An Empirical Update on Power
+                        and Energy Density, IEEE Journal of Photovoltaics, LBNL; Joshi, S. et al., rooftop solar potential:
+                        solar density and rooftop context.</li>
+                    <li>IRENA (2026), Renewable Power Generation Costs in 2025.</li>
+                    <li>Chinese Wind Energy Association (2025), statistics on wind turbine installations and exports in 2024:
+                        export markets for the Gulf and Central Asia cost proxy.</li>
+                    <li>Danish Energy Agency, Technology Catalogue (offshore wind cost path).</li>
+                    <li>Hamilton, Millstein, Bolinger, Wiser and Jeong (2020), How does wind project performance
+                        change with age in the United States?, Joule 4 (wind output degradation).</li>
+                    <li>Ember (2026), Yearly Electricity Data and Monthly Electricity Data.</li>
+                    <li>Hatton, L., Staffell, I., Jansen, M. et al. (2025), Historical and future projected costs of
+                        capital for ten energy technologies across 176 countries, Scientific Data 12, 1912.</li>
+                    <li>NASA SEDAC, Gridded Population of the World, v4 (2020).</li>
+                    <li>Chen, J. et al. (2022), Global 1 km × 1 km gridded revised real gross domestic product and
+                        electricity consumption during 1992–2019, Scientific Data 9, 202.</li>
+                </ul>
+                <p class="colophon">Ember · The Electrotech Revolution · 2026</p>
+            </footer>
+        </article>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="js/article.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+  lcoe_t90: 4465 rows 4465:465fb342; COMPUTE_BEST_LCOE target 0.9; lookups L0
+  lcoe_t99: 4465 rows 4465:599b678b; COMPUTE_BEST_LCOE target 0.99; lookups L0
+  lcoe_t80: 4465 rows 4465:bf6fa489; COMPUTE_BEST_LCOE target 0.8; lookups L0
+  lcoe_t80_onshore: 4465 rows 4465:1186c20e; COMPUTE_BEST_LCOE target 0.8; lookups L0
+  lcoe_t80_backup: 4399 rows 4399:f5c80dda; COMPUTE_BEST_LCOE target 0.8; lookups L0
+  lcoe_t80_localwacc: 4465 rows 4465:f88601e4; COMPUTE_BEST_LCOE target 0.8; lookups L1
+  lcoe_cf_default: 4465 rows 4465:3501362f; COMPUTE_CF_AT_TARGET_LCOE target 90; lookups L0
+  lcoe_cf_400: 4465 rows 4465:4a8e56b5; COMPUTE_CF_AT_TARGET_LCOE target 400; lookups L0
+  lcoe_t80_local_y2035: 4465 rows 4465:db6f1f70; COMPUTE_BEST_LCOE target 0.8; lookups L2
+  lcoe_t90: identical to oracle.json
+  lcoe_t99: identical to oracle.json
+  lcoe_t80: identical to oracle.json
+  lcoe_t80_onshore: identical to oracle.json
+  lcoe_t80_backup: identical to oracle.json
+  lcoe_t80_localwacc: identical to oracle.json
+  lcoe_cf_default: identical to oracle.json
+  lcoe_cf_400: not in oracle.json
+  lcoe_t80_local_y2035: identical to oracle.json

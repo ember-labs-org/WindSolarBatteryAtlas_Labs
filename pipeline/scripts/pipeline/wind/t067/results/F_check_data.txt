@@ -1,0 +1,22 @@
+deployed regions 4465; profile inputs changed: onshore 231, offshore 131; predicted (any change) 307
+profile-changed regions outside the prediction: []
+summary_w1: changed 200, identical 4265; changed outside on-profile set []; profile-changed but identical 31 -> PASS
+summary_w2: changed 202, identical 4263; changed outside on-profile set []; profile-changed but identical 29 -> PASS
+summary_w3: changed 202, identical 4263; changed outside on-profile set []; profile-changed but identical 29 -> PASS
+summary_w4: changed 202, identical 4263; changed outside on-profile set []; profile-changed but identical 29 -> PASS
+summary_w5: changed 202, identical 4263; changed outside on-profile set []; profile-changed but identical 29 -> PASS
+summary_w6: changed 201, identical 4264; changed outside on-profile set []; profile-changed but identical 30 -> PASS
+summary_w8: changed 201, identical 4264; changed outside on-profile set []; profile-changed but identical 30 -> PASS
+summary_wo1: changed 130, identical 4335; changed outside off-profile set []; profile-changed but identical 1 -> PASS
+summary_wo2: changed 129, identical 4336; changed outside off-profile set []; profile-changed but identical 2 -> PASS
+summary_wo3: changed 131, identical 4334; changed outside off-profile set []; profile-changed but identical 0 -> PASS
+summary_wo4: changed 130, identical 4335; changed outside off-profile set []; profile-changed but identical 1 -> PASS
+summary_wo5: changed 131, identical 4334; changed outside off-profile set []; profile-changed but identical 0 -> PASS
+summary_wo6: changed 130, identical 4335; changed outside off-profile set []; profile-changed but identical 1 -> PASS
+summary_wo8: changed 130, identical 4335; changed outside off-profile set []; profile-changed but identical 1 -> PASS
+daily solar: changed 0 -> PASS
+daily wind_on: changed 202 -> PASS
+daily wind_off: changed 131 -> PASS
+addon_wind_mix: regions 1171 -> 1138; changed or added/removed 215 -> PASS
+addon_large: regions 2045 -> 2045; changed or added/removed 0 -> PASS
+ALL PASS

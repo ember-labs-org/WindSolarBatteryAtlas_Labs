@@ -1,0 +1,19 @@
+addon_large.parquet: byte-identical
+addon_wind_mix.parquet: 278388 rows changed in 148 regions; outside quantile-mapped regions: 0
+daily_cf_2024.parquet: 250565 rows changed in 687 regions; outside quantile-mapped regions: 0
+summary_w0.parquet: byte-identical
+summary_w1.parquet: 143583 rows changed in 687 regions; outside quantile-mapped regions: 0
+summary_w2.parquet: 143583 rows changed in 687 regions; outside quantile-mapped regions: 0
+summary_w3.parquet: 143583 rows changed in 687 regions; outside quantile-mapped regions: 0
+summary_w4.parquet: 143583 rows changed in 687 regions; outside quantile-mapped regions: 0
+summary_w5.parquet: 143583 rows changed in 687 regions; outside quantile-mapped regions: 0
+summary_w6.parquet: 143570 rows changed in 687 regions; outside quantile-mapped regions: 0
+summary_w8.parquet: 143581 rows changed in 687 regions; outside quantile-mapped regions: 0
+summary_wo1.parquet: byte-identical
+summary_wo2.parquet: byte-identical
+summary_wo3.parquet: byte-identical
+summary_wo4.parquet: byte-identical
+summary_wo5.parquet: byte-identical
+summary_wo6.parquet: byte-identical
+summary_wo8.parquet: byte-identical
+OUTPUT CHECK PASS

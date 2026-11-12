@@ -1,0 +1,16 @@
+voronoi_local_capex vs old: differing columns ['wind_off_flags'], rows [280]
+voronoi_local_capex vs 20%: differing columns ['wind_off_flags'], rows [73]
+on rule ok True target==best 4424 of 4424 unclamped max|final-target| 0.0 max|final-expected| 1.0000000000287557e-06
+off rule ok True target==best 1324 of 1324 unclamped max|final-target| 0.0 max|final-expected| 1.0000000000287557e-06
+
+old -> 15%
+ on: viable 3442 (4.82 bn) -> 3988 (7.09 bn); gain 546 (2.27 bn); lose 0; capped 548 -> 925; sim<15% 159 -> 271; sim<20% 237 -> 533; newly viable sim<15% 112 (0.60 bn); headline median +3.82 [p10 +1.22, p90 +8.37] pp; simulated median +2.63 [p10 +0.00, p90 +6.68] pp; median final_cf viable 0.354 -> 0.375
+ off: viable 884 (1.84 bn) -> 1186 (2.40 bn); gain 302 (0.57 bn); lose 0; capped 117 -> 147; sim<15% 0 -> 1; sim<20% 0 -> 76; newly viable sim<15% 1 (12.1 m); headline median +0.14 [p10 -2.41, p90 +1.45] pp; simulated median +0.04 [p10 -2.32, p90 +1.34] pp; median final_cf viable 0.466 -> 0.436
+ any wind 3589 (5.13 bn) -> 4109 (7.11 bn); none 889 (0.65 bn)
+
+20% -> 15%
+ on: viable 3785 (6.03 bn) -> 3988 (7.09 bn); gain 203 (1.06 bn); lose 0; capped 880 -> 925; sim<15% 229 -> 271; sim<20% 330 -> 533; newly viable sim<15% 42 (0.23 bn); headline median +0.00 [p10 +0.00, p90 +0.00] pp; simulated median +0.00 [p10 +0.00, p90 +0.00] pp; median final_cf viable 0.382 -> 0.375
+ off: viable 1111 (2.07 bn) -> 1186 (2.40 bn); gain 75 (0.34 bn); lose 0; capped 146 -> 147; sim<15% 1 -> 1; sim<20% 1 -> 76; newly viable sim<15% 0 (0.0 m); headline median +0.00 [p10 +0.00, p90 +0.00] pp; simulated median +0.00 [p10 +0.00, p90 +0.00] pp; median final_cf viable 0.450 -> 0.436
+ any wind 3903 (6.07 bn) -> 4109 (7.11 bn); none 889 (0.65 bn)
+--- old rule (--rule p90) with the attempt-2 code, siting only:
+27 of 27 shipped pre-profile columns string-identical; viable 3442 / 884

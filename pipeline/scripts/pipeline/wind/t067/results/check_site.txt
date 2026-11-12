@@ -1,0 +1,4 @@
+rows 4998; changed 296; predicted 307; changed but not predicted 0 []
+predicted but unchanged: 11
+moved sites: onshore 33, offshore 63 (deployed: onshore 33, offshore 63)
+identical rows: 4702

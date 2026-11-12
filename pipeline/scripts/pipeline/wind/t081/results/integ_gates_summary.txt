@@ -1,0 +1,11 @@
+check_fast exit=0 :: CHECKS PASS (fast, exit 0) – full log: team/logs/checks/20261103-193633-fast.log
+verify exit=0 :: ARTICLE CHECK PASSED
+regress exit=0 :: INFO regress ran in 487 s on /private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/4084cd88-fb4a-4bc9-b91c-3928
+addon exit=0 :: PASS addon 89/89
+addon_faults exit=0 :: PASS addon-faults 12/12
+addon_unit exit=0 :: PASS addon-unit 25/25
+sample exit=0 :: PASS sample-days 90/90 checks (canvas, ?canvas=0, ?worker=0)
+smoke exit=0 :: PASS smoke first map in 4720 ms incl. LCOE switch
+colour exit=0 :: PASS colour-registry 14 modules and 2 pages use only the registry (allow-list: 13 UI-chrome entries; no Tailwind hue swatches or style colour literals in markup)
+legend exit=0 :: PASS legend-probe overall (/private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/4084cd88-fb4a-4bc9-b91c-392816
+DONE

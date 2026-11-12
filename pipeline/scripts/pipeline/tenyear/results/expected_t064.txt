@@ -1,0 +1,21 @@
+== Slice-level prediction (annual_cf, deployed rows) ==
+file                      rows  rows that move (pred)  mean d(T061 2024)  mean pred T060->T064
+summary_w0.parquet     1294850                      0            +0.0000               +0.0000
+summary_w1.parquet      933185                 753134            -0.0184               -0.0184
+summary_w2.parquet      933185                 740193            -0.0200               -0.0200
+summary_w3.parquet      933185                 727316            -0.0169               -0.0169
+summary_w4.parquet      933185                 715155            -0.0149               -0.0149
+summary_w5.parquet      933185                 703868            -0.0135               -0.0135
+summary_w6.parquet      933185                 694681            -0.0125               -0.0125
+summary_w8.parquet      933185                 676921            -0.0111               -0.0111
+summary_wo1.parquet     933185                 260978            -0.0156               -0.0156
+summary_wo2.parquet     933185                 259884            -0.0161               -0.0161
+summary_wo3.parquet     933185                 256713            -0.0137               -0.0137
+summary_wo4.parquet     933185                 254333            -0.0122               -0.0122
+summary_wo5.parquet     933185                 251682            -0.0112               -0.0112
+summary_wo6.parquet     933185                 248713            -0.0105               -0.0105
+summary_wo8.parquet     933185                 244424            -0.0096               -0.0096
+
+== Profile-level prediction (deployed, viable regions) ==
+on: viable deployed 4380; fetch points moved (deployed) 578, of them viable 573; mean 2024 CF T061 0.2835; predicted ten-year mean 0.2826 (T060 ten-year mean, same regions 0.3141); predicted median ten-year/2024 0.9921
+off: viable deployed 1235; fetch points moved (deployed) 172, of them viable 130; mean 2024 CF T061 0.2926; predicted ten-year mean 0.2892 (T060 ten-year mean, same regions 0.3729); predicted median ten-year/2024 0.9874

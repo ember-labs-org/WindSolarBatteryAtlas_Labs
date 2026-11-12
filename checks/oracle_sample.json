@@ -1,0 +1,175 @@
+{
+ "note": "Hashes (rows:FNV-1a) of the capacity-view digest for a fixed pseudo-random sample of slices; recorded on the base commit by regress.mjs --record-sample",
+ "recordedFrom": "/private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/4084cd88-fb4a-4bc9-b91c-392816e11d1a/scratchpad/wt-integ/deployment",
+ "browser": "147.0.7727.15",
+ "slices": [
+  {
+   "key": "s2_b32_w0",
+   "surface": "on",
+   "wind": 0,
+   "solar": 2,
+   "batt": 32,
+   "hash": "4465:8a094582"
+  },
+  {
+   "key": "s4_b2_w0",
+   "surface": "on",
+   "wind": 0,
+   "solar": 4,
+   "batt": 2,
+   "hash": "4465:20a68e7a"
+  },
+  {
+   "key": "s7_b34_w0",
+   "surface": "on",
+   "wind": 0,
+   "solar": 7,
+   "batt": 34,
+   "hash": "4465:ea084b28"
+  },
+  {
+   "key": "s11_b26_w0",
+   "surface": "on",
+   "wind": 0,
+   "solar": 11,
+   "batt": 26,
+   "hash": "4465:d19d4645"
+  },
+  {
+   "key": "s11_b34_w0",
+   "surface": "on",
+   "wind": 0,
+   "solar": 11,
+   "batt": 34,
+   "hash": "4465:2f5f85dd"
+  },
+  {
+   "key": "s13_b24_w0",
+   "surface": "on",
+   "wind": 0,
+   "solar": 13,
+   "batt": 24,
+   "hash": "4465:9129ecb5"
+  },
+  {
+   "key": "s18_b18_w0",
+   "surface": "on",
+   "wind": 0,
+   "solar": 18,
+   "batt": 18,
+   "hash": "4465:cd5b4b5a"
+  },
+  {
+   "key": "s5_b20_wo1",
+   "surface": "off",
+   "wind": 1,
+   "solar": 5,
+   "batt": 20,
+   "hash": "4465:15cc89c5"
+  },
+  {
+   "key": "s8_b34_w1",
+   "surface": "on",
+   "wind": 1,
+   "solar": 8,
+   "batt": 34,
+   "hash": "4465:980e520b"
+  },
+  {
+   "key": "s9_b0_wo2",
+   "surface": "off",
+   "wind": 2,
+   "solar": 9,
+   "batt": 0,
+   "hash": "4465:b13279fa"
+  },
+  {
+   "key": "s10_b16_w2",
+   "surface": "on",
+   "wind": 2,
+   "solar": 10,
+   "batt": 16,
+   "hash": "4465:f0a5f265"
+  },
+  {
+   "key": "s2_b30_wo3",
+   "surface": "off",
+   "wind": 3,
+   "solar": 2,
+   "batt": 30,
+   "hash": "4465:7da0b0ab"
+  },
+  {
+   "key": "s0_b16_w3",
+   "surface": "on",
+   "wind": 3,
+   "solar": 0,
+   "batt": 16,
+   "hash": "4465:da9c7070"
+  },
+  {
+   "key": "s5_b20_wo4",
+   "surface": "off",
+   "wind": 4,
+   "solar": 5,
+   "batt": 20,
+   "hash": "4465:48beeed0"
+  },
+  {
+   "key": "s5_b24_w4",
+   "surface": "on",
+   "wind": 4,
+   "solar": 5,
+   "batt": 24,
+   "hash": "4465:a1d6eeff"
+  },
+  {
+   "key": "s1_b18_wo5",
+   "surface": "off",
+   "wind": 5,
+   "solar": 1,
+   "batt": 18,
+   "hash": "4465:d37af0f3"
+  },
+  {
+   "key": "s6_b30_w5",
+   "surface": "on",
+   "wind": 5,
+   "solar": 6,
+   "batt": 30,
+   "hash": "4465:c6583b2e"
+  },
+  {
+   "key": "s3_b22_wo6",
+   "surface": "off",
+   "wind": 6,
+   "solar": 3,
+   "batt": 22,
+   "hash": "4465:d111fe3f"
+  },
+  {
+   "key": "s2_b16_w6",
+   "surface": "on",
+   "wind": 6,
+   "solar": 2,
+   "batt": 16,
+   "hash": "4465:7b199800"
+  },
+  {
+   "key": "s5_b10_wo8",
+   "surface": "off",
+   "wind": 8,
+   "solar": 5,
+   "batt": 10,
+   "hash": "4465:116739a1"
+  },
+  {
+   "key": "s4_b8_w8",
+   "surface": "on",
+   "wind": 8,
+   "solar": 4,
+   "batt": 8,
+   "hash": "4465:a2beb69e"
+  }
+ ]
+}

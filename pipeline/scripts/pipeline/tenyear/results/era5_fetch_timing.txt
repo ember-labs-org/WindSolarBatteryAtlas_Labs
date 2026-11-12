@@ -1,0 +1,27 @@
+wrote era5_speed_2015.npz (470 MB) in 56.9 min
+     3412.30 real       359.56 user       508.76 sys
+           727944832  peak memory footprint
+wrote era5_speed_2018.npz (470 MB) in 57.5 min
+     3447.63 real       415.18 user       611.94 sys
+           717819456  peak memory footprint
+wrote era5_speed_2021.npz (470 MB) in 56.5 min
+     3390.15 real       409.72 user       586.66 sys
+           837636032  peak memory footprint
+wrote era5_speed_2017.npz (470 MB) in 56.9 min
+     3415.07 real       370.90 user       532.76 sys
+           726388864  peak memory footprint
+wrote era5_speed_2020.npz (471 MB) in 58.5 min
+     3512.36 real       415.72 user       629.70 sys
+           715263808  peak memory footprint
+wrote era5_speed_2023.npz (470 MB) in 55.9 min
+     3351.70 real       403.91 user       582.62 sys
+           729419712  peak memory footprint
+wrote era5_speed_2016.npz (471 MB) in 57.3 min
+     3438.26 real       368.86 user       521.58 sys
+           718016512  peak memory footprint
+wrote era5_speed_2019.npz (470 MB) in 57.7 min
+     3459.72 real       418.50 user       630.55 sys
+           733171008  peak memory footprint
+wrote era5_speed_2022.npz (470 MB) in 56.1 min
+     3366.69 real       408.41 user       588.59 sys
+           715509376  peak memory footprint

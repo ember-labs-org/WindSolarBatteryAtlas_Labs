@@ -1,0 +1,14 @@
+rows identical: True 4422
+2015 byte-identical
+2016 byte-identical
+2017 byte-identical
+2018 byte-identical
+2019 byte-identical
+2020 byte-identical
+2021 byte-identical
+2022 byte-identical
+2023 byte-identical
+2024 byte-identical
+k identical: True
+final_cf identical: True  clamped identical: True  clamped n = 719
+IDENTITY B PASS

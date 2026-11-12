@@ -1,0 +1,11 @@
+bound keys that move with the 15% area line (vs the 15%/20%-area build): 8
+t2.multLow [int] shown "20": old 20.4518195081 | 15% viab, 20% area 20.543993989 | 15% viab, 15% area 22.4426971291
+t2.mult [int] shown "37": old 36.9517545203 | 15% viab, 20% area 39.9713466364 | 15% viab, 15% area 44.8770219013
+t2.total.pwh [r10] shown "1,180": old 1175.80981732 | 15% viab, 20% area 1271.8936461 | 15% viab, 15% area 1427.9928953
+t2.on5.twh [pwh] shown "1,089": old 1089426.13443 | 15% viab, 20% area 1182701.51052 | 15% viab, 15% area 1338800.75972
+t2.cover.world [pct] shown "59%": old 0.587940297644 | 15% viab, 20% area 0.677840094896 | 15% viab, 15% area 0.809737250829
+t2.cover.n45p [pct] shown "95%": old 0.950768920269 | 15% viab, 20% area 0.95111639709 | 15% viab, 15% area 0.955677011683
+t2.cover.s15_0 [pct] shown "29%": old 0.292589093006 | 15% viab, 20% area 0.544844160875 | 15% viab, 15% area 0.599922225915
+t2.cover.n0_15 [pct] shown "53%": old 0.527007348745 | 15% viab, 20% area 0.693242811767 | 15% viab, 15% area 0.793990330186
+
+all summary values changed by the area line: 15: t2.cover.n0_15, t2.cover.n45p, t2.cover.s15_0, t2.cover.world, t2.coverLow.n0_15, t2.coverLow.n45p, t2.coverLow.s15_0, t2.coverLow.world, t2.mult, t2.multLow, t2.on3p50.gw, t2.on3p50.twh, t2.on5.gw, t2.on5.twh, t2.total.pwh

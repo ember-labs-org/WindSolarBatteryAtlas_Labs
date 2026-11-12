@@ -1,0 +1,5 @@
+columns ['location_id', 'cfg', 'annual_cf', 'curtailed_share']
+wind_mix regions 1210 -> 1171; lost 39, gained 0
+identical regions 5 (expected 5): unexpectedly identical [], unexpectedly changed []
+addon_large.parquet byte-identical (cmp)
+addon.json keys that differ: {'.sets[0].regions': (1210, 1171), '.sets[0].rows': (2276010, 2202651), '.sets[0].sha256': ('c5d55be54d3ea12b27f6add976104dafcb82a2bd0fa4653974cc04fa8add9ecd', '067ff84a8459f58ee5274d6e72583014b138710b6c332128eed9bbff9e8007d9')}

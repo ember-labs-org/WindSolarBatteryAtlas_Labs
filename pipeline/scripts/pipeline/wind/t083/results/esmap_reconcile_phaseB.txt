@@ -1,0 +1,15 @@
+# T083 A2: ESMAP-definition offshore energy, step by step (map cells, PWh a year)
+
+ESMAP capacity in map cells: fixed 20.22 TW, floating 47.08 TW
+
+| Step | Fixed-bottom | Change | Floating | Change |
+|---|---|---|---|---|
+| ESMAP GW x gross GWA CF, all class sea | 95.8 |  | 234.0 |  |
+| + 12% losses | 84.3 | -11.5 (-12.0%) | 205.9 | -28.1 (-12.0%) |
+| + atlas exclusions (10 km, WDPA) | 82.7 | -1.6 (-1.9%) | 203.9 | -2.0 (-1.0%) |
+| + calibration x0.777 | 64.3 | -18.4 (-22.3%) | 158.4 | -45.5 (-22.3%) |
+| + 20% cut-off (atlas ESMAP case) | 64.3 | +0.0 (+0.0%) | 158.4 | -0.0 (-0.0%) |
+
+fix: capacity-weighted gross CF at S0 0.541; ESMAP GW with no class sea pixel holding a CF: S0 39 GW, S2 803 GW
+
+fl: capacity-weighted gross CF at S0 0.567; ESMAP GW with no class sea pixel holding a CF: S0 128 GW, S2 936 GW

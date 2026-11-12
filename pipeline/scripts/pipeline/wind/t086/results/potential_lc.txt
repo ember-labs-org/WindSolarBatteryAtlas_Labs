@@ -1,0 +1,66 @@
+# T086 onshore potential without dense forest and cropland
+
+## Inputs and checks
+- onshore pixels: 31,055,059; flat index rebuilt with T078's mask and equal to its table (zone, CF, weight)
+- closed forest (>70%) 100 m pixels with tree cover >= 50%: 0.9267 of 4,154,300,549
+- cropland 100 m pixels with tree cover >= 50% (counted once in 'both'): 0.0037
+- tree-cover no-data pixels on onshore atlas pixels: 0.00736 of all
+- eligible onshore land outside the CGLS extent (north of 80 N or south of 60 S), map cells, viable: 0 km2 of 103,722,024 km2 (no exclusion applied)
+- eligible land (viable map cells) in class 'minus dense forest': 25.5%
+- eligible land (viable map cells) in class 'minus cropland': 12.9%
+- eligible land (viable map cells) in class 'minus both': 38.4%
+- eligible land (viable map cells) in class 'minus closed forest (>70%)': 25.1%
+- eligible land (viable map cells) in class 'minus all forest (>15%)': 34.9%
+- onshore pixels outside every Natural Earth polygon (region's country used): 103,140 of 31,055,059
+- identity cons (a) gw vs T078 on_cons_gw, per region: max abs diff 5.00e-07
+- identity cons (a) twh vs T078 on_cons_twh, per region: max abs diff 5.00e-07
+- identity tech (a) gw vs T078 on_p0_gw, per region: max abs diff 5.00e-07
+- identity tech (a) twh vs T078 on_p0_twh, per region: max abs diff 5.00e-07
+
+## World, map cells (PWh a year; TW; multiple of world demand)
+| Case | Land | PWh/yr | TW | change | × 28.6 PWh (IEA 2025) | × 31.8 PWh (Ember 2025) | range if not independent (PWh) |
+|---|---|---|---|---|---|---|---|
+| cons | as today | 553.7 | 193.7 | +0.0% | 19.4× | 17.4× |  |
+| cons | minus dense forest | 481.9 | 164.4 | -13.0% | 16.9× | 15.2× | 480–484 |
+| cons | minus cropland | 487.2 | 169.8 | -12.0% | 17.0× | 15.3× | 485–489 |
+| cons | minus both | 415.5 | 140.6 | -25.0% | 14.5× | 13.1× | 412–419 |
+| cons | minus closed forest (>70%) | 483.6 | 164.9 | -12.7% | 16.9× | 15.2× |  |
+| cons | minus all forest (>15%) | 448.0 | 151.4 | -19.1% | 15.7× | 14.1× |  |
+| tech | as today | 1,024.7 | 381.3 | +0.0% | 35.8× | 32.2× |  |
+| tech | minus dense forest | 872.3 | 313.7 | -14.9% | 30.5× | 27.4× | 868–877 |
+| tech | minus cropland | 896.1 | 332.6 | -12.6% | 31.3× | 28.2× | 891–900 |
+| tech | minus both | 744.0 | 265.0 | -27.4% | 26.0× | 23.4× | 736–750 |
+| tech | minus closed forest (>70%) | 875.5 | 314.9 | -14.6% | 30.6× | 27.5× |  |
+| tech | minus all forest (>15%) | 803.9 | 285.1 | -21.6% | 28.1× | 25.3× |  |
+
+## By continent (PWh a year; change from 'as today')
+| | Cons. today | − forest | − cropland | − both | Tech. today | − forest | − cropland | − both |
+|---|---|---|---|---|---|---|---|---|
+| Asia | 175.6 | 151.4 (-14%) | 158.6 (-10%) | 134.5 (-23%) | 330.0 | 275.6 (-16%) | 294.3 (-11%) | 240.0 (-27%) |
+| Africa | 128.2 | 127.8 (-0%) | 121.3 (-5%) | 120.9 (-6%) | 231.3 | 230.0 (-1%) | 217.0 (-6%) | 215.6 (-7%) |
+| North America | 120.3 | 92.4 (-23%) | 103.6 (-14%) | 75.8 (-37%) | 214.8 | 161.5 (-25%) | 186.1 (-13%) | 132.9 (-38%) |
+| Europe | 47.4 | 34.0 (-28%) | 31.0 (-35%) | 17.6 (-63%) | 98.7 | 68.2 (-31%) | 65.8 (-33%) | 35.4 (-64%) |
+| Oceania | 44.3 | 42.0 (-5%) | 41.0 (-7%) | 38.7 (-13%) | 77.1 | 72.1 (-6%) | 71.5 (-7%) | 66.5 (-14%) |
+| South America | 37.9 | 34.2 (-10%) | 31.7 (-16%) | 28.0 (-26%) | 72.8 | 65.0 (-11%) | 61.4 (-16%) | 53.5 (-27%) |
+| Unassigned | 0.0 | 0.0 (+0%) | 0.0 (+0%) | 0.0 (+0%) | 0.0 | 0.0 (+0%) | 0.0 (+0%) | 0.0 (+0%) |
+
+## 15 largest countries by conservative potential today (PWh a year; change from 'as today')
+| | Cons. today | − forest | − cropland | − both | Tech. today | − forest | − cropland | − both |
+|---|---|---|---|---|---|---|---|---|
+| Russia | 85.2 | 57.5 (-32%) | 76.4 (-10%) | 48.8 (-43%) | 165.0 | 103.3 (-37%) | 148.8 (-10%) | 87.1 (-47%) |
+| Canada | 67.5 | 49.1 (-27%) | 63.7 (-6%) | 45.3 (-33%) | 115.7 | 82.9 (-28%) | 109.4 (-5%) | 76.6 (-34%) |
+| United States of America | 49.3 | 40.2 (-18%) | 37.0 (-25%) | 28.0 (-43%) | 90.3 | 71.0 (-21%) | 69.5 (-23%) | 50.3 (-44%) |
+| Australia | 42.9 | 40.9 (-5%) | 39.8 (-7%) | 37.8 (-12%) | 74.6 | 70.2 (-6%) | 69.3 (-7%) | 64.9 (-13%) |
+| China | 37.5 | 34.7 (-7%) | 30.6 (-18%) | 27.9 (-26%) | 71.1 | 64.4 (-10%) | 58.1 (-18%) | 51.4 (-28%) |
+| Kazakhstan | 22.7 | 22.6 (-0%) | 20.4 (-10%) | 20.4 (-10%) | 38.3 | 38.2 (-0%) | 34.5 (-10%) | 34.4 (-10%) |
+| Argentina | 20.7 | 19.7 (-5%) | 17.0 (-18%) | 16.1 (-22%) | 35.5 | 33.6 (-6%) | 29.4 (-17%) | 27.4 (-23%) |
+| Algeria | 19.7 | 19.7 (-0%) | 19.3 (-2%) | 19.3 (-2%) | 33.2 | 33.2 (-0%) | 32.5 (-2%) | 32.5 (-2%) |
+| Sudan | 16.2 | 16.2 (-0%) | 15.0 (-8%) | 15.0 (-8%) | 27.7 | 27.7 (-0%) | 25.5 (-8%) | 25.5 (-8%) |
+| Libya | 15.2 | 15.2 (-0%) | 15.0 (-1%) | 15.0 (-1%) | 25.4 | 25.4 (-0%) | 25.1 (-1%) | 25.1 (-1%) |
+| Saudi Arabia | 11.3 | 11.3 (-0%) | 11.1 (-1%) | 11.1 (-1%) | 19.2 | 19.2 (-0%) | 19.0 (-1%) | 19.0 (-1%) |
+| Mauritania | 10.5 | 10.5 (+0%) | 10.5 (-0%) | 10.5 (-0%) | 17.5 | 17.5 (+0%) | 17.4 (-0%) | 17.4 (-0%) |
+| Mongolia | 8.9 | 8.7 (-3%) | 8.9 (-1%) | 8.6 (-3%) | 15.7 | 15.3 (-3%) | 15.6 (-1%) | 15.1 (-4%) |
+| Mali | 8.9 | 8.9 (-0%) | 8.6 (-3%) | 8.6 (-3%) | 15.3 | 15.3 (-0%) | 14.7 (-4%) | 14.7 (-4%) |
+| Chad | 8.2 | 8.2 (-0%) | 8.1 (-1%) | 8.1 (-1%) | 14.6 | 14.6 (-0%) | 14.4 (-1%) | 14.4 (-1%) |
+
+The 15 hold 77% of conservative and 74% of technical potential.

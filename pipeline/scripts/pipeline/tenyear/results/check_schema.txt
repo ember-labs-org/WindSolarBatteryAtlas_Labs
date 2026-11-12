@@ -1,0 +1,21 @@
+same file list True 38
+addon_large.parquet: schema+codec same True; rows 685075 -> 666650; region set same False
+addon_wind_mix.parquet: schema+codec same True; rows 2202651 -> 2202651; region set same True
+summary_w0.parquet: schema+codec same True; rows 1294850 -> 1294850; region set same True
+summary_w1.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_w2.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_w3.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_w4.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_w5.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_w6.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_w8.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_wo1.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_wo2.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_wo3.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_wo4.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_wo5.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_wo6.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+summary_wo8.parquet: schema+codec same True; rows 933185 -> 933185; region set same True
+addon.json wind_mix: sha256 matches file True; regions 1171 rows 2202651 start cold
+addon.json large: sha256 matches file True; regions 1990 rows 666650 start cold
+unchanged files byte-identical; SCHEMA CHECK PASS

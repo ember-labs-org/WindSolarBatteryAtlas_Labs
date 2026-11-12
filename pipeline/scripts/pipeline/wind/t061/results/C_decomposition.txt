@@ -1,0 +1,108 @@
+
+=== Gap decomposition, baseline (current exclusions, best 500 km2) vs IRENA new-build; exclusions = new500_t20 ===
+      newbuild  plant_new  atlas_current  atlas_variant    gap  level  exclusions   site
+iso3                                                                                    
+BEL      0.296      0.393          0.424          0.417  1.435  1.328       1.017  1.062
+FRA      0.312      0.348          0.410          0.406  1.315  1.113       1.012  1.167
+DEU      0.331      0.374          0.427          0.421  1.290  1.131       1.013  1.126
+AUT      0.298      0.333          0.380          0.375  1.272  1.117       1.013  1.125
+POL      0.336      0.377          0.422          0.419  1.255  1.123       1.007  1.110
+GBR      0.403      0.463          0.500          0.495  1.240  1.149       1.010  1.068
+LTU      0.357      0.368          0.434          0.434  1.218  1.032       1.001  1.179
+FIN      0.331      0.315          0.397          0.394  1.200  0.953       1.006  1.252
+JPN      0.277      0.302          0.332          0.321  1.196  1.090       1.031  1.064
+AUS      0.349      0.376          0.415          0.415  1.189  1.076       1.001  1.104
+ITA      0.296      0.278          0.349          0.341  1.180  0.939       1.023  1.228
+SWE      0.355      0.352          0.419          0.418  1.180  0.992       1.004  1.185
+RUS      0.370      0.393          0.434          0.434  1.176  1.063       1.000  1.106
+ESP      0.334      0.322          0.389          0.384  1.165  0.966       1.014  1.190
+TUR      0.342      0.300          0.389          0.387  1.137  0.879       1.004  1.289
+CHN      0.342      0.272          0.387          0.385  1.132  0.795       1.006  1.416
+CHL      0.346      0.307          0.390          0.383  1.128  0.887       1.019  1.249
+IND      0.309      0.255          0.347          0.340  1.125  0.826       1.022  1.333
+CAN      0.391      0.364          0.426          0.426  1.091  0.932       1.001  1.168
+KAZ      0.395      0.396          0.431          0.430  1.091  1.002       1.002  1.086
+EGY      0.478      0.624          0.517          0.517  1.081  1.305       1.000  0.829
+GRC      0.332      0.302          0.354          0.343  1.064  0.910       1.032  1.134
+USA      0.421      0.398          0.435          0.434  1.033  0.946       1.001  1.092
+UZB      0.424      0.397          0.426          0.426  1.004  0.937       1.000  1.072
+KOR      0.331      0.232          0.315          0.312  0.953  0.702       1.009  1.346
+ZAF      0.429      0.352          0.406          0.404  0.946  0.820       1.005  1.148
+BRA      0.526      0.398          0.482          0.471  0.916  0.757       1.023  1.183
+generation-weighted (fleet TWh) geometric total: {'gap': 1.115, 'level': 0.886, 'exclusions': 1.007, 'site': 1.249, 'level_share_of_gap': -1.105, 'exclusions_share_of_gap': 0.067, 'site_share_of_gap': 2.038}
+
+=== Gap decomposition, baseline (current exclusions, best 500 km2) vs IRENA new-build; exclusions = new500 ===
+      newbuild  plant_new  atlas_current  atlas_variant    gap  level  exclusions   site
+iso3                                                                                    
+BEL      0.296      0.393          0.424          0.411  1.435  1.328       1.031  1.048
+FRA      0.312      0.348          0.410          0.401  1.315  1.113       1.023  1.154
+DEU      0.331      0.374          0.427          0.417  1.290  1.131       1.023  1.115
+AUT      0.298      0.333          0.380          0.372  1.272  1.117       1.020  1.117
+POL      0.336      0.377          0.422          0.417  1.255  1.123       1.012  1.104
+GBR      0.403      0.463          0.500          0.493  1.240  1.149       1.014  1.064
+LTU      0.357      0.368          0.434          0.434  1.218  1.032       1.002  1.177
+FIN      0.331      0.315          0.397          0.394  1.200  0.953       1.007  1.251
+JPN      0.277      0.302          0.332          0.316  1.196  1.090       1.049  1.046
+AUS      0.349      0.376          0.415          0.414  1.189  1.076       1.003  1.101
+ITA      0.296      0.278          0.349          0.335  1.180  0.939       1.039  1.209
+SWE      0.355      0.352          0.419          0.417  1.180  0.992       1.006  1.182
+RUS      0.370      0.393          0.434          0.434  1.176  1.063       1.000  1.106
+ESP      0.334      0.322          0.389          0.382  1.165  0.966       1.018  1.186
+TUR      0.342      0.300          0.389          0.386  1.137  0.879       1.006  1.285
+CHN      0.342      0.272          0.387          0.384  1.132  0.795       1.009  1.412
+CHL      0.346      0.307          0.390          0.381  1.128  0.887       1.023  1.244
+IND      0.309      0.255          0.347          0.336  1.125  0.826       1.034  1.318
+CAN      0.391      0.364          0.426          0.425  1.091  0.932       1.002  1.167
+KAZ      0.395      0.396          0.431          0.430  1.091  1.002       1.003  1.086
+EGY      0.478      0.624          0.517          0.517  1.081  1.305       1.000  0.829
+GRC      0.332      0.302          0.354          0.338  1.064  0.910       1.046  1.119
+USA      0.421      0.398          0.435          0.434  1.033  0.946       1.003  1.090
+UZB      0.424      0.397          0.426          0.426  1.004  0.937       1.000  1.072
+KOR      0.331      0.232          0.315          0.310  0.953  0.702       1.016  1.337
+ZAF      0.429      0.352          0.406          0.404  0.946  0.820       1.006  1.146
+BRA      0.526      0.398          0.482          0.469  0.916  0.757       1.027  1.179
+generation-weighted (fleet TWh) geometric total: {'gap': 1.115, 'level': 0.886, 'exclusions': 1.011, 'site': 1.244, 'level_share_of_gap': -1.105, 'exclusions_share_of_gap': 0.103, 'site_share_of_gap': 2.002}
+
+=== Gap decomposition, baseline (current exclusions, best 500 km2) vs IRENA new-build; exclusions = new1000 ===
+      newbuild  plant_new  atlas_current  atlas_variant    gap  level  exclusions   site
+iso3                                                                                    
+BEL      0.296      0.393          0.424          0.393  1.435  1.328       1.078  1.002
+FRA      0.312      0.348          0.410          0.378  1.315  1.113       1.086  1.088
+DEU      0.331      0.374          0.427          0.398  1.290  1.131       1.072  1.064
+AUT      0.298      0.333          0.380          0.363  1.272  1.117       1.045  1.089
+POL      0.336      0.377          0.422          0.403  1.255  1.123       1.047  1.067
+GBR      0.403      0.463          0.500          0.486  1.240  1.149       1.027  1.050
+LTU      0.357      0.368          0.434          0.431  1.218  1.032       1.007  1.172
+FIN      0.331      0.315          0.397          0.393  1.200  0.953       1.010  1.247
+JPN      0.277      0.302          0.332          0.305  1.196  1.090       1.087  1.010
+AUS      0.349      0.376          0.415          0.411  1.189  1.076       1.010  1.094
+ITA      0.296      0.278          0.349          0.319  1.180  0.939       1.094  1.148
+SWE      0.355      0.352          0.419          0.414  1.180  0.992       1.012  1.176
+RUS      0.370      0.393          0.434          0.434  1.176  1.063       1.001  1.105
+ESP      0.334      0.322          0.389          0.376  1.165  0.966       1.033  1.168
+TUR      0.342      0.300          0.389          0.382  1.137  0.879       1.018  1.271
+CHN      0.342      0.272          0.387          0.379  1.132  0.795       1.021  1.395
+CHL      0.346      0.307          0.390          0.377  1.128  0.887       1.036  1.229
+IND      0.309      0.255          0.347          0.319  1.125  0.826       1.087  1.254
+CAN      0.391      0.364          0.426          0.424  1.091  0.932       1.005  1.163
+KAZ      0.395      0.396          0.431          0.429  1.091  1.002       1.003  1.085
+EGY      0.478      0.624          0.517          0.516  1.081  1.305       1.001  0.828
+GRC      0.332      0.302          0.354          0.327  1.064  0.910       1.081  1.082
+USA      0.421      0.398          0.435          0.432  1.033  0.946       1.008  1.084
+UZB      0.424      0.397          0.426          0.426  1.004  0.937       1.000  1.072
+KOR      0.331      0.232          0.315          0.303  0.953  0.702       1.040  1.306
+ZAF      0.429      0.352          0.406          0.402  0.946  0.820       1.011  1.141
+BRA      0.526      0.398          0.482          0.465  0.916  0.757       1.036  1.168
+generation-weighted (fleet TWh) geometric total: {'gap': 1.115, 'level': 0.886, 'exclusions': 1.027, 'site': 1.225, 'level_share_of_gap': -1.105, 'exclusions_share_of_gap': 0.245, 'site_share_of_gap': 1.86}
+
+=== Capped (downward-only) regional level factor, fitted to new-build ===
+current 20 {'Africa & Middle East': 1.0, 'Central Asia & Russia': np.float64(0.92), 'China': 1.0, 'East & SE Asia': 1.0, 'Europe': np.float64(0.878), 'India & South Asia': 1.0, 'Latin America': 1.0, 'North America': 1.0, 'Oceania': np.float64(0.904), 'other': np.float64(0.999)}
+   new-build: {'n': 27, 'gen_weighted_ratio': 0.972, 'median_ratio': 0.966, 'share_within_10pct': 0.741}  fleet: {'n': 41, 'gen_weighted_ratio': 1.295, 'median_ratio': 1.192, 'share_within_10pct': 0.244}
+new500_t20 20 {'Africa & Middle East': 1.0, 'Central Asia & Russia': np.float64(0.918), 'China': 1.0, 'East & SE Asia': 1.0, 'Europe': np.float64(0.879), 'India & South Asia': 1.0, 'Latin America': 1.0, 'North America': 1.0, 'Oceania': np.float64(0.904), 'other': np.float64(0.997)}
+   new-build: {'n': 27, 'gen_weighted_ratio': 0.975, 'median_ratio': 0.967, 'share_within_10pct': 0.704}  fleet: {'n': 41, 'gen_weighted_ratio': 1.298, 'median_ratio': 1.187, 'share_within_10pct': 0.268}
+new500_t20 30 {'Africa & Middle East': 1.0, 'Central Asia & Russia': np.float64(0.933), 'China': 1.0, 'East & SE Asia': 1.0, 'Europe': np.float64(0.902), 'India & South Asia': 1.0, 'Latin America': 1.0, 'North America': 1.0, 'Oceania': np.float64(0.925), 'other': 1.0}
+   new-build: {'n': 27, 'gen_weighted_ratio': 0.95, 'median_ratio': 0.947, 'share_within_10pct': 0.704}  fleet: {'n': 41, 'gen_weighted_ratio': 1.266, 'median_ratio': 1.183, 'share_within_10pct': 0.268}
+new500_t20 best500 {'Africa & Middle East': np.float64(0.92), 'Central Asia & Russia': np.float64(0.878), 'China': np.float64(0.888), 'East & SE Asia': np.float64(0.902), 'Europe': np.float64(0.817), 'India & South Asia': np.float64(0.909), 'Latin America': 1.0, 'North America': np.float64(0.964), 'Oceania': np.float64(0.842), 'other': np.float64(0.9)}
+   new-build: {'n': 27, 'gen_weighted_ratio': 0.995, 'median_ratio': 1.0, 'share_within_10pct': 0.741}  fleet: {'n': 41, 'gen_weighted_ratio': 1.325, 'median_ratio': 1.236, 'share_within_10pct': 0.22}
+new0 20 {'Africa & Middle East': 1.0, 'Central Asia & Russia': np.float64(0.919), 'China': 1.0, 'East & SE Asia': 1.0, 'Europe': np.float64(0.88), 'India & South Asia': 1.0, 'Latin America': 1.0, 'North America': 1.0, 'Oceania': np.float64(0.904), 'other': np.float64(0.999)}
+   new-build: {'n': 27, 'gen_weighted_ratio': 0.972, 'median_ratio': 0.966, 'share_within_10pct': 0.704}  fleet: {'n': 41, 'gen_weighted_ratio': 1.294, 'median_ratio': 1.19, 'share_within_10pct': 0.268}

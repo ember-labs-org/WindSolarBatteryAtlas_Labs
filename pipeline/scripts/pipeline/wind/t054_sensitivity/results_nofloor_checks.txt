@@ -1,0 +1,5 @@
+on viable 4424 | viable == has eligible area: True | cf_target==cf_best: 4424 of 4424 | unclamped max|final-target| 0.0 | clamped 989 | k at 0.6: 0 | min final_cf viable 0.0004 | max|final-expected| 1.0000000000287557e-06 | viable_area/room unchanged: True
+off viable 1324 | viable == has eligible area: True | cf_target==cf_best: 1324 of 1324 | unclamped max|final-target| 0.0 | clamped 147 | k at 0.6: 0 | min final_cf viable 0.0126 | max|final-expected| 1.0000000000287557e-06 | viable_area/room unchanged: True
+area_cf_threshold [0.15] viable_cf_threshold [0.]
+deployment/data/voronoi_local_capex.csv {'wind_off_flags': 131}
+--rule p90 with the T059 code: pre-T054 pre-profile columns 27 string-identical 27 []

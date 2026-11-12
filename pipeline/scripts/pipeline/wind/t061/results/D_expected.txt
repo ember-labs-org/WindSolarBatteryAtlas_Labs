@@ -1,0 +1,10 @@
+Phase D expectations (stated before the profile run)
+on [all 4,998]: profiles 4424 -> 4419; capped at k=1.8 989 -> 719; at k=0.6 0 -> 0; identical 1199 (no profile both 574, same column+k 625); changed 3799; simulated CF change, both: median -2.51 pp [p10 -6.88, p90 -0.00]; median final CF 0.358 -> 0.311
+on [deployed 4,465]: profiles 4385 -> 4380; capped at k=1.8 969 -> 700; at k=0.6 0 -> 0; identical 686 (no profile both 80, same column+k 606); changed 3779; simulated CF change, both: median -2.54 pp [p10 -6.91, p90 -0.00]; median final CF 0.358 -> 0.311
+off [all 4,998]: profiles 1324 -> 1270; capped at k=1.8 147 -> 10; at k=0.6 0 -> 0; identical 3684 (no profile both 3674, same column+k 10); changed 1314; simulated CF change, both: median -8.95 pp [p10 -12.30, p90 -3.19]; median final CF 0.414 -> 0.316
+off [deployed 4,465]: profiles 1277 -> 1235; capped at k=1.8 116 -> 10; at k=0.6 0 -> 0; identical 3198 (no profile both 3188, same column+k 10); changed 1267; simulated CF change, both: median -9.00 pp [p10 -12.31, p90 -3.11]; median final CF 0.409 -> 0.312
+addon_wind_mix regions 1210 -> 1171 (lost 39); regions whose rows must be identical (both profiles identical) 5; addon_large: byte-identical (reads no wind)
+off_viable changes (deployed): 42 -> voronoi_local_capex wind_off_flags may change only there
+NL 3508: on target 0.4572 -> 0.3970; final 0.4572 -> 0.3970 (k 0.977); off final 0.5566 -> 0.4525
+NL 4894: on target 0.4290 -> 0.3703; final 0.4290 -> 0.3703 (k 0.839); off final 0.5610 -> 0.4330
+       56.63 real        54.94 user         0.82 sys

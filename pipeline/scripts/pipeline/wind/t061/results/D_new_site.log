@@ -1,0 +1,25 @@
+  loaded in 19s
+Rasterising onshore Voronoi cells ...
+  4926 cells rasterised, 33.2% of grid
+Assigning offshore sea to the nearest simulation point ...
+  3.1M eligible sea pixels
+Focal mean window 4 px (~9 km)
+Zonal statistics [on] ...
+Zonal statistics [off] ...
+Floating potential area ...
+wrote /Users/daanwalter/wind-atlas-T061/runs/D_new/ws/outputs/voronoi_wind_resource.csv and /Users/daanwalter/wind-atlas-T061/runs/D_new/data/voronoi_wind_resource.csv  (171s total)
+
+--- summary ---
+onshore viable       4419 / 4998  (88.4%)
+offshore viable      1270 / 4998  (25.4%)
+either               4498 (90.0%)
+neither               500 (10.0%)
+
+onshore headline net CF (share): median 0.328 p10 0.109 p90 0.432
+good-site minus cell-centre CF: median +0.047 (centre understates by 4.7 points)
+share of viable cells where the centre would fail the 20% test: 38.8%
+
+offshore headline net CF: median 0.316
+      171.86 real       117.37 user        13.17 sys
+===== site: exit 0, 172 s
+workspace files changed during the run: none

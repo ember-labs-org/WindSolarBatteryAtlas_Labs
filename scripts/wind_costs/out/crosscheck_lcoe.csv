@@ -1,0 +1,20 @@
+iso3,on_lcoe_median,off_lcoe_median_by_class,off_lcoe_median_fixed,irena_on_ref,irena_off_ref
+CHN,46,59,58,China: 27 (19-38),China: 49
+IND,66,117,117,India: 43 (32-46),
+USA,61,154,154,United States: 40 (29-59),United States: 141
+BRA,67,146,143,Brazil: 31 (27-37),
+DEU,62,73,73,Europe: 54 (40-83),Germany: 75
+GBR,47,100,100,Europe: 54 (40-83),United Kingdom: 94
+FRA,66,139,136,Europe: 54 (40-83),France: 142
+ESP,61,152,152,Europe: 54 (40-83),
+JPN,150,118,103,Other Asia: 83 (42-117),
+KOR,115,167,167,Other Asia: 83 (42-117),Republic of Korea: 179
+AUS,52,97,96,Oceania: 48 (48-48),
+ZAF,81,99,99,Africa: 59 (49-113),
+MEX,101,123,123,Other North America: 46 (39-67),
+TUR,107,130,130,Eurasia: 63 (41-86),
+VNM,97,131,131,Other Asia: 83 (42-117),
+CAN,46,87,85,Other North America: 46 (39-67),
+RUS,65,102,101,Eurasia: 63 (41-86),
+SAU,65,134,134,Other Asia: 83 (42-117),
+EGY,75,233,233,Africa: 59 (49-113),

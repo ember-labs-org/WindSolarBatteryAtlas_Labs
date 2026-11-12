@@ -1,0 +1,11 @@
+points 4998 shipped rows 4465
+on cf_best (S.best_area_mean_by_zone): 0 of 4385 shipped differ at 6 dp; max abs 0.00e+00
+on cf_best (T061 share rule, X=0, floor 500): 0 of 4385 shipped differ at 6 dp; max abs 0.00e+00
+on area_km2: 2 of 4465 shipped differ at 3 dp; max abs 1.00e-03
+on cf_p50: 0 of 4385 shipped differ at 6 dp; max abs 0.00e+00
+on cf_p90: 0 of 4385 shipped differ at 6 dp; max abs 0.00e+00
+off cf_best (S.best_area_mean_by_zone): 0 of 1277 shipped differ at 6 dp; max abs 0.00e+00
+off cf_best (T061 share rule, X=0, floor 500): 0 of 1277 shipped differ at 6 dp; max abs 0.00e+00
+off area_km2: 1 of 4465 shipped differ at 3 dp; max abs 1.00e-03
+off cf_p50: 0 of 1277 shipped differ at 6 dp; max abs 0.00e+00
+off cf_p90: 0 of 1277 shipped differ at 6 dp; max abs 0.00e+00

@@ -1,0 +1,11 @@
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE);
+const b = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH });
+const p = await b.newPage({ viewport: { width: 1200, height: 900 } });
+const errs = []; p.on('pageerror', e => errs.push(e.message));
+await p.goto('file://' + process.argv[2]);
+const fig = await p.$('figure');
+await fig.screenshot({ path: process.argv[3] });
+await p.setViewportSize({ width: 390, height: 800 });
+const w = await p.evaluate(() => document.documentElement.scrollWidth);
+console.log('errors', errs.length, 'scrollWidth at 390', w);
+await b.close();

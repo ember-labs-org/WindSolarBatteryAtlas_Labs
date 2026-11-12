@@ -1,0 +1,34 @@
+WDPA polygons 500,347 -> kept 474,186 (3 shapefiles)
+  strip 1/136 (80 N), 15 polygons, 1s
+  strip 11/136 (70 N), 302 polygons, 14s
+  strip 21/136 (60 N), 14,029 polygons, 124s
+  strip 31/136 (50 N), 10,594 polygons, 249s
+  strip 41/136 (40 N), 5,501 polygons, 327s
+  strip 51/136 (30 N), 1,874 polygons, 400s
+  strip 61/136 (20 N), 15,398 polygons, 433s
+  strip 71/136 (10 N), 817 polygons, 446s
+  strip 81/136 (0 N), 437 polygons, 461s
+  strip 91/136 (-10 N), 353 polygons, 472s
+  strip 101/136 (-20 N), 474 polygons, 487s
+  strip 111/136 (-30 N), 546 polygons, 499s
+  strip 121/136 (-40 N), 1,020 polygons, 513s
+  strip 131/136 (-50 N), 30 polygons, 547s
+PA shares written in 644s -> /Users/daanwalter/wind-atlas-T061/cache/pa_share_002deg.npz
+      682.09 real       574.50 user        72.75 sys
+          3804905472  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            18360111  page reclaims
+                1689  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              122166  voluntary context switches
+              368418  involuntary context switches
+       9199017744784  instructions retired
+       2399559335440  cycles elapsed
+         16515944384  peak memory footprint

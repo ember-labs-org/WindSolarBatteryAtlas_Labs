@@ -1,0 +1,20 @@
+WARN browser /Users/daanwalter/Library/Caches/ms-playwright/chromium-1217/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing (chromium-1217, 147.0.7727.15) MISMATCH: browser chromium-1217 147.0.7727.15 is not the pinned chromium-1243 153.0.8010.12; perf thresholds and baselines were measured on the pinned build
+INFO site /private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287b19fe1/scratchpad/wt-T061/deployment
+FAIL C1 syntax errors in: deployment/js/addon.js, deployment/js/apache-arrow.js, deployment/js/app.js, deployment/js/basemap.js, deployment/js/constants.js, deployment/js/data.js, deployment/js/map.js, deployment/js/parquet_wasm.js, deployment/js/perf-hud.js, deployment/js/samples.js, deployment/js/tooltip.js, deployment/js/tour.js, deployment/js/utils.js, deployment/js/voronoi-canvas.js, deployment/js/workers/daily-loader.js, deployment/js/workers/lcoe-worker.js (run node --check on them)
+WARN flock not available: running without the machine-wide bench lock
+WARN browser /Users/daanwalter/Library/Caches/ms-playwright/chromium-1217/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing (chromium-1217, 147.0.7727.15) MISMATCH: browser chromium-1217 147.0.7727.15 is not the pinned chromium-1243 153.0.8010.12; perf thresholds and baselines were measured on the pinned build
+PASS smoke first map in 5219 ms incl. LCOE switch
+WARN flock not available: running without the machine-wide bench lock
+WARN browser /Users/daanwalter/Library/Caches/ms-playwright/chromium-1217/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing (chromium-1217, 147.0.7727.15) MISMATCH: browser chromium-1217 147.0.7727.15 is not the pinned chromium-1243 153.0.8010.12; perf thresholds and baselines were measured on the pinned build
+INFO sample-days oracle decoded 366 days for every chosen region: 33 of 33
+INFO sample-days Your mix on 1 March (solar 8, battery 36) equals the oracle, battery carried from February: worst 0, 363 values, 21 regions start the day with charge, missing 
+INFO sample-days tooltip flows equal the oracle (1 March): Your mix, 1 March 2024MWh per MW of loadLoad met: 100.0% of 24 MWhSolar output: 29.2 MWhTo load directly: 24.0 MWhBattery charged: 0.0 MWh (0.0 MWh stored)Battery discharged: 0.0 MWhCurtailed: 5.2 MWhShortfall: 0.0 MWhBattery at day end: 36.0 MWh (100.0%)Brazil | want Solar output: 29.2 MWh; Battery charged: 0.0 MWh (0.0 MWh stored); Battery discharged: 0.0 MWh; Curtailed: 5.2 MWh; Shortfall: 0.0 MWh; Battery at day end: 36.0 MWh (100.0%)
+INFO sample-days region chart for March equals the oracle, series by series: worst 0
+INFO sample-days Resource solar on 17 July equals the file, NA exactly where no site: worst 0, NA mismatches 0
+INFO sample-days Resource wind_on on 17 July equals the file, NA exactly where no site: worst 0, NA mismatches 0
+INFO sample-days Resource wind_off on 17 July equals the file, NA exactly where no site: worst 0, NA mismatches 0
+INFO sample-days Your mix on 30 November (solar 3, onshore wind, battery 12) equals the oracle: worst 6.938893903907228e-18, 363 values
+INFO sample-days Your mix on 31 December (solar 3, offshore wind, battery 8) equals the oracle: worst 5.551115123125783e-17, 363 values
+INFO sample-days Your mix on 1 May (solar 4, onshore 2 + offshore 1, battery 16) equals the oracle (combined build: each surface where the region has it): worst 5.551115123125783e-17, 363 values, 19 regions start the day with charge, build {"solar":4,"wind":3,"surface":"both","batt":16,"on":2,"off":1}
+PASS sample-days 90/90 checks (canvas, ?canvas=0, ?worker=0)
+FAIL overall

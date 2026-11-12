@@ -1,0 +1,29 @@
+profiles on: 4998 of 4998 regions identical value for value; max abs diff 0
+profiles off: 4998 of 4998 regions identical value for value; max abs diff 0
+
+summary_w0.parquet: byte-identical
+summary_w1.parquet: byte-identical
+summary_w2.parquet: byte-identical
+summary_w3.parquet: byte-identical
+summary_w4.parquet: byte-identical
+summary_w5.parquet: byte-identical
+summary_w6.parquet: byte-identical
+summary_w8.parquet: byte-identical
+summary_wo1.parquet: byte-identical
+summary_wo2.parquet: byte-identical
+summary_wo3.parquet: byte-identical
+summary_wo4.parquet: byte-identical
+summary_wo5.parquet: byte-identical
+summary_wo6.parquet: byte-identical
+summary_wo8.parquet: byte-identical
+
+daily_cf_2024.parquet: byte-identical
+  solar: 0 cells differ, 0 regions
+  wind_on: 0 cells differ, 0 regions
+  wind_off: 0 cells differ, 0 regions
+configs.json: SHA-256 equal
+sample_timestamps.json: SHA-256 equal
+
+voronoi_wind_resource.csv: 35 shipped columns present; string-identical 35; differing: none; new columns: ['on_cf_best', 'on_cf_target', 'off_cf_best', 'off_cf_target', 'best_area_km2', 'viability_rule']
+
+RESULT: PASS

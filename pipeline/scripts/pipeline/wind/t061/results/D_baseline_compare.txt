@@ -1,0 +1,23 @@
+Phase D baseline (F11 full proof): harness --rule best500 on the local mirror (all inputs cmp-identical to the workspace, floating and air density included), site -> profiles -> run3d 0:3216 -> daily, then apply_exclusion; vs deployment/data at 2a29f90
+IDENTICAL configs.json
+IDENTICAL daily_cf_2024.parquet
+IDENTICAL sample_timestamps.json
+IDENTICAL summary_w0.parquet
+IDENTICAL summary_w1.parquet
+IDENTICAL summary_w2.parquet
+IDENTICAL summary_w3.parquet
+IDENTICAL summary_w4.parquet
+IDENTICAL summary_w5.parquet
+IDENTICAL summary_w6.parquet
+IDENTICAL summary_w8.parquet
+IDENTICAL summary_wo1.parquet
+IDENTICAL summary_wo2.parquet
+IDENTICAL summary_wo3.parquet
+IDENTICAL summary_wo4.parquet
+IDENTICAL summary_wo5.parquet
+IDENTICAL summary_wo6.parquet
+IDENTICAL summary_wo8.parquet
+IDENTICAL voronoi_wind_resource.csv
+IDENTICAL addon.json
+IDENTICAL addon_large.parquet
+IDENTICAL addon_wind_mix.parquet

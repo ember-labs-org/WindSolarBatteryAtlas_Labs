@@ -1,0 +1,26 @@
+PASS addon.json sets ['wind_mix', 'large']
+PASS addon.json header
+PASS wind_mix configs = lean 9 x solar 0-10 x battery 0-36/2, in order
+PASS large configs = grid R, in order
+PASS wind_mix: SHA-256 c5d55be54d3ea12b matches addon.json
+PASS wind_mix: schema ['int32', 'uint16', 'float', 'float']
+PASS wind_mix: 2276010 rows = 1210 regions x 1881 configs (addon.json: 2276010, 1210)
+PASS wind_mix: sorted by cfg then location, no duplicates
+PASS wind_mix: regions follow the rule (on_area_km2 > 0 and off_area_km2 > 0)
+PASS wind_mix: values in [0, 1]
+PASS wind_mix: values stored at 4 dp
+PASS large: SHA-256 19f2b92c9be10f53 matches addon.json
+PASS large: schema ['int32', 'uint16', 'float', 'float']
+PASS large: 685075 rows = 2045 regions x 335 configs (addon.json: 685075, 2045)
+PASS large: sorted by cfg then location, no duplicates
+PASS large: regions follow the rule (max annual_cf in summary_w0 < 0.999)
+PASS large: values in [0, 1]
+PASS large: values stored at 4 dp
+PASS large: CF non-decreasing in battery within each solar level (0 decreases)
+PASS wind_mix: 300 sampled rows re-simulated (cold start): CF equal at 4 dp in 300, half-way ties 0, max |d| 5.0e-05
+PASS wind_mix: curtailed share equal at 4 dp in 300, half-way ties 0
+     sampled 270 regions, 276 configs
+PASS large: 300 sampled rows re-simulated (repeating year): CF equal at 4 dp in 300, half-way ties 0, max |d| 5.0e-05
+PASS large: curtailed share equal at 4 dp in 300, half-way ties 0
+     sampled 283 regions, 198 configs
+ALL PASS

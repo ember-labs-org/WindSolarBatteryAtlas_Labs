@@ -1,0 +1,30 @@
+# T083 potential definitions
+
+Inputs: ws ~/wind-atlas-T067/ws_T067; resource <worktree>/deployment/data/voronoi_wind_resource.csv; ESMAP <worktree>/deployment/data/voronoi_wind_potential_offshore.csv; onshore conservative <worktree>/pipeline/scripts/pipeline/wind/t078/results/wind_potential_levers.csv
+
+IEA density 4.4821 MW/km2
+
+## Pixel table
+- candidate pixels: fixed raster 3,021,341, floating raster 15,590,876, 1,000-2,000 m band 6,451,537
+- pixels with eligible sea and a GWA CF: 13,077,961 of 25,063,754; eligible but no CF: 10,809,783; no 100 m speed among them: 0
+- pixel table built in 46 s
+
+## Identity
+- 4465 of 4998 simulation points are rows of the resource CSV
+- fixed raster sea with a CF (= off_area_km2): 0 rows differ beyond 6 dp (max 0 km2)
+- floating raster sea, all pixels, before the new PA step (= off_floating_area_km2): 0 rows differ beyond 6 dp (max 0 km2)
+
+## Totals, map cells (PWh a year; TW)
+- onshore old best-site figure (model.js formula, identity): 1,195,109.50255 TWh, 381.3 TW
+- onshore technical, pixel by pixel: 1,024,727.79944 TWh, 381.3 TW
+- onshore conservative: 553,747.99900 TWh, 193.7 TW
+
+| Definition | Fixed PWh | Fixed TW | Floating PWh | Floating TW | Total PWh |
+|---|---|---|---|---|---|
+| esmap | 64.3 | 19.4 | 158.4 | 46.1 | 222.7 |
+| iea | 88.1 | 31.2 | 298.9 | 99.1 | 387.0 |
+
+ESMAP capacity in map cells: fixed 20,221.6 GW, floating 47,081.4 GW; of which without the class's atlas sea (no estimate): fixed 803.0 GW, floating 935.7 GW
+IEA split (PWh): shallow near 52.8, shallow far 35.2, deep near 104.4, deep far 194.5  (IEA Table A.3: 35.9, 51.2, 76.8, 257.1; total 420.9)
+capacity-weighted mean calibrated CF: ESMAP fixed 0.378, floating 0.392; IEA shallow 0.322, deep 0.344
+cells in the Potential map file but not in demand (excluded from totals): 0

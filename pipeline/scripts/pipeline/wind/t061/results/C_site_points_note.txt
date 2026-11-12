@@ -1,0 +1,2 @@
+on: 4385 sites; site pixel found in table 4385; new eligibility 0 at site: 325; reduced: 952
+off: 1277 sites; site pixel found in table 1277; new eligibility 0 at site: 161; reduced: 208

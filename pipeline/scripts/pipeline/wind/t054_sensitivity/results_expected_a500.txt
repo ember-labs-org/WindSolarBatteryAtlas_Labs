@@ -1,0 +1,20 @@
+
+===== onshore, A = 500 km2 =====
+viable before 3442 (4.82 bn), after 3785 (6.03 bn)
+gain 344 (1.21 bn); lose 1 (0.0 m): Australia
+with land at >= 20% but still non-viable (best 500 km2 mean < 20%): 196 (0.57 bn); of which >= 200 km2 at >= 20%: 5 (4.6 m); their area at >= 20%: median 39 km2, max 213
+viable before and after (n=3441): headline change median +3.8 pp [p10 +1.2, p90 +8.4]; simulated (final_cf) change median +2.6 pp [p10 +0.0, p90 +6.7]; pop-weighted headline +5.4 pp, simulated +4.2 pp
+clamped viable: before 548 (k=1.8: 548, k=0.6: 0), after 880 (k=1.8: 880, k=0.6: 0)
+viable but simulating < 20%: before 237, after 330; newly viable simulating < 20%: 93 (0.45 bn)
+EXPECTED IDENTICAL on profiles/slices: non-viable before and after 1212, clamped at the same bound before and after 547 -> 1759 regions
+
+===== offshore, A = 500 km2 =====
+viable before 884 (1.84 bn), after 1111 (2.07 bn)
+gain 230 (0.23 bn); lose 3 (2.2 m): Papua New Guinea, Ecuador, Panama
+with land at >= 20% but still non-viable (best 500 km2 mean < 20%): 39 (0.17 bn); of which >= 200 km2 at >= 20%: 3 (2.2 m); their area at >= 20%: median 36 km2, max 287
+viable before and after (n=881): headline change median +0.1 pp [p10 -2.4, p90 +1.4]; simulated (final_cf) change median +0.0 pp [p10 -2.3, p90 +1.3]; pop-weighted headline -0.2 pp, simulated -0.2 pp
+clamped viable: before 117 (k=1.8: 117, k=0.6: 0), after 146 (k=1.8: 146, k=0.6: 0)
+viable but simulating < 20%: before 0, after 1; newly viable simulating < 20%: 1 (12.1 m)
+EXPECTED IDENTICAL off profiles/slices: non-viable before and after 3884, clamped at the same bound before and after 113 -> 3997 regions
+
+any wind (on or off): before 3589 (5.13 bn), after 3903 (6.07 bn); gain 316 (0.95 bn), lose 2 (2.0 m)

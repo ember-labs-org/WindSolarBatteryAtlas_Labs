@@ -1,0 +1,61 @@
+population joined: 4998 rows, total 7.76 bn, missing keys 5
+
+Current: viable 3442 regions, 4.82 bn; no eligible land 574 (1 m); land but not viable 982 (2.94 bn)
+Current level (P90) of viable regions: median 0.361 p10 0.247 p90 0.438
+
+=== A = 500 km2 ===
+viable 3785 (6.03 bn); become viable 344 (1.21 bn); stop being viable 1 (0 m)
+viable with < 200 km2 eligible land: 24 (0 m); with < 200 km2 clearing 20%: 30; with less eligible land than A (all land used): 39
+  losers: P90 median 0.282, best-A median 0.197, eligible area median 527 km2, max 527
+(i) headline change for currently viable (pp): median +3.8 p10 +1.2 p90 +8.4; share up 98%, |change|>5pp 35%
+    by |lat| band: 0-15: n=327 med +5.4 [+2.2,+11.8]; 15-30: n=913 med +3.6 [+1.2,+8.0]; 30-45: n=889 med +3.9 [+1.4,+7.9]; 45-60: n=747 med +3.4 [+1.1,+7.8]; 60+: n=566 med +3.5 [+1.0,+7.7]
+    population-weighted mean change +5.4 pp; new level median 0.395
+(ii) newly viable get best-A level: median 0.241; kept P90 for current viable median 0.361. Newly viable regions out-ranking the median currently viable region: 13 of 344; mean share of current viable they out-rank 13%
+    at the old boundary (P90 19-21%, n=130): level median 0.205 if viable today vs 0.258 if newly viable
+  top countries gaining (by people): India 15 (0.19 bn); China 24 (0.18 bn); Bangladesh 2 (94 m); Pakistan 5 (92 m); Vietnam 4 (66 m); Mexico 16 (61 m); Indonesia 7 (61 m); Ethiopia 9 (49 m); Colombia 12 (40 m); Italy 4 (28 m)
+  countries losing: Australia 1
+  (i) largest median CF change, countries with >=10 viable regions: up Tanzania +9.5; Kenya +9.3; Madagascar +8.0; Ethiopia +7.1; Brazil +6.7 | least: Greenland -2.5; Mali +1.5; Turkmenistan +1.6; Algeria +1.6; Kazakhstan +1.7
+  at 15% instead of 20%: viable 3988 (7.09 bn)
+
+=== A = 1000 km2 ===
+viable 3725 (5.77 bn); become viable 286 (0.95 bn); stop being viable 3 (0 m)
+viable with < 200 km2 eligible land: 24 (0 m); with < 200 km2 clearing 20%: 26; with less eligible land than A (all land used): 50
+  losers: P90 median 0.282, best-A median 0.193, eligible area median 668 km2, max 2209
+(i) headline change for currently viable (pp): median +2.9 p10 +0.8 p90 +6.6; share up 97%, |change|>5pp 22%
+    by |lat| band: 0-15: n=327 med +4.3 [+1.5,+9.3]; 15-30: n=913 med +2.8 [+0.8,+6.3]; 30-45: n=889 med +3.0 [+1.0,+6.3]; 45-60: n=747 med +2.6 [+0.8,+6.3]; 60+: n=566 med +2.6 [+0.4,+6.0]
+    population-weighted mean change +4.2 pp; new level median 0.387
+(ii) newly viable get best-A level: median 0.229; kept P90 for current viable median 0.361. Newly viable regions out-ranking the median currently viable region: 11 of 286; mean share of current viable they out-rank 11%
+    at the old boundary (P90 19-21%, n=130): level median 0.205 if viable today vs 0.246 if newly viable
+  top countries gaining (by people): India 14 (0.18 bn); China 22 (0.15 bn); Pakistan 5 (92 m); Vietnam 4 (66 m); Ethiopia 8 (44 m); Indonesia 5 (42 m); Colombia 12 (40 m); Italy 4 (28 m); Philippines 5 (21 m); Dem. Rep. Congo 6 (20 m)
+  countries losing: Australia 1; Greenland 1; Timor-Leste 1
+  (i) largest median CF change, countries with >=10 viable regions: up Tanzania +8.1; Kenya +6.6; Madagascar +6.2; Ethiopia +5.6; Brazil +5.5 | least: Greenland -6.0; Mali +1.2; Turkmenistan +1.3; Algeria +1.3; Kazakhstan +1.3
+  at 15% instead of 20%: viable 3931 (6.83 bn)
+
+=== A = 2500 km2 ===
+viable 3591 (5.36 bn); become viable 166 (0.56 bn); stop being viable 17 (27 m)
+viable with < 200 km2 eligible land: 24 (0 m); with < 200 km2 clearing 20%: 26; with less eligible land than A (all land used): 79
+  losers: P90 median 0.235, best-A median 0.181, eligible area median 3219 km2, max 5366
+(i) headline change for currently viable (pp): median +1.5 p10 +0.0 p90 +3.9; share up 90%, |change|>5pp 6%
+    by |lat| band: 0-15: n=327 med +2.3 [+0.4,+5.4]; 15-30: n=913 med +1.5 [+0.3,+3.8]; 30-45: n=889 med +1.5 [+0.1,+3.6]; 45-60: n=747 med +1.4 [+0.2,+3.9]; 60+: n=566 med +1.3 [-1.2,+3.5]
+    population-weighted mean change +2.1 pp; new level median 0.374
+(ii) newly viable get best-A level: median 0.219; kept P90 for current viable median 0.361. Newly viable regions out-ranking the median currently viable region: 11 of 166; mean share of current viable they out-rank 10%
+    at the old boundary (P90 19-21%, n=130): level median 0.205 if viable today vs 0.224 if newly viable
+  top countries gaining (by people): India 9 (0.11 bn); China 13 (0.11 bn); Vietnam 4 (66 m); Colombia 8 (31 m); Pakistan 2 (30 m); Nepal 1 (17 m); Nigeria 2 (16 m); Indonesia 1 (16 m); Ethiopia 4 (12 m); Dem. Rep. Congo 3 (12 m)
+  countries losing: Australia 2; China 1; Cuba 1; France 1; Greenland 1; India 1
+  (i) largest median CF change, countries with >=10 viable regions: up Tanzania +4.9; Kenya +3.8; Ethiopia +3.3; Brazil +3.2; Zimbabwe +3.0 | least: Greenland -8.4; Japan -0.4; New Zealand -0.3; Italy +0.1; United Kingdom +0.6
+  at 15% instead of 20%: viable 3843 (6.37 bn)
+
+    A  viable  viable_pop_bn  gain  gain_pop_bn  loss  loss_pop_m  lt200  good_lt200  d_med  d_p10  d_p90  viable15
+ 500    3785           6.03   344         1.21     1        0.00     24          30   3.82   1.22   8.37      3988
+1000    3725           5.77   286         0.95     3        0.19     24          26   2.91   0.84   6.65      3931
+2500    3591           5.36   166         0.56    17       27.31     24          26   1.52   0.04   3.87      3843
+
+spot checks
+          spot  lid         country  pop_m      area    area20  viable   p90  b500  b1000  b2500  best_px
+    Jeneponto 3914       Indonesia  4.428  9740.973   831.764       0 0.190 0.298  0.254  0.184    0.434
+       Sidrap 2139       Indonesia  3.236 14880.508   817.984       0 0.164 0.239  0.220  0.182    0.325
+     Kinshasa 2353 Dem. Rep. Congo  9.751 28470.010  1575.146       0 0.175 0.267  0.245  0.215    0.357
+       Bogota 1932        Colombia 15.242 31285.486  2370.879       0 0.176 0.328  0.301  0.255    0.386
+Uttar Pradesh 2208           India 31.508 36319.699     0.000       0 0.125 0.144  0.140  0.135    0.159
+     Amazonas 4056          Brazil  0.084 26623.349     0.000       0 0.018 0.030  0.028  0.024    0.036
+      Gujarat 2825           India  1.462 14869.262 14340.107       1 0.368 0.412  0.400  0.372    0.427

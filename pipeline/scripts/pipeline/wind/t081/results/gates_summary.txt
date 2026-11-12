@@ -1,0 +1,8 @@
+addon exit=1 :: FAIL addon 84/88
+addon_faults exit=1 :: FAIL addon-faults 11/12
+addon_unit exit=0 :: PASS addon-unit 25/25
+sample exit=0 :: PASS sample-days 90/90 checks (canvas, ?canvas=0, ?worker=0)
+colour exit=0 :: PASS colour-registry 14 modules and 2 pages use only the registry (allow-list: 13 UI-chrome entries; no Tailwind hue swatches or style colour literals in markup)
+legend exit=0 :: PASS legend-probe overall (/private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/4084cd88-fb4a-4bc9-b91c-392816
+verify exit=0 :: ARTICLE CHECK PASSED
+DONE

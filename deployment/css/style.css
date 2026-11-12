@@ -1,0 +1,1390 @@
+/* ============================================================
+   Solar + Wind + Battery Atlas: design tokens (Ember Labs Design System)
+   Single source of truth. Tailwind mirrors these via its inline
+   config in index.html so utility classes stay unchanged.
+   ============================================================ */
+:root {
+    --bg-page: #414F6F;   /* --el-canvas: the tool's background (ocean) */
+    --card: #192238;      /* --el-navy */
+    --elevated: #414F6F;  /* --el-canvas */
+    --text: #FFFFFF;
+    --muted: #B0B7C6;     /* --el-muted */
+    --divider: rgba(255, 255, 255, 0.12); /* --el-divider */
+    --input: rgba(255, 255, 255, 0.08); /* --el-white-wash-08 */
+    --ember: #FFC400;     /* --el-yellow */
+    --ember-hover: #E6B300; /* --el-yellow-hover */
+    --solar: #FFC400;     /* chart categorical 1 */
+    --battery: #37A6E6;   /* chart categorical 2 */
+    --wind: #13CE74;      /* chart categorical 3: onshore wind */
+    --wind-off: #A3D9A5;  /* green ramp 4: offshore wind */
+    /* Land fill for the local basemap (js/basemap.js). The ocean is the map
+       container's own background (--bg-page). */
+    --map-land: #626E88;  /* --el-slate */
+    /* Ember brand typeface. Single source of truth: Tailwind's font-sans is
+       set to the same stack in tailwind.config.js. */
+    --font-sans: 'Poppins', system-ui, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--card);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--elevated);
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--muted);
+}
+
+/* Map Styles */
+.leaflet-container {
+    background: var(--bg-page);
+    touch-action: none;
+    font-family: var(--font-sans);
+}
+
+#map-shell {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+}
+
+/* Population charts overlay should sit centered between demand/supply panels */
+.population-charts-shell {
+    padding-left: var(--charts-left-pad, 1.5rem);
+    padding-right: var(--charts-right-pad, 1.5rem);
+}
+
+.population-charts-inner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-pane {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    background: var(--bg-page);
+}
+
+/* Collapsible Panels */
+.panel-collapsible {
+    transition: width 0.2s ease, padding 0.2s ease, opacity 0.2s ease;
+}
+
+.panel-collapsible.is-collapsed {
+    width: 3rem;
+    padding: 0.75rem 0.5rem;
+}
+
+.panel-collapsible.is-collapsed .panel-body,
+.panel-collapsible.is-collapsed .panel-title {
+    display: none;
+}
+
+.panel-collapsible.is-collapsed .panel-header {
+    justify-content: center;
+}
+
+.panel-collapse-btn .material-symbols-outlined {
+    transition: transform 0.2s ease;
+}
+
+.panel-collapsible.is-collapsed .panel-collapse-btn .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+#map-supply {
+    display: none;
+}
+
+body.split-maps #map-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+body.split-maps #map {
+    width: 100%;
+}
+
+body.split-maps #map-supply {
+    display: block;
+    width: 100%;
+}
+
+#legend-stack {
+    right: 1rem;
+    left: auto;
+}
+
+body.split-maps #legend-stack {
+    left: 1rem;
+    right: auto;
+    align-items: flex-start;
+}
+
+/* Marker clusters — ember accent */
+.marker-cluster-small {
+    background-color: rgba(255, 196, 0, 0.6);
+}
+
+.marker-cluster-small div {
+    background-color: rgba(255, 196, 0, 0.6);
+}
+
+/* Chart Tooltip Customization */
+#chartjs-tooltip {
+    opacity: 1;
+    position: absolute;
+    background: #000000; /* --el-black: tooltips */
+    color: var(--text);
+    border: 1px solid var(--divider);
+    border-radius: 0;
+    pointer-events: none;
+    transform: translate(-50%, 0);
+    transition: all .1s ease;
+    padding: 8px 12px;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    box-shadow: none;
+}
+
+/* Leaflet Popup Customization */
+.leaflet-popup-content-wrapper {
+    /* Background is 95% opaque, so a backdrop blur is imperceptible — but it forces
+       Safari to re-composite the whole map layer under the filter on every backdrop
+       change (pan/zoom/recolor). Dropped for performance; no visible change. */
+    background-color: var(--card);
+    color: var(--text);
+    border: 1px solid var(--divider);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.leaflet-popup-tip {
+    background-color: var(--card);
+    border: 1px solid var(--divider);
+    border-top: none;
+    border-left: none;
+}
+
+.leaflet-popup-content {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Legend gradients: set from the colour registry (js/constants.js RAMPS) by
+   app.js installRampVars(), from the same lookup tables as the map. */
+.legend-gradient { background: var(--ramp-cf); }                  /* capacity factor */
+.legend-gradient-cost { background: var(--ramp-lcoe); }           /* LCOE */
+.legend-gradient-delta { background: var(--ramp-delta); }         /* LCOE difference */
+.legend-gradient-tx { background: var(--ramp-green); }            /* transmission */
+.legend-gradient-pop { background: var(--ramp-population); }      /* population and demand (log) */
+.legend-gradient-potential { background: var(--ramp-green); }     /* potential total */
+.legend-gradient-potential-multiple { background: var(--ramp-green); }
+
+/* Map Transitions */
+.transition-color {
+    transition: fill 0.9s ease, stroke 0.9s ease;
+}
+
+.voronoi-hover {
+    stroke: #ffffff !important;
+    stroke-width: 1.2 !important;
+    stroke-opacity: 1 !important;
+}
+
+/* ============================================================
+   Solar + Battery Atlas — shared component styles
+   Used by markup in index.html and scrollytelling. Drives the
+   "less finicky" input UX: bigger hit targets, consistent focus.
+   ============================================================ */
+
+/* Range sliders — 20px thumb, ember fill, better track contrast */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: var(--muted);   /* unfilled track: --el-muted */
+    border-radius: 0;
+    accent-color: var(--ember);
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    background: var(--ember);
+    border: 2px solid var(--card); /* thin dark border, square handle */
+    cursor: pointer;
+    box-shadow: none;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.08);
+    background: var(--ember-hover);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    background: var(--ember);
+    border: 2px solid var(--card); /* thin dark border, square handle */
+    cursor: pointer;
+    box-shadow: none;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.08);
+    background: var(--ember-hover);
+}
+
+input[type="range"]::-moz-range-track {
+    background: var(--muted);
+    height: 4px;
+    border-radius: 0;
+}
+
+input[type="range"]::-moz-range-progress {
+    background: var(--ember);   /* filled track: --el-yellow (Firefox only, as Labs) */
+    height: 4px;
+}
+
+/* Every slider thumb is yellow, as in Labs; the series colour lives in the value. */
+.text-wind { color: var(--wind); }
+.text-wind-off { color: var(--wind-off); }
+
+/* Number inputs — bigger, clearer, always-visible steppers */
+.num-input {
+    width: 100%;
+    min-height: 36px;
+    padding: 0.375rem 0.625rem;
+    background: var(--input);
+    border: 1px solid var(--divider);
+    border-radius: 0;
+    color: var(--text);
+    font-size: 0.8125rem;
+    font-family: var(--font-sans);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.num-input:hover {
+    border-color: var(--muted);
+}
+
+.num-input:focus {
+    outline: none;
+    border-color: var(--ember);
+    box-shadow: none;
+}
+
+.num-input::-webkit-inner-spin-button,
+.num-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.num-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Text inputs that should share num-input styling */
+.text-input {
+    width: 100%;
+    min-height: 36px;
+    padding: 0.375rem 0.625rem;
+    background: var(--input);
+    border: 1px solid var(--divider);
+    border-radius: 0;
+    color: var(--text);
+    font-size: 0.8125rem;
+    font-family: var(--font-sans);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: var(--ember);
+    box-shadow: none;
+}
+
+/* T098: section headers stay on one line, the Global/Local toggle keeps its size */
+.assump-title {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.assump-title + .toggle-group { flex: none; }
+
+/* T098: cost, WACC and fuel assumptions – folded under an "Edit assumptions" disclosure
+   (folded on every load; the Global/Local toggle above stays visible). */
+.assump-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 32px;
+    padding: 0 6px 0 10px;
+    background: var(--input);
+    border: 1px solid var(--divider);
+    border-radius: 0;
+    color: var(--muted);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+.assump-toggle:hover { color: var(--text); border-color: var(--muted); }
+.assump-toggle:focus-visible { outline: 2px solid var(--ember); outline-offset: 1px; }
+.assump-toggle[aria-expanded="true"] { color: var(--text); }
+.assump-toggle__chev {
+    font-size: 20px;
+    line-height: 1;
+    transition: rotate 0.2s ease;
+}
+.assump-toggle[aria-expanded="true"] .assump-toggle__chev { rotate: 180deg; }
+
+.assump-body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 12px;
+}
+.assump-body[hidden] { display: none; }
+
+.assump-group__title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--divider);
+    color: var(--text);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.assump-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--dot);
+    flex: none;
+}
+
+.assump-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.assump-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+.assump-field--full { grid-column: 1 / -1; }
+.assump-field__label {
+    color: var(--muted);
+    font-size: 0.6875rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Number input with its unit as a muted suffix inside the field */
+.num-field {
+    position: relative;
+    display: block;
+}
+.num-field .num-input {
+    min-height: 32px;
+    padding-right: 3.75rem;
+    font-variant-numeric: tabular-nums;
+}
+.num-field .num-input:only-child { padding-right: 0.625rem; }
+.num-field__unit {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    translate: 0 -50%;
+    color: var(--muted);
+    font-size: 0.6875rem;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+/* Toggle groups — segmented control pattern, bigger hit targets */
+.toggle-group {
+    display: inline-flex;
+    align-items: stretch;
+    min-height: 32px;
+    padding: 3px;
+    gap: 2px;
+    background: var(--elevated);
+    border-radius: 0;
+}
+
+.toggle-group.toggle-group-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    width: 100%;
+}
+
+.toggle-group.toggle-group-col {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+.toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 26px;
+    padding: 0 10px;
+    border-radius: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+    font-family: var(--font-sans);
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.toggle-btn:hover {
+    color: var(--text);
+}
+
+.toggle-btn.is-active {
+    background: var(--ember);
+    color: #000000;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+/* A choice that cannot be made now (T074: the last technology on, wind layers with no wind) */
+.toggle-btn:disabled { opacity: 0.4; cursor: default; }
+.toggle-btn:disabled:hover { color: var(--muted); }
+.toggle-btn.is-active:disabled:hover { color: #000000; }
+
+/* Fuel chips (Capacity to Displace, T075): multi-select toggles that are also the
+   colour legend. On = the Labs active state (yellow) with a filled dot in the fuel's
+   registry colour (--fuel, set by app.js); off = no fill, muted label, hollow dot,
+   as nothing of that fuel is drawn. aria-pressed carries the state. */
+.fuel-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 26px;
+    padding: 0 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: var(--font-sans);
+    line-height: 1;
+    white-space: nowrap;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--divider);
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+.fuel-chip:hover { color: var(--text); }
+.fuel-chip[aria-pressed="true"] {
+    background: var(--ember);
+    border-color: var(--ember);
+    color: #000000;
+}
+.fuel-dot {
+    flex: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid var(--fuel);
+    background: transparent;
+}
+.fuel-chip[aria-pressed="true"] .fuel-dot {
+    background: var(--fuel);
+    border: 1px solid var(--card);
+}
+
+/* Tiny variant (used inline in dense panels) */
+.toggle-btn-sm {
+    min-height: 22px;
+    padding: 0 8px;
+    font-size: 0.6875rem;
+}
+
+/* Checkbox / radio — ember-green when checked */
+.check-ember {
+    accent-color: var(--ember);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Clickable label rows wrapping check/radio get a bigger hit target */
+label.check-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 32px;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+label.check-row:hover {
+    color: var(--text);
+}
+
+/* Capsule CTA button */
+.btn-capsule {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 40px;
+    padding: 0 1.25rem;
+    border-radius: 0;
+    background: var(--ember);
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease;
+    font-family: var(--font-sans);
+}
+
+.btn-capsule:hover {
+    background: var(--ember-hover);
+}
+
+.btn-capsule:active {
+    transform: translateY(1px);
+}
+
+/* Secondary capsule (outlined) */
+.btn-capsule-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 40px;
+    padding: 0 1.25rem;
+    border-radius: 0;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--divider);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    font-family: var(--font-sans);
+}
+
+.btn-capsule-ghost:hover {
+    background: var(--elevated);
+    border-color: var(--muted);
+}
+
+/* Unified focus ring for keyboard users */
+:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+/* View tabs — active state driven by .is-active; bg-primary still works
+   because tailwind's `primary` token is re-pointed to ember green */
+.view-tab {
+    font-family: var(--font-sans);
+}
+
+/* ============================================================
+   App header: actions | view tabs | (empty)
+   Ember Labs frame rules: no logo, title or labels inside the tool, so the
+   brand pill is gone and Tour, Article and Info sit top left, as in Labs.
+   A three-column grid. The tab bar sits in the middle column and stays
+   centred on the page whenever it fits. The side columns never shrink below
+   their content, so the tabs can only ever take the space that is left; if
+   that is too little they scroll inside their own pill instead of running
+   under a neighbour. Narrower screens drop the least useful text first:
+   the Tour and Article labels, then the product name, then tab padding.
+   The breakpoints are sized for the five tabs.
+   ============================================================ */
+.app-header {
+    display: grid;
+    grid-template-columns: minmax(max-content, 1fr) minmax(0, auto) minmax(max-content, 1fr);
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 8px;
+}
+
+.app-header__actions { grid-column: 1; grid-row: 1; justify-self: start; }
+.app-header__tabs { grid-column: 2; grid-row: 1; }
+
+.app-header__tabs {
+    justify-self: center;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.app-header__tabs::-webkit-scrollbar { display: none; }
+
+.app-header__tabs .view-tab {
+    flex: none;
+    white-space: nowrap;
+}
+
+/* Tour, Article and Info labels at desktop as in Labs ("Take a Tour", D-138); below
+   1280 px the five tabs need the room, so the buttons fall back to icons (T050). */
+@media (max-width: 1279px) {
+    .app-header .app-header__label { display: none; }
+}
+
+/* Tighter tab padding on small laptops and tablets */
+@media (max-width: 1079px) {
+    .app-header__tabs .view-tab { padding-left: 0.625rem; padding-right: 0.625rem; }
+}
+
+/* Phones: brand and actions on the first row, tabs on a second row of their own */
+@media (max-width: 639px) {
+    .app-header {
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+    .app-header__tabs {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-self: stretch;
+    }
+    /* The panels that hang under the header start below the second row (body: tailwind.css loads after this file and ties on specificity) */
+    body .app-below-header { top: 7.5rem; }
+}
+
+/* ============================================================
+   Guided Tour — "Take a Tour" callouts, glowing ring, chooser
+   ============================================================ */
+
+/* Glowing accent ring drawn around the highlighted element. No screen
+   dimming — the tool stays fully visible behind it. */
+.tour-ring {
+    position: fixed;
+    z-index: 10000;
+    border: 2px solid var(--ember);
+    border-radius: 0;
+    pointer-events: none;
+    box-shadow: none;
+    transition: left 0.25s ease, top 0.25s ease, width 0.25s ease, height 0.25s ease;
+    animation: tour-ring-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes tour-ring-pulse {
+    0%, 100% { box-shadow: none; }
+    50%      { box-shadow: none; }
+}
+
+/* Callout box */
+.tour-callout {
+    position: fixed;
+    z-index: 10001;
+    width: 320px;
+    max-width: calc(100vw - 16px);
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 18px 18px 14px;
+    color: var(--text);
+    font-family: var(--font-sans);
+    transition: left 0.25s ease, top 0.25s ease;
+}
+
+.tour-callout__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--muted);
+    line-height: 0;
+    transition: color 0.2s ease;
+}
+.tour-callout__close:hover { color: var(--text); }
+.tour-callout__close .material-symbols-outlined { font-size: 20px; }
+
+.tour-callout__title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 24px 8px 0;
+    line-height: 1.3;
+}
+
+.tour-callout__body {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #FFFFFF;
+}
+.tour-callout__body b { color: #fff; font-weight: 600; }
+
+.tour-callout__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.tour-callout__counter {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+}
+
+.tour-callout__nav { display: flex; gap: 8px; }
+
+.tour-callout__btn {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+.tour-callout__back {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--divider);
+}
+.tour-callout__back:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.tour-callout__back:disabled { opacity: 0.35; cursor: default; }
+.tour-callout__next {
+    background: var(--ember);
+    color: #000000;
+    border: 1px solid var(--ember);
+}
+.tour-callout__next:hover { background: var(--ember-hover); border-color: var(--ember-hover); }
+
+/* Arrow pointing toward the target */
+.tour-callout__arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transform: rotate(45deg);
+}
+.tour-callout__arrow--right { left: -7px; border-right: none; border-top: none; }
+.tour-callout__arrow--left  { right: -7px; border-left: none; border-bottom: none; }
+.tour-callout__arrow--bottom { top: -7px; border-bottom: none; border-right: none; }
+.tour-callout__arrow--top    { bottom: -7px; border-top: none; border-left: none; }
+
+/* Centered welcome / fallback callout */
+.tour-callout--centered {
+    width: 380px;
+    text-align: center;
+}
+.tour-callout--centered .tour-callout__title { margin-right: 0; }
+.tour-callout--centered .tour-callout__footer { justify-content: space-between; }
+
+/* ---- Tour chooser modal ---- */
+.tour-chooser {
+    position: fixed;
+    inset: 0;
+    z-index: 10002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    font-family: var(--font-sans);
+}
+.tour-chooser.hidden { display: none; }
+
+.tour-chooser__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(25, 34, 56, 0.75); /* --el-overlay: navy-tinted, never black */
+    backdrop-filter: none;
+}
+
+.tour-chooser__card {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 32px 28px;
+    color: var(--text);
+}
+.tour-chooser__card--single { text-align: center; }
+
+.tour-chooser__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: var(--muted);
+    line-height: 0;
+    transition: color 0.2s ease;
+}
+.tour-chooser__close:hover { color: var(--text); }
+
+.tour-chooser__icon {
+    color: var(--ember);
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.tour-chooser__heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 8px;
+}
+.tour-chooser__sub {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 22px;
+    line-height: 1.55;
+}
+
+.tour-chooser__start {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--ember);
+    color: #000000;
+    border: 1px solid var(--ember);
+    border-radius: 0;
+    padding: 10px 28px;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+.tour-chooser__start:hover { background: var(--ember-hover); border-color: var(--ember-hover); }
+
+/* ---- First-visit nudge tooltip ----
+   Every looping effect animates only transform and opacity, so Chrome runs it on
+   the compositor and never repaints the page (or re-produces its canvases) per
+   frame (D-048). The original's box-shadow rings are rebuilt from layers:
+     ::before  card background + border (static)
+     ::after   drop shadow + amber glow (static; hidden for the first 0.4 s,
+               like the original, whose shadows only existed inside the animation)
+     .tour-nudge__ring  one expanding ring, the shape of a `0 0 0 X` box-shadow
+               around a 16px-radius box: four corner discs plus eight half-bands
+               along the edges, all moved by transforms; the colour fade is the
+               group's opacity. Ring 1 grows from the border box under the card;
+               ring 2 grows from the padding box over the content, masked to
+               outside the padding box, as the old ::after shadow was.
+   The loops run for about 10 s and then stop at rest (D-048 fallback, D-085):
+   even compositor animations make Chrome restyle their elements on the main
+   thread every frame, which hover frames pay for. Breathe and wave run 6 cycles
+   (end 10.0 s, at scale 1 / rotate 0); ring 1 runs 6 pulses and ring 2 runs 5,
+   so the first 10 s are as before and both end in a cycle's invisible tail
+   (ring 2 at 10.3 s, ring 1 at 11.2 s, visible until 10.66 s). Every finished
+   animation falls back to the element's own style, which is that resting frame:
+   card at scale 1, icon upright, rings at opacity 0, static shadows shown;
+   a base translateZ(0) keeps the card and icon on their own layers, as while
+   animating. */
+.tour-nudge {
+    position: fixed;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 400px;
+    border: 3px solid transparent;  /* drawn by ::before; keeps the layout */
+    border-radius: 0;
+    padding: 18px 18px 18px 20px;
+    color: var(--text);
+    font-family: var(--font-sans);
+    cursor: pointer;
+    animation:
+        tour-nudge-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+        tour-nudge-breathe 1.6s ease-in-out 0.4s 6;
+    /* Overridden by the breathe while it runs; afterwards it keeps the layer
+       the animations had, so the text rasterises as in their resting frame
+       (without a layer the glyph edges shift). Not will-change, which would
+       also change how the scaled frames are rasterised. */
+    transform: translateZ(0);
+}
+.tour-nudge::before,
+.tour-nudge::after {
+    content: '';
+    position: absolute;
+    inset: -3px;  /* the border box */
+    border-radius: 0;
+    pointer-events: none;
+}
+.tour-nudge::before {
+    z-index: -1;
+    background: var(--card);
+    border: 3px solid var(--ember);
+}
+.tour-nudge:hover::before { border-color: var(--ember-hover); }
+.tour-nudge::after {
+    z-index: -2;
+    display: none;  /* Labs: no glow */
+}
+
+.tour-nudge__ring {
+    display: none;  /* Labs: no expanding rings */
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    animation: tour-nudge-ring-fade 1.8s ease-out;
+}
+/* Primary ring: from the border box, under the card and its shadows. */
+.tour-nudge__ring--1 {
+    --m: 0px;       /* margin around the ring's base box (room for a mask) */
+    --a: 0.75;      /* starting alpha; the spread grows to 32px */
+    inset: -3px;
+    z-index: -3;
+    animation-delay: 0.4s;
+    animation-iteration-count: 6;
+}
+/* Secondary ring, offset in time for a continuous radar pulse: from the padding
+   box, over the border and arrow, never inside the padding box. */
+.tour-nudge__ring--2 {
+    --m: 50px;
+    --a: 0.6;       /* the spread grows to 48px */
+    inset: calc(-1 * var(--m));
+    animation-delay: 1.3s;
+    animation-iteration-count: 5;
+    /* Everything except the padding box's 16px rounded rect: the full layer XOR
+       (two cross rects + four corner circles). */
+    mask-image:
+        linear-gradient(#000 0 0),
+        linear-gradient(#000 0 0),
+        linear-gradient(#000 0 0),
+        radial-gradient(circle at left 66px top 66px, #000 15.5px, transparent 16.5px),
+        radial-gradient(circle at right 66px top 66px, #000 15.5px, transparent 16.5px),
+        radial-gradient(circle at left 66px bottom 66px, #000 15.5px, transparent 16.5px),
+        radial-gradient(circle at right 66px bottom 66px, #000 15.5px, transparent 16.5px);
+    mask-repeat: no-repeat;
+    mask-position: 0 0, 66px 50px, 50px 66px, 0 0, 0 0, 0 0, 0 0;
+    mask-size: 100% 100%, calc(100% - 132px) calc(100% - 100px), calc(100% - 100px) calc(100% - 132px),
+        100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    mask-composite: exclude, add, add, add, add, add, add;
+}
+/* Same cycle, delay and pulse count as the ring's fade; linear because the
+   ease-out is in the keyframes. Set explicitly: `animation: inherit` here kept
+   Chrome restarting the compositor animations every frame for the whole first
+   cycle. */
+.tour-nudge__ring > i {
+    position: absolute;
+    background: var(--ember);
+    animation: 1.8s linear;
+}
+.tour-nudge__ring--1 > i { animation-delay: 0.4s; animation-iteration-count: 6; }
+.tour-nudge__ring--2 > i { animation-delay: 1.3s; animation-iteration-count: 5; }
+.tour-nudge__ring > .tn-tl { --sx: -1; --sy: -1; }
+.tour-nudge__ring > .tn-tr { --sx: 1; --sy: -1; }
+.tour-nudge__ring > .tn-bl { --sx: -1; --sy: 1; }
+.tour-nudge__ring > .tn-br { --sx: 1; --sy: 1; }
+/* Half-bands along the top and bottom edges: from the corner arc to just past the
+   middle, half the box deep. */
+.tour-nudge__ring > .tn-h { height: calc(50% - var(--m)); }
+.tour-nudge__ring > .tn-h.tn-tl, .tour-nudge__ring > .tn-h.tn-bl { left: calc(var(--m) + 16px); right: calc(50% - 16px); }
+.tour-nudge__ring > .tn-h.tn-tr, .tour-nudge__ring > .tn-h.tn-br { right: calc(var(--m) + 16px); left: calc(50% - 16px); }
+.tour-nudge__ring > .tn-h.tn-tl, .tour-nudge__ring > .tn-h.tn-tr { top: var(--m); }
+.tour-nudge__ring > .tn-h.tn-bl, .tour-nudge__ring > .tn-h.tn-br { bottom: var(--m); }
+/* Half-bands along the left and right edges. */
+.tour-nudge__ring > .tn-v { width: calc(50% - var(--m)); }
+.tour-nudge__ring > .tn-v.tn-tl, .tour-nudge__ring > .tn-v.tn-tr { top: calc(var(--m) + 16px); bottom: calc(50% - 16px); }
+.tour-nudge__ring > .tn-v.tn-bl, .tour-nudge__ring > .tn-v.tn-br { bottom: calc(var(--m) + 16px); top: calc(50% - 16px); }
+.tour-nudge__ring > .tn-v.tn-tl, .tour-nudge__ring > .tn-v.tn-bl { left: var(--m); }
+.tour-nudge__ring > .tn-v.tn-tr, .tour-nudge__ring > .tn-v.tn-br { right: var(--m); }
+/* Corner discs, radius 16px about each corner centre. */
+.tour-nudge__ring > .tn-c { width: 32px; height: 32px; border-radius: 50%; }
+.tour-nudge__ring > .tn-c.tn-tl, .tour-nudge__ring > .tn-c.tn-tr { top: var(--m); }
+.tour-nudge__ring > .tn-c.tn-bl, .tour-nudge__ring > .tn-c.tn-br { bottom: var(--m); }
+.tour-nudge__ring > .tn-c.tn-tl, .tour-nudge__ring > .tn-c.tn-bl { left: var(--m); }
+.tour-nudge__ring > .tn-c.tn-tr, .tour-nudge__ring > .tn-c.tn-br { right: var(--m); }
+.tour-nudge__ring--1 > .tn-h { animation-name: tour-nudge-ring1-h; }
+.tour-nudge__ring--1 > .tn-v { animation-name: tour-nudge-ring1-v; }
+.tour-nudge__ring--1 > .tn-c { animation-name: tour-nudge-ring1-c; }
+.tour-nudge__ring--2 > .tn-h { animation-name: tour-nudge-ring2-h; }
+.tour-nudge__ring--2 > .tn-v { animation-name: tour-nudge-ring2-v; }
+.tour-nudge__ring--2 > .tn-c { animation-name: tour-nudge-ring2-c; }
+
+.tour-nudge__arrow {
+    position: absolute;
+    top: -9px;
+    width: 16px;
+    height: 16px;
+    background: var(--card);
+    border-left: 3px solid var(--ember);
+    border-top: 3px solid var(--ember);
+    transform: rotate(45deg);
+}
+.tour-nudge__icon {
+    color: var(--ember);
+    font-size: 32px;
+    flex-shrink: 0;
+    transform-origin: 50% 80%;
+    transform: translateZ(0);  /* keeps its layer after the wave; see .tour-nudge */
+    animation: tour-nudge-wave 1.6s ease-in-out 0.4s 6;
+    filter: none;
+}
+.tour-nudge__text {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    text-shadow: none;
+}
+.tour-nudge__close {
+    flex-shrink: 0;
+    color: var(--muted);
+    line-height: 0;
+    transition: color 0.2s ease;
+}
+.tour-nudge__close:hover { color: var(--text); }
+.tour-nudge__close .material-symbols-outlined { font-size: 22px; }
+
+/* Entrance. Uses the translate and scale properties, not transform: two
+   animations of transform on one element (this and the breathe) keep both off
+   the compositor for good. translate-then-scale composes as before. */
+@keyframes tour-nudge-in {
+    from { opacity: 0; translate: 0 -10px; scale: 0.85; }
+    to   { opacity: 1; translate: 0 0; scale: 1; }
+}
+/* Whole-callout breathing pulse so it visibly grows and shrinks. */
+@keyframes tour-nudge-breathe {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.06); }
+}
+/* Icon wave to add lively motion that catches the eye. */
+@keyframes tour-nudge-wave {
+    0%, 100%      { transform: rotate(0deg); }
+    20%           { transform: rotate(-12deg); }
+    40%           { transform: rotate(12deg); }
+    60%           { transform: rotate(-8deg); }
+    80%           { transform: rotate(6deg); }
+}
+/* The drop shadow and glow appear once the entrance is over. */
+@keyframes tour-nudge-hidden {
+    from, to { opacity: 0; }
+}
+/* Expanding ring: the colour fades out over the first 70% of each cycle while
+   the shape grows (below), then nothing until the next cycle. */
+@keyframes tour-nudge-ring-fade {
+    0%        { opacity: var(--a); }
+    70%, 100% { opacity: 0; }
+}
+/* Ring shape over the first 70% of each cycle, as the old box-shadow spread X
+   went 0 -> 32px (ring 1) or 48px (ring 2) with ease-out: sampled every 5% of the
+   cycle and interpolated linearly (within 0.1px). Edges move out by X. Chrome
+   draws a spread shadow's corner radius as 16 + X * (1 + (16/X - 1)^3) once X >
+   16px (CSS Backgrounds 3), so past that the corner centre moves u = (X - 16)^3 / X^2
+   toward the corner: half-bands slide by u along their edge, discs move by u and
+   scale to that radius / 16. --sx/--sy point away from the box centre.
+   Generated (ease-out = cubic-bezier(0, 0, 0.58, 1)); see team/handoffs/T026.md. */
+@keyframes tour-nudge-ring1-h {
+    0%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)); }
+    5%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 3.719px)); }
+    10%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 7.209px)); }
+    15%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 10.514px)); }
+    20%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 13.642px)); }
+    25%        { transform: translate(calc(var(--sx) * 0.001px), calc(var(--sy) * 16.589px)); }
+    30%        { transform: translate(calc(var(--sx) * 0.1px), calc(var(--sy) * 19.349px)); }
+    35%        { transform: translate(calc(var(--sx) * 0.43px), calc(var(--sy) * 21.909px)); }
+    40%        { transform: translate(calc(var(--sx) * 0.955px), calc(var(--sy) * 24.252px)); }
+    45%        { transform: translate(calc(var(--sx) * 1.6px), calc(var(--sy) * 26.358px)); }
+    50%        { transform: translate(calc(var(--sx) * 2.283px), calc(var(--sy) * 28.199px)); }
+    55%        { transform: translate(calc(var(--sx) * 2.932px), calc(var(--sy) * 29.739px)); }
+    60%        { transform: translate(calc(var(--sx) * 3.479px), calc(var(--sy) * 30.932px)); }
+    65%        { transform: translate(calc(var(--sx) * 3.858px), calc(var(--sy) * 31.714px)); }
+    70%, 100%  { transform: translate(calc(var(--sx) * 4px), calc(var(--sy) * 32px)); }
+}
+@keyframes tour-nudge-ring1-v {
+    0%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)); }
+    5%         { transform: translate(calc(var(--sx) * 3.719px), calc(var(--sy) * 0px)); }
+    10%        { transform: translate(calc(var(--sx) * 7.209px), calc(var(--sy) * 0px)); }
+    15%        { transform: translate(calc(var(--sx) * 10.514px), calc(var(--sy) * 0px)); }
+    20%        { transform: translate(calc(var(--sx) * 13.642px), calc(var(--sy) * 0px)); }
+    25%        { transform: translate(calc(var(--sx) * 16.589px), calc(var(--sy) * 0.001px)); }
+    30%        { transform: translate(calc(var(--sx) * 19.349px), calc(var(--sy) * 0.1px)); }
+    35%        { transform: translate(calc(var(--sx) * 21.909px), calc(var(--sy) * 0.43px)); }
+    40%        { transform: translate(calc(var(--sx) * 24.252px), calc(var(--sy) * 0.955px)); }
+    45%        { transform: translate(calc(var(--sx) * 26.358px), calc(var(--sy) * 1.6px)); }
+    50%        { transform: translate(calc(var(--sx) * 28.199px), calc(var(--sy) * 2.283px)); }
+    55%        { transform: translate(calc(var(--sx) * 29.739px), calc(var(--sy) * 2.932px)); }
+    60%        { transform: translate(calc(var(--sx) * 30.932px), calc(var(--sy) * 3.479px)); }
+    65%        { transform: translate(calc(var(--sx) * 31.714px), calc(var(--sy) * 3.858px)); }
+    70%, 100%  { transform: translate(calc(var(--sx) * 32px), calc(var(--sy) * 4px)); }
+}
+@keyframes tour-nudge-ring1-c {
+    0%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1); }
+    5%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1.232); }
+    10%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1.451); }
+    15%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1.657); }
+    20%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1.853); }
+    25%        { transform: translate(calc(var(--sx) * 0.001px), calc(var(--sy) * 0.001px)) scale(2.037); }
+    30%        { transform: translate(calc(var(--sx) * 0.1px), calc(var(--sy) * 0.1px)) scale(2.203); }
+    35%        { transform: translate(calc(var(--sx) * 0.43px), calc(var(--sy) * 0.43px)) scale(2.342); }
+    40%        { transform: translate(calc(var(--sx) * 0.955px), calc(var(--sy) * 0.955px)) scale(2.456); }
+    45%        { transform: translate(calc(var(--sx) * 1.6px), calc(var(--sy) * 1.6px)) scale(2.547); }
+    50%        { transform: translate(calc(var(--sx) * 2.283px), calc(var(--sy) * 2.283px)) scale(2.62); }
+    55%        { transform: translate(calc(var(--sx) * 2.932px), calc(var(--sy) * 2.932px)) scale(2.675); }
+    60%        { transform: translate(calc(var(--sx) * 3.479px), calc(var(--sy) * 3.479px)) scale(2.716); }
+    65%        { transform: translate(calc(var(--sx) * 3.858px), calc(var(--sy) * 3.858px)) scale(2.741); }
+    70%, 100%  { transform: translate(calc(var(--sx) * 4px), calc(var(--sy) * 4px)) scale(2.75); }
+}
+@keyframes tour-nudge-ring2-h {
+    0%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)); }
+    5%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 5.578px)); }
+    10%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 10.814px)); }
+    15%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 15.772px)); }
+    20%        { transform: translate(calc(var(--sx) * 0.212px), calc(var(--sy) * 20.463px)); }
+    25%        { transform: translate(calc(var(--sx) * 1.132px), calc(var(--sy) * 24.884px)); }
+    30%        { transform: translate(calc(var(--sx) * 2.622px), calc(var(--sy) * 29.023px)); }
+    35%        { transform: translate(calc(var(--sx) * 4.44px), calc(var(--sy) * 32.863px)); }
+    40%        { transform: translate(calc(var(--sx) * 6.395px), calc(var(--sy) * 36.378px)); }
+    45%        { transform: translate(calc(var(--sx) * 8.342px), calc(var(--sy) * 39.537px)); }
+    50%        { transform: translate(calc(var(--sx) * 10.166px), calc(var(--sy) * 42.298px)); }
+    55%        { transform: translate(calc(var(--sx) * 11.767px), calc(var(--sy) * 44.608px)); }
+    60%        { transform: translate(calc(var(--sx) * 13.047px), calc(var(--sy) * 46.397px)); }
+    65%        { transform: translate(calc(var(--sx) * 13.905px), calc(var(--sy) * 47.571px)); }
+    70%, 100%  { transform: translate(calc(var(--sx) * 14.222px), calc(var(--sy) * 48px)); }
+}
+@keyframes tour-nudge-ring2-v {
+    0%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)); }
+    5%         { transform: translate(calc(var(--sx) * 5.578px), calc(var(--sy) * 0px)); }
+    10%        { transform: translate(calc(var(--sx) * 10.814px), calc(var(--sy) * 0px)); }
+    15%        { transform: translate(calc(var(--sx) * 15.772px), calc(var(--sy) * 0px)); }
+    20%        { transform: translate(calc(var(--sx) * 20.463px), calc(var(--sy) * 0.212px)); }
+    25%        { transform: translate(calc(var(--sx) * 24.884px), calc(var(--sy) * 1.132px)); }
+    30%        { transform: translate(calc(var(--sx) * 29.023px), calc(var(--sy) * 2.622px)); }
+    35%        { transform: translate(calc(var(--sx) * 32.863px), calc(var(--sy) * 4.44px)); }
+    40%        { transform: translate(calc(var(--sx) * 36.378px), calc(var(--sy) * 6.395px)); }
+    45%        { transform: translate(calc(var(--sx) * 39.537px), calc(var(--sy) * 8.342px)); }
+    50%        { transform: translate(calc(var(--sx) * 42.298px), calc(var(--sy) * 10.166px)); }
+    55%        { transform: translate(calc(var(--sx) * 44.608px), calc(var(--sy) * 11.767px)); }
+    60%        { transform: translate(calc(var(--sx) * 46.397px), calc(var(--sy) * 13.047px)); }
+    65%        { transform: translate(calc(var(--sx) * 47.571px), calc(var(--sy) * 13.905px)); }
+    70%, 100%  { transform: translate(calc(var(--sx) * 48px), calc(var(--sy) * 14.222px)); }
+}
+@keyframes tour-nudge-ring2-c {
+    0%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1); }
+    5%         { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1.349); }
+    10%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1.676); }
+    15%        { transform: translate(calc(var(--sx) * 0px), calc(var(--sy) * 0px)) scale(1.986); }
+    20%        { transform: translate(calc(var(--sx) * 0.212px), calc(var(--sy) * 0.212px)) scale(2.266); }
+    25%        { transform: translate(calc(var(--sx) * 1.132px), calc(var(--sy) * 1.132px)) scale(2.484); }
+    30%        { transform: translate(calc(var(--sx) * 2.622px), calc(var(--sy) * 2.622px)) scale(2.65); }
+    35%        { transform: translate(calc(var(--sx) * 4.44px), calc(var(--sy) * 4.44px)) scale(2.776); }
+    40%        { transform: translate(calc(var(--sx) * 6.395px), calc(var(--sy) * 6.395px)) scale(2.874); }
+    45%        { transform: translate(calc(var(--sx) * 8.342px), calc(var(--sy) * 8.342px)) scale(2.95); }
+    50%        { transform: translate(calc(var(--sx) * 10.166px), calc(var(--sy) * 10.166px)) scale(3.008); }
+    55%        { transform: translate(calc(var(--sx) * 11.767px), calc(var(--sy) * 11.767px)) scale(3.053); }
+    60%        { transform: translate(calc(var(--sx) * 13.047px), calc(var(--sy) * 13.047px)) scale(3.084); }
+    65%        { transform: translate(calc(var(--sx) * 13.905px), calc(var(--sy) * 13.905px)) scale(3.104); }
+    70%, 100%  { transform: translate(calc(var(--sx) * 14.222px), calc(var(--sy) * 14.222px)) scale(3.111); }
+}
+
+
+/* Respect the OS "Reduce Motion" setting: stop the decorative, infinitely-looping
+   tour pulses/waves for users who opted in. Each element rests at its base (static)
+   appearance, which matches the resting keyframe — so nothing looks broken. Only
+   affects reduced-motion users; the default experience is unchanged. */
+@media (prefers-reduced-motion: reduce) {
+    .tour-ring,
+    .tour-nudge,
+    .tour-nudge::after,
+    .tour-nudge__icon {
+        animation: none;
+    }
+    .tour-nudge,
+    .tour-nudge__icon { transform: none; }
+    /* The rings and shadows only ever existed inside the (now stopped) pulse. */
+    .tour-nudge::after,
+    .tour-nudge__ring { display: none; }
+}
+
+/* After the first load, #loading is a small, non-blocking spinner pill over the
+   map instead of a full black screen (app.js adds .is-compact). */
+#loading.is-compact {
+    inset: auto;
+    top: 5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--card);
+    border: 1px solid var(--divider);
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+    pointer-events: none;
+}
+#loading.is-compact > div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+#loading.is-compact > div > * {
+    margin: 0;
+}
+#loading.is-compact > div > div:first-child {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-width: 2px;
+}
+#loading.is-compact > div > div:nth-child(2) {
+    display: none;
+}
+#loading.is-compact #loading-status {
+    font-size: 0.75rem;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+/* Spinner in the middle of the map while a cost view loads (app.js setMapBusy). */
+#map-busy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0;
+    background: var(--card);
+    border: 1px solid var(--divider);
+    box-shadow: none;
+    pointer-events: none;
+}
+#map-busy .map-busy__spinner {
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 3px solid var(--elevated);
+    border-top-color: var(--ember);
+    border-radius: 0;
+    animation: spin 1s linear infinite;
+}
+#map-busy .map-busy__label {
+    font-size: 0.8rem;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+/* Leaflet's own stylesheet (loaded from unpkg) ships rounded corners, drop
+   shadows and white controls. Bring its controls, tooltips and attribution
+   into the Ember Labs system: sharp corners, no shadows, Labs tokens only. */
+.leaflet-bar,
+.leaflet-bar a,
+.leaflet-control-layers,
+.leaflet-tooltip,
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip,
+.leaflet-control-attribution {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+.leaflet-bar {
+    border: 1px solid var(--divider) !important;
+}
+.leaflet-bar a,
+.leaflet-bar a:hover {
+    background: var(--card);
+    color: var(--text);
+    border-bottom: 1px solid var(--divider);
+}
+.leaflet-bar a:hover {
+    color: var(--ember);
+}
+.leaflet-tooltip {
+    background: #000000;            /* --el-black: tooltips */
+    color: var(--text);
+    border: 1px solid var(--divider);
+    font-family: var(--font-sans);
+}
+.leaflet-tooltip-top::before { border-top-color: #000000; }
+.leaflet-tooltip-bottom::before { border-bottom-color: #000000; }
+.leaflet-tooltip-left::before { border-left-color: #000000; }
+.leaflet-tooltip-right::before { border-right-color: #000000; }
+.leaflet-container .leaflet-control-attribution {
+    background: var(--card);
+    color: var(--muted);
+    font-family: var(--font-sans);
+}
+.leaflet-container .leaflet-control-attribution a {
+    color: var(--text);
+}
+.leaflet-container a.leaflet-popup-close-button {
+    color: var(--muted);
+}
+.leaflet-container a.leaflet-popup-close-button:hover {
+    color: var(--ember);
+}
+
+/* The tool runs inside an iframe on the Ember Labs page: fill the frame
+   rather than the viewport (no 100vh), and let the host set the height. */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Modal backdrop: --el-overlay, navy-tinted, never black. */
+.el-overlay {
+    background: rgba(25, 34, 56, 0.75);
+}
+
+/* Poppins for numbers too (Tailwind font-mono maps to Poppins): keep columns steady. */
+.font-mono { font-variant-numeric: tabular-nums; }
+
+/* Ember Labs uses two weights only: bold text renders at 600. */
+body b, body strong { font-weight: 600; }  /* beats Tailwind preflight (loaded later) */
+
+/* Info modal: long sections in collapsible <details>, closed by default (D-138). */
+.info-section > .info-section__title { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 0.5rem; }
+.info-section > .info-section__title::-webkit-details-marker { display: none; }
+.info-section > .info-section__title::before { content: '+'; color: var(--ember); font-weight: 600; width: 1ch; }
+.info-section[open] > .info-section__title::before { content: '–'; }
+.info-section[open] > .info-section__title { margin-bottom: 0.75rem; }
+
+/* Complementarity score legend (T096): the bracketed meanings under +1 and −1
+   share the width; "anti-correlated" never splits at its hyphen (legend and tooltip). */
+#legend-comp-score-meaning { margin-top: 0.125rem; }
+#legend-comp-score-meaning > span { min-width: 0; }
+.comp-nowrap { white-space: nowrap; }
+
+/* Phones: the Complementarity legends sit over the bottom of its panel; narrower
+   legends keep the overlap small (as the Sample Days legends they replace, T062). */
+@media (max-width: 639px) {
+    #legend-comp-drought { width: 10rem; }
+    #legend-comp-score { width: 14rem; }   /* its two bracketed meanings need the room (T096) */
+}

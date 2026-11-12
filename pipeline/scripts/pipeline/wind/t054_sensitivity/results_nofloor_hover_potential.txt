@@ -1,0 +1,13 @@
+{
+ "onshore_2338": "Onshore wind generation potential: 0.00 TWh/yr No land reaches 15% capacity factor here, so no potential is counted Technical potential • eligible land where good sites reach ≥ 15% capacity factor Brazil",
+ "onshore_1007": "Onshore wind generation potential: 0.00 TWh/yr No eligible land for onshore wind Technical potential • eligible land where good sites reach ≥ 15% capacity factor Australia",
+ "onshore_1024": "Onshore wind generation potential: 815.59 TWh/yr 194 GW at 5 MW/km² • 48.1% capacity factor Technical potential • eligible land where good sites reach ≥ 15% capacity factor Russia",
+ "onshore_2768": "Onshore wind generation potential: 0.06 TWh/yr 0.1 GW at 5 MW/km² • 9.9% capacity factor Technical potential • eligible land where good sites reach ≥ 15% capacity factor Solomon Is.",
+ "offshore_2338": "Offshore wind (fixed-bottom) generation potential: 0.00 TWh/yr No fixed-bottom potential in this cell Technical potential • World Bank Group / ESMAP (CC BY 4.0) Brazil",
+ "offshore_1007": "Offshore wind (fixed-bottom) generation potential: 0.00 TWh/yr No fixed-bottom potential in this cell Technical potential • World Bank Group / ESMAP (CC BY 4.0) Australia",
+ "offshore_1024": "No generation estimate 12.3 GW fixed-bottom (World Bank/ESMAP)No eligible sea for offshore wind in the atlas, so no generation estimate Technical potential • World Bank Group / ESMAP (CC BY 4.0) Russia",
+ "offshore_2768": "Offshore wind (fixed-bottom) generation potential: 11.96 TWh/yr 11.1 GW fixed-bottom (World Bank/ESMAP) • 12.3% capacity factor Technical potential • World Bank Group / ESMAP (CC BY 4.0) Solomon Is.",
+ "errors": []
+}
+ "onshore_2338": "Onshore wind generation potential: 0.00 TWh/yr No land reaches 15% capacity factor here, so no potential is counted Technical potential • eligible land where good sites reach ≥ 15% capacity factor Brazil",
+ "onshore_1007": "Onshore wind generation potential: 0.00 TWh/yr No eligible land for onshore wind Technical potential • eligible land where good sites reach ≥ 15% capacity factor Australia",

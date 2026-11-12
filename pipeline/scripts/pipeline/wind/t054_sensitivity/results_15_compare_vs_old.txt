@@ -1,0 +1,32 @@
+profiles on: 1557 of 4998 regions identical value for value; max abs diff 0.872
+profiles off: 3925 of 4998 regions identical value for value; max abs diff 0.863
+
+summary_w1.parquet: bytes differ; 718713 of 1044582 rows differ in value, 3441 regions
+summary_w2.parquet: bytes differ; 718787 of 1044582 rows differ in value, 3441 regions
+summary_w3.parquet: bytes differ; 718769 of 1044582 rows differ in value, 3441 regions
+summary_w4.parquet: bytes differ; 718719 of 1044582 rows differ in value, 3441 regions
+summary_w5.parquet: bytes differ; 718717 of 1044582 rows differ in value, 3441 regions
+summary_w6.parquet: bytes differ; 718656 of 1044582 rows differ in value, 3441 regions
+summary_w8.parquet: bytes differ; 718597 of 1044582 rows differ in value, 3441 regions
+summary_wo1.parquet: bytes differ; 223362 of 1044582 rows differ in value, 1073 regions
+summary_wo2.parquet: bytes differ; 223534 of 1044582 rows differ in value, 1073 regions
+summary_wo3.parquet: bytes differ; 223503 of 1044582 rows differ in value, 1073 regions
+summary_wo4.parquet: bytes differ; 223442 of 1044582 rows differ in value, 1073 regions
+summary_wo5.parquet: bytes differ; 223311 of 1044582 rows differ in value, 1073 regions
+summary_wo6.parquet: bytes differ; 223231 of 1044582 rows differ in value, 1073 regions
+summary_wo8.parquet: bytes differ; 223019 of 1044582 rows differ in value, 1073 regions
+
+daily_cf_2024.parquet: bytes differ
+  solar: 0 cells differ, 0 regions
+  wind_on: 1257576 cells differ, 3441 regions
+  wind_off: 390542 cells differ, 1073 regions
+configs.json: SHA-256 equal
+sample_timestamps.json: SHA-256 equal
+
+voronoi_wind_resource.csv: 35 shipped columns present; string-identical 25; differing: on_viable (546), off_viable (302), on_k (3441), on_raw_cf (546), on_final_cf (3441), on_clamped (379), off_k (1073), off_raw_cf (302), off_final_cf (1073), off_clamped (38); new columns: ['on_cf_best', 'on_cf_target', 'off_cf_best', 'off_cf_target', 'best_area_km2', 'viability_rule', 'viable_cf_threshold']
+
+on: expected identical 1557; of these changed: profile 0, summary rows 0, daily 0. Regions changed overall: profile 3441, summary 3441, daily 3441; regions not in the expected set whose profile is nonetheless unchanged: 0
+off: expected identical 3925; of these changed: profile 0, summary rows 0, daily 0. Regions changed overall: profile 1073, summary 1073, daily 1073; regions not in the expected set whose profile is nonetheless unchanged: 0
+solar unchanged in daily: True
+
+RESULT: PASS

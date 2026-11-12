@@ -1,0 +1,54 @@
+16696 1-deg blocks with eligible land
+  0/16696 blocks, 1s
+  500/16696 blocks, 3s
+  1000/16696 blocks, 6s
+  1500/16696 blocks, 11s
+  2000/16696 blocks, 16s
+  2500/16696 blocks, 21s
+  3000/16696 blocks, 28s
+  3500/16696 blocks, 36s
+  4000/16696 blocks, 44s
+  4500/16696 blocks, 55s
+  5000/16696 blocks, 68s
+  5500/16696 blocks, 81s
+  6000/16696 blocks, 96s
+  6500/16696 blocks, 112s
+  7000/16696 blocks, 128s
+  7500/16696 blocks, 145s
+  8000/16696 blocks, 163s
+  8500/16696 blocks, 181s
+  9000/16696 blocks, 199s
+  9500/16696 blocks, 216s
+  10000/16696 blocks, 233s
+  10500/16696 blocks, 247s
+  11000/16696 blocks, 263s
+  11500/16696 blocks, 276s
+  12000/16696 blocks, 293s
+  12500/16696 blocks, 310s
+  13000/16696 blocks, 326s
+  13500/16696 blocks, 342s
+  14000/16696 blocks, 357s
+  14500/16696 blocks, 373s
+  15000/16696 blocks, 388s
+  15500/16696 blocks, 403s
+  16000/16696 blocks, 417s
+  16500/16696 blocks, 433s
+setback layers written in 440s -> /Users/daanwalter/wind-atlas-T061/cache/setback_excl_pct_002deg.npz
+      441.77 real      1161.71 user       145.45 sys
+          1421312000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              642750  page reclaims
+                 736  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               44512  voluntary context switches
+              379431  involuntary context switches
+         69718598952  instructions retired
+         21089014114  cycles elapsed
+          2668599872  peak memory footprint

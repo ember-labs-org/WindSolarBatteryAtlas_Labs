@@ -1,0 +1,5527 @@
+{
+ "note": "Regions and land polygons the atlas leaves out (T057, D-120). Written by derive_excluded.py from the unfiltered data; applied by apply_exclusion.py. Coordinates are the summary slices' float32 site values.",
+ "rule": {
+  "land": "world.geojson polygons wholly south of 60°S (Antarctica), and polygons whose representative point is within 3° of Greenland in Natural Earth 110m admin-0 and nearer to it than to any other country (Greenland)",
+  "regions": "primary country (voronoi_overlapping_countries.csv country_iso3) ATA or GRL; or no country row and the site lies on the Antarctic or Greenland land above. Cells shared with another country follow their primary country."
+ },
+ "counts": {
+  "regions": 533,
+  "by_reason": {
+   "no country row; site on Antarctica land": 6,
+   "primary country ATA": 443,
+   "primary country GRL": 84
+  },
+  "land_polygons": {
+   "Antarctica": 107,
+   "Greenland": 17
+  }
+ },
+ "regions": [
+  {
+   "location_id": 2,
+   "latitude": -73.40258026123047,
+   "longitude": -126.50186920166016,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 15,
+   "latitude": -65.95892333984375,
+   "longitude": 54.62052917480469,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 27,
+   "latitude": -70.30946350097656,
+   "longitude": 133.63145446777344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 36,
+   "latitude": -77.26300811767578,
+   "longitude": -17.87613868713379,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 65,
+   "latitude": -86.31315612792969,
+   "longitude": 154.65255737304688,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 72,
+   "latitude": -70.59306335449219,
+   "longitude": -74.91706848144531,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 75,
+   "latitude": -65.78257751464844,
+   "longitude": 92.49615478515625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 94,
+   "latitude": -78.7369155883789,
+   "longitude": 47.393226623535156,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 106,
+   "latitude": 77.13520050048828,
+   "longitude": -18.442359924316406,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 107,
+   "latitude": 60.066810607910156,
+   "longitude": -43.552677154541016,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 114,
+   "latitude": -71.7889633178711,
+   "longitude": 170.2346954345703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 119,
+   "latitude": -70.26272583007812,
+   "longitude": 15.998757362365723,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 126,
+   "latitude": -76.71703338623047,
+   "longitude": 100.53488159179688,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 127,
+   "latitude": -81.59857940673828,
+   "longitude": -77.85514831542969,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 132,
+   "latitude": -63.25206756591797,
+   "longitude": -55.377254486083984,
+   "land": "Antarctica",
+   "reason": "no country row; site on Antarctica land",
+   "country_iso3s": ""
+  },
+  {
+   "location_id": 149,
+   "latitude": 70.33955383300781,
+   "longitude": -44.46670913696289,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 175,
+   "latitude": -77.92918395996094,
+   "longitude": -158.2857208251953,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 181,
+   "latitude": -71.46367645263672,
+   "longitude": 73.92051696777344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 187,
+   "latitude": -66.03549194335938,
+   "longitude": 113.54119110107422,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 200,
+   "latitude": -77.88114929199219,
+   "longitude": 147.91326904296875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 201,
+   "latitude": -85.12493133544922,
+   "longitude": 1.7486369609832764,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 214,
+   "latitude": -72.13060760498047,
+   "longitude": -99.76463317871094,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 227,
+   "latitude": -71.12823486328125,
+   "longitude": 39.08395767211914,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 242,
+   "latitude": 76.35986328125,
+   "longitude": -60.00297546386719,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 255,
+   "latitude": -70.92615509033203,
+   "longitude": -5.941679954528809,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 259,
+   "latitude": -80.36280059814453,
+   "longitude": -122.72261810302734,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 264,
+   "latitude": -77.21652221679688,
+   "longitude": 13.817530632019043,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 266,
+   "latitude": -82.9325942993164,
+   "longitude": 83.52179718017578,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 275,
+   "latitude": 83.58536529541016,
+   "longitude": -30.93484878540039,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 290,
+   "latitude": -68.88214874267578,
+   "longitude": 151.91493225097656,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 302,
+   "latitude": -77.9853515625,
+   "longitude": -47.70765686035156,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 311,
+   "latitude": 71.00359344482422,
+   "longitude": -23.263349533081055,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 334,
+   "latitude": -70.65524291992188,
+   "longitude": 102.2135238647461,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 337,
+   "latitude": 64.99268341064453,
+   "longitude": -51.7442626953125,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 361,
+   "latitude": -75.47936248779297,
+   "longitude": 124.92070770263672,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 363,
+   "latitude": -75.95487976074219,
+   "longitude": -83.78081512451172,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 364,
+   "latitude": -77.33293151855469,
+   "longitude": 74.54389953613281,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 381,
+   "latitude": -87.13163757324219,
+   "longitude": -88.25749206542969,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 384,
+   "latitude": -73.18902587890625,
+   "longitude": 56.1240348815918,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 388,
+   "latitude": -81.22837829589844,
+   "longitude": 122.98358154296875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 402,
+   "latitude": -66.097900390625,
+   "longitude": -66.6604232788086,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 408,
+   "latitude": -60.5815315246582,
+   "longitude": -45.4667854309082,
+   "land": "Antarctica",
+   "reason": "no country row; site on Antarctica land",
+   "country_iso3s": ""
+  },
+  {
+   "location_id": 415,
+   "latitude": 66.01683044433594,
+   "longitude": -35.98855209350586,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 430,
+   "latitude": -83.16310119628906,
+   "longitude": -154.85629272460938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 431,
+   "latitude": -73.14277648925781,
+   "longitude": -60.06330108642578,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 444,
+   "latitude": 75.32154083251953,
+   "longitude": -38.912410736083984,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 456,
+   "latitude": -70.79612731933594,
+   "longitude": 118.2474136352539,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 477,
+   "latitude": -82.86331939697266,
+   "longitude": -41.831172943115234,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 482,
+   "latitude": -76.87217712402344,
+   "longitude": -104.61257934570312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 494,
+   "latitude": -66.39350891113281,
+   "longitude": 125.78277587890625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 526,
+   "latitude": -73.01823425292969,
+   "longitude": 88.59149932861328,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 528,
+   "latitude": -73.4696044921875,
+   "longitude": 155.27920532226562,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 535,
+   "latitude": -67.71337890625,
+   "longitude": 65.64741516113281,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 541,
+   "latitude": -75.2195816040039,
+   "longitude": 31.47949981689453,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 550,
+   "latitude": -81.36758422851562,
+   "longitude": 24.834320068359375,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 551,
+   "latitude": -81.80789184570312,
+   "longitude": 162.1546173095703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 555,
+   "latitude": -77.45731353759766,
+   "longitude": 169.26649475097656,
+   "land": "Antarctica",
+   "reason": "no country row; site on Antarctica land",
+   "country_iso3s": ""
+  },
+  {
+   "location_id": 559,
+   "latitude": -76.67423248291016,
+   "longitude": -138.64019775390625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 564,
+   "latitude": 79.59270477294922,
+   "longitude": -45.17068099975586,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 572,
+   "latitude": -87.19418334960938,
+   "longitude": 68.01868438720703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 573,
+   "latitude": -68.43589782714844,
+   "longitude": 83.38843536376953,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 575,
+   "latitude": -66.89276123046875,
+   "longitude": 141.29296875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 584,
+   "latitude": -65.22300720214844,
+   "longitude": 103.01271057128906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 587,
+   "latitude": -80.73957061767578,
+   "longitude": -3.665163993835449,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 602,
+   "latitude": -73.21562194824219,
+   "longitude": 5.922615051269531,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 620,
+   "latitude": -73.98095703125,
+   "longitude": 140.4685821533203,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 658,
+   "latitude": 72.48009490966797,
+   "longitude": -55.1376953125,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 670,
+   "latitude": -69.5250015258789,
+   "longitude": 50.042606353759766,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 692,
+   "latitude": -83.42921447753906,
+   "longitude": 50.28636169433594,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 697,
+   "latitude": -73.32928466796875,
+   "longitude": -15.916428565979004,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 705,
+   "latitude": -83.32342529296875,
+   "longitude": -104.66893005371094,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 714,
+   "latitude": -73.84761047363281,
+   "longitude": 110.57893371582031,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 720,
+   "latitude": -71.63209533691406,
+   "longitude": 27.005056381225586,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 736,
+   "latitude": 63.97019958496094,
+   "longitude": -43.379276275634766,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 740,
+   "latitude": -76.21327209472656,
+   "longitude": -68.33074188232422,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 752,
+   "latitude": -69.5938949584961,
+   "longitude": -63.29426574707031,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 765,
+   "latitude": 69.76387786865234,
+   "longitude": -33.54090118408203,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 776,
+   "latitude": -76.04341888427734,
+   "longitude": -2.993535041809082,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 777,
+   "latitude": -76.70802307128906,
+   "longitude": -120.65637969970703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 799,
+   "latitude": 80.66364288330078,
+   "longitude": -15.639569282531738,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 803,
+   "latitude": -80.4957275390625,
+   "longitude": 65.19760131835938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 804,
+   "latitude": -80.33096313476562,
+   "longitude": 100.51005554199219,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 818,
+   "latitude": -84.64913940429688,
+   "longitude": 112.56334686279297,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 829,
+   "latitude": -75.00447082519531,
+   "longitude": 45.14720916748047,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 831,
+   "latitude": -80.04722595214844,
+   "longitude": -143.5751953125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 837,
+   "latitude": -79.86515808105469,
+   "longitude": -29.97027015686035,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 839,
+   "latitude": -73.86270904541016,
+   "longitude": 18.020584106445312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 850,
+   "latitude": 68.39041900634766,
+   "longitude": -53.16514587402344,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 851,
+   "latitude": -79.93074035644531,
+   "longitude": -96.7559585571289,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 863,
+   "latitude": -69.58238983154297,
+   "longitude": 92.40474700927734,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 866,
+   "latitude": -76.45130920410156,
+   "longitude": 60.01261520385742,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 872,
+   "latitude": -70.26612091064453,
+   "longitude": 160.8999786376953,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 876,
+   "latitude": -78.07376098632812,
+   "longitude": 114.80072784423828,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 885,
+   "latitude": -70.68434143066406,
+   "longitude": 143.70071411132812,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 893,
+   "latitude": 74.25148010253906,
+   "longitude": -25.96709632873535,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 935,
+   "latitude": 61.746036529541016,
+   "longitude": -49.30016326904297,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 937,
+   "latitude": -86.34912109375,
+   "longitude": -147.27365112304688,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 948,
+   "latitude": -72.9964370727539,
+   "longitude": -89.34830474853516,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 966,
+   "latitude": -70.81317138671875,
+   "longitude": 63.27679443359375,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 968,
+   "latitude": -78.36219024658203,
+   "longitude": 131.18023681640625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 989,
+   "latitude": 67.16853332519531,
+   "longitude": -45.419654846191406,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 991,
+   "latitude": -80.16755676269531,
+   "longitude": -59.92875289916992,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 992,
+   "latitude": -69.10213470458984,
+   "longitude": 110.4484634399414,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1002,
+   "latitude": -78.3569564819336,
+   "longitude": 30.463607788085938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1006,
+   "latitude": -73.96285247802734,
+   "longitude": -114.61732482910156,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1009,
+   "latitude": -74.35322570800781,
+   "longitude": 69.74795532226562,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1010,
+   "latitude": -83.38742065429688,
+   "longitude": 140.89187622070312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1026,
+   "latitude": -66.37393951416016,
+   "longitude": 133.57569885253906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1048,
+   "latitude": -85.93466186523438,
+   "longitude": -39.115177154541016,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1051,
+   "latitude": -76.32430267333984,
+   "longitude": 87.32465362548828,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1070,
+   "latitude": -89.3197250366211,
+   "longitude": 173.67352294921875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1072,
+   "latitude": -72.34394836425781,
+   "longitude": 126.5835952758789,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1073,
+   "latitude": -73.70504760742188,
+   "longitude": 99.0912857055664,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1083,
+   "latitude": -68.8408203125,
+   "longitude": 33.3140754699707,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1093,
+   "latitude": -79.93009185791016,
+   "longitude": 83.03306579589844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1094,
+   "latitude": 78.01277160644531,
+   "longitude": -31.96966552734375,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1100,
+   "latitude": -73.7489013671875,
+   "longitude": -74.92708587646484,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1130,
+   "latitude": -67.7813720703125,
+   "longitude": 98.89392852783203,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1143,
+   "latitude": -76.92938232421875,
+   "longitude": -31.02787971496582,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1148,
+   "latitude": -70.4062728881836,
+   "longitude": 3.1771440505981445,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1149,
+   "latitude": -84.44241333007812,
+   "longitude": -69.97614288330078,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1150,
+   "latitude": -82.92595672607422,
+   "longitude": -17.583850860595703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1151,
+   "latitude": -68.39160919189453,
+   "longitude": 42.135719299316406,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1165,
+   "latitude": -78.62105560302734,
+   "longitude": -78.39507293701172,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1171,
+   "latitude": -83.06554412841797,
+   "longitude": -130.25485229492188,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1175,
+   "latitude": -69.32840728759766,
+   "longitude": 125.59657287597656,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1176,
+   "latitude": 72.40040588378906,
+   "longitude": -37.27714538574219,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1210,
+   "latitude": -68.59955596923828,
+   "longitude": 58.04826354980469,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1212,
+   "latitude": -74.4322738647461,
+   "longitude": 165.02911376953125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1227,
+   "latitude": -84.19960021972656,
+   "longitude": 178.27545166015625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1244,
+   "latitude": 82.1546859741211,
+   "longitude": -52.638240814208984,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1247,
+   "latitude": -80.44284057617188,
+   "longitude": 141.67173767089844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1268,
+   "latitude": 74.79190063476562,
+   "longitude": -49.60453796386719,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1277,
+   "latitude": -87.90857696533203,
+   "longitude": 1.0122179985046387,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1280,
+   "latitude": -74.83399963378906,
+   "longitude": -96.94063568115234,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1288,
+   "latitude": -67.8938980102539,
+   "longitude": 118.76495361328125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1317,
+   "latitude": -72.24469757080078,
+   "longitude": 47.0117073059082,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1324,
+   "latitude": -64.03626251220703,
+   "longitude": -62.453147888183594,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1330,
+   "latitude": -74.285400390625,
+   "longitude": 79.77970123291016,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1387,
+   "latitude": -79.80413818359375,
+   "longitude": 10.980982780456543,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1393,
+   "latitude": -79.20025634765625,
+   "longitude": 159.4107208251953,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1397,
+   "latitude": -76.22866821289062,
+   "longitude": 157.0472412109375,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1409,
+   "latitude": -85.53388977050781,
+   "longitude": 33.85408020019531,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1412,
+   "latitude": -73.53776550292969,
+   "longitude": -5.756019115447998,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1430,
+   "latitude": -71.29672241210938,
+   "longitude": 81.99560546875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1433,
+   "latitude": 81.01124572753906,
+   "longitude": -31.83515167236328,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1447,
+   "latitude": 68.74630737304688,
+   "longitude": -26.771093368530273,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1471,
+   "latitude": -77.3416748046875,
+   "longitude": -92.99979400634766,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1492,
+   "latitude": -81.02189636230469,
+   "longitude": 41.2660026550293,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1517,
+   "latitude": -82.4884262084961,
+   "longitude": 8.697093963623047,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1537,
+   "latitude": 68.14024353027344,
+   "longitude": -39.28602981567383,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1542,
+   "latitude": -78.90839385986328,
+   "longitude": -111.54537200927734,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1544,
+   "latitude": 77.27743530273438,
+   "longitude": -49.91352844238281,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1551,
+   "latitude": 77.72640228271484,
+   "longitude": -69.66083526611328,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1563,
+   "latitude": -78.33599090576172,
+   "longitude": -7.383563995361328,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1565,
+   "latitude": -66.88520812988281,
+   "longitude": 107.47122955322266,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1573,
+   "latitude": -71.35569763183594,
+   "longitude": 151.16415405273438,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1577,
+   "latitude": -76.11141967773438,
+   "longitude": 135.5214385986328,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1579,
+   "latitude": -78.27243041992188,
+   "longitude": -129.5933837890625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1590,
+   "latitude": -73.2589340209961,
+   "longitude": 118.94766235351562,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1591,
+   "latitude": -71.6524658203125,
+   "longitude": -67.19767761230469,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1599,
+   "latitude": -67.12440490722656,
+   "longitude": 49.14786148071289,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1627,
+   "latitude": -71.46966552734375,
+   "longitude": 109.32325744628906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1635,
+   "latitude": -75.41314697265625,
+   "longitude": 147.86801147460938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1644,
+   "latitude": -72.88190460205078,
+   "longitude": 33.677757263183594,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1666,
+   "latitude": -76.21554565429688,
+   "longitude": -148.53775024414062,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1667,
+   "latitude": -85.42694091796875,
+   "longitude": -115.83617401123047,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1688,
+   "latitude": -84.84825897216797,
+   "longitude": 70.56336212158203,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1693,
+   "latitude": 72.6675796508789,
+   "longitude": -45.30577850341797,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1695,
+   "latitude": -82.35227966308594,
+   "longitude": 108.51184844970703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1702,
+   "latitude": -76.14199829101562,
+   "longitude": 22.8042049407959,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1711,
+   "latitude": -86.97280883789062,
+   "longitude": 114.70112609863281,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1712,
+   "latitude": -75.56741333007812,
+   "longitude": -129.60977172851562,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1726,
+   "latitude": -80.26705932617188,
+   "longitude": -45.731380462646484,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1734,
+   "latitude": -71.7449722290039,
+   "longitude": 94.94792938232422,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1740,
+   "latitude": -78.44302368164062,
+   "longitude": 93.32032775878906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1749,
+   "latitude": -75.377197265625,
+   "longitude": -12.04710865020752,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1751,
+   "latitude": 72.11206817626953,
+   "longitude": -29.80262565612793,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1757,
+   "latitude": -77.8709716796875,
+   "longitude": 3.509742021560669,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1772,
+   "latitude": -71.253173828125,
+   "longitude": 9.737711906433105,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1775,
+   "latitude": -75.48815155029297,
+   "longitude": 6.4555158615112305,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1778,
+   "latitude": -73.95567321777344,
+   "longitude": 132.1387939453125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1780,
+   "latitude": -67.64533233642578,
+   "longitude": 89.1232681274414,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1787,
+   "latitude": -75.79816436767578,
+   "longitude": 115.02629852294922,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1793,
+   "latitude": -77.16189575195312,
+   "longitude": 39.56878662109375,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1794,
+   "latitude": -79.98789978027344,
+   "longitude": -16.466764450073242,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1795,
+   "latitude": -81.11740112304688,
+   "longitude": -108.67440795898438,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1810,
+   "latitude": -68.51876068115234,
+   "longitude": 145.52682495117188,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1820,
+   "latitude": -69.31184387207031,
+   "longitude": 77.65091705322266,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1837,
+   "latitude": -70.96903228759766,
+   "longitude": 55.366764068603516,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1868,
+   "latitude": -68.9168701171875,
+   "longitude": 138.56690979003906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1875,
+   "latitude": -82.35426330566406,
+   "longitude": -61.743282318115234,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1918,
+   "latitude": -78.65692138671875,
+   "longitude": 58.49855422973633,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1924,
+   "latitude": -74.02472686767578,
+   "longitude": -67.09039306640625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1943,
+   "latitude": -72.38760375976562,
+   "longitude": 162.60299682617188,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1954,
+   "latitude": 70.78044891357422,
+   "longitude": -50.958492279052734,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 1962,
+   "latitude": -69.7312240600586,
+   "longitude": 68.76742553710938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1964,
+   "latitude": -78.53987884521484,
+   "longitude": -67.51368713378906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1965,
+   "latitude": -83.33333587646484,
+   "longitude": 31.624961853027344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1967,
+   "latitude": -81.32542419433594,
+   "longitude": -163.07118225097656,
+   "land": "Antarctica",
+   "reason": "no country row; site on Antarctica land",
+   "country_iso3s": ""
+  },
+  {
+   "location_id": 1972,
+   "latitude": -69.19207763671875,
+   "longitude": -70.2158203125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 1996,
+   "latitude": 78.63724517822266,
+   "longitude": -57.79182434082031,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2001,
+   "latitude": -72.92095947265625,
+   "longitude": 63.867252349853516,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2004,
+   "latitude": -73.81892395019531,
+   "longitude": -82.52115631103516,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2024,
+   "latitude": -68.01973724365234,
+   "longitude": 130.12942504882812,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2025,
+   "latitude": -71.89801025390625,
+   "longitude": 138.34011840820312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2031,
+   "latitude": -76.540283203125,
+   "longitude": 51.013919830322266,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2036,
+   "latitude": -66.0342788696289,
+   "longitude": -60.94408416748047,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2038,
+   "latitude": -68.63032531738281,
+   "longitude": 104.40118408203125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2044,
+   "latitude": -61.16047286987305,
+   "longitude": -55.302085876464844,
+   "land": "Antarctica",
+   "reason": "no country row; site on Antarctica land",
+   "country_iso3s": ""
+  },
+  {
+   "location_id": 2047,
+   "latitude": -71.86573791503906,
+   "longitude": 20.13786506652832,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2055,
+   "latitude": 65.95518493652344,
+   "longitude": -41.10856246948242,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2056,
+   "latitude": -81.93692016601562,
+   "longitude": -92.25120544433594,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2068,
+   "latitude": -73.80476379394531,
+   "longitude": 25.778833389282227,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2073,
+   "latitude": -72.94525909423828,
+   "longitude": 146.81631469726562,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2076,
+   "latitude": 75.06343841552734,
+   "longitude": -18.41461753845215,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2088,
+   "latitude": -82.55701446533203,
+   "longitude": 65.66661834716797,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2096,
+   "latitude": -73.2650375366211,
+   "longitude": 40.98484802246094,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2102,
+   "latitude": -72.17330169677734,
+   "longitude": -0.07616499811410904,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2119,
+   "latitude": 79.10643768310547,
+   "longitude": -23.197044372558594,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2132,
+   "latitude": -78.7591552734375,
+   "longitude": 20.392627716064453,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2150,
+   "latitude": -70.86839294433594,
+   "longitude": 32.87404251098633,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2154,
+   "latitude": -74.74467468261719,
+   "longitude": 92.42677307128906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2157,
+   "latitude": 62.075923919677734,
+   "longitude": -44.967002868652344,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2158,
+   "latitude": -85.03863525390625,
+   "longitude": -91.71051025390625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2166,
+   "latitude": -80.13429260253906,
+   "longitude": 112.3879165649414,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2174,
+   "latitude": -84.20589447021484,
+   "longitude": 158.06993103027344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2177,
+   "latitude": 76.03060913085938,
+   "longitude": -29.685943603515625,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2185,
+   "latitude": -78.49227142333984,
+   "longitude": 105.02252960205078,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2190,
+   "latitude": 67.76466369628906,
+   "longitude": -32.88680648803711,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2197,
+   "latitude": -78.25308990478516,
+   "longitude": -148.37274169921875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2203,
+   "latitude": -76.02635192871094,
+   "longitude": -112.3709945678711,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2221,
+   "latitude": 77.30390930175781,
+   "longitude": -40.85060119628906,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2227,
+   "latitude": -70.29522705078125,
+   "longitude": 44.698280334472656,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2233,
+   "latitude": 63.78688049316406,
+   "longitude": -47.87291717529297,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2235,
+   "latitude": -75.7197494506836,
+   "longitude": -23.234233856201172,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2298,
+   "latitude": -80.4864273071289,
+   "longitude": 53.015235900878906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2311,
+   "latitude": 73.9962158203125,
+   "longitude": -33.04336166381836,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2317,
+   "latitude": -70.23926544189453,
+   "longitude": 86.9716567993164,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2363,
+   "latitude": -85.5052261352539,
+   "longitude": 92.26242065429688,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2373,
+   "latitude": -75.49549865722656,
+   "longitude": 106.85663604736328,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2394,
+   "latitude": -75.64460754394531,
+   "longitude": -75.88967895507812,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2397,
+   "latitude": -83.12773132324219,
+   "longitude": 124.57022857666016,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2404,
+   "latitude": -86.09888458251953,
+   "longitude": -176.34689331054688,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2407,
+   "latitude": -81.95303344726562,
+   "longitude": -142.90338134765625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2420,
+   "latitude": -85.17877960205078,
+   "longitude": 133.77500915527344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2421,
+   "latitude": -81.76534271240234,
+   "longitude": -29.527559280395508,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2430,
+   "latitude": -84.49801635742188,
+   "longitude": -141.94195556640625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2431,
+   "latitude": -80.14936065673828,
+   "longitude": -85.60652923583984,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2449,
+   "latitude": -77.3566665649414,
+   "longitude": 123.01395416259766,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2460,
+   "latitude": -72.67566680908203,
+   "longitude": 104.53645324707031,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2484,
+   "latitude": -84.87010192871094,
+   "longitude": -19.71529197692871,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2500,
+   "latitude": -79.34587860107422,
+   "longitude": 122.99691772460938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2523,
+   "latitude": -74.56221771240234,
+   "longitude": 60.80329132080078,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2525,
+   "latitude": -71.68754577636719,
+   "longitude": -11.203352928161621,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2535,
+   "latitude": -76.13856506347656,
+   "longitude": 67.89439392089844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2538,
+   "latitude": -71.59444427490234,
+   "longitude": 156.97418212890625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2540,
+   "latitude": -67.65347290039062,
+   "longitude": 94.0378189086914,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2560,
+   "latitude": -74.30845642089844,
+   "longitude": 0.27560698986053467,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2575,
+   "latitude": -81.33428955078125,
+   "longitude": 90.30870056152344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2583,
+   "latitude": 70.46324157714844,
+   "longitude": -38.51910400390625,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2586,
+   "latitude": -74.92217254638672,
+   "longitude": -89.79806518554688,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2589,
+   "latitude": 68.9052963256836,
+   "longitude": -47.729530334472656,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2595,
+   "latitude": 66.95777893066406,
+   "longitude": -50.08024597167969,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2604,
+   "latitude": -81.32044219970703,
+   "longitude": 75.75113677978516,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2609,
+   "latitude": -88.6717758178711,
+   "longitude": -58.92315673828125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2617,
+   "latitude": -78.11215209960938,
+   "longitude": 82.63046264648438,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2627,
+   "latitude": -67.92485809326172,
+   "longitude": -66.65448760986328,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2630,
+   "latitude": -87.8942642211914,
+   "longitude": -127.50321197509766,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2633,
+   "latitude": -79.063232421875,
+   "longitude": 71.46953582763672,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2639,
+   "latitude": -78.50018310546875,
+   "longitude": -138.5214080810547,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2646,
+   "latitude": -80.6130142211914,
+   "longitude": 152.61085510253906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2647,
+   "latitude": -78.29520416259766,
+   "longitude": -25.252519607543945,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2658,
+   "latitude": -72.68326568603516,
+   "longitude": 13.285553932189941,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2665,
+   "latitude": -68.1375961303711,
+   "longitude": 53.22011184692383,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2673,
+   "latitude": -83.32587432861328,
+   "longitude": -83.29328155517578,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2696,
+   "latitude": -72.16571807861328,
+   "longitude": 132.43287658691406,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2714,
+   "latitude": -74.53118133544922,
+   "longitude": 51.70744705200195,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2732,
+   "latitude": -80.846435546875,
+   "longitude": -133.24661254882812,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2747,
+   "latitude": -74.31938171386719,
+   "longitude": -121.02156066894531,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2751,
+   "latitude": -75.30147552490234,
+   "longitude": 13.460354804992676,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2758,
+   "latitude": -84.35160064697266,
+   "longitude": -50.537200927734375,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2763,
+   "latitude": -69.83977508544922,
+   "longitude": 97.45613861083984,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2770,
+   "latitude": -67.8429183959961,
+   "longitude": 113.82881164550781,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2778,
+   "latitude": -79.56600189208984,
+   "longitude": -162.3315887451172,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2779,
+   "latitude": -83.74095916748047,
+   "longitude": 97.52767944335938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2786,
+   "latitude": -82.3150634765625,
+   "longitude": -117.68244171142578,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2792,
+   "latitude": 80.3448715209961,
+   "longitude": -55.42530059814453,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2802,
+   "latitude": -78.64033508300781,
+   "longitude": 140.1112823486328,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2803,
+   "latitude": 65.53761291503906,
+   "longitude": -47.5065803527832,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2811,
+   "latitude": 74.2129135131836,
+   "longitude": -56.10112380981445,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2822,
+   "latitude": -84.02030181884766,
+   "longitude": 16.22330665588379,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2836,
+   "latitude": -79.3098373413086,
+   "longitude": 38.71746063232422,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2840,
+   "latitude": 70.35432434082031,
+   "longitude": -28.727243423461914,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2846,
+   "latitude": -73.88105010986328,
+   "longitude": -102.35209655761719,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2875,
+   "latitude": -69.3021469116211,
+   "longitude": 156.72903442382812,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2876,
+   "latitude": -62.02690887451172,
+   "longitude": -58.45841979980469,
+   "land": "Antarctica",
+   "reason": "no country row; site on Antarctica land",
+   "country_iso3s": ""
+  },
+  {
+   "location_id": 2878,
+   "latitude": -76.61211395263672,
+   "longitude": 142.55975341796875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2881,
+   "latitude": 72.88066864013672,
+   "longitude": -22.221891403198242,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2895,
+   "latitude": -82.93946838378906,
+   "longitude": -171.12310791015625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2900,
+   "latitude": -66.98660278320312,
+   "longitude": 103.02083587646484,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2904,
+   "latitude": -71.48151397705078,
+   "longitude": -61.58018493652344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2911,
+   "latitude": -72.13194274902344,
+   "longitude": 114.56645202636719,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2914,
+   "latitude": -74.81424713134766,
+   "longitude": -135.66912841796875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2918,
+   "latitude": 76.07086181640625,
+   "longitude": -67.60198211669922,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 2919,
+   "latitude": -75.6260757446289,
+   "longitude": 75.43783569335938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2926,
+   "latitude": -81.78370666503906,
+   "longitude": 134.00787353515625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2932,
+   "latitude": -75.03294372558594,
+   "longitude": 38.12861251831055,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2936,
+   "latitude": -72.47032165527344,
+   "longitude": 69.43002319335938,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2955,
+   "latitude": -78.36978912353516,
+   "longitude": -100.77252960205078,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2989,
+   "latitude": -82.57239532470703,
+   "longitude": -4.363423824310303,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 2990,
+   "latitude": -86.14435577392578,
+   "longitude": -64.30747985839844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3027,
+   "latitude": -78.51637268066406,
+   "longitude": -119.93171691894531,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3030,
+   "latitude": -70.69625854492188,
+   "longitude": 165.77735900878906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3044,
+   "latitude": 82.21045684814453,
+   "longitude": -40.278499603271484,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3050,
+   "latitude": -74.55509185791016,
+   "longitude": 86.12419891357422,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3075,
+   "latitude": -80.13784790039062,
+   "longitude": 131.91500854492188,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3087,
+   "latitude": -70.6677474975586,
+   "longitude": 128.50299072265625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3101,
+   "latitude": -77.82884979248047,
+   "longitude": 65.88328552246094,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3102,
+   "latitude": -73.37696075439453,
+   "longitude": 74.76705169677734,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3147,
+   "latitude": -69.40144348144531,
+   "longitude": 120.84429931640625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3151,
+   "latitude": -69.07592010498047,
+   "longitude": 62.42363357543945,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3158,
+   "latitude": -78.5154800415039,
+   "longitude": -86.74992370605469,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3162,
+   "latitude": -78.45750427246094,
+   "longitude": -34.520538330078125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3175,
+   "latitude": -74.07038879394531,
+   "longitude": -21.143756866455078,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3178,
+   "latitude": -88.79906463623047,
+   "longitude": 54.6740837097168,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3213,
+   "latitude": 73.71467590332031,
+   "longitude": -40.590877532958984,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3216,
+   "latitude": -67.4371337890625,
+   "longitude": 136.72433471679688,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3219,
+   "latitude": -79.98409271240234,
+   "longitude": 30.452964782714844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3220,
+   "latitude": -87.72315216064453,
+   "longitude": -171.91757202148438,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3228,
+   "latitude": -86.42760467529297,
+   "longitude": -13.079423904418945,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3235,
+   "latitude": -70.8969955444336,
+   "longitude": 123.18292999267578,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3246,
+   "latitude": -82.1605224609375,
+   "longitude": 149.34722900390625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3288,
+   "latitude": -69.52449035644531,
+   "longitude": 115.3434829711914,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3300,
+   "latitude": -74.70679473876953,
+   "longitude": 159.0817413330078,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3315,
+   "latitude": -76.73596954345703,
+   "longitude": 29.35223388671875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3325,
+   "latitude": -87.1526107788086,
+   "longitude": 35.15117645263672,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3329,
+   "latitude": -81.06747436523438,
+   "longitude": -152.76016235351562,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3344,
+   "latitude": -79.48600006103516,
+   "longitude": 2.2839410305023193,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3358,
+   "latitude": -67.91326904296875,
+   "longitude": 123.61466979980469,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3370,
+   "latitude": -87.85240173339844,
+   "longitude": 144.8196258544922,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3376,
+   "latitude": -72.9106674194336,
+   "longitude": 82.57445526123047,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3382,
+   "latitude": -84.90328216552734,
+   "longitude": -162.98716735839844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3394,
+   "latitude": 82.33362579345703,
+   "longitude": -23.026697158813477,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3396,
+   "latitude": -85.81146240234375,
+   "longitude": 54.594295501708984,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3399,
+   "latitude": -71.84677124023438,
+   "longitude": 59.48910903930664,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3423,
+   "latitude": -77.75946807861328,
+   "longitude": 155.38308715820312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3426,
+   "latitude": -73.93495178222656,
+   "longitude": 126.44184112548828,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3441,
+   "latitude": -73.29876708984375,
+   "longitude": -95.70233917236328,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3446,
+   "latitude": -77.11882019042969,
+   "longitude": 108.98255157470703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3462,
+   "latitude": -69.78949737548828,
+   "longitude": 148.29373168945312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3473,
+   "latitude": -76.93396759033203,
+   "longitude": -10.637571334838867,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3496,
+   "latitude": 79.51200103759766,
+   "longitude": -34.38114929199219,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3503,
+   "latitude": -68.63788604736328,
+   "longitude": 134.06871032714844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3524,
+   "latitude": 75.9166259765625,
+   "longitude": -45.36661911010742,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3529,
+   "latitude": -67.55967712402344,
+   "longitude": 61.52643966674805,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3539,
+   "latitude": -72.35951232910156,
+   "longitude": -72.57061767578125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3547,
+   "latitude": -73.59900665283203,
+   "longitude": 169.77110290527344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3548,
+   "latitude": -76.3790283203125,
+   "longitude": 93.88517761230469,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3552,
+   "latitude": -69.92772674560547,
+   "longitude": 73.35730743408203,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3553,
+   "latitude": -68.5552978515625,
+   "longitude": 46.32939910888672,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3560,
+   "latitude": -77.22210693359375,
+   "longitude": 162.20664978027344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3563,
+   "latitude": -76.5997085571289,
+   "longitude": 80.57703399658203,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3583,
+   "latitude": -83.55715942382812,
+   "longitude": -30.167003631591797,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3594,
+   "latitude": -75.18167877197266,
+   "longitude": 100.78369140625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3595,
+   "latitude": -70.4295425415039,
+   "longitude": 21.82882308959961,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3601,
+   "latitude": 73.07955932617188,
+   "longitude": -50.36122131347656,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3609,
+   "latitude": -71.05492401123047,
+   "longitude": 50.36753463745117,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3616,
+   "latitude": -83.1103515625,
+   "longitude": 168.32228088378906,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3636,
+   "latitude": 75.9491958618164,
+   "longitude": -53.851417541503906,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3638,
+   "latitude": -71.40872192382812,
+   "longitude": 89.96316528320312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3651,
+   "latitude": -69.7418441772461,
+   "longitude": 36.791568756103516,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3677,
+   "latitude": -75.36207580566406,
+   "longitude": -103.99710845947266,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3682,
+   "latitude": -81.51530456542969,
+   "longitude": -13.46136474609375,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3685,
+   "latitude": -81.23079681396484,
+   "longitude": 14.686518669128418,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3690,
+   "latitude": -73.26203918457031,
+   "longitude": 93.74790954589844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3694,
+   "latitude": -77.12660217285156,
+   "longitude": -77.21631622314453,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3702,
+   "latitude": 68.47583770751953,
+   "longitude": -43.403404235839844,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3709,
+   "latitude": -74.76824951171875,
+   "longitude": -62.20283126831055,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3718,
+   "latitude": 76.16092681884766,
+   "longitude": -23.42621421813965,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3724,
+   "latitude": 71.6054916381836,
+   "longitude": -41.539737701416016,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3735,
+   "latitude": -81.9635238647461,
+   "longitude": 54.86287307739258,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3746,
+   "latitude": -70.4012222290039,
+   "longitude": 139.2196044921875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3752,
+   "latitude": -83.88507080078125,
+   "longitude": -119.15953063964844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3806,
+   "latitude": -81.13175201416016,
+   "longitude": -68.42668914794922,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3813,
+   "latitude": 71.24889373779297,
+   "longitude": -33.71720886230469,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3817,
+   "latitude": -87.41149139404297,
+   "longitude": -34.1550407409668,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3818,
+   "latitude": 77.62604522705078,
+   "longitude": -24.856996536254883,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3823,
+   "latitude": -75.55464172363281,
+   "longitude": -143.09060668945312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3829,
+   "latitude": -64.09300994873047,
+   "longitude": -58.12825393676758,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3832,
+   "latitude": 60.85955810546875,
+   "longitude": -46.82853317260742,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 3840,
+   "latitude": -86.42425537109375,
+   "longitude": 11.849737167358398,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3841,
+   "latitude": -69.94774627685547,
+   "longitude": 106.30638885498047,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3856,
+   "latitude": -73.15751647949219,
+   "longitude": -10.746253967285156,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3859,
+   "latitude": -77.40443420410156,
+   "longitude": -114.66877746582031,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3876,
+   "latitude": -68.07059478759766,
+   "longitude": 69.44207000732422,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3886,
+   "latitude": -76.63969421386719,
+   "longitude": 128.719482421875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3887,
+   "latitude": -74.09748077392578,
+   "longitude": 150.35874938964844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3910,
+   "latitude": -82.0462417602539,
+   "longitude": -51.11949920654297,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3956,
+   "latitude": -67.2470932006836,
+   "longitude": 56.628292083740234,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3958,
+   "latitude": -74.69012451171875,
+   "longitude": 119.87335205078125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3959,
+   "latitude": -81.2435073852539,
+   "longitude": -38.7250862121582,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3962,
+   "latitude": -67.13260650634766,
+   "longitude": 85.0886001586914,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3964,
+   "latitude": -74.12026977539062,
+   "longitude": 105.0479965209961,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3971,
+   "latitude": -76.22547149658203,
+   "longitude": -98.5943603515625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 3995,
+   "latitude": -71.69564056396484,
+   "longitude": 5.1967549324035645,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4013,
+   "latitude": -69.7455062866211,
+   "longitude": 81.58845520019531,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4028,
+   "latitude": 69.78895568847656,
+   "longitude": -54.13063430786133,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4041,
+   "latitude": -82.66574096679688,
+   "longitude": 20.381128311157227,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4043,
+   "latitude": -79.84796905517578,
+   "longitude": 91.21074676513672,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4048,
+   "latitude": -81.01422119140625,
+   "longitude": 5.4767231941223145,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4053,
+   "latitude": -79.32231140136719,
+   "longitude": 146.78204345703125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4059,
+   "latitude": -74.1781005859375,
+   "longitude": 10.078010559082031,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4073,
+   "latitude": -83.9947738647461,
+   "longitude": -7.562939167022705,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4074,
+   "latitude": -72.88787841796875,
+   "longitude": 51.278038024902344,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4093,
+   "latitude": -76.90868377685547,
+   "longitude": -131.664306640625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4099,
+   "latitude": -70.14240264892578,
+   "longitude": -67.15585327148438,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4114,
+   "latitude": -70.74754333496094,
+   "longitude": 77.71839141845703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4121,
+   "latitude": -72.24925994873047,
+   "longitude": 77.72369384765625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4122,
+   "latitude": -71.85124206542969,
+   "longitude": 99.8259506225586,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4129,
+   "latitude": 63.585899353027344,
+   "longitude": -51.29997253417969,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4141,
+   "latitude": -66.55951690673828,
+   "longitude": 97.03992462158203,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4145,
+   "latitude": -78.39727783203125,
+   "longitude": 10.098154067993164,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4160,
+   "latitude": 81.02479553222656,
+   "longitude": -45.58613204956055,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4166,
+   "latitude": -82.2928466796875,
+   "longitude": 97.6214828491211,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4167,
+   "latitude": 76.51011657714844,
+   "longitude": -35.685546875,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4168,
+   "latitude": -75.43627166748047,
+   "longitude": -117.70198059082031,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4180,
+   "latitude": -82.43199920654297,
+   "longitude": 41.522369384765625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4183,
+   "latitude": -76.4249267578125,
+   "longitude": 44.83613967895508,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4199,
+   "latitude": -75.48697662353516,
+   "longitude": -17.62383460998535,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4201,
+   "latitude": -82.97994232177734,
+   "longitude": -71.84022521972656,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4203,
+   "latitude": -72.16397094726562,
+   "longitude": 142.8160400390625,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4212,
+   "latitude": -77.51542663574219,
+   "longitude": 24.09687042236328,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4218,
+   "latitude": -69.51798248291016,
+   "longitude": 54.054386138916016,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4219,
+   "latitude": -80.21082305908203,
+   "longitude": -76.5489730834961,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4230,
+   "latitude": -73.65463256835938,
+   "longitude": 46.532859802246094,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4234,
+   "latitude": -85.30269622802734,
+   "longitude": 168.1851043701172,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4247,
+   "latitude": 77.61665344238281,
+   "longitude": -62.71306610107422,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4260,
+   "latitude": -75.3085708618164,
+   "longitude": 130.86102294921875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4263,
+   "latitude": -70.27799224853516,
+   "longitude": 25.986812591552734,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4277,
+   "latitude": 64.60485076904297,
+   "longitude": -40.308074951171875,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4284,
+   "latitude": -70.19397735595703,
+   "longitude": 153.6498565673828,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4296,
+   "latitude": -79.82785034179688,
+   "longitude": -105.58509063720703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4297,
+   "latitude": -78.60643005371094,
+   "longitude": -14.192916870117188,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4300,
+   "latitude": -69.7555160522461,
+   "longitude": 40.95877456665039,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4310,
+   "latitude": -70.07179260253906,
+   "longitude": 59.665157318115234,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4323,
+   "latitude": -69.39456176757812,
+   "longitude": 142.2097930908203,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4330,
+   "latitude": -71.931884765625,
+   "longitude": 42.64111328125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4334,
+   "latitude": -84.30821990966797,
+   "longitude": 84.39761352539062,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4338,
+   "latitude": -72.81327056884766,
+   "longitude": -64.63719940185547,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4345,
+   "latitude": -76.85160827636719,
+   "longitude": 7.743410110473633,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4348,
+   "latitude": -74.89747619628906,
+   "longitude": -6.546586036682129,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4365,
+   "latitude": -62.64690017700195,
+   "longitude": -61.09778594970703,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4370,
+   "latitude": -77.18101501464844,
+   "longitude": -144.2957305908203,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4374,
+   "latitude": -71.1209487915039,
+   "longitude": 68.66093444824219,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4399,
+   "latitude": 78.6418685913086,
+   "longitude": -50.36264419555664,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4401,
+   "latitude": -79.68683624267578,
+   "longitude": -8.778205871582031,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4419,
+   "latitude": -75.34175109863281,
+   "longitude": 140.3289031982422,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4428,
+   "latitude": -68.88086700439453,
+   "longitude": 87.14187622070312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4452,
+   "latitude": 68.6722183227539,
+   "longitude": -35.89683532714844,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4453,
+   "latitude": -65.25878143310547,
+   "longitude": -63.821998596191406,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4460,
+   "latitude": 61.35520553588867,
+   "longitude": -42.54627990722656,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4463,
+   "latitude": -80.7842025756836,
+   "longitude": -23.03463363647461,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4480,
+   "latitude": -76.27908325195312,
+   "longitude": 34.88832092285156,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4489,
+   "latitude": -79.4972152709961,
+   "longitude": -133.5111541748047,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4490,
+   "latitude": -74.92259216308594,
+   "longitude": -70.8582992553711,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4499,
+   "latitude": -68.15776062011719,
+   "longitude": 79.57496643066406,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4501,
+   "latitude": -72.73310852050781,
+   "longitude": 151.3921356201172,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4511,
+   "latitude": -80.08260345458984,
+   "longitude": 19.040264129638672,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4514,
+   "latitude": -76.59878540039062,
+   "longitude": 151.53622436523438,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4516,
+   "latitude": 74.55164337158203,
+   "longitude": -44.445926666259766,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4519,
+   "latitude": -77.29383087158203,
+   "longitude": -83.28453826904297,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4521,
+   "latitude": -81.7770767211914,
+   "longitude": -126.59307861328125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4531,
+   "latitude": -75.43376922607422,
+   "longitude": 56.41920471191406,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4543,
+   "latitude": -88.24261474609375,
+   "longitude": 104.23356628417969,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4548,
+   "latitude": -69.20393371582031,
+   "longitude": 100.81765747070312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4550,
+   "latitude": -84.33258819580078,
+   "longitude": 41.015525817871094,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4556,
+   "latitude": -69.48291015625,
+   "longitude": 130.31146240234375,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4566,
+   "latitude": -83.54254150390625,
+   "longitude": 73.43207550048828,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4571,
+   "latitude": -71.81846618652344,
+   "longitude": 85.87136840820312,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4572,
+   "latitude": -67.659423828125,
+   "longitude": 110.3438949584961,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4579,
+   "latitude": -75.66706848144531,
+   "longitude": -124.13282012939453,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4582,
+   "latitude": -70.57771301269531,
+   "longitude": 112.9615249633789,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4588,
+   "latitude": -72.03668975830078,
+   "longitude": 120.69415283203125,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4591,
+   "latitude": -80.10118865966797,
+   "longitude": -114.75804901123047,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4596,
+   "latitude": 65.28001403808594,
+   "longitude": -43.884395599365234,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4605,
+   "latitude": -86.7471923828125,
+   "longitude": -112.24979400634766,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4607,
+   "latitude": -72.28826141357422,
+   "longitude": -7.268086910247803,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4620,
+   "latitude": -72.81465148925781,
+   "longitude": 29.194204330444336,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4630,
+   "latitude": -74.68544006347656,
+   "longitude": -110.51587677001953,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4642,
+   "latitude": 71.34544372558594,
+   "longitude": -47.28227233886719,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4644,
+   "latitude": 81.41876220703125,
+   "longitude": -60.31761169433594,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL|CAN"
+  },
+  {
+   "location_id": 4647,
+   "latitude": -77.51210021972656,
+   "longitude": 55.32090377807617,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4658,
+   "latitude": -66.82478332519531,
+   "longitude": -63.91059494018555,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4660,
+   "latitude": -76.14564514160156,
+   "longitude": 120.28523254394531,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4665,
+   "latitude": -79.02621459960938,
+   "longitude": -154.6460723876953,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4672,
+   "latitude": -77.51451873779297,
+   "longitude": 136.82127380371094,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4681,
+   "latitude": 68.7608642578125,
+   "longitude": -30.576351165771484,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4698,
+   "latitude": -75.11009216308594,
+   "longitude": 19.517303466796875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4699,
+   "latitude": -73.03318786621094,
+   "longitude": 135.71449279785156,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4702,
+   "latitude": 66.2777328491211,
+   "longitude": -52.89937210083008,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4716,
+   "latitude": 67.28133392333984,
+   "longitude": -41.9948616027832,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4729,
+   "latitude": -76.94554901123047,
+   "longitude": -25.12979507446289,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4742,
+   "latitude": -81.24673461914062,
+   "longitude": -100.2116928100586,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4751,
+   "latitude": 78.57764434814453,
+   "longitude": -39.14455032348633,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4761,
+   "latitude": -77.50855255126953,
+   "longitude": -2.340070962905884,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4766,
+   "latitude": -78.64196014404297,
+   "longitude": -93.27713775634766,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4775,
+   "latitude": -71.64888763427734,
+   "longitude": 146.70114135742188,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4781,
+   "latitude": -71.34624481201172,
+   "longitude": 13.770195007324219,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4798,
+   "latitude": 69.337646484375,
+   "longitude": -40.72365188598633,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4832,
+   "latitude": 80.69115447998047,
+   "longitude": -23.59343910217285,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4847,
+   "latitude": -73.43675231933594,
+   "longitude": 159.80406188964844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4848,
+   "latitude": -84.65219116210938,
+   "longitude": -37.46257781982422,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4852,
+   "latitude": -79.06887817382812,
+   "longitude": 99.08014678955078,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4857,
+   "latitude": -79.15485382080078,
+   "longitude": 64.65594482421875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4863,
+   "latitude": -72.554443359375,
+   "longitude": 24.098342895507812,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4869,
+   "latitude": 77.33808135986328,
+   "longitude": -56.3506965637207,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4874,
+   "latitude": 78.77725219726562,
+   "longitude": -65.37711334228516,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4882,
+   "latitude": -76.19312286376953,
+   "longitude": -90.43785095214844,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4886,
+   "latitude": -83.85938262939453,
+   "longitude": 61.20359420776367,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4895,
+   "latitude": -74.35722351074219,
+   "longitude": 145.09573364257812,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4902,
+   "latitude": -81.5401611328125,
+   "longitude": 33.551212310791016,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4914,
+   "latitude": -85.57225036621094,
+   "longitude": -132.79115295410156,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4915,
+   "latitude": -67.60224151611328,
+   "longitude": 126.88519287109375,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4917,
+   "latitude": -76.44054412841797,
+   "longitude": 2.5100619792938232,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4919,
+   "latitude": -83.24214935302734,
+   "longitude": -144.06436157226562,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4925,
+   "latitude": -83.7723388671875,
+   "longitude": 4.440927028656006,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4931,
+   "latitude": 67.37539672851562,
+   "longitude": -36.59294128417969,
+   "land": "Greenland",
+   "reason": "primary country GRL",
+   "country_iso3s": "GRL"
+  },
+  {
+   "location_id": 4950,
+   "latitude": -78.59119415283203,
+   "longitude": 166.485107421875,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4952,
+   "latitude": -80.46228790283203,
+   "longitude": 160.3049774169922,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4970,
+   "latitude": -83.78711700439453,
+   "longitude": -93.90677642822266,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4980,
+   "latitude": -86.7793960571289,
+   "longitude": 91.54273223876953,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  },
+  {
+   "location_id": 4991,
+   "latitude": -74.2541275024414,
+   "longitude": 115.4309310913086,
+   "land": "Antarctica",
+   "reason": "primary country ATA",
+   "country_iso3s": "ATA"
+  }
+ ],
+ "land": [
+  {
+   "sha256": "c2ba69a0486864f29557e093b6ad0dee54bc94da1aa9fcfc834aef826c97b949",
+   "land": "Greenland",
+   "bbox": [
+    -28.037,
+    70.454,
+    -25.346,
+    71.044
+   ]
+  },
+  {
+   "sha256": "67091ee9b183a946a676e0e4e1c9a1f5181066fdfb03b33f5808ca73d3ae1172",
+   "land": "Antarctica",
+   "bbox": [
+    -123.346,
+    -74.403,
+    -120.272,
+    -73.682
+   ]
+  },
+  {
+   "sha256": "9aac55a19a4882a6102c16dc35d7f4ee16900bcc999c1bd0d0095c9db7bbb6f6",
+   "land": "Antarctica",
+   "bbox": [
+    -127.414,
+    -74.256,
+    -123.8,
+    -73.279
+   ]
+  },
+  {
+   "sha256": "75062a0e3e0404ebddb50903738b6badf68199c3abe892af1f64e278d9ba1e0f",
+   "land": "Antarctica",
+   "bbox": [
+    -67.809,
+    -80.078,
+    -65.504,
+    -79.546
+   ]
+  },
+  {
+   "sha256": "f0b095132e2b7a701cbb7c238bcbebf5c323f218ab169f409f4de5fad1a7178d",
+   "land": "Antarctica",
+   "bbox": [
+    -58.425,
+    -64.401,
+    -57.222,
+    -63.804
+   ]
+  },
+  {
+   "sha256": "8f13a9c2a4009281fdf8022a3d1d440af0830cf9d60829e4e7a5ea0eb1a732d8",
+   "land": "Antarctica",
+   "bbox": [
+    -64.272,
+    -64.834,
+    -62.837,
+    -64.261
+   ]
+  },
+  {
+   "sha256": "b148980d86a02c75080cb8420d970cded0127363b10d1f881d691d3abe37d809",
+   "land": "Antarctica",
+   "bbox": [
+    -76.5,
+    -71.132,
+    -73.55,
+    -70.553
+   ]
+  },
+  {
+   "sha256": "9ef2c934cffda490b5d38d504f61c46ee6808af6a971f70d940729aec0ce9c6d",
+   "land": "Antarctica",
+   "bbox": [
+    -75.813,
+    -70.179,
+    -74.438,
+    -69.728
+   ]
+  },
+  {
+   "sha256": "46d6ff71e20dcb5cb251bcc58ae44a6e5d129f4351d778024af2aed0eb9d6d82",
+   "land": "Antarctica",
+   "bbox": [
+    -102.288,
+    -72.577,
+    -95.531,
+    -71.764
+   ]
+  },
+  {
+   "sha256": "a91b3d4544cb0f5cbfca0a6267fe14c70f717c103e8c28808c525e26cc454706",
+   "land": "Antarctica",
+   "bbox": [
+    -76.096,
+    -73.611,
+    -74.224,
+    -72.82
+   ]
+  },
+  {
+   "sha256": "9dd643693f92d88e87cf34d51c7a6fb33b41aa137906334876d67f135a26c8cf",
+   "land": "Antarctica",
+   "bbox": [
+    -69.138,
+    -67.744,
+    -67.681,
+    -66.624
+   ]
+  },
+  {
+   "sha256": "03392e1f3fce6027568bb09e7fe74c92d0fd8e486b88720e30b3055c1efc081a",
+   "land": "Antarctica",
+   "bbox": [
+    -164.282,
+    -79.845,
+    -158.997,
+    -78.722
+   ]
+  },
+  {
+   "sha256": "a7d89926a4c5f37f81f0a4cf5c8346a014136d0aee6b6c5a6a2bb84494b05633",
+   "land": "Antarctica",
+   "bbox": [
+    -71.784,
+    -79.68,
+    -66.728,
+    -78.316
+   ]
+  },
+  {
+   "sha256": "a948aaeb90e17eb8fce401df866f50b84e890f5cbbc94d571f08770f3db463bf",
+   "land": "Antarctica",
+   "bbox": [
+    -54.351,
+    -80.87,
+    -42.965,
+    -77.785
+   ]
+  },
+  {
+   "sha256": "40ca7aaef0ca420758191384cf2e11e59c67e376bceb90f8603938808b2ee54c",
+   "land": "Antarctica",
+   "bbox": [
+    -66.771,
+    -80.948,
+    -59.322,
+    -79.741
+   ]
+  },
+  {
+   "sha256": "f425ea56e0cd0eeea34ce08603829837f86ecfc225d8090cbf73d9d597aad34b",
+   "land": "Antarctica",
+   "bbox": [
+    -75.383,
+    -72.67,
+    -68.228,
+    -68.789
+   ]
+  },
+  {
+   "sha256": "aeea2df754ad8611834e7ccc0e50e5410ed05f6d6575a375b8225af0a040f053",
+   "land": "Greenland",
+   "bbox": [
+    -54.919,
+    69.257,
+    -51.9,
+    70.317
+   ]
+  },
+  {
+   "sha256": "f691b14e3a517d7806f8730bfd3f2420da49974d1997a88a7fd99d6ab52bae0d",
+   "land": "Antarctica",
+   "bbox": [
+    163.742,
+    -74.833,
+    164.208,
+    -74.608
+   ]
+  },
+  {
+   "sha256": "db2efcf257e2dbc783ed0f47eaa54bca2c1ebe14254bc01aec740590b373200a",
+   "land": "Antarctica",
+   "bbox": [
+    164.639,
+    -67.56,
+    164.919,
+    -67.259
+   ]
+  },
+  {
+   "sha256": "c0b4fc95e7b876cc74dafe93fe34c692adf8c04e1548b344ba7a1e084f06b6eb",
+   "land": "Antarctica",
+   "bbox": [
+    166.013,
+    -78.306,
+    167.643,
+    -77.992
+   ]
+  },
+  {
+   "sha256": "9fc0b5b7e6f4f48b3f303a2d7e4aeee010784b6cae5526b9a190adaded51e568",
+   "land": "Antarctica",
+   "bbox": [
+    163.09,
+    -66.882,
+    163.302,
+    -66.701
+   ]
+  },
+  {
+   "sha256": "00a22325ace6f32ac24048421159a27623bdc0e210375a396ef06e041cd79a21",
+   "land": "Antarctica",
+   "bbox": [
+    166.217,
+    -77.851,
+    169.353,
+    -77.162
+   ]
+  },
+  {
+   "sha256": "e1190cc831eeef83918c186b629ded9f629b35526df84bfb16603ef81ddd2153",
+   "land": "Antarctica",
+   "bbox": [
+    169.479,
+    -73.625,
+    169.96,
+    -73.324
+   ]
+  },
+  {
+   "sha256": "f2686806864b57fe1fd7cbf887bb86cb63ca080e5ef2520b3752274d64701fa0",
+   "land": "Antarctica",
+   "bbox": [
+    162.591,
+    -75.696,
+    162.968,
+    -75.567
+   ]
+  },
+  {
+   "sha256": "91ed1e142e20385878a850f63af679411406d893a3b06b127c18ed48d1690ecc",
+   "land": "Antarctica",
+   "bbox": [
+    100.27,
+    -65.701,
+    101.238,
+    -65.378
+   ]
+  },
+  {
+   "sha256": "197ac4b4494fc57496e410a3c5931850615d0077d992a904a2c5f8721bb62077",
+   "land": "Antarctica",
+   "bbox": [
+    85.34,
+    -66.98,
+    85.938,
+    -66.723
+   ]
+  },
+  {
+   "sha256": "7fb1585302feda6142a278c512ca80b0f24bb957572fd6d08ba129cc91352cfe",
+   "land": "Antarctica",
+   "bbox": [
+    92.248,
+    -65.808,
+    92.634,
+    -65.702
+   ]
+  },
+  {
+   "sha256": "c7e2d1bafe30187e961ccd0fa64fc3c6754afa8e7d832316d11af6073f907f95",
+   "land": "Antarctica",
+   "bbox": [
+    86.232,
+    -66.788,
+    86.652,
+    -66.675
+   ]
+  },
+  {
+   "sha256": "b79d8bc7920a2aa9b71cc9bbb6bf6545a70c1876a4351e90c966ccc91a7c692f",
+   "land": "Antarctica",
+   "bbox": [
+    85.069,
+    -66.637,
+    85.329,
+    -66.519
+   ]
+  },
+  {
+   "sha256": "ae84de59873523ad5fccbf6da4ec667519e3397a73acc96b280f926dbaa91c8a",
+   "land": "Antarctica",
+   "bbox": [
+    69.693,
+    -72.047,
+    69.918,
+    -71.894
+   ]
+  },
+  {
+   "sha256": "4042a0c1f59ef5385ec0672bf7445ca02e99ebf0b82e511a05fdaece017a81ce",
+   "land": "Antarctica",
+   "bbox": [
+    68.436,
+    -72.3,
+    68.84,
+    -72.089
+   ]
+  },
+  {
+   "sha256": "7df09604c811b5a00361eee1f879bdcdda1ceb6e7724feaf6f5fa1d4a506f933",
+   "land": "Antarctica",
+   "bbox": [
+    96.307,
+    -66.225,
+    97.016,
+    -66.036
+   ]
+  },
+  {
+   "sha256": "58543a82dc60b6ac40ef206cfdfe1a34b08b79a197720847d203c4293bb2e863",
+   "land": "Antarctica",
+   "bbox": [
+    71.647,
+    -70.633,
+    72.097,
+    -70.264
+   ]
+  },
+  {
+   "sha256": "173bed68fffb3832dc771ec9dac5bddf18799bddbebf9632cd88bfba00adf093",
+   "land": "Antarctica",
+   "bbox": [
+    162.303,
+    -66.52,
+    162.611,
+    -66.251
+   ]
+  },
+  {
+   "sha256": "c5e8fc55ed403b672fe4c35aba21ed8ecc6cdb1d6624ba1ac386c4c931ab6c6d",
+   "land": "Antarctica",
+   "bbox": [
+    100.076,
+    -66.217,
+    100.291,
+    -66.112
+   ]
+  },
+  {
+   "sha256": "da51b51c2a06126295700b5e248ccb3a9d3dd30282e1007343df9f0051591416",
+   "land": "Antarctica",
+   "bbox": [
+    98.596,
+    -66.47,
+    98.95,
+    -66.369
+   ]
+  },
+  {
+   "sha256": "8f5e3e9bb51f3ba1617c703a5296d223bbeb0a3efb74e4d0d83f03574908ecd0",
+   "land": "Antarctica",
+   "bbox": [
+    102.76,
+    -65.469,
+    103.397,
+    -65.13
+   ]
+  },
+  {
+   "sha256": "2f51d459368c18debc9c2cf9414989f979fb86207c4dd53a6d3d11a0295d0973",
+   "land": "Antarctica",
+   "bbox": [
+    -148.001,
+    -76.653,
+    -147.588,
+    -76.558
+   ]
+  },
+  {
+   "sha256": "f5274ca83f6bd846baff22764220e7dd0232d6a0a9a580247eb094b89637e2d2",
+   "land": "Antarctica",
+   "bbox": [
+    -146.151,
+    -75.711,
+    -145.238,
+    -75.505
+   ]
+  },
+  {
+   "sha256": "60bb1fd51c62f794c1de90dd05efdda1f7baf556fb74f79f48789cf144533094",
+   "land": "Antarctica",
+   "bbox": [
+    -147.087,
+    -76.993,
+    -146.164,
+    -76.837
+   ]
+  },
+  {
+   "sha256": "c4b7440af5b41f9ad5a26543d964f77c6a4b4665339b9b42b1df4568dc0b6b03",
+   "land": "Antarctica",
+   "bbox": [
+    -132.857,
+    -74.498,
+    -132.391,
+    -74.387
+   ]
+  },
+  {
+   "sha256": "0431be4802a3ea56c696a2811adcd786b2d12fbd5e3d35c1fafc22620421f874",
+   "land": "Antarctica",
+   "bbox": [
+    -149.245,
+    -77.019,
+    -148.44,
+    -76.9
+   ]
+  },
+  {
+   "sha256": "57107cdea0e034b6caaddc327cfa1fe6436ca929d225642faa52f4364fa7cae9",
+   "land": "Antarctica",
+   "bbox": [
+    -149.469,
+    -76.841,
+    -148.371,
+    -76.717
+   ]
+  },
+  {
+   "sha256": "45649b5fb277cb4470f94125ef0db331357a3f3250e03ce2918d96161efc0491",
+   "land": "Antarctica",
+   "bbox": [
+    -132.163,
+    -74.605,
+    -130.967,
+    -74.33
+   ]
+  },
+  {
+   "sha256": "51f012c55d15aeda5a03f28c1822b4fbe7c48869b291d78749f88f4e1bfbeb3f",
+   "land": "Antarctica",
+   "bbox": [
+    -119.905,
+    -74.12,
+    -118.877,
+    -73.775
+   ]
+  },
+  {
+   "sha256": "b465236499234c01b5d7588ff511293faacad96bfe45fae291114a48c44c9a9c",
+   "land": "Antarctica",
+   "bbox": [
+    -117.376,
+    -74.193,
+    -116.155,
+    -73.866
+   ]
+  },
+  {
+   "sha256": "be4847658940631bc88522590c722d3395cd638c3871108f5be7453f75499290",
+   "land": "Antarctica",
+   "bbox": [
+    -128.133,
+    -74.641,
+    -127.145,
+    -74.327
+   ]
+  },
+  {
+   "sha256": "eca262c901450db7289f7a755aa7add3641a52ac229d4c97fb44535341a61175",
+   "land": "Antarctica",
+   "bbox": [
+    -149.662,
+    -77.387,
+    -148.929,
+    -77.28
+   ]
+  },
+  {
+   "sha256": "7dbddb1935bc23dc8d8d89c7d853efa1184deaa424ce5de4804b37be50eb11b7",
+   "land": "Antarctica",
+   "bbox": [
+    -163.796,
+    -83.142,
+    -161.635,
+    -82.843
+   ]
+  },
+  {
+   "sha256": "618d3ceca99bb365c67c7b0c8f1a36fd7547a6cad0e93ae806b07dd025e1f890",
+   "land": "Antarctica",
+   "bbox": [
+    -150.838,
+    -76.789,
+    -150.177,
+    -76.691
+   ]
+  },
+  {
+   "sha256": "543ebf3ff4845669cc544e48527e9543d27fb000b73cacbf465e48a0e6a0c175",
+   "land": "Antarctica",
+   "bbox": [
+    -147.361,
+    -76.261,
+    -146.69,
+    -76.063
+   ]
+  },
+  {
+   "sha256": "a896010abb3466ec5651f1cd83132fc12b3ebca4bf90bbdf3fcf4eea0e38c900",
+   "land": "Antarctica",
+   "bbox": [
+    -147.355,
+    -76.714,
+    -146.79,
+    -76.532
+   ]
+  },
+  {
+   "sha256": "02b8f1a61a444c3cca7e4890426327b5aa7186c6a1cd90fc89cefaf85f85a2cf",
+   "land": "Antarctica",
+   "bbox": [
+    -163.869,
+    -81.598,
+    -160.467,
+    -81.281
+   ]
+  },
+  {
+   "sha256": "a0a5c0cdca5db71377a55206ab034848446f9d5ef9849e4d31d6faf8bd32e7c9",
+   "land": "Antarctica",
+   "bbox": [
+    -151.512,
+    -77.374,
+    -150.397,
+    -77.22
+   ]
+  },
+  {
+   "sha256": "8c084a406f5602b650280359e37479c8df306c2b1734af4982c112961a620114",
+   "land": "Antarctica",
+   "bbox": [
+    -155.751,
+    -80.033,
+    -153.93,
+    -79.766
+   ]
+  },
+  {
+   "sha256": "13f03920074bf086dbbb11a0d383af8080ba1f05c3a0a5f59db6fb020c2e977f",
+   "land": "Antarctica",
+   "bbox": [
+    -150.789,
+    -77.129,
+    -149.231,
+    -76.875
+   ]
+  },
+  {
+   "sha256": "a2ba7f53c9a86431c25ae1d9d6e89f6d044f8a061e2e5c195159b90d5dbb1192",
+   "land": "Antarctica",
+   "bbox": [
+    -158.926,
+    -82.105,
+    -157.835,
+    -81.78
+   ]
+  },
+  {
+   "sha256": "8970075fc7a85c57af9ebfeb8180a3fc9bdd7cfaa637093464db6acaa1327ff9",
+   "land": "Antarctica",
+   "bbox": [
+    -6.438,
+    -70.612,
+    -5.894,
+    -70.405
+   ]
+  },
+  {
+   "sha256": "2819877ada9d0daabe0c5d41b05eb2531e59510c84cdddfeaae5c361cba6f77b",
+   "land": "Antarctica",
+   "bbox": [
+    2.585,
+    -70.624,
+    3.26,
+    -70.382
+   ]
+  },
+  {
+   "sha256": "9f9ccfa389c93ca0c051e1b978b1455c5be200514d06bc63954a20edfddb7ec4",
+   "land": "Antarctica",
+   "bbox": [
+    -3.399,
+    -71.237,
+    -2.955,
+    -71.052
+   ]
+  },
+  {
+   "sha256": "3c3b11a5b436a16d3660767eb28d6cbeb1b067b9efa18e38d10fbc111458aa6f",
+   "land": "Antarctica",
+   "bbox": [
+    0.95,
+    -70.381,
+    1.461,
+    -70.023
+   ]
+  },
+  {
+   "sha256": "3a5d66c951caaf7a86a3a4744e2b5dda81322ce2842e0b7a846db0cd62b0e275",
+   "land": "Antarctica",
+   "bbox": [
+    -3.537,
+    -71.167,
+    -2.092,
+    -70.674
+   ]
+  },
+  {
+   "sha256": "961cb94ed4175c4ef1349939437ef0ccdbc737d2965a4d21df2d4a43ce338769",
+   "land": "Antarctica",
+   "bbox": [
+    4.07,
+    -70.503,
+    4.618,
+    -70.241
+   ]
+  },
+  {
+   "sha256": "aa5ebc78d95d055ed266c258c8b20366f016eff595b4dfc2c99172edcff85ed2",
+   "land": "Antarctica",
+   "bbox": [
+    48.304,
+    -66.798,
+    48.782,
+    -66.701
+   ]
+  },
+  {
+   "sha256": "7da8b1a7cfe04386d83f1cb52db8778447df6d49ee0646471383c1a2ed0a8279",
+   "land": "Antarctica",
+   "bbox": [
+    15.563,
+    -70.072,
+    16.625,
+    -69.705
+   ]
+  },
+  {
+   "sha256": "3809e18ce3e68a52fdd554a6c3f9eefeeea9cdd6874a554dc4a05bea61a6aa06",
+   "land": "Antarctica",
+   "bbox": [
+    25.983,
+    -70.448,
+    26.875,
+    -70.072
+   ]
+  },
+  {
+   "sha256": "ea4761ff104bd0e9bf8d231815b8883ef59538ca3108d67cabd8aff730c5d292",
+   "land": "Antarctica",
+   "bbox": [
+    -32.0,
+    -80.011,
+    -29.614,
+    -79.634
+   ]
+  },
+  {
+   "sha256": "4f552caef832785ec0296a93b48cfc906bc08326142b818c49da33cd11f65bdd",
+   "land": "Antarctica",
+   "bbox": [
+    -36.566,
+    -79.357,
+    -33.934,
+    -79.09
+   ]
+  },
+  {
+   "sha256": "efe86d7dc23fb11af474afc00755a19be637dd06e00e737b41d06550e480ba3c",
+   "land": "Antarctica",
+   "bbox": [
+    -3.497,
+    -70.535,
+    -2.683,
+    -70.28
+   ]
+  },
+  {
+   "sha256": "b08d92555999d7b204ee1e8abd86d4f185aa86cd5474abcaeb71340bb196ee91",
+   "land": "Antarctica",
+   "bbox": [
+    -22.035,
+    -74.493,
+    -20.423,
+    -73.619
+   ]
+  },
+  {
+   "sha256": "f96c4326e808955e542dc7038cfa058e34864e0adaa7920f22eb77602bdf5af5",
+   "land": "Antarctica",
+   "bbox": [
+    -16.517,
+    -72.702,
+    -16.104,
+    -72.474
+   ]
+  },
+  {
+   "sha256": "62a965282f99379490e0c81bdc300108bc6d5f3c3dcb8966936661078648c2bc",
+   "land": "Antarctica",
+   "bbox": [
+    -12.963,
+    -72.188,
+    -12.509,
+    -72.001
+   ]
+  },
+  {
+   "sha256": "b48b6d97034233ad15704e3d4d0e53ef0b10f557b26988dedbd979e9acdc856e",
+   "land": "Antarctica",
+   "bbox": [
+    -32.583,
+    -79.674,
+    -31.933,
+    -79.535
+   ]
+  },
+  {
+   "sha256": "2dc4e6c984e998cf5c1c10eb1b5912a3c586ab0f2fdebb556054f80f9b7ec5d7",
+   "land": "Antarctica",
+   "bbox": [
+    -45.937,
+    -60.733,
+    -45.174,
+    -60.521
+   ]
+  },
+  {
+   "sha256": "1317d607c8877418dbde39e5854fcdec1eaabf9d2f932d70cd1eb90d5483c518",
+   "land": "Antarctica",
+   "bbox": [
+    -54.192,
+    -61.299,
+    -54.024,
+    -61.135
+   ]
+  },
+  {
+   "sha256": "5a43ae2532ca3825c97c8e69cd857ab593d8c033d51277eabae3614c56444fce",
+   "land": "Antarctica",
+   "bbox": [
+    -68.549,
+    -79.501,
+    -67.069,
+    -79.223
+   ]
+  },
+  {
+   "sha256": "77d837069bebade4d925f51f323287a91edda9706fae5200610ddc1b233b8ace",
+   "land": "Antarctica",
+   "bbox": [
+    -55.44,
+    -61.249,
+    -54.671,
+    -61.073
+   ]
+  },
+  {
+   "sha256": "fea41138a47dc89ce4b5fa1456ba840756340e5cf61691e9a194a53fa81f11f3",
+   "land": "Antarctica",
+   "bbox": [
+    -56.505,
+    -63.437,
+    -55.075,
+    -63.128
+   ]
+  },
+  {
+   "sha256": "9cc34b351a8a383b26e0297c65606b9197ea2380cda311a2bb8c4ab91cb0ab63",
+   "land": "Antarctica",
+   "bbox": [
+    -56.21,
+    -63.58,
+    -55.719,
+    -63.407
+   ]
+  },
+  {
+   "sha256": "3d5ba8efe8a8657c0d780998ab5e18158a3abc6b943cc6d9978e4472a768d497",
+   "land": "Antarctica",
+   "bbox": [
+    -57.446,
+    -64.567,
+    -56.895,
+    -64.333
+   ]
+  },
+  {
+   "sha256": "bb1e4faf8e0fc8d30be7fe5f308fff22d4f652559ee19db337a91185b1567803",
+   "land": "Antarctica",
+   "bbox": [
+    -59.202,
+    -62.348,
+    -58.838,
+    -62.239
+   ]
+  },
+  {
+   "sha256": "6b716bb2e63ce67992c370a8802d8daf11b403ae9d19ed313bea358b30b67478",
+   "land": "Antarctica",
+   "bbox": [
+    -59.004,
+    -62.248,
+    -57.64,
+    -61.912
+   ]
+  },
+  {
+   "sha256": "5301a6157b73af1f1eca31abd5eea446b671f537a14bf6e0af07e09397364677",
+   "land": "Antarctica",
+   "bbox": [
+    -62.021,
+    -64.077,
+    -61.798,
+    -63.967
+   ]
+  },
+  {
+   "sha256": "3287263658f70a484320483fa7cc128ad282804eabdaf91138fce365a9e3d062",
+   "land": "Antarctica",
+   "bbox": [
+    -62.568,
+    -69.729,
+    -61.807,
+    -69.146
+   ]
+  },
+  {
+   "sha256": "7bce4b2acedac9e3f84c58c6860e9c7929a7cf2cfaaf06ee669868230494cee5",
+   "land": "Antarctica",
+   "bbox": [
+    -63.558,
+    -64.906,
+    -63.177,
+    -64.739
+   ]
+  },
+  {
+   "sha256": "f3d3d964ef753847576c0c720610123299e75869c9d05863f29952909fd59c1a",
+   "land": "Antarctica",
+   "bbox": [
+    -62.747,
+    -64.514,
+    -62.058,
+    -64.013
+   ]
+  },
+  {
+   "sha256": "6aa6228cf6d56b547410fd4f649c3cf9c156ef0d9f50771d1d768f81305dd562",
+   "land": "Antarctica",
+   "bbox": [
+    -62.639,
+    -63.069,
+    -62.317,
+    -62.874
+   ]
+  },
+  {
+   "sha256": "e61d8d53856d10830ebb4c41df733a0949834233db27abb8969cab56534ed826",
+   "land": "Antarctica",
+   "bbox": [
+    -59.661,
+    -62.451,
+    -59.389,
+    -62.354
+   ]
+  },
+  {
+   "sha256": "d66c3c761a5bc2277c5a5f793849ecd0189832d9942c427a34b4a9a356bed424",
+   "land": "Antarctica",
+   "bbox": [
+    -56.614,
+    -63.173,
+    -56.06,
+    -62.982
+   ]
+  },
+  {
+   "sha256": "e48952903342f522fe65e9a20d2c8906c175fa0903e7310f3f04614306781c76",
+   "land": "Antarctica",
+   "bbox": [
+    -61.152,
+    -62.745,
+    -59.85,
+    -62.475
+   ]
+  },
+  {
+   "sha256": "8dbf1f9f10eb28f574d33d88a08517decd953787930e5d5809f4e1b348515728",
+   "land": "Antarctica",
+   "bbox": [
+    -57.683,
+    -63.876,
+    -57.161,
+    -63.807
+   ]
+  },
+  {
+   "sha256": "e29b1c1e51c5131d41d2cd170e6c5bd4e76e755a9cf7fc7f12f567161f7efe6d",
+   "land": "Antarctica",
+   "bbox": [
+    -61.404,
+    -69.976,
+    -61.152,
+    -69.856
+   ]
+  },
+  {
+   "sha256": "03024686203b88ddec4493c0e369c195fb6e5262998c251db558c63ecf67c582",
+   "land": "Antarctica",
+   "bbox": [
+    -61.015,
+    -68.795,
+    -60.656,
+    -68.688
+   ]
+  },
+  {
+   "sha256": "99a4fb82ba7bd73b769fd2995badf1e52a30079761e453c83ccee9b5d398b2bc",
+   "land": "Antarctica",
+   "bbox": [
+    -60.976,
+    -70.711,
+    -60.452,
+    -70.509
+   ]
+  },
+  {
+   "sha256": "985cd3f4a8b8baf510234084ecff3851ed4b5647c4bda1621db3f290a053e16d",
+   "land": "Antarctica",
+   "bbox": [
+    -60.946,
+    -71.053,
+    -60.533,
+    -70.914
+   ]
+  },
+  {
+   "sha256": "9d9af40dabf997241c27c5d910361e99ebd3875045954f84c1da079966fffaab",
+   "land": "Antarctica",
+   "bbox": [
+    -60.74,
+    -62.996,
+    -60.505,
+    -62.895
+   ]
+  },
+  {
+   "sha256": "3be29361759ebb95b20fb4ac4154e7d958fce6f6ee125d875dd4202f7a12681d",
+   "land": "Antarctica",
+   "bbox": [
+    -60.972,
+    -63.902,
+    -60.562,
+    -63.669
+   ]
+  },
+  {
+   "sha256": "3952265edf838c966ca0d67a77163aeecea9c3c28d982bc8c457d55c7d2b24fd",
+   "land": "Antarctica",
+   "bbox": [
+    -94.113,
+    -72.92,
+    -93.796,
+    -72.82
+   ]
+  },
+  {
+   "sha256": "77409b7460f633de9fca8b3422a1eb5246c118cce96fd9de744e5efc9d5a5269",
+   "land": "Antarctica",
+   "bbox": [
+    -91.67,
+    -73.196,
+    -90.776,
+    -72.547
+   ]
+  },
+  {
+   "sha256": "7be3d1808bf43e923d003643d406ab2d0c00abd069313cf06595d33805126113",
+   "land": "Antarctica",
+   "bbox": [
+    -105.132,
+    -73.212,
+    -104.538,
+    -72.941
+   ]
+  },
+  {
+   "sha256": "a04cbc3847a899c16a37da7455dadf6ec90bde8adaf26b95fc6b8784a4f90a4c",
+   "land": "Antarctica",
+   "bbox": [
+    -95.219,
+    -72.67,
+    -94.426,
+    -72.468
+   ]
+  },
+  {
+   "sha256": "9316b83670e431f5968d97611921f3802fc6c7bbf44272b55619230182cbccce",
+   "land": "Antarctica",
+   "bbox": [
+    -71.795,
+    -70.442,
+    -71.34,
+    -70.265
+   ]
+  },
+  {
+   "sha256": "c9ff2e0960823563b6bf85e1b4d31e9245b2c5397a4eb637ef0286f4a0a1b377",
+   "land": "Antarctica",
+   "bbox": [
+    -72.957,
+    -69.74,
+    -71.985,
+    -69.413
+   ]
+  },
+  {
+   "sha256": "19e8d55003cf2fe8cf9adb6d4af2d3d3a6e8ff3310252b0da26350cd1ef61911",
+   "land": "Antarctica",
+   "bbox": [
+    -74.147,
+    -73.376,
+    -73.542,
+    -73.113
+   ]
+  },
+  {
+   "sha256": "e81e83d1148019d97adfb37e8301c202cf001c9721d932b4b3ecf765e493294b",
+   "land": "Antarctica",
+   "bbox": [
+    -66.175,
+    -65.881,
+    -65.637,
+    -65.527
+   ]
+  },
+  {
+   "sha256": "d2062e7f6e60381cfc6afa30e4139edda5ab6c31f20073c3302d042ff5c553e2",
+   "land": "Antarctica",
+   "bbox": [
+    -66.819,
+    -66.313,
+    -66.595,
+    -66.067
+   ]
+  },
+  {
+   "sha256": "a31d6b459623a1797eb375ee8b9ad7019dcd707fbe98d4c69bdbbbe87bfd6f9b",
+   "land": "Antarctica",
+   "bbox": [
+    -67.743,
+    -67.785,
+    -67.149,
+    -67.599
+   ]
+  },
+  {
+   "sha256": "4a3ab519565b99078fbe07a06a8544557bb35a800df30599ca7f35a03ed49609",
+   "land": "Antarctica",
+   "bbox": [
+    -67.593,
+    -66.895,
+    -67.257,
+    -66.754
+   ]
+  },
+  {
+   "sha256": "657a1513b4c8473217222e58fd2f429a934024cd963fffb43a77c54b6f3445b3",
+   "land": "Greenland",
+   "bbox": [
+    -51.35,
+    69.517,
+    -50.679,
+    69.914
+   ]
+  },
+  {
+   "sha256": "c1aec29e326d51eca02c27ad9c7265c2fbaac3aa9529b127e29f77882a644116",
+   "land": "Greenland",
+   "bbox": [
+    -37.223,
+    65.531,
+    -36.953,
+    65.722
+   ]
+  },
+  {
+   "sha256": "91568674987007f0430bf1c214e41504ce4313089e40c681abf0d0278690730f",
+   "land": "Greenland",
+   "bbox": [
+    -53.947,
+    71.041,
+    -53.441,
+    71.297
+   ]
+  },
+  {
+   "sha256": "7eb9da144e7c1dcb55cd50e47c1bc4060c215f89cc9758d03fd78d7eed232edc",
+   "land": "Greenland",
+   "bbox": [
+    -56.215,
+    72.568,
+    -55.017,
+    72.842
+   ]
+  },
+  {
+   "sha256": "bf02cb0bd027b2ec425d80ade9c130d7e53e966994a6c45c7194228142dd9b50",
+   "land": "Greenland",
+   "bbox": [
+    -52.119,
+    70.855,
+    -51.631,
+    70.976
+   ]
+  },
+  {
+   "sha256": "be667341b444b00dbd7ce5cef766f9d9e07ea48814c93c8b05097f9c7f0bc68f",
+   "land": "Greenland",
+   "bbox": [
+    -46.79,
+    60.66,
+    -46.205,
+    60.944
+   ]
+  },
+  {
+   "sha256": "95046a2fe88623700b3992efcc742e00d1c7713534fe9648a17155e91bf8347b",
+   "land": "Greenland",
+   "bbox": [
+    -72.495,
+    77.316,
+    -71.433,
+    77.467
+   ]
+  },
+  {
+   "sha256": "e6f13f3ba49f10ff7e4bac443d0da4a8b2c3c30a456e893ecd97391866ba4722",
+   "land": "Greenland",
+   "bbox": [
+    -47.308,
+    82.066,
+    -44.75,
+    82.692
+   ]
+  },
+  {
+   "sha256": "14c74836f22aa5d2a5ac04bae5ca474b31fea35d0e5cd1e1fd5055e5e62a3f0f",
+   "land": "Greenland",
+   "bbox": [
+    -19.611,
+    81.827,
+    -18.665,
+    82.123
+   ]
+  },
+  {
+   "sha256": "f23e9af2077622b00ed4ab438c894fc924eae514ed7114402240ae24302c24e4",
+   "land": "Greenland",
+   "bbox": [
+    -19.138,
+    79.711,
+    -17.401,
+    80.055
+   ]
+  },
+  {
+   "sha256": "5a9d36db5821470ec191a728bcc4435776741df3a0be333ae0fd578b3df38827",
+   "land": "Greenland",
+   "bbox": [
+    -19.315,
+    77.939,
+    -18.882,
+    78.424
+   ]
+  },
+  {
+   "sha256": "86ca3385485fa323e2217de0c53ee3022ba86096453f0638675ee8e2090fa86e",
+   "land": "Greenland",
+   "bbox": [
+    -19.085,
+    76.016,
+    -18.583,
+    76.704
+   ]
+  },
+  {
+   "sha256": "8a0fca41d8b8dd392c195158f2428d738ce37885df97ad51107aa32edb945be6",
+   "land": "Greenland",
+   "bbox": [
+    -18.891,
+    74.993,
+    -17.392,
+    75.407
+   ]
+  },
+  {
+   "sha256": "23c18d2b5f029f9a240f8f58b8dfd9e3648df8ee5f6fe8e0ca1cb5f2b025596d",
+   "land": "Greenland",
+   "bbox": [
+    -18.174,
+    77.642,
+    -17.681,
+    77.863
+   ]
+  },
+  {
+   "sha256": "9d91858b28df5e8f9154f37e0b5b650f71990c74968e44fe5212ecf2a81c086a",
+   "land": "Greenland",
+   "bbox": [
+    -72.818,
+    59.815,
+    -11.426,
+    83.6
+   ]
+  },
+  {
+   "sha256": "8fbb8a44a7b769ab7df82f3f46da1eddebfe698d2883d48f5db25d12ef06da3b",
+   "land": "Antarctica",
+   "bbox": [
+    -180.0,
+    -89.999,
+    180.0,
+    -63.226
+   ]
+  }
+ ]
+}

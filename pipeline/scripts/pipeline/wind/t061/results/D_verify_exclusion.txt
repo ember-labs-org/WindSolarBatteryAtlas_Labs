@@ -1,0 +1,8 @@
+PASS summary_wo4.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo5.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo6.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo8.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS voronoi_wind_resource.csv: 4,998 -> 4,465 rows (dropped 533); lines equal old minus excluded: True
+PASS no new files in stage_new: none
+
+ALL PASS

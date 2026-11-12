@@ -1,0 +1,37 @@
+WARN flock not available: running without the machine-wide bench lock
+WARN browser /Users/daanwalter/Library/Caches/ms-playwright/chromium-1217/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing (chromium-1217, 147.0.7727.15) MISMATCH: browser chromium-1217 147.0.7727.15 is not the pinned chromium-1243 153.0.8010.12; perf thresholds and baselines were measured on the pinned build
+PASS C3 cap_s5_b8: 4465 rows identical
+PASS C3 cap_s1_b0: 4465 rows identical
+PASS C3 cap_s8_b8: 4465 rows identical
+PASS C3 cap_s10_b16: 4465 rows identical
+PASS C3 cap_s20_b36: 4465 rows identical
+FAIL C3 cap_s5_b8_w2on: 3759 of 4465 rows differ (got 4465); first: oracle 1000|0.7675 vs now 1000|0.7550. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3 lcoe_t90: 3713 of 4465 rows differ (got 4465); first: oracle 1001|3|2|off|10|135.45|1|0.9007|239.28|463.79|374.73 vs now 1001|6|2|off|26|185.13|1|0.9016|189.60|467.63|374.73. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3 lcoe_t80: 3724 of 4465 rows differ (got 4465); first: oracle 1001|0|2|off|6|120.15|1|0.8045|254.58|463.79|374.73 vs now 1001|3|2|off|8|148.46|1|0.8010|226.27|467.63|374.73. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3 lcoe_t80_onshore: 3562 of 4465 rows differ (got 4465); first: oracle 1003|3|1|on|6|51.46|1|0.8316|8.75|131.82|60.21 vs now 1003|3|1|on|6|52.58|1|0.8144|7.63|135.09|60.21. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3 lcoe_t80_localwacc: 3727 of 4465 rows differ (got 4465); first: oracle 1001|0|2|off|6|120.15|1|0.8045|254.58|463.79|374.73 vs now 1001|3|2|off|8|148.46|1|0.8010|226.27|467.63|374.73. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3 lcoe_cf_default: 3092 of 4465 rows differ (got 4465); first: oracle 1001|2|1|off|0|0.6305|89.06|1|1 vs now 1001|0|1|off|0|0.4165|104.56|0|0. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3 lcoe_t80_local_y2035: 3630 of 4465 rows differ (got 4465); first: oracle 1001|0|2|off|6|95.39|1|0.8045|139.16|355.42|234.55 vs now 1001|3|2|off|8|113.08|1|0.8010|121.47|358.36|234.55. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3 lcoe_t99: 3700 of 4465 rows differ (got 4465); first: oracle 1001|5|4|off|36|265.92|1|0.9900|108.81|463.79|374.73 vs now 1001|8|8|off|36|461.26|1|0.9900|-86.53|467.63|374.73. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3 lcoe_t80_backup: 3616 of 4399 rows differ (got 4399); first: oracle 1003|3|1|on|6|61.01|1|0.8316|6.16|131.95|67.17 vs now 1003|3|1|on|6|62.22|1|0.8144|4.94|134.86|67.17. Find the change that altered results; never re-record the oracle to make this pass.
+FAIL C3b ?worker=0 onshore-only fallback: 3562 of 4465 rows differ from lcoe_t80_onshore. With offshore excluded, the main-thread fallback must search the full grid like the worker.
+FAIL C3b ?worker=0 fallback lcoe_t80_localwacc: 3727 of 4465 rows differ from lcoe_t80_localwacc. With local costs, backup or a 99% target the main-thread fallback must give the same answer as the worker.
+FAIL C3b ?worker=0 fallback lcoe_t80_local_y2035: 3630 of 4465 rows differ from lcoe_t80_local_y2035. With local costs, backup or a 99% target the main-thread fallback must give the same answer as the worker.
+FAIL C3b ?worker=0 fallback lcoe_t80_backup: 3616 of 4399 rows differ from lcoe_t80_backup. With local costs, backup or a 99% target the main-thread fallback must give the same answer as the worker.
+FAIL C3b ?worker=0 fallback lcoe_t99: 3700 of 4465 rows differ from lcoe_t99. With local costs, backup or a 99% target the main-thread fallback must give the same answer as the worker.
+FAIL C3b ?worker=0 fallback: 3724 of 4465 rows differ from lcoe_t80. The main-thread fallback must load the full grid and search it like the worker.
+FAIL C3 sample s5_b20_wo1 (offshore wind 1 GW, solar 5, battery 20): drawn 4465:a41b8165 vs oracle 4465:44ba1f6a (rows:hash). Find the change that altered results.
+FAIL C3 sample s8_b34_w1 (onshore wind 1 GW, solar 8, battery 34): drawn 4465:1666afe3 vs oracle 4465:a2d67baf (rows:hash). Find the change that altered results.
+FAIL C3 sample s9_b0_wo2 (offshore wind 2 GW, solar 9, battery 0): drawn 4465:40d0ff72 vs oracle 4465:edbfe298 (rows:hash). Find the change that altered results.
+FAIL C3 sample s10_b16_w2 (onshore wind 2 GW, solar 10, battery 16): drawn 4465:a2c14e7f vs oracle 4465:5c10832c (rows:hash). Find the change that altered results.
+FAIL C3 sample s2_b30_wo3 (offshore wind 3 GW, solar 2, battery 30): drawn 4465:2b672a60 vs oracle 4465:e19d3a8d (rows:hash). Find the change that altered results.
+FAIL C3 sample s0_b16_w3 (onshore wind 3 GW, solar 0, battery 16): drawn 4465:a0a421b0 vs oracle 4465:3c0a126c (rows:hash). Find the change that altered results.
+FAIL C3 sample s5_b20_wo4 (offshore wind 4 GW, solar 5, battery 20): drawn 4465:bbef77af vs oracle 4465:2fdeab8c (rows:hash). Find the change that altered results.
+FAIL C3 sample s5_b24_w4 (onshore wind 4 GW, solar 5, battery 24): drawn 4465:5fde7bcf vs oracle 4465:52912d4c (rows:hash). Find the change that altered results.
+FAIL C3 sample s1_b18_wo5 (offshore wind 5 GW, solar 1, battery 18): drawn 4465:b6493a9d vs oracle 4465:4e8566d4 (rows:hash). Find the change that altered results.
+FAIL C3 sample s6_b30_w5 (onshore wind 5 GW, solar 6, battery 30): drawn 4465:3d48e2f9 vs oracle 4465:b7a5909f (rows:hash). Find the change that altered results.
+FAIL C3 sample s3_b22_wo6 (offshore wind 6 GW, solar 3, battery 22): drawn 4465:39886429 vs oracle 4465:77da0c4b (rows:hash). Find the change that altered results.
+FAIL C3 sample s2_b16_w6 (onshore wind 6 GW, solar 2, battery 16): drawn 4465:f03ff346 vs oracle 4465:6964c4c5 (rows:hash). Find the change that altered results.
+FAIL C3 sample s5_b10_wo8 (offshore wind 8 GW, solar 5, battery 10): drawn 4465:ff4ffc76 vs oracle 4465:b8e7ece6 (rows:hash). Find the change that altered results.
+FAIL C3 sample s4_b8_w8 (onshore wind 8 GW, solar 4, battery 8): drawn 4465:6ee325b3 vs oracle 4465:2483929c (rows:hash). Find the change that altered results.
+INFO regress ran in 488 s on /private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287b19fe1/scratchpad/wt-T061/deployment; browser /Users/daanwalter/Library/Caches/ms-playwright/chromium-1217/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing (chromium-1217, 147.0.7727.15) MISMATCH: browser chromium-1217 147.0.7727.15 is not the pinned chromium-1243 153.0.8010.12; perf thresholds and baselines were measured on the pinned build

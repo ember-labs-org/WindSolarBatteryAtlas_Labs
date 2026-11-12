@@ -1,0 +1,5 @@
+on viable 3785 | viable == (area>0 & cf_best>=0.20): True | cf_target == cf_best (rows with area): 4424 of 4424 | unclamped max |final_cf - target|: 0.0 | clamped 880 | viable without area 0 | max |final_cf - expected| 1.0000000000287557e-06
+off viable 1111 | viable == (area>0 & cf_best>=0.20): True | cf_target == cf_best (rows with area): 1324 of 1324 | unclamped max |final_cf - target|: 0.0 | clamped 146 | viable without area 0 | max |final_cf - expected| 1.0000000000287557e-06
+on_cf_best vs phase-1 best500_cf max abs diff 0.0
+on viable 3442 -> 3785 gain 344 lose 1 | headline median +3.82 p10 +1.22 p90 +8.37 | simulated median +2.63 p10 +0.00 p90 +6.68 | pw sim +4.16 | clamped 548 -> 880 | sim<20% 237 -> 330 | newly viable sim<20% 93 | median final_cf of viable 0.354 -> 0.382
+off viable 884 -> 1111 gain 230 lose 3 | headline median +0.14 p10 -2.40 p90 +1.45 | simulated median +0.04 p10 -2.32 p90 +1.35 | pw sim -0.22 | clamped 117 -> 146 | sim<20% 0 -> 1 | newly viable sim<20% 1 | median final_cf of viable 0.466 -> 0.450

@@ -1,0 +1,35 @@
+resource CSV vs 789b81a: columns 42 ; differing {'on_viable_area_km2': 3099, 'on_room_gw': 3099, 'off_viable_area_km2': 242, 'off_room_gw': 242}
+on_viable_area_km2 vs phase-1 area_ge_15 max abs diff 0.0
+area never shrinks: True
+on old: room_gw over viable 342.0 TW (5 MW/km2), viable 3442, viable with 0 area 0
+on 15% viab / 20% area: room_gw over viable 343.8 TW (5 MW/km2), viable 3988, viable with 0 area 59
+on 15% viab / 15% area: room_gw over viable 404.6 TW (5 MW/km2), viable 3988, viable with 0 area 0
+off old: room_gw over viable 30.3 TW (4 MW/km2), viable 884, viable with 0 area 0
+off 15% viab / 20% area: room_gw over viable 30.4 TW (4 MW/km2), viable 1186, viable with 0 area 42
+off 15% viab / 15% area: room_gw over viable 32.9 TW (4 MW/km2), viable 1186, viable with 0 area 0
+--rule p90 with the D-114 code: shipped pre-profile columns 27 string-identical 27 []
+offshore potential file columns ['location_id', 'latitude', 'longitude', 'fixed_gw', 'fixed_area_km2', 'floating_gw', 'floating_area_km2', 'fixed_ws7_gw']
+app offshore Potential (ESMAP, unchanged by D-114): viable offshore regions 1186 ; no ESMAP row 49 ; fixed_gw == 0 259 ; fixed+floating == 0 287
+  same check on the old data: viable 884; no ESMAP row 27; fixed_gw == 0 155
+  same check on the 20% data: viable 1111; no ESMAP row 47; fixed_gw == 0 199
+byte comparison of the D-114 run outputs with the 789b81a (attempt 2) run outputs:
+configs.json IDENTICAL
+daily_cf_2024.parquet IDENTICAL
+sample_timestamps.json IDENTICAL
+summary_w1.parquet IDENTICAL
+summary_w2.parquet IDENTICAL
+summary_w3.parquet IDENTICAL
+summary_w4.parquet IDENTICAL
+summary_w5.parquet IDENTICAL
+summary_w6.parquet IDENTICAL
+summary_w8.parquet IDENTICAL
+summary_wo1.parquet IDENTICAL
+summary_wo2.parquet IDENTICAL
+summary_wo3.parquet IDENTICAL
+summary_wo4.parquet IDENTICAL
+summary_wo5.parquet IDENTICAL
+summary_wo6.parquet IDENTICAL
+summary_wo8.parquet IDENTICAL
+voronoi_wind_resource.csv DIFFERS
+wind_profiles_on.parquet IDENTICAL
+wind_profiles_off.parquet IDENTICAL

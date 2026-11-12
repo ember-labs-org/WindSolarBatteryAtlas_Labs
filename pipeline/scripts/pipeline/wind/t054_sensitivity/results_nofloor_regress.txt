@@ -1,0 +1,30 @@
+PASS C3 cap_s5_b8: 4465 rows identical
+PASS C3 cap_s1_b0: 4465 rows identical
+PASS C3 cap_s8_b8: 4465 rows identical
+PASS C3 cap_s10_b16: 4465 rows identical
+PASS C3 cap_s20_b36: 4465 rows identical
+FAIL C3 cap_s5_b8_w2on: 435 of 4465 rows differ (got 4465); first: oracle 1000|0.7177 vs now 1000|0.7675. Find the change that altered results; never re-record 
+FAIL C3 lcoe_t90: 283 of 4465 rows differ (got 4465); first: oracle 1013|6|0|on|16|70.53|1|0.9125|0.00|125.75|70.53 vs now 1013|6|0|on|16|70.53|1|0.9125|0.00|22
+FAIL C3 lcoe_t80: 282 of 4465 rows differ (got 4465); first: oracle 1013|6|0|on|12|68.15|1|0.8478|0.00|125.75|68.15 vs now 1013|6|0|on|12|68.15|1|0.8478|0.00|22
+FAIL C3 lcoe_t80_onshore: 266 of 4465 rows differ (got 4465); first: oracle 1013|6|0|on|12|68.15|1|0.8478|0.00|125.75|68.15 vs now 1013|6|0|on|12|68.15|1|0.8478
+FAIL C3 lcoe_t80_localwacc: 284 of 4465 rows differ (got 4465); first: oracle 1013|6|0|on|14|77.13|1|0.8960|0.00|142.00|77.13 vs now 1013|6|0|on|14|77.13|1|0.89
+FAIL C3 lcoe_cf_default: 19 of 4465 rows differ (got 4465); first: oracle 1195|9|0|on|18|0.9918|87.38|1|1 vs now 1195|7|1|on|18|0.9932|88.80|1|1. Find the chang
+FAIL C3 lcoe_t80_local_y2035: 274 of 4465 rows differ (got 4465); first: oracle 1013|6|0|on|12|42.20|1|0.8478|0.00|80.00|42.20 vs now 1013|6|0|on|12|42.20|1|0.8
+FAIL C3b ?worker=0 onshore-only fallback: 266 of 4465 rows differ from lcoe_t80_onshore. With offshore excluded, the main-thread fallback must search the full g
+FAIL C3b ?worker=0 fallback lcoe_t80_localwacc: 284 of 4465 rows differ from lcoe_t80_localwacc. With local costs the main-thread fallback must give the same an
+FAIL C3b ?worker=0 fallback lcoe_t80_local_y2035: 274 of 4465 rows differ from lcoe_t80_local_y2035. With local costs the main-thread fallback must give the sam
+FAIL C3b ?worker=0 fallback: 282 of 4465 rows differ from lcoe_t80. The main-thread fallback must load the full grid and search it like the worker.
+FAIL C3 sample s5_b20_wo1 (offshore wind 1 GW, solar 5, battery 20): drawn 4465:44ba1f6a vs oracle 4465:41f6ff8f (rows:hash). Find the change that altered resul
+FAIL C3 sample s8_b34_w1 (onshore wind 1 GW, solar 8, battery 34): drawn 4465:a2d67baf vs oracle 4465:72b0a260 (rows:hash). Find the change that altered results
+FAIL C3 sample s9_b0_wo2 (offshore wind 2 GW, solar 9, battery 0): drawn 4465:edbfe298 vs oracle 4465:d7b88ac2 (rows:hash). Find the change that altered results
+FAIL C3 sample s10_b16_w2 (onshore wind 2 GW, solar 10, battery 16): drawn 4465:5c10832c vs oracle 4465:ada25e59 (rows:hash). Find the change that altered resul
+FAIL C3 sample s2_b30_wo3 (offshore wind 3 GW, solar 2, battery 30): drawn 4465:e19d3a8d vs oracle 4465:a83ababb (rows:hash). Find the change that altered resul
+FAIL C3 sample s0_b16_w3 (onshore wind 3 GW, solar 0, battery 16): drawn 4465:3c0a126c vs oracle 4465:433a2679 (rows:hash). Find the change that altered results
+FAIL C3 sample s5_b20_wo4 (offshore wind 4 GW, solar 5, battery 20): drawn 4465:2fdeab8c vs oracle 4465:3c6615a4 (rows:hash). Find the change that altered resul
+FAIL C3 sample s5_b24_w4 (onshore wind 4 GW, solar 5, battery 24): drawn 4465:52912d4c vs oracle 4465:1a1995f3 (rows:hash). Find the change that altered results
+FAIL C3 sample s1_b18_wo5 (offshore wind 5 GW, solar 1, battery 18): drawn 4465:4e8566d4 vs oracle 4465:7055cfac (rows:hash). Find the change that altered resul
+FAIL C3 sample s6_b30_w5 (onshore wind 5 GW, solar 6, battery 30): drawn 4465:b7a5909f vs oracle 4465:f4ccd9ed (rows:hash). Find the change that altered results
+FAIL C3 sample s3_b22_wo6 (offshore wind 6 GW, solar 3, battery 22): drawn 4465:77da0c4b vs oracle 4465:2955efd7 (rows:hash). Find the change that altered resul
+FAIL C3 sample s2_b16_w6 (onshore wind 6 GW, solar 2, battery 16): drawn 4465:6964c4c5 vs oracle 4465:a2cf2d1a (rows:hash). Find the change that altered results
+FAIL C3 sample s5_b10_wo8 (offshore wind 8 GW, solar 5, battery 10): drawn 4465:b8e7ece6 vs oracle 4465:a1790f49 (rows:hash). Find the change that altered resul
+FAIL C3 sample s4_b8_w8 (onshore wind 8 GW, solar 4, battery 8): drawn 4465:2483929c vs oracle 4465:a3579895 (rows:hash). Find the change that altered results.

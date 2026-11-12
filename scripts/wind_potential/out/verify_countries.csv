@@ -1,0 +1,33 @@
+iso3,territories,kind,country_file_gw,cells_eez_gw,eez_minus_country_file_gw,cells_in_atlas_country_gw,atlas_country_vs_country_file_pct
+GBR,United Kingdom,fixed,449.39,449.39,0.0,429.14,-4.5
+GBR,United Kingdom,floating,1379.5,1365.78,-13.72,1574.02,14.1
+NLD,Netherlands,fixed,207.1,207.1,0.0,322.32,55.6
+NLD,Netherlands,floating,0.42,0.42,0.0,1.36,224.6
+DEU,Germany,fixed,198.97,198.97,0.0,27.58,-86.1
+DEU,Germany,floating,0.06,0.06,0.0,0.0,-100.0
+NOR,Norway,fixed,59.85,59.85,0.0,150.08,150.8
+NOR,Norway,floating,1416.63,1416.63,0.0,2403.86,69.7
+USA,United States; Alaska (US); Hawaii,fixed,2474.56,2474.56,0.0,2396.42,-3.2
+USA,United States; Alaska (US); Hawaii,floating,6246.43,3523.41,-2723.02,3229.67,-48.3
+CHN,China,fixed,1321.15,1321.09,-0.06,1395.33,5.6
+CHN,China,floating,1108.12,1108.1,-0.02,1426.84,28.8
+JPN,Japan,fixed,129.4,129.37,-0.03,125.78,-2.8
+JPN,Japan,floating,1776.91,1776.79,-0.12,1804.97,1.6
+IND,India,fixed,91.12,91.12,-0.0,104.02,14.2
+IND,India,floating,82.46,82.46,0.0,80.18,-2.8
+BRA,Brazil,fixed,477.66,477.64,-0.01,487.16,2.0
+BRA,Brazil,floating,749.78,749.75,-0.03,770.69,2.8
+AUS,Australia,fixed,1572.19,1572.16,-0.04,1554.21,-1.1
+AUS,Australia,floating,3391.36,3391.32,-0.04,3375.27,-0.5
+VNM,Vietnam,fixed,261.05,261.03,-0.02,210.96,-19.2
+VNM,Vietnam,floating,338.32,338.29,-0.03,326.56,-3.5
+ZAF,South Africa,fixed,48.73,48.73,0.0,46.98,-3.6
+ZAF,South Africa,floating,851.52,851.52,-0.0,818.21,-3.9
+MEX,Mexico,fixed,402.04,402.04,0.0,418.33,4.1
+MEX,Mexico,floating,466.82,466.82,-0.0,499.57,7.0
+PHL,Philippines,fixed,18.75,18.74,-0.0,18.64,-0.6
+PHL,Philippines,floating,161.9,161.89,-0.02,153.59,-5.1
+CAN,Canada,fixed,2038.83,2038.83,-0.0,2041.01,0.1
+CAN,Canada,floating,7281.99,7281.99,0.0,7428.34,2.0
+ARG,Argentina,fixed,556.09,556.09,0.0,599.56,7.8
+ARG,Argentina,floating,1313.64,1313.64,-0.0,1337.36,1.8

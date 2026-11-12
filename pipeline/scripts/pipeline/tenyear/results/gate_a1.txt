@@ -1,0 +1,5 @@
+on: regions 4998, with profile shipped 4419 / rebuilt 4419; bit-identical True; max |diff| 0; mean CF 0.251158 vs 0.251158
+off: regions 4998, with profile shipped 1270 / rebuilt 1270; bit-identical True; max |diff| 0; mean CF 0.075186 vs 0.075186
+GATE A1 PASS
+on k rows 4419 csv finite 4419 both 4419 max |round(k,6)-csv| 0.0 range 0.6886 1.8 at cap 1.8 717 at 0.6 0 csv clamped 717
+off k rows 1270 csv finite 1270 both 1270 max |round(k,6)-csv| 0.0 range 0.6152 1.8 at cap 1.8 10 at 0.6 0 csv clamped 10

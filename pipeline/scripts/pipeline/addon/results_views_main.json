@@ -1,0 +1,148 @@
+{
+ "label": "main",
+ "site": "/private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287b19fe1/scratchpad/T058/wt-main/deployment",
+ "steps": [
+  {
+   "step": "first map (capacity)",
+   "bytesMb": 15.12,
+   "files": {
+    "/index.html": 116904,
+    "/js/parquet_wasm_bg.wasm": 6626292,
+    "/css/style.css": 46363,
+    "/data/world.geojson": 725557,
+    "/js/app.js": 290676,
+    "/js/data.js": 61488,
+    "/js/map.js": 133812,
+    "/css/tailwind.css": 26936,
+    "/js/samples.js": 28953,
+    "/js/constants.js": 5513,
+    "/js/tooltip.js": 9553,
+    "/js/utils.js": 4533,
+    "/js/tour.js": 28383,
+    "/js/parquet_wasm.js": 201542,
+    "/js/apache-arrow.js": 418700,
+    "/js/voronoi-canvas.js": 54436,
+    "/js/basemap.js": 10997,
+    "/js/workers/lcoe-worker.js": 41801,
+    "/data/voronoi_wind_resource.csv": 1380636,
+    "/data/configs.json": 394024,
+    "/data/voronoi_overlapping_countries.csv": 252202,
+    "/data/summary_w0.parquet": 4259915
+   },
+   "main": {
+    "usedMb": 23.4,
+    "backingMb": 37.6,
+    "embedderMb": 2.3
+   },
+   "workers": [],
+   "renderer": {
+    "rssMb": 307,
+    "footprintMb": 186
+   }
+  },
+  {
+   "step": "cost view (LCOE, full grid)",
+   "bytesMb": 58.81,
+   "files": {
+    "/js/workers/lcoe-worker.js": 83602,
+    "/data/voronoi_diesel_prices.csv": 1086627,
+    "/data/voronoi_gas_prices.csv": 329782,
+    "/js/data.js": 30744,
+    "/data/summary_w0.parquet": 4259915,
+    "/js/parquet_wasm.js": 100771,
+    "/js/parquet_wasm_bg.wasm": 6626292,
+    "/js/apache-arrow.js": 209350,
+    "/data/summary_w1.parquet": 3056965,
+    "/data/summary_w2.parquet": 3571316,
+    "/data/summary_w3.parquet": 3573172,
+    "/data/summary_w4.parquet": 3571909,
+    "/data/summary_w5.parquet": 3558780,
+    "/data/summary_w6.parquet": 3572638,
+    "/data/summary_w8.parquet": 3578498,
+    "/data/summary_wo1.parquet": 2812345,
+    "/data/summary_wo2.parquet": 3098856,
+    "/data/summary_wo3.parquet": 3119466,
+    "/data/summary_wo4.parquet": 3120188,
+    "/data/summary_wo5.parquet": 3117965,
+    "/data/summary_wo6.parquet": 3158891,
+    "/data/summary_wo8.parquet": 3171479
+   },
+   "main": {
+    "usedMb": 37.2,
+    "backingMb": 37.6,
+    "embedderMb": 3
+   },
+   "workers": [
+    {
+     "url": "/js/workers/lcoe-worker.js",
+     "usedMb": 4.6,
+     "backingMb": 57.6,
+     "embedderMb": 0.6
+    }
+   ],
+   "renderer": {
+    "rssMb": 375,
+    "footprintMb": 299
+   }
+  },
+  {
+   "step": "capacity, onshore 0 + offshore 1 (offshore levels 7)",
+   "bytesMb": 20.4,
+   "files": {
+    "/js/parquet_wasm_bg.wasm": 13252584,
+    "/js/workers/lcoe-worker.js": 83602,
+    "/js/data.js": 61488,
+    "/data/summary_w2.parquet": 3571316,
+    "/js/parquet_wasm.js": 201542,
+    "/js/apache-arrow.js": 418700,
+    "/data/summary_wo1.parquet": 2812345
+   },
+   "main": {
+    "usedMb": 36.9,
+    "backingMb": 27.9,
+    "embedderMb": 4.5
+   },
+   "workers": [
+    {
+     "url": "/js/workers/lcoe-worker.js",
+     "usedMb": 4.6,
+     "backingMb": 57.6,
+     "embedderMb": 0.6
+    }
+   ],
+   "renderer": {
+    "rssMb": 330,
+    "footprintMb": 312
+   }
+  },
+  {
+   "step": "Sample Days",
+   "bytesMb": 14.92,
+   "files": {
+    "/js/workers/daily-loader.js": 3827,
+    "/js/parquet_wasm_bg.wasm": 6626292,
+    "/js/parquet_wasm.js": 100771,
+    "/data/daily_cf_2024.parquet": 7981016,
+    "/js/apache-arrow.js": 209350
+   },
+   "main": {
+    "usedMb": 64.8,
+    "backingMb": 47.9,
+    "embedderMb": 4.7
+   },
+   "workers": [
+    {
+     "url": "/js/workers/lcoe-worker.js",
+     "usedMb": 2,
+     "backingMb": 57.6,
+     "embedderMb": 0
+    }
+   ],
+   "renderer": {
+    "rssMb": 290,
+    "footprintMb": 317
+   }
+  }
+ ],
+ "errors": []
+}

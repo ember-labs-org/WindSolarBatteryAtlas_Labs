@@ -1,0 +1,34 @@
+.DS_Store
+.vite/
+.claude/*
+!.claude/agents/
+!.claude/hooks/
+!.claude/settings.json
+
+# Local workspaces and archives (not for GitHub)
+workspace/
+output/
+deployment/OLD/
+
+# Node tooling
+node_modules/
+.vite/
+
+# No build step: the site is served straight from deployment/. Kept ignored so a
+# stray local build tree is never committed.
+dist/
+build/
+.wrangler/
+# large or machine-specific
+deployment/data/samples
+deployment/data/samples_upstream_2d
+workspace/input_data/*.parquet
+workspace/input_data/wind/gwa4_*.tif
+workspace/input_data/wind/depth_*.tif
+workspace/outputs/wind/*.npz
+workspace/outputs/wind/*.npy
+team/logs/
+team/evidence/raw/iea-gecm-2025/
+
+# Python and numba caches (run3d writes .nbi/.nbc next to the code)
+__pycache__/

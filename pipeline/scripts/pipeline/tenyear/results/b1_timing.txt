@@ -1,0 +1,6 @@
+/Users/daanwalter/wind-atlas-T064/logs/b1_addon.log:       56.55 real       218.42 user         2.64 sys
+/Users/daanwalter/wind-atlas-T064/logs/b1_addon.log:           382290176  peak memory footprint
+/Users/daanwalter/wind-atlas-T064/logs/b1_addon.log:       30.82 real       123.75 user         1.79 sys
+/Users/daanwalter/wind-atlas-T064/logs/b1_addon.log:           377047296  peak memory footprint
+/Users/daanwalter/wind-atlas-T064/logs/b1_dense.log:      318.04 real      1357.31 user        15.20 sys
+/Users/daanwalter/wind-atlas-T064/logs/b1_dense.log:           612797120  peak memory footprint

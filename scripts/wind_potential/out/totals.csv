@@ -1,0 +1,3 @@
+kind,country_file_gw,polygon_gw,duplicate_gw,artifact_gw,other_unallocated_gw,cells_gw,esmap_area_skm,cells_equal_area_km2,cells_with_potential
+fixed,20416.05,20416.05,110.36,0.00,0.00,20305.70,5617077,5578326,1003
+floating,51067.11,49578.35,74.35,1234.30,0.00,48269.70,13323569,12850020,913

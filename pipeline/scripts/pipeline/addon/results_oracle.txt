@@ -1,0 +1,28 @@
+lcoe_t90: base digest EQUALS the app's add-on-off draw (4465 rows)
+    with the add-on: {'wind_mix_winners': 48, 'large_winners': 29, 'large_interpolated': 20, 'nowind_only': 870, 'maxconfig_only': 85, 'fallback': 0, 'changed': 1110, 'near_tie': 0, 'rows': 4465}
+    interpolated winners checked by bisection: 20, below the true minimum: 0
+lcoe_t99: base digest EQUALS the app's add-on-off draw (4465 rows)
+    with the add-on: {'wind_mix_winners': 145, 'large_winners': 259, 'large_interpolated': 189, 'nowind_only': 1118, 'maxconfig_only': 46, 'fallback': 0, 'changed': 1620, 'near_tie': 0, 'rows': 4465}
+    interpolated winners checked by bisection: 189, below the true minimum: 0
+lcoe_t80: base digest EQUALS the app's add-on-off draw (4465 rows)
+    with the add-on: {'wind_mix_winners': 18, 'large_winners': 9, 'large_interpolated': 5, 'nowind_only': 603, 'maxconfig_only': 113, 'fallback': 0, 'changed': 811, 'near_tie': 0, 'rows': 4465}
+    interpolated winners checked by bisection: 5, below the true minimum: 0
+lcoe_t80_onshore: base digest EQUALS the app's add-on-off draw (4465 rows)
+    with the add-on: {'wind_mix_winners': 0, 'large_winners': 23, 'large_interpolated': 15, 'nowind_only': 673, 'maxconfig_only': 0, 'fallback': 0, 'changed': 696, 'near_tie': 0, 'rows': 4465}
+    interpolated winners checked by bisection: 15, below the true minimum: 0
+lcoe_t80_backup: base digest EQUALS the app's add-on-off draw (4399 rows)
+    with the add-on: {'wind_mix_winners': 16, 'large_winners': 4, 'large_interpolated': 2, 'nowind_only': 595, 'maxconfig_only': 113, 'fallback': 0, 'changed': 798, 'near_tie': 0, 'rows': 4399}
+    interpolated winners checked by bisection: 2, below the true minimum: 0
+lcoe_t80_localwacc: base digest EQUALS the app's add-on-off draw (4465 rows)
+    with the add-on: {'wind_mix_winners': 20, 'large_winners': 9, 'large_interpolated': 5, 'nowind_only': 602, 'maxconfig_only': 113, 'fallback': 0, 'changed': 811, 'near_tie': 0, 'rows': 4465}
+    interpolated winners checked by bisection: 5, below the true minimum: 0
+lcoe_cf_default: base digest EQUALS the app's add-on-off draw (4465 rows)
+    with the add-on: {'wind_mix_winners': 52, 'large_winners': 0, 'large_interpolated': 0, 'nowind_only': 0, 'maxconfig_only': 0, 'fallback': 0, 'changed': 52, 'near_tie': 0, 'rows': 4465}
+    interpolated winners checked by bisection: 0, below the true minimum: 0
+lcoe_cf_400: base digest EQUALS the app's add-on-off draw (4465 rows)
+    with the add-on: {'wind_mix_winners': 185, 'large_winners': 575, 'large_interpolated': 0, 'nowind_only': 0, 'maxconfig_only': 0, 'fallback': 0, 'changed': 760, 'near_tie': 0, 'rows': 4465}
+    interpolated winners checked by bisection: 0, below the true minimum: 0
+lcoe_t80_local_y2035: base digest EQUALS the app's add-on-off draw (4465 rows)
+    with the add-on: {'wind_mix_winners': 14, 'large_winners': 10, 'large_interpolated': 5, 'nowind_only': 595, 'maxconfig_only': 142, 'fallback': 0, 'changed': 842, 'near_tie': 0, 'rows': 4465}
+    interpolated winners checked by bisection: 5, below the true minimum: 0
+wrote /private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287b19fe1/scratchpad/wt-T058/checks/addon_oracle.json.gz (3.3 MB)

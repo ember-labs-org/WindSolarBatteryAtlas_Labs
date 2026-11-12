@@ -1,0 +1,23 @@
+regions gaining onshore or offshore wind: 493 people 840 m
+target 80%: cheapest build changed in 1 regions (all in the gaining set: True); gaining regions whose cheapest build now has wind: 13 of 493 (76 m people); class changes: {('no_gain', 'wind_cheaper'): np.int64(1)}
+   LCOE change where the build changed: median -6.11, min -6.11, max -6.11 $/MWh; people 18 m
+target 90%: cheapest build changed in 2 regions (all in the gaining set: True); gaining regions whose cheapest build now has wind: 14 of 493 (76 m people); class changes: {('no_gain', 'wind_cheaper'): np.int64(2)}
+   LCOE change where the build changed: median -6.35, min -10.83, max -1.87 $/MWh; people 19 m
+   wind share of those builds: wind GW {'1:on': 12, '2:on': 2}
+   their final CF (on/off) median 0.30776749999999997 0.095362
+target 95%: cheapest build changed in 5 regions (all in the gaining set: True); gaining regions whose cheapest build now has wind: 18 of 493 (84 m people); class changes: {('no_gain', 'wind_cheaper'): np.int64(5)}
+   LCOE change where the build changed: median -1.65, min -8.97, max -0.34 $/MWh; people 22 m
+80
+ location_id country_name    lat     lon        pop old_build  old_lcoe t80_build  t80_lcoe  on_final_cf  off_final_cf
+        2267        China 31.008 105.897 18466889.0   10|0|18    115.08 8|1:on|14    108.97        0.136           NaN
+90
+ location_id country_name    lat     lon        pop old_build  old_lcoe  t90_build  t90_lcoe  on_final_cf  off_final_cf
+         995      Myanmar 18.778  93.671   308723.0    8|0|16     85.18  6|1:on|14     83.31        0.118         0.158
+        2267        China 31.008 105.897 18466889.0   15|0|20    141.49 10|2:on|16    130.66        0.136           NaN
+95
+ location_id country_name    lat     lon        pop old_build  old_lcoe  t95_build  t95_lcoe  on_final_cf  off_final_cf
+         995      Myanmar 18.778  93.671   308723.0   11|0|18    104.39  8|1:on|16     95.46        0.118         0.158
+        2267        China 31.008 105.897 18466889.0   19|0|26    171.73 10|3:on|30    162.76        0.136           NaN
+        2682     Thailand  8.782  98.640  2247138.0    9|0|14     84.17  6|1:on|16     82.52        0.143         0.171
+        3134        Congo -2.558  12.044   174472.0   11|0|18    102.89  9|1:on|16    102.55        0.076           NaN
+        4701      Myanmar 12.576  98.403   507008.0    9|0|16     87.34  7|1:on|14     85.77        0.128         0.159

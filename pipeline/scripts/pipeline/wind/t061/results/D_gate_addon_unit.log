@@ -1,0 +1,26 @@
+PASS addon-unit addonLcoe equals computeLcoeMetrics (worker) and computeLcoeMetricsFast (app.js) bit for bit – 16 rows (combined, large interpolated and simulated; backup off/on, gas on/off); worst |diff| 0
+PASS addon-unit the combined branch differs from pricing all wind as onshore – 118.05520508122649 vs 74.90383301255733
+PASS addon-unit tie: an add-on row equal to the dense best does not replace it – bestLcoe 87.54361802741664
+PASS addon-unit an add-on row strictly cheaper than the dense best replaces it – j 1
+PASS addon-unit tie: the fallback keeps the dense build on equal CF and LCOE – fb null
+PASS addon-unit tie between add-on rows: the first in j order wins – best j 0
+PASS addon-unit first point meets T: the simulated point, for best and noWind – {"j":0,"b":36,"i":false}
+PASS addon-unit large rows never enter the fallback / max-config – "wind_mix"
+PASS addon-unit interpolated b* and its grid point are both priced; the cheaper wins – interpolated 411.6372760172224, grid 535.4950248471479
+PASS addon-unit interpolated build: b* by the guarded linear rule, CF = T, curtailment on the same fraction – b* 60.06001069664383
+PASS addon-unit fractional battery from interpolation – 60.06001069664383
+PASS addon-unit fractional battery priced at b* x 1e6 kWh and CF = T, equal to computeLcoeMetrics – 411.6372760172224
+PASS addon-unit every grid point meeting T competes, after the interpolated build, in battery order – 44.004i,48.000,96.000
+PASS addon-unit only a strictly cheaper candidate replaces the running best
+PASS addon-unit T above the top of the battery axis: no large candidate – null
+PASS addon-unit guard at the upper point: b* = b_hi exactly (T + guard passes c_hi) – best batt 96, interpolated false; 495.0692004827829 vs 495.0581973639609
+PASS addon-unit guard at the upper point: the interpolated candidate has b* = b_hi exactly and comes before the grid point – [[96,0.9,true],[96,0.9000200033187866,false]]
+PASS addon-unit interpolateBattery caps T + guard at c_hi and returns b_hi exactly – {"b":96,"frac":1}
+PASS addon-unit budget mode: large rows at simulated points only – {"best":96,"cheap":36}
+PASS addon-unit offshore included: wind_mix rows reach the fallback
+PASS addon-unit offshore excluded: no wind_mix row anywhere; large rows still used – {"best":"large","fb":null}
+PASS addon-unit offshore excluded (budget): only large rows
+PASS addon-unit backup on: full baseload, backup on 1 - T, cheaper of diesel and gas (independent formula) – 378.1517530068493 vs 378.1517530068493
+PASS addon-unit backup on: large rows still searched in target mode – {"b":60.06001069664383,"i":true}
+PASS addon-unit CSR over the matrix location order: offsets and ascending config per location – 0,3,5 / 0,1,2,0,1
+PASS addon-unit 25/25

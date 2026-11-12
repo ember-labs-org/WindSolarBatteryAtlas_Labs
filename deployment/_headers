@@ -1,0 +1,28 @@
+# Cache headers for the Solar + Wind + Battery Atlas, in Cloudflare Pages format.
+# The site is served as static files straight from deployment/ (the Pages output
+# directory, with no build step), so this file already sits at the publish root.
+#
+# Brotli compression, the global CDN and HTTP/2/3 are automatic on Cloudflare
+# Pages and need no header here.
+#
+# JS/CSS ship with fixed (non-hashed) filenames, so we revalidate rather than
+# cache them immutably: a redeploy must never be shadowed by a stale 1-year cache.
+# Host-set ETags make revalidation cheap (304 Not Modified when unchanged).
+
+/*
+  Cache-Control: public, max-age=600, must-revalidate
+
+# HTML entry points: always revalidate so a new deploy shows up immediately.
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/scrollytelling/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/scrollytelling/classic.html
+  Cache-Control: public, max-age=0, must-revalidate
+/scrollytelling/story.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Data (summary parquet slices, the Complementarity CSV, voronoi CSVs, world.geojson): stable,
+# day-long cache. Versioned CSVs already add their own ?v= busting.
+/data/*
+  Cache-Control: public, max-age=86400

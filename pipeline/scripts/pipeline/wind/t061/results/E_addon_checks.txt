@@ -1,0 +1,7 @@
+wind_mix regions 1171 -> 1171
+wind_mix regions whose rows change: 33 (expected 33) -> PASS
+addon_large identical: True
+addon.json sets[0] keys that differ: ['sha256'] ; other sets identical: True ; top-level other keys identical: True
+IDENTICAL voronoi_local_capex.csv
+IDENTICAL voronoi_wacc_wind.csv
+IDENTICAL voronoi_wacc.csv

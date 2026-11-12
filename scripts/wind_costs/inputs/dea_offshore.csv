@@ -1,0 +1,36 @@
+parameter,value,unit,source
+devex_fixed,0.20,mEUR2023/MW,DEA table 7 (offshore and far shore bottom-fixed)
+devex_floating,0.25,mEUR2023/MW,DEA table 7 (offshore and far shore floating)
+turbines,1.35,mEUR2023/MW,DEA table 7
+found_fixed_base,0.45,mEUR2023/MW,DEA table 7
+found_fixed_per_m,0.005,mEUR2023/MW per m depth,DEA table 7 (5 kEUR/MW/m)
+found_floating,2.65,mEUR2023/MW,DEA table 7
+array,0.05,mEUR2023/MW,DEA table 7 (offshore and far shore)
+substation_ac,0.65,mEUR2023/MW,DEA table 7
+substation_dc,1.20,mEUR2023/MW,DEA table 7
+cable_ac_per_km,0.00505,mEUR2023/MW per km,DEA table 7 (5.05 kEUR/MW/km)
+cable_dc_per_km,0.00360,mEUR2023/MW per km,DEA table 7 (3.60 kEUR/MW/km)
+eur2023_per_eur2020,1.133,ratio,DEA table 6 (2020 = 113.3 with 2023 = 100)
+sheet_fixed_ac_2025,2.780229479258605,mEUR2020/MW,data sheet 21 Offshore Wind AC Fixed (30 m 60 km)
+sheet_fixed_ac_2030,2.3931344873524045,mEUR2020/MW,data sheet 21 Offshore Wind AC Fixed (cross-check only)
+sheet_float_ac_2030,3.5581333707509337,mEUR2020/MW,data sheet 21 Offshore Wind AC Floating (cross-check only)
+sheet_fixed_ac_2035,2.248224304630978,mEUR2020/MW,data sheet 21 Offshore Wind AC Fixed
+sheet_fixed_ac_2050,1.9856929919992503,mEUR2020/MW,data sheet 21 Offshore Wind AC Fixed
+sheet_fixed_dc_2025,3.618711385701677,mEUR2020/MW,data sheet 21 Far shore Wind DC Fixed (40 m 175 km)
+sheet_fixed_dc_2035,3.0318161006067985,mEUR2020/MW,data sheet 21 Far shore Wind DC Fixed
+sheet_fixed_dc_2050,2.683628780756598,mEUR2020/MW,data sheet 21 Far shore Wind DC Fixed
+sheet_float_ac_2035,2.8999974231767514,mEUR2020/MW,data sheet 21 Offshore Wind AC Floating (75 m 35 km)
+sheet_float_ac_2050,2.2536291682379885,mEUR2020/MW,data sheet 21 Offshore Wind AC Floating
+sheet_float_dc_2035,3.6518179456730175,mEUR2020/MW,data sheet 21 Far shore Wind DC Floating (75 m 150 km)
+sheet_float_dc_2050,2.9236609293717097,mEUR2020/MW,data sheet 21 Far shore Wind DC Floating
+sheet_float_ac_ref_km,35,km,data sheet 21 Offshore Wind AC Floating
+sheet_float_dc_ref_km,150,km,data sheet 21 Far shore Wind DC Floating
+sheet_fom_fixed_2025,44000,EUR2020/MW/yr,data sheet 21 Offshore Wind AC Fixed (same in DC Fixed)
+sheet_fom_fixed_2035,32000,EUR2020/MW/yr,data sheet 21 Offshore Wind AC Fixed
+sheet_fom_fixed_2050,28000,EUR2020/MW/yr,data sheet 21 Offshore Wind AC Fixed
+sheet_fom_float_2035,42000,EUR2020/MW/yr,data sheet 21 Offshore Wind AC Floating
+sheet_fom_float_2050,28000,EUR2020/MW/yr,data sheet 21 Offshore Wind AC Floating
+t7_fom_float_over_fixed_2025,2.0,ratio,DEA table 7 (100000 vs 50000 EUR/MW/yr)
+sheet_fom_onshore_2025,17386.63391824554,EUR2020/MW/yr,data sheet 20 Onshore turbines
+sheet_fom_onshore_2030,16662.66796409161,EUR2020/MW/yr,data sheet 20 Onshore turbines (used for 2035; no 2035 column)
+sheet_fom_onshore_2050,15602.06928231802,EUR2020/MW/yr,data sheet 20 Onshore turbines

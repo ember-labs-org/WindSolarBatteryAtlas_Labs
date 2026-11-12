@@ -1,0 +1,5 @@
+site_group,depth_m,distance_km,basis
+China,21,24,IRENA fig 4.2 published 2025 capacity-weighted average
+Europe,39,27,IRENA fig 4.2 published 2025 capacity-weighted average
+Other,35,18,IRENA fig 4.2 published 2025 capacity-weighted average (rest of the world)
+Global,26.44,24.17,derived: capacity-weighted average of all 29 fig 4.2 projects commissioned in 2025 (9039.5 MW)

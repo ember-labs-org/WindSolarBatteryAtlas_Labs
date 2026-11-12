@@ -1,0 +1,46 @@
+99 bound spans; 43 with a changed value
+t1.cheaper.demand.90 [pct] shown "65%": 0.647357842514 -> 0.690476058606
+t1.only.demand.90 [pct] shown "18%": 0.178659724489 -> 0.178970864082
+t2.multLow [int] shown "20": 20.4518195081 -> 20.5431316946
+t2.mult [int] shown "37": 36.9517545203 -> 39.9688590147
+t4.medWind.n50p.90 [usd] shown "$77": 76.7756368886 -> 73.0608844868
+t1.cheaper.demand.90 [pct] shown "65%": 0.647357842514 -> 0.690476058606
+t1.only.demand.90 [pct] shown "18%": 0.178659724489 -> 0.178970864082
+t1.windBoth.demand.90 [usd] shown "$79": 79.0766254792 -> 73.1591365392
+t1.cut.demand.90 [pct] shown "26%": 0.258393982743 -> 0.313890096523
+t1.cut.demand.50 [pct] shown "33%": 0.334714220238 -> 0.384885342185
+t1.noViable.people [pct] shown "34%": 0.339720873474 -> 0.217773559398
+nv.India.cells [int] shown "43": 43 -> 35
+nv.India.speed [d1] shown "4.8": 4.84 -> 4.74
+nv.India.cf [pct] shown "11%": 0.1078 -> 0.102696
+t1.cheaper.people.90 [pct] shown "46%": 0.462369077706 -> 0.56397838015
+t1.only.people.90 [pct] shown "6%": 0.058274911795 -> 0.0582978658103
+t1.cut.people.90 [pct] shown "6%": 0.0590712158983 -> 0.102686990078
+t1on.cheaper.demand.90 [pct] shown "64%": 0.640867928832 -> 0.689937831602
+t2.multLow [int] shown "20": 20.4518195081 -> 20.5431316946
+t2.mult [int] shown "37": 36.9517545203 -> 39.9688590147
+t2.total.pwh [r10] shown "1,180": 1175.80981732 -> 1271.81448964
+t2.on5.twh [pwh] shown "1,089": 1089426.13443 -> 1182630.63769
+t2.offFixed.twh [pwh] shown "86": 86383.6828967 -> 89183.8519579
+t2.cover.world [pct] shown "59%": 0.587940297644 -> 0.664814271614
+t2.cover.n45p [pct] shown "95%": 0.950768920269 -> 0.95111639709
+t2.cover.s15_0 [pct] shown "29%": 0.292589093006 -> 0.461306992539
+t2.cover.n0_15 [pct] shown "53%": 0.527007348745 -> 0.663712761468
+t4.withWind.n50p.90 [pct1] shown "99.9%": 0.999315868245 -> 0.999803477675
+t4.medWind.n50p.90 [usd] shown "$77": 76.7756368886 -> 73.0608844868
+t4.medWind.world.90 [usd] shown "$77": 76.9322835848 -> 73.3630009421
+t4.cut.n45p.80 [pct] shown "58%": 0.584190765839 -> 0.621189240716
+t4.windBoth.n45p.80 [usd] shown "$64": 64.259251082 -> 58.5414985854
+t4c.UK.medWind.90 [usd] shown "$76": 76.4822067374 -> 75.9620575142
+t4c.DE.medWind.90 [usd] shown "$80": 79.6714646857 -> 75.6977828396
+t4c.US.medWind.90 [usd] shown "$73": 73.1059913749 -> 69.4705752145
+t4c.ES.medWind.90 [usd] shown "$83": 83.4578178402 -> 79.6908752281
+t5.windBoth.demand.2026 [usd] shown "$79": 79.0766254792 -> 73.1591365392
+t5.windBoth.demand.2050 [usd] shown "$41": 40.554928371 -> 37.1781478918
+t5.cutMin [pctnum] shown "23": 0.234462193368 -> 0.269701277707
+t5.cutMax [pct] shown "26%": 0.264444532801 -> 0.32569009389
+t5.cheaperMin [pctnum] shown "61": 0.613643357617 -> 0.668531313522
+t5.cheaperMax [pct] shown "65%": 0.651881507431 -> 0.695910517863
+t5.only.demand.2050 [pct] shown "18%": 0.178659724489 -> 0.178970864082
+
+all summary values: 644; changed 367

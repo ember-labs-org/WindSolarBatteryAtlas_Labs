@@ -1,0 +1,3844 @@
+location_id,territory,sovereign,kind,wind_class,gw,area_km2
+961,Canada,Canada,fixed,ws7,0.31447,93.580
+961,Canada,Canada,fixed,ws8,0.01800,4.059
+961,Canada,Canada,floating,ws7,2.70502,902.027
+961,Canada,Canada,floating,ws8,0.61786,155.136
+862,Russia,Russia,fixed,ws7,2.07017,690.082
+862,Russia,Russia,fixed,ws8,86.42487,21606.057
+862,Russia,Russia,floating,ws8,40.52278,10130.956
+251,Cook Islands,New Zealand,fixed,ws7,0.05706,19.021
+251,Fiji,Fiji,fixed,ws7,10.32804,3442.668
+251,French Polynesia,France,fixed,ws7,6.56688,2188.991
+251,New Zealand,New Zealand,fixed,ws7,0.14690,48.968
+251,Niue,New Zealand,fixed,ws7,0.02448,8.157
+251,Tonga,Tonga,fixed,ws7,8.76165,2920.566
+251,New Zealand,New Zealand,fixed,ws8,5.28249,1320.625
+251,Cook Islands,New Zealand,floating,ws7,1.44934,483.113
+251,Fiji,Fiji,floating,ws7,119.98678,39995.597
+251,French Polynesia,France,floating,ws7,31.11400,10371.330
+251,New Zealand,New Zealand,floating,ws7,9.89543,3298.471
+251,Niue,New Zealand,floating,ws7,0.68706,229.017
+251,Samoa,Samoa,floating,ws7,0.13746,45.819
+251,Tonga,Tonga,floating,ws7,118.18952,39396.514
+251,Wallis and Futuna,France,floating,ws7,0.43466,144.889
+251,New Zealand,New Zealand,floating,ws8,262.90793,65727.062
+2287,Canada,Canada,fixed,ws7,16.14569,5242.456
+2287,Canada,Canada,floating,ws7,34.63912,11007.526
+845,United States,United States,fixed,ws7,20.57870,6840.829
+845,United States,United States,fixed,ws8,20.97739,5228.861
+845,Alaska (US),United States,floating,ws8,11.25962,2784.708
+2730,United States,United States,fixed,ws7,27.52785,9150.894
+2730,United States,United States,fixed,ws8,14.03321,3497.942
+2730,Alaska (US),United States,floating,ws7,0.00353,1.177
+2730,Alaska (US),United States,floating,ws8,7.58705,1876.415
+1561,Russia,Russia,fixed,ws7,10.56742,3522.375
+1561,Russia,Russia,fixed,ws8,19.64881,4912.248
+1561,Russia,Russia,floating,ws7,4.65830,1552.769
+1561,Russia,Russia,floating,ws8,123.94027,30987.472
+2059,Canada,Canada,fixed,ws7,0.20625,66.428
+2059,Canada,Canada,fixed,ws8,0.01935,4.703
+2059,Canada,Canada,floating,ws7,24.67155,8232.377
+2059,Canada,Canada,floating,ws8,0.70033,175.845
+2135,Canada,Canada,fixed,ws7,0.62545,194.729
+2135,Canada,Canada,fixed,ws8,0.21913,51.261
+2135,Canada,Canada,floating,ws7,4.04962,1351.274
+2135,Canada,Canada,floating,ws8,1.56834,393.791
+3364,New Zealand,New Zealand,fixed,ws7,5.35460,1784.871
+3364,New Zealand,New Zealand,fixed,ws8,4.72177,1180.436
+3364,New Zealand,New Zealand,floating,ws7,3.37709,1125.664
+3364,New Zealand,New Zealand,floating,ws8,31.91009,7978.743
+1951,Canada,Canada,fixed,ws7,0.01919,5.604
+1951,Canada,Canada,floating,ws7,0.01782,5.946
+2119,Greenland,Denmark,fixed,ws7,1.74998,577.259
+2119,Greenland,Denmark,fixed,ws8,1.57888,390.803
+2119,Greenland,Denmark,floating,ws7,3.12399,1031.216
+2119,Greenland,Denmark,floating,ws8,5.25757,1302.404
+106,Greenland,Denmark,fixed,ws7,4.57608,1507.744
+106,Greenland,Denmark,fixed,ws8,6.16842,1521.969
+106,Greenland,Denmark,floating,ws7,16.24677,5346.373
+106,Greenland,Denmark,floating,ws8,30.60224,7572.687
+3179,Namibia,Namibia,fixed,ws7,1.36972,456.573
+3179,South Africa,South Africa,fixed,ws7,1.09573,365.243
+3179,Namibia,Namibia,fixed,ws8,0.78203,195.497
+3179,South Africa,South Africa,fixed,ws8,0.33980,84.948
+3179,Namibia,Namibia,floating,ws7,2.24296,747.652
+3179,South Africa,South Africa,floating,ws7,0.31018,103.394
+3179,Namibia,Namibia,floating,ws8,101.92267,25480.946
+3179,South Africa,South Africa,floating,ws8,26.83363,6708.356
+1773,Russia,Russia,fixed,ws7,4.50872,1502.876
+1773,Russia,Russia,fixed,ws8,16.89971,4224.945
+1773,Russia,Russia,floating,ws7,1.61529,538.429
+1773,Russia,Russia,floating,ws8,85.54613,21386.652
+4504,Japan,Japan,fixed,ws7,2.74140,913.801
+4504,Japan,Japan,floating,ws7,1.52258,507.528
+4731,Japan,Japan,fixed,ws7,2.95683,985.613
+4731,Japan,Japan,fixed,ws8,2.56237,640.592
+4731,Japan,Japan,floating,ws7,2.39025,796.746
+4731,Japan,Japan,floating,ws8,9.43404,2358.507
+2121,Japan,Japan,fixed,ws7,0.06936,23.109
+2121,Japan,Japan,floating,ws7,50.13214,16710.703
+1373,Japan,Japan,fixed,ws7,1.50624,502.079
+1373,Japan,Japan,fixed,ws8,0.48350,120.874
+1373,Japan,Japan,floating,ws7,17.87116,5957.055
+1373,Japan,Japan,floating,ws8,12.75166,3187.914
+3033,Namibia,Namibia,fixed,ws7,0.91386,304.623
+3033,Namibia,Namibia,fixed,ws8,1.02547,256.368
+3033,Namibia,Namibia,floating,ws7,0.22064,73.547
+3033,Namibia,Namibia,floating,ws8,17.19559,4298.945
+3951,Canada,Canada,fixed,ws7,4.28517,1432.349
+3951,United States,United States,fixed,ws7,11.69911,3889.053
+3951,Canada,Canada,fixed,ws8,1.61920,404.618
+3951,United States,United States,fixed,ws8,3.45769,861.870
+3951,Alaska (US),United States,floating,ws7,0.10457,34.872
+3951,Canada,Canada,floating,ws7,0.05734,18.223
+3951,Alaska (US),United States,floating,ws8,16.70783,4132.150
+3951,Canada,Canada,floating,ws8,3.51897,839.710
+4287,Canada,Canada,fixed,ws7,13.73283,4590.298
+4287,Canada,Canada,fixed,ws8,8.91178,2227.690
+4287,Canada,Canada,floating,ws7,3.10254,986.142
+4287,Canada,Canada,floating,ws8,17.79086,4244.693
+3272,Canada,Canada,fixed,ws7,5.18174,1731.990
+3272,Canada,Canada,fixed,ws8,0.26825,67.047
+3272,Canada,Canada,floating,ws7,18.58287,5905.343
+3272,Canada,Canada,floating,ws8,51.44743,12274.723
+661,Canada,Canada,fixed,ws7,20.14588,6541.630
+661,Canada,Canada,fixed,ws8,0.02227,5.521
+661,Canada,Canada,floating,ws7,17.59229,5591.179
+661,Canada,Canada,floating,ws8,21.95688,5238.641
+1287,Canada,Canada,fixed,ws7,2.01796,674.518
+1287,Canada,Canada,fixed,ws8,0.05739,14.346
+1287,Canada,Canada,floating,ws7,29.47791,9367.411
+1287,Canada,Canada,floating,ws8,20.91001,4988.870
+77,United States,United States,fixed,ws7,14.73960,4899.780
+77,United States,United States,fixed,ws8,14.26695,3556.230
+77,Alaska (US),United States,floating,ws7,5.27906,1760.501
+77,Alaska (US),United States,floating,ws8,37.35579,9238.765
+17,Hawaii,United States,fixed,ws7,0.16234,54.143
+17,Hawaii,United States,fixed,ws8,0.19459,48.679
+17,Hawaii,United States,floating,ws7,3.64005,1213.702
+17,Hawaii,United States,floating,ws8,5.53684,1384.412
+144,Canada,Canada,fixed,ws7,2.44325,805.761
+144,Canada,Canada,floating,ws7,33.72163,11252.200
+144,Canada,Canada,floating,ws8,13.19803,3313.858
+4774,Canada,Canada,fixed,ws7,0.29231,95.402
+4774,Canada,Canada,fixed,ws8,0.13845,33.562
+4774,Canada,Canada,floating,ws7,13.77811,4597.464
+4774,Canada,Canada,floating,ws8,5.45904,1370.697
+3767,Canada,Canada,fixed,ws7,0.03101,10.121
+3767,Canada,Canada,floating,ws7,0.19543,65.211
+157,South Africa,South Africa,fixed,ws7,0.54462,181.540
+157,South Africa,South Africa,fixed,ws8,0.88736,221.838
+157,South Africa,South Africa,floating,ws7,2.18274,727.579
+157,South Africa,South Africa,floating,ws8,149.34662,37336.373
+4128,New Zealand,New Zealand,fixed,ws7,0.60709,202.366
+4128,New Zealand,New Zealand,fixed,ws8,2.17810,544.525
+4128,New Zealand,New Zealand,floating,ws7,2.37591,791.932
+4128,New Zealand,New Zealand,floating,ws8,21.99657,5499.486
+3885,Canada,Canada,fixed,ws7,0.00212,0.670
+3885,Canada,Canada,floating,ws7,4.73822,1581.046
+2294,Canada,Canada,fixed,ws7,0.28288,87.077
+2294,Canada,Canada,fixed,ws8,0.78525,180.207
+2294,Canada,Canada,floating,ws7,2.73787,913.569
+2294,Canada,Canada,floating,ws8,21.52495,5404.643
+2294,Greenland,Denmark,floating,ws8,0.63559,157.711
+530,Canada,Canada,fixed,ws7,0.54721,170.764
+530,Canada,Canada,fixed,ws8,1.40933,329.505
+530,Canada,Canada,floating,ws7,10.36512,3458.623
+530,Greenland,Denmark,floating,ws7,1.34240,445.009
+530,Canada,Canada,floating,ws8,57.65159,14475.585
+530,Greenland,Denmark,floating,ws8,3.25160,806.828
+4778,Canada,Canada,fixed,ws7,0.00201,0.653
+4778,Canada,Canada,floating,ws7,0.31336,104.562
+4137,Canada,Canada,fixed,ws7,0.04909,13.907
+4137,Canada,Canada,fixed,ws8,0.05762,12.275
+4137,Canada,Canada,floating,ws7,0.22084,73.690
+4137,Canada,Canada,floating,ws8,0.67338,169.078
+3818,Greenland,Denmark,fixed,ws7,0.13962,46.074
+3818,Greenland,Denmark,fixed,ws8,0.06916,17.127
+3718,Greenland,Denmark,fixed,ws7,0.87420,287.512
+3718,Greenland,Denmark,fixed,ws8,0.55466,136.706
+3718,Greenland,Denmark,floating,ws7,0.31291,102.796
+3718,Greenland,Denmark,floating,ws8,2.17635,538.208
+311,Greenland,Denmark,fixed,ws7,1.05874,344.221
+311,Jan Mayen,Norway,fixed,ws7,0.00205,0.683
+311,Greenland,Denmark,fixed,ws8,1.40468,342.273
+311,Jan Mayen,Norway,fixed,ws8,0.10842,27.103
+311,Greenland,Denmark,floating,ws7,4.32456,1408.791
+311,Greenland,Denmark,floating,ws8,78.03199,19309.070
+311,Jan Mayen,Norway,floating,ws8,9.44087,2371.475
+2881,Greenland,Denmark,fixed,ws7,0.27280,89.189
+2881,Greenland,Denmark,fixed,ws8,0.01289,3.169
+2881,Greenland,Denmark,floating,ws7,14.64982,4779.601
+2881,Greenland,Denmark,floating,ws8,25.16722,6227.864
+2881,Jan Mayen,Norway,floating,ws8,2.05867,515.152
+893,Greenland,Denmark,fixed,ws7,0.09575,31.463
+893,Greenland,Denmark,fixed,ws8,0.17476,43.095
+893,Greenland,Denmark,floating,ws7,0.10820,35.556
+893,Greenland,Denmark,floating,ws8,0.26759,65.972
+850,Greenland,Denmark,fixed,ws7,7.30231,2434.785
+850,Greenland,Denmark,fixed,ws8,5.52111,1380.424
+850,Greenland,Denmark,floating,ws7,18.69384,6232.118
+850,Greenland,Denmark,floating,ws8,17.13068,4239.741
+2951,Russia,Russia,fixed,ws7,17.07191,5690.272
+2951,Russia,Russia,fixed,ws8,19.15898,4789.940
+2951,Russia,Russia,floating,ws8,8.61774,2154.368
+173,Russia,Russia,fixed,ws7,4.98635,1662.002
+173,Russia,Russia,fixed,ws8,10.79654,2699.223
+173,Russia,Russia,floating,ws7,21.36698,7121.880
+173,Russia,Russia,floating,ws8,122.88104,30719.296
+1229,Russia,Russia,fixed,ws7,21.04074,7013.121
+1229,Russia,Russia,fixed,ws8,115.15741,28790.539
+1229,Russia,Russia,floating,ws8,13.25699,3314.253
+4155,Russia,Russia,fixed,ws7,27.04650,9014.930
+4155,Russia,Russia,fixed,ws8,15.50188,3875.629
+825,Russia,Russia,fixed,ws7,14.43341,4809.060
+825,Russia,Russia,fixed,ws8,201.87356,50470.466
+825,Russia,Russia,floating,ws8,26.49905,6624.972
+1609,Russia,Russia,fixed,ws7,23.41432,7804.260
+1609,Russia,Russia,fixed,ws8,226.67917,56672.131
+1609,Russia,Russia,floating,ws8,0.27517,68.808
+4815,Russia,Russia,fixed,ws7,1.59874,532.917
+4815,Russia,Russia,fixed,ws8,32.71435,8178.927
+1458,India,India,fixed,ws7,10.00018,3333.391
+1458,India,India,fixed,ws8,18.76468,4691.169
+1458,India,India,floating,ws7,18.73971,6246.570
+1458,India,India,floating,ws8,30.04927,7512.317
+1458,Sri Lanka,Sri Lanka,floating,ws8,0.00462,1.156
+3849,Oman,Oman,fixed,ws7,4.40127,1467.088
+3849,Oman,Oman,fixed,ws8,1.85509,463.771
+3849,Oman,Oman,floating,ws7,9.93855,3312.849
+3849,Oman,Oman,floating,ws8,0.49374,123.435
+1840,Oman,Oman,fixed,ws7,10.12275,3374.250
+1840,Oman,Oman,fixed,ws8,21.42476,5356.190
+1840,Oman,Oman,floating,ws7,6.55320,2184.401
+1840,Oman,Oman,floating,ws8,22.10256,5525.641
+754,Iran,Iran,fixed,ws7,0.08114,27.046
+2013,Svalbard,Norway,fixed,ws7,3.17740,1059.009
+2013,Svalbard,Norway,fixed,ws8,3.92324,980.737
+2013,Svalbard,Norway,floating,ws7,17.87414,5956.856
+2013,Svalbard,Norway,floating,ws8,127.07760,31758.241
+1938,Japan,Japan,fixed,ws7,1.10977,369.912
+1938,Japan,Japan,fixed,ws8,0.00284,0.712
+1938,Japan,Japan,floating,ws7,33.46242,11154.129
+1938,Japan,Japan,floating,ws8,1.55537,388.845
+262,Japan,Japan,fixed,ws7,1.94888,649.640
+262,Russia,Russia,fixed,ws7,0.30061,100.194
+262,Japan,Japan,fixed,ws8,15.64806,3911.882
+262,Russia,Russia,fixed,ws8,2.52709,631.753
+262,Japan,Japan,floating,ws7,1.67996,559.988
+262,Russia,Russia,floating,ws7,1.29874,432.902
+262,Japan,Japan,floating,ws8,48.08033,12020.089
+262,Russia,Russia,floating,ws8,59.94232,14985.824
+4831,Japan,Japan,fixed,ws7,1.47922,493.073
+4831,Japan,Japan,fixed,ws8,0.28402,71.003
+4831,Japan,Japan,floating,ws7,34.17692,11392.308
+4831,Japan,Japan,floating,ws8,3.49959,874.892
+2028,Japan,Japan,fixed,ws7,3.66148,1220.490
+2028,Japan,Japan,fixed,ws8,0.21733,54.333
+2028,Japan,Japan,floating,ws7,21.98047,7326.825
+2028,Japan,Japan,floating,ws8,9.74257,2435.640
+1407,Japan,Japan,fixed,ws7,0.42467,141.551
+1407,Japan,Japan,floating,ws7,31.14697,10382.326
+594,Japan,Japan,fixed,ws7,0.66231,220.773
+594,Japan,Japan,fixed,ws8,0.93381,233.457
+594,Japan,Japan,floating,ws7,2.52635,842.115
+594,Japan,Japan,floating,ws8,24.12482,6031.207
+3698,Japan,Japan,fixed,ws7,1.44713,482.381
+3698,Japan,Japan,floating,ws7,41.07047,13690.154
+2076,Greenland,Denmark,fixed,ws7,1.15168,376.866
+2076,Greenland,Denmark,fixed,ws8,3.37872,829.544
+2076,Greenland,Denmark,floating,ws7,6.67965,2182.791
+2076,Greenland,Denmark,floating,ws8,60.14113,14882.332
+1831,Canada,Canada,fixed,ws7,23.58863,7884.654
+1831,Canada,Canada,fixed,ws8,23.23014,5806.857
+1831,Canada,Canada,floating,ws7,13.11035,4166.171
+1831,Canada,Canada,floating,ws8,21.64648,5164.927
+241,Canada,Canada,fixed,ws7,28.49846,9525.849
+241,Canada,Canada,fixed,ws8,31.75467,7937.744
+241,Canada,Canada,floating,ws8,2.03121,485.031
+1641,Canada,Canada,fixed,ws7,0.09431,30.297
+1641,Canada,Canada,floating,ws7,2.94145,934.725
+3489,Canada,Canada,fixed,ws7,0.43656,138.349
+3489,Canada,Canada,fixed,ws8,0.00383,0.900
+3489,Canada,Canada,floating,ws7,38.28473,12166.020
+3489,Canada,Canada,floating,ws8,5.66832,1352.390
+2551,Canada,Canada,fixed,ws7,1.58492,529.526
+2551,Canada,Canada,fixed,ws8,0.00291,0.725
+2551,Canada,Canada,floating,ws7,20.98194,6667.586
+2551,Canada,Canada,floating,ws8,21.84517,5211.988
+4792,Canada,Canada,fixed,ws7,0.02457,7.898
+4792,Canada,Canada,fixed,ws8,0.00018,0.045
+4792,Canada,Canada,floating,ws7,3.69733,1174.929
+4792,Canada,Canada,floating,ws8,0.13848,33.041
+180,Canada,Canada,fixed,ws7,6.50758,2019.872
+180,Canada,Canada,fixed,ws8,0.50561,116.859
+180,Canada,Canada,floating,ws7,42.95250,13648.481
+180,Canada,Canada,floating,ws8,1.17664,280.732
+2952,Canada,Canada,fixed,ws7,6.95619,2156.493
+2952,Canada,Canada,fixed,ws8,4.98638,1151.690
+2952,Canada,Canada,floating,ws7,30.30138,9629.063
+2952,Canada,Canada,floating,ws8,27.19877,6489.292
+927,Canada,Canada,fixed,ws7,5.47497,1652.393
+927,Canada,Canada,fixed,ws8,5.44916,1240.988
+927,Canada,Canada,floating,ws7,19.09964,6068.390
+927,Canada,Canada,floating,ws8,39.44739,9411.660
+4584,Canada,Canada,fixed,ws7,0.88010,294.171
+4584,Canada,Canada,floating,ws7,18.00351,5721.108
+2364,United States,United States,fixed,ws7,3.01263,1004.220
+2364,United States,United States,fixed,ws8,0.45428,113.410
+231,United States,United States,fixed,ws7,12.75420,4252.769
+231,United States,United States,fixed,ws8,24.94605,6218.742
+2967,Russia,Russia,fixed,ws7,0.83393,277.984
+2967,Russia,Russia,fixed,ws8,143.44551,35861.101
+2967,Russia,Russia,floating,ws7,0.03877,12.924
+2967,Russia,Russia,floating,ws8,18.49406,4623.864
+2864,Russia,Russia,fixed,ws7,1.19092,396.992
+2864,Russia,Russia,fixed,ws8,9.76560,2441.431
+2864,United States,United States,fixed,ws8,23.17542,5776.746
+2864,Russia,Russia,floating,ws7,5.77608,1925.385
+2864,Alaska (US),United States,floating,ws8,30.15751,7458.500
+2864,Russia,Russia,floating,ws8,126.08981,31524.881
+1198,United States,United States,fixed,ws7,0.39133,129.555
+1198,United States,United States,fixed,ws8,243.46409,60686.278
+1198,Alaska (US),United States,floating,ws8,62.91966,15561.175
+1075,Namibia,Namibia,fixed,ws8,3.27824,819.563
+1075,Namibia,Namibia,floating,ws8,162.27468,40569.111
+4476,Chile,Chile,fixed,ws7,0.71201,237.337
+4476,Chile,Chile,fixed,ws8,2.09615,524.037
+4476,Chile,Chile,floating,ws7,0.58791,195.971
+4476,Chile,Chile,floating,ws8,60.10094,15025.131
+4307,Canada,Canada,fixed,ws7,2.73235,910.067
+4307,Canada,Canada,fixed,ws8,3.19859,801.204
+4307,Canada,Canada,floating,ws7,24.51947,8181.633
+4307,Canada,Canada,floating,ws8,11.49856,2887.143
+770,Canada,Canada,fixed,ws7,0.35642,119.302
+770,Canada,Canada,fixed,ws8,0.00084,0.211
+770,Canada,Canada,floating,ws7,0.05978,19.950
+1556,Canada,Canada,fixed,ws7,0.83014,243.626
+1556,Canada,Canada,fixed,ws8,3.75380,820.361
+1556,Canada,Canada,floating,ws7,17.92779,5697.644
+1556,Canada,Canada,floating,ws8,42.19801,10067.926
+3118,Canada,Canada,fixed,ws7,0.84873,256.250
+3118,Canada,Canada,floating,ws7,6.93993,2205.353
+1264,South Africa,South Africa,fixed,ws7,2.45478,818.262
+1264,South Africa,South Africa,fixed,ws8,5.47066,1367.668
+1264,South Africa,South Africa,floating,ws7,3.12815,1042.718
+1264,South Africa,South Africa,floating,ws8,122.98869,30746.940
+268,New Zealand,New Zealand,fixed,ws7,1.08718,362.377
+268,New Zealand,New Zealand,fixed,ws8,10.27062,2567.659
+268,New Zealand,New Zealand,floating,ws7,0.37116,126.120
+268,New Zealand,New Zealand,floating,ws8,75.62358,18907.565
+604,New Zealand,New Zealand,fixed,ws7,0.74068,246.899
+604,New Zealand,New Zealand,fixed,ws8,2.06377,515.940
+604,New Zealand,New Zealand,floating,ws7,3.89066,1296.755
+604,New Zealand,New Zealand,floating,ws8,28.02954,7007.937
+4546,Canada,Canada,fixed,ws7,0.06165,18.393
+4546,Greenland,Denmark,fixed,ws7,0.00130,0.430
+4546,Canada,Canada,fixed,ws8,0.27668,61.830
+4546,Greenland,Denmark,fixed,ws8,0.10175,25.316
+4546,Canada,Canada,floating,ws7,2.39796,800.149
+4546,Greenland,Denmark,floating,ws7,0.93155,309.008
+4546,Canada,Canada,floating,ws8,17.50733,4395.869
+4546,Greenland,Denmark,floating,ws8,3.68723,914.923
+2840,Greenland,Denmark,fixed,ws8,0.00001,0.001
+2840,Greenland,Denmark,floating,ws7,0.17171,56.205
+2840,Greenland,Denmark,floating,ws8,0.22087,54.232
+1447,Greenland,Denmark,fixed,ws7,0.52720,171.567
+1447,Greenland,Denmark,fixed,ws8,0.74831,182.752
+1447,Greenland,Denmark,floating,ws7,7.61881,2488.804
+1447,Greenland,Denmark,floating,ws8,76.70266,18984.581
+1447,Iceland,Iceland,floating,ws8,1.17040,292.573
+1902,Iceland,Iceland,fixed,ws7,1.37127,457.040
+1902,Iceland,Iceland,fixed,ws8,23.84348,5960.259
+1902,Iceland,Iceland,floating,ws7,0.28974,96.569
+1902,Iceland,Iceland,floating,ws8,232.02484,58000.520
+4681,Greenland,Denmark,floating,ws7,4.95881,1624.977
+4681,Greenland,Denmark,floating,ws8,6.45494,1597.409
+1751,Greenland,Denmark,fixed,ws7,0.00016,0.054
+1751,Greenland,Denmark,fixed,ws8,0.00006,0.014
+1751,Greenland,Denmark,floating,ws7,0.02232,7.325
+1751,Greenland,Denmark,floating,ws8,0.02901,7.136
+107,Greenland,Denmark,fixed,ws7,0.11873,39.484
+107,Greenland,Denmark,fixed,ws8,5.32040,1326.402
+107,Greenland,Denmark,floating,ws7,0.55862,185.748
+107,Greenland,Denmark,floating,ws8,62.06985,15362.356
+4702,Greenland,Denmark,fixed,ws7,1.41756,472.723
+4702,Greenland,Denmark,fixed,ws8,5.57931,1395.218
+4702,Greenland,Denmark,floating,ws7,1.71847,573.095
+4702,Greenland,Denmark,floating,ws8,70.01229,17326.369
+1763,Russia,Russia,fixed,ws7,13.44009,4479.641
+1763,Russia,Russia,fixed,ws8,56.00779,14001.983
+1763,Russia,Russia,floating,ws7,29.52762,9841.844
+1763,Russia,Russia,floating,ws8,124.44022,31108.913
+2736,Russia,Russia,fixed,ws7,19.83808,6612.715
+2736,Russia,Russia,fixed,ws8,20.43031,5107.789
+1854,Russia,Russia,fixed,ws7,33.09271,11031.138
+1854,Russia,Russia,fixed,ws8,79.85164,19963.734
+272,Russia,Russia,fixed,ws7,7.56153,2520.478
+272,Russia,Russia,fixed,ws8,59.06611,14766.502
+272,Russia,Russia,floating,ws7,7.09035,2363.417
+272,Russia,Russia,floating,ws8,220.26425,55067.480
+2465,Russia,Russia,fixed,ws7,5.36812,1789.363
+2465,Russia,Russia,fixed,ws8,13.23151,3307.933
+2465,Russia,Russia,floating,ws7,0.00914,3.045
+2465,Russia,Russia,floating,ws8,45.36989,11342.536
+1017,Russia,Russia,fixed,ws7,69.68555,23229.023
+1017,Russia,Russia,fixed,ws8,102.70295,25676.796
+2858,Russia,Russia,fixed,ws7,71.80437,23928.648
+2858,Russia,Russia,fixed,ws8,119.78699,29947.963
+2858,Russia,Russia,floating,ws8,1.09256,273.152
+1587,Russia,Russia,fixed,ws7,40.45782,13486.236
+1587,Russia,Russia,fixed,ws8,51.55580,12889.480
+2975,Madagascar,Madagascar,fixed,ws7,1.65348,551.160
+2975,Madagascar,Madagascar,fixed,ws8,1.02272,255.682
+2975,Madagascar,Madagascar,floating,ws7,4.80267,1600.891
+2975,Madagascar,Madagascar,floating,ws8,4.79254,1198.137
+3431,Madagascar,Madagascar,fixed,ws7,0.00029,0.098
+3431,Madagascar,Madagascar,fixed,ws8,0.12396,30.990
+3431,Madagascar,Madagascar,floating,ws7,1.70429,568.097
+3431,Madagascar,Madagascar,floating,ws8,6.33105,1582.762
+1016,Madagascar,Madagascar,fixed,ws7,3.15973,1053.242
+1016,Republic of Mauritius,Republic of Mauritius,fixed,ws7,0.18107,60.357
+1016,Seychelles,Seychelles,fixed,ws7,0.86871,289.569
+1016,Madagascar,Madagascar,fixed,ws8,7.16960,1792.398
+1016,Republic of Mauritius,Republic of Mauritius,fixed,ws8,0.03434,8.588
+1016,Seychelles,Seychelles,fixed,ws8,4.97466,1243.666
+1016,Madagascar,Madagascar,floating,ws7,1.12929,376.430
+1016,Republic of Mauritius,Republic of Mauritius,floating,ws7,0.72585,241.949
+1016,Seychelles,Seychelles,floating,ws7,9.99476,3331.585
+1016,Madagascar,Madagascar,floating,ws8,16.67351,4168.377
+1016,Republic of Mauritius,Republic of Mauritius,floating,ws8,0.02738,6.845
+1016,Seychelles,Seychelles,floating,ws8,19.90002,4975.007
+3191,India,India,fixed,ws7,30.08577,10028.587
+3191,India,India,floating,ws7,3.89538,1298.462
+257,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,0.46340,154.461
+257,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,4.31089,1077.714
+257,Kenya,Kenya,floating,ws7,6.26288,2087.624
+257,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,10.21637,2554.093
+1509,Oman,Oman,fixed,ws8,0.13386,33.465
+1509,Oman,Oman,floating,ws7,0.37455,124.850
+1509,Oman,Oman,floating,ws8,1.25515,313.789
+101,Oman,Oman,fixed,ws7,1.51427,504.758
+101,Oman,Oman,fixed,ws8,19.58623,4896.561
+101,Oman,Oman,floating,ws7,1.65795,552.649
+101,Oman,Oman,floating,ws8,62.89157,15722.891
+1286,Yemen,Yemen,floating,ws7,3.78324,1261.079
+3756,Yemen,Yemen,floating,ws7,0.00348,1.159
+433,Yemen,Yemen,fixed,ws7,0.26177,87.259
+433,Yemen,Yemen,floating,ws7,0.25500,85.001
+2019,Kenya,Kenya,fixed,ws7,7.39638,2465.460
+2019,Kenya,Kenya,fixed,ws8,0.22863,57.160
+2019,Kenya,Kenya,floating,ws7,17.71083,5903.612
+4181,Yemen,Yemen,fixed,ws7,0.69382,231.273
+4181,Yemen,Yemen,fixed,ws8,8.15139,2037.844
+4181,Yemen,Yemen,floating,ws7,0.02002,6.672
+4181,Yemen,Yemen,floating,ws8,0.58735,146.836
+4226,Kenya,Kenya,fixed,ws7,0.74029,246.761
+4226,Kenya,Kenya,fixed,ws8,0.15204,38.011
+4226,Kenya,Kenya,floating,ws7,12.19914,4066.381
+459,Oman,Oman,fixed,ws7,2.01367,671.224
+459,Oman,Oman,fixed,ws8,0.35074,87.684
+459,Oman,Oman,floating,ws7,9.32294,3107.647
+459,Oman,Oman,floating,ws8,3.43737,859.344
+1328,Bahrain,Bahrain,fixed,ws7,0.60448,201.494
+1328,Saudi Arabia,Saudi Arabia,fixed,ws7,0.31340,104.468
+599,Russia,Russia,fixed,ws7,0.02685,8.951
+599,Russia,Russia,fixed,ws8,12.82702,3205.873
+599,Russia,Russia,floating,ws8,85.32016,21327.771
+1290,Chile,Chile,fixed,ws7,0.00678,2.258
+1290,Chile,Chile,fixed,ws8,7.43923,1859.786
+1290,Chile,Chile,floating,ws8,61.42774,15356.765
+1301,New Caledonia,France,fixed,ws7,2.49117,830.385
+1301,Norfolk Island,Australia,fixed,ws7,0.57579,191.931
+1301,Vanuatu,Vanuatu,fixed,ws7,0.60847,202.817
+1301,Vanuatu,Vanuatu,fixed,ws8,0.01912,4.781
+1301,Fiji,Fiji,floating,ws7,0.27604,92.015
+1301,New Caledonia,France,floating,ws7,60.53191,20177.290
+1301,Norfolk Island,Australia,floating,ws7,6.78434,2261.442
+1301,Vanuatu,Vanuatu,floating,ws7,28.04590,9348.645
+1301,New Caledonia,France,floating,ws8,0.00079,0.196
+1301,Vanuatu,Vanuatu,floating,ws8,4.47170,1117.924
+2547,Russia,Russia,fixed,ws7,7.13577,2378.603
+2547,Russia,Russia,fixed,ws8,21.40188,5350.468
+2547,Russia,Russia,floating,ws7,4.47728,1492.432
+2547,Russia,Russia,floating,ws8,184.99695,46249.640
+4308,Japan,Japan,fixed,ws7,3.12903,1043.015
+4308,Japan,Japan,fixed,ws8,8.99037,2247.590
+4308,Russia,Russia,fixed,ws8,1.20008,300.020
+4308,Japan,Japan,floating,ws7,6.39584,2131.947
+4308,Japan,Japan,floating,ws8,125.55918,31389.797
+4308,Russia,Russia,floating,ws8,11.74854,2937.160
+2027,Japan,Japan,fixed,ws7,2.25426,751.421
+2027,Japan,Japan,floating,ws7,17.13688,5712.294
+2027,Japan,Japan,floating,ws8,31.37826,7844.568
+2027,Russia,Russia,floating,ws8,19.65863,4914.711
+626,Japan,Japan,fixed,ws7,3.77375,1257.896
+626,Japan,Japan,fixed,ws8,3.33741,834.353
+626,Japan,Japan,floating,ws7,13.14149,4380.498
+626,Japan,Japan,floating,ws8,46.13591,11533.985
+4245,Japan,Japan,fixed,ws7,0.48111,160.369
+4245,Japan,Japan,fixed,ws8,0.39074,97.685
+4245,Japan,Japan,floating,ws7,5.59744,1865.813
+4245,Japan,Japan,floating,ws8,29.31972,7329.929
+38,Japan,Japan,fixed,ws7,5.93477,1978.259
+38,Japan,Japan,fixed,ws8,0.01243,3.108
+38,Japan,Japan,floating,ws7,11.91221,3970.735
+38,Japan,Japan,floating,ws8,54.87672,13719.180
+4811,Japan,Japan,fixed,ws7,2.13571,711.919
+4811,Japan,Japan,fixed,ws8,3.40931,852.325
+4811,Japan,Japan,floating,ws7,3.61553,1205.173
+4811,Japan,Japan,floating,ws8,48.32950,12082.376
+3086,Japan,Japan,fixed,ws7,1.69030,563.428
+3086,Japan,Japan,fixed,ws8,0.97575,243.937
+3086,Japan,Japan,floating,ws7,7.64306,2547.686
+3086,Japan,Japan,floating,ws8,35.71257,8928.143
+4004,Japan,Japan,fixed,ws7,4.31444,1438.151
+4004,Japan,Japan,fixed,ws8,13.03255,3258.137
+4004,Japan,Japan,floating,ws7,1.40099,466.996
+4004,Japan,Japan,floating,ws8,22.18880,5547.196
+1345,Namibia,Namibia,fixed,ws7,3.79131,1263.767
+1345,Namibia,Namibia,fixed,ws8,0.89658,224.146
+1345,Namibia,Namibia,floating,ws7,15.00746,5002.487
+1345,Namibia,Namibia,floating,ws8,151.36959,37842.809
+3941,Faeroe,Denmark,fixed,ws7,0.00008,0.027
+3941,Faeroe,Denmark,fixed,ws8,1.25827,314.556
+3941,United Kingdom,United Kingdom,fixed,ws8,10.38986,2597.203
+3941,Faeroe,Denmark,floating,ws8,211.13021,52780.088
+3941,United Kingdom,United Kingdom,floating,ws8,393.18705,98310.801
+1355,United Kingdom,United Kingdom,fixed,ws7,0.00601,2.005
+1355,United Kingdom,United Kingdom,fixed,ws8,14.53746,3634.063
+1355,United Kingdom,United Kingdom,floating,ws7,0.00122,0.406
+1355,United Kingdom,United Kingdom,floating,ws8,129.04591,32264.856
+2168,Ireland,Ireland,fixed,ws7,0.00119,0.394
+2168,Ireland,Ireland,fixed,ws8,17.09837,4274.227
+2168,United Kingdom,United Kingdom,fixed,ws8,0.26901,67.250
+2168,Ireland,Ireland,floating,ws8,90.37678,22591.880
+2168,United Kingdom,United Kingdom,floating,ws8,42.54681,10637.819
+3920,Canada,Canada,fixed,ws7,0.87017,295.157
+3920,United States,United States,fixed,ws7,0.31883,99.415
+3920,Canada,Canada,fixed,ws8,30.15201,7667.266
+3920,United States,United States,fixed,ws8,1.62212,404.307
+3920,Alaska (US),United States,floating,ws7,0.48816,152.346
+3920,Canada,Canada,floating,ws7,0.20680,69.238
+3920,Alaska (US),United States,floating,ws8,38.98350,9641.006
+3920,Canada,Canada,floating,ws8,43.56229,10983.680
+1548,Hawaii,United States,fixed,ws7,0.95850,319.563
+1548,Hawaii,United States,fixed,ws8,0.86715,216.750
+1548,Hawaii,United States,floating,ws7,6.76719,2255.449
+1548,Hawaii,United States,floating,ws8,32.02701,8004.427
+1141,United States,United States,fixed,ws7,0.74890,249.055
+1141,United States,United States,fixed,ws8,37.35030,9310.000
+1141,Alaska (US),United States,floating,ws7,1.35918,452.168
+1141,Alaska (US),United States,floating,ws8,204.05719,50467.054
+4105,United States,United States,fixed,ws7,2.14908,713.952
+4105,United States,United States,fixed,ws8,0.84277,209.748
+378,United States,United States,fixed,ws7,2.21820,736.845
+378,United States,United States,fixed,ws8,7.08341,1765.622
+378,Alaska (US),United States,floating,ws7,2.95553,979.703
+378,Alaska (US),United States,floating,ws8,101.39123,25075.895
+4539,United States,United States,fixed,ws7,0.81617,264.869
+4539,United States,United States,fixed,ws8,2.47317,616.467
+4539,Alaska (US),United States,floating,ws7,0.10459,33.788
+4539,Alaska (US),United States,floating,ws8,68.70767,16992.656
+739,United States,United States,fixed,ws7,0.02566,8.561
+739,United States,United States,fixed,ws8,0.13740,34.250
+2458,United States,United States,fixed,ws7,0.00034,0.112
+2458,United States,United States,fixed,ws8,78.21623,19496.312
+2458,Alaska (US),United States,floating,ws8,11.40882,2821.608
+4295,United States,United States,fixed,ws7,52.06979,17345.893
+4295,United States,United States,fixed,ws8,31.26283,7792.631
+1518,United States,United States,fixed,ws7,22.60981,7527.415
+1518,United States,United States,fixed,ws8,62.35465,15542.829
+708,United States,United States,fixed,ws7,1.69765,565.536
+2243,United States,United States,fixed,ws7,0.59953,199.300
+2243,United States,United States,fixed,ws8,52.28424,13032.461
+2243,Alaska (US),United States,floating,ws8,0.16579,41.004
+1739,United States,United States,fixed,ws7,6.62385,2202.481
+1739,Russia,Russia,fixed,ws8,0.81263,203.157
+1739,United States,United States,fixed,ws8,80.30457,20016.856
+1739,Alaska (US),United States,floating,ws8,15.05240,3722.732
+1739,Russia,Russia,floating,ws8,5.40309,1350.868
+463,Russia,Russia,fixed,ws7,1.68372,561.227
+463,United States,United States,fixed,ws7,1.53262,510.559
+463,Russia,Russia,fixed,ws8,5.49456,1373.682
+463,United States,United States,fixed,ws8,37.43781,9331.812
+463,Russia,Russia,floating,ws7,0.61491,204.971
+463,Alaska (US),United States,floating,ws8,19.61083,4850.115
+463,Russia,Russia,floating,ws8,91.58115,22897.065
+4845,Brazil,Brazil,fixed,ws7,1.01989,339.961
+4845,Brazil,Brazil,floating,ws7,0.11919,39.732
+46,Brazil,Brazil,fixed,ws7,5.64023,1880.080
+46,Brazil,Brazil,fixed,ws8,29.52579,7381.342
+46,Brazil,Brazil,floating,ws8,132.53364,33132.849
+1835,Canada,Canada,fixed,ws7,2.13035,721.510
+1835,Canada,Canada,fixed,ws8,0.05457,13.939
+1835,Canada,Canada,floating,ws7,4.00402,1338.032
+3442,Canada,Canada,fixed,ws7,15.24231,5127.908
+3442,Canada,Canada,fixed,ws8,4.24593,1071.492
+3442,Canada,Canada,floating,ws7,16.30038,5467.383
+3442,Canada,Canada,floating,ws8,5.34880,1343.314
+2244,Canada,Canada,fixed,ws7,0.31826,105.546
+2244,Canada,Canada,floating,ws7,15.37018,5128.705
+2244,Canada,Canada,floating,ws8,0.47934,120.357
+3108,Canada,Canada,fixed,ws7,1.16613,398.750
+3108,Canada,Canada,fixed,ws8,1.38005,353.684
+3108,Canada,Canada,floating,ws7,13.37750,4463.790
+3108,Canada,Canada,floating,ws8,79.19468,19884.783
+4091,Canada,Canada,fixed,ws7,0.11469,39.029
+4091,Canada,Canada,fixed,ws8,0.00099,0.252
+4091,Canada,Canada,floating,ws7,0.05080,17.292
+2026,United States,United States,fixed,ws7,0.48493,161.645
+2026,United States,United States,fixed,ws8,4.53491,1133.726
+2026,United States,United States,floating,ws8,16.62659,4156.648
+2709,Canada,Canada,fixed,ws7,0.81200,265.103
+2709,Canada,Canada,floating,ws7,14.49130,4610.277
+4916,Canada,Canada,fixed,ws7,0.93391,292.013
+4916,Canada,Canada,floating,ws7,3.08875,983.813
+3541,Canada,Canada,fixed,ws7,8.72770,2752.938
+3541,Canada,Canada,fixed,ws8,0.01034,2.461
+3541,Canada,Canada,floating,ws7,29.42573,9386.872
+3541,Canada,Canada,floating,ws8,0.02480,6.228
+1211,Canada,Canada,fixed,ws7,0.68999,219.580
+1211,Canada,Canada,fixed,ws8,0.06376,15.284
+1211,Canada,Canada,floating,ws7,18.37477,6131.262
+1211,Canada,Canada,floating,ws8,1.48872,373.798
+2261,Canada,Canada,fixed,ws7,3.75171,1250.388
+2261,Canada,Canada,fixed,ws8,1.05721,264.195
+2261,Canada,Canada,floating,ws7,17.19093,5736.261
+2261,Canada,Canada,floating,ws8,8.19710,2058.188
+1036,Canada,Canada,fixed,ws7,2.35420,740.018
+1036,Canada,Canada,fixed,ws8,0.47698,112.100
+1036,Canada,Canada,floating,ws7,21.33961,6781.242
+1036,Canada,Canada,floating,ws8,9.08435,2167.410
+2887,South Africa,South Africa,fixed,ws7,0.57655,192.183
+2887,South Africa,South Africa,fixed,ws8,0.07779,19.447
+2887,South Africa,South Africa,floating,ws7,8.77005,2923.350
+2887,South Africa,South Africa,floating,ws8,49.97113,12492.688
+1871,South Africa,South Africa,fixed,ws7,2.84088,946.962
+1871,South Africa,South Africa,fixed,ws8,3.64950,912.377
+1871,South Africa,South Africa,floating,ws7,0.88512,295.040
+1871,South Africa,South Africa,floating,ws8,71.51242,17877.971
+730,New Zealand,New Zealand,fixed,ws7,10.23592,3411.973
+730,New Zealand,New Zealand,fixed,ws8,0.74564,186.410
+730,New Zealand,New Zealand,floating,ws7,16.98911,5663.080
+730,New Zealand,New Zealand,floating,ws8,35.82837,8957.442
+1860,New Zealand,New Zealand,fixed,ws7,2.56489,854.964
+1860,New Zealand,New Zealand,fixed,ws8,4.73958,1184.896
+1860,New Zealand,New Zealand,floating,ws7,44.45685,14819.336
+1860,New Zealand,New Zealand,floating,ws8,106.63923,26660.202
+3500,New Zealand,New Zealand,fixed,ws7,4.16842,1389.471
+3500,New Zealand,New Zealand,fixed,ws8,4.04338,1010.851
+3500,New Zealand,New Zealand,floating,ws7,5.32484,1775.994
+3500,New Zealand,New Zealand,floating,ws8,150.18251,37524.050
+2205,New Zealand,New Zealand,fixed,ws7,0.64031,213.436
+2205,New Zealand,New Zealand,fixed,ws8,0.43730,109.326
+2205,New Zealand,New Zealand,floating,ws7,17.56404,5855.355
+2205,New Zealand,New Zealand,floating,ws8,18.08141,4520.597
+1706,New Zealand,New Zealand,fixed,ws7,1.59381,531.274
+1706,New Zealand,New Zealand,fixed,ws8,12.23715,3059.287
+1706,New Zealand,New Zealand,floating,ws8,468.37897,117025.244
+2979,New Caledonia,France,fixed,ws7,13.55460,4518.205
+2979,New Caledonia,France,fixed,ws8,1.09483,273.712
+2979,New Caledonia,France,floating,ws7,16.41390,5471.302
+2979,New Caledonia,France,floating,ws8,0.62197,155.492
+155,New Caledonia,France,fixed,ws7,17.68925,5896.447
+155,New Caledonia,France,fixed,ws8,17.93800,4484.477
+155,New Caledonia,France,floating,ws7,46.78816,15596.046
+155,New Caledonia,France,floating,ws8,56.02893,14007.233
+110,New Zealand,New Zealand,fixed,ws7,0.12208,40.688
+110,New Zealand,New Zealand,fixed,ws8,16.61708,4154.266
+110,New Zealand,New Zealand,floating,ws7,0.01700,6.314
+110,Macquarie Island,Australia,floating,ws8,7.85326,1963.314
+110,New Zealand,New Zealand,floating,ws8,320.83172,80208.726
+2942,Australia,Australia,fixed,ws7,3.15907,1053.021
+2942,Australia,Australia,fixed,ws8,0.32597,81.493
+2942,Australia,Australia,floating,ws7,13.72370,4574.566
+2942,Australia,Australia,floating,ws8,20.47190,5117.976
+1255,New Zealand,New Zealand,fixed,ws7,5.87948,1959.833
+1255,New Zealand,New Zealand,fixed,ws8,17.90604,4476.533
+1255,New Zealand,New Zealand,floating,ws7,1.81324,605.380
+1255,New Zealand,New Zealand,floating,ws8,66.77276,16694.113
+4197,New Zealand,New Zealand,fixed,ws7,2.10149,700.490
+4197,New Zealand,New Zealand,fixed,ws8,3.94645,986.612
+4197,New Zealand,New Zealand,floating,ws7,0.95700,319.079
+4197,New Zealand,New Zealand,floating,ws8,98.09400,24524.119
+4937,New Zealand,New Zealand,fixed,ws7,4.02081,1340.272
+4937,New Zealand,New Zealand,fixed,ws8,0.00506,1.265
+4937,New Zealand,New Zealand,floating,ws7,9.76924,3256.538
+4937,New Zealand,New Zealand,floating,ws8,22.15474,5538.625
+3294,New Zealand,New Zealand,fixed,ws7,2.67117,890.388
+3294,New Zealand,New Zealand,fixed,ws8,12.80815,3202.037
+3294,New Zealand,New Zealand,floating,ws7,2.86286,954.671
+3294,New Zealand,New Zealand,floating,ws8,168.88626,42222.107
+2291,Canada,Canada,fixed,ws7,20.32518,6894.539
+2291,Canada,Canada,floating,ws7,9.69045,3251.453
+1457,Canada,Canada,fixed,ws7,0.03125,10.078
+1457,Canada,Canada,floating,ws7,33.95662,11330.574
+1457,Canada,Canada,floating,ws8,11.52378,2893.474
+1117,Canada,Canada,fixed,ws7,0.00179,0.597
+3326,Canada,Canada,fixed,ws7,0.00069,0.227
+3326,Canada,Canada,floating,ws7,3.40201,1135.180
+4164,Canada,Canada,fixed,ws7,70.81468,24021.478
+4164,Canada,Canada,fixed,ws8,30.75808,7857.307
+4164,Canada,Canada,floating,ws7,1.22090,410.574
+4164,Canada,Canada,floating,ws8,5.51036,1383.603
+2190,Greenland,Denmark,fixed,ws7,0.31591,103.885
+2190,Greenland,Denmark,fixed,ws8,0.42513,104.929
+2190,Greenland,Denmark,floating,ws7,11.07566,3629.567
+2190,Greenland,Denmark,floating,ws8,42.54847,10528.904
+415,Greenland,Denmark,fixed,ws7,0.23196,76.558
+415,Greenland,Denmark,fixed,ws8,3.52888,873.238
+415,Greenland,Denmark,floating,ws7,1.92754,637.481
+415,Greenland,Denmark,floating,ws8,93.65797,23177.653
+3832,Greenland,Denmark,fixed,ws7,1.16555,388.081
+3832,Greenland,Denmark,fixed,ws8,3.87413,968.348
+3832,Greenland,Denmark,floating,ws7,0.92568,308.320
+3832,Greenland,Denmark,floating,ws8,47.43515,11739.203
+935,Greenland,Denmark,fixed,ws7,0.62936,209.941
+935,Greenland,Denmark,fixed,ws8,3.92223,981.173
+935,Greenland,Denmark,floating,ws7,0.33393,111.375
+935,Greenland,Denmark,floating,ws8,44.59614,11036.535
+4129,Greenland,Denmark,fixed,ws7,0.91836,306.359
+4129,Greenland,Denmark,fixed,ws8,7.99932,2001.277
+4129,Greenland,Denmark,floating,ws7,0.94969,316.809
+4129,Greenland,Denmark,floating,ws8,51.71432,12798.568
+337,Greenland,Denmark,fixed,ws7,1.35134,450.760
+337,Greenland,Denmark,fixed,ws8,0.74195,185.594
+337,Greenland,Denmark,floating,ws7,5.92059,1974.815
+337,Greenland,Denmark,floating,ws8,41.34107,10230.825
+4460,Greenland,Denmark,fixed,ws7,0.26131,86.733
+4460,Greenland,Denmark,fixed,ws8,1.17383,292.198
+4460,Greenland,Denmark,floating,ws7,3.29743,1094.075
+4460,Greenland,Denmark,floating,ws8,63.28738,15661.829
+1086,Canada,Canada,fixed,ws7,0.52870,181.578
+1086,Canada,Canada,fixed,ws8,0.89314,230.179
+1086,Canada,Canada,floating,ws7,4.01541,1340.772
+1086,Canada,Canada,floating,ws8,89.17514,22391.196
+2521,Canada,Canada,fixed,ws7,1.31062,448.761
+2521,Canada,Canada,fixed,ws8,12.52306,3210.161
+2521,Canada,Canada,floating,ws7,1.24308,420.734
+2521,Canada,Canada,floating,ws8,103.00329,25871.689
+657,Canada,Canada,fixed,ws7,0.09064,30.756
+657,Canada,Canada,fixed,ws8,15.76286,4020.253
+657,Canada,Canada,floating,ws7,0.01304,4.423
+657,Canada,Canada,floating,ws8,138.24294,34715.316
+1709,Japan,Japan,fixed,ws7,2.35647,785.492
+1709,Japan,Japan,fixed,ws8,2.33906,584.765
+1709,Japan,Japan,floating,ws7,7.35654,2452.186
+1709,Japan,Japan,floating,ws8,25.65064,6412.661
+4909,North Korea,North Korea,fixed,ws7,0.00206,0.687
+4909,Russia,Russia,fixed,ws7,0.51254,170.844
+4909,North Korea,North Korea,floating,ws7,0.39893,132.975
+4909,Russia,Russia,floating,ws7,1.57613,525.416
+4909,Russia,Russia,floating,ws8,0.47094,117.740
+4398,Russia,Russia,fixed,ws7,12.12863,4042.601
+4398,Russia,Russia,fixed,ws8,14.67654,3669.025
+1621,Russia,Russia,fixed,ws7,22.80055,7599.680
+1621,Russia,Russia,fixed,ws8,65.05224,16263.724
+1313,Russia,Russia,fixed,ws7,12.13104,4043.763
+1313,Russia,Russia,fixed,ws8,0.00026,0.064
+1313,Russia,Russia,floating,ws7,1.93718,645.761
+4465,Russia,Russia,fixed,ws7,0.00746,2.486
+4465,Russia,Russia,fixed,ws8,2.32057,580.146
+3331,Russia,Russia,fixed,ws7,0.02760,9.200
+56,Russia,Russia,fixed,ws7,44.55424,14849.346
+56,Russia,Russia,fixed,ws8,367.78940,91952.216
+56,Russia,Russia,floating,ws8,171.55679,42888.870
+717,Réunion,France,floating,ws7,0.51316,171.058
+717,Réunion,France,floating,ws8,0.52380,130.945
+2635,Madagascar,Madagascar,fixed,ws7,1.00579,335.267
+2635,Madagascar,Madagascar,fixed,ws8,4.26555,1066.384
+2635,Madagascar,Madagascar,floating,ws7,2.37937,793.125
+2635,Madagascar,Madagascar,floating,ws8,2.89381,723.453
+6,Madagascar,Madagascar,fixed,ws7,0.48633,162.112
+6,Madagascar,Madagascar,fixed,ws8,19.09677,4774.197
+6,Madagascar,Madagascar,floating,ws7,0.26159,87.196
+6,Madagascar,Madagascar,floating,ws8,63.53287,15883.249
+163,India,India,floating,ws7,0.13783,45.943
+1979,India,India,fixed,ws7,11.24559,3748.530
+1979,Sri Lanka,Sri Lanka,fixed,ws7,15.60223,5200.743
+1979,India,India,fixed,ws8,0.47076,117.690
+1979,Sri Lanka,Sri Lanka,fixed,ws8,0.34606,86.515
+1979,India,India,floating,ws7,11.41963,3806.544
+1979,Sri Lanka,Sri Lanka,floating,ws7,1.54597,515.323
+1979,India,India,floating,ws8,0.25378,63.445
+1986,Saudi Arabia,Saudi Arabia,fixed,ws7,1.62763,542.544
+3388,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,1.11311,371.033
+3388,Yemen,Yemen,fixed,ws7,1.11352,371.174
+3388,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,2.10023,525.057
+3388,Yemen,Yemen,fixed,ws8,10.39572,2598.929
+3388,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws7,2.76521,921.739
+3388,Saudi Arabia,Saudi Arabia,floating,ws7,5.53242,1844.138
+3388,Sudan,Sudan,floating,ws7,0.00025,0.082
+3388,Yemen,Yemen,floating,ws7,0.36052,120.175
+3388,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,32.47029,8117.576
+3388,Yemen,Yemen,floating,ws8,72.07673,18019.146
+3632,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,0.43807,146.023
+3632,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,0.56062,140.155
+3632,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws7,1.76911,589.704
+3632,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,2.40271,600.677
+648,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,0.00841,2.804
+648,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,15.31259,3828.147
+648,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,45.60884,11402.215
+2913,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,11.20531,2801.327
+2913,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,27.13650,6784.126
+4213,Eritrea,Eritrea,fixed,ws7,4.90542,1635.143
+4213,Eritrea,Eritrea,fixed,ws8,15.84672,3961.690
+4213,Yemen,Yemen,fixed,ws8,3.98713,996.782
+4213,Eritrea,Eritrea,floating,ws7,4.10781,1369.280
+4213,Yemen,Yemen,floating,ws7,0.32198,107.326
+4213,Eritrea,Eritrea,floating,ws8,25.41866,6354.700
+4213,Yemen,Yemen,floating,ws8,10.26730,2566.794
+1490,Djibouti,Djibouti,fixed,ws7,0.47051,156.838
+1490,Yemen,Yemen,fixed,ws7,1.15325,384.418
+1490,Djibouti,Djibouti,fixed,ws8,0.74603,186.506
+1490,Eritrea,Eritrea,fixed,ws8,4.79964,1199.912
+1490,Yemen,Yemen,fixed,ws8,10.33531,2583.825
+1490,Djibouti,Djibouti,floating,ws7,2.42576,808.587
+1490,Yemen,Yemen,floating,ws7,9.99609,3332.027
+1490,Djibouti,Djibouti,floating,ws8,1.84755,461.888
+1490,Eritrea,Eritrea,floating,ws8,2.86611,716.531
+1490,Yemen,Yemen,floating,ws8,2.62492,656.223
+3074,Mozambique,Mozambique,fixed,ws7,0.04183,13.943
+3074,Mozambique,Mozambique,fixed,ws8,0.01095,2.738
+1060,India,India,fixed,ws7,2.52667,842.225
+1060,Pakistan,Pakistan,fixed,ws7,16.71475,5571.583
+1060,India,India,floating,ws7,0.42873,142.910
+1060,Pakistan,Pakistan,floating,ws7,2.82221,940.737
+1572,Chile,Chile,fixed,ws7,0.28439,94.785
+1572,Chile,Chile,fixed,ws8,12.58845,3147.096
+1572,Chile,Chile,floating,ws7,0.31824,106.083
+1572,Chile,Chile,floating,ws8,33.10398,8275.908
+4152,Chile,Chile,fixed,ws7,0.00584,1.948
+4152,Chile,Chile,fixed,ws8,9.69882,2424.686
+4152,Chile,Chile,floating,ws8,56.35380,14088.315
+1513,Chile,Chile,fixed,ws7,1.82553,608.487
+1513,Chile,Chile,fixed,ws8,8.41595,2103.975
+1513,Chile,Chile,floating,ws7,2.37727,792.417
+1513,Chile,Chile,floating,ws8,97.78861,24446.982
+2890,Philippines,Philippines,fixed,ws7,0.00341,1.136
+2890,Philippines,Philippines,floating,ws7,2.51093,836.977
+2890,Philippines,Philippines,floating,ws8,0.41719,104.297
+2648,Australia,Australia,fixed,ws7,0.46997,156.657
+2648,Australia,Australia,fixed,ws8,30.85650,7714.125
+2648,Australia,Australia,floating,ws8,73.04584,18261.467
+134,Australia,Australia,fixed,ws7,0.26796,89.314
+134,Australia,Australia,fixed,ws8,5.26494,1316.231
+134,Australia,Australia,floating,ws8,52.83329,13208.322
+23,Australia,Australia,fixed,ws7,0.00142,0.473
+23,Australia,Australia,fixed,ws8,47.51372,11878.432
+23,Australia,Australia,floating,ws8,130.71189,32677.971
+3640,Australia,Australia,fixed,ws7,0.09441,31.472
+3640,Australia,Australia,fixed,ws8,7.98686,1996.715
+3640,Australia,Australia,floating,ws8,85.62792,21406.980
+4252,Christmas Island,Australia,fixed,ws7,0.00085,0.283
+4252,Christmas Island,Australia,floating,ws7,0.10892,36.308
+4252,Indonesia,Indonesia,floating,ws7,0.00174,0.579
+1342,Fiji,Fiji,fixed,ws7,10.62058,3540.179
+1342,Fiji,Fiji,fixed,ws8,6.10644,1526.609
+1342,Fiji,Fiji,floating,ws7,19.46314,6488.436
+1342,Fiji,Fiji,floating,ws8,19.53607,4884.022
+416,Vanuatu,Vanuatu,fixed,ws7,1.17510,391.687
+416,Vanuatu,Vanuatu,fixed,ws8,0.02810,7.028
+416,Solomon Islands,Solomon Islands,floating,ws7,0.27544,91.813
+416,Vanuatu,Vanuatu,floating,ws7,55.39499,18464.992
+416,Vanuatu,Vanuatu,floating,ws8,2.98619,746.546
+3992,Japan,Japan,fixed,ws7,4.05708,1352.359
+3992,Northern Mariana Islands,United States,fixed,ws7,0.00111,0.371
+3992,Japan,Japan,fixed,ws8,4.84141,1210.366
+3992,Japan,Japan,floating,ws7,16.94804,5649.336
+3992,Northern Mariana Islands,United States,floating,ws7,1.53445,511.485
+3992,Japan,Japan,floating,ws8,103.33305,25833.261
+4037,Indonesia,Indonesia,fixed,ws7,0.03390,11.306
+4037,Indonesia,Indonesia,fixed,ws8,0.01087,2.716
+4037,Indonesia,Indonesia,floating,ws7,0.35107,117.022
+4037,Indonesia,Indonesia,floating,ws8,0.01102,2.756
+4299,China,China,fixed,ws7,15.55791,5185.973
+2186,China,China,fixed,ws7,0.02422,8.073
+579,China,China,fixed,ws7,68.87747,22959.157
+579,China,China,floating,ws7,0.94751,315.842
+2605,Russia,Russia,fixed,ws7,0.19460,64.865
+2605,Russia,Russia,fixed,ws8,31.15386,7788.481
+2605,Russia,Russia,floating,ws8,93.97062,23492.859
+3771,Russia,Russia,fixed,ws7,5.56609,1855.375
+3771,Russia,Russia,fixed,ws8,11.03588,2758.973
+3771,Russia,Russia,floating,ws7,15.24698,5082.329
+3771,Russia,Russia,floating,ws8,69.31443,17328.757
+715,Russia,Russia,fixed,ws7,8.29713,2765.717
+715,Russia,Russia,fixed,ws8,7.57152,1892.880
+715,Russia,Russia,floating,ws7,4.70388,1567.954
+715,Russia,Russia,floating,ws8,101.66482,25416.428
+1543,China,China,fixed,ws7,63.27063,21090.212
+1543,China,China,floating,ws7,1.37593,458.645
+1997,China,China,fixed,ws7,50.74744,16915.814
+1489,China,China,fixed,ws7,200.49604,66832.011
+1489,South Korea,South Korea,fixed,ws7,2.11899,706.329
+1489,China,China,fixed,ws8,11.62723,2906.800
+1489,China,China,floating,ws7,19.39994,6466.644
+1489,South Korea,South Korea,floating,ws7,12.05610,4018.699
+1489,China,China,floating,ws8,27.68504,6921.262
+248,China,China,fixed,ws7,30.57858,10192.865
+248,China,China,fixed,ws8,68.31321,17078.301
+248,Japan,Japan,fixed,ws8,0.20083,50.209
+248,Taiwan,Taiwan,fixed,ws8,0.17537,43.842
+248,China,China,floating,ws7,4.24168,1413.891
+248,Japan,Japan,floating,ws7,0.08264,27.547
+248,China,China,floating,ws8,208.26925,52067.316
+248,Japan,Japan,floating,ws8,33.44284,8360.711
+248,Taiwan,Taiwan,floating,ws8,36.62354,9155.884
+1624,China,China,fixed,ws7,36.50979,12169.927
+1624,China,China,fixed,ws8,43.02693,10756.732
+1624,China,China,floating,ws8,0.08020,20.051
+3578,China,China,fixed,ws7,62.11851,20706.171
+3578,China,China,fixed,ws8,15.02949,3757.370
+3578,China,China,floating,ws7,6.63037,2210.122
+3578,China,China,floating,ws8,2.30171,575.427
+4034,China,China,fixed,ws7,9.94171,3313.907
+4034,China,China,fixed,ws8,28.33202,7083.006
+4034,China,China,floating,ws7,0.07848,26.160
+1261,North Korea,North Korea,fixed,ws7,0.00793,2.642
+1261,North Korea,North Korea,floating,ws7,4.69648,1565.493
+4461,Canary Islands,Spain,fixed,ws7,0.57531,191.773
+4461,Madeira,Portugal,fixed,ws7,0.11862,39.536
+4461,Morocco,Morocco,fixed,ws7,4.18697,1395.656
+4461,,,fixed,ws8,3.64953,912.383
+4461,Canary Islands,Spain,fixed,ws8,2.30135,575.304
+4461,Morocco,Morocco,fixed,ws8,4.04118,1010.295
+4461,Canary Islands,Spain,floating,ws7,3.77109,1256.943
+4461,Madeira,Portugal,floating,ws7,0.67346,224.472
+4461,Morocco,Morocco,floating,ws7,5.81826,1939.418
+4461,,,floating,ws8,10.33695,2584.238
+4461,Canary Islands,Spain,floating,ws8,24.53511,6133.402
+4461,Morocco,Morocco,floating,ws8,31.11528,7778.826
+631,Canary Islands,Spain,fixed,ws7,0.15417,51.383
+631,,,fixed,ws8,14.16272,3540.680
+631,Canary Islands,Spain,fixed,ws8,0.57672,144.172
+631,Canary Islands,Spain,floating,ws7,1.74868,582.853
+631,,,floating,ws8,75.67569,18918.922
+631,Azores,Portugal,floating,ws8,0.25745,64.357
+631,Canary Islands,Spain,floating,ws8,9.34679,2336.548
+2344,,,fixed,ws8,53.20421,13301.052
+2344,Canary Islands,Spain,floating,ws7,0.00368,1.228
+2344,,,floating,ws8,61.83357,15458.392
+330,,,fixed,ws8,26.02730,6506.825
+330,,,floating,ws8,62.70976,15677.440
+1905,,,fixed,ws8,0.58036,145.090
+1905,,,floating,ws8,0.40744,101.860
+4280,,,fixed,ws8,6.55900,1639.750
+4280,Mauritania,Mauritania,fixed,ws8,43.34303,10835.757
+4280,,,floating,ws8,23.98268,5995.669
+4280,Mauritania,Mauritania,floating,ws8,9.19615,2299.045
+3787,Senegal,Senegal,fixed,ws7,0.02560,8.533
+3787,Senegal,Senegal,fixed,ws8,0.00784,1.959
+47,French Guiana,France,fixed,ws7,2.66014,886.845
+47,Suriname,Suriname,fixed,ws7,4.61733,1538.954
+47,French Guiana,France,floating,ws7,12.44872,4153.417
+47,Suriname,Suriname,floating,ws7,22.72047,7569.638
+1705,Brazil,Brazil,fixed,ws7,7.79840,2599.453
+1705,Brazil,Brazil,fixed,ws8,2.47812,619.525
+1705,Brazil,Brazil,floating,ws7,3.20696,1068.983
+1705,Brazil,Brazil,floating,ws8,1.72811,432.022
+3115,Cape Verde,Cape Verde,fixed,ws7,2.10039,700.130
+3115,Senegal,Senegal,fixed,ws7,8.28029,2760.095
+3115,Cape Verde,Cape Verde,fixed,ws8,1.43526,358.820
+3115,Senegal,Senegal,fixed,ws8,0.23728,59.322
+3115,Cape Verde,Cape Verde,floating,ws7,12.49917,4166.392
+3115,Senegal,Senegal,floating,ws7,23.09326,7697.753
+3115,Cape Verde,Cape Verde,floating,ws8,9.20162,2300.412
+29,Mauritania,Mauritania,fixed,ws7,2.34137,780.458
+29,Senegal,Senegal,fixed,ws7,4.28813,1429.378
+29,Mauritania,Mauritania,fixed,ws8,5.68082,1420.204
+29,Senegal,Senegal,fixed,ws8,0.08463,21.157
+29,Mauritania,Mauritania,floating,ws7,0.91550,305.168
+29,Senegal,Senegal,floating,ws7,7.14080,2380.268
+29,Mauritania,Mauritania,floating,ws8,19.91218,4978.062
+29,Senegal,Senegal,floating,ws8,1.78454,446.144
+674,United Kingdom,United Kingdom,fixed,ws7,0.00022,0.075
+674,United Kingdom,United Kingdom,fixed,ws8,19.67169,4917.563
+674,United Kingdom,United Kingdom,floating,ws7,0.00302,1.004
+674,Faeroe,Denmark,floating,ws8,18.96899,4742.026
+674,Ireland,Ireland,floating,ws8,7.37250,1842.935
+674,United Kingdom,United Kingdom,floating,ws8,218.82753,54715.271
+962,Ireland,Ireland,fixed,ws7,0.01171,3.905
+962,United Kingdom,United Kingdom,fixed,ws7,0.01788,5.958
+962,Ireland,Ireland,fixed,ws8,15.59605,3898.680
+962,United Kingdom,United Kingdom,fixed,ws8,16.22138,4055.025
+962,Ireland,Ireland,floating,ws8,52.77229,13191.721
+962,United Kingdom,United Kingdom,floating,ws8,35.38908,8848.201
+4484,United Kingdom,United Kingdom,fixed,ws7,0.33144,110.460
+4484,United Kingdom,United Kingdom,fixed,ws8,8.34474,2086.019
+4484,United Kingdom,United Kingdom,floating,ws7,0.08756,29.185
+4484,United Kingdom,United Kingdom,floating,ws8,37.82922,9458.284
+2164,United Kingdom,United Kingdom,fixed,ws7,0.30292,100.964
+2164,United Kingdom,United Kingdom,fixed,ws8,32.29757,8073.714
+2164,United Kingdom,United Kingdom,floating,ws7,0.32965,109.882
+2164,Ireland,Ireland,floating,ws8,0.06375,15.937
+2164,United Kingdom,United Kingdom,floating,ws8,32.17644,8044.629
+3871,Iceland,Iceland,fixed,ws7,0.46319,154.391
+3871,Iceland,Iceland,fixed,ws8,2.71314,678.399
+3871,Iceland,Iceland,floating,ws7,0.27680,92.269
+3871,Iceland,Iceland,floating,ws8,61.15741,15287.853
+2795,Ireland,Ireland,fixed,ws8,11.00636,2751.345
+2795,Ireland,Ireland,floating,ws8,139.39977,34846.373
+1823,Iceland,Iceland,fixed,ws7,0.27923,93.075
+1823,Iceland,Iceland,fixed,ws8,4.17360,1043.307
+1823,Iceland,Iceland,floating,ws7,0.27645,92.136
+1823,Faeroe,Denmark,floating,ws8,59.64327,14910.122
+1823,Iceland,Iceland,floating,ws8,139.37340,34839.933
+33,Iceland,Iceland,fixed,ws7,0.58450,194.808
+33,Iceland,Iceland,fixed,ws8,2.79081,697.624
+33,Iceland,Iceland,floating,ws7,0.56855,189.495
+33,Iceland,Iceland,floating,ws8,11.35337,2838.065
+4158,Iceland,Iceland,fixed,ws7,0.98038,326.750
+4158,Jan Mayen,Norway,fixed,ws7,0.00358,1.198
+4158,Iceland,Iceland,fixed,ws8,3.89633,973.992
+4158,Jan Mayen,Norway,fixed,ws8,0.21455,53.644
+4158,Iceland,Iceland,floating,ws7,1.80700,602.282
+4158,Iceland,Iceland,floating,ws8,189.63547,47404.217
+4158,Jan Mayen,Norway,floating,ws8,37.05918,9251.891
+2962,Iceland,Iceland,fixed,ws7,0.02189,7.294
+2962,Iceland,Iceland,fixed,ws8,12.47431,3118.335
+2962,Iceland,Iceland,floating,ws8,154.93281,38729.404
+323,Ireland,Ireland,fixed,ws7,0.01137,3.789
+323,Ireland,Ireland,fixed,ws8,6.88590,1721.321
+323,Ireland,Ireland,floating,ws8,262.69802,65667.757
+323,United Kingdom,United Kingdom,floating,ws8,6.62692,1656.904
+462,United States,United States,fixed,ws7,0.69689,222.044
+462,United States,United States,fixed,ws8,2.58134,643.391
+462,Alaska (US),United States,floating,ws7,6.81017,2165.328
+462,Alaska (US),United States,floating,ws8,25.61007,6315.794
+3371,United States,United States,fixed,ws7,0.81518,253.919
+3371,United States,United States,fixed,ws8,0.41166,102.214
+3371,Alaska (US),United States,floating,ws7,3.66070,1141.612
+3371,Alaska (US),United States,floating,ws8,6.01098,1485.876
+2582,United States,United States,fixed,ws7,0.04953,15.738
+2582,United States,United States,fixed,ws8,0.04829,11.566
+2582,Alaska (US),United States,floating,ws7,0.82281,261.562
+2582,Alaska (US),United States,floating,ws8,1.32728,317.497
+4535,United States,United States,fixed,ws7,2.54671,801.481
+4535,United States,United States,fixed,ws8,3.84274,955.748
+4535,Alaska (US),United States,floating,ws7,7.34597,2318.654
+4535,Alaska (US),United States,floating,ws8,69.56050,17177.323
+723,United States,United States,fixed,ws7,31.85437,10618.141
+723,United States,United States,floating,ws7,0.10348,34.494
+70,Canada,Canada,fixed,ws7,0.35035,118.287
+70,Canada,Canada,fixed,ws8,7.12061,1808.154
+70,Canada,Canada,floating,ws7,0.52613,175.689
+70,Canada,Canada,floating,ws8,76.83927,19372.573
+2640,Canada,Canada,fixed,ws7,0.76229,258.866
+2640,United States,United States,fixed,ws7,0.02182,6.749
+2640,Canada,Canada,fixed,ws8,7.26686,1847.904
+2640,United States,United States,fixed,ws8,0.03084,7.687
+2640,Alaska (US),United States,floating,ws7,0.05282,16.341
+2640,Canada,Canada,floating,ws7,2.30932,771.688
+2640,Alaska (US),United States,floating,ws8,1.48510,367.291
+2640,Canada,Canada,floating,ws8,26.50945,6684.043
+767,Canada,Canada,fixed,ws7,0.00182,0.621
+767,United States,United States,fixed,ws7,0.09881,30.629
+767,United States,United States,fixed,ws8,0.00029,0.071
+767,Alaska (US),United States,floating,ws7,0.12893,39.975
+767,Canada,Canada,floating,ws7,0.15605,52.170
+767,Alaska (US),United States,floating,ws8,0.28464,70.397
+4619,United States,United States,fixed,ws7,0.18691,62.301
+4619,United States,United States,fixed,ws8,0.09316,23.300
+4619,United States,United States,floating,ws7,5.20462,1735.688
+4619,United States,United States,floating,ws8,13.28119,3321.113
+489,French Polynesia,France,fixed,ws7,0.73148,243.831
+489,French Polynesia,France,fixed,ws8,0.00067,0.167
+489,Hawaii,United States,fixed,ws8,0.02190,5.463
+489,French Polynesia,France,floating,ws7,9.77002,3256.679
+489,Hawaii,United States,floating,ws7,1.37285,456.454
+489,Hawaii,United States,floating,ws8,4.70121,1172.816
+4726,United States,United States,fixed,ws7,7.99622,2656.613
+4726,United States,United States,fixed,ws8,7.53388,1877.805
+4726,Alaska (US),United States,floating,ws7,0.82031,272.599
+4726,Alaska (US),United States,floating,ws8,1.92437,475.931
+2339,United States,United States,fixed,ws7,0.27128,90.285
+2339,United States,United States,fixed,ws8,15.36711,3830.431
+2339,Alaska (US),United States,floating,ws7,0.14441,48.079
+2339,Alaska (US),United States,floating,ws8,24.14684,5971.952
+3458,United States,United States,fixed,ws8,15.80583,3939.788
+1597,United States,United States,fixed,ws7,1.91716,639.082
+1597,United States,United States,fixed,ws8,77.60787,19344.675
+514,United States,United States,fixed,ws7,0.00758,2.519
+514,United States,United States,fixed,ws8,232.57383,57971.754
+514,Alaska (US),United States,floating,ws8,238.17771,58905.678
+4009,United States,United States,fixed,ws7,0.08233,27.459
+4009,United States,United States,fixed,ws8,31.99516,7975.169
+4009,Alaska (US),United States,floating,ws7,0.02794,9.314
+4009,Alaska (US),United States,floating,ws8,135.41038,33489.450
+1146,United States,United States,fixed,ws7,0.11557,38.440
+1146,United States,United States,fixed,ws8,32.65050,8138.520
+1146,Alaska (US),United States,floating,ws7,0.05793,19.223
+1146,Alaska (US),United States,floating,ws8,535.41941,136664.336
+39,United States,United States,fixed,ws7,0.16055,53.560
+39,United States,United States,fixed,ws8,22.93065,5715.733
+39,Alaska (US),United States,floating,ws7,0.73208,244.216
+39,Alaska (US),United States,floating,ws8,187.63668,46405.965
+2023,United States,United States,fixed,ws7,0.12144,40.508
+2023,United States,United States,fixed,ws8,147.58291,36786.770
+2023,Alaska (US),United States,floating,ws7,0.01471,4.908
+2023,Alaska (US),United States,floating,ws8,11.28183,2790.203
+243,Canada,Canada,fixed,ws7,10.92789,3707.064
+243,Canada,Canada,fixed,ws8,1.37681,351.713
+243,Canada,Canada,floating,ws7,9.11673,3042.062
+243,Canada,Canada,floating,ws8,27.97509,7024.192
+2924,Canada,Canada,fixed,ws7,0.00058,0.198
+2924,Canada,Canada,fixed,ws8,6.76131,1727.212
+487,Canada,Canada,fixed,ws7,0.00086,0.293
+487,Canada,Canada,fixed,ws8,82.27401,21017.315
+487,Canada,Canada,floating,ws8,72.90059,18304.415
+2301,Canada,Canada,fixed,ws8,49.04712,12529.339
+2301,Canada,Canada,floating,ws8,62.02725,15574.766
+3867,Canada,Canada,fixed,ws7,2.34199,760.760
+3867,Canada,Canada,fixed,ws8,41.90762,10205.349
+3867,Canada,Canada,floating,ws7,0.63477,211.807
+3867,Canada,Canada,floating,ws8,39.73402,9976.629
+1527,Canada,Canada,fixed,ws7,1.58049,513.767
+1527,Canada,Canada,fixed,ws8,68.25539,16677.218
+1527,Canada,Canada,floating,ws7,0.29293,96.471
+1527,Canada,Canada,floating,ws8,283.78094,71249.982
+3058,Canada,Canada,fixed,ws7,0.01328,4.564
+3058,Canada,Canada,fixed,ws8,6.68270,1722.633
+3058,Canada,Canada,floating,ws8,142.75410,35843.783
+3469,Canada,Canada,fixed,ws7,0.19978,65.525
+3469,Canada,Canada,fixed,ws8,17.34883,4240.336
+3469,Canada,Canada,floating,ws7,0.19879,66.174
+3469,Canada,Canada,floating,ws8,149.75776,37599.049
+9,Canada,Canada,fixed,ws7,0.14855,48.743
+9,Canada,Canada,fixed,ws8,6.78073,1664.493
+9,Canada,Canada,floating,ws7,0.07603,25.283
+9,Canada,Canada,floating,ws8,240.81910,60465.980
+1038,Canada,Canada,fixed,ws7,0.93866,308.461
+1038,Canada,Canada,fixed,ws8,7.78631,1912.627
+1038,Canada,Canada,floating,ws7,0.45945,153.293
+1038,Canada,Canada,floating,ws8,128.23760,32197.231
+1434,Canada,Canada,fixed,ws7,0.30114,100.686
+1434,Canada,Canada,fixed,ws8,8.27987,2078.777
+1434,Canada,Canada,floating,ws7,0.28952,96.607
+1434,Canada,Canada,floating,ws8,126.83637,31847.089
+4580,Canada,Canada,fixed,ws7,0.03030,10.226
+4580,Canada,Canada,fixed,ws8,3.70769,934.336
+4580,Canada,Canada,floating,ws7,0.00372,1.256
+4580,Canada,Canada,floating,ws8,83.92253,21072.158
+3111,Canada,Canada,fixed,ws7,0.17207,57.291
+3111,Canada,Canada,fixed,ws8,11.04092,2751.699
+3111,Canada,Canada,floating,ws7,0.80265,267.617
+3111,Canada,Canada,floating,ws8,63.75932,16004.882
+2325,Canada,Canada,fixed,ws7,0.20516,67.938
+2325,Canada,Canada,fixed,ws8,13.04182,3248.652
+2325,Canada,Canada,floating,ws7,0.20265,67.514
+2325,Canada,Canada,floating,ws8,149.77923,37605.765
+2573,Canada,Canada,fixed,ws7,4.47319,1409.697
+2573,Canada,Canada,fixed,ws8,3.19991,753.099
+2573,Canada,Canada,floating,ws7,48.33011,15357.712
+2573,Canada,Canada,floating,ws8,36.18561,8633.440
+2409,Canada,Canada,fixed,ws7,8.10092,2700.106
+2409,Canada,Canada,fixed,ws8,2.69097,672.620
+2409,Canada,Canada,floating,ws7,38.34259,12184.410
+2409,Canada,Canada,floating,ws8,18.09148,4316.403
+400,Canada,Canada,fixed,ws7,4.38032,1374.142
+400,Canada,Canada,fixed,ws8,0.38914,90.590
+400,Canada,Canada,floating,ws7,39.33156,12498.625
+400,Canada,Canada,floating,ws8,3.79429,905.272
+2537,Canada,Canada,fixed,ws7,6.95424,2089.272
+2537,Canada,Canada,fixed,ws8,1.76496,397.505
+2537,Canada,Canada,floating,ws7,50.31314,15988.375
+2537,Canada,Canada,floating,ws8,38.41847,9166.173
+2328,Canada,Canada,fixed,ws7,3.36149,1046.938
+2328,Canada,Canada,fixed,ws8,5.94615,1390.387
+2328,Canada,Canada,floating,ws7,19.75652,6278.174
+2328,Canada,Canada,floating,ws8,96.60010,23047.592
+2511,Canada,Canada,fixed,ws7,5.36780,1762.184
+2511,Canada,Canada,fixed,ws8,0.46083,114.305
+2511,Canada,Canada,floating,ws7,27.77815,8952.028
+2511,Canada,Canada,floating,ws8,1.79436,439.746
+4583,South Africa,South Africa,fixed,ws7,0.41233,137.442
+4583,South Africa,South Africa,fixed,ws8,8.76077,2190.194
+4583,South Africa,South Africa,floating,ws8,133.84110,33460.023
+3800,South Africa,South Africa,fixed,ws7,0.32941,109.806
+3800,South Africa,South Africa,fixed,ws8,0.10827,27.065
+3800,South Africa,South Africa,floating,ws7,18.77945,6259.817
+3800,South Africa,South Africa,floating,ws8,42.70707,10676.686
+385,South Africa,South Africa,fixed,ws7,1.67451,558.166
+385,South Africa,South Africa,fixed,ws8,0.76834,192.082
+385,South Africa,South Africa,floating,ws7,18.53113,6177.043
+385,South Africa,South Africa,floating,ws8,92.02543,23006.183
+2817,Australia,Australia,fixed,ws7,5.37834,1792.785
+2817,Australia,Australia,fixed,ws8,0.57147,142.864
+2817,Australia,Australia,floating,ws7,18.51277,6170.929
+2817,Australia,Australia,floating,ws8,2.19475,548.684
+108,Australia,Australia,fixed,ws7,2.61201,870.669
+108,Australia,Australia,fixed,ws8,2.07325,518.316
+108,Australia,Australia,floating,ws7,4.37080,1456.933
+108,Australia,Australia,floating,ws8,32.04960,8012.399
+102,New Zealand,New Zealand,fixed,ws7,0.28901,96.334
+102,Norfolk Island,Australia,fixed,ws7,1.37507,458.368
+102,New Zealand,New Zealand,fixed,ws8,7.77667,1944.171
+102,New Zealand,New Zealand,floating,ws7,0.00200,0.531
+102,Norfolk Island,Australia,floating,ws7,16.81769,5605.903
+102,New Zealand,New Zealand,floating,ws8,108.01824,27005.109
+102,Norfolk Island,Australia,floating,ws8,2.09565,523.911
+4194,Australia,Australia,fixed,ws7,7.44471,2481.571
+4194,Australia,Australia,floating,ws7,31.34838,10449.469
+2350,Australia,Australia,fixed,ws7,1.42052,473.508
+2350,Australia,Australia,fixed,ws8,0.82644,206.610
+2350,Australia,Australia,floating,ws7,5.81222,1937.406
+2350,Australia,Australia,floating,ws8,14.26526,3566.315
+4747,Australia,Australia,fixed,ws7,0.91454,304.847
+4747,Australia,Australia,fixed,ws8,0.75005,187.512
+4747,Australia,Australia,floating,ws7,5.21126,1737.086
+4747,Australia,Australia,floating,ws8,26.91773,6729.432
+3781,Australia,Australia,fixed,ws7,1.21476,404.914
+3781,Australia,Australia,fixed,ws8,3.35922,839.808
+3781,Australia,Australia,floating,ws8,15.43356,3858.389
+1584,Australia,Australia,fixed,ws7,2.03659,678.857
+1584,Australia,Australia,fixed,ws8,43.82728,10956.820
+1584,Australia,Australia,floating,ws7,0.38620,128.738
+1584,Australia,Australia,floating,ws8,76.36882,19092.195
+1174,Australia,Australia,fixed,ws7,0.48055,160.183
+1174,Australia,Australia,fixed,ws8,30.45887,7614.715
+1174,Australia,Australia,floating,ws8,119.19703,29799.257
+14,Australia,Australia,fixed,ws7,1.66753,555.867
+14,Australia,Australia,fixed,ws8,7.01241,1753.097
+14,Australia,Australia,floating,ws7,0.01789,5.966
+14,Australia,Australia,floating,ws8,63.83363,15958.409
+321,Australia,Australia,fixed,ws7,3.20638,1068.781
+321,Australia,Australia,fixed,ws8,2.95256,738.145
+321,Australia,Australia,floating,ws7,0.01212,4.039
+321,Australia,Australia,floating,ws8,29.58655,7396.651
+2577,Australia,Australia,fixed,ws7,1.65588,551.958
+2577,Australia,Australia,fixed,ws8,31.54076,7885.197
+2577,Australia,Australia,floating,ws7,0.01341,4.470
+2577,Australia,Australia,floating,ws8,130.60433,32651.092
+920,Australia,Australia,fixed,ws7,3.57301,1191.007
+920,Australia,Australia,fixed,ws8,14.26648,3566.623
+920,Australia,Australia,floating,ws7,0.69571,231.903
+920,Australia,Australia,floating,ws8,104.19383,26048.464
+1034,Australia,Australia,fixed,ws7,3.41047,1136.824
+1034,Australia,Australia,fixed,ws8,11.77454,2943.632
+1034,Australia,Australia,floating,ws7,0.00159,0.532
+1034,Australia,Australia,floating,ws8,182.91332,45728.329
+356,Canada,Canada,fixed,ws7,0.01594,5.291
+356,Canada,Canada,floating,ws7,11.66401,3892.036
+356,Canada,Canada,floating,ws8,0.00053,0.133
+4028,Greenland,Denmark,fixed,ws7,0.27205,90.708
+4028,Greenland,Denmark,floating,ws7,39.52312,13176.249
+4028,Greenland,Denmark,floating,ws8,10.91047,2716.069
+1551,Greenland,Denmark,fixed,ws7,0.21840,72.456
+1551,Greenland,Denmark,fixed,ws8,0.11513,28.641
+1551,Greenland,Denmark,floating,ws7,12.00033,3978.134
+1551,Canada,Canada,floating,ws8,0.04167,10.462
+1551,Greenland,Denmark,floating,ws8,15.83416,3929.966
+761,Canada,Canada,fixed,ws7,0.04928,14.327
+761,Greenland,Denmark,fixed,ws7,0.34930,116.302
+761,Canada,Canada,fixed,ws8,0.06811,14.858
+761,Greenland,Denmark,fixed,ws8,0.57324,143.114
+761,Canada,Canada,floating,ws7,1.67914,560.293
+761,Greenland,Denmark,floating,ws7,1.30529,434.446
+761,Canada,Canada,floating,ws8,12.77763,3208.301
+761,Greenland,Denmark,floating,ws8,8.82727,2191.663
+2589,Greenland,Denmark,fixed,ws7,0.01906,6.360
+1771,Canada,Canada,fixed,ws7,0.09631,32.814
+1771,Canada,Canada,fixed,ws8,26.31488,6730.099
+1771,Canada,Canada,floating,ws7,0.02856,9.734
+1771,Canada,Canada,floating,ws8,96.71701,24302.385
+4384,Canada,Canada,fixed,ws7,1.23915,420.447
+4384,Canada,Canada,fixed,ws8,3.53536,900.727
+4384,Canada,Canada,floating,ws7,0.36933,125.313
+4384,Canada,Canada,floating,ws8,5.52653,1406.825
+1135,Russia,Russia,fixed,ws7,0.05854,19.514
+3492,Russia,Russia,fixed,ws7,15.72347,5241.029
+3492,Russia,Russia,fixed,ws8,26.41538,6603.817
+3492,Russia,Russia,floating,ws7,14.48222,4827.244
+3492,Russia,Russia,floating,ws8,35.40851,8851.831
+1686,Russia,Russia,fixed,ws7,21.11111,7036.781
+1686,Russia,Russia,fixed,ws8,140.45454,35113.671
+1686,Russia,Russia,floating,ws7,1.18724,395.755
+1686,Russia,Russia,floating,ws8,26.74341,6685.657
+2182,Russia,Russia,fixed,ws7,1.00545,335.157
+2182,Russia,Russia,fixed,ws8,0.22235,55.587
+2182,Russia,Russia,floating,ws7,0.94154,313.846
+3921,Russia,Russia,fixed,ws7,3.83107,1277.046
+3921,Russia,Russia,fixed,ws8,5.37590,1344.016
+3921,Russia,Russia,floating,ws7,38.86008,12953.365
+3921,Russia,Russia,floating,ws8,103.23913,25810.009
+324,Russia,Russia,fixed,ws7,2.63840,879.490
+324,Russia,Russia,fixed,ws8,2.28343,570.895
+324,Russia,Russia,floating,ws7,30.79230,10264.109
+324,Russia,Russia,floating,ws8,181.46243,45365.996
+4666,Russia,Russia,fixed,ws7,5.60041,1866.812
+4666,Russia,Russia,fixed,ws8,21.07233,5268.092
+4666,Russia,Russia,floating,ws7,2.12298,707.650
+4666,Russia,Russia,floating,ws8,64.61308,16153.408
+2043,Russia,Russia,fixed,ws7,1.94559,648.537
+2043,Russia,Russia,fixed,ws8,14.13763,3534.414
+2043,Russia,Russia,floating,ws7,0.00293,0.975
+2187,Russia,Russia,fixed,ws7,22.71152,7570.515
+2187,Russia,Russia,fixed,ws8,26.80969,6702.410
+2187,Russia,Russia,floating,ws7,19.66271,6554.244
+2187,Russia,Russia,floating,ws8,20.27146,5067.904
+3758,Russia,Russia,fixed,ws7,1.80898,602.986
+3758,Russia,Russia,fixed,ws8,4.46494,1116.234
+3758,Russia,Russia,floating,ws7,16.37456,5458.189
+3758,Russia,Russia,floating,ws8,60.95420,15238.682
+1678,Russia,Russia,fixed,ws7,0.68338,227.789
+1678,Russia,Russia,fixed,ws8,4.70685,1176.746
+1678,Russia,Russia,floating,ws7,8.48244,2827.484
+1678,Russia,Russia,floating,ws8,119.78523,29946.556
+775,Russia,Russia,fixed,ws7,1.71959,573.191
+775,Russia,Russia,fixed,ws8,37.32697,9331.759
+775,Russia,Russia,floating,ws7,0.01117,3.725
+775,Russia,Russia,floating,ws8,249.01186,62253.506
+2094,Russia,Russia,fixed,ws7,2.33653,778.866
+2094,Russia,Russia,fixed,ws8,0.61435,153.588
+2094,Russia,Russia,floating,ws7,17.60504,5868.492
+2094,Russia,Russia,floating,ws8,18.06178,4515.636
+237,Russia,Russia,fixed,ws7,0.49180,163.944
+237,Russia,Russia,fixed,ws8,0.52040,130.103
+237,Russia,Russia,floating,ws7,5.00982,1669.942
+237,Russia,Russia,floating,ws8,20.81676,5204.227
+4921,Russia,Russia,fixed,ws7,0.60440,201.461
+4921,Russia,Russia,fixed,ws8,0.62649,156.621
+4921,Russia,Russia,floating,ws7,3.74775,1249.247
+4921,Russia,Russia,floating,ws8,16.40621,4101.580
+1467,Russia,Russia,fixed,ws7,0.79338,264.457
+1467,Russia,Russia,fixed,ws8,1.20276,300.693
+1467,Russia,Russia,floating,ws7,8.61293,2870.990
+1467,Japan,Japan,floating,ws8,3.57414,893.534
+1467,Russia,Russia,floating,ws8,19.84963,4962.455
+734,Russia,Russia,fixed,ws7,2.74027,913.415
+734,Russia,Russia,fixed,ws8,0.01736,4.341
+734,Russia,Russia,floating,ws7,3.38102,1127.090
+734,Russia,Russia,floating,ws8,1.82350,455.893
+2601,Russia,Russia,fixed,ws7,4.29646,1432.172
+2601,Russia,Russia,fixed,ws8,1.70149,425.387
+2601,Russia,Russia,floating,ws7,4.48120,1493.706
+2601,Russia,Russia,floating,ws8,17.47413,4368.572
+124,Russia,Russia,fixed,ws7,14.06366,4687.902
+124,Russia,Russia,fixed,ws8,21.87294,5468.251
+124,Russia,Russia,floating,ws8,0.18231,45.578
+4825,Russia,Russia,fixed,ws7,3.90603,1302.002
+4825,Russia,Russia,fixed,ws8,0.24243,60.606
+4825,Russia,Russia,floating,ws7,0.57218,190.703
+4825,Russia,Russia,floating,ws8,3.06629,766.580
+3643,Russia,Russia,fixed,ws7,1.93446,644.833
+636,Russia,Russia,fixed,ws7,69.21797,23073.056
+636,Russia,Russia,fixed,ws8,73.34835,18337.841
+4169,Russia,Russia,fixed,ws7,83.03732,27679.698
+4169,Russia,Russia,fixed,ws8,96.12871,24032.993
+3314,Republic of Mauritius,Republic of Mauritius,fixed,ws7,0.40354,134.511
+3314,Republic of Mauritius,Republic of Mauritius,fixed,ws8,0.65314,163.285
+3314,Republic of Mauritius,Republic of Mauritius,floating,ws7,3.80873,1269.577
+3314,Réunion,France,floating,ws7,0.42447,141.489
+3314,Republic of Mauritius,Republic of Mauritius,floating,ws8,5.40190,1350.475
+779,Madagascar,Madagascar,fixed,ws7,1.21966,406.553
+779,Madagascar,Madagascar,fixed,ws8,0.06869,17.169
+1742,Madagascar,Madagascar,fixed,ws7,1.58010,526.704
+1742,Madagascar,Madagascar,fixed,ws8,0.07784,19.461
+233,Madagascar,Madagascar,fixed,ws7,1.47913,493.043
+233,Republic of Mauritius,Republic of Mauritius,fixed,ws7,0.03373,11.243
+233,Madagascar,Madagascar,fixed,ws8,0.81838,204.589
+233,Republic of Mauritius,Republic of Mauritius,fixed,ws8,16.19059,4047.649
+233,Madagascar,Madagascar,floating,ws7,2.84869,949.562
+233,Republic of Mauritius,Republic of Mauritius,floating,ws7,0.37914,126.379
+233,Madagascar,Madagascar,floating,ws8,0.73408,183.519
+233,Republic of Mauritius,Republic of Mauritius,floating,ws8,164.24521,41061.295
+802,Madagascar,Madagascar,fixed,ws7,2.28933,763.109
+802,Madagascar,Madagascar,fixed,ws8,0.10476,26.190
+802,Madagascar,Madagascar,floating,ws7,1.03671,345.571
+59,South Africa,South Africa,fixed,ws7,0.01486,4.955
+59,South Africa,South Africa,fixed,ws8,3.15289,788.221
+59,South Africa,South Africa,floating,ws8,32.04480,8011.139
+1801,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,0.32091,106.970
+1801,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,0.70505,176.211
+1801,Kenya,Kenya,floating,ws7,19.66907,6556.351
+1801,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,0.03869,9.674
+2570,India,India,fixed,ws7,1.28142,427.141
+2825,India,India,fixed,ws7,8.40945,2803.151
+2825,Pakistan,Pakistan,fixed,ws7,0.01002,3.340
+2825,India,India,floating,ws7,2.82557,941.856
+738,India,India,floating,ws7,0.18813,62.710
+2071,India,India,fixed,ws7,0.66900,223.000
+2071,India,India,floating,ws7,0.85039,283.462
+3073,Sri Lanka,Sri Lanka,fixed,ws7,1.09324,364.415
+3073,Sri Lanka,Sri Lanka,fixed,ws8,5.48969,1372.422
+3073,Sri Lanka,Sri Lanka,floating,ws7,0.47383,157.943
+3073,Sri Lanka,Sri Lanka,floating,ws8,5.52930,1382.325
+3789,Sri Lanka,Sri Lanka,fixed,ws7,2.44955,816.516
+3789,India,India,fixed,ws8,0.53132,132.830
+3789,Sri Lanka,Sri Lanka,fixed,ws8,10.20209,2550.521
+3789,Sri Lanka,Sri Lanka,floating,ws7,1.76846,589.487
+3789,India,India,floating,ws8,3.40125,850.312
+3789,Sri Lanka,Sri Lanka,floating,ws8,13.37070,3342.674
+1272,Sri Lanka,Sri Lanka,fixed,ws7,1.28175,427.251
+1272,Sri Lanka,Sri Lanka,fixed,ws8,1.23212,308.030
+1272,Sri Lanka,Sri Lanka,floating,ws7,2.89638,965.458
+1272,Sri Lanka,Sri Lanka,floating,ws8,1.05904,264.760
+10,Sri Lanka,Sri Lanka,fixed,ws7,14.92989,4976.631
+10,Sri Lanka,Sri Lanka,fixed,ws8,2.19625,549.063
+10,Sri Lanka,Sri Lanka,floating,ws7,11.10296,3700.989
+83,Indonesia,Indonesia,fixed,ws7,0.11677,38.925
+53,Kuwait,Kuwait,fixed,ws7,3.29863,1099.544
+53,Saudi Arabia,Saudi Arabia,fixed,ws7,5.75778,1919.263
+2843,Iraq,Iraq,fixed,ws7,0.33500,111.665
+2843,Kuwait,Kuwait,fixed,ws7,4.73761,1579.203
+2843,Kuwait,Kuwait,floating,ws7,0.04963,16.542
+4561,Bahrain,Bahrain,fixed,ws7,0.02591,8.636
+4561,Saudi Arabia,Saudi Arabia,fixed,ws7,12.99987,4333.292
+3285,Iraq,Iraq,fixed,ws7,2.03227,677.419
+3285,Kuwait,Kuwait,fixed,ws7,1.23488,411.626
+2702,Iran,Iran,fixed,ws7,1.15913,386.376
+20,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,1.38857,462.859
+20,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,0.26445,66.109
+20,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws7,6.87100,2290.336
+1843,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,0.41789,139.297
+1843,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,1.46619,366.542
+1843,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws7,2.83855,946.184
+1843,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,7.42508,1856.275
+493,France,France,fixed,ws7,0.03341,11.137
+493,Spain,Spain,fixed,ws7,0.30526,101.738
+493,France,France,fixed,ws8,1.10440,276.084
+493,Spain,Spain,fixed,ws8,0.19400,48.496
+493,Spain,Spain,floating,ws7,9.93430,3311.187
+493,France,France,floating,ws8,9.72876,2431.986
+493,Spain,Spain,floating,ws8,17.96062,4489.727
+2196,Saudi Arabia,Saudi Arabia,fixed,ws7,0.85344,284.481
+2196,Saudi Arabia,Saudi Arabia,floating,ws7,0.19081,63.604
+4442,Saudi Arabia,Saudi Arabia,fixed,ws7,0.63865,212.883
+4442,Saudi Arabia,Saudi Arabia,floating,ws7,0.34931,116.438
+2602,Egypt,Egypt,fixed,ws7,0.85956,286.519
+2602,Egypt,Egypt,fixed,ws8,0.15436,38.591
+2602,Egypt,Egypt,floating,ws7,0.22336,74.455
+2602,Egypt,Egypt,floating,ws8,0.23630,59.076
+3717,Russia,Russia,fixed,ws7,0.06316,21.053
+3717,Russia,Russia,fixed,ws8,9.38531,2346.327
+3717,Russia,Russia,floating,ws8,78.18408,19543.607
+3546,Russia,Russia,fixed,ws7,0.11802,39.348
+3546,Russia,Russia,fixed,ws8,49.74328,12435.835
+3546,Russia,Russia,floating,ws8,5.39567,1348.918
+1736,Russia,Russia,fixed,ws7,12.27989,4092.647
+1736,Russia,Russia,fixed,ws8,6.36026,1590.070
+1736,Russia,Russia,floating,ws7,62.31428,20768.664
+1736,Russia,Russia,floating,ws8,360.83678,90208.259
+1736,Svalbard,Norway,floating,ws8,17.52753,4380.342
+1519,Russia,Russia,fixed,ws7,0.00140,0.464
+1519,Russia,Russia,fixed,ws8,3.12339,780.783
+1519,Russia,Russia,floating,ws8,146.71397,36673.963
+2058,Russia,Russia,fixed,ws7,0.98121,327.075
+2058,Russia,Russia,fixed,ws8,10.29712,2574.282
+2058,Russia,Russia,floating,ws8,10.20315,2550.787
+591,Kazakhstan,Kazakhstan,fixed,ws7,1.41246,457.908
+591,Russia,Russia,fixed,ws7,31.74036,10575.550
+591,Kazakhstan,Kazakhstan,fixed,ws8,0.34127,83.524
+591,Russia,Russia,fixed,ws8,10.06266,2515.507
+591,Kazakhstan,Kazakhstan,floating,ws7,0.80394,260.303
+591,Russia,Russia,floating,ws7,27.79266,9269.975
+591,Azerbaijan,Azerbaijan,floating,ws8,8.73995,2639.093
+591,Kazakhstan,Kazakhstan,floating,ws8,6.28892,1535.379
+591,Russia,Russia,floating,ws8,5.81240,1451.410
+894,Pakistan,Pakistan,fixed,ws7,0.07894,26.312
+2912,Svalbard,Norway,fixed,ws7,2.62056,873.408
+2912,Svalbard,Norway,fixed,ws8,7.78106,1945.046
+2912,Svalbard,Norway,floating,ws7,11.41864,3805.544
+2912,Russia,Russia,floating,ws8,19.36102,4849.988
+2912,Svalbard,Norway,floating,ws8,283.32737,70806.959
+221,Svalbard,Norway,fixed,ws7,5.79254,1930.708
+221,Svalbard,Norway,fixed,ws8,2.84200,710.421
+221,Svalbard,Norway,floating,ws7,13.48540,4494.720
+221,Svalbard,Norway,floating,ws8,10.20227,2549.688
+306,Russia,Russia,fixed,ws7,4.10087,1367.066
+306,Russia,Russia,fixed,ws8,6.55889,1639.615
+306,Russia,Russia,floating,ws7,20.05099,6683.656
+306,Russia,Russia,floating,ws8,147.45573,36859.382
+1857,Russia,Russia,fixed,ws7,7.01665,2339.028
+1857,Russia,Russia,fixed,ws8,1.85063,462.587
+1857,Russia,Russia,floating,ws7,60.12832,20042.299
+1857,Russia,Russia,floating,ws8,187.38349,46837.022
+1426,Russia,Russia,fixed,ws8,48.66335,12165.851
+1426,Russia,Russia,floating,ws8,96.05875,24011.721
+616,Russia,Russia,fixed,ws7,2.67650,892.189
+616,Russia,Russia,fixed,ws8,2.96227,740.318
+616,Russia,Russia,floating,ws7,34.04342,11347.599
+616,Russia,Russia,floating,ws8,318.72871,79668.950
+843,Russia,Russia,fixed,ws8,270.34223,67585.428
+843,Russia,Russia,floating,ws8,70.09723,17523.645
+2721,Russia,Russia,fixed,ws7,6.30893,2102.947
+2721,Russia,Russia,fixed,ws8,146.24128,36560.368
+4270,Chile,Chile,fixed,ws7,3.75104,1250.353
+4270,Chile,Chile,fixed,ws8,14.12766,3531.903
+4270,Chile,Chile,floating,ws7,1.14902,383.006
+4270,Chile,Chile,floating,ws8,34.52525,8631.252
+151,Chile,Chile,fixed,ws7,1.81781,605.924
+151,Chile,Chile,fixed,ws8,8.12979,2032.435
+151,Chile,Chile,floating,ws7,1.16681,388.935
+151,Chile,Chile,floating,ws8,42.33965,10584.822
+472,Chile,Chile,fixed,ws7,0.02144,7.151
+472,Chile,Chile,fixed,ws8,8.11239,2028.064
+472,Chile,Chile,floating,ws7,0.00332,1.106
+472,Chile,Chile,floating,ws8,38.39354,9598.294
+2124,Indonesia,Indonesia,fixed,ws7,0.13734,45.781
+2124,Indonesia,Indonesia,floating,ws7,0.43469,144.896
+1884,Indonesia,Indonesia,fixed,ws7,0.01702,5.675
+1884,Indonesia,Indonesia,floating,ws7,0.00169,0.565
+2939,Indonesia,Indonesia,floating,ws7,0.00158,0.527
+1257,Australia,Australia,fixed,ws7,4.82409,1608.036
+1257,Australia,Australia,fixed,ws8,43.43131,10857.838
+1257,Australia,Australia,floating,ws7,1.06750,355.833
+1257,Australia,Australia,floating,ws8,122.08475,30521.184
+3273,Australia,Australia,fixed,ws7,8.28007,2760.026
+3273,Australia,Australia,fixed,ws8,32.91414,8228.562
+3273,Australia,Australia,floating,ws7,0.00036,0.119
+3273,Australia,Australia,floating,ws8,36.66345,9165.900
+1029,Australia,Australia,fixed,ws7,24.68148,8227.160
+1029,Australia,Australia,fixed,ws8,1.13202,283.005
+1029,Australia,Australia,floating,ws7,49.15187,16383.956
+1029,Australia,Australia,floating,ws8,9.59923,2399.806
+2436,Australia,Australia,fixed,ws7,0.02554,8.511
+2436,Australia,Australia,fixed,ws8,14.25705,3564.250
+2436,Australia,Australia,floating,ws8,128.13635,32034.087
+1366,Australia,Australia,fixed,ws7,0.27183,90.610
+1366,Australia,Australia,fixed,ws8,34.66036,8665.089
+1366,Australia,Australia,floating,ws8,39.33064,9832.662
+2273,Australia,Australia,fixed,ws7,0.43195,143.990
+2273,Australia,Australia,fixed,ws8,2.83273,708.172
+2273,Australia,Australia,floating,ws8,16.07295,4018.238
+256,Papua New Guinea,Papua New Guinea,fixed,ws7,0.97466,324.886
+256,Papua New Guinea,Papua New Guinea,floating,ws7,0.91197,303.988
+2142,Papua New Guinea,Papua New Guinea,floating,ws7,0.08735,29.114
+4018,Australia,Australia,fixed,ws7,23.75149,7917.156
+4018,Australia,Australia,floating,ws7,6.18914,2063.048
+571,Indonesia,Indonesia,fixed,ws7,91.04849,30349.519
+571,Indonesia,Indonesia,floating,ws7,49.98359,16661.226
+849,Philippines,Philippines,fixed,ws7,4.74052,1580.179
+849,Philippines,Philippines,fixed,ws8,2.65415,663.536
+849,Philippines,Philippines,floating,ws7,4.00722,1335.738
+849,Philippines,Philippines,floating,ws8,1.84629,461.572
+51,Philippines,Philippines,fixed,ws7,0.54151,180.513
+51,Philippines,Philippines,floating,ws7,1.96645,655.482
+3593,Philippines,Philippines,fixed,ws7,0.48329,161.089
+3593,Philippines,Philippines,floating,ws7,4.07774,1359.241
+1727,Philippines,Philippines,fixed,ws7,0.01433,4.771
+1727,Philippines,Philippines,fixed,ws8,0.00263,0.656
+1727,Philippines,Philippines,floating,ws7,1.22226,407.418
+1727,Philippines,Philippines,floating,ws8,0.04525,11.313
+466,Japan,Japan,fixed,ws7,3.21510,1071.705
+466,Taiwan,Taiwan,fixed,ws7,0.23056,76.849
+466,Japan,Japan,fixed,ws8,3.90822,977.068
+466,Taiwan,Taiwan,fixed,ws8,4.07335,1018.336
+466,Japan,Japan,floating,ws7,54.08735,18029.124
+466,Taiwan,Taiwan,floating,ws7,9.00558,3001.859
+466,China,China,floating,ws8,0.29738,74.346
+466,Japan,Japan,floating,ws8,93.50637,23376.588
+466,Taiwan,Taiwan,floating,ws8,241.88138,60470.346
+3084,Russia,Russia,fixed,ws7,9.29198,3097.342
+3084,Russia,Russia,fixed,ws8,5.01453,1253.632
+3084,Russia,Russia,floating,ws7,4.35633,1452.110
+3084,Russia,Russia,floating,ws8,75.34290,18835.887
+664,Russia,Russia,fixed,ws7,1.96780,655.919
+664,Russia,Russia,fixed,ws8,2.07560,518.905
+664,Russia,Russia,floating,ws7,8.63953,2879.861
+664,Russia,Russia,floating,ws8,23.71518,5928.849
+3672,Russia,Russia,fixed,ws7,3.50146,1167.155
+3672,Russia,Russia,fixed,ws8,15.42678,3856.680
+3672,Russia,Russia,floating,ws7,0.02625,8.744
+3672,Russia,Russia,floating,ws8,97.64284,24410.921
+1320,Russia,Russia,fixed,ws7,10.77438,3591.482
+1320,Russia,Russia,fixed,ws8,4.85075,1212.687
+1320,Russia,Russia,floating,ws7,1.86024,620.082
+1320,Russia,Russia,floating,ws8,83.77158,20943.070
+2218,Russia,Russia,fixed,ws7,4.33833,1446.094
+2218,Russia,Russia,fixed,ws8,27.56485,6891.220
+2218,Russia,Russia,floating,ws7,1.87113,623.721
+2218,Russia,Russia,floating,ws8,348.71823,87180.300
+4273,Russia,Russia,fixed,ws7,1.82819,609.395
+4273,Russia,Russia,fixed,ws8,0.06383,15.958
+4273,Russia,Russia,floating,ws7,3.18885,1062.946
+4273,Russia,Russia,floating,ws8,25.73905,6434.819
+3879,Russia,Russia,fixed,ws7,1.36599,455.330
+3879,Russia,Russia,fixed,ws8,0.59018,147.548
+3879,Russia,Russia,floating,ws7,10.51138,3503.788
+3879,Russia,Russia,floating,ws8,9.14537,2286.362
+1816,Russia,Russia,fixed,ws7,1.72690,575.637
+1816,Russia,Russia,fixed,ws8,1.59573,398.933
+1816,Russia,Russia,floating,ws7,9.83570,3278.561
+1816,Russia,Russia,floating,ws8,57.38315,14345.912
+4880,Russia,Russia,fixed,ws7,2.22508,741.692
+4880,Russia,Russia,fixed,ws8,17.51330,4378.331
+4880,Russia,Russia,floating,ws7,0.80452,268.173
+4880,Russia,Russia,floating,ws8,5.77900,1444.761
+105,Russia,Russia,fixed,ws7,2.95331,984.429
+105,Russia,Russia,fixed,ws8,6.80750,1701.878
+105,Russia,Russia,floating,ws7,4.74606,1582.027
+105,Russia,Russia,floating,ws8,51.96512,12991.393
+390,China,China,fixed,ws7,85.37640,28458.800
+390,South Korea,South Korea,fixed,ws7,0.00292,0.971
+390,China,China,floating,ws7,102.69609,34232.034
+390,South Korea,South Korea,floating,ws7,27.88857,9296.191
+3780,Japan,Japan,fixed,ws7,4.08175,1360.588
+3780,Japan,Japan,floating,ws7,91.72148,30573.815
+3780,South Korea,South Korea,floating,ws7,76.87694,25625.647
+3780,Japan,Japan,floating,ws8,3.22689,806.723
+3780,South Korea,South Korea,floating,ws8,5.46706,1366.763
+2610,Japan,Japan,fixed,ws7,5.00827,1669.425
+2610,Japan,Japan,floating,ws7,49.59340,16531.124
+469,South Korea,South Korea,fixed,ws7,19.99106,6663.692
+469,South Korea,South Korea,fixed,ws8,12.20763,3051.903
+469,South Korea,South Korea,floating,ws7,168.22689,56075.640
+469,Japan,Japan,floating,ws8,0.23145,57.862
+469,South Korea,South Korea,floating,ws8,156.43849,39109.628
+760,Japan,Japan,fixed,ws7,5.06376,1687.939
+760,Japan,Japan,fixed,ws8,0.78079,195.192
+760,Japan,Japan,floating,ws7,191.99177,63997.245
+760,South Korea,South Korea,floating,ws7,26.65316,8884.387
+760,Japan,Japan,floating,ws8,148.64405,37161.015
+760,South Korea,South Korea,floating,ws8,41.14613,10286.537
+4406,North Korea,North Korea,fixed,ws7,0.82679,275.596
+1249,China,China,fixed,ws7,43.45120,14483.736
+1249,North Korea,North Korea,fixed,ws7,6.37636,2125.452
+1249,China,China,fixed,ws8,0.07259,18.148
+1249,China,China,floating,ws7,5.86130,1953.772
+1091,Mauritania,Mauritania,fixed,ws8,29.08901,7272.253
+1091,Mauritania,Mauritania,floating,ws8,33.26362,8315.932
+1532,Portugal,Portugal,fixed,ws7,7.02178,2340.418
+1532,Portugal,Portugal,fixed,ws8,0.19874,49.682
+1532,Portugal,Portugal,floating,ws7,11.06473,3687.985
+1532,Portugal,Portugal,floating,ws8,27.07159,6767.317
+3425,Algeria,Algeria,fixed,ws7,0.15396,51.319
+3425,Algeria,Algeria,fixed,ws8,0.12241,30.603
+3425,Algeria,Algeria,floating,ws7,2.09187,697.290
+3425,Algeria,Algeria,floating,ws8,0.78766,196.914
+510,Spain,Spain,fixed,ws7,0.41270,137.556
+510,Spain,Spain,fixed,ws8,0.05136,12.838
+510,Algeria,Algeria,floating,ws7,0.02986,9.955
+510,Spain,Spain,floating,ws7,8.24844,2749.263
+510,Algeria,Algeria,floating,ws8,0.00050,0.125
+510,Morocco,Morocco,floating,ws8,0.07455,18.638
+510,Spain,Spain,floating,ws8,22.29196,5572.628
+1235,France,France,fixed,ws7,0.01044,3.480
+2468,Spain,Spain,fixed,ws7,0.50274,167.558
+2468,Spain,Spain,fixed,ws8,0.50927,127.313
+2468,Spain,Spain,floating,ws7,2.68079,893.534
+2468,Spain,Spain,floating,ws8,0.34496,86.234
+1045,Spain,Spain,fixed,ws7,0.00595,1.981
+1045,Spain,Spain,floating,ws7,0.09075,30.247
+3113,United States,United States,fixed,ws7,0.67219,224.184
+3113,United States,United States,fixed,ws8,0.91562,229.013
+3113,United States,United States,floating,ws7,2.24633,749.243
+3113,United States,United States,floating,ws8,25.08105,6271.802
+949,United States,United States,fixed,ws7,2.08871,696.780
+949,United States,United States,fixed,ws8,0.81191,203.072
+949,United States,United States,floating,ws7,5.46153,1821.861
+949,United States,United States,floating,ws8,27.53768,6886.110
+1152,United States,United States,fixed,ws7,0.69190,228.338
+1152,United States,United States,fixed,ws8,5.91104,1473.337
+1152,Alaska (US),United States,floating,ws7,2.41059,796.031
+1152,Alaska (US),United States,floating,ws8,43.91271,10860.412
+2113,United States,United States,fixed,ws7,0.43888,145.791
+2113,United States,United States,fixed,ws8,2.76664,688.381
+2113,Alaska (US),United States,floating,ws7,0.19417,64.138
+2113,Alaska (US),United States,floating,ws8,0.04686,11.633
+4139,United States,United States,fixed,ws7,1.47595,487.285
+4139,United States,United States,fixed,ws8,1.71487,427.451
+4139,Alaska (US),United States,floating,ws7,12.51854,4134.767
+4139,Alaska (US),United States,floating,ws8,76.20257,18846.298
+2388,United States,United States,fixed,ws7,2.03225,659.866
+2388,United States,United States,fixed,ws8,3.38793,844.482
+2388,Alaska (US),United States,floating,ws7,11.32973,3685.331
+2388,Alaska (US),United States,floating,ws8,46.11437,11404.923
+4118,Chile,Chile,fixed,ws7,0.86338,287.791
+4118,Chile,Chile,fixed,ws8,2.81047,702.610
+4118,Chile,Chile,floating,ws7,5.97713,1992.358
+4118,Chile,Chile,floating,ws8,29.03534,7258.780
+12,Chile,Chile,fixed,ws7,1.52337,507.798
+12,Chile,Chile,fixed,ws8,0.31354,78.386
+12,Chile,Chile,floating,ws7,2.16538,721.782
+12,Chile,Chile,floating,ws8,33.65718,8414.236
+1502,Chile,Chile,fixed,ws7,2.12214,707.376
+1502,Chile,Chile,fixed,ws8,4.51407,1128.507
+1502,Chile,Chile,floating,ws7,0.19426,64.755
+1502,Chile,Chile,floating,ws8,31.81728,7954.264
+2725,Chile,Chile,fixed,ws7,0.03638,12.131
+2725,Chile,Chile,fixed,ws8,0.16900,42.250
+2725,Chile,Chile,floating,ws7,0.01812,6.039
+2725,Chile,Chile,floating,ws8,0.08321,20.799
+704,Peru,Peru,fixed,ws7,0.19774,65.914
+704,Peru,Peru,fixed,ws8,0.56878,142.196
+704,Easter Island,Chile,floating,ws7,0.16245,54.147
+704,Peru,Peru,floating,ws7,7.48628,2495.408
+704,Peru,Peru,floating,ws8,44.28629,11071.487
+4116,Peru,Peru,fixed,ws7,0.15981,53.269
+4116,Peru,Peru,fixed,ws8,0.14683,36.708
+4116,Peru,Peru,floating,ws7,4.09867,1366.212
+4116,Peru,Peru,floating,ws8,7.24684,1811.695
+4011,Chile,Chile,floating,ws7,0.15453,51.510
+89,Chile,Chile,fixed,ws7,0.04085,13.620
+89,Chile,Chile,floating,ws7,5.94807,1982.674
+89,Chile,Chile,floating,ws8,1.81345,453.365
+2122,Peru,Peru,fixed,ws7,0.02881,9.604
+2122,Peru,Peru,fixed,ws8,0.83374,208.428
+2122,Peru,Peru,floating,ws7,0.46239,154.128
+2122,Peru,Peru,floating,ws8,18.90137,4725.305
+1983,Peru,Peru,fixed,ws7,0.03122,10.408
+1983,Peru,Peru,floating,ws7,0.13027,43.424
+2293,Brazil,Brazil,fixed,ws7,2.46396,821.301
+2293,Brazil,Brazil,fixed,ws8,54.38767,13596.774
+2293,Brazil,Brazil,floating,ws8,61.99067,15497.405
+4515,Brazil,Brazil,fixed,ws8,0.08597,21.492
+4515,Uruguay,Uruguay,fixed,ws8,4.70007,1174.448
+1568,Canada,Canada,fixed,ws7,0.81815,279.204
+1568,Canada,Canada,fixed,ws8,0.61317,156.791
+1568,Canada,Canada,floating,ws7,16.79257,5603.327
+1568,Canada,Canada,floating,ws8,34.16337,8577.989
+3968,Canada,Canada,fixed,ws7,7.93841,2719.252
+3968,Canada,Canada,fixed,ws8,3.46378,890.519
+3968,Canada,Canada,floating,ws7,23.96353,7996.147
+3968,Canada,Canada,floating,ws8,53.03276,13315.855
+1019,Canada,Canada,fixed,ws7,7.71047,2647.468
+1019,Canada,Canada,fixed,ws8,1.64526,423.829
+1019,Canada,Canada,floating,ws7,20.74958,6923.698
+1019,Canada,Canada,floating,ws8,80.41162,20190.341
+3499,Canada,Canada,fixed,ws7,19.42082,6651.116
+3499,Canada,Canada,fixed,ws8,3.95744,1017.438
+3499,Canada,Canada,floating,ws7,8.55770,2855.526
+3499,Canada,Canada,floating,ws8,44.88457,11269.948
+600,Canada,Canada,fixed,ws7,20.90797,7092.282
+600,Canada,Canada,fixed,ws8,14.10150,3602.102
+600,Canada,Canada,floating,ws7,5.62497,1882.045
+600,Canada,Canada,floating,ws8,29.60791,7436.910
+4182,Canada,Canada,fixed,ws7,6.88989,2337.947
+4182,Canada,Canada,fixed,ws8,0.34128,87.146
+4182,Canada,Canada,floating,ws7,13.50749,4507.167
+4182,Canada,Canada,floating,ws8,35.94081,9024.283
+4953,Canada,Canada,fixed,ws7,12.52486,4268.638
+4953,Canada,Canada,fixed,ws8,0.23590,60.262
+4953,Canada,Canada,floating,ws7,10.33664,3449.216
+2729,Canada,Canada,fixed,ws7,0.00314,1.065
+2729,Canada,Canada,fixed,ws8,20.24766,5172.378
+2729,Canada,Canada,floating,ws8,0.51022,128.116
+4108,Canada,Canada,fixed,ws8,32.07722,8194.428
+4108,Canada,Canada,floating,ws8,59.84149,15026.855
+4427,Canada,Canada,fixed,ws8,61.68097,15764.296
+4427,Canada,Canada,floating,ws8,53.79933,13508.534
+1697,Canada,Canada,fixed,ws7,0.03177,10.776
+1697,Canada,Canada,fixed,ws8,58.16950,14859.684
+1697,Canada,Canada,floating,ws8,0.82852,209.940
+544,Canada,Canada,fixed,ws7,19.80410,6725.233
+544,Canada,Canada,fixed,ws8,4.80073,1227.191
+544,Canada,Canada,floating,ws7,33.02036,11018.202
+544,Canada,Canada,floating,ws8,100.40397,25210.167
+4262,Canada,Canada,fixed,ws7,5.49931,1889.650
+4262,Canada,Canada,fixed,ws8,0.40183,103.587
+4262,Canada,Canada,floating,ws7,12.50767,4173.546
+4262,Canada,Canada,floating,ws8,88.09498,22119.534
+4107,Canada,Canada,fixed,ws7,0.40152,132.891
+4107,Canada,Canada,fixed,ws8,5.28150,1304.311
+4107,Canada,Canada,floating,ws7,0.09981,33.214
+4107,Canada,Canada,floating,ws8,16.67706,4187.399
+4533,Canada,Canada,fixed,ws7,2.70328,878.121
+4533,Canada,Canada,fixed,ws8,13.32796,3245.276
+4533,Canada,Canada,floating,ws7,0.02538,8.195
+4533,Canada,Canada,floating,ws8,22.50914,5643.154
+4417,Canada,Canada,fixed,ws7,0.33916,110.162
+4417,United States,United States,fixed,ws7,0.07232,24.106
+4417,Canada,Canada,fixed,ws8,3.47836,841.189
+4417,United States,United States,fixed,ws8,3.33541,833.851
+4417,Canada,Canada,floating,ws7,0.02187,7.046
+4417,United States,United States,floating,ws7,0.00085,0.283
+4417,Canada,Canada,floating,ws8,31.60904,7935.930
+4417,United States,United States,floating,ws8,64.89560,16223.903
+1385,Canada,Canada,fixed,ws7,0.23571,76.568
+1385,Canada,Canada,fixed,ws8,17.73783,4316.601
+1385,Canada,Canada,floating,ws8,185.07239,46467.042
+1385,United States,United States,floating,ws8,4.85915,1214.787
+174,Canada,Canada,fixed,ws7,0.15929,51.744
+174,Canada,Canada,fixed,ws8,2.83891,691.330
+2159,Canada,Canada,fixed,ws7,1.21655,395.156
+2159,Canada,Canada,fixed,ws8,31.37585,7555.708
+2159,Canada,Canada,floating,ws7,0.07735,24.840
+2159,Canada,Canada,floating,ws8,184.37903,46278.819
+3874,Canada,Canada,fixed,ws7,0.12891,41.873
+3874,Canada,Canada,fixed,ws8,50.00371,12181.976
+3874,Canada,Canada,floating,ws8,39.08518,9813.199
+2599,Canada,Canada,fixed,ws7,0.44765,148.319
+2599,Canada,Canada,fixed,ws8,0.89081,221.232
+2599,Canada,Canada,floating,ws7,0.51726,172.507
+2599,Canada,Canada,floating,ws8,6.06637,1523.189
+2146,Canada,Canada,fixed,ws7,0.10428,34.413
+2146,Canada,Canada,fixed,ws8,10.22153,2543.234
+2146,Canada,Canada,floating,ws7,0.05835,19.472
+2146,Canada,Canada,floating,ws8,203.42761,51077.999
+1136,Canada,Canada,fixed,ws7,0.53092,175.737
+1136,Canada,Canada,fixed,ws8,2.04801,509.282
+1136,Canada,Canada,floating,ws7,0.53047,177.007
+1136,Canada,Canada,floating,ws8,78.76676,19777.336
+3003,Canada,Canada,fixed,ws7,1.04909,349.969
+3003,Canada,Canada,fixed,ws8,0.28953,72.459
+3003,Canada,Canada,floating,ws7,1.03854,346.538
+3003,Canada,Canada,floating,ws8,11.56144,2902.931
+1327,Canada,Canada,fixed,ws7,0.00146,0.502
+3683,Canada,Canada,fixed,ws7,2.94275,1010.827
+3683,Canada,Canada,fixed,ws8,13.51547,3482.746
+3683,Canada,Canada,floating,ws7,0.62317,213.854
+3683,Canada,Canada,floating,ws8,31.10356,7810.739
+1245,Canada,Canada,fixed,ws7,4.19492,1439.421
+1245,Canada,Canada,fixed,ws8,4.51971,1164.047
+1245,Canada,Canada,floating,ws7,12.28008,4097.606
+1245,Canada,Canada,floating,ws8,116.26761,29193.326
+458,Canada,Canada,fixed,ws7,0.00451,1.549
+458,Canada,Canada,fixed,ws8,10.59811,2731.231
+458,Canada,Canada,floating,ws8,136.10188,34173.460
+3125,Canada,Canada,fixed,ws7,3.92875,1349.734
+3125,Canada,Canada,fixed,ws8,0.49091,126.446
+3125,Canada,Canada,floating,ws7,28.67520,9568.350
+3125,Canada,Canada,floating,ws8,47.90192,12027.566
+2141,Canada,Canada,fixed,ws7,4.76547,1637.818
+2141,Canada,Canada,fixed,ws8,14.99930,3865.273
+2141,Canada,Canada,floating,ws7,2.84585,949.601
+2141,Canada,Canada,floating,ws8,116.80054,29327.445
+2898,Canada,Canada,fixed,ws7,0.90791,311.852
+2898,Canada,Canada,fixed,ws8,19.16115,4937.571
+2898,Canada,Canada,floating,ws7,0.96320,330.813
+2898,Canada,Canada,floating,ws8,10.92318,2744.211
+3169,Canada,Canada,fixed,ws7,3.23932,1113.066
+3169,Canada,Canada,fixed,ws8,1.67810,432.425
+3169,Canada,Canada,floating,ws7,2.64227,881.670
+3169,Canada,Canada,floating,ws8,15.99997,4017.391
+2901,Canada,Canada,fixed,ws7,0.02114,7.265
+2901,Canada,Canada,fixed,ws8,0.46895,120.843
+983,Canada,Canada,fixed,ws7,2.97909,1023.626
+983,Canada,Canada,fixed,ws8,0.99080,255.291
+983,Canada,Canada,floating,ws7,2.13490,712.372
+983,Canada,Canada,floating,ws8,4.71897,1184.873
+875,Dominican Republic,Dominican Republic,fixed,ws7,2.09499,644.238
+875,Dominican Republic,Dominican Republic,fixed,ws8,0.05068,11.808
+875,Dominican Republic,Dominican Republic,floating,ws7,21.34017,6531.208
+875,Puerto Rico,United States,floating,ws7,0.90982,270.679
+875,Dominican Republic,Dominican Republic,floating,ws8,1.57572,367.189
+2954,Dominican Republic,Dominican Republic,fixed,ws7,4.24689,1305.978
+2954,Turks and Caicos Islands,United Kingdom,fixed,ws7,0.19447,61.106
+2954,Dominican Republic,Dominican Republic,fixed,ws8,3.31026,775.111
+2954,Turks and Caicos Islands,United Kingdom,fixed,ws8,4.38939,1030.715
+2954,Dominican Republic,Dominican Republic,floating,ws7,12.65385,3872.740
+2954,Turks and Caicos Islands,United Kingdom,floating,ws7,0.62195,195.501
+2954,Dominican Republic,Dominican Republic,floating,ws8,8.47323,1982.440
+2954,Turks and Caicos Islands,United Kingdom,floating,ws8,13.73164,3226.333
+3929,Dominican Republic,Dominican Republic,fixed,ws7,0.00381,1.173
+3929,Puerto Rico,United States,fixed,ws7,1.33982,393.460
+3929,Dominican Republic,Dominican Republic,floating,ws7,1.86947,572.155
+3929,Puerto Rico,United States,floating,ws7,15.52929,4620.109
+3461,Jamaica,Jamaica,floating,ws7,1.71073,555.922
+3730,Dominican Republic,Dominican Republic,fixed,ws7,0.09202,28.725
+3730,Dominican Republic,Dominican Republic,fixed,ws8,1.34235,312.775
+3730,Dominican Republic,Dominican Republic,floating,ws7,0.42531,131.627
+3730,Dominican Republic,Dominican Republic,floating,ws8,5.98110,1393.769
+265,Dominican Republic,Dominican Republic,fixed,ws7,0.13241,40.719
+265,Haiti,Haiti,fixed,ws7,0.28463,89.644
+265,Dominican Republic,Dominican Republic,fixed,ws8,0.46231,108.423
+265,Haiti,Haiti,fixed,ws8,0.01158,2.744
+265,Turks and Caicos Islands,United Kingdom,fixed,ws8,0.32799,77.019
+265,Dominican Republic,Dominican Republic,floating,ws7,0.76387,233.785
+265,Haiti,Haiti,floating,ws7,1.74024,547.702
+265,Dominican Republic,Dominican Republic,floating,ws8,0.31077,72.739
+265,Haiti,Haiti,floating,ws8,1.68917,400.737
+265,Turks and Caicos Islands,United Kingdom,floating,ws8,0.97932,230.096
+2340,Bahamas,Bahamas,fixed,ws7,3.18781,1035.262
+2340,Cuba,Cuba,fixed,ws7,0.08196,26.891
+2340,Turks and Caicos Islands,United Kingdom,fixed,ws7,0.67315,211.664
+2340,Bahamas,Bahamas,fixed,ws8,0.05073,12.044
+2340,Cuba,Cuba,fixed,ws8,0.00129,0.308
+2340,Turks and Caicos Islands,United Kingdom,fixed,ws8,0.40713,95.603
+2340,Bahamas,Bahamas,floating,ws7,14.18804,4596.334
+2340,Cuba,Cuba,floating,ws7,2.28775,747.105
+2340,Haiti,Haiti,floating,ws7,0.36021,114.180
+2340,Turks and Caicos Islands,United Kingdom,floating,ws7,5.40498,1699.387
+2340,Bahamas,Bahamas,floating,ws8,2.50469,595.950
+2340,Cuba,Cuba,floating,ws8,1.29876,310.909
+2340,Haiti,Haiti,floating,ws8,0.83261,197.528
+2340,Turks and Caicos Islands,United Kingdom,floating,ws8,3.06544,720.245
+1237,Bahamas,Bahamas,fixed,ws7,16.42383,5333.750
+1237,Cuba,Cuba,fixed,ws7,0.03834,12.591
+1237,Cuba,Cuba,fixed,ws8,0.00110,0.268
+1237,Bahamas,Bahamas,floating,ws7,7.05857,2286.690
+1237,Cuba,Cuba,floating,ws7,3.41652,1120.064
+1237,Cuba,Cuba,floating,ws8,0.28413,69.140
+2661,Peru,Peru,fixed,ws7,3.17447,1058.146
+2661,Peru,Peru,fixed,ws8,2.22982,557.452
+2661,Peru,Peru,floating,ws7,6.43103,2143.656
+2661,Peru,Peru,floating,ws8,11.29266,2823.146
+2042,United States,United States,fixed,ws7,2.43578,811.928
+2042,United States,United States,fixed,ws8,35.86122,8965.294
+2042,United States,United States,floating,ws7,0.00097,0.324
+2042,United States,United States,floating,ws8,39.71541,9928.855
+2585,Canada,Canada,fixed,ws7,0.03504,11.950
+4936,Canada,Canada,fixed,ws7,0.05210,17.675
+4936,Canada,Canada,fixed,ws8,19.76125,5048.130
+4936,Canada,Canada,floating,ws8,29.37822,7376.626
+1665,Canada,Canada,fixed,ws7,13.31505,4450.652
+1665,Canada,Canada,fixed,ws8,9.31626,2328.729
+1665,Canada,Canada,floating,ws7,1.82891,581.185
+1665,Canada,Canada,floating,ws8,36.66713,8748.480
+819,Canada,Canada,fixed,ws7,14.04588,4586.682
+819,Canada,Canada,floating,ws7,32.37470,10287.949
+819,Canada,Canada,floating,ws8,42.00460,10021.780
+292,Australia,Australia,fixed,ws7,38.27672,12758.900
+292,Australia,Australia,floating,ws7,80.51855,26839.518
+292,New Caledonia,France,floating,ws7,0.85051,283.503
+292,New Caledonia,France,floating,ws8,0.19839,49.596
+1419,Canada,Canada,fixed,ws7,6.25259,2124.597
+1419,Canada,Canada,fixed,ws8,0.04095,10.462
+1419,Canada,Canada,floating,ws7,9.54753,3185.811
+1419,Canada,Canada,floating,ws8,85.85737,21557.698
+3842,Canada,Canada,fixed,ws7,0.78508,269.284
+3842,Canada,Canada,fixed,ws8,0.00027,0.068
+3842,Canada,Canada,floating,ws7,4.21426,1406.628
+3842,Canada,Canada,floating,ws8,0.25905,65.044
+3411,Canada,Canada,fixed,ws7,2.13676,733.903
+3411,Canada,Canada,fixed,ws8,0.16074,41.425
+3411,Canada,Canada,floating,ws7,7.77766,2595.241
+3411,Canada,Canada,floating,ws8,81.40978,20440.966
+924,Canada,Canada,fixed,ws7,21.69534,7359.407
+1679,Canada,Canada,fixed,ws7,38.77943,13155.760
+1679,Canada,Canada,fixed,ws8,9.24574,2361.870
+1679,Canada,Canada,floating,ws7,0.06063,20.230
+2686,Canada,Canada,fixed,ws7,1.59501,531.595
+2686,Canada,Canada,fixed,ws8,0.00112,0.280
+2686,Canada,Canada,floating,ws7,15.82809,5281.596
+2686,Canada,Canada,floating,ws8,0.00097,0.243
+49,Canada,Canada,fixed,ws7,1.82168,621.235
+49,Canada,Canada,fixed,ws8,0.07617,19.485
+49,Canada,Canada,floating,ws7,6.42425,2143.644
+49,Canada,Canada,floating,ws8,11.16934,2804.480
+2811,Greenland,Denmark,fixed,ws7,0.01920,6.401
+2811,Greenland,Denmark,floating,ws7,0.69712,232.321
+2811,Greenland,Denmark,floating,ws8,0.09250,23.120
+1669,Canada,Canada,fixed,ws7,0.06287,21.356
+1669,Canada,Canada,fixed,ws8,0.11206,28.539
+1669,Canada,Canada,floating,ws7,12.86125,4291.532
+1669,Canada,Canada,floating,ws8,57.23598,14371.250
+658,Greenland,Denmark,fixed,ws7,1.08835,362.847
+658,Greenland,Denmark,fixed,ws8,0.03992,9.981
+658,Greenland,Denmark,floating,ws7,10.68096,3560.829
+658,Greenland,Denmark,floating,ws8,16.17139,4042.008
+1954,Greenland,Denmark,fixed,ws7,0.04814,16.056
+1954,Greenland,Denmark,fixed,ws8,0.02871,7.177
+1954,Greenland,Denmark,floating,ws7,6.23584,2079.123
+1954,Greenland,Denmark,floating,ws8,3.69617,924.750
+2918,Greenland,Denmark,fixed,ws7,0.52878,175.537
+2918,Greenland,Denmark,fixed,ws8,0.84396,210.105
+2918,Greenland,Denmark,floating,ws7,26.81368,8889.816
+2918,Greenland,Denmark,floating,ws8,7.78269,1936.654
+1338,Canada,Canada,fixed,ws7,1.36686,458.528
+1338,Canada,Canada,fixed,ws8,0.00100,0.254
+1338,Canada,Canada,floating,ws7,29.15701,9729.135
+242,Greenland,Denmark,fixed,ws7,0.16633,55.390
+242,Greenland,Denmark,fixed,ws8,0.09884,24.683
+242,Greenland,Denmark,floating,ws7,2.70757,901.604
+242,Greenland,Denmark,floating,ws8,1.02441,255.833
+4644,Canada,Canada,fixed,ws7,0.03138,8.841
+4644,Greenland,Denmark,fixed,ws7,0.03771,12.562
+4644,Canada,Canada,fixed,ws8,0.05343,11.280
+4644,Greenland,Denmark,fixed,ws8,0.04378,10.940
+4644,Canada,Canada,floating,ws7,0.13277,44.303
+4644,Greenland,Denmark,floating,ws7,0.00374,1.245
+4644,Canada,Canada,floating,ws8,2.94909,740.479
+4644,Greenland,Denmark,floating,ws8,0.65921,163.648
+2055,Greenland,Denmark,fixed,ws8,0.00016,0.039
+4277,Greenland,Denmark,fixed,ws7,0.89490,296.636
+4277,Greenland,Denmark,fixed,ws8,2.56686,638.166
+4277,Greenland,Denmark,floating,ws7,5.42818,1797.277
+4277,Greenland,Denmark,floating,ws8,81.02475,20051.452
+736,Greenland,Denmark,fixed,ws7,0.29449,97.683
+736,Greenland,Denmark,fixed,ws8,0.24649,61.300
+736,Greenland,Denmark,floating,ws7,0.39301,130.382
+736,Greenland,Denmark,floating,ws8,8.38530,2075.123
+4418,Russia,Russia,fixed,ws7,2.27835,759.446
+529,Russia,Russia,fixed,ws7,5.94475,1981.574
+2866,Russia,Russia,fixed,ws7,2.06332,687.750
+3680,Russia,Russia,fixed,ws7,0.00080,0.268
+2354,Russia,Russia,fixed,ws7,2.14276,714.238
+2354,Russia,Russia,fixed,ws8,5.29154,1322.816
+2354,Russia,Russia,floating,ws7,0.14059,46.874
+2354,Russia,Russia,floating,ws8,116.40206,29100.766
+7,Russia,Russia,fixed,ws7,8.74176,2913.942
+7,Russia,Russia,fixed,ws8,6.57316,1643.242
+7,Russia,Russia,floating,ws7,0.02645,8.821
+7,Russia,Russia,floating,ws8,57.33152,14333.005
+1540,Russia,Russia,fixed,ws7,23.11010,7703.305
+1540,Russia,Russia,fixed,ws8,0.08035,20.088
+1540,Russia,Russia,floating,ws7,24.76333,8254.022
+1540,Russia,Russia,floating,ws8,182.64398,45661.454
+3352,Russia,Russia,fixed,ws7,11.68482,3894.953
+3352,Russia,Russia,fixed,ws8,14.19568,3548.925
+3352,Russia,Russia,floating,ws7,19.32943,6442.899
+3352,Russia,Russia,floating,ws8,120.37243,30093.408
+2541,South Africa,South Africa,fixed,ws7,0.41186,137.287
+2541,South Africa,South Africa,fixed,ws8,0.25856,64.638
+2541,South Africa,South Africa,floating,ws7,0.14026,46.754
+2541,South Africa,South Africa,floating,ws8,7.00134,1750.322
+1223,Angola,Angola,fixed,ws7,1.25555,418.515
+1223,Angola,Angola,fixed,ws8,0.58377,145.943
+1223,Namibia,Namibia,fixed,ws8,2.46436,616.089
+1223,Angola,Angola,floating,ws7,2.73746,912.488
+1223,Angola,Angola,floating,ws8,14.79365,3698.402
+1223,Namibia,Namibia,floating,ws8,40.44531,10111.438
+619,India,India,fixed,ws7,3.64022,1213.407
+619,India,India,floating,ws7,10.26805,3422.683
+1824,Cambodia,Cambodia,fixed,ws7,0.13207,44.025
+540,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,6.80874,1702.184
+540,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,38.00519,9501.300
+2861,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,9.26545,2316.364
+2861,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,23.28690,5821.726
+4015,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,3.55256,888.139
+4015,Federal Republic of Somalia,Federal Republic of Somalia,floating,ws8,18.00230,4500.577
+3410,France,France,fixed,ws7,0.20266,67.557
+3410,Italy,Italy,fixed,ws7,0.66539,221.782
+3410,France,France,fixed,ws8,0.12438,31.095
+3410,Italy,Italy,fixed,ws8,0.22500,56.241
+3410,France,France,floating,ws7,3.12973,1043.356
+3410,Italy,Italy,floating,ws7,8.04299,2680.506
+3410,France,France,floating,ws8,1.75362,438.497
+3410,Italy,Italy,floating,ws8,8.73731,2184.034
+3671,Italy,Italy,floating,ws7,0.30309,101.024
+277,Italy,Italy,fixed,ws7,0.74243,247.465
+277,Italy,Italy,floating,ws7,31.69703,10565.476
+277,Tunisia,Tunisia,floating,ws7,1.46876,489.553
+2083,Belgium,Belgium,fixed,ws8,13.65448,3410.834
+2083,France,France,fixed,ws8,4.23075,1057.418
+2083,Netherlands,Netherlands,fixed,ws8,11.76332,2940.191
+2083,United Kingdom,United Kingdom,fixed,ws8,3.28655,821.598
+2083,United Kingdom,United Kingdom,floating,ws8,0.02927,7.318
+467,Morocco,Morocco,fixed,ws7,3.04072,1013.573
+467,Canary Islands,Spain,fixed,ws8,0.14530,36.324
+467,Morocco,Morocco,fixed,ws8,0.11749,29.373
+467,Morocco,Morocco,floating,ws7,20.86197,6953.989
+467,Canary Islands,Spain,floating,ws8,7.38718,1846.675
+467,Morocco,Morocco,floating,ws8,13.81784,3454.461
+3447,Morocco,Morocco,floating,ws7,5.17714,1725.712
+3447,Morocco,Morocco,floating,ws8,4.74018,1185.045
+365,Portugal,Portugal,fixed,ws7,2.57791,859.251
+365,Portugal,Portugal,fixed,ws8,0.19860,49.646
+365,Portugal,Portugal,floating,ws7,23.32116,7773.166
+365,Portugal,Portugal,floating,ws8,13.81622,3453.809
+4120,Portugal,Portugal,fixed,ws7,1.97427,658.066
+4120,Portugal,Portugal,fixed,ws8,1.74166,435.386
+4120,Azores,Portugal,floating,ws7,3.96880,1322.877
+4120,Portugal,Portugal,floating,ws7,5.97272,1990.764
+4120,Azores,Portugal,floating,ws8,59.14412,14784.969
+4120,Portugal,Portugal,floating,ws8,25.62493,6405.755
+1265,Morocco,Morocco,fixed,ws7,2.34357,781.192
+1265,Canary Islands,Spain,fixed,ws8,0.01306,3.266
+1265,Morocco,Morocco,fixed,ws8,7.35272,1838.179
+1265,Morocco,Morocco,floating,ws7,2.43176,810.588
+1265,Canary Islands,Spain,floating,ws8,0.57703,144.245
+1265,Morocco,Morocco,floating,ws8,40.84318,10210.800
+1990,Morocco,Morocco,fixed,ws7,0.94121,313.737
+1990,Morocco,Morocco,fixed,ws8,0.09288,23.220
+1990,Morocco,Morocco,floating,ws7,10.39840,3466.136
+1990,Morocco,Morocco,floating,ws8,0.01741,4.353
+4271,Portugal,Portugal,fixed,ws7,0.26750,89.163
+4271,Spain,Spain,fixed,ws7,2.88704,962.291
+4271,Spain,Spain,fixed,ws8,0.32083,80.203
+4271,Portugal,Portugal,floating,ws7,9.48749,3162.291
+4271,Spain,Spain,floating,ws7,13.06976,4356.292
+4271,Spain,Spain,floating,ws8,8.08404,2020.904
+404,Eritrea,Eritrea,fixed,ws7,0.37128,123.759
+404,Yemen,Yemen,fixed,ws7,2.92893,976.311
+404,Eritrea,Eritrea,fixed,ws8,0.08300,20.752
+404,Yemen,Yemen,fixed,ws8,0.84392,210.980
+404,Eritrea,Eritrea,floating,ws7,0.99994,333.315
+404,Yemen,Yemen,floating,ws7,10.05239,3350.783
+404,Eritrea,Eritrea,floating,ws8,0.00041,0.102
+404,Yemen,Yemen,floating,ws8,0.99271,248.175
+3334,Eritrea,Eritrea,fixed,ws7,1.12304,374.349
+3334,Eritrea,Eritrea,fixed,ws8,0.13322,33.305
+3334,Eritrea,Eritrea,floating,ws7,1.29976,433.255
+3334,Eritrea,Eritrea,floating,ws8,0.00348,0.869
+4569,Egypt,Egypt,fixed,ws8,3.03806,759.515
+4569,Egypt,Egypt,floating,ws8,1.91189,477.973
+312,Egypt,Egypt,fixed,ws7,0.35231,117.437
+312,Egypt,Egypt,fixed,ws8,0.01407,3.519
+703,Saudi Arabia,Saudi Arabia,fixed,ws7,1.41023,470.077
+703,Saudi Arabia,Saudi Arabia,fixed,ws8,2.09095,522.738
+703,Egypt,Egypt,floating,ws7,0.44916,149.723
+703,Saudi Arabia,Saudi Arabia,floating,ws7,15.54929,5183.092
+703,Saudi Arabia,Saudi Arabia,floating,ws8,4.69674,1174.185
+3248,Saudi Arabia,Saudi Arabia,fixed,ws7,0.25616,85.385
+3248,Egypt,Egypt,floating,ws7,0.38492,128.311
+3248,Saudi Arabia,Saudi Arabia,floating,ws7,16.82054,5606.841
+3248,Egypt,Egypt,floating,ws8,0.00106,0.265
+772,Saudi Arabia,Saudi Arabia,fixed,ws7,0.29000,96.668
+772,Saudi Arabia,Saudi Arabia,fixed,ws8,1.60123,400.308
+772,Egypt,Egypt,floating,ws7,1.38583,461.943
+772,Saudi Arabia,Saudi Arabia,floating,ws7,10.11386,3371.284
+772,Egypt,Egypt,floating,ws8,12.24512,3061.282
+772,Saudi Arabia,Saudi Arabia,floating,ws8,16.20176,4050.437
+4446,Egypt,Egypt,fixed,ws7,0.01102,3.672
+4446,Jordan,Jordan,fixed,ws7,0.00501,1.671
+4446,Saudi Arabia,Saudi Arabia,fixed,ws7,0.08856,29.520
+4446,Egypt,Egypt,fixed,ws8,0.02176,5.441
+4446,Israel,Israel,fixed,ws8,0.01754,4.384
+4446,Saudi Arabia,Saudi Arabia,fixed,ws8,0.09903,24.758
+4446,Egypt,Egypt,floating,ws7,0.42422,141.406
+4446,Jordan,Jordan,floating,ws7,0.00701,2.337
+4446,Saudi Arabia,Saudi Arabia,floating,ws7,0.75322,251.075
+4446,Egypt,Egypt,floating,ws8,1.19251,298.129
+4446,Israel,Israel,floating,ws8,0.09978,24.946
+4446,Jordan,Jordan,floating,ws8,0.68289,170.723
+4446,Saudi Arabia,Saudi Arabia,floating,ws8,1.81144,452.859
+3433,Egypt,Egypt,fixed,ws7,0.00225,0.748
+3433,Egypt,Egypt,fixed,ws8,0.00120,0.299
+3433,Egypt,Egypt,floating,ws7,13.37341,4457.803
+3433,Saudi Arabia,Saudi Arabia,floating,ws7,5.29676,1765.585
+3433,Egypt,Egypt,floating,ws8,0.08076,20.190
+2120,Egypt,Egypt,fixed,ws7,0.17322,57.739
+2120,Egypt,Egypt,fixed,ws8,12.31704,3079.261
+2120,Saudi Arabia,Saudi Arabia,fixed,ws8,0.00968,2.421
+2120,Egypt,Egypt,floating,ws7,0.41450,138.166
+2120,Egypt,Egypt,floating,ws8,18.54379,4635.948
+2120,Saudi Arabia,Saudi Arabia,floating,ws8,0.82852,207.131
+1585,Egypt,Egypt,fixed,ws7,0.08141,27.137
+1585,Egypt,Egypt,fixed,ws8,1.20575,301.438
+1585,Egypt,Egypt,floating,ws7,6.53332,2177.773
+1585,Egypt,Egypt,floating,ws8,28.83777,7209.440
+1050,Egypt,Egypt,fixed,ws7,3.29673,1098.911
+1050,Egypt,Egypt,fixed,ws8,5.20397,1300.992
+1050,Egypt,Egypt,floating,ws7,43.99895,14666.321
+1050,Saudi Arabia,Saudi Arabia,floating,ws7,0.01172,3.908
+1050,Egypt,Egypt,floating,ws8,8.31519,2078.796
+1800,Russia,Russia,fixed,ws7,0.37310,124.314
+1800,Kazakhstan,Kazakhstan,fixed,ws8,37.74282,9237.733
+1800,Russia,Russia,fixed,ws8,30.02007,7504.542
+3977,Kazakhstan,Kazakhstan,fixed,ws8,0.08391,20.536
+3598,Russia,Russia,fixed,ws7,1.16942,389.810
+3598,Russia,Russia,fixed,ws8,0.98944,247.361
+3598,Russia,Russia,floating,ws7,0.04002,13.335
+3598,Russia,Russia,floating,ws8,6.85567,1713.917
+1185,Russia,Russia,fixed,ws7,0.64411,214.694
+1185,Russia,Russia,fixed,ws8,12.60359,3150.901
+1185,Russia,Russia,floating,ws8,44.50016,11125.038
+615,Turkmenistan,Turkmenistan,fixed,ws7,24.51670,8029.162
+615,Turkmenistan,Turkmenistan,fixed,ws8,3.24355,798.589
+615,Turkmenistan,Turkmenistan,floating,ws7,2.65996,868.766
+615,Azerbaijan,Azerbaijan,floating,ws8,1.42336,474.819
+2098,Kazakhstan,Kazakhstan,fixed,ws8,35.05670,8580.292
+1696,Norway,Norway,fixed,ws7,0.09270,30.886
+1696,Norway,Norway,fixed,ws8,3.34876,837.130
+1696,Norway,Norway,floating,ws7,1.19220,397.366
+1696,Norway,Norway,floating,ws8,140.84088,35212.785
+1696,United Kingdom,United Kingdom,floating,ws8,45.62050,11406.323
+874,Denmark,Denmark,fixed,ws8,78.12245,19529.614
+874,Germany,Germany,fixed,ws8,41.64459,10411.437
+3168,Russia,Russia,fixed,ws7,0.43241,144.138
+3168,Russia,Russia,fixed,ws8,0.91615,228.998
+3168,Russia,Russia,floating,ws7,0.24604,82.016
+3168,Russia,Russia,floating,ws8,7.81052,1952.389
+215,Norway,Norway,fixed,ws7,0.33939,113.118
+215,Norway,Norway,fixed,ws8,4.30027,1074.963
+215,Norway,Norway,floating,ws7,3.64292,1214.181
+215,Norway,Norway,floating,ws8,304.90380,76229.344
+215,Svalbard,Norway,floating,ws8,0.04627,11.563
+1746,Sweden,Sweden,fixed,ws7,0.03387,11.288
+1746,Denmark,Denmark,fixed,ws8,44.90648,11226.029
+1746,Sweden,Sweden,fixed,ws8,21.19845,5299.676
+1746,Denmark,Denmark,floating,ws8,3.17648,792.311
+1746,Sweden,Sweden,floating,ws8,6.71064,1677.751
+186,Russia,Russia,fixed,ws7,0.13021,43.404
+186,Russia,Russia,fixed,ws8,43.92255,10980.653
+186,Russia,Russia,floating,ws8,149.80098,37445.619
+4358,Russia,Russia,fixed,ws8,26.85253,6713.140
+4358,Russia,Russia,floating,ws8,15.61642,3903.622
+168,Russia,Russia,fixed,ws7,0.05669,18.899
+168,Russia,Russia,fixed,ws8,59.09013,14772.550
+1662,Russia,Russia,fixed,ws7,0.00020,0.067
+1662,Russia,Russia,fixed,ws8,187.57900,46894.810
+1662,Russia,Russia,floating,ws8,64.21537,16051.859
+1160,Russia,Russia,fixed,ws7,0.05117,17.057
+1160,Russia,Russia,fixed,ws8,14.90495,3726.243
+3016,Russia,Russia,fixed,ws7,0.41419,138.088
+3016,Russia,Russia,fixed,ws8,47.20087,11800.233
+3338,Russia,Russia,fixed,ws7,0.20917,69.723
+3338,Russia,Russia,fixed,ws8,2.17301,543.255
+50,Chile,Chile,fixed,ws7,0.02535,8.456
+50,Argentina,Argentina,fixed,ws8,0.27543,68.856
+50,Chile,Chile,fixed,ws8,11.08465,2771.122
+50,Chile,Chile,floating,ws7,0.04650,15.491
+50,Argentina,Argentina,floating,ws8,3.44818,862.055
+50,Chile,Chile,floating,ws8,123.93665,30983.833
+3914,Indonesia,Indonesia,fixed,ws7,1.75543,585.144
+3914,Indonesia,Indonesia,floating,ws7,1.10290,367.632
+2334,Australia,Australia,fixed,ws8,33.10207,8275.529
+2334,Australia,Australia,floating,ws8,105.77100,26442.771
+2642,Australia,Australia,fixed,ws8,0.03571,8.926
+523,Australia,Australia,fixed,ws7,0.01145,3.817
+523,Australia,Australia,fixed,ws8,27.00418,6751.043
+523,Australia,Australia,floating,ws8,42.84416,10711.041
+3565,Australia,Australia,fixed,ws7,0.00475,1.584
+3565,Australia,Australia,fixed,ws8,39.17497,9793.752
+3565,Australia,Australia,floating,ws8,30.70508,7676.272
+4021,Australia,Australia,fixed,ws7,0.00487,1.628
+4021,Australia,Australia,fixed,ws8,6.35438,1588.594
+4021,Australia,Australia,floating,ws8,19.07778,4769.444
+3173,Australia,Australia,fixed,ws7,0.15612,52.037
+3173,Australia,Australia,fixed,ws8,20.42965,5107.414
+3173,Australia,Australia,floating,ws8,47.81275,11953.177
+925,Australia,Australia,fixed,ws7,0.00824,2.755
+925,Australia,Australia,fixed,ws8,22.08601,5521.510
+925,Australia,Australia,floating,ws8,75.77244,18943.112
+1157,Marshall Islands,Marshall Islands,fixed,ws7,2.40932,803.101
+1157,Marshall Islands,Marshall Islands,floating,ws7,5.83031,1943.421
+1157,Wake Island,United States,floating,ws7,1.15773,385.909
+1157,Marshall Islands,Marshall Islands,floating,ws8,0.25848,64.621
+4144,Papua New Guinea,Papua New Guinea,fixed,ws7,2.20663,735.543
+4144,Papua New Guinea,Papua New Guinea,floating,ws7,2.73099,910.331
+2768,Marshall Islands,Marshall Islands,fixed,ws7,10.44767,3482.643
+2768,Marshall Islands,Marshall Islands,fixed,ws8,0.64981,162.453
+2768,Marshall Islands,Marshall Islands,floating,ws7,18.72829,6242.791
+2768,Marshall Islands,Marshall Islands,floating,ws8,1.20701,301.753
+1524,Solomon Islands,Solomon Islands,fixed,ws7,1.21113,403.708
+1524,Solomon Islands,Solomon Islands,floating,ws7,3.92779,1309.263
+317,Solomon Islands,Solomon Islands,fixed,ws7,0.00315,1.053
+317,Solomon Islands,Solomon Islands,floating,ws7,0.58294,194.312
+64,Marshall Islands,Marshall Islands,fixed,ws7,4.42259,1474.222
+64,Marshall Islands,Marshall Islands,floating,ws7,9.79647,3265.477
+64,Marshall Islands,Marshall Islands,floating,ws8,0.15070,37.675
+3253,Australia,Australia,floating,ws7,36.54405,12181.351
+3253,Indonesia,Indonesia,floating,ws7,0.23127,77.088
+651,Indonesia,Indonesia,floating,ws7,16.62013,5540.043
+3809,Philippines,Philippines,fixed,ws7,0.43074,143.584
+3809,Philippines,Philippines,fixed,ws8,0.57497,143.747
+3809,Philippines,Philippines,floating,ws7,2.67490,891.637
+3809,Philippines,Philippines,floating,ws8,7.67136,1917.837
+446,Philippines,Philippines,fixed,ws7,2.65981,886.611
+446,Philippines,Philippines,floating,ws7,14.98894,4996.314
+1675,Philippines,Philippines,fixed,ws7,1.89008,630.010
+1675,Philippines,Philippines,fixed,ws8,1.07788,269.464
+1675,Philippines,Philippines,floating,ws7,29.27806,9759.351
+1675,Philippines,Philippines,floating,ws8,31.61461,7903.655
+809,Philippines,Philippines,fixed,ws7,1.04042,346.811
+809,Philippines,Philippines,fixed,ws8,0.06890,17.224
+809,Philippines,Philippines,floating,ws7,8.22332,2741.107
+809,Philippines,Philippines,floating,ws8,0.68659,171.645
+3204,Philippines,Philippines,fixed,ws7,1.44005,480.013
+3204,Philippines,Philippines,floating,ws7,2.07632,692.106
+3976,China,China,fixed,ws7,0.77667,258.896
+3976,China,China,fixed,ws8,79.81579,19953.945
+3976,Taiwan,Taiwan,fixed,ws8,13.80616,3451.542
+3976,China,China,floating,ws7,0.03542,11.807
+3976,China,China,floating,ws8,13.78338,3445.845
+3976,Taiwan,Taiwan,floating,ws8,10.13747,2534.367
+1352,China,China,fixed,ws7,0.07547,25.165
+1352,China,China,fixed,ws8,29.29413,7323.531
+1352,China,China,floating,ws7,0.02693,8.978
+1352,China,China,floating,ws8,24.25899,6064.754
+4223,Taiwan,Taiwan,fixed,ws7,0.93641,312.134
+4223,China,China,fixed,ws8,1.86854,467.136
+4223,Taiwan,Taiwan,fixed,ws8,46.01461,11503.647
+4223,Taiwan,Taiwan,floating,ws7,7.25503,2418.343
+4223,China,China,floating,ws8,2.75394,688.485
+4223,Taiwan,Taiwan,floating,ws8,53.79265,13448.162
+1916,Philippines,Philippines,fixed,ws7,0.00932,3.106
+1916,Taiwan,Taiwan,fixed,ws7,0.13285,44.285
+1916,Philippines,Philippines,fixed,ws8,0.09047,22.618
+1916,Taiwan,Taiwan,fixed,ws8,0.80913,202.286
+1916,Philippines,Philippines,floating,ws7,0.04635,15.456
+1916,Taiwan,Taiwan,floating,ws7,10.99342,3664.472
+1916,Philippines,Philippines,floating,ws8,8.25569,2063.918
+1916,Taiwan,Taiwan,floating,ws8,38.92753,9731.885
+4236,Philippines,Philippines,fixed,ws7,0.20699,68.986
+4236,Philippines,Philippines,fixed,ws8,0.18788,46.972
+4236,Philippines,Philippines,floating,ws7,9.08110,3027.036
+4236,Philippines,Philippines,floating,ws8,3.55783,889.456
+1873,China,China,fixed,ws7,5.43023,1810.072
+1873,China,China,fixed,ws8,25.93073,6482.684
+1873,China,China,floating,ws7,0.04968,16.562
+1873,China,China,floating,ws8,17.22869,4307.171
+4527,China,China,fixed,ws7,1.55778,519.262
+4527,China,China,fixed,ws8,43.50843,10877.101
+4527,Taiwan,Taiwan,fixed,ws8,0.04489,11.224
+4527,China,China,floating,ws7,0.02303,7.677
+4527,China,China,floating,ws8,77.05857,19264.640
+4527,Taiwan,Taiwan,floating,ws8,16.98382,4245.956
+2461,China,China,fixed,ws7,2.33539,778.463
+2461,North Korea,North Korea,fixed,ws7,33.32472,11108.244
+2461,South Korea,South Korea,fixed,ws7,4.13703,1379.005
+2461,North Korea,North Korea,fixed,ws8,0.00051,0.127
+2461,China,China,floating,ws7,10.10617,3368.723
+2461,North Korea,North Korea,floating,ws7,16.63574,5545.243
+2461,South Korea,South Korea,floating,ws7,42.32079,14106.929
+1776,North Korea,North Korea,fixed,ws7,4.73772,1579.237
+1776,North Korea,North Korea,floating,ws7,7.62431,2541.441
+4960,South Korea,South Korea,fixed,ws7,0.41716,139.055
+4960,South Korea,South Korea,fixed,ws8,0.00042,0.104
+4960,South Korea,South Korea,floating,ws7,11.98310,3994.374
+4960,South Korea,South Korea,floating,ws8,0.01568,3.920
+2116,South Korea,South Korea,fixed,ws7,18.09863,6032.875
+2116,South Korea,South Korea,fixed,ws8,0.00042,0.106
+2116,South Korea,South Korea,floating,ws7,93.21801,31072.667
+1446,Japan,Japan,fixed,ws7,0.29581,98.609
+1446,South Korea,South Korea,fixed,ws7,7.16006,2386.689
+1446,South Korea,South Korea,fixed,ws8,0.21457,53.640
+1446,Japan,Japan,floating,ws7,31.62193,10540.648
+1446,South Korea,South Korea,floating,ws7,34.44832,11482.772
+1446,South Korea,South Korea,floating,ws8,8.02515,2006.288
+582,North Korea,North Korea,fixed,ws7,0.59348,197.827
+582,South Korea,South Korea,fixed,ws7,0.03997,13.319
+582,North Korea,North Korea,floating,ws7,3.46622,1155.405
+582,South Korea,South Korea,floating,ws7,9.38169,3127.233
+236,Japan,Japan,fixed,ws7,1.22315,407.720
+236,Japan,Japan,floating,ws7,114.10830,38036.100
+236,South Korea,South Korea,floating,ws7,0.39858,132.859
+236,Japan,Japan,floating,ws8,0.18190,45.474
+4475,North Korea,North Korea,fixed,ws7,0.19599,65.329
+4475,South Korea,South Korea,fixed,ws7,13.34638,4448.791
+4475,South Korea,South Korea,floating,ws7,4.01714,1339.051
+2832,Mauritania,Mauritania,fixed,ws8,10.66409,2666.022
+2832,Mauritania,Mauritania,floating,ws8,20.44045,5110.129
+969,Peru,Peru,fixed,ws7,9.81940,3273.112
+969,Peru,Peru,fixed,ws8,5.35304,1338.258
+969,Peru,Peru,floating,ws7,25.87987,8626.553
+969,Peru,Peru,floating,ws8,5.41532,1353.819
+3421,Brazil,Brazil,floating,ws7,0.42054,140.178
+1166,Brazil,Brazil,fixed,ws7,0.09631,32.106
+1166,Brazil,Brazil,floating,ws7,3.01115,1003.710
+5,Brazil,Brazil,fixed,ws7,3.91212,1304.027
+5,Brazil,Brazil,fixed,ws8,35.99475,8998.607
+5,Brazil,Brazil,floating,ws7,9.27964,3093.202
+5,Brazil,Brazil,floating,ws8,19.16985,4792.437
+695,Portugal,Portugal,fixed,ws7,0.13721,45.732
+695,Spain,Spain,fixed,ws7,1.75479,584.877
+695,Portugal,Portugal,fixed,ws8,0.04334,10.836
+695,Spain,Spain,fixed,ws8,2.26345,565.828
+695,Spain,Spain,floating,ws7,2.64305,880.947
+695,Portugal,Portugal,floating,ws8,1.03744,259.337
+695,Spain,Spain,floating,ws8,63.90294,15974.576
+1097,United Kingdom,United Kingdom,fixed,ws7,0.09531,31.776
+1097,United Kingdom,United Kingdom,fixed,ws8,41.47898,10368.944
+1097,France,France,floating,ws8,22.95329,5733.622
+1097,United Kingdom,United Kingdom,floating,ws8,238.17050,59548.854
+3559,France,France,fixed,ws7,11.54035,3846.497
+3559,France,France,fixed,ws8,0.08585,21.460
+3559,France,France,floating,ws7,37.84469,12613.952
+3624,France,France,fixed,ws7,0.05595,18.649
+3624,Jersey,United Kingdom,fixed,ws7,0.00172,0.577
+3624,France,France,fixed,ws8,37.97281,9491.030
+3624,Guernsey,United Kingdom,fixed,ws8,4.18609,1046.437
+3624,Jersey,United Kingdom,fixed,ws8,2.70873,677.191
+3624,United Kingdom,United Kingdom,fixed,ws8,6.16836,1541.999
+3624,France,France,floating,ws8,16.98821,4243.617
+3624,Guernsey,United Kingdom,floating,ws8,10.40461,2598.997
+3624,United Kingdom,United Kingdom,floating,ws8,8.66384,2166.184
+2550,France,France,fixed,ws7,0.00045,0.150
+2550,France,France,fixed,ws8,22.44913,5610.858
+2550,United Kingdom,United Kingdom,fixed,ws8,2.25381,563.426
+2550,France,France,floating,ws8,0.17065,42.663
+2086,France,France,fixed,ws7,3.32990,1109.865
+2086,France,France,fixed,ws8,32.20085,8049.462
+2086,France,France,floating,ws7,8.91920,2972.839
+2086,France,France,floating,ws8,85.03148,21240.519
+284,France,France,fixed,ws7,0.42262,140.860
+284,Jersey,United Kingdom,fixed,ws7,0.00060,0.201
+284,France,France,fixed,ws8,38.88137,9719.430
+284,Guernsey,United Kingdom,fixed,ws8,0.60068,150.167
+284,Jersey,United Kingdom,fixed,ws8,5.89851,1474.642
+284,France,France,floating,ws7,0.02194,7.313
+284,France,France,floating,ws8,218.33861,54539.948
+284,Guernsey,United Kingdom,floating,ws8,10.61664,2651.941
+284,Jersey,United Kingdom,floating,ws8,0.29238,73.090
+284,United Kingdom,United Kingdom,floating,ws8,1.33590,334.009
+3335,Netherlands,Netherlands,fixed,ws8,0.05883,14.700
+3335,United Kingdom,United Kingdom,fixed,ws8,108.38444,27094.542
+3335,Netherlands,Netherlands,floating,ws8,0.08280,20.697
+3335,United Kingdom,United Kingdom,floating,ws8,20.25933,5065.321
+3444,United Kingdom,United Kingdom,fixed,ws7,0.01043,3.484
+3444,United Kingdom,United Kingdom,fixed,ws8,23.39118,5847.472
+3444,United Kingdom,United Kingdom,floating,ws7,0.01341,4.472
+3444,Guernsey,United Kingdom,floating,ws8,0.03452,8.622
+3444,United Kingdom,United Kingdom,floating,ws8,12.04761,3012.194
+1917,United Kingdom,United Kingdom,fixed,ws7,0.04467,14.890
+1917,United Kingdom,United Kingdom,fixed,ws8,51.77520,12942.656
+1917,United Kingdom,United Kingdom,floating,ws7,0.01620,5.399
+1917,United Kingdom,United Kingdom,floating,ws8,11.04179,2760.679
+768,United Kingdom,United Kingdom,fixed,ws7,0.00056,0.187
+768,France,France,fixed,ws8,6.82994,1707.061
+768,United Kingdom,United Kingdom,fixed,ws8,57.74498,14435.563
+768,France,France,floating,ws8,0.65228,163.059
+768,United Kingdom,United Kingdom,floating,ws8,6.36343,1590.930
+91,United Kingdom,United Kingdom,fixed,ws7,0.00199,0.664
+91,United Kingdom,United Kingdom,fixed,ws8,20.33134,5082.447
+91,United Kingdom,United Kingdom,floating,ws7,0.01214,4.046
+91,United Kingdom,United Kingdom,floating,ws8,125.18613,31299.784
+4894,Netherlands,Netherlands,fixed,ws8,73.43111,18353.546
+4894,United Kingdom,United Kingdom,fixed,ws8,32.00502,8000.879
+4894,United Kingdom,United Kingdom,floating,ws8,0.96815,242.013
+3508,Denmark,Denmark,fixed,ws8,0.01214,3.035
+3508,Germany,Germany,fixed,ws8,94.99912,23750.445
+3508,Netherlands,Netherlands,fixed,ws8,121.84545,30454.330
+3508,United Kingdom,United Kingdom,fixed,ws8,0.03041,7.601
+3508,Germany,Germany,floating,ws8,0.05685,14.212
+3508,Netherlands,Netherlands,floating,ws8,0.33658,84.135
+554,Norway,Norway,fixed,ws7,0.17136,57.114
+554,Denmark,Denmark,fixed,ws8,0.34562,86.389
+554,Norway,Norway,fixed,ws8,4.87816,1219.457
+554,Norway,Norway,floating,ws7,0.73525,245.069
+554,Denmark,Denmark,floating,ws8,3.32531,829.416
+554,Norway,Norway,floating,ws8,176.70588,44179.699
+3069,France,France,fixed,ws7,0.09110,30.362
+3069,Spain,Spain,fixed,ws7,0.16471,54.899
+3069,France,France,floating,ws7,4.89479,1631.472
+3069,Spain,Spain,floating,ws7,3.14364,1047.720
+1927,Spain,Spain,fixed,ws7,0.17214,57.366
+1927,Spain,Spain,floating,ws7,14.19205,4730.316
+1927,Spain,Spain,floating,ws8,5.97204,1492.901
+1410,Canada,Canada,fixed,ws7,0.34698,116.981
+1410,Canada,Canada,fixed,ws8,1.63497,413.408
+1410,Canada,Canada,floating,ws7,1.29294,431.570
+1410,Canada,Canada,floating,ws8,9.68234,2441.206
+1192,Chile,Chile,fixed,ws7,0.46354,154.511
+1192,Chile,Chile,fixed,ws8,0.09626,24.064
+1192,Chile,Chile,floating,ws7,6.22238,2074.117
+1192,Chile,Chile,floating,ws8,16.76135,4190.315
+4322,Chile,Chile,fixed,ws7,0.06632,22.102
+4322,Chile,Chile,fixed,ws8,6.91154,1727.872
+4322,Chile,Chile,floating,ws7,0.13146,43.819
+4322,Chile,Chile,floating,ws8,25.77095,6442.671
+3337,Chile,Chile,fixed,ws7,0.01332,4.432
+3337,Chile,Chile,fixed,ws8,7.45145,1862.850
+3337,Chile,Chile,floating,ws7,0.00046,0.153
+3337,Chile,Chile,floating,ws8,13.43474,3358.654
+1640,Chile,Chile,fixed,ws7,0.02695,8.993
+1640,Chile,Chile,fixed,ws8,0.00344,0.859
+1640,Chile,Chile,floating,ws7,5.64101,1880.320
+1640,Chile,Chile,floating,ws8,3.91913,979.777
+3295,Canada,Canada,fixed,ws7,0.01589,5.389
+3295,Canada,Canada,fixed,ws8,49.79652,12740.576
+3295,Canada,Canada,floating,ws8,98.97913,24857.034
+4606,Canada,Canada,fixed,ws7,0.24740,81.188
+4606,Canada,Canada,fixed,ws8,2.25639,556.688
+4606,Canada,Canada,floating,ws7,0.00084,0.275
+1159,United States,United States,fixed,ws7,0.22378,74.594
+1159,United States,United States,fixed,ws8,3.63713,909.281
+1159,United States,United States,floating,ws7,0.02598,8.659
+1159,United States,United States,floating,ws8,14.48538,3621.345
+814,Canada,Canada,fixed,ws7,0.65043,213.503
+814,Canada,Canada,fixed,ws8,6.48794,1600.683
+814,Canada,Canada,floating,ws7,0.56944,187.642
+814,Canada,Canada,floating,ws8,2.05020,511.767
+2812,Canada,Canada,fixed,ws7,0.09987,32.580
+2821,Canada,Canada,fixed,ws7,0.32456,108.349
+2821,Canada,Canada,fixed,ws8,5.18639,1298.132
+2821,Canada,Canada,floating,ws7,0.00626,2.089
+2821,Canada,Canada,floating,ws8,3.38854,850.477
+397,Canada,Canada,fixed,ws7,0.00038,0.127
+397,Canada,Canada,fixed,ws8,7.44051,1862.562
+397,Canada,Canada,floating,ws8,100.21908,25163.549
+2831,Canada,Canada,fixed,ws7,0.01007,3.384
+2831,Canada,Canada,fixed,ws8,3.10519,781.252
+2831,Canada,Canada,floating,ws8,14.18317,3561.285
+1498,Canada,Canada,fixed,ws7,0.77725,263.562
+1498,Canada,Canada,fixed,ws8,0.27886,70.935
+1498,Canada,Canada,floating,ws7,0.07596,25.751
+1498,Canada,Canada,floating,ws8,0.18678,47.535
+1792,Canada,Canada,fixed,ws7,0.00004,0.013
+1792,Canada,Canada,fixed,ws8,22.82321,5862.158
+1792,Canada,Canada,floating,ws7,0.00006,0.019
+1792,Canada,Canada,floating,ws8,22.22666,5583.674
+4703,Canada,Canada,fixed,ws8,2.31897,596.906
+4703,Canada,Canada,floating,ws8,5.21823,1310.232
+4254,Canada,Canada,fixed,ws7,0.01541,5.247
+4254,Canada,Canada,fixed,ws8,28.95357,7429.800
+4254,Canada,Canada,floating,ws7,0.00013,0.044
+4254,Canada,Canada,floating,ws8,26.98981,6792.801
+189,Canada,Canada,fixed,ws7,0.01286,4.418
+189,Canada,Canada,fixed,ws8,43.67907,11233.864
+189,Canada,Canada,floating,ws8,262.48326,65908.334
+4394,United States,United States,fixed,ws7,65.45237,21817.493
+4394,United States,United States,fixed,ws8,0.83421,208.552
+4394,United States,United States,floating,ws7,87.82746,29276.268
+2284,United States,United States,fixed,ws7,32.57729,10859.116
+2284,United States,United States,floating,ws7,43.70250,14567.721
+3533,Bahamas,Bahamas,fixed,ws7,40.32959,13097.305
+3533,Cuba,Cuba,fixed,ws7,10.19211,3340.055
+3533,Cuba,Cuba,fixed,ws8,0.00674,1.642
+3533,Bahamas,Bahamas,floating,ws7,10.42900,3378.572
+3533,Cuba,Cuba,floating,ws7,5.49690,1802.097
+3533,Cuba,Cuba,floating,ws8,0.22802,55.524
+560,Bahamas,Bahamas,fixed,ws7,10.59683,3437.560
+560,Bahamas,Bahamas,floating,ws7,6.93178,2239.023
+234,United States,United States,fixed,ws7,93.15858,31052.915
+234,United States,United States,floating,ws7,51.84594,17282.242
+3005,United States,United States,fixed,ws7,39.14484,13048.303
+3005,United States,United States,floating,ws7,24.75485,8251.743
+2210,United States,United States,fixed,ws7,57.34860,19116.232
+2210,United States,United States,floating,ws7,43.18304,14394.563
+1147,Mexico,Mexico,fixed,ws7,0.02582,8.350
+1147,Mexico,Mexico,fixed,ws8,2.50381,607.740
+1147,Mexico,Mexico,floating,ws7,0.98349,318.134
+1147,Mexico,Mexico,floating,ws8,14.72581,3578.378
+247,Mexico,Mexico,fixed,ws7,10.69672,3515.730
+247,Mexico,Mexico,floating,ws7,20.00157,6557.792
+4510,United States,United States,fixed,ws7,8.07841,2692.808
+4510,United States,United States,floating,ws7,0.60743,202.481
+635,United States,United States,fixed,ws7,21.40258,7134.207
+3166,Canada,Canada,fixed,ws7,0.96031,325.754
+3166,Canada,Canada,fixed,ws8,0.09218,23.549
+3166,Canada,Canada,floating,ws7,0.07911,26.966
+3166,Canada,Canada,floating,ws8,0.02043,5.250
+1754,Canada,Canada,fixed,ws7,0.64558,218.996
+1754,Canada,Canada,fixed,ws8,24.36338,6224.185
+1754,Canada,Canada,floating,ws7,0.19200,64.074
+1754,Canada,Canada,floating,ws8,68.86017,17291.962
+3052,Canada,Canada,fixed,ws7,24.51427,8194.346
+3052,Canada,Canada,fixed,ws8,9.50845,2376.884
+3052,Canada,Canada,floating,ws7,16.38315,5517.258
+3052,Canada,Canada,floating,ws8,5.06787,1277.591
+4735,Canada,Canada,fixed,ws7,3.56040,1191.740
+4735,Canada,Canada,floating,ws7,8.34733,2815.174
+3482,Canada,Canada,fixed,ws7,4.67178,1566.693
+3482,Canada,Canada,floating,ws7,15.25824,5138.523
+2104,Canada,Canada,fixed,ws7,0.23673,80.116
+2104,Canada,Canada,floating,ws7,0.20342,68.823
+1177,Canada,Canada,fixed,ws7,7.00872,2346.058
+1177,Canada,Canada,floating,ws7,12.83901,4324.278
+2707,Canada,Canada,fixed,ws7,3.15867,1056.017
+2707,Canada,Canada,floating,ws7,5.16378,1641.132
+883,Australia,Australia,fixed,ws7,67.89931,22633.108
+883,Australia,Australia,fixed,ws8,0.01656,4.138
+883,Australia,Australia,floating,ws7,116.36417,38788.055
+883,Australia,Australia,floating,ws8,1.50823,377.056
+3224,Australia,Australia,fixed,ws7,5.64954,1883.178
+3224,Australia,Australia,floating,ws7,3.06908,1023.026
+2804,Australia,Australia,fixed,ws7,16.67923,5559.746
+2804,Australia,Australia,fixed,ws8,0.00053,0.134
+2804,Australia,Australia,floating,ws7,3.56596,1188.661
+811,Australia,Australia,fixed,ws8,59.05975,14764.954
+811,Australia,Australia,floating,ws8,93.49494,23373.741
+4049,Australia,Australia,fixed,ws7,0.17867,59.556
+4049,Australia,Australia,fixed,ws8,18.40641,4601.605
+4049,Australia,Australia,floating,ws8,150.33791,37584.486
+461,Australia,Australia,fixed,ws7,0.59656,198.855
+461,Australia,Australia,floating,ws7,0.00759,2.530
+3221,Australia,Australia,fixed,ws7,27.61372,9204.572
+3221,Australia,Australia,fixed,ws8,20.22472,5056.178
+2079,Australia,Australia,fixed,ws7,11.07396,3691.320
+2079,Australia,Australia,fixed,ws8,0.93584,233.961
+3105,Russia,Russia,fixed,ws7,10.07749,3359.225
+3105,Russia,Russia,fixed,ws8,2.91854,729.640
+3105,Russia,Russia,floating,ws7,6.43271,2144.220
+3105,Russia,Russia,floating,ws8,54.07443,13518.729
+988,Russia,Russia,fixed,ws7,3.95447,1318.211
+988,Russia,Russia,fixed,ws8,7.15593,1789.105
+988,Russia,Russia,floating,ws7,6.51369,2171.222
+988,Russia,Russia,floating,ws8,220.91300,55228.725
+2742,Russia,Russia,fixed,ws7,2.13525,711.745
+2742,Russia,Russia,fixed,ws8,8.43761,2109.459
+2742,Russia,Russia,floating,ws7,3.12596,1041.982
+2742,Russia,Russia,floating,ws8,117.80080,29450.454
+4133,Russia,Russia,fixed,ws7,43.44346,14481.470
+4133,Russia,Russia,fixed,ws8,3.75663,939.159
+4133,Russia,Russia,floating,ws7,3.78276,1260.929
+4133,Russia,Russia,floating,ws8,0.01133,2.831
+2634,Russia,Russia,fixed,ws7,2.34905,783.016
+2634,Russia,Russia,floating,ws7,0.10175,33.915
+828,Russia,Russia,fixed,ws7,4.67671,1558.912
+828,Russia,Russia,fixed,ws8,14.73012,3682.576
+828,Russia,Russia,floating,ws7,6.76599,2255.343
+828,Russia,Russia,floating,ws8,55.93024,13982.683
+2927,Russia,Russia,fixed,ws7,3.84176,1280.601
+2927,Russia,Russia,fixed,ws8,11.07745,2769.407
+2927,Russia,Russia,floating,ws7,1.41316,471.059
+2927,Russia,Russia,floating,ws8,15.98517,3996.317
+1637,Russia,Russia,fixed,ws7,1.82215,607.388
+1637,Russia,Russia,fixed,ws8,2.90545,726.359
+1637,Russia,Russia,floating,ws7,5.24474,1748.257
+1637,Russia,Russia,floating,ws8,21.98760,5496.929
+3896,Russia,Russia,fixed,ws7,5.11672,1705.583
+3896,Russia,Russia,fixed,ws8,1.17939,294.849
+3896,Russia,Russia,floating,ws7,4.23177,1410.564
+3896,Russia,Russia,floating,ws8,13.28246,3320.632
+1215,Russia,Russia,fixed,ws7,13.74204,4580.671
+1215,Russia,Russia,fixed,ws8,16.99235,4248.172
+1215,Russia,Russia,floating,ws7,4.45080,1483.597
+1215,Russia,Russia,floating,ws8,40.12528,10031.370
+4188,Russia,Russia,fixed,ws7,0.21898,72.990
+4188,Russia,Russia,fixed,ws8,5.51736,1379.359
+4188,Russia,Russia,floating,ws7,7.05430,2351.455
+4188,Alaska (US),United States,floating,ws8,83.98065,27993.549
+4188,Russia,Russia,floating,ws8,36.73196,9182.976
+4814,South Africa,South Africa,fixed,ws7,0.04200,14.000
+4814,South Africa,South Africa,fixed,ws8,0.46584,116.459
+4814,South Africa,South Africa,floating,ws8,0.95231,238.076
+919,South Africa,South Africa,fixed,ws7,0.44373,147.912
+919,South Africa,South Africa,fixed,ws8,3.82475,956.187
+919,South Africa,South Africa,floating,ws7,0.00092,0.308
+919,South Africa,South Africa,floating,ws8,32.40746,8101.804
+1311,Mozambique,Mozambique,fixed,ws7,0.08540,28.468
+1311,Mozambique,Mozambique,fixed,ws8,0.04703,11.759
+1311,Mozambique,Mozambique,floating,ws7,0.99126,330.421
+4655,Mozambique,Mozambique,fixed,ws7,4.17075,1390.250
+4655,Mozambique,Mozambique,fixed,ws8,0.14790,36.975
+4655,Mozambique,Mozambique,floating,ws7,26.93341,8977.803
+2552,Namibia,Namibia,fixed,ws7,2.16613,722.042
+2552,Namibia,Namibia,fixed,ws8,0.38710,96.774
+2552,Namibia,Namibia,floating,ws7,29.68719,9895.731
+2552,Namibia,Namibia,floating,ws8,74.59692,18649.433
+25,Namibia,Namibia,fixed,ws7,2.00353,667.844
+25,Namibia,Namibia,fixed,ws8,0.16821,42.052
+25,Namibia,Namibia,floating,ws7,56.90478,18968.260
+25,Namibia,Namibia,floating,ws8,49.34155,12335.522
+2134,India,India,fixed,ws7,3.49182,1163.939
+4266,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,0.01093,3.643
+4266,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,0.00367,0.917
+4266,Kenya,Kenya,floating,ws7,0.00354,1.181
+1184,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,2.92072,973.574
+1184,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,0.34718,86.794
+1184,Kenya,Kenya,floating,ws7,14.89656,4965.515
+3686,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws7,1.34580,448.600
+3686,Kenya,Kenya,fixed,ws7,0.77535,258.451
+3686,Federal Republic of Somalia,Federal Republic of Somalia,fixed,ws8,0.14785,36.960
+3686,Kenya,Kenya,fixed,ws8,0.08104,20.260
+3686,Kenya,Kenya,floating,ws7,11.57185,3857.285
+2464,Algeria,Algeria,fixed,ws7,0.04575,15.249
+2464,Algeria,Algeria,fixed,ws8,0.05050,12.624
+2464,Algeria,Algeria,floating,ws7,1.51200,504.002
+748,Libya,Libya,fixed,ws7,13.07804,4359.466
+748,Libya,Libya,fixed,ws8,0.48365,120.913
+748,Libya,Libya,floating,ws7,25.91589,8639.123
+748,Libya,Libya,floating,ws8,0.04359,10.898
+3557,Italy,Italy,floating,ws7,0.23949,79.824
+4313,Italy,Italy,floating,ws7,0.31465,104.877
+4313,Italy,Italy,floating,ws8,0.19702,49.251
+331,Italy,Italy,fixed,ws7,0.13128,43.760
+331,Italy,Italy,floating,ws7,3.18419,1061.328
+331,Italy,Italy,floating,ws8,1.20132,300.301
+3571,Croatia,Croatia,fixed,ws7,2.85254,950.766
+3571,Croatia,Croatia,fixed,ws8,0.04470,11.173
+3571,Croatia,Croatia,floating,ws7,0.85757,285.838
+3571,Croatia,Croatia,floating,ws8,1.51450,378.596
+4876,Morocco,Morocco,floating,ws7,0.38327,127.758
+4876,Morocco,Morocco,floating,ws8,0.00031,0.077
+908,Morocco,Morocco,fixed,ws7,0.38067,126.891
+908,Spain,Spain,fixed,ws7,0.12684,42.277
+908,Morocco,Morocco,fixed,ws8,0.42243,105.608
+908,Spain,Spain,fixed,ws8,2.55966,639.878
+908,Morocco,Morocco,floating,ws7,9.25471,3084.907
+908,Spain,Spain,floating,ws7,1.09906,366.381
+908,Morocco,Morocco,floating,ws8,12.58067,3145.189
+908,Spain,Spain,floating,ws8,14.88762,3721.712
+2099,Morocco,Morocco,fixed,ws7,0.10019,33.396
+2099,Morocco,Morocco,fixed,ws8,0.02618,6.546
+2099,Spain,Spain,fixed,ws8,0.02862,7.156
+2099,Algeria,Algeria,floating,ws7,2.82583,941.945
+2099,Morocco,Morocco,floating,ws7,15.64052,5213.508
+2099,Algeria,Algeria,floating,ws8,0.01305,3.263
+2099,Morocco,Morocco,floating,ws8,5.02548,1256.378
+2099,Spain,Spain,floating,ws8,8.78972,2197.458
+2101,Spain,Spain,fixed,ws7,0.11299,37.665
+2101,Spain,Spain,floating,ws7,7.31639,2438.600
+2101,Spain,Spain,floating,ws8,2.52959,632.364
+3051,Greece,Greece,fixed,ws7,0.15109,50.358
+3051,Greece,Greece,fixed,ws8,0.18128,45.318
+3051,Greece,Greece,floating,ws7,25.34078,8446.327
+3051,Greece,Greece,floating,ws8,10.29088,2572.546
+751,Egypt,Egypt,fixed,ws7,0.12097,40.322
+751,Libya,Libya,fixed,ws7,0.18360,61.200
+751,Egypt,Egypt,fixed,ws8,0.03113,7.783
+751,Libya,Libya,fixed,ws8,0.03434,8.585
+751,Egypt,Egypt,floating,ws7,0.16576,55.254
+751,Libya,Libya,floating,ws7,0.73405,244.685
+751,Egypt,Egypt,floating,ws8,0.00073,0.183
+751,Libya,Libya,floating,ws8,0.00743,1.859
+116,Sudan,Sudan,fixed,ws7,3.01864,1006.210
+116,Sudan,Sudan,fixed,ws8,2.88861,722.151
+116,Sudan,Sudan,floating,ws7,21.79181,7263.935
+116,Sudan,Sudan,floating,ws8,0.46090,115.224
+2385,Sudan,Sudan,fixed,ws7,4.17289,1390.962
+2385,Sudan,Sudan,floating,ws7,1.54433,514.776
+3281,Sudan,Sudan,fixed,ws7,2.34815,782.717
+3281,Sudan,Sudan,floating,ws7,4.16381,1387.938
+552,Sudan,Sudan,fixed,ws7,0.56930,189.767
+552,Sudan,Sudan,floating,ws7,1.14625,382.083
+3930,Greece,Greece,fixed,ws7,0.08879,29.592
+3930,Greece,Greece,fixed,ws8,0.03776,9.441
+3930,Greece,Greece,floating,ws7,1.68155,560.478
+3930,Greece,Greece,floating,ws8,0.25758,64.393
+1201,Greece,Greece,fixed,ws7,0.03533,11.772
+1201,Greece,Greece,floating,ws7,1.15784,385.919
+2797,Turkey,Turkey,fixed,ws7,2.00088,666.930
+2797,Turkey,Turkey,fixed,ws8,0.44255,110.627
+2797,Turkey,Turkey,floating,ws7,13.08991,4362.976
+2797,Turkey,Turkey,floating,ws8,3.03382,758.398
+1583,Turkey,Turkey,fixed,ws7,0.04890,16.300
+1583,Turkey,Turkey,floating,ws7,2.79357,931.121
+3308,Russia,Russia,fixed,ws7,3.39606,1131.489
+3308,Russia,Russia,fixed,ws8,78.76442,19689.858
+3456,Kazakhstan,Kazakhstan,fixed,ws7,1.13990,373.339
+3456,Kazakhstan,Kazakhstan,fixed,ws8,26.23359,6420.798
+3456,Azerbaijan,Azerbaijan,floating,ws8,0.91348,228.508
+3456,Kazakhstan,Kazakhstan,floating,ws8,62.54813,15270.506
+3456,Russia,Russia,floating,ws8,0.20347,50.809
+4985,Kazakhstan,Kazakhstan,fixed,ws8,1.04344,255.388
+1934,Turkmenistan,Turkmenistan,fixed,ws7,3.65872,1198.222
+1934,Kazakhstan,Kazakhstan,fixed,ws8,7.48533,1832.070
+1934,Turkmenistan,Turkmenistan,fixed,ws8,14.63034,3592.706
+1934,Turkmenistan,Turkmenistan,floating,ws7,13.25399,4328.862
+1934,Azerbaijan,Azerbaijan,floating,ws8,19.39691,5657.290
+1934,Kazakhstan,Kazakhstan,floating,ws8,41.32315,10088.638
+1934,Turkmenistan,Turkmenistan,floating,ws8,11.17724,2737.355
+1483,Kazakhstan,Kazakhstan,fixed,ws7,10.68696,3481.131
+1483,Kazakhstan,Kazakhstan,fixed,ws8,96.87502,23710.599
+1483,Russia,Russia,fixed,ws8,8.22060,2055.020
+1483,Kazakhstan,Kazakhstan,floating,ws8,41.49597,10130.829
+1344,Azerbaijan,Azerbaijan,fixed,ws7,20.01749,6676.514
+1344,Azerbaijan,Azerbaijan,fixed,ws8,15.40486,3853.401
+1344,Azerbaijan,Azerbaijan,floating,ws8,91.66964,26056.186
+1344,Kazakhstan,Kazakhstan,floating,ws8,0.49307,120.377
+614,Kazakhstan,Kazakhstan,fixed,ws7,0.35025,113.547
+614,Kazakhstan,Kazakhstan,fixed,ws8,46.94785,11490.707
+4662,Kazakhstan,Kazakhstan,fixed,ws8,0.00006,0.014
+3960,Norway,Norway,fixed,ws7,0.00758,2.527
+3960,Norway,Norway,floating,ws7,0.09115,30.382
+3008,Denmark,Denmark,fixed,ws8,97.29780,24323.208
+3008,Norway,Norway,fixed,ws8,0.00050,0.125
+3008,Denmark,Denmark,floating,ws8,22.47507,5605.891
+3008,Norway,Norway,floating,ws8,19.90277,4976.054
+2970,Norway,Norway,fixed,ws7,0.77279,257.581
+2970,Sweden,Sweden,fixed,ws7,0.11320,37.736
+2970,Norway,Norway,fixed,ws8,1.74812,437.010
+2970,Sweden,Sweden,fixed,ws8,3.68821,922.022
+2970,Norway,Norway,floating,ws7,0.53763,179.186
+2970,Sweden,Sweden,floating,ws7,0.01798,5.991
+2970,Denmark,Denmark,floating,ws8,5.76683,1438.390
+2970,Norway,Norway,floating,ws8,21.78136,5445.533
+2970,Sweden,Sweden,floating,ws8,18.76862,4692.415
+1295,Sweden,Sweden,fixed,ws7,0.12616,42.059
+1295,Sweden,Sweden,fixed,ws8,72.02316,18006.002
+1295,Denmark,Denmark,floating,ws8,0.97842,243.924
+1295,Poland,Poland,floating,ws8,0.67149,167.799
+1295,Sweden,Sweden,floating,ws8,79.12955,19791.353
+152,Poland,Poland,fixed,ws7,0.02297,7.658
+152,Denmark,Denmark,fixed,ws8,4.81122,1202.742
+152,Germany,Germany,fixed,ws8,13.57261,3393.218
+152,Poland,Poland,fixed,ws8,20.40446,5100.286
+152,Denmark,Denmark,floating,ws8,8.61728,2148.333
+152,Poland,Poland,floating,ws8,3.04059,759.813
+2519,Denmark,Denmark,fixed,ws7,0.02458,8.195
+2519,Germany,Germany,fixed,ws7,0.00038,0.126
+2519,Sweden,Sweden,fixed,ws7,0.02538,8.463
+2519,Denmark,Denmark,fixed,ws8,34.74356,8685.443
+2519,Germany,Germany,fixed,ws8,22.29806,5574.652
+2519,Sweden,Sweden,fixed,ws8,25.74886,6437.308
+2519,Denmark,Denmark,floating,ws8,7.90051,1969.638
+2519,Sweden,Sweden,floating,ws8,4.02450,1006.583
+4329,Sweden,Sweden,fixed,ws7,0.05200,17.326
+4329,Sweden,Sweden,fixed,ws8,4.52506,1131.272
+4329,Sweden,Sweden,floating,ws7,0.00183,0.609
+4329,Sweden,Sweden,floating,ws8,6.60309,1651.520
+1196,Norway,Norway,fixed,ws7,0.33017,110.050
+1196,Russia,Russia,fixed,ws7,0.11822,39.408
+1196,Norway,Norway,fixed,ws8,2.13314,533.244
+1196,Russia,Russia,fixed,ws8,1.16677,291.658
+1196,Norway,Norway,floating,ws7,1.50696,502.302
+1196,Russia,Russia,floating,ws7,0.03060,10.198
+1196,Norway,Norway,floating,ws8,160.66281,40168.635
+1196,Russia,Russia,floating,ws8,75.59281,18895.869
+471,Russia,Russia,fixed,ws7,2.46218,820.729
+471,Russia,Russia,fixed,ws8,0.21101,52.741
+471,Russia,Russia,floating,ws7,0.41950,139.800
+471,Russia,Russia,floating,ws8,3.97321,993.304
+1126,Russia,Russia,fixed,ws7,0.05213,17.377
+1126,Russia,Russia,fixed,ws8,61.61156,15402.909
+1126,Russia,Russia,floating,ws8,179.09272,44767.762
+2753,Russia,Russia,fixed,ws7,0.00128,0.426
+2753,Russia,Russia,fixed,ws8,68.11687,17029.241
+2753,Russia,Russia,floating,ws8,147.00706,36747.552
+3647,Russia,Russia,fixed,ws7,2.77368,924.590
+3647,Russia,Russia,fixed,ws8,13.51624,3379.064
+3647,Russia,Russia,floating,ws7,3.30779,1102.593
+3647,Russia,Russia,floating,ws8,114.10575,28522.919
+418,Russia,Russia,fixed,ws7,0.03540,11.802
+418,Russia,Russia,fixed,ws8,14.28510,3571.281
+3903,Russia,Russia,fixed,ws7,0.00686,2.289
+3903,Russia,Russia,fixed,ws8,45.52724,11381.825
+2868,Russia,Russia,fixed,ws7,0.85427,284.752
+2868,Russia,Russia,fixed,ws8,12.08890,3022.231
+3908,Russia,Russia,fixed,ws8,13.10267,3275.671
+1061,Russia,Russia,fixed,ws7,0.00484,1.614
+1061,Russia,Russia,fixed,ws8,22.85890,5714.734
+4749,Vietnam,Vietnam,fixed,ws7,2.63416,878.051
+4749,Vietnam,Vietnam,fixed,ws8,1.10474,276.182
+4749,Vietnam,Vietnam,floating,ws7,68.94716,22982.387
+4749,Vietnam,Vietnam,floating,ws8,7.53147,1882.866
+4473,Vietnam,Vietnam,fixed,ws7,0.91027,303.423
+2092,Australia,Australia,fixed,ws7,31.62461,10541.542
+2092,Australia,Australia,floating,ws7,2.28421,761.403
+60,Australia,Australia,fixed,ws8,3.68702,921.753
+60,Australia,Australia,floating,ws8,11.55797,2889.487
+2694,Australia,Australia,fixed,ws8,16.54306,4135.741
+2694,Australia,Australia,floating,ws8,80.84717,20211.773
+2930,Papua New Guinea,Papua New Guinea,fixed,ws7,2.09425,698.092
+2930,Papua New Guinea,Papua New Guinea,fixed,ws8,3.69033,922.581
+2930,Papua New Guinea,Papua New Guinea,floating,ws7,1.39605,465.352
+2930,Papua New Guinea,Papua New Guinea,floating,ws8,9.62170,2405.420
+121,Australia,Australia,fixed,ws7,58.30749,19435.833
+121,Papua New Guinea,Papua New Guinea,fixed,ws7,2.14215,714.053
+121,Australia,Australia,fixed,ws8,101.97885,25494.711
+121,Papua New Guinea,Papua New Guinea,fixed,ws8,2.55409,638.524
+121,Australia,Australia,floating,ws7,0.18720,62.402
+121,Australia,Australia,floating,ws8,4.39979,1099.951
+1266,Australia,Australia,fixed,ws7,31.11082,10370.323
+1266,Indonesia,Indonesia,fixed,ws7,2.84492,948.308
+1266,Australia,Australia,floating,ws7,91.64805,30549.377
+1266,Indonesia,Indonesia,floating,ws7,4.33815,1446.048
+2820,Australia,Australia,fixed,ws7,1.18799,395.992
+2820,Australia,Australia,fixed,ws8,75.08265,18770.662
+2820,Australia,Australia,floating,ws8,15.65981,3914.965
+3913,Papua New Guinea,Papua New Guinea,floating,ws7,0.13763,45.879
+3913,Papua New Guinea,Papua New Guinea,floating,ws8,1.19859,299.650
+4999,Papua New Guinea,Papua New Guinea,fixed,ws7,0.93904,313.003
+4999,Papua New Guinea,Papua New Guinea,fixed,ws8,0.15945,39.860
+4999,Papua New Guinea,Papua New Guinea,floating,ws7,3.55201,1184.004
+4999,Papua New Guinea,Papua New Guinea,floating,ws8,1.08323,270.804
+1469,Papua New Guinea,Papua New Guinea,fixed,ws7,0.13764,45.875
+1469,Papua New Guinea,Papua New Guinea,fixed,ws8,0.32151,80.378
+1469,Papua New Guinea,Papua New Guinea,floating,ws7,1.58524,528.409
+1469,Papua New Guinea,Papua New Guinea,floating,ws8,5.47090,1367.722
+3831,Papua New Guinea,Papua New Guinea,fixed,ws7,0.00043,0.144
+3831,Papua New Guinea,Papua New Guinea,fixed,ws8,0.85161,212.901
+3831,Papua New Guinea,Papua New Guinea,floating,ws7,4.42475,1474.918
+3831,Papua New Guinea,Papua New Guinea,floating,ws8,2.63194,657.985
+37,Australia,Australia,fixed,ws7,30.07084,10023.693
+37,Australia,Australia,fixed,ws8,9.48413,2371.044
+37,Australia,Australia,floating,ws7,91.34858,30449.604
+37,Australia,Australia,floating,ws8,119.41642,29854.104
+4054,Australia,Australia,fixed,ws7,81.19094,27063.670
+4054,Australia,Australia,fixed,ws8,0.02091,5.232
+4054,Australia,Australia,floating,ws7,80.23855,26746.189
+4054,Australia,Australia,floating,ws8,1.32339,330.846
+2428,Australia,Australia,fixed,ws7,24.44680,8148.896
+2428,Australia,Australia,fixed,ws8,0.23689,59.225
+2428,Australia,Australia,floating,ws7,62.55336,20851.089
+2428,Australia,Australia,floating,ws8,4.28713,1071.781
+1289,Australia,Australia,fixed,ws7,12.04458,4014.858
+1289,Australia,Australia,fixed,ws8,13.28199,3320.510
+1289,Australia,Australia,floating,ws7,65.80774,21935.908
+1289,Australia,Australia,floating,ws8,108.37804,27094.519
+1803,Australia,Australia,fixed,ws7,16.66412,5554.692
+1803,Australia,Australia,floating,ws7,84.39913,28133.027
+1836,Australia,Australia,fixed,ws7,24.28394,8094.657
+1836,Papua New Guinea,Papua New Guinea,fixed,ws7,18.64933,6216.459
+1836,Australia,Australia,fixed,ws8,0.82267,205.661
+1836,Australia,Australia,floating,ws7,14.40289,4800.980
+1836,Papua New Guinea,Papua New Guinea,floating,ws7,21.24004,7080.014
+1836,Australia,Australia,floating,ws8,7.26548,1816.365
+4178,Australia,Australia,fixed,ws7,0.33995,113.317
+4178,Indonesia,Indonesia,fixed,ws7,50.50562,16835.230
+4178,Papua New Guinea,Papua New Guinea,fixed,ws7,24.46721,8155.742
+4178,Australia,Australia,fixed,ws8,0.03988,9.971
+4178,Indonesia,Indonesia,fixed,ws8,2.11899,529.747
+4178,Papua New Guinea,Papua New Guinea,fixed,ws8,44.16491,11041.225
+4178,Indonesia,Indonesia,floating,ws7,6.20204,2067.351
+4178,Papua New Guinea,Papua New Guinea,floating,ws7,0.03650,12.166
+3001,Indonesia,Indonesia,fixed,ws7,49.10954,16369.846
+3001,Indonesia,Indonesia,floating,ws7,0.03004,10.012
+1421,Vietnam,Vietnam,fixed,ws7,0.49441,164.803
+1421,Vietnam,Vietnam,floating,ws7,6.79658,2265.527
+3776,Philippines,Philippines,fixed,ws7,0.01633,5.443
+3776,Philippines,Philippines,floating,ws7,0.52058,173.527
+358,Philippines,Philippines,fixed,ws7,0.20384,67.930
+358,Philippines,Philippines,fixed,ws8,0.40411,101.026
+358,Philippines,Philippines,floating,ws7,5.70551,1901.830
+358,Philippines,Philippines,floating,ws8,21.41294,5353.235
+3291,Colombia,Colombia,fixed,ws7,1.56695,522.316
+3291,Colombia,Colombia,fixed,ws8,3.67263,918.150
+3291,Colombia,Colombia,floating,ws7,0.91179,303.932
+3291,Colombia,Colombia,floating,ws8,10.84581,2711.443
+417,Colombia,Colombia,fixed,ws7,0.84131,280.393
+417,Colombia,Colombia,fixed,ws8,2.91179,727.947
+417,Colombia,Colombia,floating,ws7,2.61136,870.447
+417,Colombia,Colombia,floating,ws8,14.21324,3553.295
+2510,Colombia,Colombia,fixed,ws7,0.03459,11.527
+2510,Colombia,Colombia,fixed,ws8,21.15797,5289.412
+2510,Venezuela,Venezuela,fixed,ws8,13.93310,3483.264
+2510,Colombia,Colombia,floating,ws8,41.03096,10257.704
+2510,Venezuela,Venezuela,floating,ws8,4.47537,1118.829
+1750,Venezuela,Venezuela,fixed,ws7,0.23226,77.416
+1750,Venezuela,Venezuela,fixed,ws8,26.45158,6612.867
+1750,Venezuela,Venezuela,floating,ws8,0.00715,1.788
+3884,Panama,Panama,fixed,ws7,2.86134,940.350
+3884,Panama,Panama,fixed,ws8,1.25465,309.342
+3884,Panama,Panama,floating,ws7,0.53550,175.783
+3884,Panama,Panama,floating,ws8,0.05456,13.437
+2882,Peru,Peru,fixed,ws7,2.63487,878.287
+2882,Peru,Peru,fixed,ws8,4.29774,1074.428
+2882,Peru,Peru,floating,ws7,28.21544,9405.078
+2882,Peru,Peru,floating,ws8,5.50855,1377.139
+1575,Peru,Peru,fixed,ws7,1.16585,388.614
+1575,Peru,Peru,fixed,ws8,0.61309,153.270
+1575,Peru,Peru,floating,ws7,29.27370,9757.831
+1575,Peru,Peru,floating,ws8,9.71522,2428.789
+62,Peru,Peru,fixed,ws7,1.66932,556.439
+62,Peru,Peru,fixed,ws8,0.91312,228.273
+62,Peru,Peru,floating,ws7,38.36880,12789.515
+62,Peru,Peru,floating,ws8,67.43615,16858.904
+1525,Brazil,Brazil,fixed,ws7,8.14076,2713.581
+1525,Brazil,Brazil,fixed,ws8,9.20783,2301.931
+1525,Brazil,Brazil,floating,ws7,5.50521,1835.050
+1525,Brazil,Brazil,floating,ws8,2.37888,594.716
+654,Brazil,Brazil,floating,ws7,34.03881,11346.173
+1882,Brazil,Brazil,fixed,ws7,1.60530,535.099
+1882,Brazil,Brazil,fixed,ws8,7.07954,1769.858
+1882,Brazil,Brazil,floating,ws7,57.06211,19020.577
+1882,Brazil,Brazil,floating,ws8,76.21115,19052.467
+4650,Brazil,Brazil,fixed,ws7,10.00873,3336.225
+4650,Brazil,Brazil,fixed,ws8,42.09891,10524.633
+4650,Brazil,Brazil,floating,ws7,6.00635,2002.121
+4650,Brazil,Brazil,floating,ws8,9.05131,2262.822
+3577,Brazil,Brazil,fixed,ws7,6.56540,2188.441
+3577,Brazil,Brazil,fixed,ws8,37.13497,9283.654
+3577,Brazil,Brazil,floating,ws7,0.23306,77.687
+3577,Brazil,Brazil,floating,ws8,19.80977,4952.425
+3131,Brazil,Brazil,fixed,ws7,4.67668,1558.885
+3131,Brazil,Brazil,floating,ws7,0.02964,9.880
+464,Brazil,Brazil,fixed,ws7,32.44314,10814.318
+464,Brazil,Brazil,fixed,ws8,10.16023,2540.041
+464,Brazil,Brazil,floating,ws7,9.62434,3208.099
+464,Brazil,Brazil,floating,ws8,2.75824,689.558
+4314,Algeria,Algeria,floating,ws7,0.71664,238.879
+1538,Algeria,Algeria,fixed,ws7,0.47504,158.347
+1538,Algeria,Algeria,fixed,ws8,0.15267,38.168
+1538,Algeria,Algeria,floating,ws7,9.89834,3299.451
+1538,Algeria,Algeria,floating,ws8,0.04782,11.955
+2183,France,France,fixed,ws7,1.09669,365.567
+2183,France,France,fixed,ws8,4.08544,1021.316
+2183,France,France,floating,ws7,0.08502,28.347
+2183,France,France,floating,ws8,8.38244,2095.432
+633,Canada,Canada,fixed,ws7,3.15256,1045.994
+633,Canada,Canada,fixed,ws8,3.18777,794.983
+633,Canada,Canada,floating,ws7,4.28979,1431.123
+633,Canada,Canada,floating,ws8,41.28066,10406.520
+3275,Canada,Canada,fixed,ws7,1.59219,533.046
+3275,Canada,Canada,fixed,ws8,8.42446,2118.703
+3275,Canada,Canada,floating,ws7,1.72800,576.655
+3275,Canada,Canada,floating,ws8,73.35647,18493.655
+2426,United States,United States,fixed,ws7,0.65362,217.986
+2426,United States,United States,fixed,ws8,4.46050,1115.649
+2426,United States,United States,floating,ws7,0.02327,7.761
+2426,United States,United States,floating,ws8,55.74745,13940.285
+4598,United States,United States,fixed,ws7,0.00740,2.469
+100,United States,United States,fixed,ws7,0.22476,74.958
+100,United States,United States,floating,ws7,1.45906,486.603
+100,United States,United States,floating,ws8,5.00490,1251.533
+2988,Chile,Chile,floating,ws7,1.62014,540.042
+2988,Chile,Chile,floating,ws8,2.08817,522.038
+521,Chile,Chile,fixed,ws7,0.92899,309.655
+521,Chile,Chile,fixed,ws8,1.79850,449.622
+521,Chile,Chile,floating,ws7,3.39969,1133.224
+521,Chile,Chile,floating,ws8,8.78393,2195.967
+2785,Argentina,Argentina,fixed,ws8,0.01485,3.713
+2946,Argentina,Argentina,fixed,ws8,96.52336,24139.652
+2946,Uruguay,Uruguay,fixed,ws8,2.57411,643.707
+2946,Argentina,Argentina,floating,ws8,78.34012,19582.882
+2946,Uruguay,Uruguay,floating,ws8,1.28716,321.861
+1694,Uruguay,Uruguay,fixed,ws7,0.14722,49.069
+1694,Argentina,Argentina,fixed,ws8,0.75577,189.068
+1694,Uruguay,Uruguay,fixed,ws8,135.32906,33825.689
+1694,Uruguay,Uruguay,floating,ws8,63.65196,15913.806
+229,,,fixed,ws8,12.22356,3055.880
+229,,,floating,ws8,212.92927,53232.012
+702,Brazil,Brazil,fixed,ws7,0.06042,20.141
+702,Brazil,Brazil,fixed,ws8,71.46859,17866.883
+702,Uruguay,Uruguay,fixed,ws8,9.60541,2400.190
+702,Brazil,Brazil,floating,ws8,102.28736,25571.391
+702,Uruguay,Uruguay,floating,ws8,20.94007,5235.000
+3794,United States,United States,fixed,ws7,0.00792,2.641
+4117,Canada,Canada,fixed,ws8,49.24130,12577.943
+4117,Canada,Canada,floating,ws8,13.34580,3383.063
+4817,Canada,Canada,fixed,ws7,0.01412,4.746
+4817,Canada,Canada,fixed,ws8,6.69900,1708.147
+4689,Cuba,Cuba,fixed,ws7,1.30249,432.253
+4689,Cuba,Cuba,floating,ws7,2.01123,659.358
+4689,United States,United States,floating,ws7,7.21697,2405.694
+517,Honduras,Honduras,fixed,ws7,0.78707,261.862
+517,Cayman Islands,United Kingdom,floating,ws7,0.00427,1.418
+517,Honduras,Honduras,floating,ws7,1.31094,436.081
+3319,United States,United States,fixed,ws7,4.40807,1469.358
+4738,Bahamas,Bahamas,fixed,ws7,1.24445,404.143
+4738,Cuba,Cuba,fixed,ws7,5.29201,1737.830
+4738,Bahamas,Bahamas,floating,ws7,7.75408,2512.065
+4738,Cuba,Cuba,floating,ws7,12.80884,4199.232
+1484,Cuba,Cuba,fixed,ws7,3.90090,1293.030
+1484,Cuba,Cuba,floating,ws7,4.08068,1338.831
+1484,United States,United States,floating,ws7,5.69270,1897.595
+2823,Bahamas,Bahamas,fixed,ws7,23.75238,7713.768
+2823,Bahamas,Bahamas,floating,ws7,1.77331,574.479
+87,Bahamas,Bahamas,fixed,ws7,2.89711,940.856
+87,Cuba,Cuba,fixed,ws7,20.45429,6713.245
+87,Bahamas,Bahamas,floating,ws7,9.24383,2994.626
+87,Cuba,Cuba,floating,ws7,13.94638,4575.504
+87,Cuba,Cuba,floating,ws8,0.00521,1.288
+4603,United States,United States,floating,ws7,11.69425,3898.143
+2563,Curaçao,Netherlands,fixed,ws7,0.02998,9.961
+2563,Venezuela,Venezuela,fixed,ws7,1.74605,582.005
+2563,Bonaire,Netherlands,fixed,ws8,0.05542,12.493
+2563,Curaçao,Netherlands,fixed,ws8,0.15396,37.866
+2563,Venezuela,Venezuela,fixed,ws8,5.45758,1364.392
+2563,Bonaire,Netherlands,floating,ws7,0.03392,10.213
+2563,Curaçao,Netherlands,floating,ws7,0.04014,13.152
+2563,Venezuela,Venezuela,floating,ws7,2.73257,910.844
+2563,Bonaire,Netherlands,floating,ws8,5.39509,1215.396
+2563,Curaçao,Netherlands,floating,ws8,7.58989,1804.822
+2563,Venezuela,Venezuela,floating,ws8,19.46805,4867.136
+788,Curaçao,Netherlands,fixed,ws7,0.02496,8.319
+788,Aruba,Netherlands,fixed,ws8,0.50155,115.277
+788,Colombia,Colombia,fixed,ws8,0.97300,243.246
+788,Curaçao,Netherlands,fixed,ws8,0.18386,45.043
+788,Venezuela,Venezuela,fixed,ws8,20.30191,5075.465
+788,Curaçao,Netherlands,floating,ws7,0.11052,35.453
+788,Aruba,Netherlands,floating,ws8,19.18102,4408.058
+788,Colombia,Colombia,floating,ws8,1.81140,452.847
+788,Curaçao,Netherlands,floating,ws8,7.09307,1691.817
+788,Venezuela,Venezuela,floating,ws8,37.45458,9363.920
+2908,Suriname,Suriname,fixed,ws7,8.99649,2998.906
+539,Venezuela,Venezuela,fixed,ws7,23.81076,7936.870
+539,Venezuela,Venezuela,fixed,ws8,13.74771,3436.897
+539,Dominica,Dominica,floating,ws7,0.05655,15.517
+539,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,floating,ws7,0.34225,93.494
+539,Venezuela,Venezuela,floating,ws7,32.91613,10972.004
+539,Venezuela,Venezuela,floating,ws8,53.46305,13365.708
+4368,Venezuela,Venezuela,fixed,ws7,0.04902,16.339
+4368,Venezuela,Venezuela,fixed,ws8,3.14421,786.043
+4368,Venezuela,Venezuela,floating,ws7,18.93504,6311.603
+4368,Venezuela,Venezuela,floating,ws8,38.72083,9680.195
+68,Anguilla,United Kingdom,fixed,ws7,3.57981,1015.537
+68,Antigua and Barbuda,Antigua and Barbuda,fixed,ws7,9.20961,2566.067
+68,British Virgin Islands,United Kingdom,fixed,ws7,7.86881,2278.901
+68,Collectivity of Saint Martin,France,fixed,ws7,1.26015,356.706
+68,Dominica,Dominica,fixed,ws7,0.06523,17.955
+68,Guadeloupe,France,fixed,ws7,1.27004,349.752
+68,Montserrat,United Kingdom,fixed,ws7,0.04049,11.312
+68,Puerto Rico,United States,fixed,ws7,5.61733,1649.624
+68,Saba,Netherlands,fixed,ws7,6.50953,1855.028
+68,Saint Kitts and Nevis,Saint Kitts and Nevis,fixed,ws7,0.81812,230.276
+68,Saint-Barthélemy,France,fixed,ws7,3.80802,1105.910
+68,Sint-Eustatius,Netherlands,fixed,ws7,0.23943,67.768
+68,Sint-Maarten,Netherlands,fixed,ws7,0.30816,87.363
+68,United States Virgin Islands,United States,fixed,ws7,3.56014,1034.975
+68,Antigua and Barbuda,Antigua and Barbuda,fixed,ws8,0.19128,40.195
+68,Dominica,Dominica,fixed,ws8,0.01865,3.851
+68,Guadeloupe,France,fixed,ws8,0.56121,116.652
+68,Montserrat,United Kingdom,fixed,ws8,0.17783,37.273
+68,Saint Kitts and Nevis,Saint Kitts and Nevis,fixed,ws8,0.73853,155.906
+68,Sint-Eustatius,Netherlands,fixed,ws8,0.02023,4.288
+68,United States Virgin Islands,United States,fixed,ws8,0.00057,0.125
+68,Anguilla,United Kingdom,floating,ws7,14.18919,4034.315
+68,Antigua and Barbuda,Antigua and Barbuda,floating,ws7,23.22316,6473.893
+68,British Virgin Islands,United Kingdom,floating,ws7,5.98519,1730.536
+68,Collectivity of Saint Martin,France,floating,ws7,0.64178,182.391
+68,Dominica,Dominica,floating,ws7,3.04238,834.855
+68,Guadeloupe,France,floating,ws7,15.42795,4244.167
+68,Montserrat,United Kingdom,floating,ws7,0.64297,179.763
+68,Puerto Rico,United States,floating,ws7,8.41306,2502.964
+68,Saba,Netherlands,floating,ws7,12.92924,3687.052
+68,Saint Kitts and Nevis,Saint Kitts and Nevis,floating,ws7,11.89360,3352.614
+68,Saint-Barthélemy,France,floating,ws7,9.33515,2774.488
+68,Sint-Eustatius,Netherlands,floating,ws7,5.96699,1690.786
+68,Sint-Maarten,Netherlands,floating,ws7,1.11775,317.334
+68,United States Virgin Islands,United States,floating,ws7,9.50923,2752.952
+68,Antigua and Barbuda,Antigua and Barbuda,floating,ws8,6.32821,1328.242
+68,Dominica,Dominica,floating,ws8,1.22025,252.144
+68,Guadeloupe,France,floating,ws8,4.30759,895.942
+68,Montserrat,United Kingdom,floating,ws8,8.04198,1686.070
+68,Saint Kitts and Nevis,Saint Kitts and Nevis,floating,ws8,3.38242,714.324
+68,Sint-Eustatius,Netherlands,floating,ws8,0.00353,0.749
+4633,Mexico,Mexico,fixed,ws7,15.63590,5139.107
+4633,United States,United States,fixed,ws7,7.87091,2623.643
+4633,Mexico,Mexico,fixed,ws8,0.12958,31.953
+4633,United States,United States,fixed,ws8,8.41863,2104.656
+4633,Mexico,Mexico,floating,ws7,44.77615,14680.480
+4633,United States,United States,floating,ws7,31.65909,10553.188
+1849,Mexico,Mexico,fixed,ws7,16.68861,5253.497
+1849,Mexico,Mexico,floating,ws7,36.75003,11583.263
+644,Mexico,Mexico,fixed,ws7,1.04773,342.790
+644,Mexico,Mexico,floating,ws7,5.70351,1864.785
+1648,Panama,Panama,fixed,ws7,1.87124,614.131
+1648,Panama,Panama,fixed,ws8,0.09314,22.934
+1648,Panama,Panama,floating,ws7,0.58026,190.420
+578,Jamaica,Jamaica,fixed,ws7,16.03432,5231.064
+578,Jamaica,Jamaica,fixed,ws8,3.98458,972.543
+578,Jamaica,Jamaica,floating,ws7,21.44262,6968.762
+578,Jamaica,Jamaica,floating,ws8,7.59662,1850.988
+2486,Canada,Canada,fixed,ws7,8.78567,2943.294
+2486,Canada,Canada,fixed,ws8,1.09610,274.038
+2486,Canada,Canada,floating,ws7,0.02933,9.895
+4697,Canada,Canada,fixed,ws7,33.32080,11167.648
+4697,Canada,Canada,fixed,ws8,1.81296,456.427
+4697,Canada,Canada,floating,ws7,14.94020,5019.282
+4697,Canada,Canada,floating,ws8,0.24185,60.918
+1369,Canada,Canada,fixed,ws7,25.76546,8611.315
+1369,Canada,Canada,fixed,ws8,22.93460,5732.659
+1369,Canada,Canada,floating,ws7,13.10530,4173.364
+1369,Canada,Canada,floating,ws8,58.31137,13925.369
+354,Canada,Canada,fixed,ws7,13.81791,4618.833
+354,Canada,Canada,fixed,ws8,9.75331,2438.157
+354,Canada,Canada,floating,ws7,5.80635,1955.405
+354,Canada,Canada,floating,ws8,5.87822,1484.757
+2726,Canada,Canada,fixed,ws7,0.08924,30.270
+2726,Canada,Canada,fixed,ws8,20.90657,5340.881
+2726,Canada,Canada,floating,ws8,61.90443,15545.815
+2008,Australia,Australia,fixed,ws7,0.20255,67.507
+1024,Russia,Russia,fixed,ws7,3.12322,1041.046
+1024,Russia,Russia,fixed,ws8,9.17739,2294.348
+2307,Russia,Russia,fixed,ws7,0.91235,304.143
+2307,Russia,Russia,fixed,ws8,1.31890,329.733
+3028,Russia,Russia,fixed,ws7,0.21224,70.739
+3028,Russia,Russia,fixed,ws8,7.36625,1841.564
+1963,Russia,Russia,fixed,ws7,13.81397,4604.518
+1963,Russia,Russia,fixed,ws8,25.71996,6429.981
+3210,Russia,Russia,fixed,ws7,0.87255,290.856
+3210,Russia,Russia,fixed,ws8,54.98833,13747.095
+1812,Russia,Russia,fixed,ws7,0.36225,120.750
+1812,Russia,Russia,fixed,ws8,6.51727,1629.318
+1812,Russia,Russia,floating,ws7,0.05696,18.988
+1812,Russia,Russia,floating,ws8,0.15096,37.736
+220,Mozambique,Mozambique,fixed,ws7,6.34011,2113.370
+220,Mozambique,Mozambique,fixed,ws8,0.47474,118.684
+220,South Africa,South Africa,fixed,ws8,0.30573,76.433
+220,Mozambique,Mozambique,floating,ws7,45.35217,15117.389
+220,South Africa,South Africa,floating,ws7,0.56221,187.404
+220,Mozambique,Mozambique,floating,ws8,1.73251,433.127
+220,South Africa,South Africa,floating,ws8,5.60783,1401.947
+1725,South Africa,South Africa,fixed,ws8,4.94213,1235.533
+1725,South Africa,South Africa,floating,ws8,6.24064,1560.147
+4020,South Africa,South Africa,fixed,ws8,4.87207,1218.016
+4020,South Africa,South Africa,floating,ws8,24.75238,6188.048
+1588,Italy,Italy,fixed,ws7,0.46115,153.707
+1588,Tunisia,Tunisia,fixed,ws7,42.51231,14170.548
+1588,Tunisia,Tunisia,fixed,ws8,0.38451,96.126
+1588,Italy,Italy,floating,ws7,12.88414,4295.548
+1588,Libya,Libya,floating,ws7,3.81395,1271.390
+1588,Malta,Malta,floating,ws7,0.49393,164.639
+1588,Tunisia,Tunisia,floating,ws7,60.10939,20035.039
+1588,Tunisia,Tunisia,floating,ws8,0.08254,20.636
+1913,Italy,Italy,fixed,ws7,0.00984,3.282
+1913,Tunisia,Tunisia,fixed,ws7,5.95273,1984.243
+1913,Tunisia,Tunisia,fixed,ws8,2.29917,574.792
+1913,Italy,Italy,floating,ws7,1.89090,630.422
+1913,Tunisia,Tunisia,floating,ws7,61.81417,20603.246
+1913,Tunisia,Tunisia,floating,ws8,9.89654,2474.134
+963,Italy,Italy,fixed,ws7,2.63527,878.343
+963,Tunisia,Tunisia,fixed,ws8,0.03180,7.951
+963,Italy,Italy,floating,ws7,78.12331,26046.167
+963,Tunisia,Tunisia,floating,ws7,20.24610,6748.214
+963,Tunisia,Tunisia,floating,ws8,0.05075,12.687
+2360,Italy,Italy,floating,ws7,7.42353,2474.991
+2360,Malta,Malta,floating,ws7,23.36207,7787.208
+1312,Algeria,Algeria,fixed,ws8,0.00047,0.117
+1312,Algeria,Algeria,floating,ws7,0.25056,83.519
+2965,Libya,Libya,fixed,ws7,10.14713,3382.470
+2965,Libya,Libya,fixed,ws8,0.34416,86.041
+2965,Libya,Libya,floating,ws7,86.34025,28781.751
+2965,Malta,Malta,floating,ws7,0.83326,277.747
+2965,Libya,Libya,floating,ws8,0.01485,3.713
+1452,Libya,Libya,fixed,ws7,0.01644,5.479
+1452,Libya,Libya,fixed,ws8,0.00348,0.869
+4172,Croatia,Croatia,fixed,ws7,0.70428,234.728
+4172,Croatia,Croatia,fixed,ws8,0.35116,87.790
+4172,Croatia,Croatia,floating,ws7,6.39192,2130.490
+4172,Croatia,Croatia,floating,ws8,1.46881,367.177
+3932,Italy,Italy,fixed,ws7,0.25254,84.159
+3932,Italy,Italy,floating,ws7,1.55479,518.234
+1020,France,France,fixed,ws7,0.01125,3.753
+1020,France,France,floating,ws7,3.26280,1087.665
+1020,Italy,Italy,floating,ws7,0.06869,22.857
+2309,Sudan,Sudan,fixed,ws7,0.04134,13.779
+386,Bulgaria,Bulgaria,fixed,ws7,0.30634,102.105
+386,Turkey,Turkey,fixed,ws7,0.37976,126.596
+386,Bulgaria,Bulgaria,floating,ws7,3.65271,1217.459
+386,Turkey,Turkey,floating,ws7,6.66998,2223.159
+2336,Italy,Italy,fixed,ws7,0.99315,331.022
+2336,Albania,Albania,floating,ws7,0.28900,96.330
+2336,Italy,Italy,floating,ws7,11.63078,3876.565
+1887,Croatia,Croatia,fixed,ws7,0.04340,14.466
+1887,Croatia,Croatia,floating,ws7,2.92263,974.131
+2819,Greece,Greece,fixed,ws7,0.40316,134.389
+2819,Turkey,Turkey,fixed,ws7,0.20940,69.793
+2819,Greece,Greece,fixed,ws8,0.10262,25.652
+2819,Greece,Greece,floating,ws7,6.82056,2273.344
+2819,Turkey,Turkey,floating,ws7,2.34405,781.293
+2819,Greece,Greece,floating,ws8,10.50117,2625.105
+4259,Greece,Greece,fixed,ws7,0.09409,31.363
+4259,Turkey,Turkey,fixed,ws7,1.23770,412.547
+4259,Greece,Greece,fixed,ws8,0.61440,153.586
+4259,Turkey,Turkey,fixed,ws8,0.52372,130.926
+4259,Greece,Greece,floating,ws7,4.91422,1637.963
+4259,Turkey,Turkey,floating,ws7,2.26454,754.793
+4259,Greece,Greece,floating,ws8,31.18108,7794.711
+4259,Turkey,Turkey,floating,ws8,5.33337,1333.266
+4204,Greece,Greece,fixed,ws7,0.17617,58.729
+4204,Greece,Greece,fixed,ws8,0.78589,196.450
+4204,Greece,Greece,floating,ws7,3.84261,1280.760
+4204,Greece,Greece,floating,ws8,39.14288,9785.023
+184,Greece,Greece,fixed,ws7,0.55134,183.736
+184,Greece,Greece,fixed,ws8,1.20671,301.628
+184,Greece,Greece,floating,ws7,31.88172,10626.490
+184,Greece,Greece,floating,ws8,73.46022,18363.738
+4154,Russia,Russia,fixed,ws7,0.11880,39.601
+4154,Russia,Russia,floating,ws7,0.16893,56.309
+1378,Russia,Russia,fixed,ws7,2.32525,775.116
+1378,Ukraine,Ukraine,fixed,ws7,0.13407,44.686
+1378,Russia,Russia,fixed,ws8,8.71126,2177.817
+1378,Ukraine,Ukraine,fixed,ws8,0.01910,4.774
+1378,Russia,Russia,floating,ws7,9.55258,3184.277
+1378,Ukraine,Ukraine,floating,ws7,1.59281,530.891
+1378,Russia,Russia,floating,ws8,0.54085,135.210
+3263,Russia,Russia,fixed,ws7,0.11151,37.171
+3263,Russia,Russia,floating,ws7,0.51189,170.635
+2308,Turkey,Turkey,fixed,ws7,0.07499,24.994
+2308,Turkey,Turkey,floating,ws7,1.15388,384.581
+3786,Russia,Russia,fixed,ws7,1.42106,473.697
+3786,Russia,Russia,fixed,ws8,15.34274,3835.661
+2624,Russia,Russia,fixed,ws7,2.80966,936.605
+2624,Russia,Russia,fixed,ws8,38.74818,9686.985
+2624,Russia,Russia,floating,ws8,51.40120,12850.299
+909,Finland,Finland,fixed,ws7,0.36560,121.857
+909,Estonia,Estonia,fixed,ws8,0.08087,20.219
+909,Finland,Finland,fixed,ws8,62.42631,15604.732
+909,Finland,Finland,floating,ws7,0.00243,0.809
+909,Estonia,Estonia,floating,ws8,7.46649,1865.543
+909,Finland,Finland,floating,ws8,36.32215,9077.401
+3882,Sweden,Sweden,fixed,ws7,0.45125,150.402
+3882,Finland,Finland,fixed,ws8,3.01688,754.149
+3882,Sweden,Sweden,fixed,ws8,27.32378,6830.905
+3882,Sweden,Sweden,floating,ws7,0.01883,6.273
+3882,Finland,Finland,floating,ws8,6.47616,1618.480
+3882,Sweden,Sweden,floating,ws8,77.33192,19341.645
+2870,Estonia,Estonia,fixed,ws7,0.09913,33.031
+2870,Latvia,Latvia,fixed,ws7,0.04510,15.040
+2870,Estonia,Estonia,fixed,ws8,55.91728,13979.628
+2870,Latvia,Latvia,fixed,ws8,19.09771,4773.559
+2870,Sweden,Sweden,fixed,ws8,2.05033,512.583
+2870,Estonia,Estonia,floating,ws8,35.75816,8934.424
+2870,Finland,Finland,floating,ws8,2.51685,628.989
+2870,Latvia,Latvia,floating,ws8,21.92073,5479.012
+2870,Sweden,Sweden,floating,ws8,30.18687,7550.149
+2437,Estonia,Estonia,fixed,ws7,0.15207,50.686
+2437,Finland,Finland,fixed,ws7,0.00011,0.037
+2437,Estonia,Estonia,fixed,ws8,13.41221,3352.893
+2437,Finland,Finland,fixed,ws8,5.11110,1277.616
+2437,Estonia,Estonia,floating,ws7,0.00047,0.157
+2437,Estonia,Estonia,floating,ws8,18.56876,4639.508
+2437,Finland,Finland,floating,ws8,5.47551,1368.385
+425,Russia,Russia,fixed,ws7,0.55452,184.846
+425,Russia,Russia,fixed,ws8,69.99735,17499.354
+425,Russia,Russia,floating,ws8,44.41103,11101.388
+4877,Russia,Russia,fixed,ws7,0.01525,5.084
+4877,Russia,Russia,fixed,ws8,53.09519,13273.815
+4877,Russia,Russia,floating,ws8,32.30310,8074.784
+4818,Romania,Romania,fixed,ws7,2.80313,934.270
+4818,Ukraine,Ukraine,fixed,ws7,14.62998,4876.311
+4818,Romania,Romania,floating,ws7,0.55515,185.016
+4818,Ukraine,Ukraine,floating,ws7,2.53642,845.502
+1903,Ukraine,Ukraine,fixed,ws7,46.43790,15478.201
+1903,Ukraine,Ukraine,floating,ws7,10.53524,3511.874
+853,Poland,Poland,fixed,ws7,0.00352,1.174
+853,Russia,Russia,fixed,ws7,0.00757,2.530
+853,Poland,Poland,fixed,ws8,1.26264,315.637
+853,Russia,Russia,fixed,ws8,3.86190,965.424
+853,Poland,Poland,floating,ws8,0.56703,141.695
+853,Russia,Russia,floating,ws8,0.87034,217.527
+4047,Poland,Poland,fixed,ws7,0.28729,95.757
+4047,Denmark,Denmark,fixed,ws8,0.03307,8.267
+4047,Poland,Poland,fixed,ws8,36.70927,9175.873
+4047,Sweden,Sweden,fixed,ws8,4.43638,1109.113
+4047,Denmark,Denmark,floating,ws8,14.41220,3593.036
+4047,Poland,Poland,floating,ws8,52.48187,13114.688
+4047,Russia,Russia,floating,ws8,5.09265,1272.821
+4047,Sweden,Sweden,floating,ws8,3.91262,978.599
+1133,Croatia,Croatia,fixed,ws8,0.00154,0.385
+1133,Croatia,Croatia,floating,ws8,0.02153,5.383
+3712,Norway,Norway,fixed,ws7,0.48969,163.209
+3712,Norway,Norway,fixed,ws8,0.35621,89.046
+3712,Norway,Norway,floating,ws7,3.09208,1030.542
+3712,Norway,Norway,floating,ws8,12.45438,3113.820
+2534,Finland,Finland,fixed,ws7,0.06282,20.937
+2534,Finland,Finland,fixed,ws8,14.48749,3621.441
+2534,Russia,Russia,fixed,ws8,0.66467,166.174
+2534,Estonia,Estonia,floating,ws8,0.73796,184.383
+2534,Finland,Finland,floating,ws8,2.04964,512.246
+2534,Russia,Russia,floating,ws8,0.65999,164.954
+183,Norway,Norway,fixed,ws7,1.04789,349.253
+183,Norway,Norway,fixed,ws8,7.09198,1772.830
+183,Norway,Norway,floating,ws7,1.78130,593.716
+183,Norway,Norway,floating,ws8,156.83062,39210.502
+3116,Svalbard,Norway,fixed,ws7,2.24092,746.930
+3116,Svalbard,Norway,fixed,ws8,54.92338,13729.397
+3116,Svalbard,Norway,floating,ws7,7.58296,2527.479
+3116,Norway,Norway,floating,ws8,9.46671,2366.470
+3116,Svalbard,Norway,floating,ws8,349.73250,87402.458
+2679,Svalbard,Norway,fixed,ws7,4.36609,1455.190
+2679,Svalbard,Norway,fixed,ws8,3.91566,978.808
+2679,Svalbard,Norway,floating,ws7,8.90960,2969.342
+2679,Svalbard,Norway,floating,ws8,59.90750,14971.729
+3459,Norway,Norway,fixed,ws7,0.39931,133.089
+3459,Norway,Norway,fixed,ws8,4.70282,1175.596
+3459,Norway,Norway,floating,ws7,2.01463,671.476
+3459,Norway,Norway,floating,ws8,48.02484,12007.083
+3341,Norway,Norway,fixed,ws7,0.02924,9.739
+3341,Norway,Norway,fixed,ws8,0.42914,107.267
+3341,Norway,Norway,floating,ws7,0.57877,192.910
+3341,Norway,Norway,floating,ws8,3.45497,863.806
+2693,Sweden,Sweden,fixed,ws7,1.09499,364.970
+2693,Finland,Finland,fixed,ws8,0.54065,135.146
+2693,Sweden,Sweden,fixed,ws8,27.51493,6878.116
+2693,Sweden,Sweden,floating,ws7,0.03712,12.372
+2693,Finland,Finland,floating,ws8,8.18237,2044.866
+2693,Sweden,Sweden,floating,ws8,46.43588,11614.110
+422,Sweden,Sweden,fixed,ws7,0.08518,28.383
+422,Sweden,Sweden,fixed,ws8,0.06740,16.850
+2507,Russia,Russia,fixed,ws8,6.13349,1533.376
+1630,Russia,Russia,fixed,ws7,0.12346,41.154
+1630,Russia,Russia,fixed,ws8,96.60086,24150.248
+4366,Russia,Russia,fixed,ws8,2.86265,715.663
+1994,Russia,Russia,fixed,ws7,0.00190,0.635
+1994,Russia,Russia,fixed,ws8,36.46015,9115.049
+1994,Russia,Russia,floating,ws8,2.44032,610.004
+204,Vietnam,Vietnam,fixed,ws7,20.45811,6819.374
+204,Vietnam,Vietnam,floating,ws7,8.02326,2674.425
+1501,Vietnam,Vietnam,fixed,ws7,67.61965,22539.888
+1501,Vietnam,Vietnam,fixed,ws8,49.31931,12329.826
+1501,Vietnam,Vietnam,floating,ws7,28.59945,9533.152
+1501,Vietnam,Vietnam,floating,ws8,51.40166,12850.420
+457,Vietnam,Vietnam,fixed,ws7,1.87341,624.469
+457,Vietnam,Vietnam,fixed,ws8,26.89888,6724.718
+457,Vietnam,Vietnam,floating,ws7,5.94116,1980.387
+457,Vietnam,Vietnam,floating,ws8,120.61774,30154.434
+2981,Australia,Australia,fixed,ws7,0.03320,11.065
+2981,Australia,Australia,fixed,ws8,12.20423,3051.060
+2981,Australia,Australia,floating,ws8,47.27107,11817.765
+197,Australia,Australia,fixed,ws8,18.46591,4616.475
+197,Australia,Australia,floating,ws8,30.86275,7715.684
+1443,Australia,Australia,fixed,ws7,17.99728,5999.091
+3742,Australia,Australia,fixed,ws7,0.92885,309.614
+293,Australia,Australia,fixed,ws7,16.74914,5583.048
+3938,Australia,Australia,fixed,ws7,2.33890,779.633
+3938,Australia,Australia,fixed,ws8,4.16413,1041.034
+3938,Australia,Australia,floating,ws7,0.00401,1.339
+3938,Australia,Australia,floating,ws8,0.57739,144.348
+3927,Australia,Australia,fixed,ws7,6.75081,2250.267
+3927,Australia,Australia,fixed,ws8,25.16564,6291.410
+3927,Australia,Australia,floating,ws8,2.59688,649.213
+815,Australia,Australia,fixed,ws7,0.03799,12.663
+815,Australia,Australia,fixed,ws8,47.65123,11912.815
+815,Australia,Australia,floating,ws8,7.95903,1989.766
+66,Australia,Australia,fixed,ws7,0.08146,27.151
+2296,Australia,Australia,fixed,ws7,0.08742,29.136
+1745,Ecuador,Ecuador,fixed,ws7,0.03214,10.713
+1745,Galapagos,Ecuador,fixed,ws7,0.11807,39.357
+1745,Ecuador,Ecuador,floating,ws7,0.35930,119.765
+1745,Galapagos,Ecuador,floating,ws7,2.54091,846.961
+1745,Galapagos,Ecuador,floating,ws8,0.30075,75.188
+336,Peru,Peru,fixed,ws7,0.03871,12.904
+336,Peru,Peru,floating,ws7,2.98549,995.156
+336,Peru,Peru,floating,ws8,1.75896,439.740
+4608,Brazil,Brazil,fixed,ws7,0.04334,14.448
+4608,Brazil,Brazil,floating,ws7,52.08692,17362.157
+4608,Brazil,Brazil,floating,ws8,0.92363,230.906
+188,Brazil,Brazil,fixed,ws7,2.04428,681.471
+188,Brazil,Brazil,fixed,ws8,9.12297,2280.713
+188,Brazil,Brazil,floating,ws7,6.70426,2234.730
+188,Brazil,Brazil,floating,ws8,81.11074,20277.554
+3848,Brazil,Brazil,fixed,ws7,1.26070,420.244
+3848,Brazil,Brazil,fixed,ws8,38.18840,9546.993
+3848,Brazil,Brazil,floating,ws8,45.03342,11258.281
+1354,France,France,fixed,ws7,1.42655,475.513
+1354,France,France,fixed,ws8,3.19312,798.263
+1354,France,France,floating,ws7,3.34613,1115.304
+1354,France,France,floating,ws8,28.20463,7050.566
+2933,Italy,Italy,fixed,ws7,0.00315,1.047
+2933,Italy,Italy,floating,ws7,1.23810,412.666
+2933,Italy,Italy,floating,ws8,0.08639,21.596
+2722,Canada,Canada,fixed,ws7,0.01780,5.911
+2722,United States,United States,fixed,ws7,0.30522,101.819
+2722,Canada,Canada,floating,ws7,3.00877,1003.897
+2722,United States,United States,floating,ws7,0.18476,61.635
+4777,United States,United States,fixed,ws7,2.24218,747.866
+4777,United States,United States,fixed,ws8,3.37948,845.266
+4777,United States,United States,floating,ws8,13.65925,3415.652
+628,United States,United States,fixed,ws7,0.78586,262.123
+628,United States,United States,fixed,ws8,3.41118,853.195
+628,United States,United States,floating,ws7,1.45719,486.002
+628,United States,United States,floating,ws8,66.29605,16578.081
+1506,Canada,Canada,fixed,ws7,0.23747,78.497
+1506,United States,United States,fixed,ws7,5.82423,1942.349
+1506,United States,United States,fixed,ws8,1.28584,321.612
+1506,Canada,Canada,floating,ws7,3.37718,1126.815
+1506,United States,United States,floating,ws7,13.75487,4586.785
+1506,Canada,Canada,floating,ws8,6.79776,1713.815
+1506,United States,United States,floating,ws8,26.43911,6611.401
+4325,United States,United States,fixed,ws7,0.34360,114.623
+4325,United States,United States,floating,ws7,0.87510,291.921
+305,United States,United States,fixed,ws7,0.89869,299.385
+305,United States,United States,fixed,ws8,1.06477,266.318
+305,United States,United States,floating,ws7,7.03785,2344.335
+305,United States,United States,floating,ws8,47.02246,11758.500
+3142,Chile,Chile,fixed,ws7,0.20778,69.260
+3142,Chile,Chile,fixed,ws8,0.03139,7.850
+3142,Chile,Chile,floating,ws7,2.18708,729.025
+3142,Chile,Chile,floating,ws8,11.09415,2773.522
+125,Argentina,Argentina,fixed,ws7,0.00458,1.522
+125,Argentina,Argentina,fixed,ws8,40.77223,10193.349
+125,Argentina,Argentina,floating,ws8,126.35515,31588.810
+2801,United States,United States,fixed,ws7,3.40094,1133.650
+2801,United States,United States,fixed,ws8,7.82712,1956.778
+133,United States,United States,fixed,ws7,0.49475,164.918
+133,United States,United States,fixed,ws8,101.48871,25372.150
+133,United States,United States,floating,ws8,82.14181,20535.455
+663,United States,United States,fixed,ws7,0.14448,48.159
+663,United States,United States,fixed,ws8,95.08327,23770.803
+663,United States,United States,floating,ws8,288.52828,72132.292
+335,United States,United States,fixed,ws7,12.67721,4225.745
+335,United States,United States,fixed,ws8,46.88762,11721.892
+335,United States,United States,floating,ws7,33.51646,11172.323
+335,United States,United States,floating,ws8,0.25032,62.580
+3234,United States,United States,fixed,ws7,0.20223,67.410
+3234,United States,United States,fixed,ws8,81.73155,20432.866
+3234,United States,United States,floating,ws7,5.68856,1896.215
+3234,United States,United States,floating,ws8,46.47994,11619.986
+1081,United States,United States,fixed,ws7,0.71945,239.816
+1081,United States,United States,fixed,ws8,95.51660,23879.124
+1081,United States,United States,floating,ws8,27.60585,6901.465
+597,United States,United States,fixed,ws7,19.22446,6408.165
+597,United States,United States,fixed,ws8,2.65162,662.904
+597,United States,United States,floating,ws7,19.73877,6579.689
+1129,Mexico,Mexico,fixed,ws7,37.53559,11804.825
+1129,Mexico,Mexico,floating,ws7,6.67376,2103.491
+4098,Mexico,Mexico,fixed,ws7,0.68196,214.473
+347,Mexico,Mexico,fixed,ws7,1.01113,326.336
+347,Mexico,Mexico,fixed,ws8,4.17452,1013.267
+347,Mexico,Mexico,floating,ws7,6.40346,2069.141
+347,Mexico,Mexico,floating,ws8,19.42823,4721.066
+1470,Honduras,Honduras,fixed,ws7,0.08889,29.640
+4211,Honduras,Honduras,fixed,ws7,3.10078,1028.852
+4211,Honduras,Honduras,floating,ws7,13.42524,4456.435
+576,Colombia,Colombia,fixed,ws7,0.21992,73.307
+576,Honduras,Honduras,fixed,ws7,54.66527,18129.956
+576,Nicaragua,Nicaragua,fixed,ws7,11.75850,3889.560
+576,Quitasueño Bank,Colombia,fixed,ws7,1.00959,336.529
+576,Serrana Bank,Colombia,fixed,ws7,0.11042,36.470
+576,Colombia,Colombia,fixed,ws8,0.00081,0.203
+576,Colombia,Colombia,floating,ws7,4.90217,1634.024
+576,Honduras,Honduras,floating,ws7,9.74967,3235.333
+576,Nicaragua,Nicaragua,floating,ws7,12.75355,4214.332
+576,Quitasueño Bank,Colombia,floating,ws7,2.09552,698.490
+576,Serrana Bank,Colombia,floating,ws7,2.78503,919.718
+576,Colombia,Colombia,floating,ws8,0.10533,26.333
+2969,Colombia,Colombia,floating,ws7,1.56152,520.497
+1153,Costa Rica,Costa Rica,fixed,ws7,0.01256,4.187
+1153,Nicaragua,Nicaragua,fixed,ws7,0.00194,0.647
+1153,Costa Rica,Costa Rica,fixed,ws8,0.49637,124.141
+1153,Nicaragua,Nicaragua,fixed,ws8,0.36816,92.090
+1153,Costa Rica,Costa Rica,floating,ws7,0.41009,136.775
+1153,Costa Rica,Costa Rica,floating,ws8,10.40644,2603.199
+1153,Nicaragua,Nicaragua,floating,ws8,7.45669,1865.505
+3902,Nicaragua,Nicaragua,fixed,ws7,1.11009,370.318
+3902,Nicaragua,Nicaragua,fixed,ws8,2.25346,563.756
+3902,Nicaragua,Nicaragua,floating,ws7,3.62425,1209.042
+3902,Costa Rica,Costa Rica,floating,ws8,1.48204,370.735
+3902,Nicaragua,Nicaragua,floating,ws8,20.94022,5238.790
+366,Russia,Russia,fixed,ws7,6.98710,2329.016
+366,Russia,Russia,fixed,ws8,5.26086,1315.236
+366,Russia,Russia,floating,ws7,4.70365,1567.902
+366,Russia,Russia,floating,ws8,66.30794,16577.067
+1968,Russia,Russia,fixed,ws7,2.10294,700.976
+1968,Russia,Russia,fixed,ws8,0.00406,1.020
+1968,Russia,Russia,floating,ws7,2.37009,790.025
+3223,Russia,Russia,fixed,ws7,0.95121,317.088
+3223,Russia,Russia,fixed,ws8,3.02287,755.739
+3223,Russia,Russia,floating,ws7,1.25772,419.228
+3223,Russia,Russia,floating,ws8,44.40033,11100.144
+4680,Libya,Libya,fixed,ws7,3.55951,1186.539
+4680,Tunisia,Tunisia,fixed,ws7,39.61123,13203.528
+4680,Libya,Libya,fixed,ws8,0.06062,15.155
+4680,Tunisia,Tunisia,fixed,ws8,0.22791,56.979
+4680,Libya,Libya,floating,ws7,14.35158,4784.139
+4680,Tunisia,Tunisia,floating,ws7,15.34082,5113.259
+4680,Tunisia,Tunisia,floating,ws8,0.02949,7.372
+96,Libya,Libya,fixed,ws7,5.60087,1867.009
+96,Libya,Libya,fixed,ws8,0.21224,53.061
+96,Libya,Libya,floating,ws7,70.90078,23634.964
+96,Malta,Malta,floating,ws7,0.40423,134.740
+96,Libya,Libya,floating,ws8,0.00049,0.123
+1737,Libya,Libya,fixed,ws7,1.66315,554.400
+1737,Libya,Libya,fixed,ws8,0.02592,6.481
+1737,Libya,Libya,floating,ws7,0.03861,12.872
+4846,Libya,Libya,fixed,ws7,7.54975,2516.656
+4846,Libya,Libya,fixed,ws8,0.19524,48.811
+4846,Libya,Libya,floating,ws7,47.98018,15994.318
+4846,Libya,Libya,floating,ws8,0.00099,0.248
+4704,Libya,Libya,fixed,ws7,0.14871,49.570
+4704,Libya,Libya,fixed,ws8,1.73153,432.882
+4704,Libya,Libya,floating,ws7,9.66279,3220.933
+4704,Libya,Libya,floating,ws8,4.47058,1117.646
+4083,Libya,Libya,fixed,ws7,4.74384,1581.326
+4083,Libya,Libya,fixed,ws8,0.12936,32.339
+4083,Libya,Libya,floating,ws7,5.23962,1746.643
+2571,Libya,Libya,fixed,ws7,1.67205,557.351
+2571,Libya,Libya,fixed,ws8,0.19450,48.625
+2571,Libya,Libya,floating,ws7,9.93267,3310.891
+2571,Libya,Libya,floating,ws8,0.36083,90.207
+1626,Bulgaria,Bulgaria,fixed,ws7,1.00525,335.057
+1626,Romania,Romania,fixed,ws7,19.61678,6538.192
+1626,Bulgaria,Bulgaria,floating,ws7,14.95835,4985.588
+1626,Romania,Romania,floating,ws7,55.14124,18377.079
+1626,Ukraine,Ukraine,floating,ws7,0.57236,190.793
+3199,Bulgaria,Bulgaria,fixed,ws7,0.79119,263.712
+3199,Bulgaria,Bulgaria,floating,ws7,5.10750,1702.320
+4040,Greece,Greece,fixed,ws7,0.26526,88.421
+4040,Greece,Greece,fixed,ws8,1.15103,287.745
+4040,Greece,Greece,floating,ws7,21.62085,7206.420
+4040,Greece,Greece,floating,ws8,11.20370,2800.714
+4040,Turkey,Turkey,floating,ws8,0.71590,178.966
+1701,Greece,Greece,fixed,ws7,0.51659,172.189
+1701,Turkey,Turkey,fixed,ws7,0.55409,184.691
+1701,Greece,Greece,fixed,ws8,0.72223,180.554
+1701,Turkey,Turkey,fixed,ws8,4.08390,1020.892
+1701,Greece,Greece,floating,ws7,7.16118,2386.889
+1701,Turkey,Turkey,floating,ws7,2.40185,800.556
+1701,Greece,Greece,floating,ws8,43.64479,10910.420
+1701,Turkey,Turkey,floating,ws8,14.18047,3544.894
+2439,Greece,Greece,fixed,ws7,0.64180,213.920
+2439,Greece,Greece,fixed,ws8,0.55159,137.873
+2439,Greece,Greece,floating,ws7,23.45848,7818.942
+2439,Greece,Greece,floating,ws8,52.10910,13026.348
+4395,Greece,Greece,fixed,ws7,1.14188,380.648
+4395,Turkey,Turkey,fixed,ws7,1.73684,578.854
+4395,Greece,Greece,fixed,ws8,0.00461,1.151
+4395,Turkey,Turkey,fixed,ws8,0.59940,149.828
+4395,Greece,Greece,floating,ws7,2.89127,963.683
+4395,Turkey,Turkey,floating,ws7,1.93274,644.195
+4395,Greece,Greece,floating,ws8,1.54425,386.030
+4395,Turkey,Turkey,floating,ws8,5.21036,1302.517
+3745,Turkey,Turkey,fixed,ws7,0.15761,52.533
+3745,Turkey,Turkey,floating,ws7,1.17195,390.628
+1729,Ukraine,Ukraine,fixed,ws7,0.54901,182.993
+1729,Ukraine,Ukraine,fixed,ws8,25.76536,6440.834
+3071,Ukraine,Ukraine,fixed,ws7,24.08739,8028.557
+3071,Ukraine,Ukraine,floating,ws7,0.68084,226.954
+4165,Russia,Russia,fixed,ws7,1.06376,354.599
+4165,Ukraine,Ukraine,fixed,ws7,17.22746,5742.087
+4165,Russia,Russia,fixed,ws8,7.65299,1913.242
+4165,Ukraine,Ukraine,fixed,ws8,32.28960,8071.761
+4165,Ukraine,Ukraine,floating,ws7,11.74355,3914.184
+212,Ukraine,Ukraine,fixed,ws7,3.23347,1077.744
+212,Romania,Romania,floating,ws7,0.16491,54.962
+212,Ukraine,Ukraine,floating,ws7,40.73393,13578.459
+4051,Russia,Russia,fixed,ws7,0.51869,172.912
+4051,Ukraine,Ukraine,fixed,ws7,0.24608,82.019
+4051,Russia,Russia,fixed,ws8,34.59988,8649.945
+4051,Ukraine,Ukraine,fixed,ws8,16.96651,4241.295
+548,Russia,Russia,fixed,ws7,0.14712,49.035
+548,Russia,Russia,fixed,ws8,4.61777,1154.440
+548,Ukraine,Ukraine,fixed,ws8,0.00465,1.161
+4352,Russia,Russia,fixed,ws7,0.22232,74.119
+4352,Russia,Russia,fixed,ws8,1.92575,481.456
+856,Estonia,Estonia,fixed,ws7,0.00937,3.119
+856,Finland,Finland,fixed,ws7,0.02604,8.680
+856,Russia,Russia,fixed,ws7,0.73350,244.480
+856,Estonia,Estonia,fixed,ws8,5.42802,1356.570
+856,Finland,Finland,fixed,ws8,2.51838,629.520
+856,Russia,Russia,fixed,ws8,37.15502,9289.091
+856,Estonia,Estonia,floating,ws8,1.07518,268.642
+856,Finland,Finland,floating,ws8,0.38051,95.127
+856,Russia,Russia,floating,ws8,1.73002,432.396
+350,Latvia,Latvia,fixed,ws7,0.04866,16.217
+350,Estonia,Estonia,fixed,ws8,0.45834,114.588
+350,Latvia,Latvia,fixed,ws8,22.20775,5550.908
+350,Estonia,Estonia,floating,ws8,0.10009,25.022
+350,Latvia,Latvia,floating,ws8,0.57686,144.198
+2387,Russia,Russia,fixed,ws7,0.00136,0.453
+2387,Latvia,Latvia,fixed,ws8,17.40157,4349.595
+2387,Lithuania,Lithuania,fixed,ws8,12.59050,3147.161
+2387,Russia,Russia,fixed,ws8,15.14860,3786.918
+2387,Latvia,Latvia,floating,ws8,30.58814,7645.401
+2387,Lithuania,Lithuania,floating,ws8,14.12378,3535.507
+2387,Poland,Poland,floating,ws8,0.39752,99.337
+2387,Russia,Russia,floating,ws8,19.96685,4990.376
+2387,Sweden,Sweden,floating,ws8,8.96701,2242.771
+3043,Denmark,Denmark,fixed,ws8,1.12787,281.953
+3043,Germany,Germany,fixed,ws8,10.63833,2659.652
+1993,Germany,Germany,fixed,ws8,15.81375,3953.553
+4000,Russia,Russia,fixed,ws7,0.34859,116.192
+4000,Russia,Russia,fixed,ws8,0.05400,13.500
+4000,Russia,Russia,floating,ws7,0.05469,18.235
+4000,Russia,Russia,floating,ws8,2.42438,606.095
+4765,Norway,Norway,floating,ws7,0.01665,5.556
+1493,Norway,Norway,fixed,ws7,0.02687,8.949
+1493,Norway,Norway,fixed,ws8,7.60100,1900.048
+1493,Norway,Norway,floating,ws7,0.46264,154.190
+1493,Norway,Norway,floating,ws8,115.54840,28889.184
+3649,Norway,Norway,fixed,ws7,0.11665,38.878
+3649,Norway,Norway,fixed,ws8,11.90783,2976.662
+3649,Norway,Norway,floating,ws7,0.59707,199.004
+3649,Norway,Norway,floating,ws8,129.55761,32391.705
+891,Sweden,Sweden,fixed,ws7,0.49689,165.623
+891,Sweden,Sweden,fixed,ws8,1.89461,473.608
+891,Sweden,Sweden,floating,ws7,0.43820,146.048
+891,Sweden,Sweden,floating,ws8,13.88934,3473.866
+1163,Norway,Norway,fixed,ws7,1.56250,520.814
+1163,Norway,Norway,fixed,ws8,5.96307,1490.609
+1163,Norway,Norway,floating,ws7,5.77643,1925.290
+1163,Norway,Norway,floating,ws8,94.47294,23619.947
+2198,Vietnam,Vietnam,fixed,ws7,25.03236,8344.127
+2198,Vietnam,Vietnam,fixed,ws8,0.01384,3.460
+2198,China,China,floating,ws7,0.27456,91.521
+2198,Vietnam,Vietnam,floating,ws7,15.28617,5095.391
+74,Vietnam,Vietnam,fixed,ws7,12.33092,4110.306
+74,Vietnam,Vietnam,fixed,ws8,0.03435,8.587
+74,Vietnam,Vietnam,floating,ws7,13.13732,4379.111
+3681,China,China,fixed,ws7,7.63840,2546.126
+3681,Vietnam,Vietnam,fixed,ws7,0.79509,265.031
+3681,China,China,fixed,ws8,20.98183,5245.459
+3681,Vietnam,Vietnam,fixed,ws8,3.38228,845.571
+3681,China,China,floating,ws7,38.37880,12792.935
+3681,Vietnam,Vietnam,floating,ws7,7.05814,2352.713
+3681,China,China,floating,ws8,48.93587,12233.969
+3681,Vietnam,Vietnam,floating,ws8,1.45446,363.615
+722,China,China,fixed,ws7,7.02106,2340.352
+722,China,China,fixed,ws8,2.37811,594.525
+722,China,China,floating,ws7,68.58234,22860.782
+722,Vietnam,Vietnam,floating,ws7,0.85907,286.356
+722,China,China,floating,ws8,97.53720,24384.299
+1593,China,China,fixed,ws7,28.16913,9389.710
+1593,China,China,fixed,ws8,30.37843,7594.613
+1593,China,China,floating,ws8,140.93533,35233.830
+4705,China,China,fixed,ws7,13.84858,4616.195
+4705,China,China,fixed,ws8,6.78160,1695.400
+4705,China,China,floating,ws8,1.65273,413.182
+2380,China,China,fixed,ws7,38.30397,12767.991
+2380,China,China,fixed,ws8,13.40678,3351.695
+2380,China,China,floating,ws7,4.30549,1435.163
+2380,China,China,floating,ws8,21.83287,5458.218
+1248,Indonesia,Indonesia,fixed,ws7,0.01180,3.933
+1248,Indonesia,Indonesia,floating,ws7,0.08259,27.529
+1372,Guam,United States,fixed,ws7,0.09530,31.764
+1372,Northern Mariana Islands,United States,fixed,ws7,0.15209,50.701
+1372,Guam,United States,floating,ws7,6.54131,2180.436
+1372,Northern Mariana Islands,United States,floating,ws7,11.37460,3791.533
+2324,China,China,fixed,ws7,30.98428,10328.089
+2324,China,China,fixed,ws8,1.13670,284.176
+2324,Taiwan,Taiwan,fixed,ws8,0.13443,33.608
+2324,China,China,floating,ws7,4.86607,1622.011
+2324,China,China,floating,ws8,86.45876,21614.690
+2324,Taiwan,Taiwan,floating,ws8,24.54513,6136.282
+136,China,China,fixed,ws7,7.97368,2657.898
+136,China,China,fixed,ws8,68.12693,17031.737
+136,Taiwan,Taiwan,fixed,ws8,1.91783,479.461
+136,China,China,floating,ws8,67.39796,16849.490
+136,Taiwan,Taiwan,floating,ws8,153.19961,38299.903
+1065,Panama,Panama,fixed,ws7,2.75092,905.142
+1065,Panama,Panama,fixed,ws8,0.07766,19.170
+1065,Panama,Panama,floating,ws7,2.18394,718.387
+1828,Venezuela,Venezuela,fixed,ws7,0.49812,166.039
+1828,Venezuela,Venezuela,fixed,ws8,0.87749,219.374
+1828,Venezuela,Venezuela,floating,ws7,10.28128,3427.078
+1828,Venezuela,Venezuela,floating,ws8,11.48984,2872.448
+2655,Argentina,Argentina,fixed,ws7,5.25473,1751.567
+2655,Uruguay,Uruguay,fixed,ws7,1.41248,470.843
+2655,Argentina,Argentina,fixed,ws8,0.69049,172.625
+2655,Uruguay,Uruguay,fixed,ws8,1.46471,366.003
+1043,Argentina,Argentina,fixed,ws7,2.67758,892.518
+1043,Uruguay,Uruguay,fixed,ws7,0.19619,65.395
+1043,Argentina,Argentina,fixed,ws8,49.32721,12332.759
+1043,Uruguay,Uruguay,fixed,ws8,34.08513,8517.163
+2600,Brazil,Brazil,fixed,ws7,0.01735,5.784
+2600,Brazil,Brazil,fixed,ws8,42.91325,10728.224
+2600,Brazil,Brazil,floating,ws8,7.43597,1858.988
+1481,United States,United States,fixed,ws7,0.31250,104.000
+1481,United States,United States,fixed,ws8,0.00051,0.127
+1481,United States,United States,floating,ws7,12.42058,4131.805
+1481,United States,United States,floating,ws8,12.57166,3143.671
+299,Chile,Chile,fixed,ws7,0.24632,82.112
+299,Islas San Félix and San Ambrosio,Chile,fixed,ws7,0.29950,99.835
+299,Chile,Chile,fixed,ws8,0.05452,13.630
+299,Chile,Chile,floating,ws7,2.71352,904.511
+299,Islas San Félix and San Ambrosio,Chile,floating,ws7,1.86029,620.097
+299,Chile,Chile,floating,ws8,10.06749,2516.858
+2003,Chile,Chile,floating,ws7,2.07338,691.123
+2003,Chile,Chile,floating,ws8,0.03468,8.667
+3360,Chile,Chile,fixed,ws7,0.40271,134.243
+3360,Chile,Chile,fixed,ws8,3.80393,950.975
+3360,Chile,Chile,floating,ws7,0.15471,51.577
+3360,Chile,Chile,floating,ws8,20.82708,5206.710
+3641,Chile,Chile,fixed,ws7,0.10687,35.615
+3641,Chile,Chile,fixed,ws8,0.29624,74.061
+3641,Chile,Chile,floating,ws7,0.22563,75.210
+3641,Chile,Chile,floating,ws8,2.55316,638.277
+1872,Argentina,Argentina,fixed,ws8,16.02359,4005.874
+1872,Argentina,Argentina,floating,ws8,84.98632,21246.595
+1721,Argentina,Argentina,fixed,ws8,5.67275,1418.183
+1721,Chile,Chile,fixed,ws8,5.11334,1278.326
+1721,Argentina,Argentina,floating,ws8,131.89321,32973.329
+1721,Chile,Chile,floating,ws8,22.01180,5502.889
+987,Argentina,Argentina,fixed,ws8,26.50503,6626.212
+987,Chile,Chile,fixed,ws8,8.18578,2046.435
+987,Argentina,Argentina,floating,ws8,91.55964,22889.925
+987,Chile,Chile,floating,ws8,2.79658,699.141
+3368,Argentina,Argentina,fixed,ws8,18.27403,4568.476
+3368,Chile,Chile,fixed,ws8,0.10365,25.913
+3368,Argentina,Argentina,floating,ws8,64.55601,16139.016
+1845,United States,United States,fixed,ws7,0.40877,136.256
+1845,United States,United States,fixed,ws8,10.24159,2560.394
+1845,United States,United States,floating,ws7,1.38318,461.067
+120,El Salvador,El Salvador,fixed,ws7,0.01365,4.551
+3103,Costa Rica,Costa Rica,fixed,ws7,0.29880,99.641
+3103,Costa Rica,Costa Rica,fixed,ws8,0.11431,28.591
+3103,Costa Rica,Costa Rica,floating,ws7,2.09702,699.368
+3103,Costa Rica,Costa Rica,floating,ws8,1.92916,482.577
+4623,Mexico,Mexico,fixed,ws7,75.06774,23608.567
+4623,Mexico,Mexico,fixed,ws8,0.01693,4.009
+4623,Mexico,Mexico,floating,ws7,20.79331,6553.808
+206,Mexico,Mexico,fixed,ws7,87.83522,27623.898
+206,Mexico,Mexico,fixed,ws8,78.41636,18558.603
+206,Mexico,Mexico,floating,ws7,125.93516,39693.273
+206,Mexico,Mexico,floating,ws8,6.53871,1556.379
+1348,Mexico,Mexico,fixed,ws7,54.37214,17084.318
+1348,Mexico,Mexico,fixed,ws8,0.09669,22.357
+1348,Mexico,Mexico,floating,ws7,33.74720,10570.129
+630,Belize,Belize,floating,ws7,0.00320,1.068
+630,Mexico,Mexico,floating,ws7,0.01320,4.029
+4495,Honduras,Honduras,fixed,ws7,1.80168,600.786
+4495,Honduras,Honduras,floating,ws7,9.12261,3041.964
+4850,Mexico,Mexico,fixed,ws7,0.03941,12.056
+4850,Mexico,Mexico,floating,ws7,1.53572,468.729
+1273,Montenegro,Montenegro,fixed,ws7,0.00065,0.216
+1273,Montenegro,Montenegro,floating,ws7,0.95916,319.698
+2162,Greece,Greece,fixed,ws7,0.17240,57.463
+2162,Italy,Italy,fixed,ws7,0.07157,23.859
+2162,Albania,Albania,floating,ws7,5.59401,1864.619
+2162,Greece,Greece,floating,ws7,8.44022,2813.220
+2162,Italy,Italy,floating,ws7,14.33498,4777.882
+2162,Albania,Albania,floating,ws8,0.27471,68.676
+3310,Finland,Finland,fixed,ws7,1.07701,358.941
+3310,Finland,Finland,fixed,ws8,24.22456,6055.417
+3310,Sweden,Sweden,fixed,ws8,0.66095,165.249
+3310,Finland,Finland,floating,ws8,12.24426,3038.762
+3310,Sweden,Sweden,floating,ws8,13.31980,3339.305
+984,Finland,Finland,fixed,ws7,2.84971,949.821
+984,Sweden,Sweden,fixed,ws7,2.69746,899.069
+984,Finland,Finland,fixed,ws8,12.05999,3014.636
+984,Sweden,Sweden,fixed,ws8,5.38890,1347.327
+984,Sweden,Sweden,floating,ws7,0.00200,0.666
+984,Finland,Finland,floating,ws8,0.13144,32.726
+984,Sweden,Sweden,floating,ws8,6.11670,1533.288
+3107,Sweden,Sweden,fixed,ws7,3.43248,1144.052
+3107,Sweden,Sweden,fixed,ws8,6.76217,1690.678
+3107,Sweden,Sweden,floating,ws7,0.00904,3.012
+3107,Sweden,Sweden,floating,ws8,2.42411,607.719
+1472,Finland,Finland,fixed,ws7,0.40820,136.063
+1472,Sweden,Sweden,fixed,ws7,1.80033,600.047
+1472,Finland,Finland,fixed,ws8,18.54019,4634.488
+1472,Sweden,Sweden,fixed,ws8,14.66428,3666.324
+1472,Sweden,Sweden,floating,ws7,0.21157,70.521
+1472,Finland,Finland,floating,ws8,7.92016,1975.919
+1472,Sweden,Sweden,floating,ws8,31.54417,7897.737
+2470,Finland,Finland,fixed,ws7,0.22664,75.540
+2470,Finland,Finland,fixed,ws8,21.87874,5469.027
+2470,Sweden,Sweden,fixed,ws8,0.08710,21.774
+2470,Finland,Finland,floating,ws8,49.88348,12466.436
+2470,Sweden,Sweden,floating,ws8,10.29194,2574.155
+308,China,China,fixed,ws7,1.07456,358.187
+2367,China,China,fixed,ws7,18.67668,6225.555
+2367,Vietnam,Vietnam,fixed,ws7,42.58747,14195.830
+2367,China,China,fixed,ws8,0.26700,66.750
+2367,Vietnam,Vietnam,fixed,ws8,3.30992,827.479
+2367,China,China,floating,ws7,1.37635,458.783
+2367,Vietnam,Vietnam,floating,ws7,0.59077,196.928
+2367,China,China,floating,ws8,0.37652,94.129
+2367,Vietnam,Vietnam,floating,ws8,2.04770,511.925
+623,Vietnam,Vietnam,fixed,ws7,2.23238,744.126
+1691,Mexico,Mexico,fixed,ws7,0.40461,132.337
+1691,Mexico,Mexico,floating,ws7,8.33521,2725.452
+4372,Mexico,Mexico,fixed,ws7,0.67158,219.669
+4372,Mexico,Mexico,floating,ws7,9.95367,3255.158
+2016,United States,United States,floating,ws7,1.10085,366.261
+2931,,,fixed,ws8,19.26997,4817.488
+2931,,,floating,ws8,322.51095,80627.262
+2578,Argentina,Argentina,fixed,ws8,74.81206,18703.552
+2578,Argentina,Argentina,floating,ws8,25.46386,6365.963
+2474,Chile,Chile,fixed,ws7,0.11466,38.227
+2474,Chile,Chile,fixed,ws8,0.07126,17.815
+2474,Chile,Chile,floating,ws7,0.30548,101.825
+2474,Chile,Chile,floating,ws8,0.76483,191.206
+4261,Barbados,Barbados,fixed,ws7,0.11262,29.929
+4261,Grenada,Grenada,fixed,ws7,3.72363,1023.407
+4261,Martinique,France,fixed,ws7,0.46110,125.657
+4261,Saint Lucia,Saint Lucia,fixed,ws7,0.87785,239.225
+4261,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,fixed,ws7,4.01951,1098.523
+4261,Trinidad and Tobago,Trinidad and Tobago,fixed,ws7,2.69613,737.587
+4261,Venezuela,Venezuela,fixed,ws7,5.56084,1853.776
+4261,Barbados,Barbados,fixed,ws8,0.02828,5.650
+4261,Grenada,Grenada,fixed,ws8,0.54684,112.797
+4261,Martinique,France,fixed,ws8,0.00504,1.035
+4261,Saint Lucia,Saint Lucia,fixed,ws8,0.06540,13.377
+4261,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,fixed,ws8,0.97786,200.675
+4261,Barbados,Barbados,floating,ws7,11.64917,3108.474
+4261,Dominica,Dominica,floating,ws7,0.07368,20.215
+4261,Grenada,Grenada,floating,ws7,23.03637,6342.185
+4261,Martinique,France,floating,ws7,6.58656,1796.554
+4261,Saint Lucia,Saint Lucia,floating,ws7,6.30323,1715.383
+4261,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,floating,ws7,5.47652,1496.048
+4261,Trinidad and Tobago,Trinidad and Tobago,floating,ws7,23.04281,6251.443
+4261,Venezuela,Venezuela,floating,ws7,26.45834,8819.411
+4261,Barbados,Barbados,floating,ws8,3.67852,735.320
+4261,Grenada,Grenada,floating,ws8,0.57036,117.562
+4261,Martinique,France,floating,ws8,0.35456,72.865
+4261,Saint Lucia,Saint Lucia,floating,ws8,0.58371,119.486
+4261,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,floating,ws8,2.35672,483.871
+1089,Trinidad and Tobago,Trinidad and Tobago,floating,ws7,7.11847,1931.220
+1089,Venezuela,Venezuela,floating,ws7,8.82047,2940.588
+104,Syria,Syria,fixed,ws7,0.02142,7.141
+104,Turkey,Turkey,fixed,ws7,0.03668,12.223
+104,Turkey,Turkey,fixed,ws8,0.05974,14.935
+104,Turkey,Turkey,floating,ws7,0.29083,96.937
+104,Turkey,Turkey,floating,ws8,0.76197,190.507
+680,Cyprus,Cyprus,floating,ws7,0.00387,1.291
+1574,Turkey,Turkey,fixed,ws7,0.24471,81.568
+1574,Turkey,Turkey,floating,ws7,0.08772,29.237
+2455,Mexico,Mexico,fixed,ws7,4.54925,1488.015
+2455,Mexico,Mexico,fixed,ws8,0.73721,180.128
+2455,Mexico,Mexico,floating,ws7,38.14123,12479.432
+2455,Mexico,Mexico,floating,ws8,14.10746,3450.761
+1660,Mexico,Mexico,fixed,ws7,0.07241,23.810
+1660,Mexico,Mexico,fixed,ws8,0.03782,9.328
+1660,Mexico,Mexico,floating,ws7,1.91726,631.010
+1660,Mexico,Mexico,floating,ws8,0.32192,79.421
+527,Mexico,Mexico,fixed,ws7,3.68685,1205.860
+527,Mexico,Mexico,fixed,ws8,1.93801,477.050
+527,Mexico,Mexico,floating,ws7,33.38675,10916.953
+527,Mexico,Mexico,floating,ws8,3.50598,857.406
+2543,Mexico,Mexico,floating,ws7,0.30353,99.723
+865,Mexico,Mexico,fixed,ws7,2.20342,720.455
+865,Mexico,Mexico,fixed,ws8,1.76164,430.094
+865,Mexico,Mexico,floating,ws7,6.89572,2255.077
+865,Mexico,Mexico,floating,ws8,5.94362,1450.026
+3290,Argentina,Argentina,fixed,ws8,20.70062,5175.127
+3290,Argentina,Argentina,floating,ws8,183.17424,45793.588
+4409,Argentina,Argentina,fixed,ws8,11.75205,2938.007
+4409,Argentina,Argentina,floating,ws8,48.94977,12237.449
+258,Argentina,Argentina,fixed,ws8,1.12267,280.675
+258,Argentina,Argentina,floating,ws8,1.48229,370.573
+2780,Argentina,Argentina,fixed,ws8,33.19906,8299.995
+2780,Argentina,Argentina,floating,ws8,57.59358,14398.407
+4865,Argentina,Argentina,fixed,ws8,2.03371,508.441
+4865,Argentina,Argentina,floating,ws8,0.41822,104.556
+792,Argentina,Argentina,fixed,ws8,100.22582,25057.158
+792,Argentina,Argentina,floating,ws8,25.10543,6276.359
+4803,Argentina,Argentina,fixed,ws8,3.51296,878.231
+4803,Argentina,Argentina,floating,ws8,24.93458,6233.647
+1510,Argentina,Argentina,fixed,ws8,8.70018,2175.035
+1510,Argentina,Argentina,floating,ws8,167.84445,41961.143
+359,Argentina,Argentina,fixed,ws8,35.77333,8943.280
+359,Argentina,Argentina,floating,ws8,193.28386,48321.001
+2169,Argentina,Argentina,fixed,ws8,1.48309,370.767
+2169,Argentina,Argentina,floating,ws8,4.25255,1063.138

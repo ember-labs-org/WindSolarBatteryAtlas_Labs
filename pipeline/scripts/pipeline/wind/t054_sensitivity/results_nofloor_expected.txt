@@ -1,0 +1,37 @@
+threshold 0.00; before = /private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287b19fe1/scratchpad/T059/data15
+
+===== onshore, A = 500 km2 =====
+viable before 3988 (7.09 bn), after 4424 (7.76 bn)
+gain 436 (0.68 bn); lose 0 (0.0 m)
+with land at >= 20% but still non-viable (best 500 km2 mean < 20%): 0 (0.0 m); of which >= 200 km2 at >= 20%: 0 (0.0 m); their area at >= 20%: median 0 km2, max 0
+viable before and after (n=3988): headline change median +0.0 pp [p10 +0.0, p90 +0.0]; simulated (final_cf) change median +0.0 pp [p10 -0.0, p90 +0.0]; pop-weighted headline +0.0 pp, simulated +0.0 pp
+clamped viable: before 925 (k=1.8: 925, k=0.6: 0), after 989 (k=1.8: 989, k=0.6: 0)
+viable but simulating < 15%: before 271, after 707; newly viable simulating < 15%: 436 (0.68 bn)
+viable but simulating < 20%: before 533, after 969; newly viable simulating < 20%: 436 (0.68 bn)
+newly viable: headline median 0.082, simulated median 0.071; capped 64
+EXPECTED IDENTICAL on profiles/slices: non-viable before and after 574, clamped at the same bound before and after 925, same target 3063 -> 4562 regions
+
+===== offshore, A = 500 km2 =====
+viable before 1186 (2.40 bn), after 1324 (2.74 bn)
+gain 138 (0.34 bn); lose 0 (0.0 m)
+with land at >= 20% but still non-viable (best 500 km2 mean < 20%): 0 (0.0 m); of which >= 200 km2 at >= 20%: 0 (0.0 m); their area at >= 20%: median 0 km2, max 0
+viable before and after (n=1186): headline change median +0.0 pp [p10 +0.0, p90 +0.0]; simulated (final_cf) change median +0.0 pp [p10 +0.0, p90 +0.0]; pop-weighted headline +0.0 pp, simulated -0.0 pp
+clamped viable: before 147 (k=1.8: 147, k=0.6: 0), after 147 (k=1.8: 147, k=0.6: 0)
+viable but simulating < 15%: before 1, after 139; newly viable simulating < 15%: 138 (0.34 bn)
+viable but simulating < 20%: before 76, after 214; newly viable simulating < 20%: 138 (0.34 bn)
+newly viable: headline median 0.094, simulated median 0.094; capped 0
+EXPECTED IDENTICAL off profiles/slices: non-viable before and after 3674, clamped at the same bound before and after 147, same target 1039 -> 4860 regions
+
+any wind (on or off): before 4109 (7.11 bn), after 4518 (7.76 bn); gain 409 (0.65 bn), lose 0 (0.0 m)
+on: newly viable 436; headline min 0.0024; best<=0: 0; NaN sim 0
+   headline < 5%: 120 (26 m); simulated < 5%: 160 (115 m)
+   headline < 10%: 272 (203 m); simulated < 10%: 297 (278 m)
+   headline < 15%: 436 (675 m); simulated < 15%: 436 (675 m)
+   top countries by people: {'India': 236000000, 'Indonesia': 80000000, 'Dem. Rep. Congo': 50000000, 'Nigeria': 38000000, 'China': 37000000, 'Malaysia': 37000000, 'Uganda': 31000000, "Côte d'Ivoire": 24000000}
+   of which |lat|>=60: 1; Antarctica/Greenland: 1
+off: newly viable 138; headline min 0.0126; best<=0: 0; NaN sim 0
+   headline < 5%: 27 (47 m); simulated < 5%: 27 (47 m)
+   headline < 10%: 77 (204 m); simulated < 10%: 77 (204 m)
+   headline < 15%: 138 (340 m); simulated < 15%: 138 (340 m)
+   top countries by people: {'Indonesia': 80000000, 'Nigeria': 53000000, 'India': 39000000, 'Malaysia': 31000000, 'Angola': 18000000, "Côte d'Ivoire": 14000000, 'Colombia': 11000000, 'Philippines': 8000000}
+   of which |lat|>=60: 0; Antarctica/Greenland: 0

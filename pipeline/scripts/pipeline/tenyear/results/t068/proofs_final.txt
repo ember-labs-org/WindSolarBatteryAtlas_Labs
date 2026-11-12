@@ -1,0 +1,12 @@
+C1 bad=0
+verify exit=1 :: ARTICLE CHECK FAILED (2)
+headline exit=0 :: PASS the article's slots are headline A, weak wind W1
+validate_engine exit=0 :: PASS lcoe_t99 + add-on: 4465 engine rows vs 4465 app rows, 0 differ
+regress exit=0 :: INFO regress ran in 459 s on /private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d2
+smoke exit=0 :: PASS smoke first map in 4414 ms incl. LCOE switch
+sample exit=0 :: PASS sample-days 90/90 checks (canvas, ?canvas=0, ?worker=0)
+addon exit=0 :: PASS addon 88/88
+addon_faults exit=0 :: PASS addon-faults 12/12
+addon_unit exit=0 :: PASS addon-unit 25/25
+colour exit=0 :: PASS colour-registry 14 modules use only the registry (allow-list: 13 UI-chrome entries)
+legend exit=0 :: PASS legend-probe overall (/private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287

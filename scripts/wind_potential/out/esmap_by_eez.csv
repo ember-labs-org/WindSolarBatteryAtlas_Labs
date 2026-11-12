@@ -1,0 +1,333 @@
+region,geoname,territory,sovereign,kind,country_file_gw,polygon_gw,polygon_minus_country_file_gw,duplicate_gw,artifact_gw,cells_gw,features,esmap_area_skm,cells_equal_area_km2
+EAP,Australian Exclusive Economic Zone,Australia,Australia,fixed,1572.1926,1572.1926,0.0000,0.0362,0.0000,1572.1563,3893,445207.3,445198.2
+EAP,Australian Exclusive Economic Zone,Australia,Australia,floating,3391.3589,3391.3589,0.0000,0.0376,0.0000,3391.3213,2505,920297.9,920285.3
+EAP,Australian Exclusive Economic Zone (Macquarie Island),Macquarie Island,Australia,floating,7.8533,7.8533,0.0000,0.0000,0.0000,7.8533,8,1963.3,1963.3
+EAP,Cambodian Exclusive Economic Zone,Cambodia,Cambodia,fixed,0.1321,0.1321,0.0000,0.0000,0.0000,0.1321,2,44.0,44.0
+EAP,Chinese Exclusive Economic Zone,China,China,fixed,1321.1525,1321.1525,0.0000,0.0602,0.0000,1321.0923,670,399522.8,399507.7
+EAP,Chinese Exclusive Economic Zone,China,China,floating,1108.1201,1108.1201,0.0000,0.0196,0.0000,1108.1005,414,299469.7,299463.2
+EAP,Christmas Island Exclusive Economic Zone,Christmas Island,Australia,fixed,0.0008,0.0008,0.0000,0.0000,0.0000,0.0008,1,0.3,0.3
+EAP,Christmas Island Exclusive Economic Zone,Christmas Island,Australia,floating,0.1089,0.1089,0.0000,0.0000,0.0000,0.1089,1,36.3,36.3
+EAP,Cook Islands Exclusive Economic Zone,Cook Islands,New Zealand,fixed,0.0571,0.0571,0.0000,0.0000,0.0000,0.0571,55,19.0,19.0
+EAP,Cook Islands Exclusive Economic Zone,Cook Islands,New Zealand,floating,1.4493,1.4493,0.0000,0.0000,0.0000,1.4493,25,483.1,483.1
+EAP,Fijian Exclusive Economic Zone,Fiji,Fiji,fixed,27.0681,27.0681,0.0000,0.0131,0.0000,27.0551,766,8512.7,8509.5
+EAP,Fijian Exclusive Economic Zone,Fiji,Fiji,floating,159.2679,159.2679,0.0000,0.0059,0.0000,159.2620,280,51461.3,51460.1
+EAP,French Polynesian Exclusive Economic Zone,French Polynesia,France,fixed,7.2990,7.2990,0.0000,0.0000,0.0000,7.2990,516,2433.0,2433.0
+EAP,French Polynesian Exclusive Economic Zone,French Polynesia,France,floating,40.8840,40.8840,0.0000,0.0000,0.0000,40.8840,202,13628.0,13628.0
+EAP,Guam Exclusive Economic Zone,Guam,United States,fixed,0.0953,0.0953,0.0000,0.0000,0.0000,0.0953,26,31.8,31.8
+EAP,Guam Exclusive Economic Zone,Guam,United States,floating,6.5413,6.5413,0.0000,0.0000,0.0000,6.5413,6,2180.4,2180.4
+EAP,Indonesian Exclusive Economic Zone,Indonesia,Indonesia,fixed,197.7107,197.7107,0.0000,0.0000,0.0000,197.7107,275,65726.1,65726.1
+EAP,Indonesian Exclusive Economic Zone,Indonesia,Indonesia,floating,79.3925,79.3925,0.0000,0.0000,0.0000,79.3925,192,26463.3,26463.3
+EAP,Japanese Exclusive Economic Zone,Japan,Japan,fixed,103.1601,103.1601,0.0000,0.0260,0.0000,103.1342,1713,31082.2,31075.7
+EAP,Japanese Exclusive Economic Zone,Japan,Japan,floating,1721.5736,1721.5736,0.0000,0.1125,0.0000,1721.4611,858,502055.3,502017.8
+EAP,Joint regime area Japan / Korea,South Korea,South Korea,floating,173.0303,173.0303,0.0000,0.0000,0.0000,173.0303,21,53684.8,53684.8
+EAP,Marshall Islands Exclusive Economic Zone,Marshall Islands,Marshall Islands,fixed,17.9294,17.9294,0.0000,0.0000,0.0000,17.9294,726,5922.4,5922.4
+EAP,Marshall Islands Exclusive Economic Zone,Marshall Islands,Marshall Islands,floating,35.9713,35.9713,0.0000,0.0000,0.0000,35.9713,247,11855.7,11855.7
+EAP,New Caledonian Exclusive Economic Zone,New Caledonia,France,fixed,52.7755,52.7755,0.0000,0.0242,0.0000,52.7513,684,16003.8,15997.7
+EAP,New Caledonian Exclusive Economic Zone,New Caledonia,France,floating,180.1133,180.1133,0.0000,0.0359,0.0000,180.0774,293,55300.3,55288.3
+EAP,New Zealand Exclusive Economic Zone,New Zealand,New Zealand,fixed,148.0160,148.0160,0.0000,0.0129,0.0000,148.0031,1079,40522.7,40519.4
+EAP,New Zealand Exclusive Economic Zone,New Zealand,New Zealand,floating,2104.0364,2104.0364,0.0000,0.0340,0.0000,2104.0024,679,536000.1,535896.3
+EAP,Niue Exclusive Economic Zone,Niue,New Zealand,fixed,0.0245,0.0245,0.0000,0.0000,0.0000,0.0245,8,8.2,8.2
+EAP,Niue Exclusive Economic Zone,Niue,New Zealand,floating,0.6871,0.6871,0.0000,0.0000,0.0000,0.6871,9,229.0,229.0
+EAP,Norfolk Island Exclusive Economic Zone,Norfolk Island,Australia,fixed,1.9509,1.9509,0.0000,0.0000,0.0000,1.9509,41,650.3,650.3
+EAP,Norfolk Island Exclusive Economic Zone,Norfolk Island,Australia,floating,25.7011,25.7011,0.0000,0.0034,0.0000,25.6977,60,8392.4,8391.3
+EAP,North Korean Exclusive Economic Zone,North Korea,North Korea,fixed,46.0656,46.0656,0.0000,0.0000,0.0000,46.0656,36,15355.1,15355.1
+EAP,North Korean Exclusive Economic Zone,North Korea,North Korea,floating,32.8217,32.8217,0.0000,0.0000,0.0000,32.8217,43,10940.6,10940.6
+EAP,Northern Mariana Exclusive Economic Zone,Northern Mariana Islands,United States,fixed,0.1532,0.1532,0.0000,0.0000,0.0000,0.1532,19,51.1,51.1
+EAP,Northern Mariana Exclusive Economic Zone,Northern Mariana Islands,United States,floating,12.9091,12.9091,0.0000,0.0000,0.0000,12.9091,34,4303.0,4303.0
+EAP,Overlapping claim Kuril Islands: Japan / Russia,Japan,Japan,fixed,18.6200,18.6200,-0.0000,0.0011,0.0000,18.6189,127,4905.2,4905.0
+EAP,Overlapping claim Kuril Islands: Japan / Russia,Japan,Japan,floating,53.9535,53.9535,0.0000,0.0036,0.0000,53.9499,49,13580.3,13579.1
+EAP,Overlapping claim Liancourt Rocks: Japan / South Korea,Japan,Japan,fixed,0.0372,0.0372,0.0000,0.0000,0.0000,0.0372,2,12.4,12.4
+EAP,Overlapping claim Liancourt Rocks: Japan / South Korea,Japan,Japan,floating,1.3840,1.3840,0.0000,0.0000,0.0000,1.3840,1,461.3,461.3
+EAP,Overlapping claim Matthew and Hunter Islands: New Caledonia / Vanuatu,New Caledonia,France,fixed,0.0165,0.0165,0.0000,0.0000,0.0000,0.0165,3,5.5,5.5
+EAP,Overlapping claim Matthew and Hunter Islands: New Caledonia / Vanuatu,New Caledonia,France,floating,1.3572,1.3572,0.0000,0.0000,0.0000,1.3572,7,452.3,452.3
+EAP,Overlapping claim Senkaku Islands: Japan / China / Taiwan,Taiwan,Taiwan,fixed,0.8344,0.8344,0.0000,0.0000,0.0000,0.8344,22,208.7,208.7
+EAP,Overlapping claim Senkaku Islands: Japan / China / Taiwan,Taiwan,Taiwan,floating,176.4476,176.4476,0.0000,0.0004,0.0000,176.4472,11,44112.0,44111.9
+EAP,Papua New Guinean Exclusive Economic Zone,Papua New Guinea,Papua New Guinea,fixed,91.6188,91.6188,0.0000,0.0022,0.0000,91.6166,158,26578.5,26578.0
+EAP,Papua New Guinean Exclusive Economic Zone,Papua New Guinea,Papua New Guinea,floating,56.1155,56.1155,0.0000,0.0066,0.0000,56.1089,128,17038.0,17035.8
+EAP,Philippines Exclusive Economic Zone,Philippines,Philippines,fixed,18.7464,18.7464,0.0000,0.0047,0.0000,18.7416,562,5826.6,5825.4
+EAP,Philippines Exclusive Economic Zone,Philippines,Philippines,floating,161.9044,161.9044,0.0000,0.0170,0.0000,161.8874,234,47675.8,47670.2
+EAP,Protected Zone established under the Torres Strait Treaty,Papua New Guinea,Papua New Guinea,fixed,11.7367,11.7367,0.0000,0.0000,0.0000,11.7367,10,3561.3,3561.3
+EAP,Samoan Exclusive Economic Zone,Samoa,Samoa,floating,0.1375,0.1375,0.0000,0.0000,0.0000,0.1375,2,45.8,45.8
+EAP,Solomon Islands Exclusive Economic Zone,Solomon Islands,Solomon Islands,fixed,1.2143,1.2143,0.0000,0.0000,0.0000,1.2143,113,404.8,404.8
+EAP,Solomon Islands Exclusive Economic Zone,Solomon Islands,Solomon Islands,floating,4.7862,4.7862,0.0000,0.0000,0.0000,4.7862,6,1595.4,1595.4
+EAP,South Korean Exclusive Economic Zone,South Korea,South Korea,fixed,77.7478,77.7478,0.0000,0.0126,0.0000,77.7352,386,24879.6,24876.5
+EAP,South Korean Exclusive Economic Zone,South Korea,South Korea,floating,545.5477,545.5477,0.0000,0.0162,0.0000,545.5314,231,168250.2,168244.8
+EAP,Taiwanese Exclusive Economic Zone,Taiwan,Taiwan,fixed,67.4446,67.4446,-0.0000,0.0034,0.0000,67.4412,182,16969.3,16968.5
+EAP,Taiwanese Exclusive Economic Zone,Taiwan,Taiwan,floating,426.9154,426.9154,0.0000,0.0175,0.0000,426.8979,116,109001.4,108995.6
+EAP,Tongan Exclusive Economic Zone,Tonga,Tonga,fixed,8.7616,8.7616,0.0000,0.0000,0.0000,8.7616,257,2920.6,2920.6
+EAP,Tongan Exclusive Economic Zone,Tonga,Tonga,floating,118.1895,118.1895,-0.0000,0.0000,0.0000,118.1895,154,39396.5,39396.5
+EAP,Vanuatu Exclusive Economic Zone,Vanuatu,Vanuatu,fixed,1.8308,1.8308,0.0000,0.0000,0.0000,1.8308,404,606.3,606.3
+EAP,Vanuatu Exclusive Economic Zone,Vanuatu,Vanuatu,floating,90.9099,90.9099,0.0000,0.0112,0.0000,90.8988,163,29681.8,29678.1
+EAP,Vietnamese Exclusive Economic Zone,Vietnam,Vietnam,fixed,261.0533,261.0533,0.0000,0.0217,0.0000,261.0315,147,80010.7,80005.2
+EAP,Vietnamese Exclusive Economic Zone,Vietnam,Vietnam,floating,338.3175,338.3175,0.0000,0.0254,0.0000,338.2921,121,97518.1,97509.6
+EAP,Wake Island Exclusive Economic Zone,Wake Island,United States,floating,1.1577,1.1577,0.0000,0.0000,0.0000,1.1577,7,385.9,385.9
+EAP,Wallis and Futuna Exclusive Economic Zone,Wallis and Futuna,France,floating,0.4347,0.4347,0.0000,0.0000,0.0000,0.4347,7,144.9,144.9
+ECA,Albanian Exclusive Economic Zone,Albania,Albania,floating,6.1577,6.1577,-0.0000,0.0000,0.0000,6.1577,9,2029.7,2029.6
+ECA,Azerbaijanis Exclusive Economic Zone,Azerbaijan,Azerbaijan,fixed,35.4224,35.4224,0.0000,0.0000,0.0000,35.4224,4,10523.7,10529.9
+ECA,Azerbaijanis Exclusive Economic Zone,Azerbaijan,Azerbaijan,floating,122.1433,122.1433,0.0000,0.0000,0.0000,122.1433,3,35038.1,35055.9
+ECA,Belgian Exclusive Economic Zone,Belgium,Belgium,fixed,13.6545,13.6545,0.0000,0.0000,0.0000,13.6545,1,3413.6,3410.8
+ECA,Bulgarian Exclusive Economic Zone,Bulgaria,Bulgaria,fixed,2.1028,2.1028,0.0000,0.0000,0.0000,2.1028,10,700.9,700.9
+ECA,Bulgarian Exclusive Economic Zone,Bulgaria,Bulgaria,floating,23.7186,23.7186,0.0000,0.0000,0.0000,23.7186,13,7906.2,7905.4
+ECA,Croatian Exclusive Economic Zone,Croatia,Croatia,fixed,3.9976,3.9976,0.0000,0.0000,0.0000,3.9976,221,1299.4,1299.3
+ECA,Croatian Exclusive Economic Zone,Croatia,Croatia,floating,13.1770,13.1770,0.0000,0.0000,0.0000,13.1770,47,4141.9,4141.6
+ECA,Cypriote Exclusive Economic Zone,Cyprus,Cyprus,floating,0.0039,0.0039,0.0000,0.0000,0.0000,0.0039,1,1.3,1.3
+ECA,Danish Exclusive Economic Zone,Denmark,Denmark,fixed,261.4248,261.4248,0.0000,0.0000,0.0000,261.4248,106,65358.2,65354.9
+ECA,Danish Exclusive Economic Zone,Denmark,Denmark,floating,66.6521,66.6521,0.0000,0.0000,0.0000,66.6521,34,16663.0,16620.9
+ECA,Dutch Exclusive Economic Zone,Netherlands,Netherlands,fixed,207.0987,207.0987,0.0000,0.0000,0.0000,207.0987,8,51774.7,51762.8
+ECA,Dutch Exclusive Economic Zone,Netherlands,Netherlands,floating,0.4194,0.4194,0.0000,0.0000,0.0000,0.4194,3,104.8,104.8
+ECA,Estonian Exclusive Economic Zone,Estonia,Estonia,fixed,75.5573,75.5573,0.0000,0.0000,0.0000,75.5573,173,18911.0,18910.7
+ECA,Estonian Exclusive Economic Zone,Estonia,Estonia,floating,63.7071,63.7071,0.0000,0.0000,0.0000,63.7071,15,15926.8,15917.7
+ECA,Faeroe Exclusive Economic Zone,Faeroe,Denmark,fixed,1.2584,1.2584,0.0000,0.0000,0.0000,1.2584,172,314.6,314.6
+ECA,Faeroe Exclusive Economic Zone,Faeroe,Denmark,floating,289.7425,289.7425,0.0000,0.0000,0.0000,289.7425,31,72435.6,72432.2
+ECA,Finnish Exclusive Economic Zone,Finland,Finland,fixed,169.8204,169.8204,0.0000,0.0000,0.0000,169.8204,439,42873.1,42868.0
+ECA,Finnish Exclusive Economic Zone,Finland,Finland,floating,131.5850,131.5850,0.0000,0.0000,0.0000,131.5850,338,32896.4,32860.1
+ECA,French Exclusive Economic Zone,France,France,fixed,169.3747,169.3747,0.0000,0.0000,0.0000,169.3747,728,43861.7,43855.3
+ECA,French Exclusive Economic Zone,France,France,floating,453.6207,453.6207,0.0000,0.0000,0.0000,453.6207,454,118525.4,118453.1
+ECA,German Exclusive Economic Zone,Germany,Germany,fixed,198.9668,198.9668,0.0000,0.0000,0.0000,198.9668,47,49741.7,49743.1
+ECA,German Exclusive Economic Zone,Germany,Germany,floating,0.0568,0.0568,0.0000,0.0000,0.0000,0.0568,7,14.2,14.2
+ECA,Greek Exclusive Economic Zone,Greece,Greece,fixed,9.5960,9.5960,0.0000,0.0000,0.0000,9.5960,1026,2752.1,2752.0
+ECA,Greek Exclusive Economic Zone,Greece,Greece,floating,412.5469,412.5469,0.0000,0.0000,0.0000,412.5469,158,114737.7,114729.5
+ECA,Greenlandic Exclusive Economic Zone,Greenland,Denmark,fixed,84.9323,84.9323,-0.0000,0.0000,0.0000,84.9323,764,23574.5,23446.3
+ECA,Greenlandic Exclusive Economic Zone,Greenland,Denmark,floating,1192.5094,1192.5094,0.0000,0.0000,0.0000,1192.5094,390,315767.5,312896.9
+ECA,Guernsey Exclusive Economic Zone,Guernsey,United Kingdom,fixed,4.7868,4.7868,0.0000,0.0000,0.0000,4.7868,28,1196.7,1196.6
+ECA,Guernsey Exclusive Economic Zone,Guernsey,United Kingdom,floating,21.0558,21.0558,0.0000,0.0000,0.0000,21.0558,32,5264.0,5259.6
+ECA,Icelandic Exclusive Economic Zone,Iceland,Iceland,fixed,53.5921,53.5921,0.0000,0.0000,0.0000,53.5921,506,13706.4,13705.3
+ECA,Icelandic Exclusive Economic Zone,Iceland,Iceland,floating,792.8663,792.8662,-0.0000,0.0000,0.0000,792.8662,29,198484.8,198465.3
+ECA,Irish Exclusive Economic Zone,Ireland,Ireland,fixed,50.6109,50.6109,0.0000,0.0000,0.0000,50.6109,458,12654.8,12653.7
+ECA,Irish Exclusive Economic Zone,Ireland,Ireland,floating,552.6831,552.6831,0.0000,0.0000,0.0000,552.6831,150,138170.8,138156.6
+ECA,Italian Exclusive Economic Zone,Italy,Italy,fixed,6.1908,6.1908,0.0000,0.0000,0.0000,6.1908,181,2044.8,2044.7
+ECA,Italian Exclusive Economic Zone,Italy,Italy,floating,183.1527,183.1527,0.0000,0.0000,0.0000,183.1527,41,60199.1,60203.5
+ECA,Jan Mayen Exclusive Economic Zone,Jan Mayen,Norway,fixed,0.3286,0.3286,0.0000,0.0000,0.0000,0.3286,23,82.6,82.6
+ECA,Jan Mayen Exclusive Economic Zone,Jan Mayen,Norway,floating,48.5587,48.5587,0.0000,0.0000,0.0000,48.5587,9,12139.7,12138.5
+ECA,Jersey Exclusive Economic Zone,Jersey,United Kingdom,fixed,8.6096,8.6096,0.0000,0.0000,0.0000,8.6096,16,2152.6,2152.6
+ECA,Jersey Exclusive Economic Zone,Jersey,United Kingdom,floating,0.2924,0.2924,0.0000,0.0000,0.0000,0.2924,11,73.1,73.1
+ECA,Joint regime area Iceland / Norway (Jan Mayen),Iceland,Iceland,floating,22.6552,22.6552,0.0000,22.6552,0.0000,0.0000,3,5663.8,0.0
+ECA,Joint regime area Italy / France,France,France,fixed,0.0123,0.0123,0.0000,0.0076,0.0000,0.0047,5,4.1,1.6
+ECA,Joint regime area Italy / France,France,France,floating,0.2029,0.2029,0.0000,0.1153,0.0000,0.0876,4,62.9,27.1
+ECA,Joint regime area Sweden / Norway,Norway,Norway,floating,0.5608,0.5608,0.0000,0.0000,0.0000,0.5608,1,140.2,140.0
+ECA,Joint regime area United Kingdom / Denmark (Faeroe Islands),United Kingdom,United Kingdom,floating,13.7190,13.7190,0.0000,13.7190,0.0000,0.0000,3,3429.7,0.0
+ECA,Kazakh Exclusive Economic Zone,Kazakhstan,Kazakhstan,fixed,265.3995,265.3995,-0.0000,0.0000,0.0000,265.3995,42,67482.4,66057.6
+ECA,Kazakh Exclusive Economic Zone,Kazakhstan,Kazakhstan,floating,152.9532,152.9532,-0.0000,0.0000,0.0000,152.9532,3,38305.3,37406.0
+ECA,Latvian Exclusive Economic Zone,Latvia,Latvia,fixed,58.8008,58.8008,0.0000,0.0000,0.0000,58.8008,35,14708.0,14705.3
+ECA,Latvian Exclusive Economic Zone,Latvia,Latvia,floating,53.0857,53.0857,0.0000,0.0000,0.0000,53.0857,11,13271.4,13268.6
+ECA,Lithuanian Exclusive Economic Zone,Lithuania,Lithuania,fixed,12.5905,12.5905,0.0000,0.0000,0.0000,12.5905,4,3147.6,3147.2
+ECA,Lithuanian Exclusive Economic Zone,Lithuania,Lithuania,floating,14.1238,14.1238,0.0000,0.0000,0.0000,14.1238,1,3530.9,3535.5
+ECA,Montenegrin Exclusive economic Zone,Montenegro,Montenegro,fixed,0.0006,0.0006,0.0000,0.0000,0.0000,0.0006,1,0.2,0.2
+ECA,Montenegrin Exclusive economic Zone,Montenegro,Montenegro,floating,0.9592,0.9592,0.0000,0.0000,0.0000,0.9592,1,319.7,319.7
+ECA,Norwegian Exclusive Economic Zone,Norway,Norway,fixed,59.8471,59.8471,0.0000,0.0000,0.0000,59.8471,3124,15410.7,15409.2
+ECA,Norwegian Exclusive Economic Zone,Norway,Norway,floating,1416.0728,1416.0728,0.0000,0.0000,0.0000,1416.0728,1158,355853.7,355875.7
+ECA,Overlapping claim Kuril Islands: Japan / Russia,Japan,Japan,fixed,7.5827,7.5827,-0.0000,0.0000,0.0000,7.5827,105,1935.3,1935.2
+ECA,Overlapping claim Ukrainian Exclusive Economic Zone,Ukraine,Ukraine,fixed,181.5906,181.5906,0.0000,0.0000,0.0000,181.5906,74,54276.4,54272.4
+ECA,Overlapping claim Ukrainian Exclusive Economic Zone,Ukraine,Ukraine,floating,68.3951,68.3951,0.0000,0.0000,0.0000,68.3951,21,22798.4,22798.7
+ECA,Polish Exclusive Economic Zone,Poland,Poland,fixed,58.6902,58.6902,0.0000,0.0000,0.0000,58.6902,17,14698.7,14696.4
+ECA,Polish Exclusive Economic Zone,Poland,Poland,floating,57.1585,57.1585,0.0000,0.0000,0.0000,57.1585,4,14289.6,14283.3
+ECA,Portuguese Exclusive Economic Zone,Portugal,Portugal,fixed,14.1610,14.1610,0.0000,0.0000,0.0000,14.1610,66,4538.5,4538.2
+ECA,Portuguese Exclusive Economic Zone,Portugal,Portugal,floating,117.3963,117.3963,0.0000,0.0000,0.0000,117.3963,24,33502.9,33500.4
+ECA,Portuguese Exclusive Economic Zone (Azores),Azores,Portugal,floating,63.3704,63.3704,0.0000,0.0000,0.0000,63.3704,175,16173.3,16172.2
+ECA,Portuguese Exclusive Economic Zone (Madeira),Madeira,Portugal,fixed,0.1186,0.1186,0.0000,0.0000,0.0000,0.1186,2,39.5,39.5
+ECA,Portuguese Exclusive Economic Zone (Madeira),Madeira,Portugal,floating,0.6735,0.6735,0.0000,0.0000,0.0000,0.6735,1,224.5,224.5
+ECA,Romanian Exclusive economic Zone,Romania,Romania,fixed,22.4199,22.4199,0.0000,0.0000,0.0000,22.4199,51,7473.3,7472.5
+ECA,Romanian Exclusive economic Zone,Romania,Romania,floating,55.8613,55.8613,0.0000,0.0000,0.0000,55.8613,53,18620.4,18617.1
+ECA,Russian Exclusive economic Zone,Russia,Russia,fixed,5558.0354,5558.0354,-0.0000,0.0000,0.0000,5558.0354,5818,1478949.7,1478947.1
+ECA,Russian Exclusive economic Zone,Russia,Russia,floating,7815.1234,7815.1234,0.0000,0.0000,0.0000,7815.1234,1487,2007325.4,2007280.2
+ECA,Spanish Exclusive Economic Zone,Spain,Spain,fixed,12.3724,12.3724,0.0000,0.0000,0.0000,12.3724,221,3630.2,3629.9
+ECA,Spanish Exclusive Economic Zone,Spain,Spain,floating,207.1817,207.1817,0.0000,0.0000,0.0000,207.1817,45,56996.9,56993.0
+ECA,Spanish Exclusive Economic Zone (Canary Islands),Canary Islands,Spain,fixed,3.7659,3.7659,0.0000,0.0000,0.0000,3.7659,152,1002.3,1002.2
+ECA,Spanish Exclusive Economic Zone (Canary Islands),Canary Islands,Spain,floating,47.3696,47.3696,0.0000,0.0000,0.0000,47.3696,64,12302.7,12301.9
+ECA,Svalvard Exclusive Economic Zone,Svalbard,Norway,fixed,91.5829,91.5829,0.0000,0.0000,0.0000,91.5829,707,24412.2,24409.7
+ECA,Svalvard Exclusive Economic Zone,Svalbard,Norway,floating,907.0918,907.0918,0.0000,0.0000,0.0000,907.0918,310,231712.2,231634.9
+ECA,Swedish Exclusive Economic Zone,Sweden,Sweden,fixed,228.4437,228.4437,0.0000,0.0000,0.0000,228.4437,1208,57978.4,57978.2
+ECA,Swedish Exclusive Economic Zone,Sweden,Sweden,floating,360.3933,360.3933,0.0000,0.0000,0.0000,360.3933,619,90159.7,90218.5
+ECA,Turkish Exclusive Economic Zone,Turkey,Turkey,fixed,12.3909,12.3909,0.0000,0.0000,0.0000,12.3909,301,3654.5,3654.2
+ECA,Turkish Exclusive Economic Zone,Turkey,Turkey,floating,63.4369,63.4369,0.0000,0.0000,0.0000,63.4369,56,18709.3,18708.0
+ECA,Turkmen Exclusive Economic Zone,Turkmenistan,Turkmenistan,fixed,46.0493,46.0493,-0.0000,0.0000,0.0000,46.0493,7,13860.3,13618.7
+ECA,Turkmen Exclusive Economic Zone,Turkmenistan,Turkmenistan,floating,27.0912,27.0912,0.0000,0.0000,0.0000,27.0912,3,8099.0,7935.0
+ECA,United Kingdom Exclusive Economic Zone,United Kingdom,United Kingdom,fixed,449.3934,449.3934,0.0000,0.0000,0.0000,449.3934,3011,112415.9,112408.4
+ECA,United Kingdom Exclusive Economic Zone,United Kingdom,United Kingdom,floating,1365.7786,1365.7786,0.0000,0.0000,0.0000,1365.7786,1253,341483.2,341524.8
+LAC,Anguilla Exclusive Economic Zone,Anguilla,United Kingdom,fixed,3.5798,3.5798,0.0000,0.0000,0.0000,3.5798,1,1193.3,1015.5
+LAC,Anguilla Exclusive Economic Zone,Anguilla,United Kingdom,floating,14.1892,14.1892,0.0000,0.0000,0.0000,14.1892,1,4729.7,4034.3
+LAC,Antigua and Barbuda Exclusive Economic Zone,Antigua and Barbuda,Antigua and Barbuda,fixed,9.4009,9.4009,0.0000,0.0000,0.0000,9.4009,2,3117.7,2606.3
+LAC,Antigua and Barbuda Exclusive Economic Zone,Antigua and Barbuda,Antigua and Barbuda,floating,29.5514,29.5514,0.0000,0.0000,0.0000,29.5514,2,9323.1,7802.1
+LAC,Argentinean Exclusive Economic Zone,Argentina,Argentina,fixed,556.0872,556.0872,0.0000,0.0000,0.0000,556.0872,269,139683.2,139694.6
+LAC,Argentinean Exclusive Economic Zone,Argentina,Argentina,floating,1313.6415,1313.6415,0.0000,0.0000,0.0000,1313.6415,146,328410.4,328408.4
+LAC,Aruban Exclusive Economic Zone,Aruba,Netherlands,fixed,0.5015,0.5015,0.0000,0.0000,0.0000,0.5015,1,125.4,115.3
+LAC,Aruban Exclusive Economic Zone,Aruba,Netherlands,floating,19.1810,19.1810,0.0000,0.0000,0.0000,19.1810,1,4795.3,4408.1
+LAC,Bahamas Exclusive Economic Zone,Bahamas,Bahamas,fixed,98.4827,98.4827,0.0000,0.0000,0.0000,98.4827,11,32823.3,31974.7
+LAC,Bahamas Exclusive Economic Zone,Bahamas,Bahamas,floating,59.8833,59.8833,0.0000,0.0000,0.0000,59.8833,19,19752.4,19177.7
+LAC,Barbados Exclusive Economic Zone,Barbados,Barbados,fixed,0.1409,0.1409,0.0000,0.0000,0.0000,0.1409,3,44.6,35.6
+LAC,Barbados Exclusive Economic Zone,Barbados,Barbados,floating,15.3277,15.3277,0.0000,0.0000,0.0000,15.3277,3,4802.7,3843.8
+LAC,Belizean Exclusive Economic Zone,Belize,Belize,floating,0.0032,0.0032,0.0000,0.0000,0.0000,0.0032,1,1.1,1.1
+LAC,Bonaire Exclusive Economic Zone,Bonaire,Netherlands,fixed,0.0554,0.0554,0.0000,0.0000,0.0000,0.0554,1,13.9,12.5
+LAC,Bonaire Exclusive Economic Zone,Bonaire,Netherlands,floating,5.4290,5.4290,0.0000,0.0000,0.0000,5.4290,3,1360.1,1225.6
+LAC,Brazilian Exclusive Economic Zone,Brazil,Brazil,fixed,477.6583,477.6583,0.0000,0.0143,0.0000,477.6440,325,126732.2,126726.2
+LAC,Brazilian Exclusive Economic Zone,Brazil,Brazil,floating,749.7766,749.7765,-0.0000,0.0256,0.0000,749.7509,110,203054.8,203046.1
+LAC,British Virgin Islands Exclusive Economic Zone,British Virgin Islands,United Kingdom,fixed,7.8688,7.8688,0.0000,0.0000,0.0000,7.8688,1,2622.9,2278.9
+LAC,British Virgin Islands Exclusive Economic Zone,British Virgin Islands,United Kingdom,floating,5.9852,5.9852,0.0000,0.0000,0.0000,5.9852,1,1995.1,1730.5
+LAC,Cayman Islands Exclusive Economic Zone,Cayman Islands,United Kingdom,floating,0.0043,0.0043,0.0000,0.0000,0.0000,0.0043,1,1.4,1.4
+LAC,Chilean Exclusive Economic Zone,Chile,Chile,fixed,139.0527,139.0527,-0.0000,0.0175,0.0000,139.0352,3271,36065.7,36059.7
+LAC,Chilean Exclusive Economic Zone,Chile,Chile,floating,830.1275,830.1275,-0.0000,0.0613,0.0000,830.0661,1129,211263.6,211246.5
+LAC,Chilean Exclusive Economic Zone (Easter Island),Easter Island,Chile,floating,0.1625,0.1625,0.0000,0.0000,0.0000,0.1625,4,54.1,54.1
+LAC,Chilean Exclusive Economic Zone (San Felix and San Ambrosio islands),Islas San Félix and San Ambrosio,Chile,fixed,0.2995,0.2995,0.0000,0.0000,0.0000,0.2995,12,99.8,99.8
+LAC,Chilean Exclusive Economic Zone (San Felix and San Ambrosio islands),Islas San Félix and San Ambrosio,Chile,floating,1.8603,1.8603,0.0000,0.0000,0.0000,1.8603,1,620.1,620.1
+LAC,Colombian Exclusive Economic Zone,Colombia,Colombia,fixed,31.3829,31.3829,0.0000,0.0039,0.0000,31.3790,42,8067.9,8066.5
+LAC,Colombian Exclusive Economic Zone,Colombia,Colombia,floating,78.0078,78.0078,0.0000,0.0142,0.0000,77.9936,37,20334.2,20330.5
+LAC,Colombian Exclusive Economic Zone (Quitasueño),Quitasueño Bank,Colombia,fixed,1.0096,1.0096,0.0000,0.0000,0.0000,1.0096,1,336.5,336.5
+LAC,Colombian Exclusive Economic Zone (Quitasueño),Quitasueño Bank,Colombia,floating,2.0955,2.0955,0.0000,0.0000,0.0000,2.0955,1,698.5,698.5
+LAC,Colombian Exclusive Economic Zone (Serrana),Serrana Bank,Colombia,fixed,0.1104,0.1104,0.0000,0.0000,0.0000,0.1104,7,36.8,36.5
+LAC,Colombian Exclusive Economic Zone (Serrana),Serrana Bank,Colombia,floating,2.7850,2.7850,0.0000,0.0000,0.0000,2.7850,1,928.3,919.7
+LAC,Costa Rican Exclusive Economic Zone,Costa Rica,Costa Rica,fixed,0.9220,0.9220,-0.0000,0.0000,0.0000,0.9220,6,256.5,256.6
+LAC,Costa Rican Exclusive Economic Zone,Costa Rica,Costa Rica,floating,16.3248,16.3248,0.0000,0.0000,0.0000,16.3248,5,4290.1,4292.7
+LAC,Cuban Exclusive Economic Zone,Cuba,Cuba,fixed,41.2712,41.2712,0.0000,0.0000,0.0000,41.2712,27,13756.3,13558.1
+LAC,Cuban Exclusive Economic Zone,Cuba,Cuba,floating,45.8644,45.8644,0.0000,0.0000,0.0000,45.8644,15,15136.8,14879.1
+LAC,Curaçaoan Exclusive Economic Zone,Curaçao,Netherlands,fixed,0.3931,0.3931,0.0000,0.0003,0.0000,0.3928,19,102.9,101.2
+LAC,Curaçaoan Exclusive Economic Zone,Curaçao,Netherlands,floating,14.8402,14.8402,0.0000,0.0066,0.0000,14.8336,28,3722.6,3545.2
+LAC,Dominican Exclusive Economic Zone,Dominica,Dominica,fixed,0.0839,0.0839,0.0000,0.0000,0.0000,0.0839,2,26.4,21.8
+LAC,Dominican Exclusive Economic Zone,Dominica,Dominica,floating,4.3929,4.3929,0.0000,0.0000,0.0000,4.3929,5,1362.6,1122.7
+LAC,Dominican Republic Exclusive Economic Zone,Dominican Republic,Dominican Republic,fixed,11.7357,11.7357,0.0000,0.0000,0.0000,11.7357,6,3481.4,3229.0
+LAC,Dominican Republic Exclusive Economic Zone,Dominican Republic,Dominican Republic,floating,53.3935,53.3935,-0.0000,0.0000,0.0000,53.3935,4,16436.1,15157.7
+LAC,Ecuadorian Exclusive Economic Zone,Ecuador,Ecuador,fixed,0.0321,0.0321,0.0000,0.0000,0.0000,0.0321,1,10.7,10.7
+LAC,Ecuadorian Exclusive Economic Zone,Ecuador,Ecuador,floating,0.3593,0.3593,0.0000,0.0000,0.0000,0.3593,1,119.8,119.8
+LAC,Ecuadorian Exclusive Economic Zone (Galapagos),Galapagos,Ecuador,fixed,0.1181,0.1181,0.0000,0.0000,0.0000,0.1181,16,39.4,39.4
+LAC,Ecuadorian Exclusive Economic Zone (Galapagos),Galapagos,Ecuador,floating,2.8422,2.8422,0.0000,0.0005,0.0000,2.8417,26,922.3,922.1
+LAC,El Salvador Exclusive Economic Zone,El Salvador,El Salvador,fixed,0.0136,0.0136,0.0000,0.0000,0.0000,0.0136,1,4.5,4.6
+LAC,French Guiana Exclusive Economic Zone,French Guiana,France,fixed,2.6601,2.6601,-0.0000,0.0000,0.0000,2.6601,3,886.7,886.8
+LAC,French Guiana Exclusive Economic Zone,French Guiana,France,floating,12.4487,12.4487,0.0000,0.0000,0.0000,12.4487,2,4149.6,4153.4
+LAC,Grenadian Exclusive Economic Zone,Grenada,Grenada,fixed,4.2705,4.2705,0.0000,0.0000,0.0000,4.2705,9,1377.9,1136.2
+LAC,Grenadian Exclusive Economic Zone,Grenada,Grenada,floating,23.6067,23.6067,0.0000,0.0000,0.0000,23.6067,6,7821.4,6459.7
+LAC,Guadeloupean Exclusive Economic Zone,Guadeloupe,France,fixed,1.8312,1.8312,0.0000,0.0000,0.0000,1.8312,2,563.6,466.4
+LAC,Guadeloupean Exclusive Economic Zone,Guadeloupe,France,floating,19.7355,19.7355,0.0000,0.0000,0.0000,19.7355,3,6219.5,5140.1
+LAC,Haitian Exclusive Economic Zone,Haiti,Haiti,fixed,0.2962,0.2962,0.0000,0.0000,0.0000,0.2962,5,97.8,92.4
+LAC,Haitian Exclusive Economic Zone,Haiti,Haiti,floating,4.6222,4.6222,0.0000,0.0000,0.0000,4.6222,5,1330.6,1260.1
+LAC,Honduran Exclusive Economic Zone,Honduras,Honduras,fixed,59.3888,59.3888,0.0000,0.0000,0.0000,59.3888,4,19796.3,19700.1
+LAC,Honduran Exclusive Economic Zone,Honduras,Honduras,floating,32.2067,32.2067,0.0000,0.0000,0.0000,32.2067,6,10735.6,10703.4
+LAC,Jamaican Exclusive Economic Zone,Jamaica,Jamaica,fixed,20.0189,20.0189,0.0000,0.0000,0.0000,20.0189,6,6340.9,6203.6
+LAC,Jamaican Exclusive Economic Zone,Jamaica,Jamaica,floating,30.7500,30.7500,0.0000,0.0000,0.0000,30.7500,7,9616.9,9375.7
+LAC,Joint regime area Argentina / Uruguay,Uruguay,Uruguay,fixed,110.0820,110.0820,0.0000,110.0820,0.0000,0.0000,7,27520.5,0.0
+LAC,Joint regime area Argentina / Uruguay,Uruguay,Uruguay,floating,37.1624,37.1624,0.0000,37.1624,0.0000,0.0000,6,9290.6,0.0
+LAC,Joint regime area Honduras / Cayman Islands,Honduras,Honduras,fixed,1.0549,1.0549,0.0000,0.0000,0.0000,1.0549,1,351.6,351.0
+LAC,Joint regime area Honduras / Cayman Islands,Honduras,Honduras,floating,1.4018,1.4018,0.0000,0.0000,0.0000,1.4018,1,467.3,466.4
+LAC,Joint regime area Peru / Ecuador,Peru,Peru,fixed,0.0015,0.0015,0.0000,0.0015,0.0000,0.0000,1,0.5,0.0
+LAC,Joint regime area Peru / Ecuador,Peru,Peru,floating,0.1815,0.1815,0.0000,0.1815,0.0000,0.0000,1,60.5,0.0
+LAC,Martinican Exclusive Economic Zone,Martinique,France,fixed,0.4661,0.4661,0.0000,0.0000,0.0000,0.4661,4,155.0,126.7
+LAC,Martinican Exclusive Economic Zone,Martinique,France,floating,6.9411,6.9411,0.0000,0.0000,0.0000,6.9411,5,2284.2,1869.4
+LAC,Mexican Exclusive Economic Zone,Mexico,Mexico,fixed,402.0387,402.0387,0.0000,0.0000,0.0000,402.0387,46,126528.5,120058.6
+LAC,Mexican Exclusive Economic Zone,Mexico,Mexico,floating,466.8217,466.8217,0.0000,0.0000,0.0000,466.8217,40,150226.2,144523.3
+LAC,Montserrat Exclusive Economic Zone,Montserrat,United Kingdom,fixed,0.2183,0.2183,0.0000,0.0000,0.0000,0.2183,3,58.0,48.6
+LAC,Montserrat Exclusive Economic Zone,Montserrat,United Kingdom,floating,8.6849,8.6849,-0.0000,0.0000,0.0000,8.6849,3,2224.8,1865.8
+LAC,Nicaraguan Exclusive Economic Zone,Nicaragua,Nicaragua,fixed,15.4922,15.4922,0.0000,0.0000,0.0000,15.4922,28,4945.6,4916.4
+LAC,Nicaraguan Exclusive Economic Zone,Nicaragua,Nicaragua,floating,44.7747,44.7747,0.0000,0.0000,0.0000,44.7747,20,12558.5,12527.7
+LAC,Overlapping claim Falkland / Malvinas Islands Exclusive Economic Zone: UK / Argentina,,,fixed,31.4935,31.4935,0.0000,0.0000,0.0000,31.4935,148,7873.4,7873.4
+LAC,Overlapping claim Falkland / Malvinas Islands Exclusive Economic Zone: UK / Argentina,,,floating,535.4402,535.4402,0.0000,0.0000,0.0000,535.4402,62,133860.1,133859.3
+LAC,Panamanian Exclusive Economic Zone,Panama,Panama,fixed,8.9089,8.9089,0.0000,0.0000,0.0000,8.9089,9,2850.9,2811.1
+LAC,Panamanian Exclusive Economic Zone,Panama,Panama,floating,3.3543,3.3543,0.0000,0.0000,0.0000,3.3543,8,1113.5,1098.0
+LAC,Peruvian Exclusive Economic Zone,Peru,Peru,fixed,33.8852,33.8852,0.0000,0.0088,0.0000,33.8764,253,10048.7,10045.7
+LAC,Peruvian Exclusive Economic Zone,Peru,Peru,floating,314.9368,314.9368,0.0000,0.0436,0.0000,314.8933,186,90678.5,90667.0
+LAC,Puerto Rican Exclusive Economic Zone,Puerto Rico,United States,fixed,6.9571,6.9571,0.0000,0.0000,0.0000,6.9571,1,2319.0,2043.1
+LAC,Puerto Rican Exclusive Economic Zone,Puerto Rico,United States,floating,24.8522,24.8522,0.0000,0.0000,0.0000,24.8522,1,8284.1,7393.8
+LAC,Saba Exclusive Economic Zone,Saba,Netherlands,fixed,6.5095,6.5095,0.0000,0.0000,0.0000,6.5095,1,2169.8,1855.0
+LAC,Saba Exclusive Economic Zone,Saba,Netherlands,floating,12.9292,12.9292,0.0000,0.0000,0.0000,12.9292,1,4309.7,3687.1
+LAC,Saint Kitts and Nevis Exclusive Economic Zone,Saint Kitts and Nevis,Saint Kitts and Nevis,fixed,1.5567,1.5567,0.0000,0.0000,0.0000,1.5567,4,457.3,386.2
+LAC,Saint Kitts and Nevis Exclusive Economic Zone,Saint Kitts and Nevis,Saint Kitts and Nevis,floating,15.2760,15.2760,0.0000,0.0000,0.0000,15.2760,4,4810.1,4066.9
+LAC,Saint Lucia Exclusive Economic Zone,Saint Lucia,Saint Lucia,fixed,0.9433,0.9433,0.0000,0.0000,0.0000,0.9433,3,309.0,252.6
+LAC,Saint Lucia Exclusive Economic Zone,Saint Lucia,Saint Lucia,floating,6.8869,6.8869,0.0000,0.0000,0.0000,6.8869,3,2247.0,1834.9
+LAC,Saint Vincent and the Grenadines Exclusive Economic Zone,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,fixed,4.9974,4.9974,0.0000,0.0000,0.0000,4.9974,7,1584.3,1299.2
+LAC,Saint Vincent and the Grenadines Exclusive Economic Zone,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,floating,8.1755,8.1755,0.0000,0.0000,0.0000,8.1755,7,2528.8,2073.4
+LAC,Saint-Barthélemy Exclusive Economic Zone,Saint-Barthélemy,France,fixed,3.8080,3.8080,0.0000,0.0000,0.0000,3.8080,26,1269.3,1105.9
+LAC,Saint-Barthélemy Exclusive Economic Zone,Saint-Barthélemy,France,floating,9.3352,9.3352,0.0000,0.0000,0.0000,9.3352,7,3111.7,2774.5
+LAC,Saint-Martin Exclusive Economic Zone,Collectivity of Saint Martin,France,fixed,1.2601,1.2601,0.0000,0.0000,0.0000,1.2601,1,420.0,356.7
+LAC,Saint-Martin Exclusive Economic Zone,Collectivity of Saint Martin,France,floating,0.6418,0.6418,0.0000,0.0000,0.0000,0.6418,1,213.9,182.4
+LAC,Sint-Eustatius Exclusive Economic Zone,Sint-Eustatius,Netherlands,fixed,0.2597,0.2597,0.0000,0.0000,0.0000,0.2597,3,84.9,72.1
+LAC,Sint-Eustatius Exclusive Economic Zone,Sint-Eustatius,Netherlands,floating,5.9705,5.9705,0.0000,0.0000,0.0000,5.9705,2,1989.9,1691.5
+LAC,Sint-Maarten Exclusive Economic Zone,Sint-Maarten,Netherlands,fixed,0.3082,0.3082,0.0000,0.0000,0.0000,0.3082,1,102.7,87.4
+LAC,Sint-Maarten Exclusive Economic Zone,Sint-Maarten,Netherlands,floating,1.1177,1.1177,0.0000,0.0000,0.0000,1.1177,1,372.6,317.3
+LAC,Surinamese Exclusive Economic Zone,Suriname,Suriname,fixed,13.6138,13.6138,0.0000,0.0000,0.0000,13.6138,19,4537.9,4537.9
+LAC,Surinamese Exclusive Economic Zone,Suriname,Suriname,floating,22.7205,22.7205,0.0000,0.0000,0.0000,22.7205,3,7573.5,7569.6
+LAC,Trinidad and Tobago Exclusive Economic Zone,Trinidad and Tobago,Trinidad and Tobago,fixed,2.6961,2.6961,0.0000,0.0000,0.0000,2.6961,6,898.7,737.6
+LAC,Trinidad and Tobago Exclusive Economic Zone,Trinidad and Tobago,Trinidad and Tobago,floating,30.1613,30.1613,0.0000,0.0000,0.0000,30.1613,1,10053.8,8182.7
+LAC,Turks and Caicos Exclusive Economic Zone,Turks and Caicos Islands,United Kingdom,fixed,5.9921,5.9921,0.0000,0.0000,0.0000,5.9921,4,1570.3,1476.1
+LAC,Turks and Caicos Exclusive Economic Zone,Turks and Caicos Islands,United Kingdom,floating,23.8033,23.8033,0.0000,0.0000,0.0000,23.8033,5,6453.1,6071.6
+LAC,Uruguayan Exclusive Economic Zone,Uruguay,Uruguay,fixed,189.5144,189.5144,0.0000,0.0000,0.0000,189.5144,75,47524.9,47512.5
+LAC,Uruguayan Exclusive Economic Zone,Uruguay,Uruguay,floating,85.8792,85.8792,0.0000,0.0000,0.0000,85.8792,19,21469.8,21470.7
+LAC,Venezuelan Exclusive Economic Zone,Venezuela,Venezuela,fixed,115.8140,115.8140,0.0000,0.0034,0.0000,115.8106,190,31611.9,31610.7
+LAC,Venezuelan Exclusive Economic Zone,Venezuela,Venezuela,floating,265.2385,265.2385,0.0000,0.0158,0.0000,265.2227,141,74655.0,74651.6
+LAC,Virgin Islander Exclusive Economic Zone,United States Virgin Islands,United States,fixed,3.5607,3.5607,-0.0000,0.0000,0.0000,3.5607,2,1186.9,1035.1
+LAC,Virgin Islander Exclusive Economic Zone,United States Virgin Islands,United States,floating,9.5092,9.5092,0.0000,0.0000,0.0000,9.5092,1,3169.7,2753.0
+MENA,Algerian Exclusive Economic Zone,Algeria,Algeria,fixed,1.0008,1.0008,0.0000,0.0000,0.0000,1.0008,65,306.4,306.4
+MENA,Algerian Exclusive Economic Zone,Algeria,Algeria,floating,18.1741,18.1741,0.0000,0.0000,0.0000,18.1741,16,5987.3,5987.3
+MENA,Bahraini Exclusive Economic Zone,Bahrain,Bahrain,fixed,0.6304,0.6304,0.0000,0.0000,0.0000,0.6304,1,210.1,210.1
+MENA,Djiboutian Exclusive Economic Zone,Djibouti,Djibouti,fixed,1.2165,1.2165,0.0000,0.0000,0.0000,1.2165,7,343.3,343.3
+MENA,Djiboutian Exclusive Economic Zone,Djibouti,Djibouti,floating,4.2733,4.2733,0.0000,0.0000,0.0000,4.2733,7,1270.5,1270.5
+MENA,Egyptian Exclusive Economic Zone,Egypt,Egypt,fixed,26.8848,26.8848,0.0000,0.0000,0.0000,26.8848,99,7129.3,7129.3
+MENA,Egyptian Exclusive Economic Zone,Egypt,Egypt,floating,138.7185,138.7185,-0.0000,0.0000,0.0000,138.7185,70,40292.4,40292.4
+MENA,Iranian Exclusive Economic Zone,Iran,Iran,fixed,1.2403,1.2403,0.0000,0.0000,0.0000,1.2403,1,413.4,413.4
+MENA,Iraqi Exclusive Economic Zone,Iraq,Iraq,fixed,2.3673,2.3673,-0.0000,0.0000,0.0000,2.3673,2,789.1,789.1
+MENA,Israeli Exclusive Economic Zone,Israel,Israel,fixed,0.0175,0.0175,0.0000,0.0000,0.0000,0.0175,1,4.4,4.4
+MENA,Israeli Exclusive Economic Zone,Israel,Israel,floating,0.0998,0.0998,0.0000,0.0000,0.0000,0.0998,1,24.9,24.9
+MENA,Jordanian Exclusive Economic Zone,Jordan,Jordan,fixed,0.0050,0.0050,0.0000,0.0000,0.0000,0.0050,1,1.7,1.7
+MENA,Jordanian Exclusive Economic Zone,Jordan,Jordan,floating,0.6899,0.6899,0.0000,0.0000,0.0000,0.6899,4,173.1,173.1
+MENA,Kuwaiti Exclusive Economic Zone,Kuwait,Kuwait,fixed,9.2711,9.2711,0.0000,0.0000,0.0000,9.2711,2,3090.4,3090.4
+MENA,Kuwaiti Exclusive Economic Zone,Kuwait,Kuwait,floating,0.0993,0.0496,-0.0496,0.0000,0.0000,0.0496,1,16.5,16.5
+MENA,Libyan Exclusive Economic Zone,Libya,Libya,fixed,51.7781,51.7781,0.0000,0.0000,0.0000,51.7781,64,16974.8,16975.2
+MENA,Libyan Exclusive Economic Zone,Libya,Libya,floating,279.8092,279.8092,-0.0000,0.0000,0.0000,279.8092,26,92861.5,92866.4
+MENA,Maltese Exclusive Economic Zone,Malta,Malta,floating,25.0935,25.0935,0.0000,0.0000,0.0000,25.0935,1,8364.5,8364.3
+MENA,Moroccan Exclusive Economic Zone,Morocco,Morocco,fixed,23.0462,23.0462,0.0000,0.0000,0.0000,23.0462,60,6677.7,6677.7
+MENA,Moroccan Exclusive Economic Zone,Morocco,Morocco,floating,178.1809,178.1809,0.0000,0.0000,0.0000,178.1809,30,50375.7,50375.8
+MENA,Omani Exclusive Economic Zone,Oman,Oman,fixed,61.4026,61.4026,0.0000,0.0000,0.0000,61.4026,10,16855.0,16855.0
+MENA,Omani Exclusive Economic Zone,Oman,Oman,floating,118.0276,118.0276,-0.0000,0.0000,0.0000,118.0276,10,31827.5,31827.5
+MENA,Overlapping claim Western Saharan Exclusive Economic Zone,,,fixed,104.1831,104.1831,-0.0000,0.0000,0.0000,104.1831,2,26045.8,26045.8
+MENA,Overlapping claim Western Saharan Exclusive Economic Zone,,,floating,234.9461,234.9461,0.0000,0.0000,0.0000,234.9461,2,58736.5,58736.5
+MENA,Saudi Arabian Exclusive Economic Zone,Saudi Arabia,Saudi Arabia,fixed,28.0366,28.0366,0.0000,0.0000,0.0000,28.0366,6,9028.8,9028.8
+MENA,Saudi Arabian Exclusive Economic Zone,Saudi Arabia,Saudi Arabia,floating,78.1564,78.1564,0.0000,0.0000,0.0000,78.1564,7,24090.6,24090.6
+MENA,Syrian Exclusive Economic Zone,Syria,Syria,fixed,0.0214,0.0214,0.0000,0.0000,0.0000,0.0214,1,7.1,7.1
+MENA,Tunisian Exclusive Economic Zone,Tunisia,Tunisia,fixed,91.0197,91.0197,0.0000,0.0000,0.0000,91.0197,120,30094.6,30094.2
+MENA,Tunisian Exclusive Economic Zone,Tunisia,Tunisia,floating,169.0386,169.0386,-0.0000,0.0000,0.0000,169.0386,47,55507.9,55504.1
+MENA,Yemeni Exclusive Economic Zone,Yemen,Yemen,fixed,39.8648,39.8648,0.0000,0.0000,0.0000,39.8648,6,10478.8,10478.8
+MENA,Yemeni Exclusive Economic Zone,Yemen,Yemen,floating,111.3417,111.3417,0.0000,0.0000,0.0000,111.3417,7,29901.5,29901.4
+NA,Canadian Exclusive Economic Zone,Canada,Canada,fixed,2038.8260,2038.8255,-0.0005,0.0000,0.0000,2038.8255,5144,567648.5,570735.2
+NA,Canadian Exclusive Economic Zone,Canada,Canada,floating,7281.9910,7281.9913,0.0003,0.0000,0.0000,7281.9913,1894,1931006.7,1920562.2
+NA,United States Exclusive Economic Zone,United States,United States,fixed,2472.3530,2472.3533,0.0003,0.0000,0.0000,2472.3533,849,669587.7,668371.7
+NA,United States Exclusive Economic Zone,United States,United States,floating,2786.8150,1298.0976,-1488.7174,0.0000,0.0000,1298.0976,413,359512.7,359528.1
+NA,United States Exclusive Economic Zone (Alaska),Alaska (US),United States,floating,3405.5670,3405.5668,-0.0002,0.0000,1234.3025,2171.2642,272,970774.9,552854.9
+NA,United States Exclusive Economic Zone (Hawaii),Hawaii,United States,fixed,2.2045,2.2045,-0.0000,0.0000,0.0000,2.2045,75,644.5,644.6
+NA,United States Exclusive Economic Zone (Hawaii),Hawaii,United States,floating,54.0451,54.0451,0.0000,0.0000,0.0000,54.0451,57,14493.0,14487.3
+SA,Indian Exclusive Economic Zone,India,India,fixed,91.1169,91.1169,0.0000,0.0000,0.0000,91.1169,9,28725.1,28725.1
+SA,Indian Exclusive Economic Zone,India,India,floating,82.4577,82.4577,-0.0000,0.0000,0.0000,82.4577,25,24677.2,24677.2
+SA,Pakistani Exclusive Economic Zone,Pakistan,Pakistan,fixed,16.8037,16.8037,0.0000,0.0000,0.0000,16.8037,2,5601.2,5601.2
+SA,Pakistani Exclusive Economic Zone,Pakistan,Pakistan,floating,2.8222,2.8222,0.0000,0.0000,0.0000,2.8222,3,940.7,940.7
+SA,Sri Lankan Exclusive Economic Zone,Sri Lanka,Sri Lanka,fixed,54.8229,54.8229,0.0000,0.0000,0.0000,54.8229,15,16652.1,16652.1
+SA,Sri Lankan Exclusive Economic Zone,Sri Lanka,Sri Lanka,floating,37.7513,37.7513,0.0000,0.0000,0.0000,37.7513,54,10920.1,10920.1
+SSA,Angolan Exclusive Economic Zone,Angola,Angola,fixed,1.8393,1.8393,-0.0000,0.0000,0.0000,1.8393,6,564.5,564.5
+SSA,Angolan Exclusive Economic Zone,Angola,Angola,floating,17.5311,17.5311,0.0000,0.0000,0.0000,17.5311,3,4610.9,4610.9
+SSA,Cape Verdean Exclusive Economic Zone,Cape Verde,Cape Verde,fixed,3.5356,3.5356,0.0000,0.0000,0.0000,3.5356,73,1059.0,1058.9
+SSA,Cape Verdean Exclusive Economic Zone,Cape Verde,Cape Verde,floating,21.7008,21.7008,-0.0000,0.0000,0.0000,21.7008,22,6466.8,6466.8
+SSA,Eritrean Exclusive Economic Zone,Eritrea,Eritrea,fixed,27.0064,27.0064,0.0000,0.0000,0.0000,27.0064,54,7284.9,7284.9
+SSA,Eritrean Exclusive Economic Zone,Eritrea,Eritrea,floating,33.9913,33.9913,0.0000,0.0000,0.0000,33.9913,5,9031.8,9031.8
+SSA,Kenyan Exclusive Economic Zone,Kenya,Kenya,fixed,9.3514,9.3514,0.0000,0.0000,0.0000,9.3514,21,3078.9,3078.9
+SSA,Kenyan Exclusive Economic Zone,Kenya,Kenya,floating,81.7258,81.7258,0.0000,0.0000,0.0000,81.7258,2,27241.9,27241.9
+SSA,Madagascan Exclusive Economic Zone,Madagascar,Madagascar,fixed,45.6221,45.6221,0.0000,0.0000,0.0000,45.6221,113,12478.3,12478.3
+SSA,Madagascan Exclusive Economic Zone,Madagascar,Madagascar,floating,109.1205,109.1205,0.0000,0.0000,0.0000,109.1205,38,28460.3,28460.4
+SSA,Mauritanian Exclusive Economic Zone,Mauritania,Mauritania,fixed,91.1183,91.1183,0.0000,0.0000,0.0000,91.1183,3,22974.7,22974.7
+SSA,Mauritanian Exclusive Economic Zone,Mauritania,Mauritania,floating,83.7279,83.7279,0.0000,0.0000,0.0000,83.7279,2,21008.3,21008.3
+SSA,Mauritian Exclusive Economic Zone,Republic of Mauritius,Republic of Mauritius,fixed,17.4964,17.4964,0.0000,0.0000,0.0000,17.4964,59,4425.6,4425.6
+SSA,Mauritian Exclusive Economic Zone,Republic of Mauritius,Republic of Mauritius,floating,174.5882,174.5882,0.0000,0.0000,0.0000,174.5882,15,44056.5,44056.5
+SSA,Mozambican Exclusive Economic Zone,Mozambique,Mozambique,fixed,11.3187,11.3187,0.0000,0.0000,0.0000,11.3187,24,3716.2,3716.2
+SSA,Mozambican Exclusive Economic Zone,Mozambique,Mozambique,floating,75.0093,75.0093,0.0000,0.0000,0.0000,75.0093,6,24858.7,24858.7
+SSA,Namibian Exclusive Economic Zone,Namibia,Namibia,fixed,19.2465,19.2465,0.0000,0.0000,0.0000,19.2465,70,5665.3,5665.3
+SSA,Namibian Exclusive Economic Zone,Namibia,Namibia,floating,701.2093,701.2093,0.0000,0.0000,0.0000,701.2093,5,183974.3,183975.9
+SSA,Overlapping claim Doumeira Islands: Djibouti / Eritrea,Eritrea,Eritrea,fixed,0.2559,0.2559,-0.0000,0.0000,0.0000,0.2559,2,64.0,64.0
+SSA,Overlapping claim Doumeira Islands: Djibouti / Eritrea,Eritrea,Eritrea,floating,0.7048,0.7048,0.0000,0.0000,0.0000,0.7048,1,176.2,176.2
+SSA,Overlapping claim: Kenya/ Somalia,Kenya,Kenya,fixed,0.0223,0.0223,0.0000,0.0000,0.0000,0.0223,3,7.2,7.2
+SSA,Overlapping claim: Kenya/ Somalia,Kenya,Kenya,floating,0.5880,0.5880,0.0000,0.0000,0.0000,0.5880,1,196.0,196.0
+SSA,Overlapping claim: Sudan / Egypt,Sudan,Sudan,fixed,1.4033,1.4033,0.0000,0.0000,0.0000,1.4033,6,413.9,413.9
+SSA,Overlapping claim: Sudan / Egypt,Sudan,Sudan,floating,8.3437,8.3437,0.0000,0.0000,0.0000,8.3437,2,2777.4,2777.4
+SSA,Réunion Exclusive Economic Zone,Réunion,France,floating,1.4620,1.4620,0.0000,0.0006,0.0000,1.4614,16,443.6,443.5
+SSA,Senegalese Exclusive Economic Zone,Senegal,Senegal,fixed,12.9238,12.9238,0.0000,0.0000,0.0000,12.9238,12,4280.4,4280.4
+SSA,Senegalese Exclusive Economic Zone,Senegal,Senegal,floating,32.0186,32.0186,0.0000,0.0000,0.0000,32.0186,2,10524.2,10524.2
+SSA,Seychellois Exclusive Economic Zone,Seychelles,Seychelles,fixed,5.8434,5.8434,0.0000,0.0000,0.0000,5.8434,31,1533.2,1533.2
+SSA,Seychellois Exclusive Economic Zone,Seychelles,Seychelles,floating,29.8948,29.8948,0.0000,0.0000,0.0000,29.8948,16,8306.6,8306.6
+SSA,Somali Exclusive Economic Zone,Federal Republic of Somalia,Federal Republic of Somalia,fixed,64.4786,64.4786,-0.0000,0.0000,0.0000,64.4786,221,16821.9,16821.9
+SSA,Somali Exclusive Economic Zone,Federal Republic of Somalia,Federal Republic of Somalia,floating,218.8368,218.8368,0.0000,0.0000,0.0000,218.8368,37,55896.2,55896.2
+SSA,South African Exclusive Economic Zone,South Africa,South Africa,fixed,48.7257,48.7257,0.0000,0.0000,0.0000,48.7257,111,13084.9,13084.9
+SSA,South African Exclusive Economic Zone,South Africa,South Africa,floating,851.5231,851.5231,0.0000,0.0000,0.0000,851.5231,42,217321.6,217320.1
+SSA,Sudanese Exclusive Economic Zone,Sudan,Sudan,fixed,11.6357,11.6357,-0.0000,0.0000,0.0000,11.6357,14,3691.7,3691.7
+SSA,Sudanese Exclusive Economic Zone,Sudan,Sudan,floating,20.7636,20.7636,0.0000,0.0000,0.0000,20.7636,6,6886.7,6886.7

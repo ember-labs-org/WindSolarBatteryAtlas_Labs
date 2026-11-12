@@ -1,0 +1,38 @@
+PASS configs.json: byte-identical (sha256 ea08393b976c)
+PASS daily_cf_2024.parquet: 1,829,268 -> 1,634,190 rows (dropped 195,078); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS fossil_plants.csv: byte-identical (sha256 3b62791ece4b)
+PASS gem_plants.csv: byte-identical (sha256 b8e8f6354c8a)
+PASS sample_timestamps.json: byte-identical (sha256 661cac605746)
+PASS summary_w0.parquet: 1,449,420 -> 1,294,850 rows (dropped 154,570); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w1.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w2.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w3.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w4.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w5.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w6.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w8.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo1.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo2.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo3.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo4.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo5.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo6.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo8.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS voronoi_diesel_prices.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_electricity_demand.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_fossil_capacity.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_gas_prices.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_gem_capacity.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_grid_reliability.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_local_capex.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_overlapping_countries.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_population_2020.csv: 4,998 -> 4,465 rows (dropped 533); lines equal old minus excluded: True
+PASS voronoi_pvout_potential.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_wacc.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_wacc_wind.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_wind_potential_offshore.csv: 4,926 -> 4,399 rows (dropped 527); lines equal old minus excluded: True
+PASS voronoi_wind_resource.csv: 4,998 -> 4,465 rows (dropped 533); lines equal old minus excluded: True
+PASS world.geojson: 1,420 -> 1,296 polygons (dropped 124); others byte-identical and in order: True; parses: True; polygons left wholly south of 60°S: 0
+PASS no new files in /private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287b19fe1/scratchpad/T059/stage_f: none
+
+ALL PASS

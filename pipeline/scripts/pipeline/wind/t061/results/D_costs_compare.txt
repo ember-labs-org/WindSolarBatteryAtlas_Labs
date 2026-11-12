@@ -1,0 +1,11 @@
+DIFFERS voronoi_local_capex.csv
+IDENTICAL voronoi_wacc_wind.csv
+IDENTICAL voronoi_wacc.csv
+voronoi_local_capex.csv changed columns: {'wind_off_flags': 38}
+old                                        new                                                      
+fixed_depth_beyond_dea_50m                 fixed_depth_beyond_dea_50m|site_not_viable                   8
+dist_clamped                               dist_clamped|site_not_viable                                 3
+dist_clamped|fixed_depth_beyond_dea_50m    dist_clamped|fixed_depth_beyond_dea_50m|site_not_viable      3
+etopo_land|depth_clamped                   etopo_land|depth_clamped|site_not_viable                     1
+site_inland_ne|dist_clamped|depth_clamped  site_inland_ne|dist_clamped|depth_clamped|site_not_viable    1
+out/summary_by_country.csv differs vs filtered baseline run

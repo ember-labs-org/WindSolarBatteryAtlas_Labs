@@ -1,0 +1,25 @@
+threshold 0.15; before = /private/tmp/claude-501/-Users-daanwalter-Library-CloudStorage-OneDrive-Ember-2-ember-futures---Documents-03-Research-2026-97-Ideas-WIND-ATLAS/43b874d4-4271-4297-b5a4-b3d287b19fe1/scratchpad/T054/data20
+
+===== onshore, A = 500 km2 =====
+viable before 3785 (6.03 bn), after 3988 (7.09 bn)
+gain 203 (1.06 bn); lose 0 (0.0 m)
+with land at >= 20% but still non-viable (best 500 km2 mean < 20%): 52 (88.1 m); of which >= 200 km2 at >= 20%: 0 (0.0 m); their area at >= 20%: median 8 km2, max 83
+viable before and after (n=3785): headline change median +0.0 pp [p10 +0.0, p90 +0.0]; simulated (final_cf) change median +0.0 pp [p10 -0.0, p90 +0.0]; pop-weighted headline +0.0 pp, simulated +0.0 pp
+clamped viable: before 880 (k=1.8: 880, k=0.6: 0), after 925 (k=1.8: 925, k=0.6: 0)
+viable but simulating < 15%: before 229, after 271; newly viable simulating < 15%: 42 (0.23 bn)
+viable but simulating < 20%: before 330, after 533; newly viable simulating < 20%: 203 (1.06 bn)
+newly viable: headline median 0.173, simulated median 0.167; capped 45
+EXPECTED IDENTICAL on profiles/slices: non-viable before and after 1010, clamped at the same bound before and after 880, same target 2905 -> 4795 regions
+
+===== offshore, A = 500 km2 =====
+viable before 1111 (2.07 bn), after 1186 (2.40 bn)
+gain 75 (0.34 bn); lose 0 (0.0 m)
+with land at >= 20% but still non-viable (best 500 km2 mean < 20%): 6 (8.9 m); of which >= 200 km2 at >= 20%: 0 (0.0 m); their area at >= 20%: median 22 km2, max 50
+viable before and after (n=1111): headline change median +0.0 pp [p10 +0.0, p90 +0.0]; simulated (final_cf) change median +0.0 pp [p10 +0.0, p90 +0.0]; pop-weighted headline +0.0 pp, simulated -0.0 pp
+clamped viable: before 146 (k=1.8: 146, k=0.6: 0), after 147 (k=1.8: 147, k=0.6: 0)
+viable but simulating < 15%: before 1, after 1; newly viable simulating < 15%: 0 (0.0 m)
+viable but simulating < 20%: before 1, after 76; newly viable simulating < 20%: 75 (0.34 bn)
+newly viable: headline median 0.177, simulated median 0.177; capped 1
+EXPECTED IDENTICAL off profiles/slices: non-viable before and after 3812, clamped at the same bound before and after 146, same target 965 -> 4923 regions
+
+any wind (on or off): before 3903 (6.07 bn), after 4109 (7.11 bn); gain 206 (1.04 bn), lose 0 (0.0 m)

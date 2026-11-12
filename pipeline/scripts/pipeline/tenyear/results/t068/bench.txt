@@ -1,0 +1,12 @@
+FAIL browser browser /Users/daanwalter/Library/Caches/ms-playwright/chromium-1217/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing (chromium-1217, 147.0.7727.15) MISMATCH: browser chromium-1217 147.0.7727.15 is not the pinned chromium-1243 153.0.8010.12; perf thresholds and baselines were measured on the pinned build
+PASS C2 no page errors
+PASS C4 lcoeSlider: longest freeze 0 ms (<= 300), total 0 ms (<= 3000), 0 main-thread tasks over 50 ms incl. canvas raster
+PASS C5 capacitySlider: longest freeze 0 ms (<= 500), total 0 ms (<= 4000), 0 main-thread tasks over 50 ms incl. canvas raster
+PASS C6 pan: longest freeze 0 ms (<= 250), total 0 ms (<= 3000), 0 main-thread tasks over 50 ms incl. canvas raster
+PASS C7 hover: longest freeze 0 ms (<= 60), total 0 ms (<= 1000), 0 main-thread tasks over 50 ms incl. canvas raster
+PASS C8 first map 699 ms (<= 20000), longest freeze until 10 s after it 222 ms (<= 2000)
+PASS C9 page renderer RSS at end 378 MB (<= 614); peak 795 MB; PSS ? MB; main-thread heap 90 MB
+FAIL C10 full-grid LCOE map (= oracle lcoe_t90) drawn never (timed out) after opening LCOE (<= 120000)
+FAIL C11 LCOE result for 80% (= oracle) drawn never (timed out) after the last move (<= 3000)
+PASS C12 capacity result for 8/8 (= oracle) drawn 230 ms after the last move (<= 1500)
+PASS C13 opening LCOE: longest freeze 68 ms until the full-grid map + 2 s (<= 500)

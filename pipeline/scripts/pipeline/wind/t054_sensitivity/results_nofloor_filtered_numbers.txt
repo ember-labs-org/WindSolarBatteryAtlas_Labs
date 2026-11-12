@@ -1,0 +1,12 @@
+regions 4465 people 7.76 bn
+on: viable 3950 (7.09 bn) -> 4385 (7.76 bn); gain 435 (0.68 bn); lose 0; capped 905 -> 969
+   newly viable headline <5/10/15%: [120, 272, 435]  simulated <5/10/15%: [160, 297, 435]  people sim<5% 0.12 bn median headline 0.082 sim 0.071
+   viable simulating <15%: 266 -> 701
+   room_gw over viable (5 MW/km2): 404.24 -> 404.28 TW; viable with 0 room_gw: 288
+off: viable 1139 (2.40 bn) -> 1277 (2.74 bn); gain 138 (0.34 bn); lose 0; capped 116 -> 116
+   newly viable headline <5/10/15%: [27, 77, 138]  simulated <5/10/15%: [27, 77, 138]  people sim<5% 47 m median headline 0.094 sim 0.094
+   viable simulating <15%: 1 -> 139
+   room_gw over viable (4 MW/km2): 32.75 -> 32.75 TW; viable with 0 room_gw: 116
+any wind 4044 (7.11 bn) -> 4452 (7.76 bn); no wind 421 (0.65 bn) -> 13 (0 m)
+no wind now = no eligible land and no eligible sea: True
+app offshore potential (ESMAP): fixed 20.22 TW, floating 47.08 TW (file unchanged); viable offshore with no ESMAP row 56, ESMAP fixed 0 356

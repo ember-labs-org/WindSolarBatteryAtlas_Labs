@@ -1,0 +1,28 @@
+write targets checked: none under OneDrive (7)
+free disk 11.7 GB (need >= 10.0)
+===== site =====
+onshore viable       3988 / 4998  (79.8%)
+offshore viable      1186 / 4998  (23.7%)
+share of viable cells where the centre would fail the 20% test: 32.1%
+      111.51 real        89.18 user        11.66 sys
+          4075896832  maximum resident set size
+         11180023360  peak memory footprint
+===== site: exit 0, 112 s
+===== profiles =====
+  3988 profiles; median final CF 0.375; median k 1.285; clamped 925
+  1186 profiles; median final CF 0.436; median k 1.200; clamped 147
+       88.03 real        86.45 user         0.84 sys
+           837435392  maximum resident set size
+           667388736  peak memory footprint
+===== profiles: exit 0, 88 s
+===== run3d =====
+      284.37 real      1989.86 user         5.80 sys
+          2346549248  maximum resident set size
+          1540510208  peak memory footprint
+===== run3d: exit 0, 284 s
+===== daily =====
+       20.78 real        15.08 user         1.62 sys
+          2869198848  maximum resident set size
+          2854132928  peak memory footprint
+===== daily: exit 0, 21 s
+workspace files changed during the run: none

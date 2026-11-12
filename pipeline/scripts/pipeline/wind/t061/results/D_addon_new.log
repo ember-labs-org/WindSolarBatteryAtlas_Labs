@@ -1,0 +1,79 @@
+deployed regions 4465 (= 4998 - 533 excluded)
+  summary_w0.parquet: 8368ef1c3cb5365b
+  voronoi_wind_resource.csv: 4c4762e31a3df0b7
+  excluded_regions.json: a02451f49f727ee4
+  _solar_matrix.npy: a3c7c05bfff5199d
+  _solar_ids.npy: 76203853b57d6b3e
+  wind_profiles_on.parquet: 8a350f2c8b0b8220
+  wind_profiles_off.parquet: 4da1e05fe26824c8
+  check: summed series with off = 0 equals the onshore kernel True, summary_w2 s3 b8 True
+  wind_mix on 1 + off 1 done (11 s)
+  wind_mix on 1 + off 2 done (19 s)
+  wind_mix on 1 + off 3 done (25 s)
+  wind_mix on 2 + off 1 done (31 s)
+  wind_mix on 2 + off 2 done (38 s)
+  wind_mix on 2 + off 3 done (45 s)
+  wind_mix on 3 + off 1 done (52 s)
+  wind_mix on 3 + off 2 done (58 s)
+  wind_mix on 4 + off 1 done (63 s)
+  large 24/335 (66 s)
+  large 48/335 (68 s)
+  large 72/335 (70 s)
+  large 96/335 (72 s)
+  large 120/335 (74 s)
+  large 144/335 (76 s)
+  large 168/335 (79 s)
+  large 192/335 (81 s)
+  large 216/335 (83 s)
+  large 240/335 (85 s)
+  large 264/335 (87 s)
+  large 288/335 (89 s)
+  large 312/335 (91 s)
+{
+ "sets": {
+  "wind_mix": {
+   "id": "wind_mix",
+   "file": "addon_wind_mix.parquet",
+   "sha256": "067ff84a8459f58ee5274d6e72583014b138710b6c332128eed9bbff9e8007d9",
+   "start": "cold",
+   "regions": 1171,
+   "rows": 2202651,
+   "rule": "on_area_km2 > 0 and off_area_km2 > 0",
+   "bytes": 7463008
+  },
+  "large": {
+   "id": "large",
+   "file": "addon_large.parquet",
+   "sha256": "19f2b92c9be10f538dc17ca061da0e7f2fbe95e1ee70cfb26b68cffb95b18d9c",
+   "start": "cyclic",
+   "regions": 2045,
+   "rows": 685075,
+   "rule": "max annual_cf in summary_w0 < 0.999",
+   "interpolate": "battery-linear",
+   "guard": 5e-05,
+   "bytes": 1609802,
+   "cyclic_passes_max": 3,
+   "regions_below_0.99": 1568
+  }
+ },
+ "addon.json": "208813eb8d2ffbe1aff0fecbed9e5f1db01854cae447c8d9537e2547a405cc60",
+ "seconds": 93.3
+}
+       94.29 real       542.95 user         5.00 sys
+           901939200  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              140525  page reclaims
+                5091  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1143  voluntary context switches
+              825328  involuntary context switches
+       2099958706399  instructions retired
+       1146426325272  cycles elapsed
+           513789696  peak memory footprint

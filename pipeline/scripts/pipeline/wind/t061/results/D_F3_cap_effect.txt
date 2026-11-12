@@ -1,0 +1,7 @@
+F3: cap eligible share at 1 - protected share (WDPA 2026, kept polygons), onshore
+pa          cap=False eligible 104.996 M km2; NL    15491; DE    203116; BR    5872443; potential 385.0 TW (shipped set 384.7); X=20 atlas/new-build 1.0001, within10 0.519; NL 4894/3508 0.4211/0.4514; regions lost 5
+pa          cap=True  eligible 104.458 M km2; NL    15307; DE    195484; BR    5823174; potential 383.1 TW (shipped set 382.8); X=20 atlas/new-build 1.0000, within10 0.519; NL 4894/3508 0.4211/0.4514; regions lost 5
+new0        cap=False eligible 103.976 M km2; NL    13357; DE    185786; BR    5844639; potential 381.8 TW (shipped set 381.5); X=20 atlas/new-build 1.0009, within10 0.519; NL 4894/3508 0.4213/0.4517; regions lost 5
+new0        cap=True  eligible 103.451 M km2; NL    13229; DE    180081; BR    5796231; potential 380.0 TW (shipped set 379.7); X=20 atlas/new-build 1.0007, within10 0.519; NL 4894/3508 0.4213/0.4517; regions lost 5
+new500_t20  cap=False eligible 100.294 M km2; NL     5285; DE    117743; BR    5762604; potential 370.6 TW (shipped set 370.3); X=20 atlas/new-build 1.0034, within10 0.519; NL 4894/3508 0.4141/0.4521; regions lost 5
+new500_t20  cap=True  eligible  99.792 M km2; NL     5243; DE    115379; BR    5715836; potential 368.9 TW (shipped set 368.5); X=20 atlas/new-build 1.0033, within10 0.519; NL 4894/3508 0.4140/0.4520; regions lost 5

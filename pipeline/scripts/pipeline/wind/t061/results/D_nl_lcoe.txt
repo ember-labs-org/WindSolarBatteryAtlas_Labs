@@ -1,0 +1,2 @@
+4894 (NLD): capex 1638 $/kW, O&M 45.8 $/kW/yr, WACC 6.67%; onshore CF 42.9% -> 37.0%; LCOE $49.3 -> $57.2/MWh
+3508 (NLD): capex 1638 $/kW, O&M 45.8 $/kW/yr, WACC 6.67%; onshore CF 45.7% -> 39.7%; LCOE $46.3 -> $53.3/MWh

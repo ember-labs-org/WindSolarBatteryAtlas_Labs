@@ -1,0 +1,4 @@
+centre: identical
+on: points with unchanged coordinates 4965, of which bit-identical 4965; moved 33, of which still identical 0
+off: points with unchanged coordinates 4935, of which bit-identical 4935; moved 63, of which still identical 0
+installed /Users/daanwalter/wind-atlas-T067/ws_T067/outputs/wind/era5_speed_2024.npz

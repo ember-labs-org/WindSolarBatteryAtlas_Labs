@@ -1,0 +1,9 @@
+definition,group,pooled_ratio,p05,p95
+w7_t50,World,0.441,0.394,0.493
+w7_t50,Europe,0.351,0.295,0.417
+w7_t50,North America (USA+CAN),0.448,0.399,0.500
+w7_t50,Germany,0.300,0.211,0.394
+w7_p5,World,0.673,0.594,0.751
+w7_p5,Europe,0.399,0.259,0.582
+w7_p5,North America (USA+CAN),0.378,0.333,0.426
+w7_p5,Germany,0.184,0.055,0.372

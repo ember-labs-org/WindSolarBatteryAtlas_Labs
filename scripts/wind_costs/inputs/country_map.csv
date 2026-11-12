@@ -1,0 +1,168 @@
+iso3,name,irena_annex_region,oecd_member,data_iso3,note
+AFG,Afghanistan,Asia,0,AFG,IRENA Annex II
+AGO,Angola,Africa,0,AGO,IRENA Annex II
+ALB,Albania,Europe,0,ALB,IRENA Annex II
+ARE,United Arab Emirates,Middle East,0,ARE,IRENA Annex II
+ARG,Argentina,South America,0,ARG,IRENA Annex II
+ARM,Armenia,Eurasia,0,ARM,IRENA Annex II
+ATA,Antarctica,,0,ATA,uninhabited; takes the nearest cell with a mapped country
+ATF,Fr. S. Antarctic Lands,,0,ATF,uninhabited; takes the nearest cell with a mapped country
+AUS,Australia,Oceania,1,AUS,IRENA Annex II
+AUT,Austria,Europe,1,AUT,IRENA Annex II
+AZE,Azerbaijan,Eurasia,0,AZE,IRENA Annex II
+BEL,Belgium,Europe,1,BEL,IRENA Annex II
+BEN,Benin,Africa,0,BEN,IRENA Annex II
+BFA,Burkina Faso,Africa,0,BFA,IRENA Annex II
+BGD,Bangladesh,Asia,0,BGD,IRENA Annex II
+BGR,Bulgaria,Europe,0,BGR,IRENA Annex II
+BHS,Bahamas,Central America and the Caribbean,0,BHS,IRENA Annex II
+BIH,Bosnia and Herz.,Europe,0,BIH,IRENA Annex II
+BLR,Belarus,Europe,0,BLR,IRENA Annex II
+BLZ,Belize,Central America and the Caribbean,0,BLZ,IRENA Annex II
+BOL,Bolivia,South America,0,BOL,IRENA Annex II
+BRA,Brazil,South America,0,BRA,IRENA Annex II
+BRN,Brunei,Asia,0,BRN,IRENA Annex II
+BTN,Bhutan,Asia,0,BTN,IRENA Annex II
+BWA,Botswana,Africa,0,BWA,IRENA Annex II
+CAF,Central African Rep.,Africa,0,CAF,IRENA Annex II
+CAN,Canada,North America,1,CAN,IRENA Annex II
+CHE,Switzerland,Europe,1,CHE,IRENA Annex II
+CHL,Chile,South America,1,CHL,IRENA Annex II
+CHN,China,Asia,0,CHN,IRENA Annex II
+CIV,Côte d'Ivoire,Africa,0,CIV,IRENA Annex II
+CMR,Cameroon,Africa,0,CMR,IRENA Annex II
+COD,Dem. Rep. Congo,Africa,0,COD,IRENA Annex II
+COG,Congo,Africa,0,COG,IRENA Annex II
+COL,Colombia,South America,1,COL,IRENA Annex II
+CRI,Costa Rica,Central America and the Caribbean,1,CRI,IRENA Annex II
+CUB,Cuba,Central America and the Caribbean,0,CUB,IRENA Annex II
+CYP,Cyprus,Europe,0,CYP,IRENA Annex II
+CZE,Czechia,Europe,1,CZE,IRENA Annex II
+DEU,Germany,Europe,1,DEU,IRENA Annex II
+DJI,Djibouti,Africa,0,DJI,IRENA Annex II
+DNK,Denmark,Europe,1,DNK,IRENA Annex II
+DOM,Dominican Rep.,Central America and the Caribbean,0,DOM,IRENA Annex II
+DZA,Algeria,Africa,0,DZA,IRENA Annex II
+ECU,Ecuador,South America,0,ECU,IRENA Annex II
+EGY,Egypt,Africa,0,EGY,IRENA Annex II
+ERI,Eritrea,Africa,0,ERI,IRENA Annex II
+ESH,W. Sahara,Africa,0,ESH,not in Annex II; geographic
+ESP,Spain,Europe,1,ESP,IRENA Annex II
+EST,Estonia,Europe,1,EST,IRENA Annex II
+ETH,Ethiopia,Africa,0,ETH,IRENA Annex II
+FIN,Finland,Europe,1,FIN,IRENA Annex II
+FJI,Fiji,Oceania,0,FJI,IRENA Annex II
+FLK,Falkland Is.,South America,0,FLK,not in Annex II; geographic
+FRA,France,Europe,1,FRA,IRENA Annex II
+GAB,Gabon,Africa,0,GAB,IRENA Annex II
+GBR,United Kingdom,Europe,1,GBR,IRENA Annex II
+GEO,Georgia,Eurasia,0,GEO,IRENA Annex II
+GHA,Ghana,Africa,0,GHA,IRENA Annex II
+GIN,Guinea,Africa,0,GIN,IRENA Annex II
+GNB,Guinea-Bissau,Africa,0,GNB,IRENA Annex II
+GRC,Greece,Europe,1,GRC,IRENA Annex II
+GRL,Greenland,North America,0,GRL,"not in Annex II; geographic (North American plate, with Canada)"
+GTM,Guatemala,Central America and the Caribbean,0,GTM,IRENA Annex II
+GUY,Guyana,South America,0,GUY,IRENA Annex II
+HND,Honduras,Central America and the Caribbean,0,HND,IRENA Annex II
+HRV,Croatia,Europe,0,HRV,IRENA Annex II
+HTI,Haiti,Central America and the Caribbean,0,HTI,IRENA Annex II
+HUN,Hungary,Europe,1,HUN,IRENA Annex II
+IDN,Indonesia,Asia,0,IDN,IRENA Annex II
+IND,India,Asia,0,IND,IRENA Annex II
+IRL,Ireland,Europe,1,IRL,IRENA Annex II
+IRN,Iran,Middle East,0,IRN,IRENA Annex II
+IRQ,Iraq,Middle East,0,IRQ,IRENA Annex II
+ISL,Iceland,Europe,1,ISL,IRENA Annex II
+ITA,Italy,Europe,1,ITA,IRENA Annex II
+JAM,Jamaica,Central America and the Caribbean,0,JAM,IRENA Annex II
+JOR,Jordan,Middle East,0,JOR,IRENA Annex II
+JPN,Japan,Asia,1,JPN,IRENA Annex II
+KAZ,Kazakhstan,Asia,0,KAZ,IRENA Annex II
+KEN,Kenya,Africa,0,KEN,IRENA Annex II
+KGZ,Kyrgyzstan,Asia,0,KGZ,IRENA Annex II
+KHM,Cambodia,Asia,0,KHM,IRENA Annex II
+KOR,South Korea,Asia,1,KOR,IRENA Annex II
+KWT,Kuwait,Middle East,0,KWT,IRENA Annex II
+LAO,Laos,Asia,0,LAO,IRENA Annex II
+LBR,Liberia,Africa,0,LBR,IRENA Annex II
+LBY,Libya,Africa,0,LBY,IRENA Annex II
+LKA,Sri Lanka,Asia,0,LKA,IRENA Annex II
+LSO,Lesotho,Africa,0,LSO,IRENA Annex II
+LTU,Lithuania,Europe,1,LTU,IRENA Annex II
+LVA,Latvia,Europe,1,LVA,IRENA Annex II
+MAR,Morocco,Africa,0,MAR,IRENA Annex II
+MDA,Moldova,Europe,0,MDA,IRENA Annex II
+MDG,Madagascar,Africa,0,MDG,IRENA Annex II
+MEX,Mexico,North America,1,MEX,IRENA Annex II
+MKD,North Macedonia,Europe,0,MKD,not in Annex II; surrounded by Annex II Europe countries
+MLI,Mali,Africa,0,MLI,IRENA Annex II
+MMR,Myanmar,Asia,0,MMR,IRENA Annex II
+MNE,Montenegro,Europe,0,MNE,IRENA Annex II
+MNG,Mongolia,Asia,0,MNG,IRENA Annex II
+MOZ,Mozambique,Africa,0,MOZ,IRENA Annex II
+MRT,Mauritania,Africa,0,MRT,IRENA Annex II
+MWI,Malawi,Africa,0,MWI,IRENA Annex II
+MYS,Malaysia,Asia,0,MYS,IRENA Annex II
+NAM,Namibia,Africa,0,NAM,IRENA Annex II
+NCL,New Caledonia,Oceania,0,NCL,not in Annex II; geographic
+NER,Niger,Africa,0,NER,IRENA Annex II
+NGA,Nigeria,Africa,0,NGA,IRENA Annex II
+NIC,Nicaragua,Central America and the Caribbean,0,NIC,IRENA Annex II
+NLD,Netherlands,Europe,1,NLD,IRENA Annex II
+NOR,Norway,Europe,1,NOR,IRENA Annex II
+NPL,Nepal,Asia,0,NPL,IRENA Annex II
+NZL,New Zealand,Oceania,1,NZL,IRENA Annex II
+OMN,Oman,Middle East,0,OMN,IRENA Annex II
+PAK,Pakistan,Asia,0,PAK,IRENA Annex II
+PAN,Panama,Central America and the Caribbean,0,PAN,IRENA Annex II
+PER,Peru,South America,0,PER,IRENA Annex II
+PHL,Philippines,Asia,0,PHL,IRENA Annex II
+PNG,Papua New Guinea,Oceania,0,PNG,IRENA Annex II
+POL,Poland,Europe,1,POL,IRENA Annex II
+PRI,Puerto Rico,Central America and the Caribbean,0,PRI,not in Annex II; geographic
+PRK,North Korea,Asia,0,PRK,IRENA Annex II
+PRT,Portugal,Europe,1,PRT,IRENA Annex II
+PRY,Paraguay,South America,0,PRY,IRENA Annex II
+PSE,Palestine,Middle East,0,PSE,not in Annex II; geographic
+QAT,Qatar,Middle East,0,QAT,IRENA Annex II
+ROU,Romania,Europe,0,ROU,IRENA Annex II
+RUS,Russia,Eurasia,0,RUS,IRENA Annex II
+RWA,Rwanda,Africa,0,RWA,IRENA Annex II
+SAU,Saudi Arabia,Middle East,0,SAU,IRENA Annex II
+SDN,Sudan,Africa,0,SDN,IRENA Annex II
+SEN,Senegal,Africa,0,SEN,IRENA Annex II
+SLB,Solomon Is.,Oceania,0,SLB,IRENA Annex II
+SLE,Sierra Leone,Africa,0,SLE,IRENA Annex II
+SLV,El Salvador,Central America and the Caribbean,0,SLV,IRENA Annex II
+SOL,Somaliland,Africa,0,SOM,Somaliland; mapped to SOM
+SOM,Somalia,Africa,0,SOM,IRENA Annex II
+SRB,Serbia,Europe,0,SRB,IRENA Annex II
+SSD,S. Sudan,Africa,0,SSD,IRENA Annex II
+SUR,Suriname,South America,0,SUR,IRENA Annex II
+SVK,Slovakia,Europe,1,SVK,IRENA Annex II
+SWE,Sweden,Europe,1,SWE,IRENA Annex II
+SWZ,eSwatini,Africa,0,SWZ,IRENA Annex II
+SYR,Syria,Middle East,0,SYR,IRENA Annex II
+TCD,Chad,Africa,0,TCD,IRENA Annex II
+TGO,Togo,Africa,0,TGO,IRENA Annex II
+THA,Thailand,Asia,0,THA,IRENA Annex II
+TJK,Tajikistan,Asia,0,TJK,IRENA Annex II
+TKM,Turkmenistan,Asia,0,TKM,IRENA Annex II
+TLS,Timor-Leste,Asia,0,TLS,IRENA Annex II
+TUN,Tunisia,Africa,0,TUN,IRENA Annex II
+TUR,Turkey,Eurasia,1,TUR,IRENA Annex II
+TWN,Taiwan,Asia,0,TWN,not in Annex II; geographic
+TZA,Tanzania,Africa,0,TZA,IRENA Annex II
+UGA,Uganda,Africa,0,UGA,IRENA Annex II
+UKR,Ukraine,Europe,0,UKR,IRENA Annex II
+URY,Uruguay,South America,0,URY,IRENA Annex II
+USA,United States of America,North America,1,USA,IRENA Annex II
+UZB,Uzbekistan,Asia,0,UZB,IRENA Annex II
+VEN,Venezuela,South America,0,VEN,IRENA Annex II
+VNM,Vietnam,Asia,0,VNM,IRENA Annex II
+VUT,Vanuatu,Oceania,0,VUT,IRENA Annex II
+YEM,Yemen,Middle East,0,YEM,IRENA Annex II
+ZAF,South Africa,Africa,0,ZAF,IRENA Annex II
+ZMB,Zambia,Africa,0,ZMB,IRENA Annex II
+ZWE,Zimbabwe,Africa,0,ZWE,IRENA Annex II

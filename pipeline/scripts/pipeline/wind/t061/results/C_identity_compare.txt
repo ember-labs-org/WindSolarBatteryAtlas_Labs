@@ -1,0 +1,44 @@
+T061 partial byte-identity proof (A-T061: two inputs are zero placeholders)
+old code (2a29f90) vs new code on the same inputs: best-area, best500 and p90 outputs byte-identical (cmp, SHA-256 117c0690... / c0ff1820...)
+
+new best-area vs shipped deployment CSV (4465 shipped rows; shipped adds 8 profile columns from build_wind_profiles):
+  latitude: 0 rows differ (string)
+  longitude: 0 rows differ (string)
+  on_area_km2: 0 rows differ (string)
+  on_viable_area_km2: 0 rows differ (string)
+  on_cf_p50: 0 rows differ (string)
+  on_cf_p90: 0 rows differ (string)
+  on_site_lat: 0 rows differ (string)
+  on_site_lon: 0 rows differ (string)
+  on_site_cf: 0 rows differ (string)
+  on_room_gw: 0 rows differ (string)
+  on_viable: 0 rows differ (string)
+  on_site_speed_100m: 0 rows differ (string)
+  on_site_air_density: 4385 rows differ (string)  <- air density placeholder
+  on_site_iec_class: 0 rows differ (string)
+  off_area_km2: 0 rows differ (string)
+  off_viable_area_km2: 0 rows differ (string)
+  off_cf_p50: 0 rows differ (string)
+  off_cf_p90: 0 rows differ (string)
+  off_site_lat: 0 rows differ (string)
+  off_site_lon: 0 rows differ (string)
+  off_site_cf: 0 rows differ (string)
+  off_room_gw: 0 rows differ (string)
+  off_viable: 0 rows differ (string)
+  off_floating_area_km2: 1243 rows differ (string)  <- floating placeholder
+  centre_cf: 0 rows differ (string)
+  losses_applied: 0 rows differ (string)
+  on_cf_best: 0 rows differ (string)
+  on_cf_target: 0 rows differ (string)
+  off_cf_best: 0 rows differ (string)
+  off_cf_target: 0 rows differ (string)
+  best_area_km2: 0 rows differ (string)
+  viability_rule: 0 rows differ (string)
+  viable_cf_threshold: 0 rows differ (string)
+  area_cf_threshold: 0 rows differ (string)
+
+share 0 (floor 500 km2) vs best-area: columns that differ: ['viability_rule'] ; extra: ['share_of_land']
+share 20: rows 4998 ; on_cf_target median 0.3323 vs best-area 0.3795
+
+new --rule p90 vs pre-T054 shipped CSV (72136f8, 4998 rows):
+  columns compared: 26 ; differing: ['on_site_air_density: 4424', 'off_floating_area_km2: 1694']

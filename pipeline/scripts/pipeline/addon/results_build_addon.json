@@ -1,0 +1,39 @@
+{
+ "inputs": {
+  "summary_w0.parquet": "8368ef1c3cb5365bf982ce654a196bb01f6530ac2fe55c5aa82db0567d54b7aa",
+  "voronoi_wind_resource.csv": "dccc6109735e729831d9d5add3d2a353f7741a6cdd8ee9211f5cb740761e50f1",
+  "excluded_regions.json": "a02451f49f727ee460dd22eb745eb45ee9c9f36efc48067e8efc4353071c68ae",
+  "_solar_matrix.npy": "a3c7c05bfff5199d8513f63f171de81ffc293b6ac80ede350c1199bf4503053b",
+  "_solar_ids.npy": "76203853b57d6b3eaabcfb7d3f0face42b36445f9fcec31081c520c8950ab380",
+  "wind_profiles_on.parquet": "4d58a9d1294ed360a71a4b5f3e6c535050dcd2a65044f7138c73cf941dd56bba",
+  "wind_profiles_off.parquet": "462f462f2ee04e40d5341702839c2cefc12ae327d4bdf3cf022d6205ebe23cfe"
+ },
+ "sets": {
+  "wind_mix": {
+   "id": "wind_mix",
+   "file": "addon_wind_mix.parquet",
+   "sha256": "c5d55be54d3ea12b27f6add976104dafcb82a2bd0fa4653974cc04fa8add9ecd",
+   "start": "cold",
+   "regions": 1210,
+   "rows": 2276010,
+   "rule": "on_area_km2 > 0 and off_area_km2 > 0",
+   "bytes": 7547459
+  },
+  "large": {
+   "id": "large",
+   "file": "addon_large.parquet",
+   "sha256": "19f2b92c9be10f538dc17ca061da0e7f2fbe95e1ee70cfb26b68cffb95b18d9c",
+   "start": "cyclic",
+   "regions": 2045,
+   "rows": 685075,
+   "rule": "max annual_cf in summary_w0 < 0.999",
+   "interpolate": "battery-linear",
+   "guard": 5e-05,
+   "bytes": 1609802,
+   "cyclic_passes_max": 3,
+   "regions_below_0.99": 1568
+  }
+ },
+ "addon.json": "0b338dc9b0b79b6bdd8b3fdc9d85deb6272ca15de2e3a38c1fd1a33cc1efe8ac",
+ "seconds": 137.7
+}

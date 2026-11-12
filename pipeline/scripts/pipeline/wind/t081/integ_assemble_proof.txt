@@ -1,0 +1,10 @@
+assemble.py memory fix (integration, 3 Nov 2026)
+Cause: in the wind_mix block, z["ycf"][k] and z["cf"][k] re-read the whole npz array on every
+access, and the detail rows kept those views, so all 1,881 full copies stayed alive:
+about 1,881 x (9.5 MB ycf + 1.9 MB cf) = 21 GB. T081's run hit the same (free disk fell to 6 GB
+through swap at that stage); not caused by region 394 or by dtypes.
+Fix: read each array of a part once (with np.load(...) as z).
+Proof on T081's inputs (~/wind-atlas-T081/work/parts10, --sets wind_mix,large --detail):
+  addon_wind_mix.parquet, addon_large.parquet, addon.json, per_year_wind_mix.parquet,
+  per_year_large.parquet: byte-identical to T081's out10/results.
+  Peak RSS 0.87 GB, 5 s.

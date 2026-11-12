@@ -1,0 +1,458 @@
+location_id,country_iso3,old_region,old_region_method,old_solar_2024,old_battery_2024,new_region,new_region_method,new_solar_2024,new_battery_2024
+961,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+251,FJI,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3364,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3272,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+17,USA,Global average,unmapped,690.0,120.0,United States,overlapping_iso3,1058.0,152.0
+4128,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+173,RUS,Global average,unmapped,690.0,120.0,Eurasia (incl. Turkey),overlapping_iso3,671.0,118.0
+4155,RUS,Global average,unmapped,690.0,120.0,Eurasia (incl. Turkey),overlapping_iso3,671.0,118.0
+2885,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+3849,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+1840,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+1297,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+2349,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+288,ARE,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+2784,ARE,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+3684,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+2013,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3489,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+2551,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+2952,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+1198,USA,Global average,unmapped,690.0,120.0,United States,overlapping_iso3,1058.0,152.0
+268,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+604,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1509,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+101,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+2558,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+4615,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+4354,ARE,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+3766,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2706,ARE,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+4483,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3623,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+166,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+459,OMN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+1328,QAT,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+1290,CHL,Global average,unmapped,690.0,120.0,Other South America,overlapping_iso3,596.0,112.0
+1301,NCL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4811,JPN,Global average,unmapped,690.0,120.0,Japan,overlapping_iso3,1170.0,162.0
+4916,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+3541,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+730,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1860,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3500,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2205,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1706,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2979,NCL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+155,NCL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+110,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2942,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1255,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4197,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4937,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1825,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3294,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1457,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+2046,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1441,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4064,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+859,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1986,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1271,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3418,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4281,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4342,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2871,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2512,SOL,Global average,unmapped,690.0,120.0,Africa,overlapping_iso3,861.0,135.0
+1202,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3917,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+687,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2494,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2089,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3350,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4842,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4577,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2648,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+134,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+23,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3640,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1342,FJI,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+416,VUT,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+47,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+2485,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+514,USA,Global average,unmapped,690.0,120.0,United States,overlapping_iso3,1058.0,152.0
+2573,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+2817,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+108,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+102,NZL,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4194,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1949,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+900,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2350,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4747,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3781,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1584,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1174,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+14,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+321,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2577,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3373,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2504,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1296,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+920,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3549,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1034,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+761,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+3492,RUS,Global average,unmapped,690.0,120.0,Eurasia (incl. Turkey),overlapping_iso3,671.0,118.0
+53,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2304,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4265,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2843,KWT,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,gcc_proxy,733.1,120.0
+4561,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2462,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1040,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3387,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4545,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1137,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2681,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+518,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4641,SOL,Global average,unmapped,690.0,120.0,Africa,overlapping_iso3,861.0,135.0
+20,SOL,Global average,unmapped,690.0,120.0,Africa,overlapping_iso3,861.0,135.0
+1843,SOL,Global average,unmapped,690.0,120.0,Africa,overlapping_iso3,861.0,135.0
+596,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1838,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+367,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3793,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3970,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1056,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2196,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4442,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3362,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3901,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3404,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4691,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2241,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4836,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1186,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2912,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+221,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+1257,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3273,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1029,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2436,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1366,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2273,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4150,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+256,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2142,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4018,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3593,PHL,Global average,unmapped,690.0,120.0,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",overlapping_iso3,525.0,106.0
+466,TWN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Korea (Rep. of Korea),high_income_asia_proxy,779.0,128.0
+1235,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+4139,USA,Global average,unmapped,690.0,120.0,United States,overlapping_iso3,1058.0,152.0
+3874,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+1325,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3996,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3997,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3897,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4843,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+292,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1008,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1826,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+49,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+1535,SOL,Global average,unmapped,690.0,120.0,Africa,overlapping_iso3,861.0,135.0
+4955,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1418,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4951,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2050,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+224,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4173,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+703,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3248,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2269,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3145,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+772,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4446,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+4554,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+2085,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+3433,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1696,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+215,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+168,RUS,Global average,unmapped,690.0,120.0,Eurasia (incl. Turkey),overlapping_iso3,671.0,118.0
+4492,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2334,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+563,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1690,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3589,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3660,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2642,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+523,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3565,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1241,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+682,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4021,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3173,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+925,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3531,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1157,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+546,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4144,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1504,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2768,SLB,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1524,SLB,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+317,SLB,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+64,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1055,SLB,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3253,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1080,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4359,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2271,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+932,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4223,TWN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Korea (Rep. of Korea),high_income_asia_proxy,779.0,128.0
+1916,TWN,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Korea (Rep. of Korea),high_income_asia_proxy,779.0,128.0
+1054,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3559,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3624,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+2550,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+2086,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+284,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+554,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+884,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+1829,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+2769,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4042,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+491,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1350,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4754,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3180,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+883,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4410,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2498,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+470,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1275,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3010,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+967,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3224,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2804,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1359,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+170,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4866,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3894,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3669,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2699,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+811,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4049,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+461,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2333,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2734,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3466,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4692,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3221,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2079,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4651,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2731,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+637,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1322,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2873,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1715,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3283,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+395,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1252,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2305,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4313,ITA,Global average,unmapped,690.0,120.0,Europe,overlapping_iso3,779.0,128.0
+2687,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3571,HRV,Global average,unmapped,690.0,120.0,Europe,overlapping_iso3,779.0,128.0
+1269,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3960,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+4275,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+1196,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3109,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4727,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1039,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3302,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4752,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1957,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2092,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+60,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2694,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3104,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1007,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4712,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1486,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4341,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2178,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2847,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+273,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2930,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+121,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1266,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2820,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3913,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4999,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1469,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1374,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2999,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+520,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3831,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+37,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4054,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1953,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+929,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3243,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2428,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4008,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2337,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3046,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1289,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2892,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+611,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3728,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3983,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+254,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1803,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3613,IDN,Global average,unmapped,690.0,120.0,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",overlapping_iso3,525.0,106.0
+1066,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1859,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4162,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1836,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4178,PNG,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2183,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+709,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3275,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+4697,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+1369,CAN,Global average,unmapped,690.0,120.0,United States,north_america_proxy,1058.0,152.0
+1003,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2315,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1889,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4822,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+677,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2117,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2008,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4690,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1018,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1020,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+2624,RUS,Global average,unmapped,690.0,120.0,Eurasia (incl. Turkey),overlapping_iso3,671.0,118.0
+4744,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3712,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+2527,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+183,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3116,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+2679,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3459,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+1973,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4969,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3907,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3748,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2981,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3424,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+197,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3828,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+639,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4191,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2077,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1477,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4570,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2262,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+454,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1443,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3742,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2482,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4617,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1673,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4983,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1462,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2506,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+860,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+158,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+399,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4989,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3032,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1791,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4220,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+293,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2517,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+316,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2957,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3938,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1030,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3927,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+815,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+66,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3405,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2093,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2054,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3911,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2296,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4622,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+2359,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3513,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+1354,FRA,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3305,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4773,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4625,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+944,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2877,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2909,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3615,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3801,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+856,RUS,Global average,unmapped,690.0,120.0,Eurasia (incl. Turkey),overlapping_iso3,671.0,118.0
+1493,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+3649,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+1163,NOR,Global average,unmapped,690.0,120.0,Europe,continent_adm0_a3,779.0,128.0
+921,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3256,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2175,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3063,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1553,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4664,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4439,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1391,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3699,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2454,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4095,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3205,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+303,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1766,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+886,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2440,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1650,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3556,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3803,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3934,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4669,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4205,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+789,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2473,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2255,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2100,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3542,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4722,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2584,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4246,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+434,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1516,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3157,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4244,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+947,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4397,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2983,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+905,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1115,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2000,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+4038,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3568,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3098,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+140,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2628,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1077,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1228,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+407,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+3804,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2513,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2772,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2925,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2492,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+1870,AUS,Global average,unmapped,690.0,120.0,Oceania,oceania_irena,966.9,120.0
+2773,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0
+1672,SAU,"Emerging Asia (ex-India, ex-China, ex-Japan, ex-Korea)",continent,525.0,106.0,Saudi Arabia,country,733.1,120.0

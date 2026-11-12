@@ -1,0 +1,36 @@
+2015 on: 4419 profiles, mean CF 0.2848, 2 s
+2015 off: 1270 profiles, mean CF 0.2965, 3 s
+2015 on (4419, 8760) mean 0.2848 ok
+2015 off (1270, 8760) mean 0.2965 ok
+2016 on: 4419 profiles, mean CF 0.2785, 2 s
+2016 off: 1270 profiles, mean CF 0.2879, 3 s
+2016 on (4419, 8784) mean 0.2785 ok
+2016 off (1270, 8784) mean 0.2879 ok
+2017 on: 4419 profiles, mean CF 0.2848, 2 s
+2017 off: 1270 profiles, mean CF 0.2930, 3 s
+2017 on (4419, 8760) mean 0.2848 ok
+2017 off (1270, 8760) mean 0.293 ok
+2018 on: 4419 profiles, mean CF 0.2825, 2 s
+2018 off: 1270 profiles, mean CF 0.2933, 3 s
+2018 on (4419, 8760) mean 0.2825 ok
+2018 off (1270, 8760) mean 0.2933 ok
+2019 on: 4419 profiles, mean CF 0.2814, 2 s
+2019 off: 1270 profiles, mean CF 0.2925, 3 s
+2019 on (4419, 8760) mean 0.2814 ok
+2019 off (1270, 8760) mean 0.2925 ok
+2020 on: 4419 profiles, mean CF 0.2866, 2 s
+2020 off: 1270 profiles, mean CF 0.2956, 3 s
+2020 on (4419, 8784) mean 0.2866 ok
+2020 off (1270, 8784) mean 0.2956 ok
+2021 on: 4419 profiles, mean CF 0.2846, 2 s
+2021 off: 1270 profiles, mean CF 0.2914, 3 s
+2021 on (4419, 8760) mean 0.2846 ok
+2021 off (1270, 8760) mean 0.2914 ok
+2022 on: 4419 profiles, mean CF 0.2853, 2 s
+2022 off: 1270 profiles, mean CF 0.2908, 2 s
+2022 on (4419, 8760) mean 0.2853 ok
+2022 off (1270, 8760) mean 0.2908 ok
+2023 on: 4419 profiles, mean CF 0.2794, 2 s
+2023 off: 1270 profiles, mean CF 0.2887, 3 s
+2023 on (4419, 8760) mean 0.2794 ok
+2023 off (1270, 8760) mean 0.2887 ok

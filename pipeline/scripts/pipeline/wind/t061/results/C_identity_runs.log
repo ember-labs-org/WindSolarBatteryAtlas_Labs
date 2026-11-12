@@ -1,0 +1,57 @@
+### old best-area 
+free disk 73.8 GB (need >= 10.0)
+===== site =====
+wrote /Users/daanwalter/wind-atlas-T061/runs/id_old_best-area/ws/outputs/voronoi_wind_resource.csv and /Users/daanwalter/wind-atlas-T061/runs/id_old_best-area/data/voronoi_wind_resource.csv  (55s total)
+       55.98 real        49.86 user         5.64 sys
+         11184119488  peak memory footprint
+===== site: exit 0, 56 s
+workspace files changed during the run: none
+### new best-area 
+free disk 73.7 GB (need >= 10.0)
+===== site =====
+wrote /Users/daanwalter/wind-atlas-T061/runs/id_new_best-area/ws/outputs/voronoi_wind_resource.csv and /Users/daanwalter/wind-atlas-T061/runs/id_new_best-area/data/voronoi_wind_resource.csv  (55s total)
+       55.38 real        49.35 user         5.66 sys
+         11105902208  peak memory footprint
+===== site: exit 0, 55 s
+workspace files changed during the run: none
+### new best500 
+free disk 73.7 GB (need >= 10.0)
+===== site =====
+wrote /Users/daanwalter/wind-atlas-T061/runs/id_new_best500/ws/outputs/voronoi_wind_resource.csv and /Users/daanwalter/wind-atlas-T061/runs/id_new_best500/data/voronoi_wind_resource.csv  (54s total)
+       54.26 real        48.41 user         5.64 sys
+         11162049984  peak memory footprint
+===== site: exit 0, 54 s
+workspace files changed during the run: none
+### old p90 
+free disk 73.6 GB (need >= 10.0)
+===== site =====
+wrote /Users/daanwalter/wind-atlas-T061/runs/id_old_p90/ws/outputs/voronoi_wind_resource.csv and /Users/daanwalter/wind-atlas-T061/runs/id_old_p90/data/voronoi_wind_resource.csv  (51s total)
+       51.83 real        46.31 user         5.26 sys
+         11182169728  peak memory footprint
+===== site: exit 0, 52 s
+workspace files changed during the run: none
+### new p90 
+free disk 73.6 GB (need >= 10.0)
+===== site =====
+wrote /Users/daanwalter/wind-atlas-T061/runs/id_new_p90/ws/outputs/voronoi_wind_resource.csv and /Users/daanwalter/wind-atlas-T061/runs/id_new_p90/data/voronoi_wind_resource.csv  (52s total)
+       52.17 real        46.80 user         5.15 sys
+         11165736576  peak memory footprint
+===== site: exit 0, 52 s
+workspace files changed during the run: none
+### new share 0
+free disk 73.6 GB (need >= 10.0)
+===== site =====
+wrote /Users/daanwalter/wind-atlas-T061/runs/id_new_share0/ws/outputs/voronoi_wind_resource.csv and /Users/daanwalter/wind-atlas-T061/runs/id_new_share0/data/voronoi_wind_resource.csv  (66s total)
+       66.34 real        60.28 user         5.79 sys
+         11103346240  peak memory footprint
+===== site: exit 0, 66 s
+workspace files changed during the run: none
+### new share 20
+free disk 73.6 GB (need >= 10.0)
+===== site =====
+wrote /Users/daanwalter/wind-atlas-T061/runs/id_new_share20/ws/outputs/voronoi_wind_resource.csv and /Users/daanwalter/wind-atlas-T061/runs/id_new_share20/data/voronoi_wind_resource.csv  (66s total)
+       66.45 real        60.43 user         5.76 sys
+         11111948224  peak memory footprint
+===== site: exit 0, 66 s
+workspace files changed during the run: none
+ALLDONE

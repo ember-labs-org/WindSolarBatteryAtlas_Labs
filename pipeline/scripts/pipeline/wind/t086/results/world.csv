@@ -1,0 +1,13 @@
+case,variant,label,twh,gw,x_iea2025,x_ember2025
+cons,a,as today,553747.999,193674.568,19.362,17.413
+cons,b,minus dense forest,481916.743,164381.190,16.850,15.155
+cons,c,minus cropland,487219.282,169827.773,17.036,15.321
+cons,d,minus both,415517.817,140583.306,14.529,13.067
+cons,b70,minus closed forest (>70%),483556.852,164927.557,16.908,15.206
+cons,b15,minus all forest (>15%),447956.365,151411.974,15.663,14.087
+tech,a,as today,1024727.799,381341.964,35.830,32.224
+tech,b,minus dense forest,872331.565,313665.620,30.501,27.432
+tech,c,minus cropland,896104.028,332553.186,31.332,28.179
+tech,d,minus both,743970.881,264984.863,26.013,23.395
+tech,b70,minus closed forest (>70%),875474.637,314897.684,30.611,27.531
+tech,b15,minus all forest (>15%),803897.727,285059.136,28.108,25.280

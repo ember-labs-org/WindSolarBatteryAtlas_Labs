@@ -1,0 +1,66 @@
+2015: point order and hours ok (8760 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2015 mean speed with 2024 mean at the same points 0.9908
+  off: moved 189; finite and 0-60 m/s True; corr of 2015 mean speed with 2024 mean at the same points 0.9848
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2015: ERA5 CHECK PASS
+2016: point order and hours ok (8784 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2016 mean speed with 2024 mean at the same points 0.9895
+  off: moved 189; finite and 0-60 m/s True; corr of 2016 mean speed with 2024 mean at the same points 0.9865
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2016: ERA5 CHECK PASS
+2017: point order and hours ok (8760 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2017 mean speed with 2024 mean at the same points 0.9907
+  off: moved 189; finite and 0-60 m/s True; corr of 2017 mean speed with 2024 mean at the same points 0.9883
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2017: ERA5 CHECK PASS
+2018: point order and hours ok (8760 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2018 mean speed with 2024 mean at the same points 0.9912
+  off: moved 189; finite and 0-60 m/s True; corr of 2018 mean speed with 2024 mean at the same points 0.9852
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2018: ERA5 CHECK PASS
+2019: point order and hours ok (8760 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2019 mean speed with 2024 mean at the same points 0.9913
+  off: moved 189; finite and 0-60 m/s True; corr of 2019 mean speed with 2024 mean at the same points 0.9855
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2019: ERA5 CHECK PASS
+2020: point order and hours ok (8784 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2020 mean speed with 2024 mean at the same points 0.9925
+  off: moved 189; finite and 0-60 m/s True; corr of 2020 mean speed with 2024 mean at the same points 0.9903
+  centre vs T060 raw npz: bit-identical
+  on vs T060 raw npz: unmoved 4420, bit-identical 4420; moved 578, of which still identical 0
+  off vs T060 raw npz: unmoved 4809, bit-identical 4809; moved 189, of which still identical 0
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2020: ERA5 CHECK PASS
+2021: point order and hours ok (8760 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2021 mean speed with 2024 mean at the same points 0.9902
+  off: moved 189; finite and 0-60 m/s True; corr of 2021 mean speed with 2024 mean at the same points 0.9872
+  centre vs T060 raw npz: bit-identical
+  on vs T060 raw npz: unmoved 4420, bit-identical 4420; moved 578, of which still identical 0
+  off vs T060 raw npz: unmoved 4809, bit-identical 4809; moved 189, of which still identical 0
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2021: ERA5 CHECK PASS
+2022: point order and hours ok (8760 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2022 mean speed with 2024 mean at the same points 0.9902
+  off: moved 189; finite and 0-60 m/s True; corr of 2022 mean speed with 2024 mean at the same points 0.9823
+  centre vs T060 raw npz: bit-identical
+  on vs T060 raw npz: unmoved 4420, bit-identical 4420; moved 578, of which still identical 0
+  off vs T060 raw npz: unmoved 4809, bit-identical 4809; moved 189, of which still identical 0
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2022: ERA5 CHECK PASS
+2023: point order and hours ok (8760 h)
+  on: moved 578; finite and 0-60 m/s True; corr of 2023 mean speed with 2024 mean at the same points 0.9918
+  off: moved 189; finite and 0-60 m/s True; corr of 2023 mean speed with 2024 mean at the same points 0.9886
+  centre vs T060 raw npz: bit-identical
+  on vs T060 raw npz: unmoved 4420, bit-identical 4420; moved 578, of which still identical 0
+  off vs T060 raw npz: unmoved 4809, bit-identical 4809; moved 189, of which still identical 0
+  on T060 profiles rebuilt from the fresh speeds at unmoved sites: 3846 of 3846 bit-identical (T060 rows at moved sites: 578)
+  off T060 profiles rebuilt from the fresh speeds at unmoved sites: 1135 of 1135 bit-identical (T060 rows at moved sites: 189)
+2023: ERA5 CHECK PASS

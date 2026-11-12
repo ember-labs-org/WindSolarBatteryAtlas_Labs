@@ -1,0 +1,9 @@
+run10_dense: [   2841 s] done
+run10_dense:      2841.51 real     13562.58 user       133.89 sys
+run10_dense:           3646317056  peak memory footprint
+run10_mix: [    405 s] done
+run10_mix:       406.06 real      1968.03 user         3.14 sys
+run10_mix:           2620268224  peak memory footprint
+run10_large: [    117 s] done
+run10_large:       117.66 real       568.59 user         1.28 sys
+run10_large:           1546147840  peak memory footprint

@@ -1,0 +1,29 @@
+## Identity: pixel table vs deployed voronoi_wind_resource.csv (written %.6f)
+- 4465 of 4998 simulation points are rows of the CSV (the rest are excluded regions)
+- on_area_km2: 0 rows differ beyond the CSV's 6 dp (max abs diff 0)
+- on_viable_area_km2: 0 rows differ beyond the CSV's 6 dp (max abs diff 0)
+- on_cf_best: 0 rows differ beyond the CSV's 6 dp (max abs diff 0)
+- off_area_km2: 0 rows differ beyond the CSV's 6 dp (max abs diff 0)
+- off_viable_area_km2: 0 rows differ beyond the CSV's 6 dp (max abs diff 0)
+- off_cf_best: 0 rows differ beyond the CSV's 6 dp (max abs diff 0)
+- off_floating_area_km2: 0 rows differ beyond the CSV's 6 dp (max abs diff 0)
+
+## Upper bound (today's formula, model.js), map cells
+- on_gw: 381341.96412
+- on_twh: 1157303.44792
+- fix_twh: 67526.83258
+- fl_twh: 148638.66967
+
+## Levers, map cells (PWh/yr; TW)
+| Case | Onshore PWh | Onshore TW | Fixed PWh | Fixed TW | Floating PWh | Floating TW |
+|---|---|---|---|---|---|---|
+| Upper bound (today) | 1,157.3 | 381.3 | 67.5 | 20.2 | 148.6 | 47.1 |
+| p0 | 1,024.7 | 381.3 | 82.7 | 19.6 | 193.8 | 44.1 |
+| l1 | 1,011.8 | 380.6 | 64.3 | 19.6 | 150.6 | 44.1 |
+| l12 | 607.1 | 228.4 | 64.3 | 19.6 | 150.6 | 44.1 |
+| cons | 553.7 | 193.7 | 63.9 | 19.4 | 149.9 | 43.6 |
+
+floating GW on fixed-sea statistics (no floating pixel in the zone): 47 GW of 44,073
+floating GW in cells without eligible fixed sea (0 in every case, as the upper bound): 3,009 GW; fixed GW likewise 587 GW
+onshore Europe-factor regions: 359
+identity all pass: True

@@ -1,0 +1,11 @@
+region,n,countries,atlas_cf/newbuild
+Africa & Middle East,3,TUR ZAF EGY,1.0028
+Central Asia & Russia,3,RUS KAZ UZB,1.0758
+China,1,CHN,1.0400
+East & SE Asia,2,JPN KOR,0.9444
+Europe,12,DEU ESP FRA SWE GBR POL ITA FIN GRC AUT BEL LTU,1.0320
+India & South Asia,1,IND,0.9674
+Latin America,2,BRA CHL,0.8079
+North America,2,USA CAN,1.0657
+Oceania,1,AUS,1.1835
+World,27,CHN USA DEU BRA IND ESP FRA CAN SWE TUR GBR AUS POL ITA FIN GRC ZAF JPN CHL AUT BEL EGY RUS KAZ KOR LTU UZB,1.0303

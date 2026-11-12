@@ -1,0 +1,42 @@
+same file list True 38
+rebuilt   addon.json set wind_mix: sha matches, start cold, regions 1138
+rebuilt   addon.json set large: sha matches, start cyclic, regions 1728
+rebuilt   addon_large.parquet: schema same, compression ZSTD/ZSTD, rows 685075 -> 578880
+rebuilt   addon_wind_mix.parquet: schema same, compression ZSTD/ZSTD, rows 2140578 -> 2140578
+identical configs.json
+rebuilt   daily_cf_2024.parquet: schema same, compression ZSTD/ZSTD, rows 1634190 -> 1634190, ids same
+identical fossil_plants.csv
+identical gem_plants.csv
+identical sample_timestamps.json
+rebuilt   summary_w0.parquet: schema same, compression ZSTD/ZSTD, rows 1294850 -> 1294850, ids same
+rebuilt   summary_w1.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_w2.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_w3.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_w4.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_w5.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_w6.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_w8.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_wo1.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_wo2.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_wo3.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_wo4.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_wo5.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_wo6.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+rebuilt   summary_wo8.parquet: schema same, compression ZSTD/ZSTD, rows 933185 -> 933185, ids same
+identical voronoi_diesel_prices.csv
+identical voronoi_electricity_demand.csv
+identical voronoi_fossil_capacity.csv
+identical voronoi_gas_prices.csv
+identical voronoi_gem_capacity.csv
+identical voronoi_grid_reliability.csv
+identical voronoi_local_capex.csv
+identical voronoi_overlapping_countries.csv
+identical voronoi_population_2020.csv
+identical voronoi_pvout_potential.csv
+identical voronoi_wacc.csv
+identical voronoi_wacc_wind.csv
+identical voronoi_wind_potential_offshore.csv
+rebuilt   voronoi_wind_resource.csv: columns changed ['off_clamped', 'off_final_cf', 'off_k', 'off_raw_cf', 'on_clamped', 'on_final_cf', 'on_k', 'on_raw_cf']
+identical world.geojson
+worst blocks 40, needed 40, total 13.5 MB
+CHECK68 PASS

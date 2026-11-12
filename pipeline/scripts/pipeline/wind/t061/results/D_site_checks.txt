@@ -1,0 +1,11 @@
+Phase D siting checks (unfiltered 4,998 regions)
+on: cf_best vs pixel-table prediction: 0 differ at 6 dp
+on: cf_target == cf_best x factor: max abs diff 9.23e-07
+on: viable == (area > 0): True; viable 4419 (old 4424)
+on: sites moved 573 of 4419; lost site 5; new site 0
+off: cf_best vs pixel-table prediction: 0 differ at 6 dp
+off: cf_target == cf_best x factor: max abs diff 8.77e-07
+off: viable == (area > 0): True; viable 1270 (old 1324)
+off: sites moved 135 of 1270; lost site 54; new site 0
+columns appended: ['share_of_land', 'on_level_factor', 'off_level_factor']
+unchanged columns: ['location_id', 'latitude', 'longitude', 'centre_cf', 'losses_applied', 'best_area_km2', 'viable_cf_threshold', 'area_cf_threshold']

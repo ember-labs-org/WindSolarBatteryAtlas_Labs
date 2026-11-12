@@ -1,0 +1,4 @@
+zoom,pixel_km_at_equator,coincident_sites,fixed_moved_gw,fixed_moved_pct,fixed_max_cell_change_gw,fixed_cells_with_potential,fixed_cells_changed_over_5pct,floating_moved_gw,floating_moved_pct,floating_max_cell_change_gw,floating_cells_with_potential,floating_cells_changed_over_5pct
+2,39.14,0,437.7,2.156,15.211,1014,417,956.92,1.982,34.459,926,404
+3,19.57,1,233.63,1.151,7.491,1006,249,556.09,1.152,18.901,918,251
+4,9.78,0,117.12,0.577,3.423,1004,130,298.47,0.618,17.592,915,151

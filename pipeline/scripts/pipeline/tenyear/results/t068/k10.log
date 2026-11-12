@@ -1,0 +1,20 @@
+on: 4422 rows solved on 2015-2024 (87672 h), clamped 719, 100 s
+off: 1234 rows solved on 2015-2024 (87672 h), clamped 9, 136 s
+      136.13 real       623.50 user         5.69 sys
+          2504687616  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1885997  page reclaims
+                 402  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 517  voluntary context switches
+              168114  involuntary context switches
+         66550998811  instructions retired
+         34197988376  cycles elapsed
+          5330546432  peak memory footprint

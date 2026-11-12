@@ -1,0 +1,20 @@
+summary_w1: identical regions 696 (expected 686); unexpectedly identical 10, unexpectedly changed 0 -> FAIL
+summary_w2: identical regions 695 (expected 686); unexpectedly identical 9, unexpectedly changed 0 -> FAIL
+summary_w3: identical regions 695 (expected 686); unexpectedly identical 9, unexpectedly changed 0 -> FAIL
+summary_w4: identical regions 695 (expected 686); unexpectedly identical 9, unexpectedly changed 0 -> FAIL
+summary_w5: identical regions 695 (expected 686); unexpectedly identical 9, unexpectedly changed 0 -> FAIL
+summary_w6: identical regions 695 (expected 686); unexpectedly identical 9, unexpectedly changed 0 -> FAIL
+summary_w8: identical regions 695 (expected 686); unexpectedly identical 9, unexpectedly changed 0 -> FAIL
+summary_wo1: identical regions 3198 (expected 3198); unexpectedly identical 0, unexpectedly changed 0 -> PASS
+summary_wo2: identical regions 3198 (expected 3198); unexpectedly identical 0, unexpectedly changed 0 -> PASS
+summary_wo3: identical regions 3198 (expected 3198); unexpectedly identical 0, unexpectedly changed 0 -> PASS
+summary_wo4: identical regions 3198 (expected 3198); unexpectedly identical 0, unexpectedly changed 0 -> PASS
+summary_wo5: identical regions 3198 (expected 3198); unexpectedly identical 0, unexpectedly changed 0 -> PASS
+summary_wo6: identical regions 3198 (expected 3198); unexpectedly identical 0, unexpectedly changed 0 -> PASS
+summary_wo8: identical regions 3198 (expected 3198); unexpectedly identical 0, unexpectedly changed 0 -> PASS
+daily solar: identical regions 4465 (expected 4465) -> PASS; null regions 0
+daily wind_on: identical regions 695 (expected 686) -> FAIL; null regions 0
+daily wind_off: identical regions 3198 (expected 3198) -> PASS; null regions 3230
+on: k vs prediction max |diff| 0.0e+00; final_cf vs prediction 0.0e+00; clamped 719 (predicted 719); unclamped final_cf vs target max |diff| 0.0e+00
+off: k vs prediction max |diff| 0.0e+00; final_cf vs prediction 0.0e+00; clamped 10 (predicted 10); unclamped final_cf vs target max |diff| 0.0e+00
+8 FAIL

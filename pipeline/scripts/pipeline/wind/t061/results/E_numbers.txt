@@ -1,0 +1,6 @@
+before on: viable 4385; headline median 0.3796; simulated median 0.3584; clamped 969; room 404.3 TW; factor<1 regions 0
+before off: viable 1277; headline median 0.4093; simulated median 0.4093; clamped 116; room 32.8 TW; factor<1 regions 0
+D-134 on: viable 4380; headline median 0.3283; simulated median 0.3110; clamped 700; room 379.7 TW; factor<1 regions 225
+D-134 off: viable 1235; headline median 0.3123; simulated median 0.3123; clamped 10; room 29.2 TW; factor<1 regions 4465
+D-135 on: viable 4380; headline median 0.3269; simulated median 0.3086; clamped 698; room 379.7 TW; factor<1 regions 359
+D-135 off: viable 1235; headline median 0.3123; simulated median 0.3123; clamped 10; room 29.2 TW; factor<1 regions 4465

@@ -1,0 +1,21 @@
+PASS configs.json: byte-identical (sha256 ea08393b976c)
+PASS daily_cf_2024.parquet: 1,829,268 -> 1,634,190 rows (dropped 195,078); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS sample_timestamps.json: byte-identical (sha256 661cac605746)
+PASS summary_w1.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w2.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w3.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w4.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w5.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w6.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_w8.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo1.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo2.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo3.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo4.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo5.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo6.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS summary_wo8.parquet: 1,044,582 -> 933,185 rows (dropped 111,397); schema same, compression/encodings same, equals old minus excluded: True, writer reproduces old bytes: True, row groups ok: True, excluded ids left: 0
+PASS voronoi_wind_resource.csv: 4,998 -> 4,465 rows (dropped 533); lines equal old minus excluded: True
+PASS no new files in runs/F_new/data: none
+
+ALL PASS

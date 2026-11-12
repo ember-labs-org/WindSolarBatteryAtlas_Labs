@@ -1,0 +1,17 @@
+D-135 rerun vs D-134 data (deployment/data at 7be4997), deployed 4,465
+summary_w1: identical 4333 (expected 4333); unexpectedly changed 0; identical although predicted to change [] -> PASS
+summary_w2: identical 4333 (expected 4333); unexpectedly changed 0; identical although predicted to change [] -> PASS
+summary_w3: identical 4333 (expected 4333); unexpectedly changed 0; identical although predicted to change [] -> PASS
+summary_w4: identical 4333 (expected 4333); unexpectedly changed 0; identical although predicted to change [] -> PASS
+summary_w5: identical 4333 (expected 4333); unexpectedly changed 0; identical although predicted to change [] -> PASS
+summary_w6: identical 4333 (expected 4333); unexpectedly changed 0; identical although predicted to change [] -> PASS
+summary_w8: identical 4333 (expected 4333); unexpectedly changed 0; identical although predicted to change [] -> PASS
+daily solar: identical 4465 (expected 4465) -> PASS
+daily wind_on: identical 4333 (expected 4333) -> PASS
+daily wind_off: identical 4465 (expected 4465) -> PASS
+resource CSV (4,998 rows) columns that differ: {'on_cf_target': 136, 'on_level_factor': 140, 'on_k': 132, 'on_final_cf': 132, 'on_clamped': 2}
+on_level_factor differs exactly in the 140 factor-changed regions: True
+on_cf_target vs predicted (6 dp): max |diff| 0.0 ; differs from D-134 in 136 regions
+on_k vs predicted: max |diff| 0.0 ; on_final_cf vs predicted 0.0 ; clamped 717 (predicted 717 )
+on_k changes only in predicted-changed regions: True 132
+ALL PASS

@@ -1,0 +1,7 @@
+ok   {"location_id":111,"solar_gw":0,"wind_gw":2,"batt_gwh":2,"wind_surface":"on"} expected 0.4029 (2020) got 0.4029 (2020)
+ok   {"location_id":2790,"solar_gw":10,"wind_gw":8,"batt_gwh":36,"wind_surface":"off"} expected 0.9959 (2023) got 0.9959 (2023)
+ok   {"location_id":5000,"solar_gw":1,"wind_gw":0,"batt_gwh":0,"wind_surface":"on"} expected 0.1621 (2022) got 0.1621 (2022)
+ok   {"location_id":1017,"solar_gw":3,"wind_gw":3,"batt_gwh":32,"wind_surface":"both","wind_on_gw":2,"wind_off_gw":1} expected 0.8882 (2024) got 0.8882 (2024)
+ok   {"location_id":2018,"solar_gw":35,"wind_gw":0,"batt_gwh":84,"wind_surface":"on","addon":"large"} expected 1 (2015) got 1 (2015)
+line: "Worst year: …" -> "Worst year (2020): 40.3%"
+PASS worst-year lookup

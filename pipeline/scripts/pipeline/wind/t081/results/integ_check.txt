@@ -1,0 +1,20 @@
+addon_large.parquet: byte-identical
+addon_wind_mix.parquet: 33858 rows changed in 18 regions; outside zone regions: 0
+daily_cf_2024.parquet: 6936 rows changed in 19 regions; outside zone regions: 0
+summary_w0.parquet: byte-identical
+summary_w1.parquet: byte-identical
+summary_w2.parquet: byte-identical
+summary_w3.parquet: byte-identical
+summary_w4.parquet: byte-identical
+summary_w5.parquet: byte-identical
+summary_w6.parquet: byte-identical
+summary_w8.parquet: byte-identical
+summary_wo1.parquet: 3971 rows changed in 19 regions; outside zone regions: 0
+summary_wo2.parquet: 3971 rows changed in 19 regions; outside zone regions: 0
+summary_wo3.parquet: 3971 rows changed in 19 regions; outside zone regions: 0
+summary_wo4.parquet: 3971 rows changed in 19 regions; outside zone regions: 0
+summary_wo5.parquet: 3971 rows changed in 19 regions; outside zone regions: 0
+summary_wo6.parquet: 3971 rows changed in 19 regions; outside zone regions: 0
+summary_wo8.parquet: 3971 rows changed in 19 regions; outside zone regions: 0
+resource: 19 rows changed, columns ['off_site_lat', 'off_site_lon', 'off_viable', 'off_cf_best', 'off_cf_target', 'off_k', 'off_final_cf']
+INTEG CHECK PASS

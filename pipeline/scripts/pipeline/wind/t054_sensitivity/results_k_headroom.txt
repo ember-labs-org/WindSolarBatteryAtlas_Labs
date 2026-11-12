@@ -1,0 +1,8 @@
+check vs shipped: regions currently clamped 548; recomputed (P90 > cap or < floor) 548
+current clamped viable: shortfall of simulated CF vs P90 median 10.6 pp, max 35.5 pp
+A=500 scope i: clamped 880 of 3785 viable (of newly viable 113/344); newly viable whose simulated CF < 20%: 93; median simulated CF newly viable 0.220
+A=500 scope ii: clamped 661 of 3785 viable (of newly viable 113/344); newly viable whose simulated CF < 20%: 93; median simulated CF newly viable 0.220
+A=1000 scope i: clamped 795 of 3725 viable (of newly viable 88/286); newly viable whose simulated CF < 20%: 76; median simulated CF newly viable 0.217
+A=1000 scope ii: clamped 635 of 3725 viable (of newly viable 88/286); newly viable whose simulated CF < 20%: 76; median simulated CF newly viable 0.217
+A=2500 scope i: clamped 661 of 3591 viable (of newly viable 42/166); newly viable whose simulated CF < 20%: 37; median simulated CF newly viable 0.211
+A=2500 scope ii: clamped 585 of 3591 viable (of newly viable 42/166); newly viable whose simulated CF < 20%: 37; median simulated CF newly viable 0.211

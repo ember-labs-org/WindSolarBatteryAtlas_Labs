@@ -1,0 +1,8 @@
+['latitude', 'longitude', 'population_2020']
+Deployed 4,465 regions, before (2a29f90) -> after (T061 Phase D)
+on before: viable 4385; eligible 112.10 M km2; room_gw (>=15% CF, viable) 404.3 TW; headline median 0.380; simulated median 0.358; clamped 969; viable simulating <15% 701
+on after: viable 4380; eligible 103.38 M km2; room_gw (>=15% CF, viable) 379.7 TW; headline median 0.328; simulated median 0.311; clamped 700; viable simulating <15% 850
+off before: viable 1277; eligible 9.45 M km2; room_gw (>=15% CF, viable) 32.8 TW; headline median 0.409; simulated median 0.409; clamped 116; viable simulating <15% 139
+off after: viable 1235; eligible 8.50 M km2; room_gw (>=15% CF, viable) 29.2 TW; headline median 0.312; simulated median 0.312; clamped 10; viable simulating <15% 205
+onshore regions losing all eligible land (deployed): [1817, 2454, 3531, 4095, 4439]
+offshore regions losing all eligible sea (deployed): 42

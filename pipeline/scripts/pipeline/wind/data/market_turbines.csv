@@ -1,0 +1,12 @@
+# Market turbines for onshore new build (T081). One row per country where a national
+# register or report publishes the average rated power, rotor diameter and hub height of
+# recently commissioned turbines. Countries not listed keep the Global Wind Atlas reference
+# turbines (4.2 MW; 117/136/150 m rotor by IEC class; 100 m hub).
+# USA: Wiser et al., Land-Based Wind Market Report: 2024 Edition (LBNL, Aug 2024), turbines
+#      installed in 2023: 3.4 MW, 133.8 m rotor, 103.4 m hub (specific power 242 W/m2).
+# DEU: Deutsche WindGuard, Status des Windenergieausbaus an Land in Deutschland, Jahr 2024
+#      (Jan 2025; data MaStR), Abbildung 3, turbines commissioned in 2023 (4.78 MW, 141 m,
+#      136 m) and 2024 (5.12 MW, 146 m, 143 m); the two years' mean (specific power 306 W/m2).
+iso3,rated_kw,rotor_m,hub_m,years,source
+USA,3400,133.8,103.4,2023,LBNL Land-Based Wind Market Report 2024 Edition
+DEU,4950,143.5,139.5,2023-2024,Deutsche WindGuard Status des Windenergieausbaus an Land Jahr 2024 (MaStR)

@@ -1,0 +1,230 @@
+write targets checked: none under OneDrive (7)
+free disk 62.9 GB (need >= 10.0)
+
+===== profiles =====
+ERA5 speeds: 8784 hours x 4998 points
+Building onshore profiles ...
+    on: 500 sites
+    on: 1000 sites
+    on: 1500 sites
+    on: 2000 sites
+    on: 2500 sites
+    on: 3000 sites
+    on: 3500 sites
+    on: 4000 sites
+  4419 profiles; median final CF 0.311; median k 1.200; clamped 719
+Building offshore profiles ...
+    off: 500 sites
+    off: 1000 sites
+  1270 profiles; median final CF 0.316; median k 0.980; clamped 10
+  wrote wind_profiles_on.parquet  (173 MB)
+  wrote wind_profiles_off.parquet  (65 MB)
+updated voronoi_wind_resource.csv with k / raw_cf / final_cf diagnostics
+       60.09 real        58.37 user         1.21 sys
+           794099712  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              133805  page reclaims
+                2362  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 883  voluntary context switches
+               19804  involuntary context switches
+        320220481351  instructions retired
+        222191845470  cycles elapsed
+           745589568  peak memory footprint
+===== profiles: exit 0, 60 s
+
+===== run3d =====
+Loading profiles ...
+  solar (cached): (4998, 8784) mean CF 0.1467
+  wind onshore: (4998, 8784) mean CF 0.2524
+  wind offshore: (4998, 8784) mean CF 0.0752
+2926 configurations
+  25/2926 configs    0.0 min elapsed,   3.1 min left  (last: s1 onw1 b10 cf 0.398)
+  50/2926 configs    0.1 min elapsed,   3.2 min left  (last: s2 onw1 b22 cf 0.538)
+  75/2926 configs    0.1 min elapsed,   3.2 min left  (last: s3 onw1 b34 cf 0.663)
+  100/2926 configs    0.1 min elapsed,   3.2 min left  (last: s5 onw1 b8 cf 0.760)
+  125/2926 configs    0.1 min elapsed,   3.2 min left  (last: s6 onw1 b20 cf 0.851)
+  150/2926 configs    0.2 min elapsed,   3.2 min left  (last: s7 onw1 b32 cf 0.878)
+  175/2926 configs    0.2 min elapsed,   3.1 min left  (last: s9 onw1 b6 cf 0.772)
+  200/2926 configs    0.2 min elapsed,   3.1 min left  (last: s10 onw1 b18 cf 0.901)
+  225/2926 configs    0.3 min elapsed,   3.0 min left  (last: s0 onw2 b30 cf 0.475)
+  250/2926 configs    0.3 min elapsed,   3.0 min left  (last: s2 onw2 b4 cf 0.648)
+  275/2926 configs    0.3 min elapsed,   3.0 min left  (last: s3 onw2 b16 cf 0.767)
+  300/2926 configs    0.3 min elapsed,   3.0 min left  (last: s4 onw2 b28 cf 0.838)
+  325/2926 configs    0.4 min elapsed,   3.0 min left  (last: s6 onw2 b2 cf 0.722)
+  350/2926 configs    0.4 min elapsed,   2.9 min left  (last: s7 onw2 b14 cf 0.902)
+  375/2926 configs    0.4 min elapsed,   2.9 min left  (last: s8 onw2 b26 cf 0.922)
+  400/2926 configs    0.5 min elapsed,   2.9 min left  (last: s10 onw2 b0 cf 0.683)
+  425/2926 configs    0.5 min elapsed,   2.9 min left  (last: s0 onw3 b12 cf 0.552)
+  450/2926 configs    0.5 min elapsed,   2.8 min left  (last: s1 onw3 b24 cf 0.673)
+  475/2926 configs    0.5 min elapsed,   2.8 min left  (last: s2 onw3 b36 cf 0.764)
+  500/2926 configs    0.6 min elapsed,   2.8 min left  (last: s4 onw3 b10 cf 0.837)
+  525/2926 configs    0.6 min elapsed,   2.8 min left  (last: s5 onw3 b22 cf 0.891)
+  550/2926 configs    0.6 min elapsed,   2.7 min left  (last: s6 onw3 b34 cf 0.917)
+  575/2926 configs    0.7 min elapsed,   2.7 min left  (last: s8 onw3 b8 cf 0.874)
+  600/2926 configs    0.7 min elapsed,   2.7 min left  (last: s9 onw3 b20 cf 0.931)
+  625/2926 configs    0.7 min elapsed,   2.7 min left  (last: s10 onw3 b32 cf 0.938)
+  650/2926 configs    0.8 min elapsed,   2.6 min left  (last: s1 onw4 b6 cf 0.666)
+  675/2926 configs    0.8 min elapsed,   2.6 min left  (last: s2 onw4 b18 cf 0.773)
+  700/2926 configs    0.8 min elapsed,   2.6 min left  (last: s3 onw4 b30 cf 0.840)
+  725/2926 configs    0.8 min elapsed,   2.6 min left  (last: s5 onw4 b4 cf 0.808)
+  750/2926 configs    0.9 min elapsed,   2.5 min left  (last: s6 onw4 b16 cf 0.912)
+  775/2926 configs    0.9 min elapsed,   2.5 min left  (last: s7 onw4 b28 cf 0.930)
+  800/2926 configs    0.9 min elapsed,   2.5 min left  (last: s9 onw4 b2 cf 0.791)
+  825/2926 configs    1.0 min elapsed,   2.5 min left  (last: s10 onw4 b14 cf 0.933)
+  850/2926 configs    1.0 min elapsed,   2.4 min left  (last: s0 onw5 b26 cf 0.673)
+  875/2926 configs    1.0 min elapsed,   2.4 min left  (last: s2 onw5 b0 cf 0.686)
+  900/2926 configs    1.1 min elapsed,   2.4 min left  (last: s3 onw5 b12 cf 0.831)
+  925/2926 configs    1.1 min elapsed,   2.3 min left  (last: s4 onw5 b24 cf 0.883)
+  950/2926 configs    1.1 min elapsed,   2.3 min left  (last: s5 onw5 b36 cf 0.912)
+  975/2926 configs    1.1 min elapsed,   2.3 min left  (last: s7 onw5 b10 cf 0.903)
+  1000/2926 configs    1.2 min elapsed,   2.3 min left  (last: s8 onw5 b22 cf 0.935)
+  1025/2926 configs    1.2 min elapsed,   2.2 min left  (last: s9 onw5 b34 cf 0.941)
+  1050/2926 configs    1.2 min elapsed,   2.2 min left  (last: s0 onw6 b8 cf 0.647)
+  1075/2926 configs    1.3 min elapsed,   2.2 min left  (last: s1 onw6 b20 cf 0.753)
+  1100/2926 configs    1.3 min elapsed,   2.2 min left  (last: s2 onw6 b32 cf 0.820)
+  1125/2926 configs    1.3 min elapsed,   2.1 min left  (last: s4 onw6 b6 cf 0.842)
+  1150/2926 configs    1.4 min elapsed,   2.1 min left  (last: s5 onw6 b18 cf 0.907)
+  1175/2926 configs    1.4 min elapsed,   2.1 min left  (last: s6 onw6 b30 cf 0.927)
+  1200/2926 configs    1.4 min elapsed,   2.0 min left  (last: s8 onw6 b4 cf 0.846)
+  1225/2926 configs    1.5 min elapsed,   2.0 min left  (last: s9 onw6 b16 cf 0.936)
+  1250/2926 configs    1.5 min elapsed,   2.0 min left  (last: s10 onw6 b28 cf 0.943)
+  1275/2926 configs    1.5 min elapsed,   2.0 min left  (last: s1 onw8 b2 cf 0.702)
+  1300/2926 configs    1.5 min elapsed,   1.9 min left  (last: s2 onw8 b14 cf 0.817)
+  1325/2926 configs    1.6 min elapsed,   1.9 min left  (last: s3 onw8 b26 cf 0.870)
+  1350/2926 configs    1.6 min elapsed,   1.9 min left  (last: s5 onw8 b0 cf 0.768)
+  1375/2926 configs    1.6 min elapsed,   1.8 min left  (last: s6 onw8 b12 cf 0.916)
+  1400/2926 configs    1.7 min elapsed,   1.8 min left  (last: s7 onw8 b24 cf 0.935)
+  1425/2926 configs    1.7 min elapsed,   1.8 min left  (last: s8 onw8 b36 cf 0.941)
+  1450/2926 configs    1.7 min elapsed,   1.8 min left  (last: s10 onw8 b10 cf 0.923)
+  1475/2926 configs    1.8 min elapsed,   1.7 min left  (last: s0 offw1 b22 cf 0.075)
+  1500/2926 configs    1.8 min elapsed,   1.7 min left  (last: s1 offw1 b34 cf 0.222)
+  1525/2926 configs    1.8 min elapsed,   1.7 min left  (last: s3 offw1 b8 cf 0.496)
+  1550/2926 configs    1.8 min elapsed,   1.6 min left  (last: s4 offw1 b20 cf 0.622)
+  1575/2926 configs    1.9 min elapsed,   1.6 min left  (last: s5 offw1 b32 cf 0.723)
+  1600/2926 configs    1.9 min elapsed,   1.6 min left  (last: s7 offw1 b6 cf 0.640)
+  1625/2926 configs    1.9 min elapsed,   1.5 min left  (last: s8 offw1 b18 cf 0.835)
+  1650/2926 configs    2.0 min elapsed,   1.5 min left  (last: s9 offw1 b30 cf 0.857)
+  1675/2926 configs    2.0 min elapsed,   1.5 min left  (last: s0 offw2 b4 cf 0.128)
+  1700/2926 configs    2.0 min elapsed,   1.4 min left  (last: s1 offw2 b16 cf 0.276)
+  1725/2926 configs    2.0 min elapsed,   1.4 min left  (last: s2 offw2 b28 cf 0.415)
+  1750/2926 configs    2.1 min elapsed,   1.4 min left  (last: s4 offw2 b2 cf 0.500)
+  1775/2926 configs    2.1 min elapsed,   1.4 min left  (last: s5 offw2 b14 cf 0.732)
+  1800/2926 configs    2.1 min elapsed,   1.3 min left  (last: s6 offw2 b26 cf 0.801)
+  1825/2926 configs    2.1 min elapsed,   1.3 min left  (last: s8 offw2 b0 cf 0.493)
+  1850/2926 configs    2.2 min elapsed,   1.3 min left  (last: s9 offw2 b12 cf 0.822)
+  1875/2926 configs    2.2 min elapsed,   1.2 min left  (last: s10 offw2 b24 cf 0.875)
+  1900/2926 configs    2.2 min elapsed,   1.2 min left  (last: s0 offw3 b36 cf 0.173)
+  1925/2926 configs    2.3 min elapsed,   1.2 min left  (last: s2 offw3 b10 cf 0.422)
+  1950/2926 configs    2.3 min elapsed,   1.1 min left  (last: s3 offw3 b22 cf 0.549)
+  1975/2926 configs    2.3 min elapsed,   1.1 min left  (last: s4 offw3 b34 cf 0.662)
+  2000/2926 configs    2.4 min elapsed,   1.1 min left  (last: s6 offw3 b8 cf 0.696)
+  2025/2926 configs    2.4 min elapsed,   1.1 min left  (last: s7 offw3 b20 cf 0.833)
+  2050/2926 configs    2.4 min elapsed,   1.0 min left  (last: s8 offw3 b32 cf 0.859)
+  2075/2926 configs    2.4 min elapsed,   1.0 min left  (last: s10 offw3 b6 cf 0.694)
+  2100/2926 configs    2.5 min elapsed,   1.0 min left  (last: s0 offw4 b18 cf 0.180)
+  2125/2926 configs    2.5 min elapsed,   0.9 min left  (last: s1 offw4 b30 cf 0.317)
+  2150/2926 configs    2.5 min elapsed,   0.9 min left  (last: s3 offw4 b4 cf 0.518)
+  2175/2926 configs    2.6 min elapsed,   0.9 min left  (last: s4 offw4 b16 cf 0.660)
+  2200/2926 configs    2.6 min elapsed,   0.9 min left  (last: s5 offw4 b28 cf 0.752)
+  2225/2926 configs    2.6 min elapsed,   0.8 min left  (last: s7 offw4 b2 cf 0.564)
+  2250/2926 configs    2.7 min elapsed,   0.8 min left  (last: s8 offw4 b14 cf 0.842)
+  2275/2926 configs    2.7 min elapsed,   0.8 min left  (last: s9 offw4 b26 cf 0.871)
+  2300/2926 configs    2.7 min elapsed,   0.7 min left  (last: s0 offw5 b0 cf 0.162)
+  2325/2926 configs    2.8 min elapsed,   0.7 min left  (last: s1 offw5 b12 cf 0.314)
+  2350/2926 configs    2.8 min elapsed,   0.7 min left  (last: s2 offw5 b24 cf 0.446)
+  2375/2926 configs    2.8 min elapsed,   0.7 min left  (last: s3 offw5 b36 cf 0.563)
+  2400/2926 configs    2.8 min elapsed,   0.6 min left  (last: s5 offw5 b10 cf 0.707)
+  2425/2926 configs    2.9 min elapsed,   0.6 min left  (last: s6 offw5 b22 cf 0.806)
+  2450/2926 configs    2.9 min elapsed,   0.6 min left  (last: s7 offw5 b34 cf 0.843)
+  2475/2926 configs    2.9 min elapsed,   0.5 min left  (last: s9 offw5 b8 cf 0.743)
+  2500/2926 configs    3.0 min elapsed,   0.5 min left  (last: s10 offw5 b20 cf 0.877)
+  2525/2926 configs    3.0 min elapsed,   0.5 min left  (last: s0 offw6 b32 cf 0.205)
+  2550/2926 configs    3.0 min elapsed,   0.4 min left  (last: s2 offw6 b6 cf 0.436)
+  2575/2926 configs    3.1 min elapsed,   0.4 min left  (last: s3 offw6 b18 cf 0.561)
+  2600/2926 configs    3.1 min elapsed,   0.4 min left  (last: s4 offw6 b30 cf 0.669)
+  2625/2926 configs    3.1 min elapsed,   0.4 min left  (last: s6 offw6 b4 cf 0.614)
+  2650/2926 configs    3.2 min elapsed,   0.3 min left  (last: s7 offw6 b16 cf 0.831)
+  2675/2926 configs    3.2 min elapsed,   0.3 min left  (last: s8 offw6 b28 cf 0.860)
+  2700/2926 configs    3.2 min elapsed,   0.3 min left  (last: s10 offw6 b2 cf 0.592)
+  2725/2926 configs    3.3 min elapsed,   0.2 min left  (last: s0 offw8 b14 cf 0.204)
+  2750/2926 configs    3.3 min elapsed,   0.2 min left  (last: s1 offw8 b26 cf 0.336)
+  2775/2926 configs    3.3 min elapsed,   0.2 min left  (last: s3 offw8 b0 cf 0.451)
+  2800/2926 configs    3.3 min elapsed,   0.2 min left  (last: s4 offw8 b12 cf 0.663)
+  2825/2926 configs    3.4 min elapsed,   0.1 min left  (last: s5 offw8 b24 cf 0.755)
+  2850/2926 configs    3.4 min elapsed,   0.1 min left  (last: s6 offw8 b36 cf 0.814)
+  2875/2926 configs    3.4 min elapsed,   0.1 min left  (last: s8 offw8 b10 cf 0.780)
+  2900/2926 configs    3.5 min elapsed,   0.0 min left  (last: s9 offw8 b22 cf 0.870)
+  2925/2926 configs    3.5 min elapsed,   0.0 min left  (last: s10 offw8 b34 cf 0.883)
+  2926/2926 configs    3.5 min elapsed,   0.0 min left  (last: s10 offw8 b36 cf 0.884)
+Assembling summary files ...
+  summary_w1.parquet: 1044582 rows, 3.1 MB
+  summary_w2.parquet: 1044582 rows, 3.7 MB
+  summary_w3.parquet: 1044582 rows, 3.8 MB
+  summary_w4.parquet: 1044582 rows, 3.8 MB
+  summary_w5.parquet: 1044582 rows, 3.8 MB
+  summary_w6.parquet: 1044582 rows, 3.8 MB
+  summary_w8.parquet: 1044582 rows, 3.8 MB
+  summary_wo1.parquet: 1044582 rows, 2.8 MB
+  summary_wo2.parquet: 1044582 rows, 3.1 MB
+  summary_wo3.parquet: 1044582 rows, 3.2 MB
+  summary_wo4.parquet: 1044582 rows, 3.2 MB
+  summary_wo5.parquet: 1044582 rows, 3.2 MB
+  summary_wo6.parquet: 1044582 rows, 3.2 MB
+  summary_wo8.parquet: 1044582 rows, 3.3 MB
+  configs.json: 3216 configurations
+  sample_timestamps.json written
+done in 3.5 min; 2926 configurations simulated
+      214.54 real      1388.39 user         8.90 sys
+          1869168640  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              316735  page reclaims
+                4512  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1343  voluntary context switches
+             2241821  involuntary context switches
+      10306508031128  instructions retired
+       4243185056574  cycles elapsed
+          1574588992  peak memory footprint
+===== run3d: exit 0, 215 s
+
+===== daily =====
+solar: 4998 regions, annual mean CF 0.1467
+wind_on: 4998 regions, annual mean CF 0.2524
+wind_off: 3728 regions without an offshore site set to null
+wind_off: 4998 regions, annual mean CF 0.0752
+wrote /Users/daanwalter/wind-atlas-T061/runs/D_new/data/daily_cf_2024.parquet: 1829268 rows, 8.6 MB
+       10.01 real         8.94 user         1.35 sys
+          2737913856  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              677073  page reclaims
+                1270  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 746  voluntary context switches
+               18722  involuntary context switches
+         67242969515  instructions retired
+         38106833997  cycles elapsed
+          2856557632  peak memory footprint
+===== daily: exit 0, 10 s
+workspace files changed during the run: none

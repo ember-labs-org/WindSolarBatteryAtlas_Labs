@@ -1,0 +1,3 @@
+lcoe_t90: 283 rows differ; differing field positions -> rows {(9,): 281, (1, 2, 4, 5, 7, 8, 9): 1, (1, 2, 4, 5, 7, 8): 1}; all in the gaining set: True
+lcoe_t80: 282 rows differ; differing field positions -> rows {(9,): 281, (1, 2, 4, 5, 7, 8, 9): 1}; all in the gaining set: True
+lcoe_t80_onshore: 266 rows differ; differing field positions -> rows {(9,): 265, (1, 2, 4, 5, 7, 8, 9): 1}; all in the gaining set: True

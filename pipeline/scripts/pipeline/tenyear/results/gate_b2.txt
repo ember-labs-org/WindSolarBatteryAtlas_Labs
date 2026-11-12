@@ -1,0 +1,5 @@
+(a) 164 battery-0 dense configs: max |ten-year CF - hour-weighted mean of years| = 2.40e-08 (per-year CFs are stored as float32)
+(b) 52 sampled configs x 4998 regions x 10 years: max |kernel year CF - independent| = 3.02e-08
+(c) max |ten-year CF - hour-weighted mean of independent year CFs| = 4.09e-10
+    (plain unweighted mean of the ten years differs by at most 7.18e-05: leap years carry 24 h more)
+GATE B2 PASS

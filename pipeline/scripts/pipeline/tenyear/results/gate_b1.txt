@@ -1,0 +1,19 @@
+summary_w0.parquet: rows 1294850 vs 1294850; bytes identical True; values identical
+summary_w1.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_w2.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_w3.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_w4.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_w5.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_w6.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_w8.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_wo1.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_wo2.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_wo3.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_wo4.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_wo5.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_wo6.parquet: rows 933185 vs 933185; bytes identical True; values identical
+summary_wo8.parquet: rows 933185 vs 933185; bytes identical True; values identical
+addon_wind_mix.parquet: rows 2202651 vs 2202651; bytes identical True; values identical
+addon_large.parquet: rows 685075 vs 685075; bytes identical True; values identical
+GATE B1 PASS
+addon.json: bytes identical

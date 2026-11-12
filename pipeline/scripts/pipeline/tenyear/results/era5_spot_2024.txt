@@ -1,0 +1,1 @@
+spot check: 8 hours of 2024 (0,1,100,2000,4000,6000,8000,8783) fetched at the T064 fetch points equal T061's era5_speed_2024.npz at all 14,994 points: True

@@ -1,0 +1,13 @@
+2015 scalar rows identical 3717/3717, qm rows changed 705/705
+2016 scalar rows identical 3717/3717, qm rows changed 705/705
+2017 scalar rows identical 3717/3717, qm rows changed 705/705
+2018 scalar rows identical 3717/3717, qm rows changed 705/705
+2019 scalar rows identical 3717/3717, qm rows changed 705/705
+2020 scalar rows identical 3717/3717, qm rows changed 705/705
+2021 scalar rows identical 3717/3717, qm rows changed 705/705
+2022 scalar rows identical 3717/3717, qm rows changed 705/705
+2023 scalar rows identical 3717/3717, qm rows changed 705/705
+2024 scalar rows identical 3717/3717, qm rows changed 705/705
+offshore files are T068's: True
+ten-year mean vs diag final_cf: max |err| 7.13e-08
+PROFILE CHECK PASS

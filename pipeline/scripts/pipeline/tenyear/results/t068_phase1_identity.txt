@@ -1,0 +1,46 @@
+# T068 phase 1 code-path identities (on T064 inputs), 2026-11-01 17:20:29
+## solve_k10 --years 2024 vs T064 k
+on k identical 0.0
+off k identical 0.0
+## assemble.py on T064 parts24 vs deployment/data
+identical addon.json
+identical addon_large.parquet
+identical addon_wind_mix.parquet
+identical summary_w0.parquet
+identical summary_w1.parquet
+identical summary_w2.parquet
+identical summary_w3.parquet
+identical summary_w4.parquet
+identical summary_w5.parquet
+identical summary_w6.parquet
+identical summary_w8.parquet
+identical summary_wo1.parquet
+identical summary_wo2.parquet
+identical summary_wo3.parquet
+identical summary_wo4.parquet
+identical summary_wo5.parquet
+identical summary_wo6.parquet
+identical summary_wo8.parquet
+## update_resource68 (2024 diag) vs deployment/data/voronoi_wind_resource.csv
+byte-identical
+## daily_npy on T064 inputs vs deployment/data/daily_cf_2024.parquet
+location_id, date, wind_on, wind_off identical; solar differs by 1e-4 in 33,990 of 1,634,190 cells (uint16 x 1e4 solar input vs full-precision parquet)
+## worst_check.mjs on site-test (data_10y + worst blocks from T064 detail)
+5/5 lookups (dense on, dense off, dense w0, wind_mix, large) equal Python; line fills in place: 'Worst year: …' -> 'Worst year (2020): 40.3%'; PASS
+## k10 preview on T064 inputs (2015-2024)
+on: 4419 rows solved on 2015-2024 (87672 h), clamped 719, 171 s
+off: 1270 rows solved on 2015-2024 (87672 h), clamped 9, 228 s
+
+## T063 proof set on the merge commit 4012f49 (clean export, chromium-1217)
+C1 bad=0
+verify exit=0 :: ARTICLE CHECK PASSED
+headline exit=0 :: PASS the article's slots are headline A, weak wind W1
+regress exit=0 :: INFO regress ran in 464 s on /Users/daanwalter/wind-atlas-T068/merge-proof/deployment; browser /Users/daanwalter/Library/C
+smoke exit=0 :: PASS smoke first map in 4474 ms incl. LCOE switch
+sample exit=0 :: PASS sample-days 90/90 checks (canvas, ?canvas=0, ?worker=0)
+addon exit=0 :: PASS addon 88/88
+addon_faults exit=0 :: PASS addon-faults 12/12
+addon_unit exit=0 :: PASS addon-unit 25/25
+colour exit=0 :: PASS colour-registry 13 modules use only the registry (allow-list: 13 UI-chrome entries)
+legend exit=0 :: PASS legend-probe overall (/Users/daanwalter/wind-atlas-T068/merge-proof/deployment)
+## app on ten-year test site (data_10y + worst blocks): smoke PASS; hover capacity 'Worst year (2024): 73.9%', LCOE 'Worst year (2022): 89.6%', 0 page errors

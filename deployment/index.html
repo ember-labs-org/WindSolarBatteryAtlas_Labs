@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- DNS Prefetch & Preconnect for CDN domains -->
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://d3js.org">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="js/parquet_wasm_bg.wasm" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="data/world.geojson" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="css/style.css" as="style">
+
+    <!-- Flatten the ES-module discovery waterfall: preload the full static +
+         dynamic import graph of app.js so all modules fetch in parallel
+         instead of being discovered one network round-trip at a time. -->
+    <link rel="modulepreload" href="js/app.js">
+    <link rel="modulepreload" href="js/data.js">
+    <link rel="modulepreload" href="js/addon.js">
+    <link rel="modulepreload" href="js/map.js">
+    <link rel="modulepreload" href="js/complementarity.js">
+    <link rel="modulepreload" href="js/utils.js">
+    <link rel="modulepreload" href="js/constants.js">
+    <link rel="modulepreload" href="js/tooltip.js">
+    <link rel="modulepreload" href="js/tour.js">
+    <link rel="modulepreload" href="js/parquet_wasm.js">
+    <link rel="modulepreload" href="js/apache-arrow.js">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar + Wind + Battery Atlas</title>
+
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts: Ember brand typeface Poppins 400 and 600 (css/style.css --font-sans and
+         tailwind font-sans), plus the Material Symbols icon font,
+         subset with icon_names to the ligatures the page uses: index.html, the
+         markup tour.js builds, and expand_more set by the inline collapse
+         script. Names must stay alphabetical. Adding an icon anywhere means
+         adding its name here, or it renders as plain text. -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=auto_stories,chevron_left,chevron_right,close,expand_less,expand_more,explore,info,tour"
+        rel="stylesheet" />
+
+    <!-- Tailwind CSS (pre-built and committed; this repo has no build script). Loaded
+         LAST among stylesheets to match the Play CDN's runtime injection
+         point, preserving cascade ties exactly. -->
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+
+<body
+    class="bg-bg-page text-on-surface font-sans h-full w-full overflow-hidden relative selection:bg-primary selection:text-black">
+
+    <!-- Map Layer (Full Screen) -->
+    <div id="map-shell" class="absolute inset-0 z-0">
+        <div id="map" class="map-pane bg-bg-page"></div>
+        <div id="map-supply" class="map-pane bg-bg-page"></div>
+    </div>
+
+    <!-- Top Bar (Floating) -->
+    <header class="app-header absolute top-4 left-4 right-4 z-40 pointer-events-none">
+        <!-- View Mode Tabs (Center) -->
+        <div data-tour="view-tabs"
+            class="app-header__tabs pointer-events-auto bg-surface border border-white/10 rounded-full shadow-lg p-1 flex gap-1">
+            <button data-mode="capacity"
+                class="view-tab px-4 py-1.5 rounded-full text-sm font-medium transition-colors bg-primary text-black">
+                Capacity Factor Map
+            </button>
+            <button data-mode="complementarity"
+                class="view-tab px-4 py-1.5 rounded-full text-sm font-medium transition-colors text-muted hover:text-white hover:bg-white/5">
+                Complementarity
+            </button>
+            <button data-mode="potential"
+                class="view-tab px-4 py-1.5 rounded-full text-sm font-medium transition-colors text-muted hover:text-white hover:bg-white/5">
+                Potential Map
+            </button>
+            <button data-mode="lcoe"
+                class="view-tab px-4 py-1.5 rounded-full text-sm font-medium transition-colors text-muted hover:text-white hover:bg-white/5">
+                LCOE Map
+            </button>
+            <button data-mode="population"
+                class="view-tab px-4 py-1.5 rounded-full text-sm font-medium transition-colors text-muted hover:text-white hover:bg-white/5">
+                Supply-Demand Matching
+            </button>
+        </div>
+
+        <!-- Right Actions -->
+        <div data-tour="right-actions" class="app-header__actions pointer-events-auto flex gap-2">
+            <button id="tour-start"
+                class="bg-surface border border-white/10 rounded-full h-12 px-4 flex items-center gap-2 shadow-lg text-gray-300 hover:text-white hover:bg-surface-variant transition-colors"
+                title="Take a guided tour">
+                <span class="material-symbols-outlined text-[20px]">tour</span>
+                <span class="app-header__label text-sm font-medium hidden sm:inline">Take a Tour</span>
+            </button>
+            <button id="info-toggle"
+                class="bg-surface border border-white/10 rounded-full h-12 px-4 flex items-center gap-2 shadow-lg text-gray-300 hover:text-white hover:bg-surface-variant transition-colors"
+                title="Info">
+                <span class="material-symbols-outlined text-[20px]">info</span>
+                <span class="app-header__label text-sm font-medium hidden sm:inline">Info</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Floating Panel (Left) -->
+    <div class="app-below-header app-left-column absolute top-20 left-4 z-30 w-80 flex flex-col gap-3 pointer-events-none">
+
+        <!-- Primary Controls Card -->
+        <div id="primary-controls"
+            class="pointer-events-auto bg-surface border border-white/10 rounded-2xl shadow-xl p-5 space-y-5 transition-all duration-300 max-h-[85vh] overflow-y-auto">
+            <!-- Header -->
+            <div class="flex items-center justify-between">
+                <h2 class="text-sm font-medium text-gray-400 uppercase tracking-wider">System Config</h2>
+                <button id="collapse-controls" class="text-gray-500 hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-[20px]">expand_less</span>
+                </button>
+            </div>
+
+            <div id="controls-content" class="space-y-5">
+                <!-- Solar Slider -->
+                <div class="space-y-3">
+                    <div class="flex justify-between items-end">
+                        <label class="text-sm text-gray-300 font-medium">Solar Capacity<br><span
+                                class="text-[10px] text-gray-500 font-normal">MW per MW baseload</span></label>
+                        <span class="text-2xl font-light text-amber-400"><span id="solar-val">5</span><span
+                                class="text-sm text-gray-500 ml-1">MW_DC</span></span>
+                    </div>
+                    <input type="range" id="solar-slider" min="1" max="20" step="1" value="5"
+                        class="slider-solar w-full">
+                </div>
+
+
+                <!-- Wind Sliders: onshore and offshore, one at a time (windSettingFor in app.js) -->
+                <div class="space-y-3">
+                    <div class="flex justify-between items-end">
+                        <label class="text-sm text-gray-300 font-medium">Onshore Wind<br><span
+                                class="text-[10px] text-gray-500 font-normal">MW per MW baseload</span></label>
+                        <span class="text-2xl font-light text-wind"><span id="wind-val">0</span><span
+                                class="text-sm text-gray-500 ml-1">MW</span></span>
+                    </div>
+                    <input type="range" id="wind-slider" min="0" max="0" step="1" value="0"
+                        class="slider-wind w-full">
+                    <div class="flex justify-between items-end">
+                        <label class="text-sm text-gray-300 font-medium">Offshore Wind<br><span
+                                class="text-[10px] text-gray-500 font-normal">MW per MW baseload</span></label>
+                        <span class="text-2xl font-light text-wind-off"><span id="offwind-val">0</span><span
+                                class="text-sm text-gray-500 ml-1">MW</span></span>
+                    </div>
+                    <input type="range" id="offwind-slider" min="0" max="0" step="1" value="0"
+                        class="slider-wind w-full">
+                    <p id="wind-note" class="text-[10px] text-gray-500 leading-snug"></p>
+                </div>
+                <!-- Battery Slider -->
+                <div class="space-y-3">
+                    <div class="flex justify-between items-end">
+                        <label class="text-sm text-gray-300 font-medium">Battery Storage<br><span
+                                class="text-[10px] text-gray-500 font-normal">MWh per MW baseload</span></label>
+                        <span class="text-2xl font-light text-battery"><span id="batt-val">8</span><span
+                                class="text-sm text-gray-500 ml-1">MWh</span></span>
+                    </div>
+                    <input type="range" id="batt-slider" min="0" max="36" step="2" value="8"
+                        class="slider-battery w-full">
+                </div>
+
+                <!-- Quick Stats (Mini) -->
+                <div data-tour="cf-stats" class="pt-4 border-t border-white/10 grid grid-cols-2 gap-4">
+                    <div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-wide">Avg CF</div>
+                        <div class="text-lg font-medium text-white" id="stat-avg-cf">--%</div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-wide">Best CF</div>
+                        <div class="text-lg font-medium text-primary" id="stat-max-cf">--%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LCOE Controls (Only visible in LCOE mode) -->
+        <div id="lcoe-controls"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-2xl shadow-xl p-5 space-y-5 max-h-[85vh] overflow-y-auto">
+            <div class="flex items-center justify-between">
+                <h2 class="text-sm font-medium text-gray-400 uppercase tracking-wider">LCOE Parameters</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Target Mode Toggle -->
+                <div class="space-y-2">
+                    <label class="text-xs text-gray-400 uppercase">Target Mode</label>
+                    <div id="lcoe-target-mode-toggle" class="toggle-group toggle-group-grid">
+                        <button data-target-mode="utilization"
+                            class="toggle-btn is-active">
+                            Utilisation
+                        </button>
+                        <button data-target-mode="lcoe"
+                            class="toggle-btn">
+                            LCOE
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Target CF Slider (visible in Utilisation mode) -->
+                <div id="target-cf-container" class="space-y-2">
+                    <label class="text-xs text-gray-400 uppercase">Target Capacity Factor</label>
+                    <div class="flex items-center gap-3">
+                        <input type="range" id="target-cf-slider" min="50" max="100" step="1" value="90"
+                            class="flex-1">
+                        <span class="text-sm font-mono text-primary w-12 text-right"><span
+                                id="target-cf-val">90</span>%</span>
+                    </div>
+                </div>
+                <!-- Add-on builds beyond the sliders (T058): shown only when data/addon.json is in use -->
+
+                <!-- Technology filter (T074): the cost search uses only builds whose switched-off technologies are zero -->
+                <div class="space-y-2">
+                    <label class="text-xs text-gray-400 uppercase">Technologies</label>
+                    <div id="lcoe-tech-toggle" class="lcoe-tech-toggle toggle-group toggle-group-grid" role="group" aria-label="Technologies in the cost search">
+                        <button type="button" data-lcoe-tech="solar" class="toggle-btn toggle-btn-sm is-active" aria-pressed="true">Solar</button>
+                        <button type="button" data-lcoe-tech="battery" class="toggle-btn toggle-btn-sm is-active" aria-pressed="true">Battery</button>
+                        <button type="button" data-lcoe-tech="onshore" class="toggle-btn toggle-btn-sm is-active" aria-pressed="true">Onshore</button>
+                        <button type="button" data-lcoe-tech="offshore" class="toggle-btn toggle-btn-sm is-active" aria-pressed="true">Offshore</button>
+                    </div>
+                </div>
+
+                <!-- Wind surface: each region takes onshore or offshore, whichever is cheaper -->
+                <div class="space-y-1">
+                    <label class="flex items-center justify-between gap-3 cursor-pointer">
+                        <span class="text-xs text-gray-400 uppercase">Include offshore wind</span>
+                        <input id="include-offshore-toggle" type="checkbox" class="check-ember" checked>
+                    </label>
+                </div>
+
+                <!-- Target LCOE Input (visible in LCOE mode) -->
+                <div id="target-lcoe-container" class="hidden space-y-2">
+                    <label class="text-xs text-gray-400 uppercase">Target LCOE ($/MWh)</label>
+                    <input type="number" id="target-lcoe-input" value="90" step="5" min="0"
+                        class="num-input">
+                </div>
+
+                <!-- Section: Solar, Wind & Battery Cost -->
+                <div class="rounded-lg border border-white/10 bg-surface-variant/60 px-3 py-3 space-y-3">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="assump-title text-[11px] font-medium text-gray-300 uppercase tracking-wide">Technology costs</span>
+                        <div id="capex-source-toggle" class="toggle-group">
+                            <button data-mode="global"
+                                class="toggle-btn toggle-btn-sm is-active">Global</button>
+                            <button data-mode="local"
+                                class="toggle-btn toggle-btn-sm">Local</button>
+                        </div>
+                    </div>
+                    <div id="capex-global-inputs" class="assump-fold">
+                        <button type="button" class="assump-toggle" aria-expanded="false" aria-controls="capex-assumptions">
+                            <span class="assump-toggle__label">Edit assumptions</span>
+                            <span class="material-symbols-outlined assump-toggle__chev" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div id="capex-assumptions" class="assump-body" hidden>
+                            <div class="assump-group" role="group" aria-labelledby="capex-assumptions-solar">
+                                <div class="assump-group__title" id="capex-assumptions-solar"><span class="assump-dot" style="--dot: var(--solar)"></span>Solar</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Capex</span>
+                                        <span class="num-field"><input id="solar-capex" type="number" value="720" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                    </label>
+                                    <label class="assump-field" title="Share of capex per year">
+                                        <span class="assump-field__label">O&amp;M</span>
+                                        <span class="num-field"><input id="solar-opex" type="number" value="1.5" step="0.1" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Life</span>
+                                        <span class="num-field"><input id="solar-life" type="number" value="30" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Degradation</span>
+                                        <span class="num-field"><input id="solar-degradation" type="number" value="0.5" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">ILR (DC/AC)</span>
+                                        <span class="num-field"><input id="ilr" type="number" value="1.3" step="0.05" min="0.5" class="num-input"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="assump-group" role="group" aria-labelledby="capex-assumptions-battery">
+                                <div class="assump-group__title" id="capex-assumptions-battery"><span class="assump-dot" style="--dot: var(--battery)"></span>Battery</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Capex</span>
+                                        <span class="num-field"><input id="battery-capex" type="number" value="120" class="num-input"><span class="num-field__unit">$/kWh</span></span>
+                                    </label>
+                                    <label class="assump-field" title="Share of capex per year">
+                                        <span class="assump-field__label">O&amp;M</span>
+                                        <span class="num-field"><input id="battery-opex" type="number" value="2.0" step="0.1" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Life</span>
+                                        <span class="num-field"><input id="battery-life" type="number" value="20" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="assump-group" role="group" aria-labelledby="capex-assumptions-onshore-wind">
+                                <div class="assump-group__title" id="capex-assumptions-onshore-wind"><span class="assump-dot" style="--dot: var(--wind)"></span>Onshore wind</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Capex</span>
+                                        <span class="num-field"><input id="wind-capex" type="number" value="1085" step="1" min="0" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                    </label>
+                                    <label class="assump-field" title="Share of capex per year">
+                                        <span class="assump-field__label">O&amp;M</span>
+                                        <span class="num-field"><input id="wind-opex" type="number" value="2.5" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Life</span>
+                                        <span class="num-field"><input id="wind-life" type="number" value="30" step="1" min="1" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Degradation</span>
+                                        <span class="num-field"><input id="wind-degradation" type="number" value="0.2" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="assump-group" role="group" aria-labelledby="capex-assumptions-offshore-wind">
+                                <div class="assump-group__title" id="capex-assumptions-offshore-wind"><span class="assump-dot" style="--dot: var(--wind-off)"></span>Offshore wind</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Capex</span>
+                                        <span class="num-field"><input id="offwind-capex" type="number" value="2931" step="1" min="0" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                    </label>
+                                    <label class="assump-field" title="Share of capex per year">
+                                        <span class="assump-field__label">O&amp;M</span>
+                                        <span class="num-field"><input id="offwind-opex" type="number" value="3.5" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Life</span>
+                                        <span class="num-field"><input id="offwind-life" type="number" value="30" step="1" min="1" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Degradation</span>
+                                        <span class="num-field"><input id="offwind-degradation" type="number" value="0.2" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Section: WACC -->
+                <div class="rounded-lg border border-white/10 bg-surface-variant/60 px-3 py-3 space-y-3">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="assump-title text-[11px] font-medium text-gray-300 uppercase tracking-wide">Cost of capital</span>
+                        <div id="wacc-source-toggle" class="toggle-group">
+                            <button data-mode="global"
+                                class="toggle-btn toggle-btn-sm is-active">Global</button>
+                            <button data-mode="local"
+                                class="toggle-btn toggle-btn-sm">Local</button>
+                        </div>
+                    </div>
+                    <div id="wacc-global-inputs" class="assump-fold">
+                        <button type="button" class="assump-toggle" aria-expanded="false" aria-controls="wacc-assumptions">
+                            <span class="assump-toggle__label">Edit assumptions</span>
+                            <span class="material-symbols-outlined assump-toggle__chev" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div id="wacc-assumptions" class="assump-body" hidden>
+                            <div class="assump-group" role="group" aria-label="Cost of capital">
+                                <div class="assump-grid">
+                                    <label class="assump-field assump-field--full">
+                                        <span class="assump-field__label">WACC</span>
+                                        <span class="num-field"><input id="wacc" type="number" value="7.0" step="0.1" class="num-input"><span class="num-field__unit">%</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="assump-group" role="group" aria-labelledby="wacc-assumptions-wind-premium">
+                                <div class="assump-group__title" id="wacc-assumptions-wind-premium">Wind premium</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Onshore</span>
+                                        <span class="num-field"><input id="wind-wacc-premium" type="number" value="0" step="0.01" class="num-input"><span class="num-field__unit">pts</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Offshore</span>
+                                        <span class="num-field"><input id="offwind-wacc-premium" type="number" value="0.92" step="0.01" class="num-input"><span class="num-field__unit">pts</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section: Firm Backup (least-cost diesel vs OCGT gas) -->
+                <div data-tour="diesel-section" class="rounded-lg border border-white/10 bg-surface-variant/60 px-3 py-3 space-y-3">
+                    <label class="flex items-center justify-between gap-3 cursor-pointer">
+                        <span class="text-[11px] font-medium text-gray-300 uppercase tracking-wide">Firm Backup</span>
+                        <input id="diesel-backup-toggle" type="checkbox" class="check-ember">
+                    </label>
+                    <div id="diesel-backup-mode-group" class="hidden pt-1 border-t border-white/5">
+                        <div class="text-[10px] text-gray-300 leading-snug"><span class="font-semibold text-gray-200">Min. renewable share:</span> target CF from solar, wind and batteries</div>
+                    </div>
+                    <div id="diesel-source-wrapper" class="hidden space-y-3 pt-1 border-t border-white/5">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="assump-title text-[10px] text-gray-500 uppercase">Diesel</span>
+                            <div id="diesel-source-toggle" class="toggle-group">
+                                <button data-mode="global"
+                                    class="toggle-btn toggle-btn-sm is-active">Global</button>
+                                <button data-mode="local"
+                                    class="toggle-btn toggle-btn-sm">Local</button>
+                            </div>
+                        </div>
+                        <div id="diesel-global-inputs" class="assump-fold">
+                            <button type="button" class="assump-toggle" aria-expanded="false" aria-controls="diesel-assumptions">
+                                <span class="assump-toggle__label">Edit assumptions</span>
+                                <span class="material-symbols-outlined assump-toggle__chev" aria-hidden="true">expand_more</span>
+                            </button>
+                            <div id="diesel-assumptions" class="assump-body" hidden>
+                                <div class="assump-group" role="group" aria-label="Diesel">
+                                    <div class="assump-grid">
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Fuel price</span>
+                                            <span class="num-field"><input id="diesel-price" type="number" value="1.20" step="0.05" min="0" class="num-input"><span class="num-field__unit">$/litre</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Capex</span>
+                                            <span class="num-field"><input id="diesel-capex" type="number" value="300" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Efficiency</span>
+                                            <span class="num-field"><input id="diesel-efficiency" type="number" value="35" step="0.1" min="1" max="100" class="num-input"><span class="num-field__unit">%</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Life</span>
+                                            <span class="num-field"><input id="diesel-life" type="number" value="20" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="gas-source-wrapper" class="hidden space-y-3 pt-1 border-t border-white/5">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="assump-title text-[10px] text-gray-500 uppercase">Gas (OCGT)</span>
+                            <div id="gas-source-toggle" class="toggle-group">
+                                <button data-mode="global"
+                                    class="toggle-btn toggle-btn-sm">Global</button>
+                                <button data-mode="local"
+                                    class="toggle-btn toggle-btn-sm is-active">Local</button>
+                            </div>
+                        </div>
+                        <div id="gas-global-inputs" class="assump-fold">
+                            <button type="button" class="assump-toggle" aria-expanded="false" aria-controls="gas-assumptions">
+                                <span class="assump-toggle__label">Edit assumptions</span>
+                                <span class="material-symbols-outlined assump-toggle__chev" aria-hidden="true">expand_more</span>
+                            </button>
+                            <div id="gas-assumptions" class="assump-body" hidden>
+                                <div class="assump-group" role="group" aria-label="Gas (OCGT)">
+                                    <div class="assump-grid">
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Fuel price</span>
+                                            <span class="num-field"><input id="gas-price" type="number" value="4.88" step="0.1" min="0" class="num-input"><span class="num-field__unit">$/MMBtu</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Capex</span>
+                                            <span class="num-field"><input id="gas-capex" type="number" value="800" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Efficiency</span>
+                                            <span class="num-field"><input id="gas-efficiency" type="number" value="35" step="0.1" min="1" max="100" class="num-input"><span class="num-field__unit">%</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Life</span>
+                                            <span class="num-field"><input id="gas-life" type="number" value="25" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Potential Controls (Only visible in Potential mode) -->
+        <div id="potential-controls"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-2xl shadow-xl p-5 space-y-5 max-h-[85vh] overflow-y-auto">
+            <div class="flex items-center justify-between">
+                <h2 class="text-sm font-medium text-gray-400 uppercase tracking-wider">Technology</h2>
+            </div>
+            <div id="potential-tech-toggle" class="toggle-group toggle-group-grid">
+                <button data-tech="solar"
+                    class="toggle-btn is-active">Solar</button>
+                <button data-tech="onshore"
+                    class="toggle-btn">Onshore</button>
+                <button data-tech="offshore"
+                    class="toggle-btn">Offshore</button>
+                <button data-tech="all"
+                    class="toggle-btn">All</button>
+            </div>
+            <div id="potential-definition-row" class="hidden space-y-2">
+                <div class="text-[10px] text-gray-400 uppercase tracking-wider">Definition</div>
+                <div id="potential-definition-toggle" class="toggle-group toggle-group-grid">
+                    <button data-definition="cons"
+                        class="toggle-btn">Conservative</button>
+                    <button data-definition="tech"
+                        class="toggle-btn is-active">Technical</button>
+                </div>
+                <div id="potential-definition-note" class="text-[10px] text-gray-500 leading-snug"></div>
+                <div id="potential-solar-definition" class="hidden space-y-2">
+                    <div id="potential-solar-definition-note" class="text-[10px] text-gray-500 leading-snug"></div>
+                </div>
+            </div>
+            <div id="potential-offshore-row" class="hidden space-y-2">
+                <div class="text-[10px] text-gray-400 uppercase tracking-wider">Offshore wind layer</div>
+                <div id="potential-offshore-toggle" class="toggle-group toggle-group-grid">
+                    <button data-offshore="fixed"
+                        class="toggle-btn is-active">Fixed-bottom</button>
+                    <button data-offshore="floating"
+                        class="toggle-btn">Floating (not costed)</button>
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-2">
+                <h2 class="text-sm font-medium text-gray-400 uppercase tracking-wider">Siting Constraints</h2>
+            </div>
+            <div id="potential-level-toggle" class="toggle-group toggle-group-grid">
+                <button data-level="level1"
+                    class="toggle-btn is-active">Technical</button>
+                <button data-level="level2"
+                    class="toggle-btn">Policy</button>
+            </div>
+            <div class="text-[10px] text-gray-500 leading-snug space-y-1">
+                <div id="potential-level-wind-note" class="hidden text-gray-400"></div>
+                <div id="potential-level-solar-note"></div>
+            </div>
+            <div class="flex items-center justify-between pt-2">
+                <h2 class="text-sm font-medium text-gray-400 uppercase tracking-wider">Display</h2>
+            </div>
+            <div id="potential-display-toggle" class="toggle-group toggle-group-grid">
+                <button data-display="total"
+                    class="toggle-btn">Total</button>
+                <button data-display="multiple"
+                    class="toggle-btn is-active">× Demand</button>
+                <button data-display="per_capita"
+                    class="toggle-btn">Per capita</button>
+            </div>
+            <div class="text-[10px] text-gray-500 leading-snug space-y-2">
+            </div>
+        </div>
+
+        <!-- Complementarity controls (only visible in the 'complementarity' mode; complementarity.js) -->
+        <div id="comp-controls"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-2xl shadow-xl p-4 space-y-3">
+            <div class="text-xs font-medium text-gray-400 uppercase tracking-wider">Solar and wind, 2015–2024</div>
+            <div id="comp-view-toggle" class="toggle-group toggle-group-grid">
+                <button type="button" data-comp-view="droughts" class="toggle-btn is-active">Droughts</button>
+                <button type="button" data-comp-view="score" class="toggle-btn">Complementarity</button>
+            </div>
+            <div id="comp-drought-rows" class="space-y-2">
+                <div class="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Source</div>
+                <div id="comp-source-toggle" class="toggle-group toggle-group-grid">
+                    <button type="button" data-comp-source="solar" class="toggle-btn toggle-btn-sm is-active">Solar</button>
+                    <button type="button" data-comp-source="wind" class="toggle-btn toggle-btn-sm">Wind</button>
+                    <button type="button" data-comp-source="both" class="toggle-btn toggle-btn-sm">Both</button>
+                </div>
+                <div class="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Drought length</div>
+                <div id="comp-period-toggle" class="toggle-group toggle-group-grid">
+                    <button type="button" data-comp-period="wk" class="toggle-btn toggle-btn-sm is-active">Week</button>
+                    <button type="button" data-comp-period="mo" class="toggle-btn toggle-btn-sm">Month</button>
+                </div>
+            </div>
+            <div id="comp-level-row" class="hidden space-y-2">
+                <div class="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Scale</div>
+                <div id="comp-level-toggle" class="toggle-group toggle-group-grid">
+                    <button type="button" data-comp-level="day" class="toggle-btn toggle-btn-sm is-active">Day</button>
+                    <button type="button" data-comp-level="week" class="toggle-btn toggle-btn-sm">Week</button>
+                    <button type="button" data-comp-level="month" class="toggle-btn toggle-btn-sm">Month</button>
+                </div>
+            </div>
+            <div id="comp-status" role="status" class="hidden text-xs leading-snug text-gray-400"></div>
+            <p id="comp-note-droughts" class="text-[11px] leading-snug text-gray-400">A drought is a week (or month) in which the source makes less than half its ten-year average. Compare Solar or Wind with Both: where the two rarely fail together, the Both map is nearly empty. Mixing them cuts how often a drought happens far more than how deep the worst one gets, so storage or backup is still needed.</p>
+            <p id="comp-note-score" class="hidden text-[11px] leading-snug text-gray-400">The correlation of solar and wind output, 2015–2024. Near −1, one source tends to be high when the other is low: they are complementary. Near +1, they rise and fall together.</p>
+        </div>
+
+        <!-- Population Controls (Only visible in Population mode) -->
+        <div id="population-controls"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-2xl shadow-xl p-5 max-h-[80vh] overflow-y-auto panel-collapsible">
+            <div class="panel-header flex items-center justify-between mb-2">
+                <h2 class="panel-title text-sm font-medium text-gray-400 uppercase tracking-wider">Demand</h2>
+                <button id="population-controls-toggle"
+                    class="panel-collapse-btn text-gray-500 hover:text-white transition-colors"
+                    title="Collapse panel" aria-expanded="true">
+                    <span class="material-symbols-outlined text-[20px]">chevron_left</span>
+                </button>
+            </div>
+
+            <div id="population-controls-body" class="panel-body space-y-4">
+                <!-- Population specific controls here - simplified for now -->
+                <div class="space-y-3">
+                    <label class="text-xs font-medium text-gray-400 uppercase tracking-wider">Demand Layer</label>
+                <div id="population-base-toggle" class="toggle-group toggle-group-col">
+                    <button data-base="population"
+                        class="toggle-btn is-active text-center">Population</button>
+                    <button data-base="electricity"
+                        class="toggle-btn text-center">Electricity
+                        Demand</button>
+                    <button data-base="uptime"
+                        class="toggle-btn text-center">Grid
+                        Reliability</button>
+                    <button data-base="access"
+                        class="toggle-btn text-center">Electricity
+                        Access</button>
+                    <button data-base="plants"
+                        class="toggle-btn text-center">Capacity
+                        to Displace</button>
+                </div>
+                <p id="population-demand-description" class="hidden text-xs text-slate-400 mt-2 italic px-1">
+
+                </p>
+                <div id="reliability-threshold-control" class="hidden space-y-2 pt-3 border-t border-white/10">
+                    <label class="text-xs font-medium text-gray-400 uppercase tracking-wider">Uptime Threshold</label>
+                    <div class="flex justify-between items-end">
+                        <label class="text-xs text-gray-300">People below</label>
+                        <span class="text-lg font-light text-primary"><span id="reliability-threshold-val">90</span><span
+                                class="text-xs text-gray-500 ml-1">%</span></span>
+                    </div>
+                    <input type="range" id="reliability-threshold-slider" min="0" max="100" step="5" value="90"
+                        class="w-full">
+                    <div class="text-[10px] text-gray-500">Counts people in bins with uptime &lt; X% (includes no access).</div>
+                </div>
+                </div>
+
+                <!-- Plant Status Toggle (visible when baseLayer === 'plants') -->
+                <div id="plant-status-toggle" class="hidden space-y-3">
+                    <label class="text-xs font-medium text-gray-400 uppercase tracking-wider">Plant Status</label>
+                    <div id="plant-status-buttons" class="toggle-group toggle-group-grid">
+                        <button data-status="announced"
+                            class="toggle-btn is-active">Announced</button>
+                        <button data-status="existing"
+                            class="toggle-btn">Existing</button>
+                    </div>
+                </div>
+
+                <!-- Fuel Type Filter (visible when baseLayer === 'plants'). The chips are the
+                     colour legend too: each dot is the registry colour the map draws (T075). -->
+                <div id="plant-fuel-filter" class="hidden space-y-2">
+                    <label class="text-xs font-medium text-gray-400 uppercase tracking-wider">Fuel Types</label>
+                    <div class="flex flex-wrap gap-2">
+                        <button data-fuel="coal" class="fuel-chip" aria-pressed="true"><span class="fuel-dot"></span>Coal</button>
+                        <button data-fuel="oil_gas" class="fuel-chip" aria-pressed="true"><span class="fuel-dot"></span>Oil and gas</button>
+                        <button data-fuel="bioenergy" class="fuel-chip" aria-pressed="true"><span class="fuel-dot"></span>Bioenergy</button>
+                        <button data-fuel="nuclear" class="fuel-chip" aria-pressed="true"><span class="fuel-dot"></span>Nuclear</button>
+                    </div>
+                </div>
+
+                <!-- Plant size legend (visible when baseLayer === 'plants'); app.js draws the dots at the map's radii -->
+                <div id="plant-legend" class="hidden flex items-end gap-3 pt-2 border-t border-white/10 text-[10px] text-gray-400">
+                    <span>Capacity (dot area)</span>
+                    <span id="plant-size-legend" class="flex items-end gap-3"></span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Population View Toggle (Bottom Center) -->
+    <div id="population-view-toggle"
+        class="hidden pointer-events-auto bg-surface border border-white/10 rounded-full shadow-lg p-1 flex gap-1 absolute bottom-6 left-1/2 -translate-x-1/2 z-30">
+        <div id="population-display-toggle" class="toggle-group toggle-group-grid rounded-full">
+            <button data-mode="map"
+                class="toggle-btn is-active">Map</button>
+            <button data-mode="charts"
+                class="toggle-btn">Charts</button>
+        </div>
+    </div>
+
+    <!-- Population Supply Controls (Right) -->
+    <div id="population-supply-controls" class="app-below-header hidden absolute top-20 right-4 z-30 w-80 flex flex-col gap-3 pointer-events-none">
+        <div id="population-supply-panel"
+            class="pointer-events-auto bg-surface border border-white/10 rounded-2xl shadow-xl p-5 max-h-[80vh] overflow-y-auto panel-collapsible ml-auto">
+            <div class="panel-header flex items-center justify-between mb-2">
+                <h2 class="panel-title text-sm font-medium text-gray-400 uppercase tracking-wider">Supply</h2>
+                <button id="population-supply-toggle"
+                    class="panel-collapse-btn text-gray-500 hover:text-white transition-colors"
+                    title="Collapse panel" aria-expanded="true">
+                    <span class="material-symbols-outlined text-[20px]">chevron_right</span>
+                </button>
+            </div>
+
+            <div id="population-supply-body" class="panel-body space-y-4">
+                <div class="space-y-3">
+                    <label class="text-xs font-medium text-gray-400 uppercase tracking-wider">Supply Layer</label>
+                <div id="population-overlay-mode" class="toggle-group toggle-group-col">
+                    <button data-overlay="cf"
+                        class="toggle-btn is-active text-center">Capacity
+                        Factor</button>
+                    <button data-overlay="lcoe"
+                        class="toggle-btn text-center">Levelised
+                        Cost of Energy</button>
+                    <button data-overlay="potential"
+                        class="toggle-btn text-center">Potential
+                        Map</button>
+                </div>
+            </div>
+
+                <!-- CF Overlay Controls (Shown when CF overlay selected) -->
+                <div id="population-cf-controls" class="hidden space-y-4 pt-4 border-t border-white/10">
+                    <h3 class="text-xs font-medium text-gray-400 uppercase tracking-wider">CF Parameters</h3>
+
+                    <!-- Solar Slider -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-end">
+                            <label class="text-xs text-gray-300">Solar Capacity<br><span
+                                    class="text-[10px] text-gray-500 font-normal">MW per MW baseload</span></label>
+                            <span class="text-lg font-light text-amber-400"><span id="pop-solar-val">5</span><span
+                                    class="text-xs text-gray-500 ml-1">MW_DC</span></span>
+                        </div>
+                        <input type="range" id="pop-solar-slider" min="1" max="20" step="1" value="5"
+                            class="slider-solar w-full">
+                    </div>
+
+                    <!-- Wind Sliders: onshore and offshore, one at a time (windSettingFor in app.js) -->
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-end">
+                            <label class="text-sm text-gray-300 font-medium">Onshore Wind<br><span
+                                    class="text-[10px] text-gray-500 font-normal">MW per MW baseload</span></label>
+                            <span class="text-2xl font-light text-wind"><span id="pop-wind-val">0</span><span
+                                    class="text-sm text-gray-500 ml-1">MW</span></span>
+                        </div>
+                        <input type="range" id="pop-wind-slider" min="0" max="0" step="1" value="0"
+                            class="slider-wind w-full">
+                        <div class="flex justify-between items-end">
+                            <label class="text-sm text-gray-300 font-medium">Offshore Wind<br><span
+                                    class="text-[10px] text-gray-500 font-normal">MW per MW baseload</span></label>
+                            <span class="text-2xl font-light text-wind-off"><span id="pop-offwind-val">0</span><span
+                                    class="text-sm text-gray-500 ml-1">MW</span></span>
+                        </div>
+                        <input type="range" id="pop-offwind-slider" min="0" max="0" step="1" value="0"
+                            class="slider-wind w-full">
+                        <p id="pop-wind-note" class="text-[10px] text-gray-500 leading-snug"></p>
+                    </div>
+
+                    <!-- Battery Slider -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-end">
+                            <label class="text-xs text-gray-300">Battery Storage<br><span
+                                    class="text-[10px] text-gray-500 font-normal">MWh per MW baseload</span></label>
+                            <span class="text-lg font-light text-battery"><span id="pop-batt-val">8</span><span
+                                    class="text-xs text-gray-500 ml-1">MWh</span></span>
+                        </div>
+                        <input type="range" id="pop-batt-slider" min="0" max="36" step="2" value="8"
+                            class="slider-battery w-full">
+                    </div>
+                </div>
+
+                <!-- LCOE Overlay Controls (Shown when LCOE overlay selected) -->
+                <div id="population-lcoe-controls" class="hidden space-y-4 pt-4 border-t border-white/10">
+                    <h3 class="text-xs font-medium text-gray-400 uppercase tracking-wider">LCOE Parameters</h3>
+
+                <!-- Target CF -->
+                    <div id="pop-target-cf-container" class="space-y-2">
+                        <label class="text-xs text-gray-400 uppercase">Target Capacity Factor</label>
+                        <div class="flex items-center gap-3">
+                            <input type="range" id="pop-target-cf-slider" min="50" max="100" step="1" value="90"
+                                class="flex-1">
+                            <span class="text-sm font-mono text-primary w-12 text-right"><span
+                                    id="pop-target-cf-val">90</span>%</span>
+                        </div>
+                    </div>
+
+                    <!-- Technology filter (T074): the cost search uses only builds whose switched-off technologies are zero -->
+                    <div class="space-y-2">
+                        <label class="text-xs text-gray-400 uppercase">Technologies</label>
+                        <div id="pop-lcoe-tech-toggle" class="lcoe-tech-toggle toggle-group toggle-group-grid" role="group" aria-label="Technologies in the cost search">
+                            <button type="button" data-lcoe-tech="solar" class="toggle-btn toggle-btn-sm is-active" aria-pressed="true">Solar</button>
+                            <button type="button" data-lcoe-tech="battery" class="toggle-btn toggle-btn-sm is-active" aria-pressed="true">Battery</button>
+                            <button type="button" data-lcoe-tech="onshore" class="toggle-btn toggle-btn-sm is-active" aria-pressed="true">Onshore</button>
+                            <button type="button" data-lcoe-tech="offshore" class="toggle-btn toggle-btn-sm is-active" aria-pressed="true">Offshore</button>
+                        </div>
+                    </div>
+
+                    <!-- Wind surface: each region takes onshore or offshore, whichever is cheaper -->
+                    <div class="space-y-1">
+                        <label class="flex items-center justify-between gap-3 cursor-pointer">
+                            <span class="text-xs text-gray-400 uppercase">Include offshore wind</span>
+                            <input id="pop-include-offshore-toggle" type="checkbox" class="check-ember" checked>
+                        </label>
+                    </div>
+
+                <!-- Section: Solar, Wind & Battery Cost -->
+                <div class="rounded-lg border border-white/10 bg-surface-variant/60 px-3 py-3 space-y-3">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="assump-title text-[11px] font-medium text-gray-300 uppercase tracking-wide">Technology costs</span>
+                        <div id="pop-capex-source-toggle" class="toggle-group">
+                            <button data-mode="global"
+                                class="toggle-btn toggle-btn-sm is-active">Global</button>
+                            <button data-mode="local"
+                                class="toggle-btn toggle-btn-sm">Local</button>
+                        </div>
+                    </div>
+                    <div id="pop-capex-global-inputs" class="assump-fold">
+                        <button type="button" class="assump-toggle" aria-expanded="false" aria-controls="pop-capex-assumptions">
+                            <span class="assump-toggle__label">Edit assumptions</span>
+                            <span class="material-symbols-outlined assump-toggle__chev" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div id="pop-capex-assumptions" class="assump-body" hidden>
+                            <div class="assump-group" role="group" aria-labelledby="pop-capex-assumptions-solar">
+                                <div class="assump-group__title" id="pop-capex-assumptions-solar"><span class="assump-dot" style="--dot: var(--solar)"></span>Solar</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Capex</span>
+                                        <span class="num-field"><input id="pop-solar-capex" type="number" value="720" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                    </label>
+                                    <label class="assump-field" title="Share of capex per year">
+                                        <span class="assump-field__label">O&amp;M</span>
+                                        <span class="num-field"><input id="pop-solar-opex" type="number" value="1.5" step="0.1" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Life</span>
+                                        <span class="num-field"><input id="pop-solar-life" type="number" value="30" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Degradation</span>
+                                        <span class="num-field"><input id="pop-solar-degradation" type="number" value="0.5" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">ILR (DC/AC)</span>
+                                        <span class="num-field"><input id="pop-ilr" type="number" value="1.3" step="0.05" min="0.5" class="num-input"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="assump-group" role="group" aria-labelledby="pop-capex-assumptions-battery">
+                                <div class="assump-group__title" id="pop-capex-assumptions-battery"><span class="assump-dot" style="--dot: var(--battery)"></span>Battery</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Capex</span>
+                                        <span class="num-field"><input id="pop-battery-capex" type="number" value="120" class="num-input"><span class="num-field__unit">$/kWh</span></span>
+                                    </label>
+                                    <label class="assump-field" title="Share of capex per year">
+                                        <span class="assump-field__label">O&amp;M</span>
+                                        <span class="num-field"><input id="pop-battery-opex" type="number" value="2.0" step="0.1" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Life</span>
+                                        <span class="num-field"><input id="pop-battery-life" type="number" value="20" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="assump-group" role="group" aria-labelledby="pop-capex-assumptions-onshore-wind">
+                                <div class="assump-group__title" id="pop-capex-assumptions-onshore-wind"><span class="assump-dot" style="--dot: var(--wind)"></span>Onshore wind</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Capex</span>
+                                        <span class="num-field"><input id="pop-wind-capex" type="number" value="1085" step="1" min="0" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                    </label>
+                                    <label class="assump-field" title="Share of capex per year">
+                                        <span class="assump-field__label">O&amp;M</span>
+                                        <span class="num-field"><input id="pop-wind-opex" type="number" value="2.5" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Life</span>
+                                        <span class="num-field"><input id="pop-wind-life" type="number" value="30" step="1" min="1" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Degradation</span>
+                                        <span class="num-field"><input id="pop-wind-degradation" type="number" value="0.2" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="assump-group" role="group" aria-labelledby="pop-capex-assumptions-offshore-wind">
+                                <div class="assump-group__title" id="pop-capex-assumptions-offshore-wind"><span class="assump-dot" style="--dot: var(--wind-off)"></span>Offshore wind</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Capex</span>
+                                        <span class="num-field"><input id="pop-offwind-capex" type="number" value="2931" step="1" min="0" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                    </label>
+                                    <label class="assump-field" title="Share of capex per year">
+                                        <span class="assump-field__label">O&amp;M</span>
+                                        <span class="num-field"><input id="pop-offwind-opex" type="number" value="3.5" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Life</span>
+                                        <span class="num-field"><input id="pop-offwind-life" type="number" value="30" step="1" min="1" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Degradation</span>
+                                        <span class="num-field"><input id="pop-offwind-degradation" type="number" value="0.2" step="0.1" min="0" class="num-input"><span class="num-field__unit">%/yr</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Section: Cost Decline Timeline -->
+                <div class="rounded-lg border border-white/10 bg-surface-variant/60 px-3 py-3 space-y-2">
+                    <span class="text-[11px] font-medium text-gray-300 uppercase tracking-wide">Cost Decline Timeline</span>
+                    <div class="flex items-center gap-3">
+                        <input type="range" id="pop-lcoe-time-slider" min="2026" max="2050" step="1" value="2026"
+                            class="flex-1">
+                        <span class="text-sm font-mono text-sky-300 w-14 text-right" id="pop-lcoe-time-year">2026</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1 text-[10px] text-gray-500">
+                        <span>Solar: <span id="pop-lcoe-time-solar">100%</span></span>
+                        <span>Battery: <span id="pop-lcoe-time-battery">100%</span></span>
+                        <span>Wind onshore: <span id="pop-lcoe-time-wind">100%</span></span>
+                        <span>Wind offshore: <span id="pop-lcoe-time-offwind">100%</span></span>
+                    </div>
+                    <div class="flex items-center text-[10px] text-gray-500">
+                        <button id="pop-lcoe-time-play"
+                            class="ml-auto px-2 py-0.5 rounded bg-surface text-gray-300 hover:text-white hover:bg-gray-600 transition-colors">
+                            Play
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Section: WACC -->
+                <div class="rounded-lg border border-white/10 bg-surface-variant/60 px-3 py-3 space-y-3">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="assump-title text-[11px] font-medium text-gray-300 uppercase tracking-wide">Cost of capital</span>
+                        <div id="pop-wacc-source-toggle" class="toggle-group">
+                            <button data-mode="global"
+                                class="toggle-btn toggle-btn-sm is-active">Global</button>
+                            <button data-mode="local"
+                                class="toggle-btn toggle-btn-sm">Local</button>
+                        </div>
+                    </div>
+                    <div id="pop-wacc-global-inputs" class="assump-fold">
+                        <button type="button" class="assump-toggle" aria-expanded="false" aria-controls="pop-wacc-assumptions">
+                            <span class="assump-toggle__label">Edit assumptions</span>
+                            <span class="material-symbols-outlined assump-toggle__chev" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div id="pop-wacc-assumptions" class="assump-body" hidden>
+                            <div class="assump-group" role="group" aria-label="Cost of capital">
+                                <div class="assump-grid">
+                                    <label class="assump-field assump-field--full">
+                                        <span class="assump-field__label">WACC</span>
+                                        <span class="num-field"><input id="pop-wacc" type="number" value="7.0" step="0.1" class="num-input"><span class="num-field__unit">%</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="assump-group" role="group" aria-labelledby="pop-wacc-assumptions-wind-premium">
+                                <div class="assump-group__title" id="pop-wacc-assumptions-wind-premium">Wind premium</div>
+                                <div class="assump-grid">
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Onshore</span>
+                                        <span class="num-field"><input id="pop-wind-wacc-premium" type="number" value="0" step="0.01" class="num-input"><span class="num-field__unit">pts</span></span>
+                                    </label>
+                                    <label class="assump-field">
+                                        <span class="assump-field__label">Offshore</span>
+                                        <span class="num-field"><input id="pop-offwind-wacc-premium" type="number" value="0.92" step="0.01" class="num-input"><span class="num-field__unit">pts</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section: Firm Backup (least-cost diesel vs OCGT gas) -->
+                <div class="rounded-lg border border-white/10 bg-surface-variant/60 px-3 py-3 space-y-3">
+                    <label class="flex items-center justify-between gap-3 cursor-pointer">
+                        <span class="text-[11px] font-medium text-gray-300 uppercase tracking-wide">Firm Backup</span>
+                        <input id="pop-diesel-backup-toggle" type="checkbox" class="check-ember">
+                    </label>
+                    <div id="pop-diesel-backup-mode-group" class="hidden pt-1 border-t border-white/5">
+                        <div class="text-[10px] text-gray-300 leading-snug"><span class="font-semibold text-gray-200">Min. renewable share:</span> target CF from solar, wind and batteries</div>
+                    </div>
+                    <div id="pop-diesel-source-wrapper" class="hidden space-y-3 pt-1 border-t border-white/5">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="assump-title text-[10px] text-gray-500 uppercase">Diesel</span>
+                            <div id="pop-diesel-source-toggle" class="toggle-group">
+                                <button data-mode="global"
+                                    class="toggle-btn toggle-btn-sm is-active">Global</button>
+                                <button data-mode="local"
+                                    class="toggle-btn toggle-btn-sm">Local</button>
+                            </div>
+                        </div>
+                        <div id="pop-diesel-global-inputs" class="assump-fold">
+                            <button type="button" class="assump-toggle" aria-expanded="false" aria-controls="pop-diesel-assumptions">
+                                <span class="assump-toggle__label">Edit assumptions</span>
+                                <span class="material-symbols-outlined assump-toggle__chev" aria-hidden="true">expand_more</span>
+                            </button>
+                            <div id="pop-diesel-assumptions" class="assump-body" hidden>
+                                <div class="assump-group" role="group" aria-label="Diesel">
+                                    <div class="assump-grid">
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Fuel price</span>
+                                            <span class="num-field"><input id="pop-diesel-price" type="number" value="1.20" step="0.05" min="0" class="num-input"><span class="num-field__unit">$/litre</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Capex</span>
+                                            <span class="num-field"><input id="pop-diesel-capex" type="number" value="300" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Efficiency</span>
+                                            <span class="num-field"><input id="pop-diesel-efficiency" type="number" value="35" step="0.1" min="1" max="100" class="num-input"><span class="num-field__unit">%</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Life</span>
+                                            <span class="num-field"><input id="pop-diesel-life" type="number" value="20" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pop-gas-source-wrapper" class="hidden space-y-3 pt-1 border-t border-white/5">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="assump-title text-[10px] text-gray-500 uppercase">Gas (OCGT)</span>
+                            <div id="pop-gas-source-toggle" class="toggle-group">
+                                <button data-mode="global"
+                                    class="toggle-btn toggle-btn-sm">Global</button>
+                                <button data-mode="local"
+                                    class="toggle-btn toggle-btn-sm is-active">Local</button>
+                            </div>
+                        </div>
+                        <div id="pop-gas-global-inputs" class="assump-fold">
+                            <button type="button" class="assump-toggle" aria-expanded="false" aria-controls="pop-gas-assumptions">
+                                <span class="assump-toggle__label">Edit assumptions</span>
+                                <span class="material-symbols-outlined assump-toggle__chev" aria-hidden="true">expand_more</span>
+                            </button>
+                            <div id="pop-gas-assumptions" class="assump-body" hidden>
+                                <div class="assump-group" role="group" aria-label="Gas (OCGT)">
+                                    <div class="assump-grid">
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Fuel price</span>
+                                            <span class="num-field"><input id="pop-gas-price" type="number" value="4.88" step="0.1" min="0" class="num-input"><span class="num-field__unit">$/MMBtu</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Capex</span>
+                                            <span class="num-field"><input id="pop-gas-capex" type="number" value="800" class="num-input"><span class="num-field__unit">$/kW</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Efficiency</span>
+                                            <span class="num-field"><input id="pop-gas-efficiency" type="number" value="35" step="0.1" min="1" max="100" class="num-input"><span class="num-field__unit">%</span></span>
+                                        </label>
+                                        <label class="assump-field">
+                                            <span class="assump-field__label">Life</span>
+                                            <span class="num-field"><input id="pop-gas-life" type="number" value="25" class="num-input"><span class="num-field__unit">yrs</span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Potential Overlay Controls (Shown when Potential overlay selected) -->
+                <div id="population-potential-controls" class="hidden space-y-4 pt-4 border-t border-white/10">
+                    <h3 class="text-xs font-medium text-gray-400 uppercase tracking-wider">Potential Parameters</h3>
+                    <div class="space-y-2">
+                        <label class="text-xs font-medium text-gray-400 uppercase tracking-wider">Siting Constraints</label>
+                        <div id="supply-potential-level-toggle" class="toggle-group toggle-group-grid">
+                            <button data-level="level1"
+                                class="toggle-btn is-active">Technical</button>
+                            <button data-level="level2"
+                                class="toggle-btn">Policy</button>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-medium text-gray-400 uppercase tracking-wider">Display</label>
+                        <div id="supply-potential-display-toggle" class="toggle-group toggle-group-grid">
+                            <button data-display="total"
+                                class="toggle-btn">Total</button>
+                            <button data-display="multiple"
+                                class="toggle-btn is-active">× Demand</button>
+                            <button data-display="per_capita"
+                                class="toggle-btn">Per capita</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LCOE Cost Decline Timeline (Top Right) -->
+    <div id="lcoe-time-panel"
+        class="app-below-header hidden absolute top-20 right-4 z-20 pointer-events-auto bg-surface border border-white/10 rounded-2xl shadow-xl p-4 w-72 space-y-2">
+        <label class="text-xs text-gray-400 uppercase">Cost Decline Timeline</label>
+        <div class="flex items-center gap-3">
+            <input type="range" id="lcoe-time-slider" min="2026" max="2050" step="1" value="2026"
+                class="flex-1">
+            <span class="text-sm font-mono text-sky-300 w-14 text-right" id="lcoe-time-year">2026</span>
+        </div>
+        <div class="grid grid-cols-2 gap-1 text-[10px] text-gray-500">
+            <span>Solar: <span id="lcoe-time-solar">100%</span></span>
+            <span>Battery: <span id="lcoe-time-battery">100%</span></span>
+            <span>Wind onshore: <span id="lcoe-time-wind">100%</span></span>
+            <span>Wind offshore: <span id="lcoe-time-offwind">100%</span></span>
+        </div>
+        <div class="flex items-center text-[10px] text-gray-500">
+            <button id="lcoe-time-play"
+                class="ml-auto px-2 py-0.5 rounded bg-surface-variant text-gray-300 hover:text-white hover:bg-gray-600 transition-colors">
+                Play
+            </button>
+        </div>
+    </div>
+
+    <!-- Right Bottom Legends (Floating) -->
+    <div id="legend-stack" class="absolute bottom-8 right-4 z-20 flex flex-col items-end gap-3 pointer-events-none">
+
+        <!-- Capacity Legend -->
+        <div id="legend-capacity"
+            class="pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Capacity Factor</div>
+            <div class="w-full h-2 rounded-full mb-2 legend-gradient"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500">
+                <span>0%</span>
+                <span>25%</span>
+                <span>50%</span>
+                <span>75%</span>
+                <span>100%</span>
+            </div>
+            <div class="legend-wind-hatch hidden flex items-center gap-2 mt-2 text-[10px] text-gray-400">
+                <span class="inline-block w-3 h-3 rounded-sm" style="flex: none;" data-state-swatch="windHatch"></span>
+                <span>No wind site</span>
+            </div>
+        </div>
+
+        <!-- Complementarity legends (only shown in the 'complementarity' mode; complementarity.js picks one) -->
+        <div id="legend-comp-drought"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div id="legend-comp-drought-title" class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Solar: share of weeks in drought</div>
+            <div id="legend-comp-drought-bar" class="w-full h-2 rounded-full mb-2"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500">
+                <span>0%</span>
+                <span>10%</span>
+                <span>20%</span>
+                <span>≥ 30%</span>
+            </div>
+            <div class="mt-2 text-[10px] text-gray-500">Output below half its ten-year average</div>
+            <div class="flex items-center gap-2 mt-2 text-[10px] text-gray-400">
+                <span class="inline-block w-3 h-3 rounded-sm" style="flex: none;" data-state-swatch="naHatch"></span>
+                <span>No wind profile</span>
+            </div>
+        </div>
+
+        <div id="legend-comp-score"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div id="legend-comp-score-title" class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Correlation of daily solar and wind output</div>
+            <div id="legend-comp-score-bar" class="w-full h-2 rounded-full mb-2"></div>
+            <div id="legend-comp-score-ticks" class="flex justify-between text-[10px] font-mono text-gray-500">
+                <span>+1</span>
+                <span>0</span>
+                <span>−1</span>
+            </div>
+            <div id="legend-comp-score-meaning" class="flex justify-between gap-3 text-[10px] leading-snug text-gray-500">
+                <span class="flex-1">(highly correlated: not complementary)</span>
+                <span class="flex-1 text-right">(highly <span class="comp-nowrap">anti-correlated</span>: complementary)</span>
+            </div>
+            <div class="flex items-center gap-2 mt-2 text-[10px] text-gray-400">
+                <span class="inline-block w-3 h-3 rounded-sm" style="flex: none;" data-state-swatch="naHatch"></span>
+                <span>No wind profile</span>
+            </div>
+        </div>
+
+        <!-- Potential Legend -->
+        <div id="legend-potential"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div id="legend-potential-title" class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">
+                Solar Generation Potential (TWh/yr)
+            </div>
+            <div id="legend-potential-bar" class="w-full h-2 rounded-full mb-2 legend-gradient-potential"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500">
+                <span id="legend-potential-min">--</span>
+                <span id="legend-potential-max">--</span>
+            </div>
+            <div id="legend-potential-buckets" class="hidden space-y-1 text-[10px] text-gray-500"></div>
+            <div id="legend-potential-country" class="hidden mt-2 text-[10px] text-gray-500">Don't sum cells by country: see Info</div>
+        </div>
+
+        <!-- LCOE Legend -->
+        <div id="legend-lcoe"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div id="lcoe-layer-wrap" class="mb-3">
+                <div id="lcoe-layer-toggle" class="toggle-group toggle-group-grid">
+                    <button data-lcoe-layer="lcoe"
+                        class="toggle-btn toggle-btn-sm is-active">LCOE</button>
+                    <button data-lcoe-layer="wind_share"
+                        class="toggle-btn toggle-btn-sm">Wind share</button>
+                    <button data-lcoe-layer="wind_saving"
+                        class="toggle-btn toggle-btn-sm">Wind saving</button>
+                </div>
+            </div>
+            <div id="legend-lcoe-title" class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">LCOE
+                ($/MWh)</div>
+            <div class="w-full h-2 rounded-full mb-2 legend-gradient-cost" id="legend-lcoe-bar"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500 mb-2">
+                <span id="legend-lcoe-min">--</span>
+                <span id="legend-lcoe-mid">--</span>
+                <span id="legend-lcoe-max">--</span>
+            </div>
+            <div class="text-[10px] text-gray-400" id="legend-lcoe-ref">Reference: --</div>
+            <div class="legend-wind-hatch hidden flex items-center gap-2 mt-2 text-[10px] text-gray-400">
+                <span class="inline-block w-3 h-3 rounded-sm" style="flex: none;" data-state-swatch="windHatch"></span>
+                <span>No wind site</span>
+            </div>
+            <div id="legend-lcoe-notes" class="hidden text-[10px] text-gray-400 mt-2 space-y-1"></div>
+            <div id="comparison-toggle" class="hidden mt-2 pt-2 border-t border-white/10">
+                <div class="space-y-2">
+                    <div class="text-[10px] text-gray-400 uppercase tracking-wider mb-1">Display Mode</div>
+                    <div id="lcoe-display-mode" class="toggle-group toggle-group-grid">
+                        <button data-mode="delta"
+                            class="toggle-btn is-active">LCOE Δ</button>
+                        <button data-mode="transmission"
+                            class="toggle-btn">TX Cost</button>
+                    </div>
+                    <button id="lcoe-clear-ref"
+                        class="w-full text-[10px] px-2 py-1 bg-surface-variant rounded text-gray-300 hover:text-white transition-colors">Clear
+                        Reference</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Population Legend -->
+        <div id="legend-population"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Population</div>
+            <div class="w-full h-2 rounded-full mb-2 legend-gradient-pop"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500">
+                <span id="legend-pop-min">0</span>
+                <span id="legend-pop-max">--</span>
+            </div>
+        </div>
+
+        <!-- Electricity Demand Legend -->
+        <div id="legend-electricity"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Electricity Demand (TWh/yr)
+            </div>
+            <div class="w-full h-2 rounded-full mb-2 legend-gradient-pop"></div>
+            <div class="flex justify-between items-center text-[10px] font-mono text-gray-500">
+                <span id="legend-elec-min">0</span>
+                <span class="flex items-center gap-1 font-sans text-gray-400"><span class="w-2 h-2 rounded-sm" data-state-swatch="noData"></span>No data</span>
+                <span id="legend-elec-max">--</span>
+            </div>
+        </div>
+
+        <!-- Energy Access Legend -->
+        <div id="legend-access"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div class="flex justify-between items-center mb-2">
+                <div id="legend-access-title" class="text-xs font-medium text-gray-400 uppercase tracking-wider">Grid Reliability</div>
+                <div id="legend-access-toggle" class="toggle-group">
+                    <button id="btn-access-rel"
+                        class="toggle-btn toggle-btn-sm is-active">Reliability</button>
+                    <button id="btn-access-none"
+                        class="toggle-btn toggle-btn-sm">No Access</button>
+                </div>
+            </div>
+            <div id="legend-access-bar" class="w-full h-2 rounded-full mb-2"
+                style="background: var(--ramp-green);"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500 mb-2">
+                <span id="legend-access-min">0%</span>
+                <span id="legend-access-mid"></span>
+                <span id="legend-access-max">100%</span>
+            </div>
+            <!-- Swatch colours come from the registry (app.js paintStateSwatches, T075) -->
+            <div class="flex items-center gap-2 pt-2 border-t border-white/10">
+                <span class="w-3 h-3 rounded-sm" data-state-swatch="noData"></span>
+                <span id="legend-access-note" class="text-[10px] text-gray-400">No data</span>
+                <span id="legend-access-universal" class="hidden flex items-center gap-2 ml-1">
+                    <span class="w-3 h-3 rounded-sm" data-state-swatch="universalAccess"></span>
+                    <span class="text-[10px] text-gray-400">Universal access</span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Supply Legends (Population Split Map) -->
+    <div id="legend-supply-stack"
+        class="hidden absolute bottom-8 right-4 z-20 flex flex-col items-end gap-3 pointer-events-none">
+        <!-- Supply Capacity Legend -->
+        <div id="legend-supply-capacity"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Capacity Factor</div>
+            <div class="w-full h-2 rounded-full mb-2 legend-gradient"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500">
+                <span>0%</span>
+                <span>25%</span>
+                <span>50%</span>
+                <span>75%</span>
+                <span>100%</span>
+            </div>
+        </div>
+
+        <!-- Supply LCOE Legend -->
+        <div id="legend-supply-lcoe"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div id="legend-supply-lcoe-title" class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">
+                LCOE ($/MWh)</div>
+            <div class="w-full h-2 rounded-full mb-2 legend-gradient-cost" id="legend-supply-lcoe-bar"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500 mb-2">
+                <span id="legend-supply-lcoe-min">--</span>
+                <span id="legend-supply-lcoe-mid">--</span>
+                <span id="legend-supply-lcoe-max">--</span>
+            </div>
+            <div class="text-[10px] text-gray-400" id="legend-supply-lcoe-ref">Reference: --</div>
+            <div id="legend-supply-lcoe-notes" class="hidden text-[10px] text-gray-400 mt-2 space-y-1"></div>
+        </div>
+
+        <!-- Supply Potential Legend -->
+        <div id="legend-supply-potential"
+            class="hidden pointer-events-auto bg-surface border border-white/10 rounded-xl shadow-xl p-4 w-64">
+            <div id="legend-supply-potential-title"
+                class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Solar Generation Potential (TWh/yr)</div>
+            <div id="legend-supply-potential-bar" class="w-full h-2 rounded-full mb-2 legend-gradient-potential"></div>
+            <div id="legend-supply-potential-buckets" class="hidden space-y-1 text-[10px] text-gray-500"></div>
+            <div class="flex justify-between text-[10px] font-mono text-gray-500">
+                <span id="legend-supply-potential-min">--</span>
+                <span id="legend-supply-potential-max">--</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Info Modal (Hidden by default) -->
+    <div id="info-panel" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="absolute inset-0 el-overlay" id="info-backdrop"></div>
+        <div
+            class="relative bg-surface-variant border border-white/10 w-full max-w-2xl max-h-[80vh] overflow-y-auto p-8 space-y-6">
+            <div class="flex justify-between items-start">
+                <h2 class="text-2xl font-semibold text-white">How it works</h2>
+                <button id="info-close" class="text-gray-400 hover:text-white">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <div class="space-y-4 text-sm text-gray-300 leading-relaxed">
+                <p>
+                    <strong class="text-primary">The Goal:</strong> Can solar, wind and battery storage, on their own,
+                    deliver constant round-the-clock "baseload" power 24/7/365, and at what cost? This tool tests that
+                    question at thousands of locations worldwide. Set wind to zero and you get the original
+                    solar-and-battery atlas, unchanged.
+                </p>
+
+                <h3 class="text-white font-medium pt-2">The model</h3>
+                <ul class="list-disc pl-5 space-y-1.5">
+                    <li>Everything is sized per <strong class="text-white">1 MW of constant, round-the-clock
+                        demand</strong>, so results scale to any load. You choose how much solar and onshore or offshore
+                        wind (MW per MW of demand) and battery (MWh per MW of demand) to build.</li>
+                    <li>We start from <strong class="text-white">ten years of hourly weather data (2015–2024)</strong> for each location: NASA POWER for solar and ERA5 for wind.</li>
+                    <li>For each hour, sunlight and temperature go through a <strong class="text-white">tilted-panel solar model</strong>: fixed tilt facing the equator, calibrated to the Global Solar Atlas's annual yield, with a DC-to-AC ratio of 1.3 that clips the peaks.</li>
+                    <li>An <strong class="text-white">hour-by-hour simulation</strong> then dispatches that energy: solar
+                        and wind meet demand directly as they generate; surplus charges the battery (accounting for round-trip
+                        losses); the battery discharges to cover shortfalls; whatever is still unmet is recorded as a
+                        gap.</li>
+                    <li>Averaged over the ten years, this gives each location's <strong class="text-white">Capacity Factor</strong>; tooltips add the worst year for the build on screen. It is pre-computed offline for 3,216 solar, wind and battery combinations per
+                        location and loaded into your browser a wind level at a time, so panning the map is instant.
+                        The map covers 4,465 regions; Antarctica and Greenland are left out.</li>
+                    <li><strong class="text-white">Wind is sited, not sampled.</strong> Each region's wind level is
+                        the mean net capacity factor of the windiest 20% of its eligible land, scored against the
+                        Global Wind Atlas (at least 500 km², or all of it if less). Offshore follows the same rule at
+                        sea. Every region with eligible land or sea gets its wind, however weak, and the cost search
+                        decides whether it is worth building.</li>
+                    <li><strong class="text-white">Calibrated to new wind farms.</strong> Capacity factors are scaled
+                        by ×0.879 onshore in Europe and ×0.777 offshore everywhere, an empirical calibration to IRENA's
+                        observed capacity factors for new wind farms: onshore, projects commissioned between 2023 and 2025 in
+                        Germany, Spain, France, Sweden, the UK, Poland, Italy, Finland, Greece, Austria, Belgium and
+                        Lithuania; offshore, between 2024 and 2025 in China, Germany, France and the UK. The factors stand in for
+                        losses the model does not represent, such as wakes and availability; a physical loss model is
+                        planned. Onshore elsewhere is not scaled.</li>
+                    <li><strong class="text-white">Hourly shape from ERA5, level from the atlas.</strong> ERA5 100 m winds at the chosen site give the hour-by-hour pattern for all ten years, scaled so that their ten-year mean equals that level: by one factor, or, where that factor would exceed 1.8, by mapping ERA5's hours onto the Global Wind Atlas wind-speed distribution. 18 of the windiest regions still fall short; see Wind siting below.</li>
+                    <li><strong class="text-white">LCOE is calculated live in your browser</strong> from those capacity
+                        factors and your own cost assumptions: change the costs, financing or year and results update
+                        immediately.</li>
+                </ul>
+
+                <h3 class="text-white font-medium pt-2">Key Metrics</h3>
+                <ul class="list-disc pl-5 space-y-1.5">
+                    <li><strong class="text-white">Capacity Factor (CF):</strong> the share of a year's constant
+                        load that the build supplies: energy served divided by energy demanded. A CF of 90% means solar, wind and batteries supply 90% of the energy a flat load would use over the year, averaged over 2015–2024. It
+                        is not the share of hours in which the load is fully met.</li>
+                    <li><strong class="text-white">LCOE (Levelised Cost of Energy):</strong> the average lifetime cost
+                        per MWh, accounting for up-front build cost (CAPEX), operating costs (OPEX), financing (WACC),
+                        solar and wind output degradation (weighted by each one's share of the energy), and equipment lifetimes (30 years for solar and wind, 20 for batteries). You can switch between <strong
+                        class="text-white">global</strong> cost assumptions and <strong class="text-white">local</strong>,
+                        region-specific costs, roll costs forward to a future year, and optionally add a <strong
+                        class="text-white">diesel or gas backup</strong> generator to firm up the last few per cent of supply.</li>
+                </ul>
+
+                <!-- Long sections start closed (D-138), so the visible text stays at Labs density. -->
+                <details class="info-section">
+                <summary class="info-section__title text-white font-medium pt-2">Wind siting</summary>
+                <ul class="list-disc pl-5 space-y-1.5">
+                    <li><strong class="text-white">Eligible land</strong> excludes built-up areas, IUCN protected areas, water plus a 2 km buffer and severe terrain (World Bank/ESMAP masks), every designated or inscribed protected area in the WDPA (October 2026; offshore, every marine protected area) and every GHSL settlement cell at least 10% built, with no further setback. Land below sea level counts as land where Natural Earth and the ESMAP water layer agree (polders, the Caspian Depression, Qattara); lakes carry no offshore wind, and the Caspian's depth is measured from its own surface. Forest and cropland are not excluded. 4,383 of the 4,465 regions have eligible land and 1,199 have eligible sea; 647 onshore and 140 offshore of them are weak, their windiest fifth below 15% before calibration. Only regions with no eligible land or sea are drawn hatched.</li>
+                    <li><strong class="text-white">Calibration:</strong> the European factor applies by location, to regions in Europe and Russia west of 60°E. Against IRENA's new-build capacity factors, the onshore level falls within ±10% in 70% of the 27 countries with data; Russia, left out of the fit, comes to 1.00. By region, Central Asia and Russia simulate at 1.01 of IRENA's new-build figures and Oceania (Australia) at 1.11, the two regions above them. The offshore factor matches its four countries by construction, so it is a fit, not a test; the current check leaves China out, because IRENA's fleet figure for it is implausibly low. Known limitation: onshore capacity factors in Latin America are probably understated. Brazil's level, for example, reaches 0.73 of IRENA's new-build figure.</li>
+                    <li><strong class="text-white">Scaling to the level:</strong> one factor on ERA5 wind speed scales each region to its level, the standard correction: ERA5 alone understates it by about 17%. Where that factor would exceed 1.8 (700 of the 4,383 onshore regions, mostly mountains), ERA5's hours are instead mapped onto the Global Wind Atlas wind-speed distribution of the region's windiest fifth, in the same order, so the hourly and seasonal pattern stays ERA5's; one further factor on the mapped speeds (median 1.08) then brings their mean to the level. 18 of the windiest regions (Patagonia, the high Arctic) still simulate below their level, because turbines shut down above 25 m/s. Offshore, 9 of 1,200 fall short, one below 15%.</li>
+                    <li><strong class="text-white">Against the centre point:</strong> the simulated level runs a median 4 capacity-factor points above the region's centre, and in more than a quarter of regions the centre would run below 15%.</li>
+                    <li><strong class="text-white">Offshore</strong> is offered where a region has eligible sea at least 10 km from shore, screened for fixed-bottom depths of up to 60 m, and costed at the mean depth and distance from shore of the windiest fifth it is simulated on. Floating area further out is recorded but not simulated.</li>
+                </ul>
+                </details>
+
+                <details class="info-section">
+                <summary class="info-section__title text-white font-medium pt-2">Notes on the controls</summary>
+                <ul class="list-disc pl-5 space-y-1.5">
+                    <li><strong class="text-white">Wind sliders:</strong> onshore and offshore are separate builds. Combined builds are simulated for onshore 1–4 + offshore 1–3 MW (5 at most in total); otherwise raising one sets the other to 0. Wind off reproduces the original solar and battery atlas.</li>
+                    <li><strong class="text-white">Include offshore wind:</strong> each region uses onshore or offshore wind, whichever wins the search (the cheaper build when the target CF is met). Untick to use onshore only.</li>
+                    <li><strong class="text-white">Technologies:</strong> switch solar, batteries, onshore or offshore wind off and the cost search uses only builds without them; uptimes come from the same simulations. Offshore is the same switch as Include offshore wind. Wind share and wind saving need wind. The saving is measured against the cheapest build with the same technologies minus wind; batteries alone deliver nothing, so with solar off the target is met only with wind.</li>
+                    <li><strong class="text-white">Builds beyond the sliders</strong> (solar above 20 MW, battery above 36 MWh per MW of load) are searched only where the sliders cannot reach 99.9%. Their battery is interpolated between simulated sizes and always rounded up, and their ten-year weather record repeats – the battery starts the record with what it held at its end – while every slider build starts with an empty battery. Seasonal battery storage at this scale is a thought experiment, not a proposal. In 'cost within a budget' mode they are used only at simulated sizes, so the two modes can differ slightly for the same region.</li>
+                    <li><strong class="text-white">Firm backup:</strong> covers any unmet load after solar, wind and batteries with a 1 MW dispatchable generator. Each region uses whichever is cheaper: diesel, or OCGT gas where a regional wholesale price exists (IGU 2024). The target CF still applies to solar, wind and batteries; the generator fills the remaining load to 100%.</li>
+                    <li><strong class="text-white">Cost decline timeline:</strong> applies multipliers to the solar, battery and wind capex values (global mode); local mode interpolates each region's capex, and wind O&amp;M, by year. The cost of capital does not change with the year.</li>
+                    <li><strong class="text-white">Complementarity:</strong> ten years of weather (2015–2024), solar and onshore wind, from the same hourly profiles as the simulation. <em>Droughts</em>: the share of 7-day (week) or 30-day (month) stretches in which a source makes less than half its ten-year average; <em>Both</em> is the share in which solar and wind are in drought at the same time. <em>Complementarity</em>: how far solar and wind move in opposite directions, from the correlation r of their daily, weekly or monthly output, shown as (1 − r)/2: 1 means one is always high when the other is low, 0.5 no link, 0 they rise and fall together. The seasons are included, so at the month scale it mostly reflects sunny summers and windy winters. Mixing the two makes droughts much rarer but does not make the worst one much shorter, so storage or backup is still needed. Regions without an onshore wind profile averaging at least 2% are not shown.</li>
+                    <li><strong class="text-white">Potential, solar:</strong> ground-mount + rooftop. Ground-mount is 50 MW/km² (DC capacity), a central judgement between the whole area of large parks such as Bhadla, Pavagada, Kurnool, Benban and Tengger (about 26–44 MW/km²) and the array area of US plants built in 2019 (medians of 59 MW/km² with tracking and 87 fixed-tilt; Bolinger and Bolinger 2022, LBNL, <em>IEEE Journal of Photovoltaics</em>). Rooftop is 100 MW/km² on building footprints (Joshi et al. 2024 SSP2 2020). Not every roof can take panels – shading, orientation and structure rule some out – so the rooftop figure is an upper estimate; car parks, floating solar and solar over farmland are not counted. <em>Technical</em> and <em>Policy</em> are the Level 1 and Level 2 land of World Bank/ESMAP and Solargis (2020), <em>Global Photovoltaic Power Potential by Country</em>: Level 1 excludes rugged terrain, urban/industrial areas, forests and very remote zones; Level 2 adds regulatory limits (cropland protection, conservation areas). Siting constraints apply to solar only.</li>
+                    <li><strong class="text-white">Potential, wind:</strong> technical potential, the capacity that could physically fit, not what is likely to be built; very large build-outs would also slow the wind itself, so real limits are lower. Generation = capacity × the cell's capacity factor × 8,760 hours.</li>
+                    <li><strong class="text-white">Potential, onshore:</strong> two definitions, both pixel by pixel on the atlas's 2 km grid. <em>Technical</em> (default): 5 MW/km² (NREL, Lopez et al. 2012) on eligible land that reaches at least 15% net capacity factor before calibration, each pixel at its own capacity factor. <em>Conservative</em>: capacity factors scaled to new wind farms, 3 MW/km² (the average across whole US wind projects, Denholm et al. 2009) and only land that still reaches 20%. Weaker land still gets its wind in the simulation. Eligible land is as in Wind siting; forest and cropland are not excluded. Excluding dense forest (tree cover of 50% or more) and cropland (Copernicus Global Land Cover 2019; Buchhorn et al. 2020, doi:10.5281/zenodo.3939050) would lower onshore potential by about a quarter.</li>
+                    <li><strong class="text-white">Potential, offshore:</strong> two published definitions, both on the atlas's own sea (at least 10 km from shore, protected areas excluded) and capacity factors scaled to new wind farms. <em>ESMAP</em> (World Bank Group / ESMAP, <em>Global Offshore Wind Technical Potential</em>, 2021): ESMAP's capacity, 3 MW/km² at 7–8 m/s and 4 MW/km² above 8 m/s, within 200 km of shore, fixed-bottom up to 50 m deep and floating 50–1,000 m, counted where sites reach 20%. US floating is 1,298 GW against ESMAP's 2,787 GW (the rest is missing from its published map data). <em>IEA</em> (<em>Offshore Wind Outlook 2019</em>): within 300 km of shore, shallow water up to 60 m and deep water to 2,000 m, at least 5 m/s, turbines 8 rotor diameters apart (4.5 MW/km² with the Global Wind Atlas's 8 MW reference turbine); its buffers for shipping lanes, cables and fault lines are not applied. Floating uses its own deep-water sites and is not costed. Sea ice is not excluded, which is why Arctic shelves look large. Sea is assigned to the nearest cell, not by country, so don't total cells by country. At low zoom about 2% of offshore capacity sits in a neighbouring drawn cell, and about 41% of coastal cells differ by more than 5% from the drawn cell, some by tens of per cent.</li>
+                    <li><strong class="text-white">Potential, all:</strong> solar + onshore wind + fixed-bottom offshore wind on the chosen definition (Conservative with ESMAP, Technical with IEA); floating is left out. Gaps count as zero: offshore cells with no estimate, and solar outside its data latitudes. Solar and onshore wind can compete for the same land, so the sum overstates what both could use.</li>
+                </ul>
+
+                </details>
+
+                <details class="info-section">
+                <summary class="info-section__title text-white font-medium pt-2">Data Sources</summary>
+                <div class="text-xs text-gray-400 space-y-2">
+                    <p>
+                        <strong class="text-gray-300">Solar & Weather Data:</strong> NASA POWER (Prediction of Worldwide Energy Resources), hourly 2015–2024, run through a tilted-panel model and calibrated to the Global Solar Atlas (World Bank Group / Solargis). Limits: the calibration factor is capped at 1.10, which holds 22 regions below it; in the Atacama they sit about 10% below the Global Solar Atlas. Above about 60°N, where it has no data, a region takes the median factor of its 8 nearest calibrated regions (0.3% of people, 3.9% of demand, mostly in Russia and the Nordics). Snow losses are not modelled.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Wind resource:</strong> Global Wind Atlas 4 (DTU Wind Energy and
+                        the World Bank, 2025, CC BY 4.0) for siting and long-run capacity factor; ERA5 100 m winds
+                        (Copernicus Climate Change Service, via the analysis-ready copy on Google Cloud) for the hourly shape, 2015–2024. Land eligibility uses the World Bank / ESMAP Global Photovoltaic Power Potential masking
+                        layers (built-up areas, protected areas, water and severe terrain), the World Database on
+                        Protected Areas (UNEP-WCMC and IUCN, October 2026) and the Global Human Settlement Layer
+                        (JRC, GHS-BUILT-S 2020); bathymetry is ETOPO 2022 (NOAA). Levels are calibrated to new-build
+                        capacity factors from IRENA, <em>Renewable Energy Statistics 2026</em> and <em>Renewable Power
+                        Generation Costs in 2025</em>. Method after Peña-Sánchez et al. (2026), <em>Towards high resolution, validated and open global wind
+                        power assessments</em>, Nature Communications 17, 539 (doi:10.1038/s41467-026-68337-z). Their model,
+                        built on Global Wind Atlas 4, reaches a mean capacity-factor error of 5.6% against wind-turbine
+                        measurements after correcting wind speeds; without that correction its national capacity factors run
+                        23% above IEA statistics. Version 4's 10 m wind speeds run high across much of continental Asia, northern
+                        Europe and Canada and low in eastern Australia, southern Europe and rainforest regions. The validation's wind measurements come mainly from the United States, Europe, South Africa and Iran,
+                        and its wind-farm data from the North Sea and Norway, so the Global Wind
+                        Atlas is little tested elsewhere, including most of Asia. Earlier versions overstated output in the United
+                        States, Brazil and New Zealand (Gruber et al. 2022, <em>Energy</em> 238, 121520). This atlas checks
+                        its levels against IRENA's new wind farms instead (see Calibration).
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Wind costs:</strong> IRENA, <em>Renewable Power Generation Costs
+                        in 2025</em>. Global mode starts from IRENA's global averages: onshore $1,085/kW (the 2023–2025
+                        mean), falling to IRENA's 2035 projection and on to 2050 at the same rate; offshore $2,931/kW,
+                        falling along the Danish Energy Agency's fixed-bottom path (DEA Technology Catalogue). Local
+                        mode gives each cell its country's installed cost. Onshore, that is IRENA's 2023–2025 mean where
+                        IRENA lists the country (figure 2.4), otherwise its 2025 regional figure (table 2.1). Saudi Arabia,
+                        the UAE, Qatar, Oman, Kuwait, Bahrain, Turkmenistan, Kyrgyzstan and Tajikistan have no IRENA
+                        value; they take the mean of IRENA's 2025 values for Egypt, Uzbekistan and Kazakhstan ($1,377/kW),
+                        among the largest buyers of Chinese wind turbines in 2024 (Chinese Wind Energy Association, 2025),
+                        instead of the regional $1,713. Onshore capex follows IRENA's
+                        projected decline to 2035 and on to 2050 at the same rate; offshore follows DEA's paths.
+                        Offshore capex is adjusted to the depth and distance from shore of the sea the cell's
+                        capacity factor comes from, using DEA's cost relationships, with HVDC beyond 100 km. Where a
+                        country publishes designated or tendered offshore zones (EMODnet, 2025: the Netherlands, Germany,
+                        Denmark, Belgium, France and the United Kingdom), that sea is the zone; elsewhere it is the windiest
+                        fifth of the cell's eligible sea. Countries without an offshore market take IRENA's global average
+                        adjusted the same way, and other Asian countries IRENA's Asian average excluding China (figure 4.4).
+                        Japan and Taiwan take their regulators' capex – METI's ¥512,000/kW (2020) and MOEA's NT$150,700/kW
+                        (2023), about $6,000 and $5,100/kW in 2025 dollars. Elsewhere offshore capex is never below 1.5
+                        times the cell's onshore capex, a conservative floor: IRENA's global offshore cost is about 2.7
+                        times onshore. It binds in 228 cells, mostly in Asia. All of that sea is at most 60 m deep, so offshore is
+                        costed as fixed-bottom. Wind O&amp;M comes from IRENA's LCOE assumptions –
+                        by country where IRENA lists one (onshore table A3, offshore table A6), otherwise its OECD or
+                        non-OECD group, which covers about 65% of cells onshore and 87% offshore – and follows DEA's
+                        O&amp;M trajectory to 2035 and 2050 (2050 at about 0.90 of 2024 onshore and 0.64 for
+                        fixed-bottom offshore). O&amp;M therefore falls more slowly than capex. Global mode's onshore capex is IRENA's global weighted average, which Chinese installations weight heavily: a China-weighted world average, not the cost of a typical European or North American project. Offshore costs include the export link (DEA: substation and export cable, 23–42% of capex). Where the grid operator builds it (the Netherlands, Germany, Denmark, Belgium and France), it is spread over its 40-year regulated life, and the tooltip also gives offshore wind alone without the link, the figure comparable with tenders. IRENA's offshore costs are used as published; IRENA notes that cost structures vary with who owns the export link, so in these five countries they may leave out part of it. UK and Irish auction prices sit above the atlas partly because they carry network charges (high in Scotland), and the UK's Contracts for Difference also carry balancing costs and a 20-year term. Both modes treat
+                        their cost data (IRENA's 2025 figures) as 2026 costs, the atlas's fixed cost year, and
+                        decline from there, so the two modes start from the same year; the legend states the cost
+                        year. Local mode's cost of capital is held at 2025 rates across the timeline. Wind is assumed to last 30 years
+                        (NREL ATB; Danish Energy Agency); IRENA's own LCOE convention is 25 years. At 25 years, adding wind
+                        lowers the cost of 90% uptime for places that use 79% of the world's electricity and for 49% of its
+                        people, against 81% and 52% at 30 years.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Population Data:</strong> NASA Socioeconomic Data and Applications
+                        Center (SEDAC), Gridded Population of the World (GPW), v4
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Electricity Consumption Data:</strong> Chen et al. (2022),
+                        <em>Scientific Data</em> 9, 202.
+                        <a href="https://doi.org/10.6084/m9.figshare.17004523" target="_blank" rel="noopener noreferrer"
+                            class="text-primary hover:underline">https://doi.org/10.6084/m9.figshare.17004523</a>
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Power Plant Data:</strong> Global Energy Monitor, Global Coal
+                        Plant Tracker, Global Oil & Gas Plant Tracker, Global Bioenergy Plant Tracker, Global Nuclear
+                        Plant Tracker, December 2024 release.
+                        Data available under Creative Commons Attribution 4.0 International License.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Solar Potential (PVOUT):</strong> Global Solar Atlas (World Bank
+                        Group / Solargis). Used in the Potential Map to estimate realistic annual generation per area.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Wind Potential:</strong> onshore from the atlas's own wind siting,
+                        at 5 MW/km² on eligible land that reaches at least 15% net capacity factor before calibration,
+                        pixel by pixel (conservative: 3 MW/km², calibrated, 20%); offshore from World Bank Group / ESMAP, Global Offshore
+                        Wind Technical Potential (2021), CC BY 4.0, reallocated to the atlas's cells, or on the IEA's
+                        definition (<em>Offshore Wind Outlook 2019</em>). Method in Notes on the controls.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Grid Reliability &amp; Electricity Access:</strong> High
+                        Resolution Electricity Access (HREA), University of Michigan; Min et al. (2024), <em>Joule</em> 8, 1–17.
+                        <a href="https://doi.org/10.1016/j.joule.2024.05.001" target="_blank" rel="noopener noreferrer"
+                            class="text-primary hover:underline">https://doi.org/10.1016/j.joule.2024.05.001</a>.
+                        Data:
+                        <a href="https://hrea.isr.umich.edu/data.html" target="_blank" rel="noopener noreferrer"
+                            class="text-primary hover:underline">hrea.isr.umich.edu/data.html</a>.
+                        Used in the Supply-Demand Matching demand layers.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Cost of Capital (WACC):</strong> Country-level WACC from
+                        Hatton et al. (2025), <em>Sci Data</em> 12, 1912.
+                        <a href="https://doi.org/10.1038/s41597-025-06177-0" target="_blank" rel="noopener noreferrer"
+                            class="text-primary hover:underline">https://doi.org/10.1038/s41597-025-06177-0</a>.
+                        Local mode uses the v3 dataset (Zenodo, 2026;
+                        <a href="https://doi.org/10.5281/zenodo.18662192" target="_blank" rel="noopener noreferrer"
+                            class="text-primary hover:underline">https://doi.org/10.5281/zenodo.18662192</a>) for solar
+                        and wind: each Voronoi cell takes its country's 2025 rate, or a neighbouring country's where
+                        the dataset has none, applied as published, not deflated, and held flat over the timeline. Wind has separate
+                        onshore, offshore and floating rates per cell. Global mode prices wind at the WACC input plus a
+                        premium: by default +0.0 points onshore, since onshore wind equals solar PV in the dataset's 2025
+                        values, and +0.92 points offshore, the median offshore-over-onshore gap across 174 countries (v3,
+                        2026).
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Local CAPEX Assumptions:</strong> Regional solar and battery CAPEX
+                        assumptions from IRENA/IEA/BNEF; Oceania and Saudi Arabia from IRENA's 2024 installed costs
+                        (<em>Renewable Power Generation Costs in 2025</em>), Saudi Arabia's also for the other Gulf
+                        states, and Korea's for Taiwan. Local mode maps each Voronoi cell to a region and interpolates
+                        2026/2035/2050 values by year; wind capex and O&amp;M are interpolated the same way (see Wind
+                        costs). The <span id="missing-cost-cells">66</span> cells missing from the local cost files use the global inputs, including the global WACC and wind premiums.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Wind Output Degradation:</strong> 0.2%/yr onshore and offshore by
+                        default, after Hamilton et al., <em>Joule</em> 4 (2020), who find 0.17%/yr for newer US wind
+                        plants
+                        (<a href="https://doi.org/10.1016/j.joule.2020.04.005" target="_blank" rel="noopener noreferrer"
+                            class="text-primary hover:underline">https://doi.org/10.1016/j.joule.2020.04.005</a>);
+                        older fleets in the US, Sweden and Germany lose 0.5–0.6%/yr. We found no peer-reviewed
+                        offshore-specific estimate, so offshore takes the onshore figure.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Diesel Prices:</strong> Retail diesel pump prices (World Bank /
+                        GlobalPetrolPrices), clamped to a global unsubsidised floor. Used for the optional diesel-backup
+                        comparison.
+                    </p>
+                    <p>
+                        <strong class="text-gray-300">Gas Prices:</strong> Regional wholesale gas prices (IGU Wholesale
+                        Gas Price Survey 2024); regions with no gas market default to diesel. Local mode uses these and
+                        per-country pump prices for diesel (World Bank / GlobalPetrolPrices 2025); Global uses the inputs in the panel.
+                    </p>
+                </div>
+
+                </details>
+
+                <h3 class="text-white font-medium pt-4">Credits</h3>
+                <p class="text-xs text-gray-400">
+                    Created by the Electrotech Revolution team, 2026.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading" class="absolute inset-0 bg-black z-50 flex items-center justify-center">
+        <div class="text-center space-y-4">
+            <div class="w-12 h-12 border-4 border-surface-variant border-t-primary rounded-full animate-spin mx-auto">
+            </div>
+            <div class="text-gray-300 font-medium">Initialising atlas...</div>
+            <div class="text-xs text-gray-500" id="loading-status">Loading assets...</div>
+        </div>
+    </div>
+
+    <!-- Population Charts Overlay (Full Screen-ish) -->
+    <div id="population-charts"
+        class="hidden absolute inset-0 z-10 bg-bg-page overflow-y-auto pt-24 pb-10 population-charts-shell">
+        <div class="max-w-6xl mx-auto space-y-6 population-charts-inner">
+            <div class="flex justify-between items-center">
+                <h2 id="charts-main-heading" class="text-xl font-semibold text-white">Population Analysis</h2>
+                <button id="close-charts" class="text-primary hover:text-white text-sm font-medium">Back to Map</button>
+            </div>
+
+            <!-- Combined Demand + Supply by Latitude (dual x-axis with world map background) -->
+            <div id="standard-charts-container">
+                <div id="combined-latitude-chart-card" class="bg-surface border border-white/10 rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                        <div>
+                            <h3 id="chart-title-combined-latitude" class="text-sm font-medium text-gray-400">Demand &amp; Supply by Latitude</h3>
+                            <p class="text-xs text-gray-500 mt-1">
+                                <span id="chart-title-demand-latitude">Population by Latitude</span>
+                                <span class="text-gray-600 mx-1">·</span>
+                                <span id="chart-title-supply-latitude">Capacity Factor by Latitude</span>
+                            </p>
+                        </div>
+                        <div class="text-xs flex gap-4 text-gray-400">
+                            <span class="flex items-center"><span class="inline-block w-3 h-2 rounded-sm mr-1.5" data-state-swatch="demand"></span>Demand (top axis)</span>
+                            <span class="flex items-center"><span class="inline-block w-3 h-2 rounded-sm mr-1.5" data-state-swatch="supply"></span>Supply (bottom axis)</span>
+                        </div>
+                    </div>
+                    <div class="relative h-96"><canvas id="population-chart-lat-combined"></canvas></div>
+                </div>
+            </div>
+
+            <!-- Histogram (Supply vs Demand) -->
+            <div class="bg-surface border border-white/10 rounded-xl p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 id="chart-title-percentile" class="text-sm font-medium text-gray-400">Demand vs Supply Distribution</h3>
+                    <button id="chart-cumulative-toggle"
+                        class="px-3 py-1 rounded-md text-xs font-medium bg-surface-variant text-gray-400 hover:text-white hover:bg-gray-600 transition-colors border border-white/5">
+                        Cumulative: OFF
+                    </button>
+                </div>
+                <div class="h-64"><canvas id="population-chart-histogram"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Chart.js loaded on-demand when charts view is opened (see app.js) -->
+
+    <!-- Subset Map Modal -->
+    <div id="subset-map-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="absolute inset-0 el-overlay" id="subset-map-backdrop"></div>
+        <div
+            class="relative bg-surface border border-white/10 rounded-2xl shadow-2xl w-full max-w-5xl h-[80vh] flex flex-col overflow-hidden">
+            <div class="flex justify-between items-center p-4 border-b border-white/10 bg-surface">
+                <h2 id="subset-map-title" class="text-lg font-semibold text-white">Subset Distribution</h2>
+                <button id="close-subset-map" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="relative flex-1 bg-black">
+                <div id="subset-map" class="absolute inset-0 z-0"></div>
+                <!-- Simple legend for subset map -->
+                <div
+                    class="absolute bottom-4 right-4 z-[1000] bg-surface pointer-events-auto rounded-lg p-3 border border-white/10">
+                    <div class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-1"
+                        id="subset-legend-title">Value</div>
+                    <div class="text-xs text-white" id="subset-legend-range">--</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Logic -->
+    <script type="module" src="js/app.js"></script>
+
+    <!-- Inline UI Logic for Modals/Tabs -->
+    <script>
+        // Simple UI logic that doesn't depend on the main app
+        document.addEventListener('DOMContentLoaded', () => {
+            // Info Modal
+            const infoPanel = document.getElementById('info-panel');
+            const infoToggle = document.getElementById('info-toggle');
+            const infoClose = document.getElementById('info-close');
+            const infoBackdrop = document.getElementById('info-backdrop');
+
+            const toggleInfo = (show) => {
+                infoPanel.classList.toggle('hidden', !show);
+            };
+
+            infoToggle?.addEventListener('click', () => toggleInfo(true));
+            infoClose?.addEventListener('click', () => toggleInfo(false));
+            infoBackdrop?.addEventListener('click', () => toggleInfo(false));
+
+            // Collapse Controls
+            const collapseBtn = document.getElementById('collapse-controls');
+            const controlsContent = document.getElementById('controls-content');
+            let isCollapsed = false;
+
+            collapseBtn?.addEventListener('click', () => {
+                isCollapsed = !isCollapsed;
+                controlsContent.classList.toggle('hidden', isCollapsed);
+                collapseBtn.querySelector('span').textContent = isCollapsed ? 'expand_more' : 'expand_less';
+            });
+        });
+    </script>
+</body>
+
+</html>
