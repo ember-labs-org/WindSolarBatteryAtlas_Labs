@@ -100,20 +100,20 @@ function buildSteps(ctx) {
         {
             target: '#comp-controls',
             title: 'Solar and wind together',
-            body: 'This view uses ten years of weather (2015–2024) to show how solar and wind make up for each other. <b>Droughts</b> maps how often each source runs below half its average; <b>Complementarity</b> shows whether one tends to be high when the other is low, by day, week or month.',
+            body: 'This view uses ten years of weather (2015–2024) to show how solar and wind make up for each other. <b>Lulls</b> maps how often each source runs below half its average; <b>Complementarity</b> shows whether one tends to be high when the other is low, by day, week or month.',
             placement: 'right',
             before: toMode('complementarity'),
         },
         {
             target: '#comp-source-toggle',
             title: 'Solar, wind, or both',
-            body: 'Switch between <b>Solar</b>, <b>Wind</b> and <b>Both</b>. Where the two rarely fail together, the Both map is nearly empty: that is the complementarity. Choose a week- or month-long drought below.',
+            body: 'Switch between <b>Solar</b>, <b>Wind</b> and <b>Both</b>. Where the two rarely fail together, the Both map is nearly empty: that is the complementarity. Choose a week- or month-long lull below.',
             placement: 'right',
         },
         {
             target: '#legend-comp-drought',
-            title: 'How often in drought',
-            body: 'Deeper red regions spend more of the ten years in drought. <b>Hover a region</b> for all three shares, and how often both would fail at once if they were unrelated.',
+            title: 'How often in a lull',
+            body: 'Deeper red regions spend more of the ten years in a lull. <b>Hover a region</b> for all three shares, and how often both would fail at once if they were unrelated.',
             placement: 'left',
         },
 

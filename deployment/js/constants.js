@@ -288,7 +288,7 @@ export const LCOE_NO_DATA_COLOR = NO_DATA_COLOR;
 
 export const VIEW_MODE_EXPLANATIONS = {
     capacity: 'Capacity Factor Map shows the share of a constant 1\u00a0MW baseload that a given solar, wind and battery build supplies over a year.',
-    complementarity: 'Complementarity shows how often solar and wind run low (droughts), and how complementary they are (one high when the other is low), using ten years of weather (2015\u20132024).',
+    complementarity: 'Complementarity shows how often solar and wind run low (lulls), and how complementary they are (one high when the other is low), using ten years of weather (2015\u20132024).',
     potential: 'Potential Map shows annual generation potential (TWh/yr) per Voronoi zone for solar (PVOUT), onshore and offshore wind. For solar, “Technical” excludes rugged terrain, urban/industrial areas, forests, and remote zones; “Policy” adds regulatory limits such as cropland protection and conservation.',
     lcoe: 'LCOE Map compares the levelised cost ($/MWh) of every location that can meet the target capacity factor.',
     population: 'Supply-Demand Matching links where people live (population density as a proxy for demand) with the CF or LCOE of each location.'
