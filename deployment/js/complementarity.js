@@ -116,14 +116,14 @@ const tipLine = text => `<div class="text-[11px] text-muted">${text}</div>`;
 function tooltipFor(d) {
     if (d.isNA) {
         return tipBox(`<div class="font-semibold">No wind profile</div>`
-            + tipLine('This region has no onshore wind profile averaging at least 2%, so droughts and complementarity are not worked out.'));
+            + tipLine('This region has no onshore wind profile averaging at least 2%, so lulls and complementarity are not worked out.'));
     }
     const r = d.row;
     if (d.kind === 'droughts') {
         const p = period;
         const unit = PERIOD_LABELS[p];
         const independent = r[`${p}_solar`] * r[`${p}_wind`];
-        return tipBox(`<div class="font-semibold">Droughts, share of ${unit} (2015–2024)</div>`
+        return tipBox(`<div class="font-semibold">Lulls, share of ${unit} (2015–2024)</div>`
             + `<div class="text-[10px] text-muted mb-1">${p === 'wk' ? '7' : '30'}-day output below half its ten-year average</div>`
             + tipLine(`Solar: ${pct(r[`${p}_solar`])}`)
             + tipLine(`Wind (onshore): ${pct(r[`${p}_wind`])}`)
@@ -174,7 +174,7 @@ function syncUi() {
     levelRow.classList.toggle('hidden', view !== 'score');
     noteDroughts.classList.toggle('hidden', view !== 'droughts');
     noteScore.classList.toggle('hidden', view !== 'score');
-    legendDroughtTitle.textContent = `${SOURCE_LABELS[source]}: share of ${PERIOD_LABELS[period]} in drought`;
+    legendDroughtTitle.textContent = `${SOURCE_LABELS[source]}: share of ${PERIOD_LABELS[period]} in a lull`;
     legendScoreTitle.textContent = `Correlation of ${LEVEL_ADJECTIVES[level]} solar and wind output`;
     showLegend();
 }
@@ -216,12 +216,12 @@ export async function showComplementarity(state) {
     controls.classList.remove('hidden');
     syncUi();
     if (!data) {
-        setStatus('Loading ten years of droughts…');
+        setStatus('Loading ten years of lulls…');
         try {
             await loadData();
         } catch (err) {
             console.error('Complementarity data failed to load:', err);
-            if (active) setStatus('The drought data could not be loaded.');
+            if (active) setStatus('The lull data could not be loaded.');
             return;
         }
         if (!active) return;
